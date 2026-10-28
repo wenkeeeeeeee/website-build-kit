@@ -1,0 +1,15 @@
+{
+  "note": "Retail partners and outlets. Full list [client to confirm].",
+  "groups": [
+    { "name": "Retailer One", "outlets": [
+      { "name": "Outlet A", "address": "Street, City [client to confirm]", "mapUrl": "https://maps.example.com/?q=outlet-a" },
+      { "name": "Outlet B", "address": "Street, City [client to confirm]", "mapUrl": "" }
+    ] },
+    { "name": "Retailer Two", "outlets": [
+      { "name": "Selected stores [client to confirm]", "address": "", "mapUrl": "" }
+    ] },
+    { "name": "Retailer Three", "outlets": [
+      { "name": "Outlet C", "address": "Street, City [client to confirm]", "mapUrl": "" }
+    ] }
+  ]
+}

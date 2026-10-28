@@ -1,0 +1,80 @@
+[
+  {
+    "id": "product-one",
+    "name": "Product One",
+    "category": "Category A",
+    "summary": "One-line selling point [client to confirm]",
+    "description": "Two or three sentences about the product: what it is, how it is made, why people buy it [client to confirm].",
+    "notes": ["Key feature one", "Key feature two", "Key feature three"],
+    "details": "Ingredients or materials [client to confirm]",
+    "image": "assets/img/product.svg",
+    "sizes": [{ "label": "Standard", "price": 12.5 }, { "label": "Large", "price": 22 }],
+    "featured": true,
+    "marketplaceUrl": null
+  },
+  {
+    "id": "product-two",
+    "name": "Product Two",
+    "category": "Category A",
+    "summary": "One-line selling point [client to confirm]",
+    "description": "Two or three sentences about the product [client to confirm].",
+    "notes": ["Key feature one", "Key feature two"],
+    "details": "Ingredients or materials [client to confirm]",
+    "image": "assets/img/product.svg",
+    "sizes": [{ "label": "Standard", "price": 14 }],
+    "featured": true,
+    "marketplaceUrl": null
+  },
+  {
+    "id": "product-three",
+    "name": "Product Three",
+    "category": "Category B",
+    "summary": "One-line selling point [client to confirm]",
+    "description": "Two or three sentences about the product [client to confirm].",
+    "notes": ["Key feature one", "Key feature two"],
+    "details": "[client to confirm]",
+    "image": "assets/img/product.svg",
+    "sizes": [{ "label": "Standard", "price": null }],
+    "featured": true,
+    "marketplaceUrl": null
+  },
+  {
+    "id": "product-four",
+    "name": "Product Four",
+    "category": "Category B",
+    "summary": "One-line selling point [client to confirm]",
+    "description": "Two or three sentences about the product [client to confirm].",
+    "notes": ["Key feature one", "Key feature two"],
+    "details": "[client to confirm]",
+    "image": "assets/img/product.svg",
+    "sizes": [{ "label": "Standard", "price": 9.9 }],
+    "featured": false,
+    "marketplaceUrl": null
+  },
+  {
+    "id": "product-five",
+    "name": "Product Five",
+    "category": "Category C",
+    "summary": "One-line selling point [client to confirm]",
+    "description": "Two or three sentences about the product [client to confirm].",
+    "notes": ["Key feature one", "Key feature two"],
+    "details": "[client to confirm]",
+    "image": "assets/img/product.svg",
+    "sizes": [{ "label": "Standard", "price": 18 }],
+    "featured": false,
+    "marketplaceUrl": "https://marketplace.example.com/brand-name/product-five"
+  },
+  {
+    "id": "product-six",
+    "name": "Product Six",
+    "category": "Category C",
+    "summary": "One-line selling point [client to confirm]",
+    "description": "Two or three sentences about the product [client to confirm].",
+    "notes": ["Key feature one", "Key feature two"],
+    "details": "[client to confirm]",
+    "image": "assets/img/product.svg",
+    "sizes": [{ "label": "Standard", "price": 30 }],
+    "featured": false,
+    "marketplaceUrl": null
+  }
+]

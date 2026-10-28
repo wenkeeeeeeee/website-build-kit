@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Contact &amp; wholesale | Brand Name</title>
+<meta name="description" content="Brand Name: one-sentence description of the business [client to confirm].">
+<link rel="icon" href="assets/img/logo.svg">
+<link rel="stylesheet" href="css/site.css">
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/pages.js"></script>
+</head>
+<body data-page="contact">
+<a class="skip" href="#main">Skip to content</a>
+<header class="head">
+  <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="" width="120" height="40"><span class="sr-only" data-site="brand">Brand Name</span></a>
+  <nav class="nav" data-nav aria-label="Main"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="stores.html">Where to buy</a><a href="contact.html">Contact &amp; wholesale</a></nav>
+  <div class="head-actions">
+    <a class="btn btn-line btn-sm" data-wa="Hi {brand}, " href="#" target="_blank" rel="noopener">WhatsApp</a>
+    <button class="basket" type="button" data-cart-open aria-label="Open basket">Basket <span class="basket-n" data-cart-count>0</span></button>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false">Menu</button>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <h1>Contact &amp; wholesale</h1>
+  <p class="lede">Gifts, events, corporate orders and shop shelves. Build your request below and send it to us on WhatsApp.</p>
+</section>
+<section>
+  <h2>What we can do</h2>
+  <ul class="cols-3">
+    <li><h3>Gift orders</h3><p>Short description <span class="tbc">[client to confirm]</span>.</p><button class="btn btn-line" type="button" data-quote-preset="Gift orders">Start a gift quote</button></li>
+    <li><h3>Events and corporate</h3><p>Short description <span class="tbc">[client to confirm]</span>.</p><button class="btn btn-line" type="button" data-quote-preset="Event or corporate order">Start an event quote</button></li>
+    <li><h3>Wholesale</h3><p>Trade terms <span class="tbc">[client to confirm]</span>.</p><button class="btn btn-line" type="button" data-quote-preset="Wholesale for my shop">Start a wholesale quote</button></li>
+  </ul>
+</section>
+<section class="quote" id="quote">
+  <div>
+    <h2>Your quote request</h2>
+    <form class="quote-form" data-quote>
+      <label>What is it for?<select name="purpose"></select></label>
+      <label>Needed by<input type="date" name="date"></label>
+      <label>Deliver to (area)<input name="area" placeholder="Town or postcode"></label>
+      <fieldset><legend>Quantities (<span data-quote-total>0</span> in total)</legend><div class="q-items" data-quote-qty></div></fieldset>
+      <label>Your name<input name="name" autocomplete="name"></label>
+      <label>Company (optional)<input name="company" autocomplete="organization"></label>
+      <label class="q-wide">Anything else<textarea name="note" rows="2" placeholder="Packaging, labels, budget..."></textarea></label>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+    </form>
+  </div>
+  <div class="quote-preview">
+    <h3>Your message</h3>
+    <pre data-quote-preview></pre>
+    <a class="btn btn-line" data-quote-send href="#" target="_blank" rel="noopener">Open in WhatsApp</a>
+    <h3>Other ways to reach us</h3>
+    <p><a data-email href="#" data-site="email"></a><br><span data-site="address"></span><br><span data-site="hours"></span></p>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="foot-cols">
+    <div><h2 data-site="brand">Brand Name</h2><p data-site="tagline"></p></div>
+    <div><h2>Shop</h2><ul data-product-links></ul></div>
+    <div><h2>Company</h2><ul><li><a href="about.html">About</a></li><li><a href="stores.html">Where to buy</a></li><li><a href="contact.html">Contact &amp; wholesale</a></li></ul></div>
+    <div><h2>Talk to us</h2><ul>
+      <li><a data-wa="Hi {brand}, " href="#" target="_blank" rel="noopener">WhatsApp <span data-site="whatsapp"></span></a></li>
+      <li><a data-email href="#" data-site="email"></a></li>
+      <li><a data-social="instagram" href="#" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a data-social="facebook" href="#" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a data-social="tiktok" href="#" target="_blank" rel="noopener">TikTok</a></li>
+      <li><a data-marketplace href="#" target="_blank" rel="noopener" data-site="marketplace">Marketplace store</a></li>
+    </ul></div>
+  </div>
+  <p class="foot-fine">&copy; <span data-site="brand">Brand Name</span>. <span data-site="address"></span></p>
+</footer>
+</body>
+</html>
