@@ -1,6 +1,6 @@
 # New website project: the prompt
 
-Copy the block below into a **new thread** in the kit project, fill in what you know and send it.
+Copy the block below into a **new thread** in the mok-kit project on shaun-studio, fill in what you know and send it.
 Leave anything else empty: the agent decides it and tells you what it picked. Attach the logo and any client
 photos to the message (the server can't see files on your laptop).
 
