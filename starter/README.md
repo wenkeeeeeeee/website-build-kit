@@ -14,4 +14,6 @@ Static HTML/CSS/vanilla JS, no build step. Serve it over HTTP (it fetches JSON),
 
 **Checkout:** the basket is saved in localStorage. "Send my order on WhatsApp" opens `wa.me/<number>` with the order and subtotal pre-written; the marketplace link opens the product's own `marketplaceUrl` (if only that product is in the basket) or the store URL, and copies the order list. Clear `marketplace.url` to hide it. The quote form builds its own WhatsApp message live.
 
+**Share preview:** each page has `og:` tags pointing at the placeholder `assets/img/share.png`. Replace it with a 1200x630 image from the hero, and use a full `https://` address once the site has its URL.
+
 Keep the `data-*` hooks when redesigning; restyle or rename classes freely. Replace every `[client to confirm]` before launch.

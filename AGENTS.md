@@ -9,7 +9,8 @@ superpowers session-start hook if one is installed.
 - `prompts/new-project-prompt.md`, `website-build-template.md`, `variant-agent-brief.md`: briefs for the lead and the subagents.
 - `starter/`: working plumbing (basket with WhatsApp/marketplace checkout, catalogue with filters, product page,
   quote form, stores). Copy it into a project, swap the data, redesign everything visible.
-- `tools/web/`: preview server, page checker, export, hero film and cut-out scripts (run `npm install` in it once).
+- `tools/web/`: preview server, page checker, export, hero film, scroll and 3D effects, cut-out scripts (run
+  `npm install` in it once).
 - `.claude/skills/`: the design and debugging skills used on these builds.
 - `WebsiteProjects/<Client>/`: each new build goes here.
 
@@ -28,7 +29,8 @@ superpowers session-start hook if one is installed.
 
 ## How to work
 - Clone by mirroring the reference's source.
-- Check each variant with one desktop screenshot plus a check that no reference assets or brand names remain.
+- Check each variant with one desktop screenshot, `check-pages.cjs --phone`, and a check that no reference assets
+  or brand names remain.
 - Build independent variants in parallel with subagents, and keep screenshot review inside them.
 - No reports, per-variant docs or re-runs of checks unless the user asks.
 - Give the user preview links at the end of each step.

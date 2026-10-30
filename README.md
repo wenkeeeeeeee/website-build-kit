@@ -21,7 +21,7 @@ For Codex, copy the skills into its skills folder (for example `cp -r .claude/sk
 | `AGENTS.md` / `CLAUDE.md` | Working rules every agent follows |
 | `prompts/` | Playbook (read first), new-project prompt, full build template, subagent brief |
 | `starter/` | Static shop plumbing: basket with WhatsApp/marketplace checkout, catalogue filters, product page, quote form, stores. All business details in `starter/data/` |
-| `tools/web/` | `serve.py` preview server, `check-pages.cjs` screen-fit checker, `export-site.py` publisher, `film.py` hero film, `cutout.py` cut-outs |
+| `tools/web/` | `serve.py` preview server, `check-pages.cjs` desktop and phone checker, `export-site.py` publisher, `film.py` and `film-control.js` hero film, `frames.py` and `scrub.js` scroll film, `stair.js` 3D hero, `gl-guard.js` WebGL safety, `prologue.js` brand opening, `hotspots.js` shop-the-look dots, `cutout.py` cut-outs |
 | `.claude/skills/` | Design and debugging skills, see `THIRD_PARTY.md` |
 
 ## Improving it

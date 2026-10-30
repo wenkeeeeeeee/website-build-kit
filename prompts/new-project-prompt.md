@@ -27,7 +27,8 @@ How to run it:
 - Folder: WebsiteProjects/<Client>/. Content kit first, unknowns marked [client to confirm].
 - Plumbing from starter/ with the client's data, then build the variants in parallel, one subagent each
   (prompts/variant-agent-brief.md). With references: Inspiration mode, no exact copies.
-- Check each with tools/web/check-pages.cjs, then send me the preview links.
+- Each variant gets one concept from this client's own world, stated in a sentence before building. Send me the list.
+- Check each with tools/web/check-pages.cjs --phone, then send me the preview links.
 - Don't stop between steps unless something is blocked. Short updates only.
 ````
 

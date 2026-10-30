@@ -112,7 +112,7 @@ export function mountCartDrawer({ cart, title = 'Your basket', checkoutLabel = '
 
 // Minimal unskinned layout so the drawer works before the site styles it.
 const base = document.createElement('style');
-base.textContent = `.cd-root{position:fixed;inset:0;z-index:1000;pointer-events:none}
+base.textContent = `.cd-root{position:fixed;inset:0;z-index:1000;pointer-events:none;overflow:hidden}
 .cd-overlay{position:absolute;inset:0;background:rgba(0,0,0,.4);opacity:0;transition:opacity .3s}
 .cd-drawer{position:absolute;top:0;right:0;height:100%;width:min(440px,100vw);display:flex;flex-direction:column;background:#fff;transform:translateX(100%);transition:transform .35s ease;outline:none}
 .cd-root.is-open{pointer-events:auto}.cd-root.is-open .cd-overlay{opacity:1}.cd-root.is-open .cd-drawer{transform:none}

@@ -10,6 +10,7 @@ Other agents are building other variants in parallel in sibling folders, so stay
 
 ## Your variant
 - Folder: `{{PROJECT ROOT}}/variants/{{nn-name}}/` (site in `site/`, your reference captures in `ref/`).
+- Concept: {{one sentence: what in this business is the hero made of? Not a style word.}}
 - Reference: {{URL, or "taste-skill direction: <name>"}}. What I saw at a glance: {{2-4 lines: header, hero,
   signature sections, motion}}. Study it properly yourself (all sections, motion, components) before designing.
 - Direction for {{CLIENT}}: {{one line idea}}. {{How the reference's components map to the client: which
@@ -49,10 +50,12 @@ Other agents are building other variants in parallel in sibling folders, so stay
   in split sections fill their column instead of setting its height; no white gaps at the edges of full-bleed or
   rounded sections; no plain or empty-looking sections; the footer fits one screen and fills to the bottom of the
   window when scrolled to the end; page heroes keep one left edge; respect prefers-reduced-motion; no console
-  errors; no jittering animation.
+  errors; no jittering animation; on a phone no sideways scroll and no art over the copy or buttons; every page has
+  a title, description and share image for this variant; films have a pause button; WebGL has `gl-guard.js` and a
+  still behind it.
 - Lean workflow: no gates, plans, reports, TDD, fixtures or docs files; don't use the unlazy skill or the
   superpowers planning/TDD/verification/worktree skills. Design skills are fine (`frontend-design`,
-  `design-taste-frontend`, `impeccable`). Check with `check-pages.cjs --header <your header height>` at both
+  `design-taste-frontend`, `impeccable`). Check with `check-pages.cjs --phone --header <your header height>` at both
   sizes on the home page and each inner page, fix what looks off, and grep the site for reference names and
   banned words.
 
