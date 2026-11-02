@@ -40,7 +40,7 @@ brand's site) is one. Those are decisions: build one variant per reference, and 
    often hold the room, the people, the products and the prices. Names repeat, so check each result really is this
    business before using it. Note where each found image came from, and mark any taken from someone else's page
    `[client to confirm]`, because using it needs permission.
-2. **Decide (1 minute).** Read `KIT/prompts/office/site-types.md`, the "What the approved sites do" part of `taste.md`,
+2. **Decide (1 minute).** Read `KIT/prompts/office/site-types.md`, the "What the approved sites do" and "Type" parts of `taste.md`,
    `KIT/prompts/office/motion.md`, and the effects list in `KIT/tools/web/README.md`. Pick the site type. If the evidence honestly points two ways, split the variants across two types.
    Write one rough concept per variant, and finish them once you've been through the references in step 3, so each is
    built from what its reference does best, applied to this client's world.
@@ -137,7 +137,7 @@ References opened: <every page you went through: kept or dropped, and why, in on
 | Business tool (finder, picker, dial or quote builder, ending in WhatsApp) | | | |
 | Section order, with what each section tells the customer | | | |
 | Header | | | |
-| Type pair | | | |
+| Type pair (each font, where it comes from, and what in the client's world it answers to) | | | |
 | Palette | | | |
 | References (URL and sheet file: which part to take and why it suits this client, one or more per variant) | | | |
 ```

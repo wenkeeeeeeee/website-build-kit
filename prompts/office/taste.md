@@ -43,9 +43,8 @@ These sites, for an optician and a self-photo studio, are the level to reach.
 - **Plumbing in the business's language.** A "try-on list" or "shoot list" instead of a basket.
 - **Giant type doing a job.** The product's name outlined behind the product. A complete wordmark closing the footer,
   never cut off.
-- **Each variant is its own world.** A different type pair, palette, header and section order. Pairs that worked:
-  Jost with Newsreader, Archivo with JetBrains Mono, Fraunces with Figtree, Bodoni Moda with Manrope, Inter Tight
-  with DM Mono, Big Shoulders with Figtree.
+- **Each variant is its own world.** A different type pair, palette, header and section order, with fonts chosen as
+  the Type section says.
 - **Real proof beside the mood.** Real photos of rooms, staff and equipment show the business exists. Campaign images
   carry the mood, and are labelled as illustration.
 - **Sites that know the customer.** A strong manually built skincare site opened on the customer's own question
@@ -58,6 +57,24 @@ These sites, for an optician and a self-photo studio, are the level to reach.
   with dishes you can add to a list.
 - **Local detail stays.** The client's own languages, real branch names, live open or closed status, and honest
   `[client to confirm]` tags instead of guesses.
+
+## Type
+Fonts are the fastest way a site reads as machine-made. Builds kept landing on the same few faces, so fonts now come
+from the client's world.
+- **Not these**, unless the client's own brand uses them: Inter, Inter Tight, Fraunces, Figtree, DM Sans, DM Serif,
+  DM Mono, Instrument Serif, Instrument Sans, Bricolage Grotesque, Manrope, Sora, Syne, Outfit, Plus Jakarta Sans,
+  Space Grotesk, Playfair Display, Cormorant, Newsreader, Archivo, Bodoni Moda, JetBrains Mono.
+- **Start from what is really there.** Look at the client's signage, packaging, menu and posters, and any fonts on
+  their site. Find a face with the same character, so a gig poster, a shop sign and a pharmacy label each lead somewhere
+  different. Then check what the references really use, and find your own free face that does the same job.
+- **Look past the popular lists.** Try Fontshare, Velvetyne, Open Foundry, Collletttivo and the less-used end of Google
+  Fonts. The licence must allow commercial web use. Self-host the `woff2` files in the site.
+- **One face with a point of view, one quiet face to read.** Two safe faces look like a template. If the pair would
+  suit any other client, pick again.
+- **Check every language.** The display face must carry the client's languages and punctuation. Noto is only for a
+  script with no better option.
+- **Other tells to avoid:** small uppercase mono labels above every heading, "01 / 02 / 03" section numbers with no
+  meaning, one italic word in a headline, cream paper with a serif by default, gradient text and glass cards.
 
 ## Media
 Build with what exists. Ask for images or clips only when they lift the idea, and give ready-to-paste prompts with no
