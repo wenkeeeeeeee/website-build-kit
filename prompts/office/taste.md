@@ -33,6 +33,8 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   and motion, on inner pages too.
 - **Copying a reference's details and missing its impact.** Thin lines or small effects carried over without the
   reference's scale, imagery and colour don't count. Take what makes it striking first.
+- **Patching what keeps coming back.** If a variant is still rejected after several rounds of fixes, stop fixing it. Start
+  again from the plain starter, with a new concept, new references and nothing carried over from the old build.
 - **One recipe in every variant.** A shared brief or shared asset pack makes every hero and food section come back the
   same. Give each variant its own hero idea and its own way of showing the products, in its own brief.
 - **Variants that look alike.** The same template in different colours is the most repeated complaint. Shared headers,
