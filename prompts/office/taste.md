@@ -13,10 +13,10 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   short line usually do it, and paragraphs never do.
 - **Never plain or basic.** A title with some photos fails, however tidy it is. So do a photo in a box, a row of small
   photos, or text beside a photo with nothing else going on. The hero needs a visual idea someone would remember.
-- **Low-resolution film:** a phone reel is often sharper than a wide clip. Cut the person out with `rembg`, crop at the
-  thigh or above so burned-in captions go, and put the soft film behind them or inside giant type.
-- **Make the visual, don't just place it.** Client photos are rarely strong enough as they are. Cut the people out, grade
-  them heavily, scale them up and set them on bold colour. If a photo can't hold the screen, build the visual in code: a
+- **Low-resolution film:** never stretch it plainly. Use it dark and full-bleed behind the type, or inside giant letters.
+- **Make the visual, don't just place it.** Client photos are rarely strong enough as they are. Grade them, scale them
+  and set them on bold colour. Cut something out only when the source is sharp and the edge is clean: people cut from
+  phone footage and food with white sticker outlines were rejected on sight. If a photo can't hold the screen, build the visual in code: a
   3D or drawn form, or giant moving type. Never stretch a soft photo.
 - **Earn your place.** Stats, badges, review chips, tickers, tags, extra photos, floating cards, hours and addresses stay
   in the hero only if they help deliver the core or the idea. Otherwise they go below, and they still go on the page.
@@ -33,6 +33,8 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   and motion, on inner pages too.
 - **Copying a reference's details and missing its impact.** Thin lines or small effects carried over without the
   reference's scale, imagery and colour don't count. Take what makes it striking first.
+- **One recipe in every variant.** A shared brief or shared asset pack makes every hero and food section come back the
+  same. Give each variant its own hero idea and its own way of showing the products, in its own brief.
 - **Variants that look alike.** The same template in different colours is the most repeated complaint. Shared headers,
   hero layouts and section orders count.
 - **A good idea with no context.** The page must sound like it knows the business. A site for a skin condition talks
