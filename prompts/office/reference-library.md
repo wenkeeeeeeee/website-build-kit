@@ -1,8 +1,8 @@
 # Reference library
 
 Use this for leads, and open an entry before picking it: these notes are not proof it suits the client. Everything must
-pass the bar in step 3 of `research.md`, and older entries were added before that bar existed. `still` entries can't lead
-a variant. **Result** is how the work built from it landed: `liked`, `mixed`, `rejected`, or `untested` when there was no
+pass the bar in step 3 of `research.md`, and older entries were added before that bar existed. `still` entries can lead
+a variant only as step 3 allows. **Result** is how the work built from it landed: `liked`, `mixed`, `rejected`, or `untested` when there was no
 clear feedback. Never add client names or links to client sites here. When a job wraps up, update the Result column and
 promote anything from "To try".
 
@@ -25,9 +25,9 @@ Don't use these or anything like them.
 | URL | Why |
 |---|---|
 | https://www.trevorblountpilates.com/ | Cream and serif, thin decorative lines, text and photos sliding up, empty frames |
-| https://lahuella.club/ | Loud colour and giant type, but only blocks sliding past. Loud isn't the same as moving |
-| https://www.behance.net/gallery/245261445/Studio-Soma-Yoga-Pilates | Static mockups in calm beige and sage |
-| https://www.behance.net/gallery/256512367/Kinera-Physiotherapy-Clinic-Website | Static mockups of an ordinary clinic template |
+| https://lahuella.club/ | Loud colour and giant type, but only blocks sliding past. Loud isn't the same as creative |
+| https://www.behance.net/gallery/245261445/Studio-Soma-Yoga-Pilates | Basic mockups in calm beige and sage |
+| https://www.behance.net/gallery/256512367/Kinera-Physiotherapy-Clinic-Website | Plain mockups of an ordinary clinic template |
 | https://cascaidhealth.com/ | Listed on Awwwards, yet it's a calm serif layout: a listing proves nothing |
 | https://www.motionclinic.com.ar/ | One hero effect, then dark text and doctor photos. One strong screen isn't a strong site |
 

@@ -8,22 +8,24 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **The core comes first.** Within a few seconds a visitor knows what this business is, what it sells and who it's for,
   in the customer's words. Use the Core line in `PITCH.md`. A clever idea, story or mood that leaves them guessing has
   failed, however good it looks.
-- **Four things only.** Below the header, the first screen holds one main visual, one headline, one short line and one
-  main button, about 15–25 words in all. A quiet second link is fine.
-- **The main visual is a full-screen moving scene.** Never a photo in a box, a row of small photos, a split screen of
-  text and photo, or thin lines over a photo.
+- **Clean, attractive and creative.** There's no fixed list of what a hero may hold. Anything that helps deliver the
+  core or the idea can stay, as long as the first screen still looks clean. Avoid heavy text: a strong headline and a
+  short line usually do it, and paragraphs never do.
+- **Never plain or basic.** A title with some photos fails, however tidy it is. So do a photo in a box, a row of small
+  photos, or text beside a photo with nothing else going on. The hero needs a visual idea someone would remember.
 - **Low-resolution film:** a phone reel is often sharper than a wide clip. Cut the person out with `rembg`, crop at the
   thigh or above so burned-in captions go, and put the soft film behind them or inside giant type.
 - **Make the visual, don't just place it.** Client photos are rarely strong enough as they are. Cut the people out, grade
   them heavily, scale them up and set them on bold colour. If a photo can't hold the screen, build the visual in code: a
   3D or drawn form, or giant moving type. Never stretch a soft photo.
-- **Everything else starts below it:** stats, badges, review chips, tickers, tags, extra photos, floating cards, hours,
-  addresses and labels. They still go on the page, just not here.
+- **Earn your place.** Stats, badges, review chips, tickers, tags, extra photos, floating cards, hours and addresses stay
+  in the hero only if they help deliver the core or the idea. Otherwise they go below, and they still go on the page.
 - **One idea, one big movement.** The client's object or the opening is the main visual, never another layer on top.
-- **Clean isn't empty.** A full-screen photo with no headline fails too. The four things must still deliver the core.
+- **Clean isn't empty.** A full-screen photo with no headline fails too. The hero must still deliver the core.
 - **A busy reference doesn't change this.** Take its idea, not its clutter.
-- **Test it:** count what's on the first screen and remove anything past the four. Ask whether a stranger could say what
-  is sold here. Then put it beside its lead reference: if it doesn't belong there, redo it.
+- **Test it:** ask whether a stranger could say what is sold here. Remove anything that doesn't help. If what's left is
+  only a title and photos, or it wouldn't make someone stop, redo it. Then put it beside its lead reference: if it
+  doesn't belong there, redo it.
 
 ## Rejected on sight
 - **A body that doesn't match the hero.** The hero sets the level for the whole site. If the sections below drop to cards
@@ -43,7 +45,7 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   Chinese clients, so avoid it unless the client is festive.
 - **Basic and plain.** Sections with only a heading, a paragraph and a picture. Empty-looking panels. A plain footer.
   Pages whose only motion is fade-ins. The right context doesn't excuse this, in a site or in a reference: the user
-  wants modern, attractive, full of animation and motion graphics.
+  wants creative, attractive and premium work that suits the business.
 - **Messy layering.** Words over busy images, accidental overlaps, things sliding under the sticky header. Overlap must
   look deliberate.
 - **Sections with no clear purpose.** If you can't say what a section delivers, cut or rebuild it.

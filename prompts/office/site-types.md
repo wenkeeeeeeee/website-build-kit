@@ -44,7 +44,7 @@ Categories that sell the same way can share references, so search the family as 
 that fit none of these go with whichever family matches how the page must sell. Add a family when a new one proves
 useful.
 
-The terms below are starting points. Add a motion term to each one, because category words alone find plain sites. If
+The terms below are starting points. Add a design term to each one, because category words alone find plain sites. If
 the family is weak too, explore other categories, as step 3 of `research.md` says.
 
 - **One beautiful object:** bags, eyewear, watches, jewellery, shoes, perfume, audio, furniture. The product is the star,

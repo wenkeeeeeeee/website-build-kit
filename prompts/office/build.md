@@ -23,8 +23,8 @@ between steps unless something is blocked. Short updates only.
 5. **Hub.** Write `PROJECT/index.html`, in the format in section 1 of the playbook, with short plain names.
 6. **Quick check (3 minutes).**
    - Run `check-pages.cjs` once on each variant's home page, click through to one inner page, and grep for reference names.
-   - **Hero:** check each first screen against "The hero" in `taste.md`. It must deliver the Core line in `PITCH.md`, and
-     anything past the four allowed things moves below it.
+   - **Hero:** check each first screen against "The hero" in `taste.md`. It must deliver the Core line in `PITCH.md`, look
+     clean, and never be just a title and photos. Move anything that crowds it below.
    - **Level:** run `contact-sheet.cjs` on each variant and its lead reference, and go through both. If a hero, or the body
      below it, looks clearly weaker than the reference, send it back to be fixed.
    - **Fonts:** compare the fonts it prints against "Type" in `taste.md`, and replace any banned one.

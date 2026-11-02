@@ -44,43 +44,48 @@ the user's message, and its notes beat these defaults.
 3. **References (4 minutes).** Weak references are the costliest mistake here. **Never pick from a thumbnail, title,
    snippet or library description: open the page and go through it first.**
 
-   **The bar: modern, attractive, and full of animation and motion graphics.** Fitting the client's category never makes
-   up for missing this. A reference passes only if its sheet shows:
-   - **A changing world:** something big assembles, transforms, floods the screen or takes over, rather than text and
-     photos sliding up.
-   - **Motion that fills the screen and carries the content.** A thin line or small decoration doesn't count.
-   - **Real visual impact:** a site you'd remember and want to show someone.
+   **The bar: always creative, attractive and premium, in the way that suits this client's business.** Fitting the
+   client's category never makes up for missing this. A reference passes only if its sheet shows:
+   - **Creative:** a real idea in its layout, imagery or art direction, not a template.
+   - **Attractive:** real visual impact, a site you'd remember and want to show someone.
+   - **Premium for this business:** high-end craft at the right level. A snack brand and a private clinic look premium
+     in different ways.
 
-   Name two frames in its sheet that prove this. If you can't, drop it, however well it fits.
+   Name two frames or parts that prove this. If you can't, drop it, however well it fits.
 
-   **These fail, even in the right category:** cream or beige with a serif and thin lines; calm spa colours; stacks of text
-   and photos; loud colours or giant type with only fades behind them; device mockups on a plain backdrop; ordinary local
-   business sites. A gallery listing proves nothing, so the bar still applies to anything from Awwwards.
+   **Motion earns extra points but isn't required.** A strong design with little animation can pass. When two references
+   are otherwise equal, pick the one with stronger animation and motion graphics. Motion never rescues a plain design.
+
+   **These fail, even in the right category:** anything basic or plain; template layouts; cream or beige with a serif and
+   thin lines; calm spa colours; stacks of text and photos; loud colours or giant type with no real idea behind them;
+   ordinary local business sites. A gallery listing proves nothing, so the bar applies to anything from Awwwards too.
 
    **If the user pasted references:** run `node KIT/tools/web/contact-sheet.cjs <all reference urls> --out PROJECT/references
    --steps 8` once, go through every sheet, and write what to take from each. If one is blocked, use web fetch for its
    description. Don't search for others.
 
-   **Otherwise, always search the galleries, even if the library has something close:**
-   1. **Search for motion first.** Category words alone find plain sites, so put a motion term in every search: scroll
-      animation, WebGL, 3D, immersive, interactive storytelling. Run WebSearch for `site:awwwards.com/inspiration <motion term>`
-      and `site:awwwards.com/sites <motion term> <family term>`, 1–2 per variant, then find the live site each good result
-      describes. Awwwards blocks browsers, so don't open it directly. FWA and CSS Design Awards winners are worth a search too.
-   2. Add the client's family from "Design families" in `site-types.md`, because designs travel between categories that
+   **Otherwise, always search, even if the library has something close:**
+   1. **Search for creative work, not just the category.** Category words alone find plain sites, so put a design term in
+      every search: creative, art direction, 3D, immersive, scroll animation, interactive storytelling. Run WebSearch for
+      `site:awwwards.com/inspiration <design term>` and `site:awwwards.com/sites <design term> <family term>`, 1–2 per
+      variant, then find the live site each good result describes. Awwwards blocks browsers, so don't open it directly.
+   2. **Don't stop at Awwwards, Behance and Dribbble.** They're starting points, and a reference can come from anywhere if
+      it suits. Try FWA, CSS Design Awards, Godly, Siteinspire, design studios' own portfolios and strong brands abroad.
+   3. Add the client's family from "Design families" in `site-types.md`, because designs travel between categories that
       sell the same way.
-   3. Read `reference-library.md`, starting with "Benchmarks" and "Rejected". An entry is only a lead, so open it like the
+   4. Read `reference-library.md`, starting with "Benchmarks" and "Rejected". An entry is only a lead, so open it like the
       rest.
-   4. Run `node KIT/tools/web/gallery-scan.cjs "<terms>" "<terms>" ... --out PROJECT/references/scan` (about 15 seconds) for
+   5. Run `node KIT/tools/web/gallery-scan.cjs "<terms>" "<terms>" ... --out PROJECT/references/scan` (about 15 seconds) for
       Behance and Dribbble parts. It prints each project's URL.
-   5. Open a shortlist of 6–8 at once:
+   6. Open a shortlist of 6–8 at once:
       `node KIT/tools/web/contact-sheet.cjs <urls> --out PROJECT/references --steps 8` (about 2 minutes, one sheet per page).
       Go through every sheet top to bottom. A cookie wall, loader, black page or repeated frame doesn't count as opened,
       so drop that page.
-   6. Keep a page only if it passes the bar across the whole page, not just one hero effect: most frames must clear it. Name
-      what gives it impact (scale, imagery, colour, composition), then the moving part to take, and how both would tell this
+   7. Keep a page only if it passes the bar across the whole page, not just one strong screen: most frames must clear it.
+      Name what gives it impact (scale, imagery, colour, composition), then the part to take, and how both would tell this
       client's story. Any category is fine. Take its impact and craft, not its subject: the finished site still looks like
       the client's own business.
-   7. **If fewer than 3 pass, or what you have is weak, explore other categories instead of lowering the bar.** Look for any
+   8. **If fewer than 3 pass, or what you have is weak, explore other categories instead of lowering the bar.** Look for any
       strong site with a similar object, feeling or job. A physio could learn from sports, cars, medical devices, biotech,
       fashion or product launches. Keep going until the 8-minute limit, then use what passes and note the gap.
 
@@ -89,8 +94,9 @@ the user's message, and its notes beat these defaults.
      sites to copy: one can give a hero and another a layout, and one can feed two variants.
    - **At least half are new finds from this run,** not from the library. If you're short, keep searching until the
      8-minute limit rather than noting the gap early.
-   - **Every variant is led by a live site that passes the bar,** because stills can't show how a page moves. One live site
-     can lead two variants if it truly suits both. A Behance or Dribbble still can only add a specific part beside it.
+   - **Every variant is led by a reference that passes the bar.** One can lead two variants if it truly suits both. Prefer
+     a live site, because it shows how a page behaves. A strong Behance or Dribbble still can lead too, if `PITCH.md` pairs
+     it with a live site or says how the page will move.
    - Rewrite each rough concept around what its references really do, and add your picks to `reference-library.md` under
      "To try".
 4. **Write `PROJECT/docs/PITCH.md`** in the format below, and add anything unknown to `PROJECT/content/OPEN-QUESTIONS.md`.
@@ -142,12 +148,12 @@ Ordering: <basket to WhatsApp or marketplace, quote form, booking or none, and w
 Screen: 1920x870 at 125% zoom (about 1536x700), unless LEAD.md says otherwise
 Images: <file: what it shows, sharp enough for full width or not, and its source if not the client's own page>
 Sources read: <each client link and Google search, and what it gave or why it was blocked>
-Searches run: <each Behance, Dribbble and Awwwards search, exact or family, and which picks came from it>
-References opened: <every page you went through: kept or dropped, why, and for kept pages the two frames that prove the bar>
+Searches run: <each reference search, where it ran, exact or family, and which picks came from it>
+References opened: <every page you went through: kept or dropped, why, and for kept pages the two frames or parts that prove the bar>
 
 | | V1 · Name | V2 · Name | V3 · Name |
 | Concept | | | |
-| Hero (its full-screen moving scene, how client photos are treated or what's made in code, headline, short line, button, and how they deliver the Core) | | | |
+| Hero (its visual idea, how client photos are treated or what's made in code, the words and what else is on the first screen, and how it delivers the Core) | | | |
 | Signature moment (how it works, and the kit effect it's built with) | | | |
 | Client's object through the site (intro, transitions, image frames, details) | | | |
 | Motion plan (opening, motion graphic per section, alive at rest, page change) | | | |

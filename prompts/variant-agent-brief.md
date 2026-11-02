@@ -16,7 +16,7 @@ a fast, plain result is a failed one.
 - Yours alone, shared with no other variant: story spine {{section order}}; signature moment {{the one scroll
   set-piece}}; business tool {{finder, picker, dial or quote builder}}; basket name {{or none}}; header {{its own
   shape}}; type pair {{fonts}}; palette {{from the client's world}}.
-- Hero: {{its one visual, headline, short line and button, from your column of `PITCH.md`}}.
+- Hero: {{its visual idea, words and anything else on the first screen, from your column of `PITCH.md`}}.
 - Reference: {{URLs and the part to take from each, or "taste-skill direction: <name>"}}. What I saw at a glance:
   {{2-4 lines: header, hero, signature sections, motion}}.
 - Direction for {{CLIENT}}: {{one line idea}}. {{How the reference's components map to the client: which
@@ -25,10 +25,9 @@ a fast, plain result is a failed one.
 - Facts: {{3-5 lines: what the business sells, where, proof (reviews, certificates), how people order}}.
 
 ## Four rules that beat your concept
-1. **The hero delivers the business core and stays clean.** Follow "The hero" in `taste.md`: below the header, one
-   full-screen moving scene, one headline, one short line and one main button, about 15–25 words, saying what this
-   business is, what it sells and who it's for. The opening must land there, never hide or delay it. Everything else
-   starts below.
+1. **The hero delivers the business core and stays clean.** Follow "The hero" in `taste.md`: it says what this business
+   is, what it sells and who it's for, in a clean, attractive and creative first screen with no heavy text. A title with
+   some photos is never enough. The opening must land there, never hide or delay it.
 2. **The whole page matches the hero and its reference.** Take what gives the reference its impact (scale, imagery,
    colour, composition), not just a small effect. Design the sections below at the same level, and treat their images the
    same way as the hero's. Don't fall back on cards and text on a plain background.
@@ -83,7 +82,7 @@ In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md` and `content/OPEN-QUES
 - **Lean workflow:** no gates, plans, reports, TDD, fixtures or docs files. Don't use the unlazy skill or the superpowers
   planning, TDD, verification or worktree skills.
 - **Before you finish:** run `check-pages.cjs --phone --header <your header height>` at both sizes on the home page and each
-  inner page, and fix what looks off. Count what's on your first screen against the hero rule. Run `contact-sheet.cjs` on
+  inner page, and fix what looks off. Check your first screen against "The hero" in `taste.md`. Run `contact-sheet.cjs` on
   your site and its lead reference and compare them side by side: if your hero or any section looks weaker, fix it. Check
   the printed fonts against "Type" in `taste.md`. Grep the site for reference names and banned words.
 
