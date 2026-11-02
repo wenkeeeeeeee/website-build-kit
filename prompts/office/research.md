@@ -44,36 +44,52 @@ the user's message, and its notes beat these defaults.
 3. **References (4 minutes).** Weak references are the costliest mistake here. **Never pick from a thumbnail, title,
    snippet or library description: open the page and go through it first.**
 
+   **The bar: modern, attractive, and full of animation and motion graphics.** Fitting the client's category never makes
+   up for missing this. A reference passes only if its sheet shows:
+   - **A changing world:** something big assembles, transforms, floods the screen or takes over, rather than text and
+     photos sliding up.
+   - **Motion that fills the screen and carries the content.** A thin line or small decoration doesn't count.
+   - **Real visual impact:** a site you'd remember and want to show someone.
+
+   Name two frames in its sheet that prove this. If you can't, drop it, however well it fits.
+
+   **These fail, even in the right category:** cream or beige with a serif and thin lines; calm spa colours; stacks of text
+   and photos; loud colours or giant type with only fades behind them; device mockups on a plain backdrop; ordinary local
+   business sites. A gallery listing proves nothing, so the bar still applies to anything from Awwwards.
+
    **If the user pasted references:** run `node KIT/tools/web/contact-sheet.cjs <all reference urls> --out PROJECT/references
    --steps 8` once, go through every sheet, and write what to take from each. If one is blocked, use web fetch for its
    description. Don't search for others.
 
    **Otherwise, always search the galleries, even if the library has something close:**
-   1. Find the client's family under "Design families" in `site-types.md`. Designs travel between categories that sell the
-      same way, so a great eyewear site beats a weak purse site for a purse shop. Search one exact term and one family
-      term per variant, such as "handbag shop website" and "luxury eyewear website".
-   2. Run `node KIT/tools/web/gallery-scan.cjs "<terms>" "<terms>" ... --out PROJECT/references/scan` (about 15 seconds).
-      Look at the images and note the promising projects. It prints each project's URL.
-   3. Awwwards blocks browsers, but it's the main source of live references. Run WebSearch for
-      `site:awwwards.com/sites <terms>`, 1–2 searches per variant with family terms too, then find the live site each good
-      result describes. `/inspiration/` element pages surface niche motifs when `/sites` has none.
-   4. Read `reference-library.md` for anything proven. An entry is only a lead, so open it like the rest.
-   5. Open a shortlist of 6–8 at once, including the best Behance and Dribbble projects:
+   1. **Search for motion first.** Category words alone find plain sites, so put a motion term in every search: scroll
+      animation, WebGL, 3D, immersive, interactive storytelling. Run WebSearch for `site:awwwards.com/inspiration <motion term>`
+      and `site:awwwards.com/sites <motion term> <family term>`, 1–2 per variant, then find the live site each good result
+      describes. Awwwards blocks browsers, so don't open it directly. FWA and CSS Design Awards winners are worth a search too.
+   2. Add the client's family from "Design families" in `site-types.md`, because designs travel between categories that
+      sell the same way.
+   3. Read `reference-library.md`, starting with "Benchmarks" and "Rejected". An entry is only a lead, so open it like the
+      rest.
+   4. Run `node KIT/tools/web/gallery-scan.cjs "<terms>" "<terms>" ... --out PROJECT/references/scan` (about 15 seconds) for
+      Behance and Dribbble parts. It prints each project's URL.
+   5. Open a shortlist of 6–8 at once:
       `node KIT/tools/web/contact-sheet.cjs <urls> --out PROJECT/references --steps 8` (about 2 minutes, one sheet per page).
       Go through every sheet top to bottom. A cookie wall, loader, black page or repeated frame doesn't count as opened,
       so drop that page.
-   6. Keep a page only if the whole page holds up, it shows a real website rather than a logo or one mock screen, and you
-      can name the exact part to take and why it suits this client. Good styling for the wrong business is not a reference.
-   7. If fewer than 3 survive, run one more round of family searches and open up to 4 more. Then go with what you have
-      and note the gap.
+   6. Keep a page only if it passes the bar, the whole page holds up, and you can name the exact moving part to take and how
+      it would tell this client's story. Any category is fine. Take its motion and craft, not its subject: the finished
+      site still looks like the client's own business.
+   7. **If fewer than 3 pass, or what you have is weak, explore other categories instead of lowering the bar.** Look for any
+      strong site with a similar object, feeling or job. A physio could learn from sports, cars, medical devices, biotech,
+      fashion or product launches. Keep going until the 8-minute limit, then use what passes and note the gap.
 
    **What to end with:**
    - **3 to 6 references in total,** never padded. Every variant gets at least one. They're sources to take from, not
      sites to copy: one can give a hero and another a layout, and one can feed two variants.
    - **At least half are new finds from this run,** not from the library. If you're short, keep searching until the
      8-minute limit rather than noting the gap early.
-   - **Every variant has at least one live site with motion worth taking,** because stills can't show how a page moves.
-     One live site can serve two variants if it truly suits both. Note any gap.
+   - **Every variant is led by a live site that passes the bar,** because stills can't show how a page moves. One live site
+     can lead two variants if it truly suits both. A Behance or Dribbble still can only add a specific part beside it.
    - Rewrite each rough concept around what its references really do, and add your picks to `reference-library.md` under
      "To try".
 4. **Write `PROJECT/docs/PITCH.md`** in the format below, and add anything unknown to `PROJECT/content/OPEN-QUESTIONS.md`.
@@ -126,7 +142,7 @@ Screen: 1920x870 at 125% zoom (about 1536x700), unless LEAD.md says otherwise
 Images: <file: what it shows, sharp enough for full width or not, and its source if not the client's own page>
 Sources read: <each client link and Google search, and what it gave or why it was blocked>
 Searches run: <each Behance, Dribbble and Awwwards search, exact or family, and which picks came from it>
-References opened: <every page you went through: kept or dropped, and why, in one line each>
+References opened: <every page you went through: kept or dropped, why, and for kept pages the two frames that prove the bar>
 
 | | V1 · Name | V2 · Name | V3 · Name |
 | Concept | | | |

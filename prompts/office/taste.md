@@ -30,7 +30,8 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   real footage leading. Logo motifs stay small details. Red with gold and brush calligraphy reads as festive for
   Chinese clients, so avoid it unless the client is festive.
 - **Basic and plain.** Sections with only a heading, a paragraph and a picture. Empty-looking panels. A plain footer.
-  Pages whose only motion is fade-ins.
+  Pages whose only motion is fade-ins. The right context doesn't excuse this, in a site or in a reference: the user
+  wants modern, attractive, full of animation and motion graphics.
 - **Messy layering.** Words over busy images, accidental overlaps, things sliding under the sticky header. Overlap must
   look deliberate.
 - **Sections with no clear purpose.** If you can't say what a section delivers, cut or rebuild it.

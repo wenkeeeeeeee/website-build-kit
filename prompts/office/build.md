@@ -48,8 +48,8 @@ between steps unless something is blocked. Short updates only.
   and reply with the live link.
 - If previews stop loading, restart the server: background commands end after 2 hours.
 - If the client rejects a whole round, don't rebuild yet. Ask the user questions first.
-- **An extra variant, even from the user's own idea, gets references too.** Search and open real sites first, then name
-  what to take from each. Never brief a Builder with no outside reference.
+- **An extra variant, even from the user's own idea, gets references too.** Search and open real sites first, using the
+  bar in step 3 of `research.md`, then name what to take from each. Never brief a Builder with no outside reference.
 - **When the user rejects something or repeats a correction,** add the lesson to `taste.md` or
   `KIT/prompts/website-playbook.md` straight away, in general terms with no client names, and push it if you can. Don't
   wait for "wrap up", because the next client shouldn't hit the same problem.

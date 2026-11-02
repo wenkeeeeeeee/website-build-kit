@@ -38,6 +38,7 @@ Starting points only. The concept in `PITCH.md` wins.
 - **One beautiful object:** it turns, opens or comes apart in 3D, with parts named as they separate.
 - **Packs and jars:** packs fly, stack and burst into their ingredients, and the screen changes colour per flavour.
 - **Solves a problem:** an animated diagram plays how the problem happens and how the product answers it.
+- **Body and movement:** a 3D or line-drawn body moves as you scroll, with joints and muscles named as they work.
 - **A place to visit:** the room opens as you enter, light moves from day to night, a route traces to the door.
 - **Work worth showing:** work arrives through the client's own shapes, and projects hand over with shared-element moves.
 - **Trust and expertise:** real numbers count, charts and process diagrams draw themselves. Precise and calm.

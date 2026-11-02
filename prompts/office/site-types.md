@@ -40,9 +40,12 @@ Research picks one before any reference search. The type decides what the first 
 Whatever the type, the same rules apply: one concept per variant, and the checks in `taste.md`.
 
 ## Design families
-Categories that sell the same way can share references, so search the family as well as the exact category. When the
-exact category has nothing good, the family is where the references come from. Clients that fit none of these go with
-whichever family matches how the page must sell. Add a family when a new one proves useful.
+Categories that sell the same way can share references, so search the family as well as the exact category. Clients
+that fit none of these go with whichever family matches how the page must sell. Add a family when a new one proves
+useful.
+
+The terms below are starting points. Add a motion term to each one, because category words alone find plain sites. If
+the family is weak too, explore other categories, as step 3 of `research.md` says.
 
 - **One beautiful object:** bags, eyewear, watches, jewellery, shoes, perfume, audio, furniture. The product is the star,
   with close-ups, materials and craft. Search: luxury eyewear website, jewellery website, watch brand, fashion
@@ -51,6 +54,8 @@ whichever family matches how the page must sell. Add a family when a new one pro
   Search: beverage brand website, food packaging ecommerce, snack brand, consumer brand landing page.
 - **Solves a problem:** skincare, hair, supplements, dental, pain relief, cleaning. Problem, proof, how it works. Search:
   skincare brand website, wellness ecommerce, health product landing page.
+- **Body and movement:** physiotherapy, pilates, yoga, gyms, sports. The body in motion, not a calm studio. Search: 3D
+  anatomy website, sports performance website, athletic brand website, medical device website, biotech website.
 - **A place to visit:** restaurants, cafés, bars, hotels, spas, salons, gyms, clinics, photo studios. Sells the room and
   the visit. Search: boutique hotel website, hospitality website, restaurant website, spa website.
 - **Work worth showing:** event styling, florists, weddings, interiors, architecture, photography, tattoo, set design.
