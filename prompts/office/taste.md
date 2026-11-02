@@ -12,6 +12,8 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   main button, about 15–25 words in all. A quiet second link is fine.
 - **The main visual is a full-screen moving scene.** Never a photo in a box, a row of small photos, a split screen of
   text and photo, or thin lines over a photo.
+- **Low-resolution film:** a phone reel is often sharper than a wide clip. Cut the person out with `rembg`, crop at the
+  thigh or above so burned-in captions go, and put the soft film behind them or inside giant type.
 - **Make the visual, don't just place it.** Client photos are rarely strong enough as they are. Cut the people out, grade
   them heavily, scale them up and set them on bold colour. If a photo can't hold the screen, build the visual in code: a
   3D or drawn form, or giant moving type. Never stretch a soft photo.
@@ -45,6 +47,19 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **Messy layering.** Words over busy images, accidental overlaps, things sliding under the sticky header. Overlap must
   look deliberate.
 - **Sections with no clear purpose.** If you can't say what a section delivers, cut or rebuild it.
+- **The same thing twice.** One idea appears once on a page. A list shown in the hero and again below, a second film straight
+  after a film hero, or a tool that repeats another section's job reads as filler. Mixing components between variants
+  adds to this unless something is removed for each one added. Too many videos look messy: three on a home page at most,
+  one playing at a time, and one player whose tabs swap the clip rather than a clip per person.
+- **Too many words, and too few.** Both came back as rejections. Paragraphs in every section fail, and so does a page cut
+  down to headlines. Each section gets a heading, a line or two of real facts, and one thing to do.
+- **A picture with no context.** No full-screen image without a heading or caption saying what it is. Show the subject
+  whole, not a zoomed crop.
+- **Controls that are only controls.** A dial or tab a visitor nudges to reveal text is dull. An interaction should be a
+  physical act from the client's world, with a big visible result, and every section needs a real one.
+- **Text left half faded.** Nothing tied to scroll position may dim the page or a line, because a visitor can stop there.
+  Lines wipe or mask in at full brightness, page-wide dips run on a timer, and a cursor light never leaves the main
+  subject or headline in the dark. Check rendered screenshots: an element can report full opacity and still look dim.
 - **Inner pages weaker than the home page.** Every tab gets the same components and motion.
 - **A changed logo.** Use the original. Don't redraw, outline or restyle it.
 - **Invented words.** No slogan, claim or theme that isn't in the client's own material.
