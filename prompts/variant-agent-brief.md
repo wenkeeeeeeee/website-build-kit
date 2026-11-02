@@ -24,14 +24,18 @@ a fast, plain result is a failed one.
   Fit the layout and components to the client rather than reproducing the reference.
 - Facts: {{3-5 lines: what the business sells, where, proof (reviews, certificates), how people order}}.
 
-## Three rules that beat your concept
-1. **The hero delivers the business core and stays clean.** Follow "The hero" in `taste.md`: below the header, one main
-   visual, one headline, one short line and one main button, about 15–25 words, saying what this business is, what it
-   sells and who it's for. The opening must land there, never hide or delay it. Everything else starts below.
-2. **This variant carries the whole business, as every other variant does.** Every product or service with its price,
+## Four rules that beat your concept
+1. **The hero delivers the business core and stays clean.** Follow "The hero" in `taste.md`: below the header, one
+   full-screen moving scene, one headline, one short line and one main button, about 15–25 words, saying what this
+   business is, what it sells and who it's for. The opening must land there, never hide or delay it. Everything else
+   starts below.
+2. **The whole page matches the hero and its reference.** Take what gives the reference its impact (scale, imagery,
+   colour, composition), not just a small effect. Design the sections below at the same level, and treat their images the
+   same way as the hero's. Don't fall back on cards and text on a plain background.
+3. **This variant carries the whole business, as every other variant does.** Every product or service with its price,
    every page in `PITCH.md`, and all the proof, offers, questions, locations and ways to order or book. Your concept
    changes how it's told, never how much. If something doesn't fit the home page story, give it a designed inner page.
-3. **Every line is specific to this client.** Write from `PITCH.md`, in the customer's words, and place all of "Must
+4. **Every line is specific to this client.** Write from `PITCH.md`, in the customer's words, and place all of "Must
    say" across the page: their problem by name, how this works, real proof, what it costs, how to start. If a line could
    sit on a competitor's site, rewrite it with this client's facts.
 
@@ -79,8 +83,9 @@ In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md` and `content/OPEN-QUES
 - **Lean workflow:** no gates, plans, reports, TDD, fixtures or docs files. Don't use the unlazy skill or the superpowers
   planning, TDD, verification or worktree skills.
 - **Before you finish:** run `check-pages.cjs --phone --header <your header height>` at both sizes on the home page and each
-  inner page, and fix what looks off. Count what's on your first screen against the hero rule. Grep the site for reference
-  names and banned words.
+  inner page, and fix what looks off. Count what's on your first screen against the hero rule. Run `contact-sheet.cjs` on
+  your site and its lead reference and compare them side by side: if your hero or any section looks weaker, fix it. Check
+  the printed fonts against "Type" in `taste.md`. Grep the site for reference names and banned words.
 
 ## Report back (under 200 words)
 Folder and URL; the concept in 3-4 lines; which reference components you adapted and how; the opening, set-piece and

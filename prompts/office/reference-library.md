@@ -18,6 +18,7 @@ craft, not the subject.
 | https://bar-topas.ch/ | Loud colour-stripe intro, giant type, food flying through full-colour sections |
 | https://en.masahiromaruyama.com/step | The camera climbs a spiral through floating people and shapes |
 | https://www.brightbiotech.co.uk/ | Health science: a plant becomes a bottle, in full-screen colour. Awwwards Site of the Day |
+| https://21tsi.com/ | Sport: huge cinematic bodies fill the screen with bold colour and giant type. Its thin rings are only a detail |
 
 ## Rejected
 Don't use these or anything like them.
@@ -28,6 +29,7 @@ Don't use these or anything like them.
 | https://www.behance.net/gallery/245261445/Studio-Soma-Yoga-Pilates | Static mockups in calm beige and sage |
 | https://www.behance.net/gallery/256512367/Kinera-Physiotherapy-Clinic-Website | Static mockups of an ordinary clinic template |
 | https://cascaidhealth.com/ | Listed on Awwwards, yet it's a calm serif layout: a listing proves nothing |
+| https://www.motionclinic.com.ar/ | One hero effect, then dark text and doctor photos. One strong screen isn't a strong site |
 
 ## Used so far
 | URL | Kind | Fits | Strongest for | Result |

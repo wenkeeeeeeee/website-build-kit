@@ -8,17 +8,27 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **The core comes first.** Within a few seconds a visitor knows what this business is, what it sells and who it's for,
   in the customer's words. Use the Core line in `PITCH.md`. A clever idea, story or mood that leaves them guessing has
   failed, however good it looks.
-- **Four things only.** Below the header, the first screen holds one main visual of the real business, one headline,
-  one short line and one main button, about 15–25 words in all. A quiet second link is fine.
+- **Four things only.** Below the header, the first screen holds one main visual, one headline, one short line and one
+  main button, about 15–25 words in all. A quiet second link is fine.
+- **The main visual is a full-screen moving scene.** Never a photo in a box, a row of small photos, a split screen of
+  text and photo, or thin lines over a photo.
+- **Make the visual, don't just place it.** Client photos are rarely strong enough as they are. Cut the people out, grade
+  them heavily, scale them up and set them on bold colour. If a photo can't hold the screen, build the visual in code: a
+  3D or drawn form, or giant moving type. Never stretch a soft photo.
 - **Everything else starts below it:** stats, badges, review chips, tickers, tags, extra photos, floating cards, hours,
   addresses and labels. They still go on the page, just not here.
 - **One idea, one big movement.** The client's object or the opening is the main visual, never another layer on top.
 - **Clean isn't empty.** A full-screen photo with no headline fails too. The four things must still deliver the core.
 - **A busy reference doesn't change this.** Take its idea, not its clutter.
-- **Test it:** count what's on the first screen and remove anything past the four. Then ask whether a stranger could say
-  what is sold here.
+- **Test it:** count what's on the first screen and remove anything past the four. Ask whether a stranger could say what
+  is sold here. Then put it beside its lead reference: if it doesn't belong there, redo it.
 
 ## Rejected on sight
+- **A body that doesn't match the hero.** The hero sets the level for the whole site. If the sections below drop to cards
+  and text on a plain background, the site has failed. Every section keeps the hero's scale, image treatment, colour, type
+  and motion, on inner pages too.
+- **Copying a reference's details and missing its impact.** Thin lines or small effects carried over without the
+  reference's scale, imagery and colour don't count. Take what makes it striking first.
 - **Variants that look alike.** The same template in different colours is the most repeated complaint. Shared headers,
   hero layouts and section orders count.
 - **A good idea with no context.** The page must sound like it knows the business. A site for a skin condition talks

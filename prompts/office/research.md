@@ -76,9 +76,10 @@ the user's message, and its notes beat these defaults.
       `node KIT/tools/web/contact-sheet.cjs <urls> --out PROJECT/references --steps 8` (about 2 minutes, one sheet per page).
       Go through every sheet top to bottom. A cookie wall, loader, black page or repeated frame doesn't count as opened,
       so drop that page.
-   6. Keep a page only if it passes the bar, the whole page holds up, and you can name the exact moving part to take and how
-      it would tell this client's story. Any category is fine. Take its motion and craft, not its subject: the finished
-      site still looks like the client's own business.
+   6. Keep a page only if it passes the bar across the whole page, not just one hero effect: most frames must clear it. Name
+      what gives it impact (scale, imagery, colour, composition), then the moving part to take, and how both would tell this
+      client's story. Any category is fine. Take its impact and craft, not its subject: the finished site still looks like
+      the client's own business.
    7. **If fewer than 3 pass, or what you have is weak, explore other categories instead of lowering the bar.** Look for any
       strong site with a similar object, feeling or job. A physio could learn from sports, cars, medical devices, biotech,
       fashion or product launches. Keep going until the 8-minute limit, then use what passes and note the gap.
@@ -146,7 +147,7 @@ References opened: <every page you went through: kept or dropped, why, and for k
 
 | | V1 · Name | V2 · Name | V3 · Name |
 | Concept | | | |
-| Hero (its one visual, headline, short line and button, and how they deliver the Core) | | | |
+| Hero (its full-screen moving scene, how client photos are treated or what's made in code, headline, short line, button, and how they deliver the Core) | | | |
 | Signature moment (how it works, and the kit effect it's built with) | | | |
 | Client's object through the site (intro, transitions, image frames, details) | | | |
 | Motion plan (opening, motion graphic per section, alive at rest, page change) | | | |
@@ -155,5 +156,5 @@ References opened: <every page you went through: kept or dropped, why, and for k
 | Header | | | |
 | Type pair (each font, where it comes from, and what in the client's world it answers to) | | | |
 | Palette | | | |
-| References (URL and sheet file: which part to take and why it suits this client, one or more per variant) | | | |
+| References (URL and sheet file: what gives it impact, the part to take, and why it suits this client, one or more per variant) | | | |
 ```

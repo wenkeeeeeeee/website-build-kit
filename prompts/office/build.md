@@ -25,9 +25,12 @@ between steps unless something is blocked. Short updates only.
    - Run `check-pages.cjs` once on each variant's home page, click through to one inner page, and grep for reference names.
    - **Hero:** check each first screen against "The hero" in `taste.md`. It must deliver the Core line in `PITCH.md`, and
      anything past the four allowed things moves below it.
+   - **Level:** run `contact-sheet.cjs` on each variant and its lead reference, and go through both. If a hero, or the body
+     below it, looks clearly weaker than the reference, send it back to be fixed.
+   - **Fonts:** compare the fonts it prints against "Type" in `taste.md`, and replace any banned one.
    - **Coverage:** compare the variants against `content/` and `PITCH.md`, and add anything one left out, so all cover the
      same products, prices, pages, proof and ways to order.
-   - Beyond that, fix only what's broken, such as errors, dead links and missing images. Design review is the user's job.
+   - Beyond that, fix only what's broken, such as errors, dead links and missing images.
 7. **Publish (3 minutes).** Follow section 7 of the playbook. `SLUG` is the client's name in lowercase with hyphens, and
    `REPO` is `WebsiteProjects/SLUG-website`.
    - If `gh repo view <owner>/SLUG-website` finds a repo, clone or reuse it, and it keeps its Vercel project. Otherwise

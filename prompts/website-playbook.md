@@ -150,6 +150,9 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you're u
 ## 5. Images
 - No new photography: use the client's images, generated images (`content/generated/`) and clean cut-outs.
 - Use real photos for rooms, staff and equipment, and generated images for mood.
+- **Treat weak client photos before use.** Phone photos can't sit beside cinematic references as they are. Cut the people
+  out, apply one strong grade across the site, scale them up and set them on bold colour. Keep this treatment in every
+  section, not just the hero.
 - Check client photos for third-party watermarks, and crop or skip them. Packs showing a supplier's brand must not be the
   hero subject.
 - `cutout.py shadow` removes studio shadows. Always review on a coloured background (`cutout.py sheet`). Pale or grey
