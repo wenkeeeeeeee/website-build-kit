@@ -210,5 +210,8 @@ choreographed, so a screenshot or frame counter won't show it.
   in `og:title`. Collab posts by bloggers often carry the best facts (percentages, origin, stockists).
 - Facebook, Instagram and TikTok pages are login-walled, but headless Chrome still gets the bio text. Linktree pages
   often lead to the real menu or catalogue; menus made on Canva sites (`*.my.canva.site`) have high-res page images.
+- When the client's links run out, Google and Google Images can fill the gap: Maps listings, press, blogs and reviews
+  often show the room, products and prices. Check each result is the same business, because names repeat, and mark
+  images from someone else's page `[client to confirm]`.
 - Sources often disagree (opening hours, prices): pick the most recent, mark it `[client to confirm]`.
 - If the marketplace shop lists no items, make WhatsApp the main checkout and link the shop second.

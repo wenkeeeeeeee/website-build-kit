@@ -8,7 +8,7 @@ Nobody is watching, so never ask anything. Work alone with no subagents. Run `da
 step. **At 8 minutes, stop gathering and write `PITCH.md` with what you have.** Decide quickly and don't polish.
 
 Quick is the goal, but shallow is a failure. Under 4 minutes usually means you skipped something, so use the time you
-have. Work only from this lead's links and what they lead to. Don't read other folders in `WebsiteProjects`, and don't
+have. Start from this lead's links and what they lead to, then Google as step 1 says. Don't read other folders in `WebsiteProjects`, and don't
 use memories or anything you know from past work: re-check every fact at its source.
 
 **The usual lead is just a client name and links to their business.** Finding references is your job, so search the
@@ -34,6 +34,12 @@ brand's site) is one. Those are decisions: build one variant per reference, and 
    spare time on those three, up to the 8-minute limit: don't finish early with them missing. Menus are often the best
    source of both prices and sharp photos. A Canva site (`*.my.canva.site`) needs a real browser: wait 8 seconds, scroll
    to the end, then collect the image URLs from the page and open one or two to read the prices.
+
+   **If the client's links still leave context or images short, go to Google.** Search the business name with its town,
+   in each language it uses, then look through Google Images in real Chrome. Maps listings, press, blogs and reviews
+   often hold the room, the people, the products and the prices. Names repeat, so check each result really is this
+   business before using it. Note where each found image came from, and mark any taken from someone else's page
+   `[client to confirm]`, because using it needs permission.
 2. **Decide (1 minute).** Read `KIT/prompts/office/site-types.md`, the "What the approved sites do" part of `taste.md`,
    `KIT/prompts/office/motion.md`, and the effects list in `KIT/tools/web/README.md`. Pick the site type. If the evidence honestly points two ways, split the variants across two types.
    Write one rough concept per variant, and finish them once you've been through the references in step 3, so each is
@@ -118,8 +124,8 @@ Rules: <names to avoid, claims not to make, photo traps>. Unknowns show as [clie
 Pages: <the pages for this site type, from site-types.md>
 Ordering: <basket to WhatsApp or marketplace, quote form, booking or none, and what the basket is called>
 Screen: 1920x870 at 125% zoom (about 1536x700), unless LEAD.md says otherwise
-Images: <file: what it shows, sharp enough for full width or not>
-Sources read: <each client link, and what it gave or why it was blocked>
+Images: <file: what it shows, sharp enough for full width or not, and its source if not the client's own page>
+Sources read: <each client link and Google search, and what it gave or why it was blocked>
 Searches run: <each Behance, Dribbble and Awwwards search, exact or family, and which picks came from it>
 References opened: <every page you went through: kept or dropped, and why, in one line each>
 
