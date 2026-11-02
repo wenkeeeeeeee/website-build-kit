@@ -24,6 +24,6 @@ How and when to use them: `prompts/website-playbook.md`.
 
 `npm install` here also brings GSAP with its plugins, Lenis and three.js, for the motion in `prompts/office/motion.md`.
 
-Needs: Python 3 with Pillow and numpy (`cutout.py`), ffmpeg and ffprobe on PATH (`film.py`), Node with Playwright
+Needs: Python 3 with Pillow and numpy (`cutout.py`), ffmpeg and ffprobe on PATH (`film.py`), `yt-dlp` for client reels, Node with Playwright
 for `check-pages.cjs` (`npm i -D playwright` in `tools/web` or the project; it falls back to the installed Chrome
 when Playwright's own browser is not installed).

@@ -16,6 +16,9 @@ counts as good. When a brief and this file disagree, the brief wins only if the 
 - **Sections with no clear purpose.** If you can't say what a section is delivering, cut or rebuild it.
 - **Inner pages weaker than the home page.** Every tab gets the same components and motion as the home page.
 - **Missing client content.** If the client has a catalogue, recipes, gifts or awards, the site has them too.
+- **The wrong category.** A bar must look like a bar at night, and a clinic like a clinic. Show the category first, with
+  real footage leading. Motifs from a logo stay small details. Red with gold and brush calligraphy reads as festive for
+  Chinese clients, so avoid it unless the client is festive.
 - **Variants at different levels of completeness.** Every variant carries the whole business. They differ in design and
   story, never in how much of the client they cover, so one must not be a full site while another is a thin concept.
 - **A changed logo.** Use the original. Don't redraw, outline or restyle it.

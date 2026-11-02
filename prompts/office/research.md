@@ -4,6 +4,8 @@ You have **10 minutes** for this lead. A person does this job in 5–10 minutes,
 Your task message gives `CLIENT`, `PROJECT` (its folder), `KIT` (this repo), `PORT`, `FRONT_DESK` (a thread id) and
 `ZERILAB_PROJECT_ID`. `PROJECT/docs/LEAD.md` holds the user's message: its notes beat these defaults.
 
+Run `git -C KIT pull --ff-only` first, and carry on with the copy you have if that fails.
+
 Nobody is watching, so never ask anything. Work alone with no subagents. Run `date +%s` now, and again after each
 step. **At 8 minutes, stop gathering and write `PITCH.md` with what you have.** Decide quickly and don't polish.
 
@@ -35,10 +37,12 @@ brand's site) is one. Those are decisions: build one variant per reference, and 
    source of both prices and sharp photos. A Canva site (`*.my.canva.site`) needs a real browser: wait 8 seconds, scroll
    to the end, then collect the image URLs from the page and open one or two to read the prices.
 
-   **If the client's links still leave context or images short, go to Google.** Search the business name with its town,
-   in each language it uses, then look through Google Images in real Chrome. Maps listings, press, blogs and reviews
-   often hold the room, the people, the products and the prices. Names repeat, so check each result really is this
-   business before using it. Note where each found image came from, and mark any taken from someone else's page
+   **Then always search beyond the client's links, before any concept.** Search Google and look through Google Images
+   in real Chrome for the business name with its town, in each language it uses. Pull its Instagram and TikTok reels with
+   sound using `yt-dlp`, and check its Linktree, Maps listing, mall directory, press, blogs and reviews. These often hold
+   the real room, people, menu and prices. Never write "not found" for photos, video or a menu until these are done.
+   Where sources disagree, the client's own menu and posts beat snippets from elsewhere. Names repeat, so check each
+   result really is this business. Note where each found image came from, and mark any taken from someone else's page
    `[client to confirm]`, because using it needs permission.
 2. **Decide (1 minute).** Read `KIT/prompts/office/site-types.md`, the "What the approved sites do" and "Type" parts of `taste.md`,
    `KIT/prompts/office/motion.md`, and the effects list in `KIT/tools/web/README.md`. Pick the site type. If the evidence honestly points two ways, split the variants across two types.
@@ -73,7 +77,9 @@ brand's site) is one. Those are decisions: build one variant per reference, and 
      at least one. They are sources to take from, not sites to copy: one reference can give a variant its hero, another
      its section layout or motion, and one reference can feed two variants. Then rewrite each rough concept around what
      its references really do.
-     - **At least half must be new finds from this run**, not from the library.
+     - **At least half must be new finds from this run**, not from the library. If you're short, keep searching until
+       the 8-minute limit rather than noting the gap early. Awwwards `/inspiration/` element pages surface niche motifs
+       when `/sites` has none.
      - **Every variant needs at least one live site with motion worth taking**, because stills can't show how a page
        moves. One live site can serve two variants if it truly suits both, and note any gap.
      - Add your picks to `reference-library.md` under "To try".
@@ -101,8 +107,11 @@ ritual from this client's world, and it must carry the customer's problem or des
 hero" and "Every room is a magazine cover" are concepts. "Dark and elegant" is not. If a competitor could use the
 sentence, it is too generic. No two variants may share a structure, header, type pair or palette.
 
+Design from what the real place looks like, with real footage and photos leading, not from the logo or poster colours.
+
 Then say how that object carries the rest of the site: the intro, the transitions between sections, the image frames
-and the small details. Every variant needs this, not just one. Then plan its motion from `motion.md`, naming real
+and the small details. Every variant needs this, not just one. Test it: if a section still works with the object
+deleted, the object is decoration and the section is still a template. Then plan its motion from `motion.md`, naming real
 content: what the opening does, and which motion graphic each section gets.
 
 ## `PITCH.md` format
