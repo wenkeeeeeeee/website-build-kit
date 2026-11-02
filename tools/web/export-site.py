@@ -47,6 +47,9 @@ for name in os.listdir(OUT):
         continue
     p = os.path.join(OUT, name)
     shutil.rmtree(p) if os.path.isdir(p) else os.remove(p)
+# The repo keeps the brief and open questions, but they must never go live.
+with open(os.path.join(OUT, '.vercelignore'), 'w', encoding='utf-8', newline='\n') as f:
+    f.write('docs\ncontent/*.md\nREADME.md\n')
 for k in keep:
     src, dst = os.path.join(ROOT, k), os.path.join(OUT, k)
     if not os.path.exists(src):

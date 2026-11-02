@@ -7,22 +7,43 @@ Briefs like this have built three or more full variants in 20-45 minutes, all pa
 
 You are building one new website variant for {{CLIENT}}, adapting the design language of a reference.
 Other agents are building other variants in parallel in sibling folders, so stay strictly inside your own folder.
+You have **30 minutes**. Run `date +%s` now, and at 25 minutes stop adding and start checking. Spend the time on craft:
+the user judges this against sites that took hours by hand, so a fast, plain result is a failed one.
 
 ## Your variant
 - Folder: `{{PROJECT ROOT}}/variants/{{nn-name}}/` (site in `site/`, your reference captures in `ref/`).
 - Concept: {{one sentence: what in this business is the hero made of? Not a style word.}}
-- Reference: {{URL, or "taste-skill direction: <name>"}}. What I saw at a glance: {{2-4 lines: header, hero,
-  signature sections, motion}}. Study it properly yourself (all sections, motion, components) before designing.
+- Own to this variant, shared with no other: story spine {{section order}}; signature moment {{the one scroll
+  set-piece}}; business tool {{finder, picker, dial or quote builder}}; basket name {{or none}}; header {{its own
+  shape}}; type pair {{fonts}}; palette {{from the client's world}}.
+- Reference: {{URLs and the part to take from each, or "taste-skill direction: <name>"}}. What I saw at a glance:
+  {{2-4 lines: header, hero, signature sections, motion}}.
 - Direction for {{CLIENT}}: {{one line idea}}. {{How the reference's components map to the client: which
   products/sections, which colours (from the client's own world, not the reference's), what to avoid}}.
   Change the layout and components to fit the client rather than reproducing the reference.
+- **The first screen says who this is for and what it solves, in the customer's words.** Write every section from
+  `PITCH.md` and use all of "Must say": their problem by name, how this works, real proof, what it costs, how to start.
+  If a line could sit on a competitor's site, rewrite it with this client's facts.
 
 ## Project context (read first)
-- Project root: `{{PROJECT ROOT}}`. Read `docs/BRIEF.md`, `docs/BRAND-INSIGHTS.md`, `content/copy.md`,
-  `content/OPEN-QUESTIONS.md`.
+- Project root: `{{PROJECT ROOT}}`, kit: `{{KIT}}`. Read `docs/PITCH.md`, `content/copy.md`,
+  `content/OPEN-QUESTIONS.md`, `{{KIT}}/prompts/office/taste.md`, `{{KIT}}/prompts/office/motion.md`, and sections 3 and 4
+  of `{{KIT}}/prompts/website-playbook.md`.
 - {{3-5 lines of facts: what the business sells, where, proof (reviews, certificates), how people order}}.
 
 ## How to build
+0. **Before designing anything:**
+   - **Go through every reference.** Run `node {{KIT}}/tools/web/contact-sheet.cjs <urls> --out ref --steps 24` from your
+     variant folder and look at every frame, top to bottom. For live sites, also save the page's HTML, CSS and JS into
+     `ref/source/` and read how the motion is really built: its easing, durations, pinning and how sections hand over.
+     If a sheet shows a wall, loader or black page, use the one research saved in `{{PROJECT ROOT}}/references/`.
+   - **Use the skills.** Load `taste-skill` and `frontend-design` now, `image-to-code` when a reference is a still image,
+     and `impeccable` for a polish pass on the home page at the end. If a name isn't listed for you, read
+     `{{KIT}}/.claude/skills/<name>/SKILL.md` instead. This brief's concept, palette and fonts beat any direction a skill
+     suggests.
+   - **Choose your kit effect.** Build the signature moment with what `{{KIT}}/tools/web/` already has, as `PITCH.md`
+     names it (`scrub.js`, `prologue.js`, `stair.js`, `hotspots.js`, `film-control.js`, and `gl-guard.js` for any WebGL),
+     rather than writing your own. The libraries for everything else are in `{{PROJECT ROOT}}/variants/_shared/vendor/`.
 1. Start from the plumbing in `{{BASE}}` (the project's starter copy, `variants/_shared/starter`, or a finished variant):
    `mkdir -p variants/{{nn-name}} && cp -r {{BASE}} variants/{{nn-name}}/site`
    (run from the project root; check the result is `variants/{{nn-name}}/site/index.html`, not one level up).
@@ -53,12 +74,17 @@ Other agents are building other variants in parallel in sibling folders, so stay
   errors; no jittering animation; on a phone no sideways scroll and no art over the copy or buttons; every page has
   a title, description and share image for this variant; films have a pause button; WebGL has `gl-guard.js` and a
   still behind it.
+- Client's world: carry the client's own object through the intro, section transitions, image frames and small details,
+  on inner pages too, as your column of `PITCH.md` says. Keep it well made and clear of the copy.
+- Motion: meet all seven points in `motion.md`, following your column's motion plan in `PITCH.md`, and follow
+  "Transitions" in section 3 of the playbook on every page. Every join between sections is designed, and inner pages move
+  like the home page. Build motion with each section, starting with the opening and the set-piece. A section that only
+  fades in is unfinished.
 - Lean workflow: no gates, plans, reports, TDD, fixtures or docs files; don't use the unlazy skill or the
-  superpowers planning/TDD/verification/worktree skills. Design skills are fine (`frontend-design`,
-  `design-taste-frontend`, `impeccable`). Check with `check-pages.cjs --phone --header <your header height>` at both
+  superpowers planning/TDD/verification/worktree skills. Check with `check-pages.cjs --phone --header <your header height>` at both
   sizes on the home page and each inner page, fix what looks off, and grep the site for reference names and
   banned words.
 
 ## Report back (short)
-Folder and URL; the concept in 3-4 lines; which reference components you adapted and how; palette and fonts;
-anything unconfirmed or any caveat. Under 200 words.
+Folder and URL; the concept in 3-4 lines; which reference components you adapted and how; the opening, set-piece and
+motion graphics you built; palette and fonts; anything unconfirmed or any caveat. Under 200 words.

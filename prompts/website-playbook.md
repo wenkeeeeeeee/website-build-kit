@@ -85,6 +85,21 @@ lens picker, a frame finder, a branch map, a booking form) only when it answers 
   48px+ with words, chapter labels with names (not dots), phone and WhatsApp as visible buttons, a "Skip the film"
   link, calm motion. Check the digits in the body face: slashed zeros make prices hard to read.
 
+**Transitions.** Pages can run at a perfect frame rate and still feel cheap: smoothness comes from how things are
+choreographed, so a screenshot or frame counter won't show it.
+- **Design every join between sections.** Stacked sections that fade up read as basic. Hand over instead: a colour
+  wash, an object carried across, a pinned panel the next slides over, an image growing into the next section.
+- **Scroll-linked motion follows the scroll with light smoothing** (ease toward the target each frame), so nothing
+  snaps. Triggered reveals stagger over 0.6-1s on a long ease-out such as `cubic-bezier(.16,1,.3,1)`, never linear
+  or bouncy.
+- **One motion language per variant:** the same easing and timing everywhere, including hover and press states on
+  everything clickable.
+- **Animate only `transform`, `opacity` and `clip-path`,** never height, top or margin.
+- **Pages join up too:** use a short wipe or the View Transitions API between pages, so a tab doesn't feel like a new
+  site.
+- GSAP and Lenis are installed with the kit's tools: copy the files into `site/js/`, with no build step. What every
+  variant must have is in `prompts/office/motion.md`.
+
 ## 4. Hero first impressions
 - **Logo intro**: the client logo as a CSS mask (`cutout.py logo`), filled with a gradient and swept by animating
   `background-position` (a translated child band is too faint), a small sparkle, then a FLIP into the header logo.
@@ -173,7 +188,10 @@ lens picker, a frame finder, a branch map, a booking form) only when it answers 
   shows only what you expect, commit, **confirm with `git log --oneline -1` that the commit exists**, push.
   (Once `git add` failed silently and "Everything up-to-date" was the only sign.)
 - Always run git with an absolute path or `git -C <repo>`: a typo once ran the commit in the parent folder.
-- Check the live site with curl until the new page returns 200 (usually within a minute).
+- Check the live site with curl until the new page returns 200 (usually within a minute), and check `docs/PITCH.md`
+  returns 404: the export writes a `.vercelignore` so internal notes stay out of the deployment.
+- Before publishing, make each `og:image` a 1200x630 hero image with a full `https://` address. Builders can't know
+  the live address, so they leave it relative.
 - Commit with the machine's normal git identity. A commit authored with an email that isn't on the Vercel account
   deploys as **Blocked** (fix: `git rebase --root --exec "git commit --amend --no-edit --reset-author"`).
 - New separate site: `gh repo create <owner>/<name> --private --source . --push`, then `vercel project add <name>`,

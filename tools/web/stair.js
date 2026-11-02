@@ -16,7 +16,7 @@
  * Classes set: .is-on on the caption in view, .is-static under reduced motion / no WebGL (show a plain grid),
  * .is-ready once the first frame has rendered. --p (0..1) on the section.
  */
-import * as THREE from './vendor/three/three.module.min.js';
+import * as THREE from './vendor/three/three.module.js';
 
 const DEFAULTS = {
   sky: ['#9a9a9a', '#e6e6e6'],      // background gradient, top to bottom

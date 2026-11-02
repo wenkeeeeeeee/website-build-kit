@@ -11,6 +11,9 @@ superpowers session-start hook if one is installed.
   quote form, stores). Copy it into a project, swap the data, redesign everything visible.
 - `tools/web/`: preview server, page checker, export, hero film, scroll and 3D effects, cut-out scripts (run
   `npm install` in it once).
+- `prompts/office/`: the AI office. `research.md`, `build.md` and `deepen.md` are the run orders, and `taste.md`,
+  `motion.md`, `site-types.md` and `reference-library.md` set the standard. A lead gets 10 minutes of research, then full variants
+  built the way this file describes, published to Vercel within an hour.
 - `.claude/skills/`: the design and debugging skills used on these builds.
 - `WebsiteProjects/<Client>/`: each new build goes here.
 
