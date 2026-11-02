@@ -1,122 +1,106 @@
 # Research agent: run order
 
-You have **10 minutes** for this lead. A person does this job in 5–10 minutes, by skimming and deciding. Do the same.
-Your task message gives `CLIENT`, `PROJECT` (its folder), `KIT` (this repo), `PORT`, `FRONT_DESK` (a thread id) and
-`ZERILAB_PROJECT_ID`. `PROJECT/docs/LEAD.md` holds the user's message: its notes beat these defaults.
+You have **10 minutes** for this lead, so skim and decide as a person would. Your task message gives `CLIENT`, `PROJECT`
+(its folder), `KIT` (this repo), `PORT`, `FRONT_DESK` (a thread id) and `ZERILAB_PROJECT_ID`. `PROJECT/docs/LEAD.md` holds
+the user's message, and its notes beat these defaults.
 
-Run `git -C KIT pull --ff-only` first, and carry on with the copy you have if that fails.
+## Ground rules
+- Run `git -C KIT pull --ff-only` first. If that fails, carry on with the copy you have.
+- Nobody is watching, so never ask anything. Work alone, with no subagents.
+- Run `date +%s` now and after each step. **At 8 minutes, stop gathering and write `PITCH.md`.**
+- Quick is the goal, but shallow is a failure: under 4 minutes usually means you skipped something.
+- Don't read other folders in `WebsiteProjects` or use memories. Re-check every fact at its source.
+- Build 3 variants unless `LEAD.md` gives a number.
+- Any link in `LEAD.md` that isn't the client's own (Awwwards, Dribbble, Behance, another brand) is a user reference.
+  Build one variant per reference, and never drop or replace them.
 
-Nobody is watching, so never ask anything. Work alone with no subagents. Run `date +%s` now, and again after each
-step. **At 8 minutes, stop gathering and write `PITCH.md` with what you have.** Decide quickly and don't polish.
+## Steps
+1. **Read for context (4 minutes).** This decides whether the site sounds like it knows the business.
+   - **Open the client's links,** up to 10 pages: product pages, About, FAQ, reviews, promotions, and any Linktree or
+     menu link. Use web fetch or one headless browser script.
+   - **Never skip a link for a login wall.** Open it in real Chrome with a desktop user agent: Facebook and Instagram
+     still show the bio, links and some photos. Other tricks are in section 8 of `KIT/prompts/website-playbook.md`; read
+     only that section.
+   - **Canva sites** (`*.my.canva.site`) need a real browser: wait 8 seconds, scroll to the end, collect the image URLs,
+     and open one or two to read the prices.
+   - **Then always search beyond the client's links, before any concept:** Google and Google Images in real Chrome for
+     the business name with its town, in each language it uses; Instagram and TikTok reels with sound using `yt-dlp`;
+     Linktree, Maps, mall directory, press, blogs and reviews. Never write "not found" for photos, video or a menu until
+     these are done.
+   - **Check what you find.** Names repeat, so confirm each result is this business. The client's own menu and posts
+     beat snippets. Note where each found image came from, and mark any from someone else's page `[client to confirm]`,
+     because using it needs permission.
+   - **Think like the customer.** What were they searching for or worried about before finding this business? Capture it
+     in their words, from reviews, comments and the client's copy.
+   - **Collect** every client field in `PITCH.md`, 6–10 products or dishes with prices, the logo and 6–8 usable photos.
+     Save images to `PROJECT/content/images/`. Look at every photo you keep, and delete any stock picture or shared menu
+     template. Don't download everything or read a whole catalogue.
+   - **Before moving on, you need real prices, a sharp logo and photos at least 1000px wide.** If any is missing, spend
+     the spare time on it, up to the 8-minute limit. Menus are often the best source of prices and sharp photos.
+2. **Decide (1 minute).** Read `KIT/prompts/office/site-types.md`, the "The hero", "What the approved sites do" and
+   "Type" parts of `taste.md`, `KIT/prompts/office/motion.md`, and the effects list in `KIT/tools/web/README.md`. Pick the
+   site type, or split the variants across two if the evidence honestly points both ways. Write one rough concept per
+   variant, to finish after step 3.
+3. **References (4 minutes).** Weak references are the costliest mistake here. **Never pick from a thumbnail, title,
+   snippet or library description: open the page and go through it first.**
 
-Quick is the goal, but shallow is a failure. Under 4 minutes usually means you skipped something, so use the time you
-have. Start from this lead's links and what they lead to, then Google as step 1 says. Don't read other folders in `WebsiteProjects`, and don't
-use memories or anything you know from past work: re-check every fact at its source.
+   **If the user pasted references:** run `node KIT/tools/web/contact-sheet.cjs <all reference urls> --out PROJECT/references
+   --steps 8` once, go through every sheet, and write what to take from each. If one is blocked, use web fetch for its
+   description. Don't search for others.
 
-**The usual lead is just a client name and links to their business.** Finding references is your job, so search the
-galleries in step 3 and build 3 variants, unless `LEAD.md` gives a number.
+   **Otherwise, always search the galleries, even if the library has something close:**
+   1. Find the client's family under "Design families" in `site-types.md`. Designs travel between categories that sell the
+      same way, so a great eyewear site beats a weak purse site for a purse shop. Search one exact term and one family
+      term per variant, such as "handbag shop website" and "luxury eyewear website".
+   2. Run `node KIT/tools/web/gallery-scan.cjs "<terms>" "<terms>" ... --out PROJECT/references/scan` (about 15 seconds).
+      Look at the images and note the promising projects. It prints each project's URL.
+   3. Awwwards blocks browsers, but it's the main source of live references. Run WebSearch for
+      `site:awwwards.com/sites <terms>`, 1–2 searches per variant with family terms too, then find the live site each good
+      result describes. `/inspiration/` element pages surface niche motifs when `/sites` has none.
+   4. Read `reference-library.md` for anything proven. An entry is only a lead, so open it like the rest.
+   5. Open a shortlist of 6–8 at once, including the best Behance and Dribbble projects:
+      `node KIT/tools/web/contact-sheet.cjs <urls> --out PROJECT/references --steps 8` (about 2 minutes, one sheet per page).
+      Go through every sheet top to bottom. A cookie wall, loader, black page or repeated frame doesn't count as opened,
+      so drop that page.
+   6. Keep a page only if the whole page holds up, it shows a real website rather than a logo or one mock screen, and you
+      can name the exact part to take and why it suits this client. Good styling for the wrong business is not a reference.
+   7. If fewer than 3 survive, run one more round of family searches and open up to 4 more. Then go with what you have
+      and note the gap.
 
-Sometimes the user also pastes references. Any link that isn't the client's own (Awwwards, Dribbble, Behance, another
-brand's site) is one. Those are decisions: build one variant per reference, and never drop or replace them.
-
-1. **Read for context (4 minutes).** This step decides whether the site sounds like it knows the business. Open the
-   client's links, up to 10 pages. Prefer the pages that explain the business: each main product page, About, FAQ,
-   reviews and testimonials, promotions. Use web fetch or one headless browser
-   script. Tricks for login walls are in section 8 of `KIT/prompts/website-playbook.md`; read only that section. Follow a
-   Linktree or menu link if there is one. Never skip a link because web fetch hit a login wall: open it in real Chrome
-   with a desktop user agent, because Facebook and Instagram still show the bio, links and some photos there. You need all of the `PITCH.md` client fields below, then
-   6–10 products or dishes with prices, the logo, and 6–8 usable photos. Think like the customer: what were they
-   searching for or worried about before they found this business? Capture that in their words, from reviews, comments
-   and the client's own copy, not in marketing language. Save the logo and photos to
-   `PROJECT/content/images/`. Look at every photo you keep: it must show this client's own food or products, not a
-   stock picture or a shared menu template, and delete any that don't. If something is blocked, skip it. Don't download
-   everything, and don't read a whole catalogue.
-
-   **Before moving on, check you have real prices, a sharp logo and photos at least 1000px wide.** If not, use the
-   spare time on those three, up to the 8-minute limit: don't finish early with them missing. Menus are often the best
-   source of both prices and sharp photos. A Canva site (`*.my.canva.site`) needs a real browser: wait 8 seconds, scroll
-   to the end, then collect the image URLs from the page and open one or two to read the prices.
-
-   **Then always search beyond the client's links, before any concept.** Search Google and look through Google Images
-   in real Chrome for the business name with its town, in each language it uses. Pull its Instagram and TikTok reels with
-   sound using `yt-dlp`, and check its Linktree, Maps listing, mall directory, press, blogs and reviews. These often hold
-   the real room, people, menu and prices. Never write "not found" for photos, video or a menu until these are done.
-   Where sources disagree, the client's own menu and posts beat snippets from elsewhere. Names repeat, so check each
-   result really is this business. Note where each found image came from, and mark any taken from someone else's page
-   `[client to confirm]`, because using it needs permission.
-2. **Decide (1 minute).** Read `KIT/prompts/office/site-types.md`, the "What the approved sites do" and "Type" parts of `taste.md`,
-   `KIT/prompts/office/motion.md`, and the effects list in `KIT/tools/web/README.md`. Pick the site type. If the evidence honestly points two ways, split the variants across two types.
-   Write one rough concept per variant, and finish them once you've been through the references in step 3, so each is
-   built from what its reference does best, applied to this client's world.
-3. **References (4 minutes).** This step decides how good the sites turn out, so weak references are the costliest
-   mistake here. **Never pick from a thumbnail, a title, a search snippet or a library description: open the page and go
-   through it first.** The site type and concepts decide what you search for, and so does the client's design family.
-   - **Normal lead:** always search the galleries, even if the library has something close. Do these together:
-     1. **Search the category and its family.** Find the client's family under "Design families" in `site-types.md`.
-        Some categories have no good references, and designs travel between categories that sell the same way: a purse
-        shop and an eyewear shop both put one beautiful product first, so a great eyewear site beats a weak purse site.
-        Search one exact term and one family term per variant, such as "handbag shop website" and "luxury eyewear website".
-     2. Run `node KIT/tools/web/gallery-scan.cjs "<terms>" "<terms>" ... --out PROJECT/references/scan`. It takes about
-        15 seconds. Look at the images it makes and note the promising projects. It prints each project's URL.
-     3. Awwwards blocks browsers, but do not skip it. Run WebSearch for `site:awwwards.com/sites <terms>`, 1–2 searches
-        per variant, using family terms too, then find the live site each good result describes. This is the main source
-        of live references.
-     4. Read `reference-library.md` for anything proven. An entry there is only a lead, so it gets opened like the rest.
-     5. **Click into a shortlist of 6–8 at once:** `node KIT/tools/web/contact-sheet.cjs <urls> --out PROJECT/references
-        --steps 8`. Include the best Behance and Dribbble projects, not only live sites, because a project page shows far
-        more than its thumbnail. It takes about 2 minutes, and writes one scrolled-through sheet per page. Go through every sheet from
-        top to bottom. A sheet showing a cookie wall, a loader, a black page or the same frame repeated doesn't count as
-        opened, so drop that page.
-     6. **Keep a page only if** the whole page holds up, not just its first screen; it shows a real website, not only a
-        logo, packaging or one mock screen; and you can name the exact part to take and why it suits this client's
-        product and customer. Good styling for the wrong kind of business is not a reference.
-     7. If fewer than 3 survive, run one more round of family searches and open up to 4 more. Then go with what you
-        have, and note the gap.
-
-     Keep **3 to 6 references in total**, however many are genuinely good, never padding to reach 6. Every variant gets
-     at least one. They are sources to take from, not sites to copy: one reference can give a variant its hero, another
-     its section layout or motion, and one reference can feed two variants. Then rewrite each rough concept around what
-     its references really do.
-     - **At least half must be new finds from this run**, not from the library. If you're short, keep searching until
-       the 8-minute limit rather than noting the gap early. Awwwards `/inspiration/` element pages surface niche motifs
-       when `/sites` has none.
-     - **Every variant needs at least one live site with motion worth taking**, because stills can't show how a page
-       moves. One live site can serve two variants if it truly suits both, and note any gap.
-     - Add your picks to `reference-library.md` under "To try".
-   - **User pasted references:** run `node KIT/tools/web/contact-sheet.cjs <all reference urls> --out PROJECT/references
-     --steps 8` once and go through every sheet. If one is blocked, use web fetch for that page's description. Write what
-     to take from each. Don't search for others.
-4. **Write `PROJECT/docs/PITCH.md`** in the format below, then add to `PROJECT/content/OPEN-QUESTIONS.md` anything
-   unknown.
+   **What to end with:**
+   - **3 to 6 references in total,** never padded. Every variant gets at least one. They're sources to take from, not
+     sites to copy: one can give a hero and another a layout, and one can feed two variants.
+   - **At least half are new finds from this run,** not from the library. If you're short, keep searching until the
+     8-minute limit rather than noting the gap early.
+   - **Every variant has at least one live site with motion worth taking,** because stills can't show how a page moves.
+     One live site can serve two variants if it truly suits both. Note any gap.
+   - Rewrite each rough concept around what its references really do, and add your picks to `reference-library.md` under
+     "To try".
+4. **Write `PROJECT/docs/PITCH.md`** in the format below, and add anything unknown to `PROJECT/content/OPEN-QUESTIONS.md`.
 5. **Open the build thread.** Skip this if the task message says `STOP_BEFORE_BUILD`. Load
    `mcp__t3-code__t3_thread_launch` with ToolSearch and call it with:
    - title: `CLIENT`
    - projectId: `ZERILAB_PROJECT_ID`
    - modelSelection: `{"instanceId": "claudeAgent_work", "model": "claude-opus-5-5"}`, so builders get the best model
-   - message: `Read KIT/prompts/office/build.md and run it. CLIENT=... PROJECT=... KIT=... PORT=... FRONT_DESK=...`
-     with the real values.
+   - message: `Read KIT/prompts/office/build.md and run it. CLIENT=... PROJECT=... KIT=... PORT=... FRONT_DESK=...` with the
+     real values.
 6. **Report in under 80 words:** minutes taken, site type, the concepts, and the build thread's `link` copied exactly.
 
 ## What makes a concept
-A concept is how the client's message gets told, not a replacement for it. Decide what the page must say first, then
-find the idea that says it best. A clever idea with thin content fails. Every variant covers the whole business, so
-their section orders tell the same complete content in different ways, and none of them leaves anything out.
-
-**The hero's first objective is always to deliver the business core:** what this business is, what it sells and who
-it's for, clear within the first few seconds. Write that as the Core line in `PITCH.md`, then find the idea that
-delivers it. If an idea looks good but hides the core, change the idea.
-
-One sentence: **what in this business is the hero made of, and what does it do?** It must be an object, place or
-ritual from this client's world, and it must carry the customer's problem or desire, not just look good. "The logo's O opens like a lens into the film", "A photo strip prints out of the
-hero" and "Every room is a magazine cover" are concepts. "Dark and elegant" is not. If a competitor could use the
-sentence, it is too generic. No two variants may share a structure, header, type pair or palette.
-
-Design from what the real place looks like, with real footage and photos leading, not from the logo or poster colours.
-
-Then say how that object carries the rest of the site: the intro, the transitions between sections, the image frames
-and the small details. Every variant needs this, not just one. Test it: if a section still works with the object
-deleted, the object is decoration and the section is still a template. Then plan its motion from `motion.md`, naming real
-content: what the opening does, and which motion graphic each section gets.
+A concept is how the client's message gets told, not a replacement for it. Work in this order:
+1. **Content.** Decide what the page must say, then find the idea that says it best. Every variant tells the same
+   complete content in a different order.
+2. **Core.** Write the Core line, and plan each hero by "The hero" in `taste.md`. If an idea looks good but hides the
+   core or crowds the hero, change the idea.
+3. **Concept.** One sentence: **what in this business is the hero made of, and what does it do?** It must be an object,
+   place or ritual from this client's world that carries the customer's problem or desire. "The logo's O opens like a
+   lens into the film" and "Every room is a magazine cover" are concepts. "Dark and elegant" is not. If a competitor
+   could use the sentence, it's too generic.
+4. **Look.** Design from what the real place looks like, with real footage and photos leading, not from the logo or
+   poster colours. No two variants may share a structure, header, type pair or palette.
+5. **Reach.** Say how the object carries the intro, transitions, image frames and small details, in every variant. If a
+   section still works with the object deleted, the object is decoration and the section is a template.
+6. **Motion.** Plan it from `motion.md` with real content: what the opening does, and each section's motion graphic.
 
 ## `PITCH.md` format
 ```
@@ -146,7 +130,7 @@ References opened: <every page you went through: kept or dropped, and why, in on
 
 | | V1 · Name | V2 · Name | V3 · Name |
 | Concept | | | |
-| Hero (how it delivers the Core in the first few seconds) | | | |
+| Hero (its one visual, headline, short line and button, and how they deliver the Core) | | | |
 | Signature moment (how it works, and the kit effect it's built with) | | | |
 | Client's object through the site (intro, transitions, image frames, details) | | | |
 | Motion plan (opening, motion graphic per section, alive at rest, page change) | | | |

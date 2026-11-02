@@ -5,7 +5,7 @@ repo follows these rules (Claude, Codex, others). They override any skill that s
 superpowers session-start hook if one is installed.
 
 ## Where things are
-- `prompts/website-playbook.md`: read first. Methods, the quality bar, publishing.
+- `prompts/website-playbook.md`: methods, the quality bar, publishing. Its table says which sections each role reads.
 - `prompts/new-project-prompt.md`, `website-build-template.md`, `variant-agent-brief.md`: briefs for the lead and the subagents.
 - `starter/`: working plumbing (basket with WhatsApp/marketplace checkout, catalogue with filters, product page,
   quote form, stores). Copy it into a project, swap the data, redesign everything visible.

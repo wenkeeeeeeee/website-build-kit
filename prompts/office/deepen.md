@@ -1,7 +1,7 @@
 # Deepen: finish the chosen variant
 
 The client picked a variant and agreed the quotation. Its pages already work, so this is the slow work the first build
-skipped. Follow `KIT/AGENTS.md` and `KIT/prompts/website-playbook.md`.
+skipped. Follow `KIT/AGENTS.md` and the sections of `KIT/prompts/website-playbook.md` named below.
 
 1. **Full content kit.** Go through every client source properly, following the links you find. Section 8 of the
    playbook has the tricks for login walls, Shopee and Instagram. Add to:

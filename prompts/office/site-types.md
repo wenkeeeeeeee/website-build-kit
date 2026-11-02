@@ -1,7 +1,6 @@
 # Site types
 
-The director picks one before any reference search. Each lead is sold on a first impression, so the type decides what
-the first impression is.
+Research picks one before any reference search. The type decides what the first impression is.
 
 ## Shop
 - **Choose when:** many products with prices, an active marketplace shop, and customers who already know what they want.
