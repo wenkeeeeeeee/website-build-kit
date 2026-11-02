@@ -24,6 +24,10 @@ the user judges this against sites that took hours by hand, so a fast, plain res
 - **The first screen says who this is for and what it solves, in the customer's words.** Write every section from
   `PITCH.md` and use all of "Must say": their problem by name, how this works, real proof, what it costs, how to start.
   If a line could sit on a competitor's site, rewrite it with this client's facts.
+- **This variant carries the whole business, as every other variant does.** Every product or service with its price,
+  every page in `PITCH.md`, and all the proof, offers, questions, locations and ways to order or book. Your concept
+  changes how it is told, never how much. Don't drop or shorten anything to suit the idea: if something doesn't fit the
+  home page story, give it a designed place on an inner page.
 
 ## Project context (read first)
 - Project root: `{{PROJECT ROOT}}`, kit: `{{KIT}}`. Read `docs/PITCH.md`, `content/copy.md`,

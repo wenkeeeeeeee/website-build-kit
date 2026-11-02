@@ -22,8 +22,9 @@ between steps unless something is blocked. Short updates only.
    `PITCH.md`, and send all the subagents in one message so they run in parallel, each with `run_in_background: false`.
 5. **Hub.** Write `PROJECT/index.html`, in the format in section 1 of the playbook, with short plain names.
 6. **Quick check (3 minutes).** Run `check-pages.cjs` once on each variant's home page, click through to one inner page,
-   and grep for reference names. Fix only what's broken, such as errors, dead links and missing images. Design review is
-   the user's job, so don't redesign anything.
+   and grep for reference names. Compare the variants against `content/` and `PITCH.md`, and add anything one of them
+   left out, so all of them cover the same products, prices, pages, proof and ways to order. Beyond that, fix only what's
+   broken, such as errors, dead links and missing images. Design review is the user's job, so don't redesign anything.
 7. **Publish (3 minutes).** Follow section 7 of the playbook. `SLUG` is the client's name in lowercase with hyphens, and
    `REPO` is `WebsiteProjects/SLUG-website`.
    - If `gh repo view <owner>/SLUG-website` finds a repo, clone or reuse it, and it keeps its Vercel project. Otherwise

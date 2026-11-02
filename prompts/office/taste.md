@@ -16,6 +16,8 @@ counts as good. When a brief and this file disagree, the brief wins only if the 
 - **Sections with no clear purpose.** If you can't say what a section is delivering, cut or rebuild it.
 - **Inner pages weaker than the home page.** Every tab gets the same components and motion as the home page.
 - **Missing client content.** If the client has a catalogue, recipes, gifts or awards, the site has them too.
+- **Variants at different levels of completeness.** Every variant carries the whole business. They differ in design and
+  story, never in how much of the client they cover, so one must not be a full site while another is a thin concept.
 - **A changed logo.** Use the original. Don't redraw, outline or restyle it.
 - **Invented words.** No slogan, claim or theme that isn't in the client's own material.
 - **"Branding" built as a shop.** When a client wants branding, they mean storytelling: the whole home page is one

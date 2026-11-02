@@ -93,7 +93,8 @@ brand's site) is one. Those are decisions: build one variant per reference, and 
 
 ## What makes a concept
 A concept is how the client's message gets told, not a replacement for it. Decide what the page must say first, then
-find the idea that says it best. A clever idea with thin content fails.
+find the idea that says it best. A clever idea with thin content fails. Every variant covers the whole business, so
+their section orders tell the same complete content in different ways, and none of them leaves anything out.
 
 One sentence: **what in this business is the hero made of, and what does it do?** It must be an object, place or
 ritual from this client's world, and it must carry the customer's problem or desire, not just look good. "The logo's O opens like a lens into the film", "A photo strip prints out of the
