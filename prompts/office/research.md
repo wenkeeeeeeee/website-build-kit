@@ -102,6 +102,10 @@ A concept is how the client's message gets told, not a replacement for it. Decid
 find the idea that says it best. A clever idea with thin content fails. Every variant covers the whole business, so
 their section orders tell the same complete content in different ways, and none of them leaves anything out.
 
+**The hero's first objective is always to deliver the business core:** what this business is, what it sells and who
+it's for, clear within the first few seconds. Write that as the Core line in `PITCH.md`, then find the idea that
+delivers it. If an idea looks good but hides the core, change the idea.
+
 One sentence: **what in this business is the hero made of, and what does it do?** It must be an object, place or
 ritual from this client's world, and it must carry the customer's problem or desire, not just look good. "The logo's O opens like a lens into the film", "A photo strip prints out of the
 hero" and "Every room is a magazine cover" are concepts. "Dark and elegant" is not. If a competitor could use the
@@ -118,6 +122,7 @@ content: what the opening does, and which motion graphic each section gets.
 ```
 # CLIENT
 Site type: <type>, because <one line>.
+Core: <one line: what this business is, what it sells and who it's for>
 Facts: <what they sell, where, how to order, WhatsApp number, 6-10 products with prices>
 The customer: <who they are, and the exact problem, worry or desire that brings them, in their words. List each
   specific need or situation the business serves: conditions, occasions, uses. Be concrete>
@@ -141,6 +146,7 @@ References opened: <every page you went through: kept or dropped, and why, in on
 
 | | V1 · Name | V2 · Name | V3 · Name |
 | Concept | | | |
+| Hero (how it delivers the Core in the first few seconds) | | | |
 | Signature moment (how it works, and the kit effect it's built with) | | | |
 | Client's object through the site (intro, transitions, image frames, details) | | | |
 | Motion plan (opening, motion graphic per section, alive at rest, page change) | | | |

@@ -21,6 +21,9 @@ the user judges this against sites that took hours by hand, so a fast, plain res
 - Direction for {{CLIENT}}: {{one line idea}}. {{How the reference's components map to the client: which
   products/sections, which colours (from the client's own world, not the reference's), what to avoid}}.
   Change the layout and components to fit the client rather than reproducing the reference.
+- **The hero's first objective is always the business core.** Using the Core line in `PITCH.md`, the first screen shows
+  what this business is, what it sells and who it's for. The opening and set-piece must deliver that, never hide or
+  delay it. Your concept comes second.
 - **The first screen says who this is for and what it solves, in the customer's words.** Write every section from
   `PITCH.md` and use all of "Must say": their problem by name, how this works, real proof, what it costs, how to start.
   If a line could sit on a competitor's site, rewrite it with this client's facts.
