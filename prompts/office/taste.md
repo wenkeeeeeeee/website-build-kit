@@ -14,6 +14,8 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **Never plain or basic.** A title with some photos fails, however tidy it is. So do a photo in a box, a row of small
   photos, or text beside a photo with nothing else going on. The hero needs a visual idea someone would remember.
 - **Low-resolution film:** never stretch it plainly. Use it dark and full-bleed behind the type, or inside giant letters.
+- **Effects stay around the footage, not over it.** A full-screen mosaic, pixel or LED treatment reads as blurry, and a colour
+  tint hides the real room. Keep the real footage sharp and in its true colours in the centre, and run the effect around it.
 - **Make the visual, don't just place it.** Client photos are rarely strong enough as they are. Grade them, scale them
   and set them on bold colour. Cut something out only when the source is sharp and the edge is clean: people cut from
   phone footage and food with white sticker outlines were rejected on sight. If a photo can't hold the screen, build the visual in code: a
