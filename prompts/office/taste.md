@@ -13,6 +13,9 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   short line usually do it, and paragraphs never do.
 - **Never plain or basic.** A title with some photos fails, however tidy it is. So do a photo in a box, a row of small
   photos, or text beside a photo with nothing else going on. The hero needs a visual idea someone would remember.
+- **The hero comes from the same world as the body.** If the page below runs on real photos and footage, a code-built 3D
+  object on a blurred backdrop reads as a different site. One object can also say the wrong business: a lone microphone
+  reads as karaoke, not a live band. Test the hero by asking what business a stranger would guess.
 - **Low-resolution film:** never stretch it plainly. Use it dark and full-bleed behind the type, or inside giant letters.
 - **Effects stay around the footage, not over it.** A full-screen mosaic, pixel or LED treatment reads as blurry, and a colour
   tint hides the real room. Keep the real footage sharp and in its true colours in the centre, and run the effect around it.
@@ -52,6 +55,8 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **Basic and plain.** Sections with only a heading, a paragraph and a picture. Empty-looking panels. A plain footer.
   Pages whose only motion is fade-ins. The right context doesn't excuse this, in a site or in a reference: the user
   wants creative, attractive and premium work that suits the business.
+- **Words in coloured boxes on footage.** Don't put solid label boxes behind captions on a film. Give words their own clean
+  strip beside or under the picture.
 - **Messy layering.** Words over busy images, accidental overlaps, things sliding under the sticky header. Overlap must
   look deliberate.
 - **Sections with no clear purpose.** If you can't say what a section delivers, cut or rebuild it.
