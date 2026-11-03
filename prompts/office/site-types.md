@@ -47,23 +47,47 @@ useful.
 The terms below are starting points. Add a design term to each one, because category words alone find plain sites. If
 the family is weak too, explore other categories, as step 3 of `research.md` says.
 
+Each family also has a starting hero, built the way "The hero" in `taste.md` says: one stage, one line of facts, one
+action, and something the visitor does. These are starting points: the concept in `PITCH.md` wins, and no two variants
+use the same hero. The sites named are in the Benchmarks of `reference-library.md`.
+
 - **One beautiful object:** bags, eyewear, watches, jewellery, shoes, perfume, audio, furniture. The product is the star,
-  with close-ups, materials and craft. Search: luxury eyewear website, jewellery website, watch brand, fashion
-  accessories ecommerce, product showcase website.
+  with close-ups, materials and craft. **Hero:** the product alone at the centre, turning slowly and following the
+  cursor; scrolling takes it apart with each part named (Lusion, Opal Tadpole). Search: luxury eyewear website,
+  jewellery website, watch brand, fashion accessories ecommerce, product showcase website.
 - **Packs and jars:** snacks, drinks, sauces, coffee, sweets, pet food. Loud colour per product, flavours and ranges.
-  Search: beverage brand website, food packaging ecommerce, snack brand, consumer brand landing page.
-- **Solves a problem:** skincare, hair, supplements, dental, pain relief, cleaning. Problem, proof, how it works. Search:
-  skincare brand website, wellness ecommerce, health product landing page.
-- **Body and movement:** physiotherapy, pilates, yoga, gyms, sports. The body in motion, not a calm studio. Search: 3D
-  anatomy website, sports performance website, athletic brand website, medical device website, biotech website.
+  **Hero:** the product being made or opened fills the screen, and the visitor does the last step (hold to fry, pour,
+  crack the lid), which ends in the basket. Each flavour comes out in its own shape and colour, and the small copy has
+  the brand's humour (Don't Board Me). Search: beverage brand website, food packaging ecommerce, snack brand, consumer
+  brand landing page.
+- **Solves a problem:** skincare, hair, supplements, dental, pain relief, cleaning. Problem, proof, how it works.
+  **Hero:** the problem drawn as a moving diagram under a headline in the customer's words; a scroll or tap shows the
+  product calming it. Below, explain it simply and show results as drawings, not paragraphs (Opal Tadpole's "explain it
+  like I'm 5" and "show don't tell"). Search: skincare brand website, wellness ecommerce, health product landing page.
+- **Body and movement:** physiotherapy, pilates, yoga, gyms, sports. The body in motion, not a calm studio. **Hero:** a
+  body in motion fills the screen, in real footage or line drawing, with joints and muscles named as they work and
+  giant type cut by the moving body (21tsi). Search: 3D anatomy website, sports performance website, athletic brand
+  website, medical device website, biotech website.
 - **A place to visit:** restaurants, cafés, bars, hotels, spas, salons, gyms, clinics, photo studios. Sells the room and
-  the visit. Search: boutique hotel website, hospitality website, restaurant website, spa website.
+  the visit. **Hero:** the real room or dish, sharp and whole at the centre, with the effect around it (light, steam,
+  the time of night). The cursor or a hold shows the next state: empty room to full, raw to plated, day to night
+  (Lando Norris's cursor reveal). One line says what, where and when, next to the booking action. Sound of the room is
+  optional. Search: boutique hotel website, hospitality website, restaurant website, spa website.
 - **Work worth showing:** event styling, florists, weddings, interiors, architecture, photography, tattoo, set design.
-  The portfolio is the proof. Search: creative studio portfolio, floral studio website, interior design portfolio,
-  event production website, art direction studio.
-- **Trust and expertise:** finance, law, accounting, insurance, consultants, B2B suppliers. Calm, clear, credible. Search:
-  private bank website, law firm website, consultancy website, corporate website.
+  The portfolio is the proof. **Hero:** before and after in one move: the bare space, which the visitor's hold or
+  cursor fills with the finished work. Below, giant job names whose hover opens the work through the client's own
+  shape, and one line or thread carrying you through the page (Lando Norris, Lusion). Search: creative studio
+  portfolio, floral studio website, interior design portfolio, event production website, art direction studio.
+- **Trust and expertise:** finance, law, accounting, insurance, consultants, B2B suppliers. Calm, clear, credible.
+  **Hero:** one calm object drawn in fine lines (the product, a building, a chart) holds the stage and stays fixed while
+  chapters change around it, with a segmented progress bar. A live slider or calculator answers the money question
+  early (EnduroSat). No sound or games, and slower motion. Search: private bank website, law firm website, consultancy
+  website, corporate website.
 - **Learning and community:** courses, coaching, academies, mentorships, schools. A person, a method and student results.
-  Search: online academy website, masterclass website, course landing page, membership community.
-- **Origin and craft:** farms, wineries, distilleries, makers, heritage brands. A place and how it's made. Search: winery
-  website, heritage brand story, craft maker website.
+  **Hero:** the method as one object (a crest, a path, a chart line) with the promise in one line and the real cost or
+  first step something you can try; the object stays as the stage for the steps, as in Trust and expertise. Proof stays
+  labelled and risk wording stays. Search: online academy website, masterclass website, course landing page, membership
+  community.
+- **Origin and craft:** farms, wineries, distilleries, makers, heritage brands. A place and how it's made. **Hero:** a
+  small drawn scene or map of the place, built in code; a route draws itself from the source to the finished product
+  and each stop opens a chapter (Igloo). Search: winery website, heritage brand story, craft maker website.

@@ -13,6 +13,16 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   short line usually do it, and paragraphs never do.
 - **Never plain or basic.** A title with some photos fails, however tidy it is. So do a photo in a box, a row of small
   photos, or text beside a photo with nothing else going on. The hero needs a visual idea someone would remember.
+- **A stage, not a split.** The layout to beat is headline left, picture right, two buttons and a stats row: tidy, and
+  it reads as a template. Instead, one object or scene fills the screen, the headline is set into that scene as part
+  of the composition, and the first screen carries one line of facts and one action. Use the split only when the
+  concept needs it, and in no more than one variant.
+- **The hero is something you do.** The visitor acts on the client's object and the story starts from what happens:
+  hold to fry, inflate or light it; move the cursor to show the finished version under the raw one; drag to see where
+  the money goes. The result is big and visible, a tap works on phones, and the page still reads in full if nobody
+  touches it. Never a gate in front of the site. The starting hero for each design family is in `site-types.md`.
+- **Sound is optional.** For bars, food and playful brands, sound can lift the hero: off by default, a visible toggle,
+  short and quiet. Never for serious topics such as money, health or law.
 - **The hero comes from the same world as the body.** If the page below runs on real photos and footage, a code-built 3D
   object on a blurred backdrop reads as a different site. One object can also say the wrong business: a lone microphone
   reads as karaoke, not a live band. Test the hero by asking what business a stranger would guess.

@@ -17,6 +17,10 @@ craft, not the subject.
 | https://en.masahiromaruyama.com/step | The camera climbs a spiral through floating people and shapes |
 | https://www.brightbiotech.co.uk/ | Health science: a plant becomes a bottle, in full-screen colour. Awwwards Site of the Day |
 | https://21tsi.com/ | Sport: huge cinematic bodies fill the screen with bold colour and giant type. Its thin rings are only a detail |
+| https://landonorris.com/ | Personal brand: the cursor reveals a second helmet over the portrait, a signature draws itself, scattered photo collage, archive grid, fanned card deck. Awwwards Site of the Year 2025 |
+| https://www.endurosat.com/space-service/ | B2B: one wireframe satellite and globe hold a dark stage while chapters change around them, a segmented progress bar, a price slider, a cost comparison |
+| https://dontboardme.com/ | Playful services: a ball you bounce on the intro, a funny voice in every label, a designed 404. Awwwards Site of the Year 2024. Use its toy as a hero, never as a gate |
+| https://www.awwwards.com/sites/opal-tadpole | One product: held and flipped in a hand, "explain it like I'm 5", stats shown as blueprint drawings. Awwwards Site of the Year 2024 (live site was down on 2026-11-03) |
 
 ## Rejected
 Don't use these or anything like them.
