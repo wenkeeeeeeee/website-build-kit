@@ -7,14 +7,13 @@ clear feedback. Never add client names or links to client sites here. When a job
 promote anything from "To try".
 
 ## Benchmarks
-This is the level to look for. None of the first five share a category with most clients, which is the point: take the
+This is the level to look for. None of the first four share a category with most clients, which is the point: take the
 craft, not the subject.
 | URL | What it does |
 |---|---|
 | https://lusion.co/ | 3D objects fill the frame, and a line sweeps through the type as you scroll |
 | https://activetheory.net/ | A dark 3D world where one object carries you between projects |
 | https://igloo.inc/ | One 3D object in a landscape, breaking apart and reforming on scroll |
-| https://foodnia.co.jp/ | A vegetable travels through a colour-drenched 3D world |
 | https://en.masahiromaruyama.com/step | The camera climbs a spiral through floating people and shapes |
 | https://www.brightbiotech.co.uk/ | Health science: a plant becomes a bottle, in full-screen colour. Awwwards Site of the Day |
 | https://21tsi.com/ | Sport: huge cinematic bodies fill the screen with bold colour and giant type. Its thin rings are only a detail |
@@ -30,6 +29,7 @@ Don't use these or anything like them.
 | https://cascaidhealth.com/ | Listed on Awwwards, yet it's a calm serif layout: a listing proves nothing |
 | https://www.motionclinic.com.ar/ | One hero effect, then dark text and doctor photos. One strong screen isn't a strong site |
 | https://bar-topas.ch/ | Banned by the user. Its loud stripes, tilted giant type and ribbon marquees of titles came back rejected, so don't use its ideas either |
+| https://foodnia.co.jp/ | Banned by the user. Its colour-flood shape growing on scroll and pinned one-line scenes don't hold up, so don't use its ideas either |
 
 ## Used so far
 | URL | Kind | Fits | Strongest for | Result |
@@ -70,7 +70,6 @@ Don't use these or anything like them.
 ## To try
 | URL | Kind | Fits | Strongest for | Found for |
 |---|---|---|---|---|
-| https://foodnia.co.jp/ | live | booking, food | A shape grows on scroll until its colour floods the screen, then pinned one-line scenes | logo flood hero |
 | https://www.11elevenbar.com/ | live | booking, luxury | One evening told in scroll order, a short line on each changing frame | dinner story |
 | https://pizarrosliceshop.be | live | booking, food | Torn edges wiping full-colour sections, complete wordmark footer | colour-change sections |
 | https://www.sgrappa.com/index.html | live | branding, luxury | Black marble, wordmark warping into a tunnel on scroll | logo opens into a world |
