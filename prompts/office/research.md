@@ -107,6 +107,8 @@ the user's message, and its notes beat these defaults.
    - **Every variant is led by a reference that passes the bar.** One can lead two variants if it truly suits both. Prefer
      a live site, because it shows how a page behaves. A strong Behance or Dribbble still can lead too, if `PITCH.md` pairs
      it with a live site or says how the page will move.
+   - **If the product suits a scroll-driven hero** ("Scroll in the hero" in `taste.md`), at least one lead reference shows
+     a strong one, and the sheet frames prove it.
    - Rewrite each rough concept around what its references really do, and add your picks to `reference-library.md` under
      "To try".
 4. **Write `PROJECT/docs/PITCH.md`** in the format below, and add anything unknown to `PROJECT/content/OPEN-QUESTIONS.md`.
@@ -174,7 +176,7 @@ References opened: <every page you went through: kept or dropped, why, and for k
 
 | | V1 · Name | V2 · Name | V3 · Name |
 | Concept | | | |
-| Hero (its visual idea, how client photos are treated or what's made in code, the words and what else is on the first screen, and how it delivers the Core) | | | |
+| Hero (its visual idea, whether it's scroll-driven and what each scroll step shows, how client photos are treated or what's made in code, the words and what else is on the first screen, and how it delivers the Core) | | | |
 | Signature moment (how it works, and the kit effect it's built with) | | | |
 | Client's object through the site (intro, transitions, image frames, details) | | | |
 | Motion plan (opening, motion graphic per section, alive at rest, page change) | | | |

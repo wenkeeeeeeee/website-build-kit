@@ -13,7 +13,9 @@ the buyer's path, so it never delays the core, the price or the action.
    once per session, lands exactly on its place in the hero, and leaves the hero clean, as "The hero" in `taste.md` says.
 2. **One signature scroll set-piece, 2-4 screens of pinning.** Scrolling drives a real sequence: something assembles,
    opens, travels, transforms or changes state. Put it where it explains the product, never between the visitor and
-   the price or the action.
+   the price or the action. When the product suits it, the set-piece is the hero itself, as "Scroll in the hero" in
+   `taste.md` says: 1–3 screens, built with `scrub.js` for a frame sequence or GSAP ScrollTrigger and three.js for a
+   3D or layered product.
 3. **Motion with a job in every section.** At least one drawn or animated element that carries meaning for that section:
    playful brands can use characters, stickers and bounce; professional brands use counters, diagrams, product turns
    and precise reveals. In the hero, that's the main visual itself, not an extra element.

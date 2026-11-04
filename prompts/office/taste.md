@@ -23,6 +23,14 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   turn or fold the product, compare costs), and never a game. The result is big and visible, a tap works on phones,
   and the page still reads in full if nobody touches it. Never a gate in front of the site. The starting hero for each
   design family is in `site-types.md`.
+- **Scroll in the hero, wherever the product suits it.** Scrolling from the first screen is the interaction visitors
+  notice most on a good site. When the client sells a physical product people want to see from every side or inside
+  (vehicles, gadgets, watches, eyewear, furniture, packaged food and drinks, cosmetics), the hero is scroll-driven: as
+  the visitor scrolls, the product turns, opens, assembles, comes apart with its parts named, or the camera moves in to
+  a detail, then hands over into the next section. Each step says something true about the product. Pin it for 1–3
+  screens, scrub smoothly in both directions, keep the headline readable and the main action in the header throughout,
+  and give phones a shorter version. A place can use a lighter version, such as the room filling or day turning to
+  night. Skip it where nothing physical would move meaningfully, as for most services, law and finance.
 - **Sound only in the playful tone.** For bars, food and playful brands, sound can lift the hero: off by default, a
   visible toggle, short and quiet. Never in the professional tone.
 - **The hero comes from the same world as the body.** If the page below runs on real photos and footage, a code-built 3D

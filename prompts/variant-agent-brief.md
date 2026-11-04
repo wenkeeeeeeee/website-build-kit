@@ -17,7 +17,8 @@ a fast, plain result is a failed one.
 - Yours alone, shared with no other variant: how the buyer's path is told {{section order along the path}}; signature moment {{the one scroll
   set-piece}}; business tool {{finder, picker, dial or quote builder}}; basket name {{or none}}; header {{its own
   shape}}; type pair {{fonts}}; palette {{from the client's world}}.
-- Hero: {{its visual idea, words and anything else on the first screen, from your column of `PITCH.md`}}.
+- Hero: {{its visual idea, words and anything else on the first screen, and whether it's scroll-driven and what each
+  scroll step shows, from your column of `PITCH.md`}}.
 - Reference: {{URLs and the part to take from each, or "taste-skill direction: <name>"}}. What I saw at a glance:
   {{2-4 lines: header, hero, signature sections, motion}}.
 - Direction for {{CLIENT}}: {{one line idea}}. {{How the reference's components map to the client: which
