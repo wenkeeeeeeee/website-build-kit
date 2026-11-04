@@ -20,7 +20,8 @@ between steps unless something is blocked. Short updates only.
    - Open it once with `check-pages.cjs`. Every page must work, because all the variants copy it.
 4. **Builders (30 minutes).** Fill in `KIT/prompts/variant-agent-brief.md` once per variant, using its column of
    `PITCH.md`, and send all the subagents in one message so they run in parallel, each with `run_in_background: false`.
-   First check each concept: if something other than the product, or a customer using it, is the hero, the palette
+   First open each variant's lead reference sheet: if a banner covers it, most frames are static or the look is on the
+   fail list, replace the reference before briefing. Then check each concept: if something other than the product, or a customer using it, is the hero, the palette
    comes from a metaphor, the look doesn't match the tone, or the section order skips a step of the buyer's path,
    rewrite it in `PITCH.md` before briefing.
 5. **Hub.** Write `PROJECT/index.html`, in the format in section 1 of the playbook, with short plain names.

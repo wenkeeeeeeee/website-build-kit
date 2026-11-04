@@ -7,8 +7,10 @@ clear feedback. Never add client names or links to client sites here. When a job
 promote anything from "To try".
 
 ## Benchmarks
-This is the level to look for. None of the first four share a category with most clients, which is the point: take the
-craft, not the subject.
+This is the level to look for. Research can use a Benchmark directly when it fits the client's business and tone, and
+it counts as a reference. Playful: Lando Norris, Don't Board Me. Modern and professional: the rest. None of the first
+four share a category with most clients, which is the point: take the craft, not the subject. Add a site here only after
+opening it and finding it passes the bar across the whole page.
 | URL | What it does |
 |---|---|
 | https://lusion.co/ | 3D objects fill the frame, and a line sweeps through the type as you scroll |

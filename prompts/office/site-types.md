@@ -114,6 +114,13 @@ use the same hero. The sites named are in the Benchmarks of `reference-library.m
   cursor fills with the finished work. Below, giant job names whose hover opens the work through the client's own
   shape, and one line or thread carrying you through the page (Lando Norris, Lusion). Search: creative studio
   portfolio, floral studio website, interior design portfolio, event production website, art direction studio.
+- **Guides, media and creators:** city guides, places-to-go and review accounts, listings and directories, event
+  calendars, creator channels and communities. They sell a visit or an outing, not a product: the places, prices and
+  where to go, with the creator's own voice and posts as proof. **Hero:** the best places or episodes as real photos or
+  footage, each with its price and area, stepping through as you scroll, with one action such as "see all spots" or
+  "plan my weekend". Below: filters by area, type and price, a map, the latest posts, and how they visit and film.
+  Category leaders to open first: timeout.com, theinfatuation.com, atlasobscura.com, airbnb.com/s/experiences. Search:
+  city guide website, things to do website, travel guide interactive, creator media website.
 - **Trust and expertise:** finance, law, accounting, insurance, consultants, B2B suppliers. Calm, clear, credible.
   **Hero:** one calm object drawn in fine lines (the product, a building, a chart) holds the stage and stays fixed while
   chapters change around it, with a segmented progress bar. A live slider or calculator answers the money question

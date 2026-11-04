@@ -1,13 +1,14 @@
 # Research agent: run order
 
-You have **10 minutes** for this lead, so skim and decide as a person would. Your task message gives `CLIENT`, `PROJECT`
+You have **10 minutes** for this lead, or up to **20** when the category is unusual or your first references fail the
+bar, so skim and decide as a person would. Your task message gives `CLIENT`, `PROJECT`
 (its folder), `KIT` (this repo), `PORT`, `FRONT_DESK` (a thread id) and `ZERILAB_PROJECT_ID`. `PROJECT/docs/LEAD.md` holds
 the user's message, and its notes beat these defaults.
 
 ## Ground rules
 - Run `git -C KIT pull --ff-only` first. If that fails, carry on with the copy you have.
 - Nobody is watching, so never ask anything. Work alone, with no subagents.
-- Run `date +%s` now and after each step. **At 8 minutes, stop gathering and write `PITCH.md`.**
+- Run `date +%s` now and after each step. **At 8 minutes (18 on the longer limit), stop gathering and write `PITCH.md`.**
 - Quick is the goal, but shallow is a failure: under 4 minutes usually means you skipped something.
 - Don't read other folders in `WebsiteProjects` or use memories. Re-check every fact at its source.
 - Build 3 variants unless `LEAD.md` gives a number.
@@ -37,7 +38,7 @@ the user's message, and its notes beat these defaults.
      Save images to `PROJECT/content/images/`. Look at every photo you keep, and delete any stock picture or shared menu
      template. Don't download everything or read a whole catalogue.
    - **Before moving on, you need real prices, a sharp logo and photos at least 1000px wide.** If any is missing, spend
-     the spare time on it, up to the 8-minute limit. Menus are often the best source of prices and sharp photos.
+     the spare time on it, up to the gathering limit. Menus are often the best source of prices and sharp photos.
 2. **Decide (1 minute).** Pick the tone from "Tone" in `KIT/prompts/office/site-types.md` and write the buyer's path (see
    "What makes a concept"). Read `KIT/prompts/office/site-types.md`, the "The hero", "What the approved sites do" and
    "Type" parts of `taste.md`, `KIT/prompts/office/motion.md`, and the effects list in `KIT/tools/web/README.md`. Pick the
@@ -81,8 +82,8 @@ the user's message, and its notes beat these defaults.
       it suits. Try FWA, CSS Design Awards, Godly, Siteinspire, design studios' own portfolios and strong brands abroad.
    4. Add the client's family from "Design families" in `site-types.md`, because designs travel between categories that
       sell the same way.
-   5. Read `reference-library.md`, starting with "Benchmarks" and "Rejected". An entry is only a lead, so open it like the
-      rest.
+   5. Read `reference-library.md`, starting with "Benchmarks" and "Rejected". Use a Benchmark whenever it fits the
+      client's business and tone: open it like the rest, and it counts as a reference. Other entries are only leads.
    6. Run `node KIT/tools/web/gallery-scan.cjs "<terms>" "<terms>" ... --out PROJECT/references/scan` (about 15 seconds) for
       Behance and Dribbble parts. It prints each project's URL.
    7. Open a shortlist of 6–8 at once:
@@ -96,14 +97,18 @@ the user's message, and its notes beat these defaults.
       its impact and craft, not its subject: the finished site still looks like the client's own business.
    9. **If fewer than 3 pass, or what you have is weak, explore other categories instead of lowering the bar.** Look for any
       strong site with a similar object, feeling or job. A physio could learn from sports, cars, medical devices, biotech,
-      fashion or product launches. The category look from step 1 still holds. Keep going until the 8-minute limit, then
+      fashion or product launches. The category look from step 1 still holds. Keep going until the gathering limit, then
       use what passes and note the gap.
 
    **What to end with:**
-   - **3 to 6 references in total,** never padded. Every variant gets at least one. They're sources to take from, not
-     sites to copy: one can give a hero and another a layout, and one can feed two variants.
-   - **At least half are new finds from this run,** not from the library. If you're short, keep searching until the
-     8-minute limit rather than noting the gap early.
+   - **At least 2 references per variant:** a lead that passes the bar across the whole page, plus others for specific
+     parts. A reference is never kept for one detail alone. They're sources to take from, not sites to copy, and one can
+     feed two variants.
+   - **Benchmarks and new finds both count.** Use Benchmarks where they fit the business and tone, and search for new
+     ones wherever they don't. If you're short, keep searching until the limit rather than noting the gap early.
+   - **Check your picks cold.** Before writing `PITCH.md`, open each kept reference's sheet again as if you'd never seen
+     it. Drop and replace any where a cookie banner, loader or pop-up covers frames, most frames are static text and
+     photos, the look is on the fail list, or it doesn't suit the tone. Say in "References opened" that you did this.
    - **Every variant is led by a reference that passes the bar.** One can lead two variants if it truly suits both. Prefer
      a live site, because it shows how a page behaves. A strong Behance or Dribbble still can lead too, if `PITCH.md` pairs
      it with a live site or says how the page will move.
