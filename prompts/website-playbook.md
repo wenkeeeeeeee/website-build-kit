@@ -36,8 +36,8 @@ WebsiteProjects/<Project>/
 4. **Lead review:** one desktop screenshot per variant, `check-pages.cjs --phone`, a grep for reference names and banned
    words, then publish.
 
-**One concept per variant, from the client's own world.** Vary the section order, story spine and page furniture too:
-identical briefs on one starter come back as three reskins. See "What makes a concept" in `office/research.md`.
+**One concept per variant, from the client's own world.** Vary the story spine and page furniture too: identical
+briefs on one starter come back as three reskins. The buyer's path order can repeat; how each step is told can't. See "What makes a concept" in `office/research.md`.
 
 **Shape the plumbing to the business.** Rename the basket rather than adding something new: a shoot list, a try-on list,
 a confidential request. It still ends in one filled-in WhatsApp message. Add one tool (lens picker, frame finder, branch
@@ -106,7 +106,7 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you're u
 - **Intro as preloader:** wait for the hero poster to decode (cap about 3s), and land the intro's shape exactly on its
   twin in the hero. Show it once per session, decided by an inline `<head>` script that adds a class to `<html>` before
   first paint, or the page flashes.
-- **Long brand opening** (`prologue.js`): dark ground, light beam, embers, the logo swept in gold, then the story in acts,
+- **Long brand opening** (`prologue.js`), for Branding sites in the luxury tone only, never in front of a shop: dark ground, light beam, embers, the logo swept in gold, then the story in acts,
   about 9-10 screens, with act labels and "Skip the story". Never loop or ping-pong a short clip, because clients notice
   the rewind: scrub it over scroll.
 - **Storytelling brands:** the home page is one story whose transitions carry you between products, with no cards or

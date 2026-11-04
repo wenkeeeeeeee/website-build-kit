@@ -20,8 +20,9 @@ between steps unless something is blocked. Short updates only.
    - Open it once with `check-pages.cjs`. Every page must work, because all the variants copy it.
 4. **Builders (30 minutes).** Fill in `KIT/prompts/variant-agent-brief.md` once per variant, using its column of
    `PITCH.md`, and send all the subagents in one message so they run in parallel, each with `run_in_background: false`.
-   First check each concept: if something other than the product, or a customer using it, is the hero, or the palette
-   comes from a metaphor, rewrite it in `PITCH.md` before briefing.
+   First check each concept: if something other than the product, or a customer using it, is the hero, the palette
+   comes from a metaphor, the look doesn't match the tone, or the section order skips a step of the buyer's path,
+   rewrite it in `PITCH.md` before briefing.
 5. **Hub.** Write `PROJECT/index.html`, in the format in section 1 of the playbook, with short plain names.
 6. **Quick check (3 minutes).**
    - Run `check-pages.cjs` once on each variant's home page, click through to one inner page, and grep for reference names.
@@ -32,6 +33,9 @@ between steps unless something is blocked. Short updates only.
    - **Category:** put each hero beside two category leaders from "Category look" in `PITCH.md`, not only its own lead
      reference. Ask what a stranger would say this company sells, and whether the brand's own marketing team would
      publish it. If the user liked another variant, this one must look at least as premium. Send back anything that fails.
+   - **Customer walk:** on a phone-size screen, walk each variant's home page as "Will they buy?" in `taste.md` says, and
+     check the buying basics and the tone. Send back any variant where a customer wouldn't know what it is, trust it,
+     or know how to buy.
    - **Fonts:** compare the fonts it prints against "Type" in `taste.md`, and replace any banned one.
    - **Coverage:** compare the variants against `content/` and `PITCH.md`, and add anything one left out, so all cover the
      same products, prices, pages, proof and ways to order.

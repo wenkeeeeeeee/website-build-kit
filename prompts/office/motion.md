@@ -4,14 +4,19 @@ Clients call plain variants basic, even when the layout and content are good, so
 variant. Motion must also say something: show this client's object, explain how the business works, or carry the visitor
 to the next idea. Decoration that could sit on any site doesn't count, and nor does a reveal on its own.
 
+How much depends on the tone in `PITCH.md`: playful is loud and bouncy, professional is precise and calm. Motion serves
+the buyer's path, so it never delays the core, the price or the action.
+
 ## What every variant must have
-1. **An opening sequence, 2-4 seconds.** The client's object or logo animates into the hero and doubles as the preloader.
-   It's skippable, shows once per session, and lands exactly on its place in the hero. It then leaves the hero clean, as
-   "The hero" in `taste.md` says.
-2. **A signature scroll set-piece, 3-5 screens of pinning.** Scrolling drives a real sequence: something assembles,
-   opens, travels, transforms or changes state.
-3. **A motion graphic in every section.** At least one drawn or animated element that carries meaning for that section.
-   In the hero, that's the main visual itself, not an extra element.
+1. **An opening that never blocks.** Playful: the client's object or logo animates into the hero in 2-3 seconds and
+   doubles as the preloader. Professional: at most a one-second reveal of the hero. Either way it's skippable, shows
+   once per session, lands exactly on its place in the hero, and leaves the hero clean, as "The hero" in `taste.md` says.
+2. **One signature scroll set-piece, 2-4 screens of pinning.** Scrolling drives a real sequence: something assembles,
+   opens, travels, transforms or changes state. Put it where it explains the product, never between the visitor and
+   the price or the action.
+3. **Motion with a job in every section.** At least one drawn or animated element that carries meaning for that section:
+   playful brands can use characters, stickers and bounce; professional brands use counters, diagrams, product turns
+   and precise reveals. In the hero, that's the main visual itself, not an extra element.
 4. **A designed join between every two sections.** Follow "Transitions" in section 3 of the playbook. The client's object
    carries the change wherever it can.
 5. **Something alive at rest.** The hero's main visual and the key sections keep moving gently without scrolling: a slow
@@ -68,4 +73,5 @@ Starting points only. The concept in `PITCH.md` wins.
 - **Light:** the first screen appears within 3 seconds. Compress every image, and use SVG where it can replace one.
 - **Phones:** keep the idea with lighter versions. Replace long pinning with shorter moves and drop heavy canvases.
 - **Reduced motion:** every sequence ends in its finished state, nothing hidden, and the page is complete without it.
-- **Older audiences and serious topics:** the same craft, but slower and with fewer loops.
+- **Professional tone, older audiences and serious topics:** the same craft, but slower, with fewer loops, no bounce
+  and no sound.

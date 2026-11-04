@@ -13,7 +13,8 @@ a fast, plain result is a failed one.
 ## Your variant
 - Folder: `{{PROJECT ROOT}}/variants/{{nn-name}}/` (site in `site/`, your reference captures in `ref/`).
 - Concept: {{one sentence: what in this business is the hero made of? Not a style word.}}
-- Yours alone, shared with no other variant: story spine {{section order}}; signature moment {{the one scroll
+- Tone: {{playful | modern and professional, from `PITCH.md`}}. Buyer's path: {{from `PITCH.md`}}.
+- Yours alone, shared with no other variant: how the buyer's path is told {{section order along the path}}; signature moment {{the one scroll
   set-piece}}; business tool {{finder, picker, dial or quote builder}}; basket name {{or none}}; header {{its own
   shape}}; type pair {{fonts}}; palette {{from the client's world}}.
 - Hero: {{its visual idea, words and anything else on the first screen, from your column of `PITCH.md`}}.
@@ -24,7 +25,7 @@ a fast, plain result is a failed one.
   Fit the layout and components to the client rather than reproducing the reference.
 - Facts: {{3-5 lines: what the business sells, where, proof (reviews, certificates), how people order}}.
 
-## Four rules that beat your concept
+## Five rules that beat your concept
 1. **The hero delivers the business core and stays clean.** Follow "The hero" in `taste.md`: it says what this business
    is, what it sells and who it's for, in a clean, attractive and creative first screen with no heavy text. A title with
    some photos is never enough. The opening must land there, never hide or delay it.
@@ -34,7 +35,9 @@ a fast, plain result is a failed one.
 3. **This variant carries the whole business, as every other variant does.** Every product or service with its price,
    every page in `PITCH.md`, and all the proof, offers, questions, locations and ways to order or book. Your concept
    changes how it's told, never how much. If something doesn't fit the home page story, give it a designed inner page.
-4. **Every line is specific to this client.** Write from `PITCH.md`, in the customer's words, and place all of "Must
+4. **It's built to sell.** Follow "Will they buy?" in `taste.md`: sections in the buyer's path order, the buying
+   basics, and persuasion over show, in the tone set above.
+5. **Every line is specific to this client.** Write from `PITCH.md`, in the customer's words, and place all of "Must
    say" across the page: their problem by name, how this works, real proof, what it costs, how to start. If a line could
    sit on a competitor's site, rewrite it with this client's facts.
 
@@ -77,12 +80,13 @@ In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md` and `content/OPEN-QUES
   title, description and share image for this variant.
 - **Client's world:** carry the client's own object through the intro, transitions, image frames and small details, on
   inner pages too, as your column of `PITCH.md` says. Keep it well made and clear of the copy.
-- **Motion:** meet all seven points in `motion.md`, following your column's motion plan. Build it with each section,
+- **Motion:** meet the seven points in `motion.md` at the level your tone allows, following your column's motion plan. Build it with each section,
   starting with the opening and the set-piece. A section that only fades in is unfinished.
 - **Lean workflow:** no gates, plans, reports, TDD, fixtures or docs files. Don't use the unlazy skill or the superpowers
   planning, TDD, verification or worktree skills.
 - **Before you finish:** run `check-pages.cjs --phone --header <your header height>` at both sizes on the home page and each
-  inner page, and fix what looks off. Check your first screen against "The hero" in `taste.md`. Run `contact-sheet.cjs` on
+  inner page, and fix what looks off. Check your first screen against "The hero" in `taste.md`, and do the customer walk
+  from "Will they buy?" at phone size. Run `contact-sheet.cjs` on
   your site, its lead reference and one category leader from "Category look" in `PITCH.md`, and compare them side by
   side: if your hero or any section looks weaker, or your site wouldn't belong beside the category leader, fix it. Check
   the printed fonts against "Type" in `taste.md`. Grep the site for reference names and banned words.

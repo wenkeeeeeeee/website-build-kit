@@ -17,14 +17,14 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   it reads as a template. Instead, one object or scene fills the screen, the headline is set into that scene as part
   of the composition, and the first screen carries one line of facts and one action. Use the split only when the
   concept needs it, and in no more than one variant.
-- **The hero is something you do.** The visitor acts on the client's object and the story starts from what happens:
-  hold to fry, inflate or light it; move the cursor to show the finished version under the raw one; drag to see where
-  the money goes. The result is big and visible, a tap works on phones, and the page still reads in full if nobody
-  touches it. Never a gate in front of the site. The starting hero for each design family is in `site-types.md`. The
-  action is one a customer of this category already knows from its best sites: switch models, turn or fold the product,
-  compare costs. Games (hold to speed up, drag a dashboard) only suit playful brands.
-- **Sound is optional.** For bars, food and playful brands, sound can lift the hero: off by default, a visible toggle,
-  short and quiet. Never for serious topics such as money, health or law.
+- **An action, as the tone allows.** In the playful tone the visitor acts on the client's object and the story starts
+  from what happens: hold to fry, inflate or light it; move the cursor to show the finished version under the raw one.
+  In the professional tone the action is one customers already know from the category's best sites (switch models,
+  turn or fold the product, compare costs), and never a game. The result is big and visible, a tap works on phones,
+  and the page still reads in full if nobody touches it. Never a gate in front of the site. The starting hero for each
+  design family is in `site-types.md`.
+- **Sound only in the playful tone.** For bars, food and playful brands, sound can lift the hero: off by default, a
+  visible toggle, short and quiet. Never in the professional tone.
 - **The hero comes from the same world as the body.** If the page below runs on real photos and footage, a code-built 3D
   object on a blurred backdrop reads as a different site. One object can also say the wrong business: a lone microphone
   reads as karaoke, not a live band. Test the hero by asking what business a stranger would guess.
@@ -32,8 +32,8 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **Effects stay around the footage, not over it.** A full-screen mosaic, pixel or LED treatment reads as blurry, and a colour
   tint hides the real room. Keep the real footage sharp and in its true colours in the centre, and run the effect around it.
 - **Make the visual, don't just place it.** Client photos are rarely strong enough as they are. Grade them, scale them
-  and set them in a treatment that fits the category look: bold colour suits playful brands, while studio light or a
-  dark stage suits technology and premium products. Cut something out only when the source is sharp and the edge is clean: people cut from
+  and set them in a treatment that fits the tone and the category look: bold colour suits playful brands, while studio
+  light or a dark stage suits technology and premium products. Cut something out only when the source is sharp and the edge is clean: people cut from
   phone footage and food with white sticker outlines were rejected on sight. If a photo can't hold the screen, build the visual in code: a
   3D or drawn form, or giant moving type. Never stretch a soft photo.
 - **Earn your place.** Stats, badges, review chips, tickers, tags, extra photos, floating cards, hours and addresses stay
@@ -44,6 +44,20 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **Test it:** ask whether a stranger could say what is sold here. Remove anything that doesn't help. If what's left is
   only a title and photos, or it wouldn't make someone stop, redo it. Then put it beside its lead reference: if it
   doesn't belong there, redo it.
+
+## Will they buy?
+A variant can look impressive and still lose the sale. Every variant has to make a stranger want it, trust it and know
+how to get it.
+- **The buyer's path sets the order.** The home page follows the buyer's path in `PITCH.md`. Each section answers the
+  question the buyer has at that point (What is it? Is it for me? Is it real? How much? How do I get it?), and you can
+  say which one.
+- **Buying basics, in every variant:** real people, products or premises early; the price or a "from" price visible
+  without hunting; warranty, delivery and payment terms beside the price; reviews or proof before the ask; the main
+  action in the header and always within reach on a phone.
+- **Persuasion beats show.** If a spectacular section delays the price, hides the action or slows the page on a phone,
+  cut it down. Ideas and motion are there to make the customer want it and trust it.
+- **Customer walk.** On a phone, read the home page as the customer, from landing to the WhatsApp message. At each
+  screen ask: do I know what this is, do I trust it, do I know what to do next? Any "no" gets fixed.
 
 ## Rejected on sight
 - **A body that doesn't match the hero.** The hero sets the level for the whole site. If the sections below drop to cards
@@ -56,7 +70,7 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **One recipe in every variant.** A shared brief or shared asset pack makes every hero and food section come back the
   same. Give each variant its own hero idea and its own way of showing the products, in its own brief.
 - **Variants that look alike.** The same template in different colours is the most repeated complaint. Shared headers,
-  hero layouts and section orders count.
+  hero layouts and ways of telling count. The buyer's path can repeat; how each step is told can't.
 - **A good idea with no context.** The page must sound like it knows the business. A site for a skin condition talks
   about the itch, the flare-ups, why they come back, how the cream works, real results and what it costs.
 - **Variants at different levels of completeness.** Every variant carries the whole business. They differ in design and
@@ -100,7 +114,8 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **A changed logo.** Use the original. Don't redraw, outline or restyle it.
 - **Invented words.** No slogan, claim or theme that isn't in the client's own material.
 - **"Branding" built as a shop.** Branding means storytelling: the home page is one story with transitions between
-  products, and no cards, prices or adverts until a quiet shop link at the end.
+  products, and no cards, prices or adverts until a quiet shop link at the end. The main action still stays in the
+  header.
 - **Bad images.** Cut-off products, odd ratios, circles cut from square photos, low-res pictures stretched full-screen,
   slow zooms on blurry stills.
 - **Bad motion.** Short clips rewinding or looping to fill time, jitter, scroll lag, a heavy first load.
@@ -114,7 +129,7 @@ An optician's and a self-photo studio's sites are the level to reach.
 - **That object runs through the whole site:** the intro, section transitions, image frames and small details. A
   balloon stylist got balloons flying up in the intro, balloons carrying each section change, and photos framed inside
   balloons. Below the hero, use more of the client's world than feels safe, at the same level of craft.
-- **One signature moment, then sections that keep moving.** One scroll set-piece of 3–5 pinned screens, then sections
+- **One signature moment, then sections that keep moving.** One scroll set-piece of 2–4 pinned screens, then sections
   that each fit one screen with their own motion graphic. Home pages run about 8–19 screens. Meet `motion.md`.
 - **A tool that fits the business.** A lens tester, face-shape finder or venue dial answers a question customers really
   ask, and ends in a WhatsApp message.
@@ -128,7 +143,7 @@ An optician's and a self-photo studio's sites are the level to reach.
   coming back?"), then ran: "Which one sounds like you?" with named conditions, why it keeps happening, a three-step
   answer, a side-by-side with other cream types (no brands), a before-and-after slider with named customers, how to use
   it, packages with was and now prices, plain answers, and where to buy.
-- **Products as loud full-screen worlds.** Each product takes over the screen in its own colour with its real name,
+- **Products as loud full-screen worlds, in the playful tone.** Each product takes over the screen in its own colour with its real name,
   facts and price. A dark rail stepping through the real menu, with dishes you can add to a list, also worked.
 - **Local detail stays.** The client's own languages, real branch names, live open or closed status, and honest
   `[client to confirm]` tags instead of guesses.

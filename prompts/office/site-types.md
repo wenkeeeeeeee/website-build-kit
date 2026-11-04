@@ -17,7 +17,7 @@ Research picks one before any reference search. The type decides what the first 
 - **Choose when:** the product is premium, heritage or hard to judge in a list; the client says "rebrand" or "story";
   or their pages show pride in origin and craft rather than prices.
 - **Home page does:** tells one story, with transitions carrying you from product to product. Prices and shop links
-  come only at the end, quietly.
+  come after the story, but the main action stays reachable in the header throughout.
 - **Pages:** home as the story, brand or origin, collection, recipes or rituals, contact. The shop is secondary.
 - **Plumbing:** a light catalogue and enquiry. Hide the basket until the end.
 - **Search for:** scroll storytelling, brand films, luxury maisons, editorial, 3D product experiences.
@@ -38,6 +38,31 @@ Research picks one before any reference search. The type decides what the first 
 - **Search for:** consultancy, corporate storytelling, editorial case studies, process timelines.
 
 Whatever the type, the same rules apply: one concept per variant, and the checks in `taste.md`.
+
+## Tone
+Research decides one tone for the client before any reference search, writes it in `PITCH.md` with the signals that
+decided it, and every variant uses it. Variants differ in idea and layout, never in tone.
+
+- **Playful:** bought on impulse or for fun, at a low price, from a client whose own posts joke, use emoji or loud
+  colour. Snacks, sweets, drinks, desserts, gifts, balloons and parties, toys and kids' things, pets, casual cafés and
+  bars. **Looks like:** loud colour, bold type, stickers and cut-outs, bouncy motion, a hero action to play with,
+  optional sound, and copy with the brand's humour.
+- **Modern and professional:** bought after comparing, at a higher price or risk, or anything to do with health, money,
+  safety, learning or a business buyer. Vehicles and technology, clinics and health, finance and law, education, B2B,
+  property, services, and group or corporate sites. **Looks like:** a calm, confident layout, a neutral or dark base with
+  the brand's accent, clean type, precise motion that explains the product, and real specs and proof up front. No
+  games, stickers, sound or jokes in headlines.
+- **Luxury and heritage** (fine dining, jewellery, watches, boutique hotels, heritage brands) is the modern and
+  professional tone with richer imagery, a slower pace and more space.
+
+**How to decide.** The higher the price or the risk, the more professional. Who pays matters too: parents, patients,
+companies and anyone spending more than about RM500 at once want professional. Then check the client's own voice and
+the category leaders. If the signals are mixed, choose modern and professional. A professional client with a playful
+voice can have one warmer variant, still clean and credible.
+
+**Tone decides the references.** Search with the tone's words: playful brand, fun ecommerce, colourful, illustrated; or
+product launch, premium, minimal, technology, corporate. A reference in the other tone can't lead a variant, however
+good it is.
 
 ## Design families
 Categories that sell the same way can share references, so search the family as well as the exact category. Clients

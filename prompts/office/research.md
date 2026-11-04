@@ -30,14 +30,16 @@ the user's message, and its notes beat these defaults.
    - **Check what you find.** Names repeat, so confirm each result is this business. The client's own menu and posts
      beat snippets. Note where each found image came from, and mark any from someone else's page `[client to confirm]`,
      because using it needs permission.
-   - **Think like the customer.** What were they searching for or worried about before finding this business? Capture it
-     in their words, from reviews, comments and the client's copy.
+   - **Think like the customer.** What were they searching for or worried about before finding this business? Who pays,
+     on what device, what do they compare it with, and what made past customers buy? Capture it in their words, from
+     reviews, comments and the client's copy. This becomes the buyer's path.
    - **Collect** every client field in `PITCH.md`, 6–10 products or dishes with prices, the logo and 6–8 usable photos.
      Save images to `PROJECT/content/images/`. Look at every photo you keep, and delete any stock picture or shared menu
      template. Don't download everything or read a whole catalogue.
    - **Before moving on, you need real prices, a sharp logo and photos at least 1000px wide.** If any is missing, spend
      the spare time on it, up to the 8-minute limit. Menus are often the best source of prices and sharp photos.
-2. **Decide (1 minute).** Read `KIT/prompts/office/site-types.md`, the "The hero", "What the approved sites do" and
+2. **Decide (1 minute).** Pick the tone from "Tone" in `KIT/prompts/office/site-types.md` and write the buyer's path (see
+   "What makes a concept"). Read `KIT/prompts/office/site-types.md`, the "The hero", "What the approved sites do" and
    "Type" parts of `taste.md`, `KIT/prompts/office/motion.md`, and the effects list in `KIT/tools/web/README.md`. Pick the
    site type, or split the variants across two if the evidence honestly points both ways. Write one rough concept per
    variant, to finish after step 3.
@@ -51,7 +53,8 @@ the user's message, and its notes beat these defaults.
    - **Premium for this business:** high-end craft at the right level. A snack brand and a private clinic look premium
      in different ways.
 
-   Name two frames or parts that prove this. If you can't, drop it, however well it fits.
+   Name two frames or parts that prove this. If you can't, drop it, however well it fits. It must also suit the tone you
+   picked: a playful reference can't lead a professional client, or the other way round.
 
    **Motion earns extra points but isn't required.** A strong design with little animation can pass. When two references
    are otherwise equal, pick the one with stronger animation and motion graphics. Motion never rescues a plain design.
@@ -70,7 +73,8 @@ the user's message, and its notes beat these defaults.
       they share: subject, palette, type, tone and level. That's the category look, and every variant stays recognisably
       inside it.
    2. **Search for creative work, not just the category.** Category words alone find plain sites, so put a design term in
-      every search: creative, art direction, 3D, immersive, scroll animation, interactive storytelling. Run WebSearch for
+      every search, matching the tone: creative, art direction, 3D, immersive, scroll animation, interactive
+      storytelling, plus the tone's words from `site-types.md`. Run WebSearch for
       `site:awwwards.com/inspiration <design term>` and `site:awwwards.com/sites <design term> <family term>`, 1–2 per
       variant, then find the live site each good result describes. Awwwards blocks browsers, so don't open it directly.
    3. **Don't stop at Awwwards, Behance and Dribbble.** They're starting points, and a reference can come from anywhere if
@@ -117,8 +121,10 @@ the user's message, and its notes beat these defaults.
 
 ## What makes a concept
 A concept is how the client's message gets told, not a replacement for it. Work in this order:
-1. **Content.** Decide what the page must say, then find the idea that says it best. Every variant tells the same
-   complete content in a different order.
+1. **Buyer's path.** Write it from what you found about the customer: who buys and on what device, what brings them,
+   what they compare it with, their top three doubts with the proof that answers each, when the price appears, and the
+   action. This is the order of every home page. Every variant tells the same complete content along it; the concept
+   changes how each step is told, never which steps there are.
 2. **Core.** Write the Core line, and plan each hero by "The hero" in `taste.md`. If an idea looks good but hides the
    core or crowds the hero, change the idea.
 3. **Concept.** One sentence: **what in this business is the hero made of, and what does it do?** It must be an object,
@@ -126,19 +132,23 @@ A concept is how the client's message gets told, not a replacement for it. Work 
    lens into the film" and "Every room is a magazine cover" are concepts. "Dark and elegant" is not. If a competitor
    could use the sentence, it's too generic. The hero is made of the product, or a customer using it. A metaphor (a
    road, a ledger, a stage) can carry transitions or one section, never the hero or the palette.
-4. **Look.** Design from what the real place looks like, with real footage and photos leading, not from the logo or
+4. **Look.** Use the tone from step 2 of the run order. Design from what the real place looks like, with real footage and photos leading, not from the logo or
    poster colours. Stay inside the category look. No two variants may share a structure, header or type pair. Palettes
    can share the brand's colours and differ in proportion and accent. They come from the brand and the category look,
    never from a metaphor. Variants differ in idea and layout first: a weaker or off-category look is never the price
    of being different, so never pick a direction just because no other variant has used it.
 5. **Reach.** Say how the object carries the intro, transitions, image frames and small details, in every variant. If a
    section still works with the object deleted, the object is decoration and the section is a template.
-6. **Motion.** Plan it from `motion.md` with real content: what the opening does, and each section's motion graphic.
+6. **Motion.** Plan it from `motion.md` at the level the tone allows, with real content. Each piece of motion serves a
+   step of the buyer's path, and none of it delays the core, the price or the action.
 
 ## `PITCH.md` format
 ```
 # CLIENT
 Site type: <type>, because <one line>.
+Tone: <playful | modern and professional>, because <the signals: price, risk, who pays, the client's voice, category>
+Buyer's path: <who buys and on what device; what brings them; what they compare it with; top 3 doubts, each with the
+  proof that answers it; when the price appears; the action>
 Core: <one line: what this business is, what it sells and who it's for>
 Facts: <what they sell, where, how to order, WhatsApp number, 6-10 products with prices>
 The customer: <who they are, and the exact problem, worry or desire that brings them, in their words. List each
@@ -169,7 +179,7 @@ References opened: <every page you went through: kept or dropped, why, and for k
 | Client's object through the site (intro, transitions, image frames, details) | | | |
 | Motion plan (opening, motion graphic per section, alive at rest, page change) | | | |
 | Business tool (finder, picker, dial or quote builder, ending in WhatsApp) | | | |
-| Section order, with what each section tells the customer | | | |
+| Section order: the buyer's path, with the question each section answers and how this variant tells it | | | |
 | Header | | | |
 | Type pair (each font, where it comes from, and what in the client's world it answers to) | | | |
 | Palette | | | |
