@@ -119,7 +119,21 @@ the user's message, and its notes beat these defaults.
    - modelSelection: `{"instanceId": "claudeAgent_work", "model": "claude-opus-5-5"}`, so builders get the best model
    - message: `Read KIT/prompts/office/build.md and run it. CLIENT=... PROJECT=... KIT=... PORT=... FRONT_DESK=...` with the
      real values.
-6. **Report in under 80 words:** minutes taken, site type, the concepts, and the build thread's `link` copied exactly.
+6. **Report.** Without `STOP_BEFORE_BUILD`: in under 80 words, the minutes taken, site type, the concepts, and the build
+   thread's `link` copied exactly. With `STOP_BEFORE_BUILD`: the review package below, because the user checks it
+   before anything is built.
+
+## Review package
+For `STOP_BEFORE_BUILD`, so the user can approve or change the plan before building. Plain and short, no tables:
+- Site type; tone and why; the Core line; the buyer's path.
+- The category leaders you opened, and what they share.
+- For each variant: its name and concept; the hero (what the customer sees, the scroll steps if any, the words); the
+  section order; the type pair and palette; and every reference it uses, as the URL, its sheet file in
+  `PROJECT/references/` and what it takes from it.
+- What's missing or unconfirmed, such as photos, prices or claims.
+
+Then stop and wait. If the user sends changes, update `PITCH.md`, say what changed, and wait again. If a change needs new
+references, search and open them by the same rules first.
 
 ## What makes a concept
 A concept is how the client's message gets told, not a replacement for it. Work in this order:
