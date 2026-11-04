@@ -11,8 +11,8 @@ Attach the logo and photos if you have them. Send the next client straight away 
 once, and any more wait their turn.
 
 ## What happens
-1. **Research, about 10 minutes.** It reads the client's links, picks the site type, and goes through references from
-   Awwwards, Behance, Dribbble and anywhere else that suits, keeping 3 to 6 and adapting the useful parts.
+1. **Research, about 10 minutes.** It reads the client's links, decides the tone and a direction per variant, and picks
+   references from the kit's Benchmarks and Awwwards, at least 2 per variant.
 2. **Build, 30–45 minutes.** Shared pages come first from the starter, then 3 full variants in parallel, with every page
    working, using the kit's tools and the design skills.
 3. **Quick check and publish.** It checks that nothing is broken, then goes to a private GitHub repo and a Vercel project,

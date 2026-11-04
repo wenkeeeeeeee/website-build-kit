@@ -29,7 +29,7 @@ result is a failed one.
   `PITCH.md`}}. Material: {{the exact clips and photos it uses, with sizes, from "Hero material" in `PITCH.md`}}. If
   the material can't carry a step, change the step rather than faking it, and say so in your report.
 - Changes from the user: {{for a repeat hero round or the rest phase, their words; otherwise none}}.
-- Reference: {{URLs and the part to take from each, or "taste-skill direction: <name>"}}. What I saw at a glance:
+- Reference: {{URLs, each marked Benchmark or Awwwards, and the part to take from each}}. What I saw at a glance:
   {{2-4 lines: header, hero, signature sections, motion}}.
 - Direction for {{CLIENT}}: {{one line idea}}. {{How the reference's components map to the client: which
   products/sections, which colours (from the client's world, not the reference's), what to avoid}}.

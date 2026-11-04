@@ -37,7 +37,7 @@ WebsiteProjects/<Project>/
    words, then publish.
 
 **One concept per variant, from the client's own world.** Vary the story spine and page furniture too: identical
-briefs on one starter come back as three reskins. The buyer's path order can repeat; how each step is told can't. See "What makes a concept" in `office/research.md`.
+briefs on one starter come back as three reskins. The buyer's path order can repeat; how each step is told can't. See step 2 of `office/research.md`.
 
 **Shape the plumbing to the business.** Rename the basket rather than adding something new: a shoot list, a try-on list,
 a confidential request. It still ends in one filled-in WhatsApp message. Add one tool (lens picker, frame finder, branch

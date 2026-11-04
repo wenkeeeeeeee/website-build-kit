@@ -1,13 +1,12 @@
 # Site types
 
-Research picks one before any reference search. The type decides what the first impression is.
+Research picks one before choosing references. The type decides what the first impression is.
 
 ## Shop
 - **Choose when:** many products with prices, an active marketplace shop, and customers who already know what they want.
 - **Home page does:** shows the range fast, then proves quality. One signature moment built from the products.
 - **Pages:** home, catalogue with filters, product, about, where to buy, contact or quote.
 - **Plumbing:** the full starter. The basket ends in WhatsApp or the marketplace.
-- **Search for:** clean e-commerce, product storytelling, playful packaging brands, product carousels.
 - **If it solves a problem** (skin, health, pain, hair, cleaning), it sells the answer, not the product. The home page
   runs: the customer's problem in their words, the specific needs it covers, why it keeps happening, how this works,
   real results, how it compares, how to use it, packages, questions, where to buy. Never make medical promises the
@@ -20,7 +19,6 @@ Research picks one before any reference search. The type decides what the first 
   come after the story, but the main action stays reachable in the header throughout.
 - **Pages:** home as the story, brand or origin, collection, recipes or rituals, contact. The shop is secondary.
 - **Plumbing:** a light catalogue and enquiry. Hide the basket until the end.
-- **Search for:** scroll storytelling, brand films, luxury maisons, editorial, 3D product experiences.
 
 ## Booking
 - **Choose when:** people visit in person: restaurants, cafés, studios, clinics, salons, opticians.
@@ -28,19 +26,17 @@ Research picks one before any reference search. The type decides what the first 
 - **Pages:** home, menu or services, item page, about, locations, booking, events or groups.
 - **Plumbing:** rename the basket (pre-order, shoot list, try-on list). Booking and groups go to WhatsApp. Add a branch
   map or finder if there are several locations.
-- **Search for:** restaurant sites, hospitality, studios, interactive menus, location pickers.
 
 ## Services
 - **Choose when:** the business sells expertise or case work: consultants, legal, B2B suppliers, support services.
 - **Home page does:** builds trust and explains the process, then one clear enquiry.
 - **Pages:** home, services, process, proof or cases, about, enquiry.
 - **Plumbing:** drop the shop parts. Keep the quote form, or a confidential request for sensitive services.
-- **Search for:** consultancy, corporate storytelling, editorial case studies, process timelines.
 
 Whatever the type, the same rules apply: one concept per variant, and the checks in `taste.md`.
 
 ## Tone
-Research decides one tone for the client before any reference search, writes it in `PITCH.md` with the signals that
+Research decides one tone for the client before choosing references, writes it in `PITCH.md` with the signals that
 decided it, and every variant uses it. Variants differ in idea and layout, never in tone.
 
 - **Playful:** the business is about joy, treats, celebration, play or personality, and customers come for fun or a
@@ -61,17 +57,13 @@ Ask what the business is about and what customers come to it for, then check how
 posts, and how the category leaders look. If the signals are mixed, choose modern and professional. A professional
 client with a playful voice can have one warmer variant, still clean and credible.
 
-**Tone decides the references.** Search with the tone's words: playful brand, fun ecommerce, colourful, illustrated; or
-product launch, premium, minimal, technology, corporate. A reference in the other tone can't lead a variant, however
-good it is.
+**Tone decides the references.** Pick Benchmarks tagged with the tone, and put the tone's words in Awwwards searches:
+playful, colourful, illustrated; or premium, minimal, technology, corporate. A reference in the other tone can't lead
+a variant, however good it is.
 
 ## Design families
-Categories that sell the same way can share references, so search the family as well as the exact category. Clients
-that fit none of these go with whichever family matches how the page must sell. Add a family when a new one proves
-useful.
-
-The terms below are starting points. Add a design term to each one, because category words alone find plain sites. If
-the family is weak too, explore other categories, as step 3 of `research.md` says.
+Starting directions for categories that sell the same way. Clients that fit none of these go with whichever family
+matches how the page must sell.
 
 Each family also has a starting hero, built the way "The hero" in `taste.md` says: one stage, one line of facts, one
 action, and something the visitor does. These are starting points: the concept in `PITCH.md` wins, and no two variants
@@ -79,58 +71,50 @@ use the same hero. The sites named are in the Benchmarks of `reference-library.m
 
 - **One beautiful object:** bags, eyewear, watches, jewellery, shoes, perfume, audio, furniture. The product is the star,
   with close-ups, materials and craft. **Hero:** the product alone at the centre, turning slowly and following the
-  cursor; scrolling takes it apart with each part named (Lusion, Opal Tadpole). Search: luxury eyewear website,
-  jewellery website, watch brand, fashion accessories ecommerce, product showcase website.
+  cursor; scrolling takes it apart with each part named (Lusion, Opal Tadpole).
 - **Vehicles and mobility:** e-scooters, e-bikes, motorcycles, cars, EV charging, rental and sharing. Technology people
   ride every day, so it looks precise and premium, never loud. **Hero:** the real vehicle, big and sharp in studio light
   or on a real street, or a real rider using it; it turns, folds or comes apart as you scroll, with parts named. A model
   switcher and one fact line (weight, range, price a month). Below: a feature index over close-ups, spec counters,
   "which model fits you" and running cost against petrol. A dark or neutral base with the brand's accent, in a clean
-  grotesk. Never a game, a cartoon road, a dashboard or a sale poster. Category leaders to open first: cowboy.com,
-  atherenergy.com, gogoro.com, unagiscooters.com. Search: e-bike brand website, electric scooter launch, EV website
-  scroll animation.
+  grotesk. Never a game, a cartoon road, a dashboard or a sale poster. Category brands to open: cowboy.com,
+  atherenergy.com, gogoro.com, unagiscooters.com.
 - **Packs and jars:** snacks, drinks, sauces, coffee, sweets, pet food. Loud colour per product, flavours and ranges.
   **Hero:** the product being made or opened fills the screen, and the visitor does the last step (hold to fry, pour,
   crack the lid), which ends in the basket. Each flavour comes out in its own shape and colour, and the small copy has
-  the brand's humour (Don't Board Me). Search: beverage brand website, food packaging ecommerce, snack brand, consumer
-  brand landing page.
+  the brand's humour (Don't Board Me).
 - **Solves a problem:** skincare, hair, supplements, dental, pain relief, cleaning. Problem, proof, how it works.
   **Hero:** what the product does, under a headline in the customer's words. As you scroll, the problem clears: skin
   calms day by day with the days counted, with how it works and whether it's safe (ingredients, tests, who can use it)
   on the way. Every claim, timeline and safety line comes from the client's own material, or is marked
   `[client to confirm]`. Below, explain it simply and show results as drawings or real before-and-after, not
-  paragraphs (Opal Tadpole's "explain it like I'm 5" and "show don't tell"). Search: skincare brand website, wellness ecommerce, health product landing page.
+  paragraphs (Opal Tadpole's "explain it like I'm 5" and "show don't tell").
 - **Body and movement:** physiotherapy, pilates, yoga, gyms, sports. The body in motion, not a calm studio. **Hero:** a
   body in motion fills the screen, in real footage or line drawing, with joints and muscles named as they work and
-  giant type cut by the moving body (21tsi). Search: 3D anatomy website, sports performance website, athletic brand
-  website, medical device website, biotech website.
+  giant type cut by the moving body (21tsi).
 - **A place to visit:** restaurants, cafés, bars, hotels, spas, salons, gyms, clinics, photo studios. Sells the room and
   the visit. **Hero:** the real room or dish, sharp and whole at the centre, with the effect around it (light, steam,
   the time of night). The cursor or a hold shows the next state: empty room to full, raw to plated, day to night
   (Lando Norris's cursor reveal). One line says what, where and when, next to the booking action. Sound of the room is
-  optional. Search: boutique hotel website, hospitality website, restaurant website, spa website.
+  optional.
 - **Work worth showing:** event styling, florists, weddings, interiors, architecture, photography, tattoo, set design.
   The portfolio is the proof. **Hero:** before and after in one move: the bare space, which the visitor's hold or
   cursor fills with the finished work. Below, giant job names whose hover opens the work through the client's own
-  shape, and one line or thread carrying you through the page (Lando Norris, Lusion). Search: creative studio
-  portfolio, floral studio website, interior design portfolio, event production website, art direction studio.
+  shape, and one line or thread carrying you through the page (Lando Norris, Lusion).
 - **Guides, media and creators:** city guides, places-to-go and review accounts, listings and directories, event
   calendars, creator channels and communities. They sell a visit or an outing, not a product: the places, prices and
   where to go, with the creator's own voice and posts as proof. **Hero:** the best places or episodes as real photos or
-  footage, each with its price and area, stepping through as you scroll, with one action such as "see all spots" or
+  footage, each with its area, stepping through as you scroll, with one action such as "see all spots" or
   "plan my weekend". Below: filters by area, type and price, a map, the latest posts, and how they visit and film.
-  Category leaders to open first: timeout.com, theinfatuation.com, atlasobscura.com, airbnb.com/s/experiences. Search:
-  city guide website, things to do website, travel guide interactive, creator media website.
+  Category brands to open: timeout.com, theinfatuation.com, atlasobscura.com, airbnb.com/s/experiences.
 - **Trust and expertise:** finance, law, accounting, insurance, consultants, B2B suppliers. Calm, clear, credible.
   **Hero:** one calm object drawn in fine lines (the product, a building, a chart) holds the stage and stays fixed while
   chapters change around it, with a segmented progress bar. A live slider or calculator answers the money question
-  early (EnduroSat). No sound or games, and slower motion. Search: private bank website, law firm website, consultancy
-  website, corporate website.
+  early (EnduroSat). No sound or games, and slower motion.
 - **Learning and community:** courses, coaching, academies, mentorships, schools. A person, a method and student results.
   **Hero:** the method as one object (a crest, a path, a chart line) with the promise in one line and the real cost or
   first step something you can try; the object stays as the stage for the steps, as in Trust and expertise. Proof stays
-  labelled and risk wording stays. Search: online academy website, masterclass website, course landing page, membership
-  community.
+  labelled and risk wording stays.
 - **Origin and craft:** farms, wineries, distilleries, makers, heritage brands. A place and how it's made. **Hero:** a
   small drawn scene or map of the place, built in code; a route draws itself from the source to the finished product
-  and each stop opens a chapter (Igloo). Search: winery website, heritage brand story, craft maker website.
+  and each stop opens a chapter (Igloo).

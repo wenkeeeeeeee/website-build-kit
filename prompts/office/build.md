@@ -78,8 +78,8 @@ only at the hero review in step 4, or if something is blocked. Short updates onl
 - **Redoing one variant:** keep the level, tone and image treatment of any variant the user liked, and change the idea,
   layout and hero. Never pick a direction just because the other variants haven't used it. Open the category leaders
   again and run the Category check before publishing.
-- **An extra variant, even from the user's own idea, gets references too.** Search and open real sites first, using the
-  bar in step 3 of `research.md`, then name what to take from each. Never brief a Builder with no outside reference.
+- **An extra variant, even from the user's own idea, gets references too.** Pick them from Benchmarks or Awwwards and open
+  them, as step 3 of `research.md` says, then name what to take from each. Never brief a Builder with no outside reference.
 - **A redone hero goes through the same review:** build it, post its `hero-frames` sheet beside its reference, and
   wait for "go" before publishing.
 - **When the user rejects something or repeats a correction,** note the lesson in `PROJECT/docs/LESSONS.md`, in general
