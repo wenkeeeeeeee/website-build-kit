@@ -8,6 +8,11 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **The core comes first.** Within a few seconds a visitor knows what this business is, what it sells and who it's for,
   in the customer's words. Use the Core line in `PITCH.md`. A clever idea, story or mood that leaves them guessing has
   failed, however good it looks.
+- **Show what the customer came for.** Design the hero from the customer's side: the main visual is the thing they want,
+  shown so they want it. Selling cars, the car. Selling a service, the service being done and the result it gives.
+  Selling food, the dish they'll order. Selling skincare, what the product does: as they scroll, the skin clears, with
+  how many days it takes, how it works and whether it's safe. Claims, timelines and safety lines come only from the
+  client's own material, or show as `[client to confirm]`. A logo, a mood or a metaphor isn't what anyone came for.
 - **Clean, attractive and creative.** There's no fixed list of what a hero may hold. Anything that helps deliver the
   core or the idea can stay, as long as the first screen still looks clean. Avoid heavy text: a strong headline and a
   short line usually do it, and paragraphs never do.
@@ -27,7 +32,9 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   notice most on a good site. When the client sells a physical product people want to see from every side or inside
   (vehicles, gadgets, watches, eyewear, furniture, packaged food and drinks, cosmetics), the hero is scroll-driven: as
   the visitor scrolls, the product turns, opens, assembles, comes apart with its parts named, or the camera moves in to
-  a detail, then hands over into the next section. Each step says something true about the product. Pin it for 1–3
+  a detail, then hands over into the next section. A product that changes something (skincare, hair, cleaning,
+  fitness) can play its result over time instead: the problem clearing step by step, with the days shown. Each step
+  says something true about the product. Pin it for 1–3
   screens, scrub smoothly in both directions, keep the headline readable and the main action in the header throughout,
   and give phones a shorter version. A place can use a lighter version, such as the room filling or day turning to
   night. Skip it where nothing physical would move meaningfully, as for most services, law and finance.

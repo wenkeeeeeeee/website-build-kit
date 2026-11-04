@@ -26,7 +26,8 @@ between steps unless something is blocked. Short updates only.
 5. **Hub.** Write `PROJECT/index.html`, in the format in section 1 of the playbook, with short plain names.
 6. **Quick check (3 minutes).**
    - Run `check-pages.cjs` once on each variant's home page, click through to one inner page, and grep for reference names.
-   - **Hero:** check each first screen against "The hero" in `taste.md`. If `PITCH.md` plans a scroll-driven hero, scroll
+   - **Hero:** check each first screen against "The hero" in `taste.md`. Ask whether it shows what the customer came for,
+     in a way that makes them want it. If `PITCH.md` plans a scroll-driven hero, scroll
      it down and back up: it must scrub smoothly, show something true at each step and hand over cleanly. It must deliver
      the Core line in `PITCH.md`, look
      clean, and never be just a title and photos. Move anything that crowds it below.

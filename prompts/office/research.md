@@ -132,8 +132,9 @@ A concept is how the client's message gets told, not a replacement for it. Work 
 3. **Concept.** One sentence: **what in this business is the hero made of, and what does it do?** It must be an object,
    place or ritual from this client's world that carries the customer's problem or desire. "The logo's O opens like a
    lens into the film" and "Every room is a magazine cover" are concepts. "Dark and elegant" is not. If a competitor
-   could use the sentence, it's too generic. The hero is made of the product, or a customer using it. A metaphor (a
-   road, a ledger, a stage) can carry transitions or one section, never the hero or the palette.
+   could use the sentence, it's too generic. The hero shows what the customer came for, as "Show what the customer
+   came for" in `taste.md` says: the product, the service and its result, the dish, or the change the product makes. A
+   metaphor (a road, a ledger, a stage) can carry transitions or one section, never the hero or the palette.
 4. **Look.** Use the tone from step 2 of the run order. Design from what the real place looks like, with real footage and photos leading, not from the logo or
    poster colours. Stay inside the category look. No two variants may share a structure, header or type pair. Palettes
    can share the brand's colours and differ in proportion and accent. They come from the brand and the category look,
@@ -148,7 +149,7 @@ A concept is how the client's message gets told, not a replacement for it. Work 
 ```
 # CLIENT
 Site type: <type>, because <one line>.
-Tone: <playful | modern and professional>, because <the signals: price, risk, who pays, the client's voice, category>
+Tone: <playful | modern and professional>, because <what the business is about, what customers come for, the client's voice, the category leaders>
 Buyer's path: <who buys and on what device; what brings them; what they compare it with; top 3 doubts, each with the
   proof that answers it; when the price appears; the action>
 Core: <one line: what this business is, what it sells and who it's for>

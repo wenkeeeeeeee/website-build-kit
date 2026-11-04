@@ -28,8 +28,8 @@ a fast, plain result is a failed one.
 
 ## Five rules that beat your concept
 1. **The hero delivers the business core and stays clean.** Follow "The hero" in `taste.md`: it says what this business
-   is, what it sells and who it's for, in a clean, attractive and creative first screen with no heavy text. A title with
-   some photos is never enough. The opening must land there, never hide or delay it.
+   is, what it sells and who it's for, in a clean, attractive and creative first screen with no heavy text. Its main
+   visual is what the customer came for, shown so they want it. A title with some photos is never enough. The opening must land there, never hide or delay it.
 2. **The whole page matches the hero and its reference.** Take what gives the reference its impact (scale, imagery,
    colour, composition), not just a small effect. Design the sections below at the same level, and treat their images the
    same way as the hero's. Don't fall back on cards and text on a plain background.

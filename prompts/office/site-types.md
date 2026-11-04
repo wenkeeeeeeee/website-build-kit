@@ -43,22 +43,23 @@ Whatever the type, the same rules apply: one concept per variant, and the checks
 Research decides one tone for the client before any reference search, writes it in `PITCH.md` with the signals that
 decided it, and every variant uses it. Variants differ in idea and layout, never in tone.
 
-- **Playful:** bought on impulse or for fun, at a low price, from a client whose own posts joke, use emoji or loud
-  colour. Snacks, sweets, drinks, desserts, gifts, balloons and parties, toys and kids' things, pets, casual cafés and
-  bars. **Looks like:** loud colour, bold type, stickers and cut-outs, bouncy motion, a hero action to play with,
+- **Playful:** the business is about joy, treats, celebration, play or personality, and customers come for fun or a
+  feeling, whatever the price. Snacks, sweets, drinks, desserts, gifts, balloons and parties, toys and kids' things,
+  pets, casual cafés and bars, and playful fashion or lifestyle brands. **Looks like:** loud colour, bold type, stickers and cut-outs, bouncy motion, a hero action to play with,
   optional sound, and copy with the brand's humour.
-- **Modern and professional:** bought after comparing, at a higher price or risk, or anything to do with health, money,
-  safety, learning or a business buyer. Vehicles and technology, clinics and health, finance and law, education, B2B,
+- **Modern and professional:** the business is about trust, performance or expertise, and customers come for a result
+  they need to rely on: health, money, safety, learning, a business need, or technology that has to work. Vehicles and
+  technology, clinics and health, finance and law, education, B2B,
   property, services, and group or corporate sites. **Looks like:** a calm, confident layout, a neutral or dark base with
   the brand's accent, clean type, precise motion that explains the product, and real specs and proof up front. No
   games, stickers, sound or jokes in headlines.
 - **Luxury and heritage** (fine dining, jewellery, watches, boutique hotels, heritage brands) is the modern and
   professional tone with richer imagery, a slower pace and more space.
 
-**How to decide.** The higher the price or the risk, the more professional. Who pays matters too: parents, patients,
-companies and anyone spending more than about RM500 at once want professional. Then check the client's own voice and
-the category leaders. If the signals are mixed, choose modern and professional. A professional client with a playful
-voice can have one warmer variant, still clean and credible.
+**How to decide.** Price doesn't decide it: a cheap clinic visit is professional and an expensive party is playful.
+Ask what the business is about and what customers come to it for, then check how the client already talks in its own
+posts, and how the category leaders look. If the signals are mixed, choose modern and professional. A professional
+client with a playful voice can have one warmer variant, still clean and credible.
 
 **Tone decides the references.** Search with the tone's words: playful brand, fun ecommerce, colourful, illustrated; or
 product launch, premium, minimal, technology, corporate. A reference in the other tone can't lead a variant, however
@@ -94,9 +95,11 @@ use the same hero. The sites named are in the Benchmarks of `reference-library.m
   the brand's humour (Don't Board Me). Search: beverage brand website, food packaging ecommerce, snack brand, consumer
   brand landing page.
 - **Solves a problem:** skincare, hair, supplements, dental, pain relief, cleaning. Problem, proof, how it works.
-  **Hero:** the problem drawn as a moving diagram under a headline in the customer's words; a scroll or tap shows the
-  product calming it. Below, explain it simply and show results as drawings, not paragraphs (Opal Tadpole's "explain it
-  like I'm 5" and "show don't tell"). Search: skincare brand website, wellness ecommerce, health product landing page.
+  **Hero:** what the product does, under a headline in the customer's words. As you scroll, the problem clears: skin
+  calms day by day with the days counted, with how it works and whether it's safe (ingredients, tests, who can use it)
+  on the way. Every claim, timeline and safety line comes from the client's own material, or is marked
+  `[client to confirm]`. Below, explain it simply and show results as drawings or real before-and-after, not
+  paragraphs (Opal Tadpole's "explain it like I'm 5" and "show don't tell"). Search: skincare brand website, wellness ecommerce, health product landing page.
 - **Body and movement:** physiotherapy, pilates, yoga, gyms, sports. The body in motion, not a calm studio. **Hero:** a
   body in motion fills the screen, in real footage or line drawing, with joints and muscles named as they work and
   giant type cut by the moving body (21tsi). Search: 3D anatomy website, sports performance website, athletic brand
