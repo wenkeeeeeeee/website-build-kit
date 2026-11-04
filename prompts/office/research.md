@@ -143,7 +143,8 @@ references, search and open them by the same rules first.
 ## What makes a concept
 A concept is how the client's message gets told, not a replacement for it. Work in this order:
 1. **Buyer's path.** Write it from what you found about the customer: who buys and on what device, what brings them,
-   what they compare it with, their top three doubts with the proof that answers each, when the price appears, and the
+   what they compare it with, their top three doubts with the proof that answers each, when the price appears (after
+   the customer wants the thing, so rarely in the hero), and the
    action. This is the order of every home page. Every variant tells the same complete content along it; the concept
    changes how each step is told, never which steps there are.
 2. **Core.** Write the Core line, and plan each hero by "The hero" in `taste.md`. If an idea looks good but hides the

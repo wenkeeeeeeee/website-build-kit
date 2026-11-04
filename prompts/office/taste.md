@@ -13,6 +13,11 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
   Selling food, the dish they'll order. Selling skincare, what the product does: as they scroll, the skin clears, with
   how many days it takes, how it works and whether it's safe. Claims, timelines and safety lines come only from the
   client's own material, or show as `[client to confirm]`. A logo, a mood or a metaphor isn't what anyone came for.
+- **The subject leads, not the deal.** What the customer came for is the thing they love, not its price. A pet guide's
+  hero is the pets, a car site's is the car, a café's is the food and the room. Prices, totals, stamps, ratings, counts
+  and fees never lead the hero: at most one small line, and only where price is the main reason people come, such as a
+  sale. At every step of a scroll hero, the subject is the biggest thing on screen. Devices, skies, type masks and
+  other effects can frame it, never replace it.
 - **Clean, attractive and creative.** There's no fixed list of what a hero may hold. Anything that helps deliver the
   core or the idea can stay, as long as the first screen still looks clean. Avoid heavy text: a strong headline and a
   short line usually do it, and paragraphs never do.
@@ -43,7 +48,9 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **The hero comes from the same world as the body.** If the page below runs on real photos and footage, a code-built 3D
   object on a blurred backdrop reads as a different site. One object can also say the wrong business: a lone microphone
   reads as karaoke, not a live band. Test the hero by asking what business a stranger would guess.
-- **Low-resolution film:** never stretch it plainly. Use it dark and full-bleed behind the type, or inside giant letters.
+- **Low-resolution film and photos:** never stretch them plainly. Put several vertical clips side by side at full
+  height, so each stays near its real size and together they fill the screen; or set a sharp clip at its real size over
+  a blurred, enlarged copy of itself; or use it dark and full-bleed behind the type, or inside giant letters.
 - **Effects stay around the footage, not over it.** A full-screen mosaic, pixel or LED treatment reads as blurry, and a colour
   tint hides the real room. Keep the real footage sharp and in its true colours in the centre, and run the effect around it.
 - **Make the visual, don't just place it.** Client photos are rarely strong enough as they are. Grade them, scale them
@@ -67,7 +74,7 @@ how to get it.
   question the buyer has at that point (What is it? Is it for me? Is it real? How much? How do I get it?), and you can
   say which one.
 - **Buying basics, in every variant:** real people, products or premises early; the price or a "from" price visible
-  without hunting; warranty, delivery and payment terms beside the price; reviews or proof before the ask; the main
+  without hunting once the customer wants the thing, usually just below the hero and on every item, not as the hero; warranty, delivery and payment terms beside the price; reviews or proof before the ask; the main
   action in the header and always within reach on a phone.
 - **Persuasion beats show.** If a spectacular section delays the price, hides the action or slows the page on a phone,
   cut it down. Ideas and motion are there to make the customer want it and trust it.
