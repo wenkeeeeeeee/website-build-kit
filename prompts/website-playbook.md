@@ -88,7 +88,9 @@ Every item here came back from a client as a change request.
 
 Smoothness comes from choreography, so a screenshot or frame counter won't show it.
 - **Design every join.** Hand over with a colour wash, an object carried across, a pinned panel the next slides over, or
-  an image growing into the next section. Stacked sections that fade up read as basic.
+  an image growing into the next section. Stacked sections that fade up read as basic. Never mark a change of section
+  with a hard straight edge between flat colour bands, a ruled line or a border: the user rejects them on sight. Where
+  two backgrounds meet, blend them, let an image or object cross the join, or leave generous space.
 - **Scroll-linked motion** eases toward its target each frame, so nothing snaps. Triggered reveals stagger over 0.6-1s on
   a long ease-out such as `cubic-bezier(.16,1,.3,1)`, never linear or bouncy.
 - **One motion language per variant,** including hover and press states on everything clickable.

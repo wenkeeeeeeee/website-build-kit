@@ -63,6 +63,14 @@ how to get it.
 - **A body that doesn't match the hero.** The hero sets the level for the whole site. If the sections below drop to cards
   and text on a plain background, the site has failed. Every section keeps the hero's scale, image treatment, colour, type
   and motion, on inner pages too.
+- **Boxy layouts.** Rounded rectangles everywhere: every photo in a card, every fact in a tile, every section a panel.
+  It's the most common machine-made look across our variants. Use a set of cards only where items really are compared
+  (products with prices, plans), and at most one set per screen. Everywhere else, let photos bleed off the edge, cut
+  out, overlap, or sit in the client's own shapes; set text straight on the page; and separate things with type scale,
+  space and composition, not boxes. If most frames of a contact sheet are boxes on a background, redo it.
+- **Lines between sections.** A straight hard edge where one flat colour band stops and the next starts, a ruled line
+  across the page, or a border around each section, used to mark where sections change. One deliberate edge per page
+  at most. Sections hand over as "Transitions" in the playbook says.
 - **Copying a reference's details and missing its impact.** Thin lines or small effects carried over without the
   reference's scale, imagery and colour don't count. Take what makes it striking first.
 - **Patching what keeps coming back.** If a variant is still rejected after several rounds of fixes, stop fixing it. Start
