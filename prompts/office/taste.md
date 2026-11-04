@@ -1,205 +1,161 @@
 # Taste standard
 
 This decides what counts as good, taken from the user's feedback and the sites they approved. Where a brief and this
-file disagree, the brief wins only if the user said so.
+file disagree, the brief wins only if the user said so. Each rule lives in one place: when a lesson comes in, sharpen
+the rule it belongs to rather than adding a new one.
 
 ## The hero
-Builders keep getting this wrong, so it comes first. It applies to the home page and every page hero.
-- **The core comes first.** Within a few seconds a visitor knows what this business is, what it sells and who it's for,
-  in the customer's words. Use the Core line in `PITCH.md`. A clever idea, story or mood that leaves them guessing has
-  failed, however good it looks.
-- **Show what the customer came for.** Design the hero from the customer's side: the main visual is the thing they want,
-  shown so they want it. Selling cars, the car. Selling a service, the service being done and the result it gives.
-  Selling food, the dish they'll order. Selling skincare, what the product does: as they scroll, the skin clears, with
-  how many days it takes, how it works and whether it's safe. Claims, timelines and safety lines come only from the
-  client's own material, or show as `[client to confirm]`. A logo, a mood or a metaphor isn't what anyone came for.
-- **The subject leads, not the deal.** What the customer came for is the thing they love, not its price. A pet guide's
-  hero is the pets, a car site's is the car, a café's is the food and the room. Prices, totals, stamps, ratings, counts
-  and fees never lead the hero: at most one small line, and only where price is the main reason people come, such as a
-  sale. At every step of a scroll hero, the subject is the biggest thing on screen. Devices, skies, type masks and
-  other effects can frame it, never replace it.
-- **Clean, attractive and creative.** There's no fixed list of what a hero may hold. Anything that helps deliver the
-  core or the idea can stay, as long as the first screen still looks clean. Avoid heavy text: a strong headline and a
-  short line usually do it, and paragraphs never do.
-- **Never plain or basic.** A title with some photos fails, however tidy it is. So do a photo in a box, a row of small
-  photos, or text beside a photo with nothing else going on. The hero needs a visual idea someone would remember.
-- **A stage, not a split.** The layout to beat is headline left, picture right, two buttons and a stats row: tidy, and
-  it reads as a template. Instead, one object or scene fills the screen, the headline is set into that scene as part
-  of the composition, and the first screen carries one line of facts and one action. Use the split only when the
-  concept needs it, and in no more than one variant.
-- **An action, as the tone allows.** In the playful tone the visitor acts on the client's object and the story starts
-  from what happens: hold to fry, inflate or light it; move the cursor to show the finished version under the raw one.
-  In the professional tone the action is one customers already know from the category's best sites (switch models,
-  turn or fold the product, compare costs), and never a game. The result is big and visible, a tap works on phones,
-  and the page still reads in full if nobody touches it. Never a gate in front of the site. The starting hero for each
-  design family is in `site-types.md`.
-- **Scroll in the hero, wherever the product suits it.** Scrolling from the first screen is the interaction visitors
-  notice most on a good site. When the client sells a physical product people want to see from every side or inside
-  (vehicles, gadgets, watches, eyewear, furniture, packaged food and drinks, cosmetics), the hero is scroll-driven: as
-  the visitor scrolls, the product turns, opens, assembles, comes apart with its parts named, or the camera moves in to
-  a detail, then hands over into the next section. A product that changes something (skincare, hair, cleaning,
-  fitness) can play its result over time instead: the problem clearing step by step, with the days shown. Each step
-  says something true about the product. Pin it for 1–3
-  screens, scrub smoothly in both directions, keep the headline readable and the main action in the header throughout,
-  and give phones a shorter version. A place can use a lighter version, such as the room filling or day turning to
-  night. Skip it where nothing physical would move meaningfully, as for most services, law and finance.
-- **Sound only in the playful tone.** For bars, food and playful brands, sound can lift the hero: off by default, a
-  visible toggle, short and quiet. Never in the professional tone.
-- **The hero comes from the same world as the body.** If the page below runs on real photos and footage, a code-built 3D
-  object on a blurred backdrop reads as a different site. One object can also say the wrong business: a lone microphone
-  reads as karaoke, not a live band. Test the hero by asking what business a stranger would guess.
-- **Low-resolution film and photos:** never stretch them plainly. Put several vertical clips side by side at full
-  height, so each stays near its real size and together they fill the screen; or set a sharp clip at its real size over
-  a blurred, enlarged copy of itself; or use it dark and full-bleed behind the type, or inside giant letters.
-- **Effects stay around the footage, not over it.** A full-screen mosaic, pixel or LED treatment reads as blurry, and a colour
-  tint hides the real room. Keep the real footage sharp and in its true colours in the centre, and run the effect around it.
-- **Make the visual, don't just place it.** Client photos are rarely strong enough as they are. Grade them, scale them
-  and set them in a treatment that fits the tone and the category look: bold colour suits playful brands, while studio
-  light or a dark stage suits technology and premium products. Cut something out only when the source is sharp and the edge is clean: people cut from
-  phone footage and food with white sticker outlines were rejected on sight. If a photo can't hold the screen, build the visual in code: a
-  3D or drawn form, or giant moving type. Never stretch a soft photo.
-- **Earn your place.** Stats, badges, review chips, tickers, tags, extra photos, floating cards, hours and addresses stay
-  in the hero only if they help deliver the core or the idea. Otherwise they go below, and they still go on the page.
-- **One idea, one big movement.** The client's object or the opening is the main visual, never another layer on top.
-- **Clean isn't empty.** A full-screen photo with no headline fails too. The hero must still deliver the core.
-- **A busy reference doesn't change this.** Take its idea, not its clutter.
-- **Test it:** ask whether a stranger could say what is sold here. Remove anything that doesn't help. If what's left is
-  only a title and photos, or it wouldn't make someone stop, redo it. Then put it beside its lead reference: if it
-  doesn't belong there, redo it.
+The hero is what the user judges first, and the part that has failed most. It is built and approved as pictures before
+the rest of the site (`build.md`, step 4). This applies to the home page and every page hero.
+
+### What it shows
+- **What the customer came for, so they want it.** Within a few seconds a stranger knows what this business is, what it
+  sells and who it's for (the Core line in `PITCH.md`). The main visual is the thing they want: the car, the dish, the
+  pets, the gift, the service being done and its result, the skin clearing. A logo, mood or metaphor isn't what anyone
+  came for.
+- **The subject is the biggest thing on screen, at every scroll step.** Prices, totals, stamps, ratings, counts and fees
+  never lead: at most one small line, and only when price is why people come, such as a sale. Devices, skies, type
+  masks and effects frame the subject, never replace it.
+- **A clean first screen.** A strong headline set into the scene, a short line, one line of facts and one action.
+  Paragraphs never. Anything else stays only if it helps deliver the core; the rest goes below, still on the page.
+- **True words.** Claims, timelines and safety lines come only from the client's material, or show as
+  `[client to confirm]`.
+
+### What it's made of
+Decide this before picking references, from the "Hero material" list in `PITCH.md`. The plan can only promise what
+the material can do.
+- **Real footage:** the client's own clips, best when there's a clean stretch of the real thing happening. Crop out
+  burned-in captions and skip faces unless they're the client's own team. Low-resolution clips sit side by side at
+  full height, or sharp at their real size over a blurred, enlarged copy, or dark behind the type. Never stretched.
+- **Photos:** only photos that are sharp at the size shown. A flat photo can tilt, slide, mask, layer and change light;
+  it can't turn like a 3D object. Grade, scale and set each photo in a treatment that fits the tone.
+- **Built:** a 3D, drawn or code-made version of the real subject, when photos are too small or the move needs depth.
+  It must look like the client's real product or animals, not stock clip art.
+- **Type-led:** giant type carrying the subject through masks or cut-outs, when there is little imagery.
+- **Cut-outs** only from sharp sources with clean edges. Rough people cut from phone footage and food with white sticker
+  outlines were rejected on sight. If an edge isn't clean, build it instead or leave it out.
+- **The same world as the body.** If the page below runs on real photos, a code-built object on a blurred backdrop reads
+  as another site. Test by asking what business a stranger would guess.
+
+### How it moves
+- **Scroll-driven wherever the product suits it.** Pin for 1–3 screens, scrub smoothly both ways, keep the headline
+  readable and the main action in the header throughout, and give phones a shorter version. Each step says something
+  true. The recipes:
+  - **Turn and open:** the product turns, opens, assembles or comes apart with parts named (physical products; needs
+    3D or a frame sequence).
+  - **Result over time:** the problem clears step by step, with the days shown (skincare, hair, cleaning, fitness).
+  - **Build-up:** items arrive one by one into the finished thing (gifts, combos, menus, kits).
+  - **Reveal:** something personal appears, such as a name printing onto the product, or the finished version under
+    the raw one.
+  - **Place:** the room fills, the camera walks in, day turns to night (venues, travel, places).
+  - **Gather:** the camera pulls back from one subject to the whole range (catalogues, guides, collections).
+  Skip scroll motion where nothing physical would move meaningfully, as for most services, law and finance.
+- **An action, as the tone allows.** Playful: the visitor acts on the client's object (hold, inflate, light, uncover)
+  and the story starts from what happens. Professional: a move customers know from the category's best sites (switch
+  models, compare), never a game. The result is big, a tap works on phones, the page reads in full if nobody touches
+  it, and nothing gates the site.
+- **Sound only in the playful tone:** off by default, a visible toggle, short and quiet.
+- **Alive at rest:** the main visual keeps moving gently without scrolling, with no visible restart.
+
+### What fails
+- A title with some photos; a photo in a box; a row of small photos; text beside a photo with nothing else going on.
+- Headline left, picture right, two buttons and a stats row. Use a split only when the concept needs it, in at most one
+  variant.
+- A full-screen picture with no headline saying what it is, or a zoomed crop that hides the subject.
+- Effects over the subject: mosaic, pixel or LED treatments, colour tints over real footage, words in solid boxes on film.
+- A move the material can't carry: a "turning" flat photo, rough cut-outs flying around.
+- A busy reference copied with its clutter. Take its idea, not its noise.
+
+### The check
+Run `hero-frames.cjs` on the hero and its lead reference. At 0, 33, 66 and 100%, on the way back up and on the phone:
+is the subject the biggest thing, does a stranger know what's sold, would they stop scrolling, and does it belong next
+to the reference at each point? Any "no" is redone before the rest of the site is built.
 
 ## Will they buy?
-A variant can look impressive and still lose the sale. Every variant has to make a stranger want it, trust it and know
-how to get it.
-- **The buyer's path sets the order.** The home page follows the buyer's path in `PITCH.md`. Each section answers the
-  question the buyer has at that point (What is it? Is it for me? Is it real? How much? How do I get it?), and you can
-  say which one.
-- **Buying basics, in every variant:** real people, products or premises early; the price or a "from" price visible
-  without hunting once the customer wants the thing, usually just below the hero and on every item, not as the hero; warranty, delivery and payment terms beside the price; reviews or proof before the ask; the main
-  action in the header and always within reach on a phone.
-- **Persuasion beats show.** If a spectacular section delays the price, hides the action or slows the page on a phone,
-  cut it down. Ideas and motion are there to make the customer want it and trust it.
-- **Customer walk.** On a phone, read the home page as the customer, from landing to the WhatsApp message. At each
-  screen ask: do I know what this is, do I trust it, do I know what to do next? Any "no" gets fixed.
+A variant can look impressive and still lose the sale.
+- **The buyer's path sets the order.** Each home page section answers the buyer's question at that point (What is it?
+  Is it for me? Is it real? How much? How do I get it?), and you can say which.
+- **Buying basics in every variant:** real people, products or premises early; a price or "from" price once the customer
+  wants the thing, usually just below the hero and on every item; warranty, delivery and payment terms beside it;
+  proof before the ask; the main action in the header and always within reach on a phone.
+- **Persuasion beats show.** If a spectacular section delays the price, hides the action or slows the phone, cut it down.
+- **Customer walk.** On a phone, read the home page from landing to the WhatsApp message. At each screen: do I know what
+  this is, do I trust it, do I know what to do next? Fix every "no".
 
 ## Boxes and lines
-Cards, frames, dividers and colour bands are allowed where they suit, but they're the default every builder reaches for,
-and the user has called the result too boxy. Use them on purpose, and make them creative.
-- **Boxes where they earn it.** Cards suit things people compare, such as products with prices or plans. Don't put every
-  photo in a card, every fact in a tile and every section in a panel. Mix in photos that bleed off the edge, cut-outs,
-  overlaps, shapes from the client's world, and text set straight on the page.
-- **When you do use a box, design it.** Give it the client's shape or an unusual crop, tilt or overlap it, break it with
-  the product, or vary sizes, so it's part of the variant's look and not a default rounded rectangle.
-- **Lines and edges between sections, used sparingly and designed.** A plain straight edge between flat colour bands, or
-  a ruled line under every section, reads as a template. A designed join can work: a wave, a torn or cut edge, a line
-  the client's object draws, a gradient, or an image crossing from one section into the next. Don't use the same
-  divider between every section.
-- **Check:** if most frames of a contact sheet are plain rounded boxes on a background, or every section ends in the
-  same straight edge, rework it.
+Cards, frames, dividers and colour bands are allowed where they suit, but they are every builder's default and the user
+has called the result too boxy.
+- Cards suit things people compare, such as products with prices or plans. Elsewhere, mix in photos that bleed off the
+  edge, cut-outs, overlaps, shapes from the client's world, and text set straight on the page.
+- When you use a box, design it: the client's shape, an unusual crop, a tilt, an overlap, the product breaking out.
+- Joins between sections are designed and varied: a wave, a torn or cut edge, a line the client's object draws, an image
+  crossing into the next section. Never the same straight edge or ruled line after every section.
+- **Check:** if most contact-sheet frames are plain rounded boxes on a background, rework them.
+
+## The whole site
+- **The body matches the hero.** Every section keeps the hero's scale, image treatment, colour, type and motion, on inner
+  pages too. Sections with only a heading, a paragraph and a picture, or motion that's only fade-ins, fail.
+- **The client's object runs through the site:** the intro, section transitions, image frames and small details. A
+  balloon stylist's site had balloons flying up in the intro, carrying each section change, and framing the photos.
+- **One signature set-piece** of 2–4 pinned screens, then sections that each fit one screen with their own motion
+  graphic. Meet `motion.md`. Home pages run about 8–19 screens.
+- **A tool that fits the business,** answering a question customers really ask and ending in a WhatsApp message, and
+  plumbing in the business's language ("try-on list", not "basket").
+- **Each variant is its own world:** its own hero idea, header, type pair, palette and way of telling each step of the
+  buyer's path. The path can repeat; the telling can't. Never one shared recipe across variants.
+- **Every variant carries the whole business:** every product with its price, every page in `PITCH.md`, the proof,
+  offers, questions, locations and ways to order. Catalogues, recipes, gifts and awards the client has, the site has.
+- **Sounds like it knows the business.** A skin-condition site talks about the itch, the flare-ups, why they come back,
+  how the cream works, real results and the price. Each section gets a heading, a line or two of real facts and one
+  thing to do: not paragraphs, not bare headlines. No invented slogans or claims.
+- **Real proof beside the mood.** Real photos of rooms, staff and equipment; campaign images labelled as illustration.
+  Keep the client's own languages, real branch names, live open status and honest `[client to confirm]` tags.
+
+## Look and category
+- **Stay in the category.** A bar looks like a bar at night, a clinic like a clinic, a scooter brand like a mobility
+  brand, not a racing game, fintech dashboard or sale poster. Put the hero beside the category leaders from research:
+  if it doesn't belong there, or the brand's own marketing team wouldn't publish it, redo it.
+- **Colour from the brand and category,** never from a metaphor. Bold colour suits playful brands; studio light or a dark
+  stage suits technology and premium products. Red with gold and brush calligraphy reads festive for Chinese clients,
+  so avoid it unless the client is festive. Keep clear of a famous namesake's colours and look.
+- **A redo keeps the level of the variant the user liked:** its tone and image treatment, with a new idea, layout and
+  hero. If a variant is still rejected after several rounds, start again from the plain starter with a new concept and
+  new references.
+- **The original logo,** never redrawn or restyled. No clip art for a product the client hasn't photographed: use the
+  nearest real photo, labelled, and list the gap in `OPEN-QUESTIONS.md`.
+- **"Branding" is storytelling:** one story with transitions between products, and no cards, prices or adverts until a
+  quiet shop link at the end. The main action still stays in the header.
 
 ## Rejected on sight
-- **A body that doesn't match the hero.** The hero sets the level for the whole site. If the sections below drop to cards
-  and text on a plain background, the site has failed. Every section keeps the hero's scale, image treatment, colour, type
-  and motion, on inner pages too.
-- **Copying a reference's details and missing its impact.** Thin lines or small effects carried over without the
-  reference's scale, imagery and colour don't count. Take what makes it striking first.
-- **Patching what keeps coming back.** If a variant is still rejected after several rounds of fixes, stop fixing it. Start
-  again from the plain starter, with a new concept, new references and nothing carried over from the old build.
-- **One recipe in every variant.** A shared brief or shared asset pack makes every hero and food section come back the
-  same. Give each variant its own hero idea and its own way of showing the products, in its own brief.
-- **Variants that look alike.** The same template in different colours is the most repeated complaint. Shared headers,
-  hero layouts and ways of telling count. The buyer's path can repeat; how each step is told can't.
-- **A good idea with no context.** The page must sound like it knows the business. A site for a skin condition talks
-  about the itch, the flare-ups, why they come back, how the cream works, real results and what it costs.
-- **Variants at different levels of completeness.** Every variant carries the whole business. They differ in design and
-  story, never in how much of the client they cover.
-- **Missing client content.** If the client has a catalogue, recipes, gifts or awards, the site has them too.
-- **The wrong category.** A bar must look like a bar at night, and a clinic like a clinic. Show the category first, with
-  real footage leading. Logo motifs stay small details. Red with gold and brush calligraphy reads as festive for
-  Chinese clients, so avoid it unless the client is festive.
-- **An off-category look.** A scooter brand that reads as a racing game, a fintech dashboard or a sale poster. Put the
-  hero beside the category leaders from research: if it doesn't belong there, or the brand's own marketing team
-  wouldn't publish it, redo it.
-- **Looking like a famous namesake.** If the client shares its name with a well-known brand in another field, keep
-  clear of that brand's colours and look.
-- **Clip art for a missing photo.** Never draw a cartoon or stock-style stand-in for a product the client hasn't
-  photographed. Use a neutral silhouette or the nearest real photo, labelled, and list the missing photo in
-  `OPEN-QUESTIONS.md`.
-- **A redo below the variant the user liked.** When the user likes one variant and rejects another, the redo keeps the
-  liked one's level, tone and image treatment, and changes the idea, layout and hero.
-- **Basic and plain.** Sections with only a heading, a paragraph and a picture. Empty-looking panels. A plain footer.
-  Pages whose only motion is fade-ins. The right context doesn't excuse this, in a site or in a reference: the user
-  wants creative, attractive and premium work that suits the business.
-- **Words in coloured boxes on footage.** Don't put solid label boxes behind captions on a film. Give words their own clean
-  strip beside or under the picture.
-- **Messy layering.** Words over busy images, accidental overlaps, things sliding under the sticky header. Overlap must
-  look deliberate.
-- **Sections with no clear purpose.** If you can't say what a section delivers, cut or rebuild it.
-- **The same thing twice.** One idea appears once on a page. A list shown in the hero and again below, a second film straight
-  after a film hero, or a tool that repeats another section's job reads as filler. Mixing components between variants
-  adds to this unless something is removed for each one added. Too many videos look messy: three on a home page at most,
-  one playing at a time, and one player whose tabs swap the clip rather than a clip per person.
-- **Too many words, and too few.** Both came back as rejections. Paragraphs in every section fail, and so does a page cut
-  down to headlines. Each section gets a heading, a line or two of real facts, and one thing to do.
-- **A picture with no context.** No full-screen image without a heading or caption saying what it is. Show the subject
-  whole, not a zoomed crop.
-- **Controls that are only controls.** A dial or tab a visitor nudges to reveal text is dull. An interaction should be a
-  physical act from the client's world, with a big visible result, and every section needs a real one.
-- **Text left half faded.** Nothing tied to scroll position may dim the page or a line, because a visitor can stop there.
-  Lines wipe or mask in at full brightness, page-wide dips run on a timer, and a cursor light never leaves the main
-  subject or headline in the dark. Check rendered screenshots: an element can report full opacity and still look dim.
-- **Inner pages weaker than the home page.** Every tab gets the same components and motion.
-- **A changed logo.** Use the original. Don't redraw, outline or restyle it.
-- **Invented words.** No slogan, claim or theme that isn't in the client's own material.
-- **"Branding" built as a shop.** Branding means storytelling: the home page is one story with transitions between
-  products, and no cards, prices or adverts until a quiet shop link at the end. The main action still stays in the
-  header.
-- **Bad images.** Cut-off products, odd ratios, circles cut from square photos, low-res pictures stretched full-screen,
-  slow zooms on blurry stills.
-- **Bad motion.** Short clips rewinding or looping to fill time, jitter, scroll lag, a heavy first load.
-- **Small breakages.** White gaps at corners or edges, sections that don't fit one screen, cards that change height and
-  shift the page.
-
-## What the approved sites do
-An optician's and a self-photo studio's sites are the level to reach.
-- **The hero is the client's own object doing something.** The logo's O opens into the campaign film. A frame comes
-  apart in 3D with labels. A photo strip prints out of the page.
-- **That object runs through the whole site:** the intro, section transitions, image frames and small details. A
-  balloon stylist got balloons flying up in the intro, balloons carrying each section change, and photos framed inside
-  balloons. Below the hero, use more of the client's world than feels safe, at the same level of craft.
-- **One signature moment, then sections that keep moving.** One scroll set-piece of 2–4 pinned screens, then sections
-  that each fit one screen with their own motion graphic. Home pages run about 8–19 screens. Meet `motion.md`.
-- **A tool that fits the business.** A lens tester, face-shape finder or venue dial answers a question customers really
-  ask, and ends in a WhatsApp message.
-- **Plumbing in the business's language.** A "try-on list" or "shoot list" instead of a basket.
-- **Giant type doing a job.** The product's name outlined behind the product. A complete wordmark closing the footer,
-  never cut off.
-- **Each variant is its own world.** A different type pair, palette, header and section order.
-- **Real proof beside the mood.** Real photos of rooms, staff and equipment show the business exists. Campaign images
-  carry the mood, labelled as illustration.
-- **Sites that know the customer.** A strong skincare site opened on the customer's own question ("Itchy skin that keeps
-  coming back?"), then ran: "Which one sounds like you?" with named conditions, why it keeps happening, a three-step
-  answer, a side-by-side with other cream types (no brands), a before-and-after slider with named customers, how to use
-  it, packages with was and now prices, plain answers, and where to buy.
-- **Products as loud full-screen worlds, in the playful tone.** Each product takes over the screen in its own colour with its real name,
-  facts and price. A dark rail stepping through the real menu, with dishes you can add to a list, also worked.
-- **Local detail stays.** The client's own languages, real branch names, live open or closed status, and honest
-  `[client to confirm]` tags instead of guesses.
+- **Copying a reference's details and missing its impact.** Take what makes it striking first: scale, imagery, colour.
+- **Variants that look alike,** or at different levels of completeness.
+- **Messy layering:** words over busy images, accidental overlaps, things sliding under the sticky header.
+- **The same thing twice:** a list in the hero and again below, a second film right after a film hero, a tool repeating
+  another section. At most three videos on a home page, one playing at a time.
+- **Controls that are only controls:** a dial or tab nudged to reveal text. Interactions are physical acts from the
+  client's world with a big visible result.
+- **Text left half faded** by scroll position. Lines wipe or mask in at full brightness; check rendered screenshots.
+- **Inner pages weaker than the home page.**
+- **Bad images:** cut-off products, odd ratios, circles cut from square photos, stretched low-res, slow zooms on blurry
+  stills.
+- **Bad motion:** short clips rewinding or looping to fill time, jitter, scroll lag, a heavy first load.
+- **Browser-default controls:** a white date popup, number spinner arrows or an OS dropdown on a designed page. Draw lists,
+  dates, steppers and buttons in the site's own style.
+- **Small breakages:** white gaps at edges, sections that don't fit one screen, cards that change height and shift the page.
 
 ## Type
 Fonts are the fastest way a site reads as machine-made, so they come from the client's world.
 - **Not these**, unless the client's own brand uses them: Inter, Inter Tight, Fraunces, Figtree, DM Sans, DM Serif,
   DM Mono, Instrument Serif, Instrument Sans, Bricolage Grotesque, Manrope, Sora, Syne, Outfit, Plus Jakarta Sans,
   Space Grotesk, Playfair Display, Cormorant, Newsreader, Archivo, Bodoni Moda, JetBrains Mono.
-- **Start from what's really there.** Look at the client's signage, packaging, menu, posters and site fonts, and find a
-  face with the same character. Then check what the references use, and find your own free face that does that job.
-- **Look past the popular lists:** Fontshare, Velvetyne, Open Foundry, Collletttivo and the less-used end of Google
-  Fonts. The licence must allow commercial web use. Self-host the `woff2` files.
-- **One face with a point of view, one quiet face to read.** If the pair would suit any other client, pick again.
-- **Check every language.** The display face must carry the client's languages and punctuation. Noto is only for a
-  script with no better option.
-- **Other tells to avoid:** small uppercase mono labels above every heading, meaningless "01 / 02 / 03" section numbers,
-  one italic word in a headline, cream paper with a serif by default, gradient text, glass cards.
+- **Start from what's really there:** the client's signage, packaging, menu and posters. Find a free face with the same
+  character on Fontshare, Velvetyne, Open Foundry, Collletttivo or the less-used end of Google Fonts, licensed for
+  commercial web use and self-hosted as `woff2`.
+- **One face with a point of view, one quiet face to read.** If the pair would suit any other client, pick again. The
+  display face must carry the client's languages; Noto only for a script with no better option.
+- **Other tells:** small uppercase mono labels above every heading, "01 / 02 / 03" numbering, one italic word in a
+  headline, cream paper with a serif by default, gradient text, glass cards.
 
 ## Media
-Build with what exists. Ask for images or clips only when they lift the idea, with ready-to-paste prompts that have no
-text or audio, as few and as short as possible. If an idea looks bad with stills, clips won't save it.
+Build with what exists. Ask the client for images or clips only when they lift the idea, with ready-to-paste prompts that
+have no text or audio. If an idea looks bad with stills, clips won't save it.

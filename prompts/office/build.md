@@ -1,9 +1,9 @@
 # Build thread: run order
 
 This thread takes one lead from `PITCH.md` to a live site: full variants with every page working, published to Vercel.
-Target: **30–45 minutes here**, so the client is live within an hour of reaching Front Desk. Your first message gives
-`CLIENT`, `PROJECT`, `KIT`, `PORT` and `FRONT_DESK`. Don't redo the research, don't ask the user anything, and don't stop
-between steps unless something is blocked. Short updates only.
+Target: **about an hour of work here**, plus one stop for the user to approve the heroes as pictures. Your first message
+gives `CLIENT`, `PROJECT`, `KIT`, `PORT` and `FRONT_DESK`. Don't redo the research and don't ask the user anything. Stop
+only at the hero review in step 4, or if something is blocked. Short updates only.
 
 1. **Update the kit.** Run `git -C KIT pull --ff-only`. If that fails, carry on with the copy you have. Read
    `KIT/AGENTS.md` and sections 1, 6 and 7 of `KIT/prompts/website-playbook.md`. `PITCH.md` supplies the decisions. Mode is
@@ -18,21 +18,29 @@ between steps unless something is blocked. Short updates only.
    - Run `npm --prefix KIT/tools/web install`. Copy `node_modules/gsap/dist`, `lenis/dist` and `three/build` from
      `KIT/tools/web` into `PROJECT/variants/_shared/vendor/` as `gsap`, `lenis` and `three`, for the Builders to use.
    - Open it once with `check-pages.cjs`. Every page must work, because all the variants copy it.
-4. **Builders (30 minutes).** Fill in `KIT/prompts/variant-agent-brief.md` once per variant, using its column of
-   `PITCH.md`, and send all the subagents in one message so they run in parallel, each with `run_in_background: false`.
-   First open each variant's lead reference sheet: if a banner covers it, most frames are static or the look is on the
-   fail list, replace the reference before briefing. Then check each concept: if something other than the product, or a customer using it, is the hero, the palette
-   comes from a metaphor, the look doesn't match the tone, or the section order skips a step of the buyer's path,
-   rewrite it in `PITCH.md` before briefing.
+4. **Heroes first (25 minutes), then the user's review.** The hero is judged from pictures, never from the plan.
+   - **Before briefing,** open each variant's lead reference sheet: if a banner covers it, most frames are static, the
+     look is on the fail list, or its hero isn't made of the same kind of material as this variant's ("Match the
+     material" in `research.md`), replace it. Check each concept: if the hero isn't what the customer came for, the
+     palette comes from a metaphor, the look doesn't suit the tone, or the plan needs a move the hero material can't
+     carry, rewrite it in `PITCH.md`.
+   - **Hero round.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero`, and send all the
+     subagents in one message, each with `run_in_background: false`. Each builds only its header and hero, with the
+     real material, and returns its `hero-frames` sheet.
+   - **Your check.** Go through each sheet against "The check" in `taste.md`, comparing the variant's row with its
+     reference's row frame by frame. Send back any hero that fails, once, before the user sees it.
+   - **Review.** Post, for each variant, its `hero-frames` sheet shown as an image (Markdown image with the absolute
+     path), the local hero URL, the recipe in one line, and the reference beside it. If `FRONT_DESK` isn't `none`, also
+     send it `HERO REVIEW: CLIENT` with the sheet paths and URLs, using `mcp__t3-code__t3_thread_send`. Then stop and
+     wait. The user replies "go" or sends changes: make the changes in a new hero round, show the new sheets, and wait
+     again.
+   - **Rest of the site (30 minutes).** After "go", send each variant's brief again with `Phase: rest`, all in one
+     message. The approved hero stays as it is.
 5. **Hub.** Write `PROJECT/index.html`, in the format in section 1 of the playbook, with short plain names.
 6. **Quick check (3 minutes).**
    - Run `check-pages.cjs` once on each variant's home page, click through to one inner page, and grep for reference names.
-   - **Hero:** check each first screen against "The hero" in `taste.md`. Ask whether it shows what the customer came for,
-     in a way that makes them want it, and whether that subject (not a price, a device or an effect) is the biggest thing
-     on screen at every scroll step. If `PITCH.md` plans a scroll-driven hero, scroll
-     it down and back up: it must scrub smoothly, show something true at each step and hand over cleanly. It must deliver
-     the Core line in `PITCH.md`, look
-     clean, and never be just a title and photos. Move anything that crowds it below.
+   - **Hero:** run `hero-frames.cjs` once more and check that it still matches the approved sheet, and that it hands
+     over cleanly into the next section.
    - **Level:** run `contact-sheet.cjs` on each variant and its lead reference, and go through both. If a hero, or the body
      below it, looks clearly weaker than the reference, send it back to be fixed.
    - **Category:** put each hero beside two category leaders from "Category look" in `PITCH.md`, not only its own lead
@@ -72,10 +80,13 @@ between steps unless something is blocked. Short updates only.
   again and run the Category check before publishing.
 - **An extra variant, even from the user's own idea, gets references too.** Search and open real sites first, using the
   bar in step 3 of `research.md`, then name what to take from each. Never brief a Builder with no outside reference.
-- **When the user rejects something or repeats a correction,** add the lesson to `taste.md` or
-  `KIT/prompts/website-playbook.md` straight away, in general terms with no client names, and push it if you can. Don't
-  wait for "wrap up", because the next client shouldn't hit the same problem.
+- **A redone hero goes through the same review:** build it, post its `hero-frames` sheet beside its reference, and
+  wait for "go" before publishing.
+- **When the user rejects something or repeats a correction,** note the lesson in `PROJECT/docs/LESSONS.md`, in general
+  terms with no client names. At "wrap up" it goes into the kit by sharpening the rule it belongs to, not by adding
+  another rule beside it.
 - **"Deepen V2", or the client picked one:** follow `KIT/prompts/office/deepen.md`.
-- **"Wrap up":** read the user's tweaks in this thread, write the lessons into `KIT/prompts/website-playbook.md`, or
-  `taste.md` if they are about taste, in general terms with no client names. Add references that worked or failed
+- **"Wrap up":** read `LESSONS.md` and the user's tweaks in this thread, and write the lessons into
+  `KIT/prompts/website-playbook.md`, or `taste.md` if they are about taste, in general terms with no client names. Edit
+  the existing rule each one belongs to, and delete any rule it contradicts. Add references that worked or failed
   to `reference-library.md`. List what you added in your reply.

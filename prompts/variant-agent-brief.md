@@ -7,8 +7,16 @@ Fill in the {{fields}} and send one copy per variant, all in the same message so
 You are building one website variant for {{CLIENT}}, adapting the design language of a reference. Other agents are
 building other variants alongside you, so stay inside your own folder.
 
-You have **30 minutes**. Run `date +%s` now, and at 25 minutes stop adding and start checking. Spend the time on craft:
-a fast, plain result is a failed one.
+**Phase: {{hero | rest}}.**
+- **hero (25 minutes):** build only the header and the hero, at full craft with the real material, then run
+  `node {{KIT}}/tools/web/hero-frames.cjs <your hero url> <lead reference url> --out ref` and go through the sheet as
+  "The check" in `taste.md` says. Fix and re-run until each frame belongs beside the reference's. Report the sheet path.
+  The user approves the hero from that sheet before anything else is built.
+- **rest (30 minutes):** the hero in your folder is approved: keep it as it is, apart from changes listed here. Build
+  everything below it and every page to the same level.
+
+Run `date +%s` now, and 5 minutes before the end stop adding and start checking. Spend the time on craft: a fast, plain
+result is a failed one.
 
 ## Your variant
 - Folder: `{{PROJECT ROOT}}/variants/{{nn-name}}/` (site in `site/`, your reference captures in `ref/`).
@@ -17,8 +25,10 @@ a fast, plain result is a failed one.
 - Yours alone, shared with no other variant: how the buyer's path is told {{section order along the path}}; signature moment {{the one scroll
   set-piece}}; business tool {{finder, picker, dial or quote builder}}; basket name {{or none}}; header {{its own
   shape}}; type pair {{fonts}}; palette {{from the client's world}}.
-- Hero: {{its visual idea, words and anything else on the first screen, and whether it's scroll-driven and what each
-  scroll step shows, from your column of `PITCH.md`}}.
+- Hero: {{method and recipe from "The hero" in `taste.md`; what each scroll step shows; the words; from your column of
+  `PITCH.md`}}. Material: {{the exact clips and photos it uses, with sizes, from "Hero material" in `PITCH.md`}}. If
+  the material can't carry a step, change the step rather than faking it, and say so in your report.
+- Changes from the user: {{for a repeat hero round or the rest phase, their words; otherwise none}}.
 - Reference: {{URLs and the part to take from each, or "taste-skill direction: <name>"}}. What I saw at a glance:
   {{2-4 lines: header, hero, signature sections, motion}}.
 - Direction for {{CLIENT}}: {{one line idea}}. {{How the reference's components map to the client: which
@@ -55,7 +65,7 @@ In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md` and `content/OPEN-QUES
 2. **Load the skills.** `taste-skill` and `frontend-design` now, `image-to-code` when a reference is a still image, and
    `impeccable` for a polish pass on the home page at the end. If a name isn't listed for you, read
    `{{KIT}}/.claude/skills/<name>/SKILL.md`. This brief's concept, palette and fonts beat any skill's direction.
-3. **Copy the plumbing.** From the project root, run
+3. **Copy the plumbing (hero phase only: in the rest phase your site is already there).** From the project root, run
    `mkdir -p variants/{{nn-name}} && cp -r {{BASE}} variants/{{nn-name}}/site`, where `{{BASE}}` is `variants/_shared/starter`
    or a finished variant. Check the result is `variants/{{nn-name}}/site/index.html`, not one level up.
 4. **Redesign everything visible.** It already has the data, cart, catalogue filters and inner pages, so keep every page
@@ -86,7 +96,7 @@ In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md` and `content/OPEN-QUES
 - **Lean workflow:** no gates, plans, reports, TDD, fixtures or docs files. Don't use the unlazy skill or the superpowers
   planning, TDD, verification or worktree skills.
 - **Before you finish:** run `check-pages.cjs --phone --header <your header height>` at both sizes on the home page and each
-  inner page, and fix what looks off. Check your first screen against "The hero" in `taste.md`, and do the customer walk
+  inner page, and fix what looks off. Re-run `hero-frames.cjs` and check the hero still matches the approved one, and do the customer walk
   from "Will they buy?" at phone size. Check "Boxes and lines" in `taste.md` on your contact sheet: keep the boxes and
   dividers that earn their place, make them creative, and rework the rest. Run `contact-sheet.cjs` on
   your site, its lead reference and one category leader from "Category look" in `PITCH.md`, and compare them side by
@@ -94,5 +104,6 @@ In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md` and `content/OPEN-QUES
   the printed fonts against "Type" in `taste.md`. Grep the site for reference names and banned words.
 
 ## Report back (under 200 words)
-Folder and URL; the concept in 3-4 lines; which reference components you adapted and how; the opening, set-piece and
+Hero phase: the hero URL, the `hero-frames` sheet path, what each scroll step shows, and any step the material couldn't
+carry. Rest phase: folder and URL; the concept in 3-4 lines; which reference components you adapted and how; the opening, set-piece and
 motion graphics you built; palette and fonts; anything unconfirmed.

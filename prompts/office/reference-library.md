@@ -9,20 +9,22 @@ promote anything from "To try".
 ## Benchmarks
 This is the level to look for. Research can use a Benchmark directly when it fits the client's business and tone, and
 it counts as a reference. Playful: Lando Norris, Don't Board Me. Modern and professional: the rest. None of the first
-four share a category with most clients, which is the point: take the craft, not the subject. Add a site here only after
-opening it and finding it passes the bar across the whole page.
-| URL | What it does |
-|---|---|
-| https://lusion.co/ | 3D objects fill the frame, and a line sweeps through the type as you scroll |
-| https://activetheory.net/ | A dark 3D world where one object carries you between projects |
-| https://igloo.inc/ | One 3D object in a landscape, breaking apart and reforming on scroll |
-| https://en.masahiromaruyama.com/step | The camera climbs a spiral through floating people and shapes |
-| https://www.brightbiotech.co.uk/ | Health science: a plant becomes a bottle, in full-screen colour. Awwwards Site of the Day |
-| https://21tsi.com/ | Sport: huge cinematic bodies fill the screen with bold colour and giant type. Its thin rings are only a detail |
-| https://landonorris.com/ | Personal brand: the cursor reveals a second helmet over the portrait, a signature draws itself, scattered photo collage, archive grid, fanned card deck. Awwwards Site of the Year 2025 |
-| https://www.endurosat.com/space-service/ | B2B: one wireframe satellite and globe hold a dark stage while chapters change around them, a segmented progress bar, a price slider, a cost comparison |
-| https://dontboardme.com/ | Playful services: a ball you bounce on the intro, a funny voice in every label, a designed 404. Awwwards Site of the Year 2024. Use its toy as a hero, never as a gate |
-| https://www.awwwards.com/sites/opal-tadpole | One product: held and flipped in a hand, "explain it like I'm 5", stats shown as blueprint drawings. Awwwards Site of the Year 2024 (live site was down on 2026-11-03) |
+four share a category with most clients, which is the point: take the craft, not the subject. **Made of** says what
+their heroes are built from: a 3D-built Benchmark can lead only a hero you will really build in 3D or code, never a
+photo or footage hero ("Match the material" in `research.md`). Add a site here only after opening it and finding it
+passes the bar across the whole page.
+| URL | Made of | What it does |
+|---|---|---|
+| https://lusion.co/ | 3D | 3D objects fill the frame, and a line sweeps through the type as you scroll |
+| https://activetheory.net/ | 3D | A dark 3D world where one object carries you between projects |
+| https://igloo.inc/ | 3D | One 3D object in a landscape, breaking apart and reforming on scroll |
+| https://en.masahiromaruyama.com/step | 3D | The camera climbs a spiral through floating people and shapes |
+| https://www.brightbiotech.co.uk/ | 3D renders | Health science: a plant becomes a bottle, in full-screen colour. Awwwards Site of the Day |
+| https://21tsi.com/ | photos and footage | Sport: huge cinematic bodies fill the screen with bold colour and giant type. Its thin rings are only a detail |
+| https://landonorris.com/ | photos, plus one 3D helmet | Personal brand: the cursor reveals a second helmet over the portrait, a signature draws itself, scattered photo collage, archive grid, fanned card deck. Awwwards Site of the Year 2025 |
+| https://www.endurosat.com/space-service/ | 3D | B2B: one wireframe satellite and globe hold a dark stage while chapters change around them, a segmented progress bar, a price slider, a cost comparison |
+| https://dontboardme.com/ | drawn | Playful services: a ball you bounce on the intro, a funny voice in every label, a designed 404. Awwwards Site of the Year 2024. Use its toy as a hero, never as a gate |
+| https://www.awwwards.com/sites/opal-tadpole | product photos | One product: held and flipped in a hand, "explain it like I'm 5", stats shown as blueprint drawings. Awwwards Site of the Year 2024 (live site was down on 2026-11-03) |
 
 ## Rejected
 Don't use these or anything like them.
