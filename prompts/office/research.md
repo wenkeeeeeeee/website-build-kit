@@ -65,29 +65,35 @@ the user's message, and its notes beat these defaults.
    description. Don't search for others.
 
    **Otherwise, always search, even if the library has something close:**
-   1. **Search for creative work, not just the category.** Category words alone find plain sites, so put a design term in
+   1. **Open the category's leaders first.** Name 4–6 of the best-known brands in the client's exact category, worldwide
+      and local, and open them in the same `contact-sheet.cjs` run as your shortlist (step 7). Write in `PITCH.md` what
+      they share: subject, palette, type, tone and level. That's the category look, and every variant stays recognisably
+      inside it.
+   2. **Search for creative work, not just the category.** Category words alone find plain sites, so put a design term in
       every search: creative, art direction, 3D, immersive, scroll animation, interactive storytelling. Run WebSearch for
       `site:awwwards.com/inspiration <design term>` and `site:awwwards.com/sites <design term> <family term>`, 1–2 per
       variant, then find the live site each good result describes. Awwwards blocks browsers, so don't open it directly.
-   2. **Don't stop at Awwwards, Behance and Dribbble.** They're starting points, and a reference can come from anywhere if
+   3. **Don't stop at Awwwards, Behance and Dribbble.** They're starting points, and a reference can come from anywhere if
       it suits. Try FWA, CSS Design Awards, Godly, Siteinspire, design studios' own portfolios and strong brands abroad.
-   3. Add the client's family from "Design families" in `site-types.md`, because designs travel between categories that
+   4. Add the client's family from "Design families" in `site-types.md`, because designs travel between categories that
       sell the same way.
-   4. Read `reference-library.md`, starting with "Benchmarks" and "Rejected". An entry is only a lead, so open it like the
+   5. Read `reference-library.md`, starting with "Benchmarks" and "Rejected". An entry is only a lead, so open it like the
       rest.
-   5. Run `node KIT/tools/web/gallery-scan.cjs "<terms>" "<terms>" ... --out PROJECT/references/scan` (about 15 seconds) for
+   6. Run `node KIT/tools/web/gallery-scan.cjs "<terms>" "<terms>" ... --out PROJECT/references/scan` (about 15 seconds) for
       Behance and Dribbble parts. It prints each project's URL.
-   6. Open a shortlist of 6–8 at once:
+   7. Open a shortlist of 6–8 at once:
       `node KIT/tools/web/contact-sheet.cjs <urls> --out PROJECT/references --steps 8` (about 2 minutes, one sheet per page).
       Go through every sheet top to bottom. A cookie wall, loader, black page or repeated frame doesn't count as opened,
       so drop that page.
-   7. Keep a page only if it passes the bar across the whole page, not just one strong screen: most frames must clear it.
+   8. Keep a page only if it passes the bar across the whole page, not just one strong screen: most frames must clear it.
       Name what gives it impact (scale, imagery, colour, composition), then the part to take, and how both would tell this
-      client's story. Any category is fine. Take its impact and craft, not its subject: the finished site still looks like
-      the client's own business.
-   8. **If fewer than 3 pass, or what you have is weak, explore other categories instead of lowering the bar.** Look for any
+      client's story. A reference from another category can lead a variant only if the result would still read as this
+      business beside the category leaders. Otherwise it gives one technique, such as a transition, layout or motion. Take
+      its impact and craft, not its subject: the finished site still looks like the client's own business.
+   9. **If fewer than 3 pass, or what you have is weak, explore other categories instead of lowering the bar.** Look for any
       strong site with a similar object, feeling or job. A physio could learn from sports, cars, medical devices, biotech,
-      fashion or product launches. Keep going until the 8-minute limit, then use what passes and note the gap.
+      fashion or product launches. The category look from step 1 still holds. Keep going until the 8-minute limit, then
+      use what passes and note the gap.
 
    **What to end with:**
    - **3 to 6 references in total,** never padded. Every variant gets at least one. They're sources to take from, not
@@ -118,9 +124,13 @@ A concept is how the client's message gets told, not a replacement for it. Work 
 3. **Concept.** One sentence: **what in this business is the hero made of, and what does it do?** It must be an object,
    place or ritual from this client's world that carries the customer's problem or desire. "The logo's O opens like a
    lens into the film" and "Every room is a magazine cover" are concepts. "Dark and elegant" is not. If a competitor
-   could use the sentence, it's too generic.
+   could use the sentence, it's too generic. The hero is made of the product, or a customer using it. A metaphor (a
+   road, a ledger, a stage) can carry transitions or one section, never the hero or the palette.
 4. **Look.** Design from what the real place looks like, with real footage and photos leading, not from the logo or
-   poster colours. No two variants may share a structure, header, type pair or palette.
+   poster colours. Stay inside the category look. No two variants may share a structure, header or type pair. Palettes
+   can share the brand's colours and differ in proportion and accent. They come from the brand and the category look,
+   never from a metaphor. Variants differ in idea and layout first: a weaker or off-category look is never the price
+   of being different, so never pick a direction just because no other variant has used it.
 5. **Reach.** Say how the object carries the intro, transitions, image frames and small details, in every variant. If a
    section still works with the object deleted, the object is decoration and the section is a template.
 6. **Motion.** Plan it from `motion.md` with real content: what the opening does, and each section's motion graphic.
@@ -148,6 +158,7 @@ Ordering: <basket to WhatsApp or marketplace, quote form, booking or none, and w
 Screen: 1920x870 at 125% zoom (about 1536x700), unless LEAD.md says otherwise
 Images: <file: what it shows, sharp enough for full width or not, and its source if not the client's own page>
 Sources read: <each client link and Google search, and what it gave or why it was blocked>
+Category look: <the 4-6 category leaders opened, with sheet files, and what they share: subject, palette, type, tone, level>
 Searches run: <each reference search, where it ran, exact or family, and which picks came from it>
 References opened: <every page you went through: kept or dropped, why, and for kept pages the two frames or parts that prove the bar>
 

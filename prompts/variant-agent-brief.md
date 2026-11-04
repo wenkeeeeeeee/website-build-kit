@@ -83,7 +83,8 @@ In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md` and `content/OPEN-QUES
   planning, TDD, verification or worktree skills.
 - **Before you finish:** run `check-pages.cjs --phone --header <your header height>` at both sizes on the home page and each
   inner page, and fix what looks off. Check your first screen against "The hero" in `taste.md`. Run `contact-sheet.cjs` on
-  your site and its lead reference and compare them side by side: if your hero or any section looks weaker, fix it. Check
+  your site, its lead reference and one category leader from "Category look" in `PITCH.md`, and compare them side by
+  side: if your hero or any section looks weaker, or your site wouldn't belong beside the category leader, fix it. Check
   the printed fonts against "Type" in `taste.md`. Grep the site for reference names and banned words.
 
 ## Report back (under 200 words)

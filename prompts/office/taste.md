@@ -20,7 +20,9 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **The hero is something you do.** The visitor acts on the client's object and the story starts from what happens:
   hold to fry, inflate or light it; move the cursor to show the finished version under the raw one; drag to see where
   the money goes. The result is big and visible, a tap works on phones, and the page still reads in full if nobody
-  touches it. Never a gate in front of the site. The starting hero for each design family is in `site-types.md`.
+  touches it. Never a gate in front of the site. The starting hero for each design family is in `site-types.md`. The
+  action is one a customer of this category already knows from its best sites: switch models, turn or fold the product,
+  compare costs. Games (hold to speed up, drag a dashboard) only suit playful brands.
 - **Sound is optional.** For bars, food and playful brands, sound can lift the hero: off by default, a visible toggle,
   short and quiet. Never for serious topics such as money, health or law.
 - **The hero comes from the same world as the body.** If the page below runs on real photos and footage, a code-built 3D
@@ -30,7 +32,8 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **Effects stay around the footage, not over it.** A full-screen mosaic, pixel or LED treatment reads as blurry, and a colour
   tint hides the real room. Keep the real footage sharp and in its true colours in the centre, and run the effect around it.
 - **Make the visual, don't just place it.** Client photos are rarely strong enough as they are. Grade them, scale them
-  and set them on bold colour. Cut something out only when the source is sharp and the edge is clean: people cut from
+  and set them in a treatment that fits the category look: bold colour suits playful brands, while studio light or a
+  dark stage suits technology and premium products. Cut something out only when the source is sharp and the edge is clean: people cut from
   phone footage and food with white sticker outlines were rejected on sight. If a photo can't hold the screen, build the visual in code: a
   3D or drawn form, or giant moving type. Never stretch a soft photo.
 - **Earn your place.** Stats, badges, review chips, tickers, tags, extra photos, floating cards, hours and addresses stay
@@ -62,6 +65,16 @@ Builders keep getting this wrong, so it comes first. It applies to the home page
 - **The wrong category.** A bar must look like a bar at night, and a clinic like a clinic. Show the category first, with
   real footage leading. Logo motifs stay small details. Red with gold and brush calligraphy reads as festive for
   Chinese clients, so avoid it unless the client is festive.
+- **An off-category look.** A scooter brand that reads as a racing game, a fintech dashboard or a sale poster. Put the
+  hero beside the category leaders from research: if it doesn't belong there, or the brand's own marketing team
+  wouldn't publish it, redo it.
+- **Looking like a famous namesake.** If the client shares its name with a well-known brand in another field, keep
+  clear of that brand's colours and look.
+- **Clip art for a missing photo.** Never draw a cartoon or stock-style stand-in for a product the client hasn't
+  photographed. Use a neutral silhouette or the nearest real photo, labelled, and list the missing photo in
+  `OPEN-QUESTIONS.md`.
+- **A redo below the variant the user liked.** When the user likes one variant and rejects another, the redo keeps the
+  liked one's level, tone and image treatment, and changes the idea, layout and hero.
 - **Basic and plain.** Sections with only a heading, a paragraph and a picture. Empty-looking panels. A plain footer.
   Pages whose only motion is fade-ins. The right context doesn't excuse this, in a site or in a reference: the user
   wants creative, attractive and premium work that suits the business.

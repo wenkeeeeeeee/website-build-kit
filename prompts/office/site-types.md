@@ -55,6 +55,14 @@ use the same hero. The sites named are in the Benchmarks of `reference-library.m
   with close-ups, materials and craft. **Hero:** the product alone at the centre, turning slowly and following the
   cursor; scrolling takes it apart with each part named (Lusion, Opal Tadpole). Search: luxury eyewear website,
   jewellery website, watch brand, fashion accessories ecommerce, product showcase website.
+- **Vehicles and mobility:** e-scooters, e-bikes, motorcycles, cars, EV charging, rental and sharing. Technology people
+  ride every day, so it looks precise and premium, never loud. **Hero:** the real vehicle, big and sharp in studio light
+  or on a real street, or a real rider using it; it turns, folds or comes apart as you scroll, with parts named. A model
+  switcher and one fact line (weight, range, price a month). Below: a feature index over close-ups, spec counters,
+  "which model fits you" and running cost against petrol. A dark or neutral base with the brand's accent, in a clean
+  grotesk. Never a game, a cartoon road, a dashboard or a sale poster. Category leaders to open first: cowboy.com,
+  atherenergy.com, gogoro.com, unagiscooters.com. Search: e-bike brand website, electric scooter launch, EV website
+  scroll animation.
 - **Packs and jars:** snacks, drinks, sauces, coffee, sweets, pet food. Loud colour per product, flavours and ranges.
   **Hero:** the product being made or opened fills the screen, and the visitor does the last step (hold to fry, pour,
   crack the lid), which ends in the basket. Each flavour comes out in its own shape and colour, and the small copy has

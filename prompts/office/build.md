@@ -20,6 +20,8 @@ between steps unless something is blocked. Short updates only.
    - Open it once with `check-pages.cjs`. Every page must work, because all the variants copy it.
 4. **Builders (30 minutes).** Fill in `KIT/prompts/variant-agent-brief.md` once per variant, using its column of
    `PITCH.md`, and send all the subagents in one message so they run in parallel, each with `run_in_background: false`.
+   First check each concept: if something other than the product, or a customer using it, is the hero, or the palette
+   comes from a metaphor, rewrite it in `PITCH.md` before briefing.
 5. **Hub.** Write `PROJECT/index.html`, in the format in section 1 of the playbook, with short plain names.
 6. **Quick check (3 minutes).**
    - Run `check-pages.cjs` once on each variant's home page, click through to one inner page, and grep for reference names.
@@ -27,6 +29,9 @@ between steps unless something is blocked. Short updates only.
      clean, and never be just a title and photos. Move anything that crowds it below.
    - **Level:** run `contact-sheet.cjs` on each variant and its lead reference, and go through both. If a hero, or the body
      below it, looks clearly weaker than the reference, send it back to be fixed.
+   - **Category:** put each hero beside two category leaders from "Category look" in `PITCH.md`, not only its own lead
+     reference. Ask what a stranger would say this company sells, and whether the brand's own marketing team would
+     publish it. If the user liked another variant, this one must look at least as premium. Send back anything that fails.
    - **Fonts:** compare the fonts it prints against "Type" in `taste.md`, and replace any banned one.
    - **Coverage:** compare the variants against `content/` and `PITCH.md`, and add anything one left out, so all cover the
      same products, prices, pages, proof and ways to order.
@@ -51,6 +56,9 @@ between steps unless something is blocked. Short updates only.
   and reply with the live link.
 - If previews stop loading, restart the server: background commands end after 2 hours.
 - If the client rejects a whole round, don't rebuild yet. Ask the user questions first.
+- **Redoing one variant:** keep the level, tone and image treatment of any variant the user liked, and change the idea,
+  layout and hero. Never pick a direction just because the other variants haven't used it. Open the category leaders
+  again and run the Category check before publishing.
 - **An extra variant, even from the user's own idea, gets references too.** Search and open real sites first, using the
   bar in step 3 of `research.md`, then name what to take from each. Never brief a Builder with no outside reference.
 - **When the user rejects something or repeats a correction,** add the lesson to `taste.md` or
