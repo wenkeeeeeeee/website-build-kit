@@ -14,7 +14,7 @@ Attractive, creative and modern, alive with motion graphics and animation, in th
   came for, and prices, ratings and counts never lead: at most one small line.
 - **It says the core in seconds,** in a clean first screen: a headline set into the scene, a short line, one line of
   facts and one action. No paragraphs. Claims come only from the client, or show as `[client to confirm]`.
-- **It moves.** Every hero has motion graphics and animation: an opening that lands in 1–3 seconds and never blocks,
+- **It moves.** Every hero has motion graphics and animation: an opening that never blocks (playful 2–3 seconds, professional a one-second reveal, as `motion.md` says),
   a main visual that keeps moving gently at rest, and a scroll move wherever the product suits it, pinned for 1–3
   screens, smooth both ways, with a shorter phone version. Scroll recipes:
   - **Turn and open:** the product turns, opens or comes apart with parts named.

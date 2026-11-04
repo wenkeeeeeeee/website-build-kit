@@ -1,6 +1,7 @@
 # New website project: the prompt
 
-Send a client's name and links to the **Front Desk** thread. That's all: the live link comes back within an hour.
+Send a client's name and links to the **Front Desk** thread. You approve the plan and the heroes, and the live link
+comes back.
 
 ````markdown
 Client:
@@ -13,9 +14,10 @@ once, and any more wait their turn.
 ## What happens
 1. **Research, about 10 minutes.** It reads the client's links, decides the tone and a direction per variant, and picks
    references from the kit's Benchmarks and Awwwards, at least 2 per variant.
-2. **Build, 30–45 minutes.** Shared pages come first from the starter, then 3 full variants in parallel, with every page
-   working, using the kit's tools and the design skills.
-3. **Quick check and publish.** It checks that nothing is broken, then goes to a private GitHub repo and a Vercel project,
+2. **Your review of the plan.** Reply "go" or send changes.
+3. **Heroes first.** Each variant's hero is built and shown to you as frames beside its reference. After your "go", the
+   rest of the 3 variants is built, with every page working.
+4. **Quick check and publish.** It checks that nothing is broken, then goes to a private GitHub repo and a Vercel project,
    and the links come back to Front Desk for you to review.
 
 If you paste references yourself, you get one variant per reference, and they are never replaced.

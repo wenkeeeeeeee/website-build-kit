@@ -20,7 +20,7 @@ result is a failed one.
 
 ## Your variant
 - Folder: `{{PROJECT ROOT}}/variants/{{nn-name}}/` (site in `site/`, your reference captures in `ref/`).
-- Concept: {{one sentence: what in this business is the hero made of? Not a style word.}}
+- Direction: {{from `PITCH.md`: one sentence on what the hero is made of and what it does. Not a style word.}}
 - Tone: {{playful | modern and professional, from `PITCH.md`}}. Buyer's path: {{from `PITCH.md`}}.
 - Yours alone, shared with no other variant: how the buyer's path is told {{section order along the path}}; signature moment {{the one scroll
   set-piece}}; business tool {{finder, picker, dial or quote builder}}; basket name {{or none}}; header {{its own
@@ -31,12 +31,12 @@ result is a failed one.
 - Changes from the user: {{for a repeat hero round or the rest phase, their words; otherwise none}}.
 - Reference: {{URLs, each marked Benchmark or Awwwards, and the part to take from each}}. What I saw at a glance:
   {{2-4 lines: header, hero, signature sections, motion}}.
-- Direction for {{CLIENT}}: {{one line idea}}. {{How the reference's components map to the client: which
+- Adapting the reference: {{how its components map to {{CLIENT}}: which
   products/sections, which colours (from the client's world, not the reference's), what to avoid}}.
   Fit the layout and components to the client rather than reproducing the reference.
 - Facts: {{3-5 lines: what the business sells, where, proof (reviews, certificates), how people order}}.
 
-## Five rules that beat your concept
+## Five rules that beat your direction
 1. **The hero delivers the business core and stays clean.** Follow "The hero" in `taste.md`: it says what this business
    is, what it sells and who it's for, in a clean, attractive and creative first screen with no heavy text. Its main
    visual is what the customer came for, shown so they want it. A title with some photos is never enough. The opening must land there, never hide or delay it.
@@ -44,7 +44,7 @@ result is a failed one.
    colour, composition), not just a small effect. Design the sections below at the same level, and treat their images the
    same way as the hero's. Don't fall back on cards and text on a plain background.
 3. **This variant carries the whole business, as every other variant does.** Every product or service with its price,
-   every page in `PITCH.md`, and all the proof, offers, questions, locations and ways to order or book. Your concept
+   every page in `PITCH.md`, and all the proof, offers, questions, locations and ways to order or book. Your direction
    changes how it's told, never how much. If something doesn't fit the home page story, give it a designed inner page.
 4. **It's built to sell.** Follow "Will they buy?" in `taste.md`: sections in the buyer's path order, the buying
    basics, and persuasion over show, in the tone set above.
@@ -105,5 +105,5 @@ In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md` and `content/OPEN-QUES
 
 ## Report back (under 200 words)
 Hero phase: the hero URL, the `hero-frames` sheet path, what each scroll step shows, and any step the material couldn't
-carry. Rest phase: folder and URL; the concept in 3-4 lines; which reference components you adapted and how; the opening, set-piece and
+carry. Rest phase: folder and URL; the direction in 3-4 lines; which reference components you adapted and how; the opening, set-piece and
 motion graphics you built; palette and fonts; anything unconfirmed.

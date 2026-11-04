@@ -12,8 +12,8 @@ superpowers session-start hook if one is installed.
 - `tools/web/`: preview server, page checker, export, hero film, scroll and 3D effects, cut-out scripts (run
   `npm install` in it once).
 - `prompts/office/`: the AI office. `research.md`, `build.md` and `deepen.md` are the run orders, and `taste.md`,
-  `motion.md`, `site-types.md` and `reference-library.md` set the standard. A lead gets 10 minutes of research, then full variants
-  built the way this file describes, published to Vercel within an hour.
+  `motion.md`, `site-types.md` and `reference-library.md` set the standard. A lead gets 10-20 minutes of research and a plan the user
+  reviews, then heroes the user approves as pictures, then full variants published to Vercel.
 - `.claude/skills/`: the design and debugging skills used on these builds.
 - `WebsiteProjects/<Client>/`: each new build goes here.
 
@@ -31,10 +31,12 @@ superpowers session-start hook if one is installed.
   plus Playwright and chrome-devtools for screenshots.
 
 ## How to work
-- Clone by mirroring the reference's source.
+- In Clone mode only, when the lead asks for it, mirror the reference's source. Otherwise adapt references, never copy
+  them.
 - Check each variant with one desktop screenshot, `check-pages.cjs --phone`, and a check that no reference assets
   or brand names remain.
 - Build independent variants in parallel with subagents, and keep screenshot review inside them.
 - No reports, per-variant docs or re-runs of checks unless the user asks.
 - Give the user preview links at the end of each step.
-- When something new is learned, add it to `prompts/website-playbook.md` in general terms (no client names).
+- When something new is learned, note it in the project's `docs/LESSONS.md` in general terms (no client names). At
+  wrap-up it sharpens the kit rule it belongs to, as `prompts/office/build.md` says.

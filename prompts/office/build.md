@@ -20,8 +20,8 @@ only at the hero review in step 4, or if something is blocked. Short updates onl
    - Open it once with `check-pages.cjs`. Every page must work, because all the variants copy it.
 4. **Heroes first (25 minutes), then the user's review.** The hero is judged from pictures, never from the plan.
    - **Before briefing,** open each variant's lead reference sheet: if a banner covers it, most frames are static, the
-     look is on the fail list, or its hero isn't made of the same kind of material as this variant's ("Match the
-     material" in `research.md`), replace it. Check each concept: if the hero isn't what the customer came for, the
+     look is on the fail list, or its hero isn't made of the same kind of material as this variant's (step 3 of
+     `research.md`), replace it. Check each direction: if the hero isn't what the customer came for, the
      palette comes from a metaphor, the look doesn't suit the tone, or the plan needs a move the hero material can't
      carry, rewrite it in `PITCH.md`.
    - **Hero round.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero`, and send all the
@@ -88,5 +88,5 @@ only at the hero review in step 4, or if something is blocked. Short updates onl
 - **"Deepen V2", or the client picked one:** follow `KIT/prompts/office/deepen.md`.
 - **"Wrap up":** read `LESSONS.md` and the user's tweaks in this thread, and write the lessons into
   `KIT/prompts/website-playbook.md`, or `taste.md` if they are about taste, in general terms with no client names. Edit
-  the existing rule each one belongs to, and delete any rule it contradicts. Add references that worked or failed
-  to `reference-library.md`. List what you added in your reply.
+  the existing rule each one belongs to, and delete any rule it contradicts. Add an Awwwards reference to Benchmarks in
+  `reference-library.md` only if the user liked the variant built from it, and anything rejected to "Rejected". List what you added in your reply.

@@ -31,8 +31,8 @@ WebsiteProjects/<Project>/
    a visible `[client to confirm]` tag and a line in `OPEN-QUESTIONS.md`. Write brand rules once in `BRAND-INSIGHTS.md`.
 2. **Plumbing from `starter/`.** Copy it, swap in the data, and drop or add pages. It has the basket (WhatsApp and/or
    marketplace checkout), catalogue with filters, product page, quote form and stores list.
-3. **One subagent per variant folder,** using `variant-agent-brief.md`. Each copies the plumbing and redesigns everything
-   visible, in 20-45 minutes. They never touch shared files, and the lead adds hub entries afterwards.
+3. **One subagent per variant folder,** using `variant-agent-brief.md`. Each builds its hero first for approval, then
+   everything else, as step 4 of `office/build.md` says. They never touch shared files, and the lead adds hub entries afterwards.
 4. **Lead review:** one desktop screenshot per variant, `check-pages.cjs --phone`, a grep for reference names and banned
    words, then publish.
 
@@ -52,8 +52,8 @@ Every item here came back from a client as a change request.
 - **In split sections, the text sets the height.** A photo with `height: 100%` stretches the row. Fix:
   `.media { position: relative; min-height: 300px } .media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover }`
 - **No white gaps.** Full-bleed coloured sections on a white page get square bottom corners.
-- **Heroes are clean,** as "The hero" in `office/taste.md` says. On page heroes, title, copy and button stack on one left
-  edge with artwork on the right.
+- **Heroes follow "The hero" in `office/taste.md`,** page heroes included: the subject leads, never text on one side and
+  a picture on the other.
 - **Nothing plain below the hero.** Add real components on photos: code tags, hover actions that do something (WhatsApp
   with a pre-written message, "Add to my quote" that fills the form), cut-outs floating in panels.
 - **Keep scroll cues and decoration away from buttons.** Hide scroll cues on short and phone screens.
@@ -68,7 +68,8 @@ Every item here came back from a client as a change request.
 
 **Phones**
 - Run `check-pages.cjs --phone` on every variant. An off-screen element widens the whole page.
-- The phone hero is a plain stack: words, button, then the visual, never art over copy.
+- The phone hero keeps the subject biggest: the visual first or behind the words, with the headline and button clear of
+  it, never art over copy.
 - A closed side drawer or menu needs `overflow: hidden` on its fixed wrapper.
 
 **Sharing and audiences**
@@ -109,16 +110,16 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you're u
 - **Intro as preloader:** wait for the hero poster to decode (cap about 3s), and land the intro's shape exactly on its
   twin in the hero. Show it once per session, decided by an inline `<head>` script that adds a class to `<html>` before
   first paint, or the page flashes.
-- **Long brand opening** (`prologue.js`), for Branding sites in the luxury tone only, never in front of a shop: dark ground, light beam, embers, the logo swept in gold, then the story in acts,
+- **Long brand opening** (`prologue.js`), only when the user asks for one, on a luxury Branding site, never in front of
+  a shop: dark ground, light beam, embers, the logo swept in gold, then the story in acts,
   about 9-10 screens, with act labels and "Skip the story". Never loop or ping-pong a short clip, because clients notice
   the rewind: scrub it over scroll.
 - **Storytelling brands:** the home page is one story whose transitions carry you between products, with no cards or
   prices until a quiet shop link at the end. A still per scene beats short clips for long stories.
 
 **Film**
-- **Pipeline:** 4 storyboard keyframes at 16:9, `film.py animatic` as a same-day placeholder, image-to-video per keyframe
-  pair, then `film.py stitch`. Prompts: locked camera, same angle in every keyframe, backdrop colour as a hex, the left
-  ~45% empty for the headline, no text, logos, faces (hands only) or packaging.
+- **Source:** only footage the client supplies or the user provides. Don't plan AI-made video, and never use
+  Higgsfield. `film.py stitch` joins clips.
 - **Placing it:** right-aligned at full section height with a feathered left edge
   (`mask-image: linear-gradient(90deg, transparent, #000 14%)`). Sample the section background from the film's edge
   colours. Steps beside the film follow `currentTime`, and clicking a step seeks.
@@ -138,8 +139,8 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you're u
   like a studio shot. Scroll takes it apart, labels name the parts, and it can crossfade into a real photo.
 - **Any WebGL:** load `gl-guard.js` first, keep a still behind the canvas for missing WebGL and reduced motion, and pause
   off screen. One canvas per page where you can.
-- **No photos:** a cursor-driven ink fluid (github.com/PavelDoGreat/WebGL-Fluid-Simulation, MIT: keep its credit) with
-  frosted shapes drifting toward the logo. Keep the palette light, and keep it off the copy on phones.
+- **Ink fluid** (github.com/PavelDoGreat/WebGL-Fluid-Simulation, MIT: keep its credit): a cursor-driven background
+  behind the real subject, never the hero on its own. Keep the palette light, and keep it off the copy on phones.
 - A canvas-drawn scene is a good stopgap until real footage exists. Keep it behind a `data-mode` switch.
 
 **Bugs to avoid**
@@ -153,8 +154,9 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you're u
 ## 5. Images
 - No new photography: use the client's images, generated images (`content/generated/`) and clean cut-outs.
 - Use real photos for rooms, staff and equipment, and generated images for mood.
-- **Treat weak client photos before use.** Phone photos can't sit beside cinematic references as they are. Cut the people
-  out, apply one strong grade across the site, scale them up and set them on bold colour. Keep this treatment in every
+- **Treat weak client photos before use.** Phone photos can't sit beside cinematic references as they are. Give them one
+  grade across the site and a treatment that fits the tone, as "It's made of what the client really has" in
+  `office/taste.md` says: never scaled past sharp, and cut out only where the edge is clean. Keep the treatment in every
   section, not just the hero.
 - Check client photos for third-party watermarks, and crop or skip them. Packs showing a supplier's brand must not be the
   hero subject.

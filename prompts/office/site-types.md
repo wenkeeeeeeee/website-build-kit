@@ -108,13 +108,12 @@ use the same hero. The sites named are in the Benchmarks of `reference-library.m
   "plan my weekend". Below: filters by area, type and price, a map, the latest posts, and how they visit and film.
   Category brands to open: timeout.com, theinfatuation.com, atlasobscura.com, airbnb.com/s/experiences.
 - **Trust and expertise:** finance, law, accounting, insurance, consultants, B2B suppliers. Calm, clear, credible.
-  **Hero:** one calm object drawn in fine lines (the product, a building, a chart) holds the stage and stays fixed while
-  chapters change around it, with a segmented progress bar. A live slider or calculator answers the money question
-  early (EnduroSat). No sound or games, and slower motion.
+  **Hero:** what the client really delivers: the product, or the people at work and the result the customer gets (the
+  finished building, the case won, the money saved). It holds the stage while chapters change around it, with a
+  segmented progress bar, and a live slider or calculator answers the money question early (EnduroSat). No sound or games, and slower motion.
 - **Learning and community:** courses, coaching, academies, mentorships, schools. A person, a method and student results.
-  **Hero:** the method as one object (a crest, a path, a chart line) with the promise in one line and the real cost or
-  first step something you can try; the object stays as the stage for the steps, as in Trust and expertise. Proof stays
-  labelled and risk wording stays.
-- **Origin and craft:** farms, wineries, distilleries, makers, heritage brands. A place and how it's made. **Hero:** a
-  small drawn scene or map of the place, built in code; a route draws itself from the source to the finished product
-  and each stop opens a chapter (Igloo).
+  **Hero:** the teacher and real students at work, or a real result they reached, with the promise in one line and the
+  first step something you can try. Proof stays labelled and risk wording stays.
+- **Origin and craft:** farms, wineries, distilleries, makers, heritage brands. A place and how it's made. **Hero:** the
+  finished product big at the centre, with the place and how it's made around it; as you scroll, a route draws from the
+  source to the product and each stop opens a chapter (Igloo).
