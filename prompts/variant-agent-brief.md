@@ -87,8 +87,8 @@ In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md` and `content/OPEN-QUES
   planning, TDD, verification or worktree skills.
 - **Before you finish:** run `check-pages.cjs --phone --header <your header height>` at both sizes on the home page and each
   inner page, and fix what looks off. Check your first screen against "The hero" in `taste.md`, and do the customer walk
-  from "Will they buy?" at phone size. Check "Boxy layouts" and "Lines between sections" in `taste.md` on your contact
-  sheet, and take out the extra boxes and dividers. Run `contact-sheet.cjs` on
+  from "Will they buy?" at phone size. Check "Boxes and lines" in `taste.md` on your contact sheet: keep the boxes and
+  dividers that earn their place, make them creative, and rework the rest. Run `contact-sheet.cjs` on
   your site, its lead reference and one category leader from "Category look" in `PITCH.md`, and compare them side by
   side: if your hero or any section looks weaker, or your site wouldn't belong beside the category leader, fix it. Check
   the printed fonts against "Type" in `taste.md`. Grep the site for reference names and banned words.

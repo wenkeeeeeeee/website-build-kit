@@ -67,18 +67,25 @@ how to get it.
 - **Customer walk.** On a phone, read the home page as the customer, from landing to the WhatsApp message. At each
   screen ask: do I know what this is, do I trust it, do I know what to do next? Any "no" gets fixed.
 
+## Boxes and lines
+Cards, frames, dividers and colour bands are allowed where they suit, but they're the default every builder reaches for,
+and the user has called the result too boxy. Use them on purpose, and make them creative.
+- **Boxes where they earn it.** Cards suit things people compare, such as products with prices or plans. Don't put every
+  photo in a card, every fact in a tile and every section in a panel. Mix in photos that bleed off the edge, cut-outs,
+  overlaps, shapes from the client's world, and text set straight on the page.
+- **When you do use a box, design it.** Give it the client's shape or an unusual crop, tilt or overlap it, break it with
+  the product, or vary sizes, so it's part of the variant's look and not a default rounded rectangle.
+- **Lines and edges between sections, used sparingly and designed.** A plain straight edge between flat colour bands, or
+  a ruled line under every section, reads as a template. A designed join can work: a wave, a torn or cut edge, a line
+  the client's object draws, a gradient, or an image crossing from one section into the next. Don't use the same
+  divider between every section.
+- **Check:** if most frames of a contact sheet are plain rounded boxes on a background, or every section ends in the
+  same straight edge, rework it.
+
 ## Rejected on sight
 - **A body that doesn't match the hero.** The hero sets the level for the whole site. If the sections below drop to cards
   and text on a plain background, the site has failed. Every section keeps the hero's scale, image treatment, colour, type
   and motion, on inner pages too.
-- **Boxy layouts.** Rounded rectangles everywhere: every photo in a card, every fact in a tile, every section a panel.
-  It's the most common machine-made look across our variants. Use a set of cards only where items really are compared
-  (products with prices, plans), and at most one set per screen. Everywhere else, let photos bleed off the edge, cut
-  out, overlap, or sit in the client's own shapes; set text straight on the page; and separate things with type scale,
-  space and composition, not boxes. If most frames of a contact sheet are boxes on a background, redo it.
-- **Lines between sections.** A straight hard edge where one flat colour band stops and the next starts, a ruled line
-  across the page, or a border around each section, used to mark where sections change. One deliberate edge per page
-  at most. Sections hand over as "Transitions" in the playbook says.
 - **Copying a reference's details and missing its impact.** Thin lines or small effects carried over without the
   reference's scale, imagery and colour don't count. Take what makes it striking first.
 - **Patching what keeps coming back.** If a variant is still rejected after several rounds of fixes, stop fixing it. Start

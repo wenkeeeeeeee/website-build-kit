@@ -38,9 +38,8 @@ between steps unless something is blocked. Short updates only.
    - **Customer walk:** on a phone-size screen, walk each variant's home page as "Will they buy?" in `taste.md` says, and
      check the buying basics and the tone. Send back any variant where a customer wouldn't know what it is, trust it,
      or know how to buy.
-   - **Boxes and lines:** on each contact sheet, send back a variant where most frames are rounded boxes on a background,
-     or where sections are split by hard edges or ruled lines, as "Boxy layouts" and "Lines between sections" in
-     `taste.md` say.
+   - **Boxes and lines:** on each contact sheet, send back a variant where most frames are plain rounded boxes on a
+     background, or every section ends in the same straight edge or ruled line, as "Boxes and lines" in `taste.md` says.
    - **Fonts:** compare the fonts it prints against "Type" in `taste.md`, and replace any banned one.
    - **Coverage:** compare the variants against `content/` and `PITCH.md`, and add anything one left out, so all cover the
      same products, prices, pages, proof and ways to order.
