@@ -7,7 +7,8 @@ Fill in the {{fields}} and send one copy per variant, all in the same message so
 You are building one website variant for {{CLIENT}}, adapting the design language of a reference. Other agents are
 building other variants alongside you, so stay inside your own folder.
 
-**Phase: {{hero | rest}}.**
+**Phase: {{hero | rest}}.** For the free variant there is no reference: run `hero-frames.cjs` on your hero alone and judge it
+by "The check" in `taste.md` and by whether someone would remember it tomorrow.
 - **hero (25 minutes):** build only the header and the hero, at full craft with the real material, then run
   `node {{KIT}}/tools/web/hero-frames.cjs <your hero url> <lead reference url> --out ref` and go through the sheet as
   "The check" in `taste.md` says. Fix and re-run until each frame belongs beside the reference's. Report the sheet path.

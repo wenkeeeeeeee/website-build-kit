@@ -79,7 +79,8 @@ only at the hero review in step 4, or if something is blocked. Short updates onl
   layout and hero. Never pick a direction just because the other variants haven't used it. Open the category leaders
   again and run the Category check before publishing.
 - **An extra variant, even from the user's own idea, gets references too.** Pick them from Benchmarks or Awwwards and open
-  them, as step 3 of `research.md` says, then name what to take from each. Never brief a Builder with no outside reference.
+  them, as step 3 of `research.md` says, then name what to take from each. Never brief a Builder with no outside reference,
+  except for the free variant (step 2 of `research.md`), which is judged on whether someone would remember it tomorrow.
 - **A redone hero goes through the same review:** build it, post its `hero-frames` sheet beside its reference, and
   wait for "go" before publishing.
 - **When the user rejects something or repeats a correction,** note the lesson in `PROJECT/docs/LESSONS.md`, in general

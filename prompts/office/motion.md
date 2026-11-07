@@ -53,7 +53,8 @@ Starting points only. The concept in `PITCH.md` wins.
 - **Origin and craft:** the making process plays as a line drawing, from source to finished piece.
 
 ## How to make it
-- **No generated video is needed.** AI video isn't normally available, so never plan around it. Everything here can be
+- **No generated video is needed.** AI-made video from a free tool is fine when one is available, but never Higgsfield
+  or a paid tool, and never make a hero depend on it. Everything here can be
   made in code from the client's logo, photos and cut-outs. If the client has a good film, use it.
 - **Libraries** are in `PROJECT/variants/_shared/vendor/`. Copy only what you use into `site/js/vendor/`, with no build step:
   - GSAP with ScrollTrigger for timelines and pinning, SplitText for kinetic type, DrawSVGPlugin for line drawing,

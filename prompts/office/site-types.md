@@ -37,7 +37,8 @@ Whatever the type, the same rules apply: one concept per variant, and the checks
 
 ## Tone
 Research decides one tone for the client before choosing references, writes it in `PITCH.md` with the signals that
-decided it, and every variant uses it. Variants differ in idea and layout, never in tone.
+decided it, and every variant uses it. Variants differ in idea and layout, never in tone, except the free variant, which
+may choose its own.
 
 - **Playful:** the business is about joy, treats, celebration, play or personality, and customers come for fun or a
   feeling, whatever the price. Snacks, sweets, drinks, desserts, gifts, balloons and parties, toys and kids' things,

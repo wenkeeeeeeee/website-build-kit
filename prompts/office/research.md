@@ -5,8 +5,9 @@ bar. Your task message gives `CLIENT`, `PROJECT` (its folder), `KIT` (this repo)
 and `ZERILAB_PROJECT_ID`. `PROJECT/docs/LEAD.md` holds the user's message, and its notes beat these defaults.
 
 Run `git -C KIT pull --ff-only` first. Never ask anything, work alone with no subagents, and don't read other folders in
-`WebsiteProjects` or use memories. Run `date +%s` now and after each step; at 8 minutes (18 on the longer limit) stop
-gathering and write `PITCH.md`. Build 3 variants unless `LEAD.md` gives a number.
+`WebsiteProjects` or use memories (except the variant names and directions in their `docs/PITCH.md`, read only to keep
+the free variant new). Run `date +%s` now and after each step; at 8 minutes (18 on the longer limit) stop gathering and
+write `PITCH.md`. Build 3 variants plus 1 free variant unless `LEAD.md` gives a number.
 
 ## 1. The business (5 minutes)
 Everything else depends on this, so it comes first and gets the most time.
@@ -36,6 +37,9 @@ Everything else depends on this, so it comes first and gets the most time.
   the hero material ("the bouquet rises and the visitor's name prints across the balloon"). Then the hero recipe from
   "The hero" in `taste.md`, and a look that fits the tone and the category. Variants differ in idea and layout, never
   in tone, and never by picking a weaker look just to be different.
+- **The free variant (always the last one):** your own idea, something we haven't built before: modern, futuristic,
+  playful like a game, or anything else that fits the business. It needs no reference and may leave the tone, but a
+  stranger must still see this business at a glance, and it carries the same content, prices and action.
 
 ## 3. References (4 minutes): Benchmarks and Awwwards only
 Use only these sources, plus any reference the user pasted in `LEAD.md`, which always gets a variant of its own.
@@ -52,7 +56,7 @@ Use only these sources, plus any reference the user pasted in `LEAD.md`, which a
 4. **The bar:** creative, attractive and premium in the way that suits this business, across most of the page, in the
    right tone, with a hero made of the same kind of material. Name two frames that prove it, or drop it. Plain
    layouts, beige with a serif, and loud colour with no idea behind it fail, even on Awwwards.
-5. **End with at least 2 per variant:** a lead that sets the hero and the page, plus one for specific parts. Never one
+5. **End with at least 2 per variant** (the free variant needs none, and takes one only if it helps the craft): a lead that sets the hero and the page, plus one for specific parts. Never one
    reference per scroll move or for one detail. Open each kept sheet again cold and replace anything weak. If Awwwards
    has nothing better, use the closest Benchmark and say so; don't search elsewhere.
 

@@ -118,8 +118,8 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you're u
   prices until a quiet shop link at the end. A still per scene beats short clips for long stories.
 
 **Film**
-- **Source:** only footage the client supplies or the user provides. Don't plan AI-made video, and never use
-  Higgsfield. `film.py stitch` joins clips.
+- **Source:** footage the client supplies or the user provides, or AI-made video from a free tool. Never use Higgsfield
+  or a paid tool, and don't make a hero depend on AI video. `film.py stitch` joins clips.
 - **Placing it:** right-aligned at full section height with a feathered left edge
   (`mask-image: linear-gradient(90deg, transparent, #000 14%)`). Sample the section background from the film's edge
   colours. Steps beside the film follow `currentTime`, and clicking a step seeks.
