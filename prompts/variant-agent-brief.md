@@ -93,7 +93,9 @@ In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md` and `content/OPEN-QUES
 - **Client's world:** carry the client's own object through the intro, transitions, image frames and small details, on
   inner pages too, as your column of `PITCH.md` says. Keep it well made and clear of the copy.
 - **Motion:** meet the seven points in `motion.md` at the level your tone allows, following your column's motion plan. Build it with each section,
-  starting with the opening and the set-piece. A section that only fades in is unfinished.
+  starting with the opening and the set-piece. A section that only fades in is unfinished. For working code, open the
+  matching recipe from `{{KIT}}/prompts/techniques/INDEX.md` (only the ones your concept uses) and take values from
+  `{{KIT}}/prompts/office/craft-numbers.md`.
 - **Lean workflow:** no gates, plans, reports, TDD, fixtures or docs files. Don't use the unlazy skill or the superpowers
   planning, TDD, verification or worktree skills.
 - **Before you finish:** run `check-pages.cjs --phone --header <your header height>` at both sizes on the home page and each

@@ -14,5 +14,10 @@ license; the full texts are in `licenses/`.
 | `soft-skill`, `minimalist-skill`, `brutalist-skill`, `gpt-tasteskill`, `stitch-skill` | [Leonxlnx/taste-skill-classics](https://github.com/Leonxlnx/taste-skill-classics) | MIT (`licenses/taste-skill-classics.LICENSE`) |
 | `image-to-code`, `imagegen-frontend-web`, `imagegen-frontend-mobile`, `brandkit` | [Leonxlnx/imagegen-skills](https://github.com/Leonxlnx/imagegen-skills) | MIT (`licenses/imagegen-skills.LICENSE`) |
 
+`prompts/techniques/` and `prompts/office/craft-numbers.md` are adapted from the MotionSites skill
+([Motionsites-AI/claude-skill](https://github.com/Motionsites-AI/claude-skill), MIT, `licenses/motionsites.LICENSE`):
+rewritten to plain JS with local libraries, with recipes that clash with our rules left out. Its examples and media are
+not MIT and are not included. `tools/web/check-pages.cjs` adapts a few checks from its `shoot.py`.
+
 Installed as plugins from the original repos, `impeccable` also adds edit hooks and review sub-agents, which are
 not part of these copies.

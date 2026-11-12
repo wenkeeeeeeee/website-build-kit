@@ -14,6 +14,8 @@ superpowers session-start hook if one is installed.
 - `prompts/office/`: the AI office. `research.md`, `build.md` and `deepen.md` are the run orders, and `taste.md`,
   `motion.md`, `site-types.md` and `reference-library.md` set the standard. A lead gets 10-20 minutes of research and a plan the user
   reviews, then heroes the user approves as pictures, then full variants published to Vercel.
+- `prompts/techniques/`: one-effect recipes with working code, looked up from its `INDEX.md` only for effects a
+  concept already chose. `prompts/office/craft-numbers.md` holds starting values for type, motion and common bugs.
 - `.claude/skills/`: the design and debugging skills used on these builds.
 - `WebsiteProjects/<Client>/`: each new build goes here.
 

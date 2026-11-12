@@ -76,5 +76,8 @@ Starting points only. The concept in `PITCH.md` wins.
 - **Light:** the first screen appears within 3 seconds. Compress every image, and use SVG where it can replace one.
 - **Phones:** keep the idea with lighter versions. Replace long pinning with shorter moves and drop heavy canvases.
 - **Reduced motion:** every sequence ends in its finished state, nothing hidden, and the page is complete without it.
+- **Recipes and numbers:** to build an effect the concept already chose, find it in `prompts/techniques/INDEX.md` and open
+  only that recipe (1-3 per variant, never the whole library). Timings, type sizes and bug fixes are in
+  `craft-numbers.md`. Don't use the same signature effect in two variants. This file and `taste.md` win on any conflict.
 - **Professional tone, older audiences and serious topics:** the same craft, but slower, with fewer loops, no bounce
   and no sound.
