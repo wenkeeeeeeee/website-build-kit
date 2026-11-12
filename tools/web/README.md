@@ -21,9 +21,10 @@ Small, general scripts from past website builds, for any static project laid out
 | `gl-guard.js` | Load first on any WebGL page: frees contexts when a page closes, reloads dead canvases, probes for WebGL | plain `<script>` in `<head>`, see its header comment |
 | `prologue.js` | Long scroll-driven brand opening: elements fade and move by scroll windows, frame sequences scrub over their own run, glowing particle canvas, clickable act labels | copy into the site; see its header comment |
 | `hotspots.js` | Shop-the-look dots that stay on the product under `object-fit: cover` at any size | copy into `<site>/js/`, see its header comment |
+| `reactbits.cjs` | Fetches React Bits components (animated text, backgrounds, small UI) on demand into a git-ignored cache, lists them with the libraries each needs, and copies one into a site with a license header. They are React, so port the one you pick to plain JS | `node tools/web/reactbits.cjs list [name]`, `node tools/web/reactbits.cjs get Aurora --out <site>/js/reactbits` |
 | `cutout.py` | Removes studio shadows from cut-outs, turns a dark logo into a white mask, makes a contact sheet on a coloured background | `python tools/web/cutout.py shadow in.png out.webp --max 320` |
 
-`npm install` here also brings GSAP with its plugins, Lenis and three.js, for the motion in `prompts/office/motion.md`.
+`npm install` here also brings GSAP with its plugins, Lenis, three.js and ogl (the WebGL library most React Bits backgrounds use), for the motion in `prompts/office/motion.md`.
 
 Needs: Python 3 with Pillow and numpy (`cutout.py`), ffmpeg and ffprobe on PATH (`film.py`), `yt-dlp` for client reels,
 Node with Playwright for `check-pages.cjs` (`npm i -D playwright` in `tools/web` or the project; it uses the installed

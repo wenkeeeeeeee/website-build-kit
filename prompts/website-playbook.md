@@ -63,6 +63,21 @@ map, booking form) only if it answers a question customers really ask.
   `flex: 1`, so no white strip ends the page.
 - **Forms:** fields three across, live preview beside the form, `label { align-content: start }` so a hint under one
   field doesn't stretch the others.
+- **Controls in the site's design, never the browser's.** The browser's own date popup, number spinner arrows and
+  dropdown list (white or grey OS panel, blue highlight) look broken on a designed site. Build every control from the
+  variant's fonts, colours, radius, borders and motion, with hover, pressed, focus-visible, selected and disabled
+  states, and the same focus ring on all of them:
+  - **Choice of 2-6:** chips or segmented buttons, all visible, rather than a dropdown. Radios as selectable cards.
+  - **Longer lists:** a button that opens a styled list panel (`role="listbox"`, `aria-expanded`), with arrow keys,
+    Enter, Esc and type-ahead, and a hidden input carrying the value for the form.
+  - **Dates:** a calendar panel in the site's style with past and closed days disabled, or, for bookings, chips of the
+    next available days and times.
+  - **Numbers:** a stepper, minus, value, plus, with buttons styled like the site's, at least 44px, the minus disabled
+    at the minimum. Hide the native arrows with `appearance: textfield` and `::-webkit-inner-spin-button { display: none }`.
+  - **Checkboxes and switches:** drawn in the site's style, at least `accent-color` set to the brand colour.
+  - **Buttons:** every button uses the variant's button styles, including in the basket, menus and dialogs.
+  - Set `color-scheme: dark` on dark sites, so scrollbars, autofill and any native leftover match too.
+  - Open every dropdown, calendar and stepper during the check and screenshot it open.
 
 **Phones**
 - Run `check-pages.cjs --phone` on every variant: one off-screen element widens the whole page.
@@ -92,7 +107,8 @@ Smoothness is choreography; screenshots and frame counters won't show it.
 - **Scroll-linked motion** eases toward its target each frame, so nothing snaps. Triggered reveals stagger over 0.6-1s on
   a long ease-out such as `cubic-bezier(.16,1,.3,1)`, never linear or bouncy.
 - Motion language, hover and press states, which properties to animate, page changes: `office/motion.md`, which every
-  variant must meet. GSAP and Lenis come with the kit's tools.
+  variant must meet. GSAP, Lenis, three.js and ogl come with the kit's tools, and `tools/web/reactbits.cjs` fetches
+  React Bits components.
 
 ## 4. Hero effects
 Ways to make the hero's one main visual, not extra layers. Skip to what you use.

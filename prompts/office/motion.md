@@ -60,6 +60,11 @@ Starting points only; the concept in `PITCH.md` wins.
     MorphSVGPlugin for shape morphing, MotionPathPlugin for paths and Flip for shared-element moves.
   - Lenis for smooth scrolling, connected to ScrollTrigger so they share one clock.
   - three.js for 3D, with `gl-guard.js` and a still behind the canvas.
+  - ogl for light WebGL backgrounds and shaders.
+  - React Bits components, via `node KIT/tools/web/reactbits.cjs list` and `get <Name> --out site/js/reactbits`.
+    They are React, so port the one you pick to plain JS: keep its shader, canvas or GSAP code, turn the effect into
+    an `init(el, options)` that returns a cleanup, and keep the license header. Recolour and retime it for this client,
+    so it reads as theirs, not as a stock effect.
 - **Kit effects** (`scrub.js`, `prologue.js`, `stair.js`, `hotspots.js`, `film-control.js`) are ready-made; use them
   where they suit the concept.
 - **Build motion with each section,** opening and set-piece first. Motion left to the end gets dropped, and nothing here

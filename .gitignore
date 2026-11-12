@@ -7,3 +7,4 @@ WebsiteProjects/*
 !WebsiteProjects/.gitkeep
 .venv/
 __pycache__/
+.cache/

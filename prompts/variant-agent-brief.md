@@ -107,6 +107,8 @@ only for the effects and image work you're doing.
     `PITCH.md`, side by side. Fix a hero or section that looks weaker, or a site that wouldn't belong beside the leader.
     On your sheet, apply "Boxes and lines" in `taste.md`.
   - Check printed fonts against "Type" in `taste.md`. Grep the site for reference names and banned words.
+  - Open every dropdown, date picker and quantity stepper and screenshot it open: none may show the browser's default
+    look.
 
 ## Report back (under 200 words)
 Hero phase: the hero URL, the `hero-frames` sheet path, what each scroll step shows, any step the material couldn't

@@ -40,5 +40,17 @@ Don't use these or anything like them.
 | https://foodnia.co.jp/ | Banned by the user, ideas included: its colour-flood shape growing on scroll and pinned one-line scenes don't hold up |
 
 ## Component sources
-- https://reactbits.dev/ : animated text, backgrounds and small components.
+- https://reactbits.dev/ : animated text, backgrounds and small components. Fetch the source with
+  `tools/web/reactbits.cjs` and port it to plain JS.
 - https://ui.aceternity.com/ : hero effects, cards and scroll components.
+- https://21st.dev/ : community library of React and Tailwind components (heroes, buttons, cards, text effects,
+  backgrounds, shaders). Search it by section type and copy the code from the component page. Each component has its
+  own author and license, so check it before use. Port the one you pick to plain JS and CSS, and restyle it for the
+  client.
+
+## To try (2026-11-03)
+| URL | Why |
+|---|---|
+| https://www.rimac-automobili.com/ | Full-bleed film chapters (car, motor, lab, team) with a side index: a group story in four chapters |
+| https://www.livewire.com/ | Giant type over riding footage, category tiles with video hover, mini electric bikes |
+| https://www.vanmoof.com/ | Giant model name cut by the bike, night-film "worry less" chapter, app and test-ride tiles |
