@@ -27,8 +27,8 @@ each project.
    `WebsiteProjects/<Client>/`, which git ignores, so client work never lands in this repo.
 4. Run `git pull` before each new project for the latest methods.
 
-Skills in `.claude/skills/` load automatically in Claude Code for this project only, and `.mcp.json` adds the Playwright
-and chrome-devtools servers (Claude asks before using them). Nothing is installed globally. For Codex, copy the skills
+Skills in `.claude/skills/` load automatically in Claude Code for this project only. Nothing is installed globally.
+The browser checks run their own headless Chrome, so no browser MCP server is needed. For Codex, copy the skills
 into its skills folder (e.g. `cp -r .claude/skills/* ~/.codex/skills/`).
 
 ## What's inside
