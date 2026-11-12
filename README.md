@@ -3,7 +3,23 @@
 Everything an AI coding agent (Claude Code, Codex and others) needs to build multi-variant client websites fast:
 proven methods, a working shop starter, helper scripts and the design skills. No client data.
 
-## Use it
+## Use it as a Claude Code skill (recommended)
+Once per machine, in a terminal:
+```
+claude plugin marketplace add https://github.com/wenkeeeeeeee/website-build-kit
+claude plugin install website-build-kit@website-build-kit
+```
+Then turn on auto-update once: in a Claude Code session run `/plugin` → **Marketplaces** → `website-build-kit` →
+**Enable auto-update**. New threads pick up kit changes on their own; a running session needs `/reload-plugins`.
+
+Start a build in any thread with:
+```
+/website-build-kit:build Client: <name> Links: <links> References: <optional> Notes: <optional>
+```
+The skill is in `skills/build/SKILL.md`. It reads the kit's files from the installed copy and copies `tools/web` into
+each project.
+
+## Use it as a cloned project
 1. Clone this repo (in T3 Code: pick the environment → **Add existing project** → clone).
 2. Once per machine: `cd tools/web && npm install`. Needs Node 18+, Python 3 and Chrome for the browser tools;
    `cutout.py` needs Pillow and numpy, `film.py` needs ffmpeg.

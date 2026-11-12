@@ -1,0 +1,12 @@
+{
+  "name": "website-build-kit",
+  "owner": { "name": "wenkeeeeeeee" },
+  "description": "Website build kit as a Claude Code plugin",
+  "plugins": [
+    {
+      "name": "website-build-kit",
+      "source": "./",
+      "description": "Build client website variants with AI agents: research, tone-led and free variants, hero review, checks and Vercel publishing"
+    }
+  ]
+}
