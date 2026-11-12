@@ -5,5 +5,5 @@
     "name": "wenkeeeeeeee"
   },
   "repository": "https://github.com/wenkeeeeeeee/website-build-kit",
-  "mcpServers": {}
+  "mcpServers": "./.claude-plugin/no-mcp.json"
 }
