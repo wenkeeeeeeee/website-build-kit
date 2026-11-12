@@ -2,18 +2,17 @@ Adapted from MotionSites depth-and-interaction.md #3 (MIT).
 
 # Pointer parallax depth layers
 
-Stacked transparent layers drift with or against the pointer by different amounts, giving a still photo real depth.
-Cheap and subtle; good when the client has few photos but clean cut-outs (motion.md, "Layered depth").
+Stacked transparent layers drift with or against the pointer by different amounts, giving a still photo depth. Cheap
+and subtle; good when the client has few photos but clean cut-outs.
 
 **Needs:** layered cut-outs: a backdrop plus 1-2 cut-out layers (subject, foreground) with clean edges.
 
 ## Parameters
 - Normalised pointer `[-0.5, 0.5]`, eased with **lerp 0.12** per frame; the loop stops once settled.
-- Depths (px per unit of pointer): far backdrop **-12 x / -4 y** (moves against the cursor), subject **+18 / +8**,
-  foreground **+22 / +10**. Vertical is about 0.35-0.45x horizontal: horizontal parallax reads stronger, vertical motion
-  feels seasick.
-- Overscan every layer (`inset:-4%`, 108% size) so edges never show. Only when the source is at least 1.2x its display
-  size, so the overscan doesn't soften the photo.
+- Depths (px per unit of pointer): backdrop **-12 x / -4 y** (against the cursor), subject **+18 / +8**, foreground
+  **+22 / +10**. Keep vertical at about 0.35-0.45x horizontal; more vertical motion feels seasick.
+- Overscan every layer (`inset:-4%`, 108% size) so edges never show; needs a source at least 1.2x its display size so
+  the photo doesn't soften.
 
 ## Code
 ```html
@@ -54,7 +53,7 @@ Cheap and subtle; good when the client has few photos but clean cut-outs (motion
 })();
 ```
 
-**Phone:** give a lighter version that keeps the idea. The code above swaps the pointer for scroll position: layers
-part vertically as the scene passes, still eased. Keep the phone scene short (one screen, no pinning).
+**Phone:** the code swaps the pointer for scroll position: layers part vertically as the scene passes, still eased.
+Keep the phone scene to one screen, no pinning.
 
-**Reduced motion:** the layers stay still at their resting place; the photo is complete as is.
+**Reduced motion:** the layers stay at rest; the photo is complete as is.

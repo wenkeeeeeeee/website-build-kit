@@ -2,24 +2,24 @@ Adapted from MotionSites surfaces-and-buttons.md #7 (MIT).
 
 # Media card hover: icon-to-label pill and zoom
 
-Cards for work, projects, rooms or products. On hover a small round icon in the corner opens into a labelled pill
-("View project"), and the image zooms 5%. Clean at rest, a clear response on hover. Cards suit things people compare;
-elsewhere prefer photos that bleed, overlap or take the client's shape (taste.md, "Boxes and lines").
+Cards for work, projects, rooms or products. On hover a round corner icon opens into a labelled pill ("View
+project") and the image zooms 5%. Cards suit things people compare; elsewhere prefer photos that bleed, overlap or take
+the client's shape (boxed grids read as AI-made).
 
-**Needs:** the client's photos (one per card). A clip only if it fits the page's video budget (below).
+**Needs:** the client's photos, one per card. A clip only if it fits the page's video limit.
 
 ## Parameters
 - Pill: a 36px circle that opens to **148-168px** by animating `clip-path` (not width) over 0.3s `var(--ease-in-out)`;
   the label fades in with a **100ms** delay; the icon turns `rotate(-45deg) -> 0`. Light pill on dark media, `--ink`
   pill on light media.
 - Media: `aspect-ratio` per card (e.g. `329/246`, `1/1`), radius 16px, a placeholder background close to the photo's
-  average colour; zoom `scale(1.05)` over 0.7s `var(--ease-out)`. Only when the source is at least 1.2x its display
-  size, so the zoom stays sharp.
+  average colour; zoom `scale(1.05)` over 0.7s `var(--ease-out)`, only when the source is at least 1.2x its display
+  size so it stays sharp.
 - Below the card: description 13-14px in `--muted`, title 14-15px semibold, `margin-top 16px / 4px`.
-- Optional wider grid: 12 columns, spans **7/5/5/7**, radius 24px with a 1px `--line` stroke, a halftone overlay at 20%
-  (see `surfaces/08-texture-overlays.md`). Give at least one card an unusual crop or tilt so the grid isn't plain boxes.
-- Video in cards: stills by default. A page has at most 3 videos with one playing at a time, so a card clip shows its
-  poster and plays only while hovered, paused on leave. Never loop a short clip to fill time.
+- Optional wider grid: 12 columns, spans **7/5/5/7**, radius 24px, 1px `--line` stroke, halftone overlay at 20%
+  (`08-texture-overlays.md`). Give at least one card an unusual crop or tilt so it isn't plain boxes.
+- Video in cards: stills by default. A card clip counts toward the page's video limit: poster until hovered, plays only
+  while hovered, pauses on leave.
 
 ## Code
 ```html
@@ -68,7 +68,7 @@ elsewhere prefer photos that bleed, overlap or take the client's shape (taste.md
 }
 ```
 ```js
-// Optional: a card clip plays only while hovered (poster otherwise). Count it toward the page's 3-video limit.
+// Optional: a card clip plays only while hovered (poster otherwise).
 document.querySelectorAll('.mcard video').forEach((v) => {
   v.preload = 'none'; v.muted = true; v.playsInline = true;
   const card = v.closest('.mcard');
@@ -77,6 +77,6 @@ document.querySelectorAll('.mcard video').forEach((v) => {
 });
 ```
 
-**Phone:** the pill shows open with its label, and the press gives a quick `scale(.98)` on the card. No zoom.
+**Phone:** the pill shows open with its label; press gives the card a quick `scale(.98)`. No zoom.
 
 **Reduced motion:** the pill and zoom change instantly; card clips stay on their poster.

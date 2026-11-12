@@ -2,13 +2,11 @@ Adapted from MotionSites type-and-text-motion.md #2 (MIT).
 
 # Fail-safe entrance system with a motion vocabulary
 
-A sturdier version of `01-rise-entrance.md`. Each element picks a verb (scale, soft rise, mask, pop, button, side
-slide, stat) and a delay. The page can never be stuck blank, and once an animation ends its `transform` is released so
-hover effects work. Use it when a page wants rich load choreography with no framework.
+A sturdier `01-rise-entrance.md`. Each element picks a verb (scale, soft rise, mask, pop, button, side slide, stat)
+and a delay. The page can never be stuck blank, and each element's `transform` is released when its animation ends so
+hover effects work. Use it for rich load choreography with no framework.
 
 **Needs:** nothing.
-
-Blur variant: held until the owner decides.
 
 ## Parameters
 - Rest state visible (`opacity:1`); hiding comes only from `animation-fill-mode: both`.
@@ -69,6 +67,6 @@ requestAnimationFrame(() => requestAnimationFrame(() => {
 }));
 ```
 
-**Phone:** works as is; shorten the timeline so the headline and action land within about one second.
+**Phone:** works as is; shorten the timeline so the headline and action land within about 1 s.
 
 **Reduced motion:** every `.appear` renders at rest with no animation.

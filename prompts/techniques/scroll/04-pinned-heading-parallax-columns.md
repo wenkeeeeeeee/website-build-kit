@@ -2,23 +2,22 @@ Adapted from MotionSites scroll.md #4 (MIT).
 
 # Pinned heading with counter-drifting photo columns (+ single-element parallax)
 
-A heading stays pinned in the centre while two columns of tilted square photos scroll past on either side at different
-speeds, one faster than the page and one slower. About two screens of pinning. Also included: one photo drifting
-against the scroll beside a quote.
+A heading stays pinned in the centre for about two screens while two columns of tilted square photos pass on either
+side, one faster than the page, one slower. Also included: one photo drifting against the scroll beside a quote.
 
 **Needs:** 6+ sharp square client photos (work, dishes, rooms, products); one portrait for the single-element version.
 
 ## Parameters
 - Section `min-height: 300vh`; pinned layer `sticky; top:0; height:100vh` underneath (z 1); columns over it (z 2).
-- Keep the heading clear: the columns run in the outer tracks of a 3-track grid
-  (`1fr min(40vw,560px) 1fr`) so photos pass beside the words, never over them while people read.
-- Cards `aspect-ratio 1`, `max-width 320px`, `rotate -4deg / +3deg`, soft shadow `0 30px 60px` in
-  `color-mix(in srgb, var(--ink) 35%, transparent)`, radius 20px. Give the boxes the client's shape or crop where it fits
-  (taste, "Boxes and lines").
+- Columns run in the outer tracks of a 3-track grid (`1fr min(40vw,560px) 1fr`) so photos pass beside the heading,
+  never over it.
+- Cards `aspect-ratio 1`, `max-width 320px`, `rotate -4deg / +3deg`, shadow `0 30px 60px` in
+  `color-mix(in srgb, var(--ink) 35%, transparent)`, radius 20px. Give the boxes the client's shape or crop where it
+  fits.
 - Column speeds `-0.6` (rises faster) and `0.3` (lags), applied as `(progress - 0.5) * speed * innerHeight`.
 - Single-element parallax: `offset = clamp(-(elementCentre - viewportCentre) * 0.2, -200px, 200px)`, measured on the
   untransformed parent.
-- No eyebrow label and no italic accent word in the heading (taste, "Type").
+- No eyebrow label and no italic accent word in the heading.
 
 ## Code
 ```html
@@ -29,6 +28,7 @@ against the scroll beside a quote.
     <div class="pp__col" data-speed="0.3"><figure class="pp__card"><img src="images/w4.webp" alt="…"></figure><!-- ×3 --></div>
   </div>
 </section>
+<!-- GSAP + ScrollTrigger from npm or a local copy -->
 <script src="js/vendor/gsap.min.js"></script>
 <script src="js/vendor/ScrollTrigger.min.js"></script>
 ```
@@ -67,7 +67,7 @@ mm.add('(min-width: 641px)', () => {
     gsap.fromTo(col, { y: () => -0.5 * s * innerHeight }, {
       y: () => 0.5 * s * innerHeight, ease: 'none',
       scrollTrigger: { trigger: '.pp', start: 'top top', end: 'bottom bottom', scrub: 0.8, invalidateOnRefresh: true },
-    });   // scrub 0.8 = eases toward the scroll target each frame
+    });   // scrub 0.8 eases toward the scroll target
   });
 });
 // Phone: half-speed drift on the two-up stack, no pin
@@ -99,8 +99,7 @@ mm.add('(max-width: 640px)', () => {
   update();
 })();
 ```
-With Lenis, connect it to ScrollTrigger (`lenis.on('scroll', ScrollTrigger.update)` and drive `lenis.raf` from
-`gsap.ticker`) so both share one clock.
+With Lenis, share one clock: `lenis.on('scroll', ScrollTrigger.update)` and drive `lenis.raf` from `gsap.ticker`.
 
 **Phone:** no pin. The heading comes first, then a two-up tilted stack where the right column drifts at half speed.
 

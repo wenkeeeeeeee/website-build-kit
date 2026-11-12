@@ -2,25 +2,24 @@ Adapted from MotionSites depth-and-interaction.md #1 (MIT).
 
 # Depth carousel with role slots and colour crossfade
 
-A product or character carousel built from depth rather than sliding. One item is huge in the centre, two are small to
-the sides, the rest are tiny at the back. Navigating moves items through these *roles*, and the section ground
-crossfades to the active item's own colour (a colour wash, as the playbook's transitions ask). For 3-6 products,
-flavours, colourways or characters, each with its own colour. Pairs with a giant word behind the subject.
+A carousel built from depth, not sliding. One item is huge in the centre, two small at the sides, the rest tiny at the
+back. Navigating moves items through these *roles*, and the section ground crossfades to the active item's own colour.
+For 3-6 products, flavours, colourways or characters, each with its own colour. Pairs with a giant word behind the
+subject.
 
 **Needs:** 3-6 clean cut-outs of the client's products, same framing, bottom-aligned; one brand colour per item.
 
 ## Parameters
 - One shared transition on every animated property: **650ms** `var(--ease-in-out)`, which also drives the colour wash.
-- Every item has the same box (`height:92%`, `bottom:0`, centred) and roles are pure `transform` + `opacity`, with
-  `transform-origin: bottom center`. Horizontal offsets use container units (`cqw`), so the section is a size container.
+- Every item has the same box (`height:92%`, `bottom:0`, centred); roles are pure `transform` + `opacity` from
+  `bottom center`. X offsets use `cqw`, so the section is a size container.
 - Desktop roles (offset x / lift y / scale): centre `0 / 0 / 1.68` z 20; left `-20cqw / -13% / .30` opacity .85 z 10;
   right `+20cqw / -13% / .30` opacity .85 z 10; back `0 / -13% / .24` opacity .7 z 5.
 - Phone (<640px): centre `0 / -24% / .82`; sides `-/+30cqw / -35% / .17`; back `0 / -35% / .14`.
-- The source used `blur(2-4px)` on side and back items for depth of field. We animate only transform, opacity and
-  clip-path, so depth here comes from scale and opacity. If the concept needs softness, use pre-blurred copies.
-- Items `aspect-ratio:.6/1`, `object-fit:contain; object-position:bottom center`, `will-change:transform,opacity`.
-  Preload all images.
-- A 650ms lock ignores clicks mid-move.
+- No animated blur on side and back items (we animate only transform, opacity, clip-path): depth comes from scale and
+  opacity. For softness, use pre-blurred copies.
+- Items `aspect-ratio:.6/1`, `object-fit:contain`, bottom-aligned. Preload all images. A 650ms lock ignores clicks
+  mid-move.
 - Controls: 48 -> 64px round outline buttons (2px `--ink` border, 26px arrow at stroke 2.25); hover `scale(1.08)` and a
   faint `--ink` fill over 150ms.
 
@@ -99,8 +98,8 @@ flavours, colourways or characters, each with its own colour. Pairs with a giant
 })(document.querySelector('.dc'));
 ```
 
-Each item's name, price and order action belong beside the centre item and change with it (taste.md: price on every
-item). Keep them still while the item moves.
+Each item's name, price and order action sit beside the centre item and change with it (price on every item). Keep
+them still while the item moves.
 
 **Phone:** swipe works, and the phone roles keep the centre item biggest. Buttons stay 48px.
 

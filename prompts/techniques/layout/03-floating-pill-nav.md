@@ -2,27 +2,25 @@ Adapted from MotionSites layout-and-ui.md #3 (MIT).
 
 # Floating pill navigation
 
-Navigation as a floating object rather than a bar. Three kept forms: (a) **balanced three-part header**: logo disc
-left, links in a centred solid pill with the main action *inside* it, an invisible spacer right so the pill is truly
-centred; (c) **solid pill with a three-dot active marker**; (d) **bottom dock** floating near the bottom of the hero;
-(e) **editorial text nav** with comma-separated links. Glass and frosted versions are not used (taste.md, "Other tells").
+Navigation as a floating object, not a bar. Kept forms: (a) **balanced three-part header**: logo disc left, links in a
+centred solid pill with the main action *inside* it, an invisible spacer right so the pill is truly centred; (c) **solid
+pill with a three-dot active marker**; (d) **bottom dock** near the bottom of the hero; (e) **editorial text nav** with
+comma-separated links. No glass or frosted versions.
 
 **Needs:** nothing beyond the client's logo and page list.
 
 ## Values
-- Header grid `1fr auto 1fr` keeps the centre column centred whatever the sides hold. `top:16px`, side padding 32 → 64 px.
-- Pill `padding 6px`; links `8px 12px`, 14 px, 500. The action inside the pill uses the variant's primary button style
-  with an arrow.
+- Header grid `1fr auto 1fr` keeps the centre column centred whatever the sides hold. `top:16px`, side padding 32 → 64px.
+- Pill `padding 6px`; links `8px 12px`, 14px, 500. The action inside uses the variant's primary button style with an arrow.
 - Solid pill (c): height `clamp(44px, 5.2vw, 48px)`, `max-width 430px`, shadow `0 4px 14px` of `--shadow`. Links at
-  opacity .5, hover .75, active 1; active marker = three 3 px dots 5 px apart, 5 px from the bottom. A round logo disc
-  holds the mark at 72 % (the original logo, never redrawn).
-- Bottom dock (d): `bottom: 5vh`, centred, `padding 6px`, 12 px semibold links, a bordered action with a chevron; it
-  enters after the hero copy. It must not cover the hero subject.
-- Editorial (e): 23 px text links separated by commas at 40 % opacity, hover .6, an underlined contact link
+  opacity .5, hover .75, active 1; active marker = three 3px dots 5px apart, 5px from the bottom. A round logo disc
+  holds the mark at 72% (the original logo, never redrawn).
+- Bottom dock (d): `bottom: 5vh`, centred, `padding 6px`, 12px semibold links, a bordered action with a chevron; it
+  enters after the hero copy and must not cover the hero subject.
+- Editorial (e): 23px text links separated by commas at 40% opacity, hover .6, an underlined contact link
   (`text-underline-offset: 2px`).
 - Centre with the individual `translate` property, so entrance keyframes on `transform` don't break it.
-- `position: fixed` is shown. If you use `position: sticky` instead, the body needs `overflow-x: clip`, not `hidden`
-  (playbook, "Header, footer and forms").
+- With `position: sticky` instead of `fixed`, the body needs `overflow-x: clip`, not `hidden`.
 
 ## Code
 ```html
@@ -48,7 +46,7 @@ centred; (c) **solid pill with a three-dot active marker**; (d) **bottom dock** 
 .nav-pill .nav-cta{margin-left:4px;padding:8px 14px;background:var(--accent);color:var(--accent-ink);white-space:nowrap}
 .nav-pill .nav-cta:active{transform:scale(.97)}
 .topbar-spacer{justify-self:end;width:48px;height:48px}
-@media (max-width:767px){.nav-pill a:not(.nav-cta){display:none}}   /* keep the action on phones; links move to the mobile menu */
+@media (max-width:767px){.nav-pill a:not(.nav-cta){display:none}}   /* links move to the mobile menu; the action stays */
 
 /* (c) three-dot active marker on a solid pill */
 .nav-solid{display:flex;align-items:center;justify-content:space-around;height:clamp(44px,5.2vw,48px);max-width:430px;flex:1;
@@ -78,9 +76,9 @@ centred; (c) **solid pill with a three-dot active marker**; (d) **bottom dock** 
 
 @media (prefers-reduced-motion:reduce){.dock{animation:none}}
 ```
-Every link and the action get hover, pressed and `:focus-visible` states in the variant's motion language.
+Give every link and the action hover, pressed and `:focus-visible` states.
 
-**Phone:** the links move into the mobile menu (layout recipe #5); the main action stays visible in the header, always
-within reach (taste.md, "Buying basics"). The dock becomes a bottom bar with the action, or is dropped.
+**Phone:** links move into the mobile menu (layout/05-mobile-menu.md); the main action stays visible in the header. The
+dock becomes a bottom bar with the action, or is dropped.
 
-**Reduced motion:** the dock appears in place with no entrance; hover changes are colour and opacity only.
+**Reduced motion:** the dock appears in place with no entrance; hovers change only colour and opacity.

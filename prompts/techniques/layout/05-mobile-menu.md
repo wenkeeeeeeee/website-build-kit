@@ -2,29 +2,28 @@ Adapted from MotionSites layout-and-ui.md #5 (MIT).
 
 # Mobile menu: burger morph + staggered overlay, drawer or bottom sheet
 
-A phone menu that feels designed rather than toggled. The burger folds into an X, an overlay (or a side drawer, or a
-bottom sheet) fades in, and the links arrive one after another. Use it on every page with navigation below
-768-1024 px. Surfaces are solid in the variant's colours, not frosted.
+The burger folds into an X, an overlay (or side drawer, or bottom sheet) fades in, and the links arrive one after
+another. Use it on every page with navigation below 768-1024px. Solid surfaces in the variant's colours, not frosted.
 
 **Needs:** nothing beyond the page list and the main action.
 
 ## Values
-- Burger: three bars 18-24 × 1.5-2 px, gap 5 px; open = top `translateY(bar + gap) rotate(45deg)` (7 px for 2 px bars),
-  middle `opacity 0`, bottom mirrored; 0.25-0.3 s. The button is a 44-48 px circle above the overlay.
-- 2-line burger (light pages): `32 × 1.5px`, gap 6 px; hover scales the lines to 24 / 40 px (`scaleX`), open
+- Burger: three bars 18-24 × 1.5-2px, gap 5px; open = top `translateY(bar + gap) rotate(45deg)` (7px for 2px bars),
+  middle `opacity 0`, bottom mirrored; 0.25-0.3s. The button is a 44-48px circle above the overlay.
+- 2-line burger (light pages): `32 × 1.5px`, gap 6px; hover scales the lines to 24 / 40px (`scaleX`), open
   `±3.75px` + `±45deg`.
-- Icon-crossfade alternative: Menu and X icons stacked in one grid cell; Menu goes to `rotate(90deg) scale(.5) opacity 0`
-  while X arrives from `rotate(-90deg) scale(.5)`, 300 ms; press `scale(.9)`.
-- Full-screen overlay: near-opaque `--bg`, opacity .28-.5 s. Links 28-40 px, 500-600, rising `translateY(20px) → 0`,
-  stagger `100 + i × 80 ms`; a trailing action at ~400 ms. On close, delays reset to 0 so the menu leaves at once.
-- Drawer: `width 85%; max-width 24rem`, `translateX(100%) → 0` over 500 ms on `--ease-out`, link stagger
-  `150 + i × 70 ms`, a tinted scrim that closes on tap.
-- Bottom sheet: `--surface`, inset 12 px, radius 16 px, `translateY(100%) → 0` 500 ms on `--ease-out`, backdrop at 60 %,
-  links 28-32 px with a 50 ms stagger.
-- Behaviour: `aria-expanded`, `aria-controls`, a label toggling "Open menu"/"Close menu"; Escape closes and returns focus
-  to the burger; a link or the backdrop closes; resizing to desktop closes; page scroll locked while open (call
-  `lenis.stop()` / `lenis.start()` too if Lenis runs); the closed menu is `inert`; safe-area padding top and bottom.
-- Put the main action (WhatsApp, order, book) in the menu and keep it in the bar as well.
+- Icon-crossfade alternative: Menu and X icons in one grid cell; Menu goes to `rotate(90deg) scale(.5) opacity 0` while
+  X arrives from `rotate(-90deg) scale(.5)`, 300ms; press `scale(.9)`.
+- Full-screen overlay: near-opaque `--bg`, opacity .28-.5s. Links 28-40px, 500-600, rising `translateY(20px) → 0`,
+  stagger `100 + i × 80ms`; a trailing action at ~400ms. On close, delays reset to 0 so the menu leaves at once.
+- Drawer: `width 85%; max-width 24rem`, `translateX(100%) → 0` over 500ms, link stagger `150 + i × 70ms`, a tinted
+  scrim that closes on tap.
+- Bottom sheet: `--surface`, inset 12px, radius 16px, `translateY(100%) → 0` over 500ms, backdrop 60%, links 28-32px,
+  50ms stagger.
+- Behaviour: `aria-expanded`, `aria-controls`, label toggling "Open menu"/"Close menu"; Escape closes and returns focus
+  to the burger; a link, the backdrop or resizing to desktop closes; page scroll locked while open (also
+  `lenis.stop()` / `lenis.start()` if Lenis runs); the closed menu is `inert`; safe-area padding top and bottom.
+- The main action (WhatsApp, order, book) goes in the menu and stays in the bar too.
 
 ## Overlay
 ```html
@@ -81,8 +80,7 @@ body.menu-open{overflow:hidden}
   desktop.addEventListener('change', (e) => { if (e.matches) set(false); });
 })(document.querySelector('.burger'));
 ```
-The closed overlay needs nothing more; a closed drawer or sheet sits inside a fixed wrapper with `overflow: hidden`
-(playbook, "Phones") so it never widens the page.
+A closed drawer or sheet sits inside a fixed wrapper with `overflow: hidden` so it never widens the page.
 
 ## Drawer variant
 Give the panel `id="mobile-menu"` and class `drawer`; add `<div class="drawer-scrim" data-menu-close></div>`.
@@ -131,6 +129,6 @@ Hover uses `scaleX` from the right edge instead of animating width.
 [aria-expanded="true"].burger2 i:last-child{transform-origin:center;transform:translateY(-3.75px) rotate(-45deg)}
 ```
 
-**Phone:** this is the phone pattern. Keep tap targets 44 px or more and the main action visible in the bar.
+**Phone:** this is the phone pattern. Tap targets 44px or more; main action visible in the bar.
 
-**Reduced motion:** the menu appears and leaves instantly with no stagger; the burger swaps to X without a tween.
+**Reduced motion:** the menu appears and leaves instantly, no stagger; the burger swaps to X without a tween.

@@ -2,50 +2,49 @@ Adapted from MotionSites 3d-and-webgl.md #1 (MIT).
 
 # Real 3D model hero rig (three.js + GLB), subject centred
 
-A real model of the client's product the visitor can grab and turn, framed exactly on a stage element in the middle of
-the hero, with the headline set into the scene above it and the line, facts and action below. It settles in with a short
-turn, sways gently at rest, and falls back to a still if anything fails. Use it when the object is the story and a GLB
-exists or can be made (hardware, bottles, eyewear, sneakers, packaging). Heavy: one per page, as the signature.
-The source's copy-left/stage-right layout is dropped: the subject is the biggest thing at every step (taste, "The hero").
+The client's real product as a model the visitor can grab and turn, framed on a stage element in the middle of the
+hero: headline above, line, facts and action below. It settles in with a short turn, sways gently at rest, and falls
+back to a still if anything fails. Use it when the object is the story and a GLB exists or can be made (hardware,
+bottles, eyewear, sneakers, packaging). Heavy: one per page, as the signature. The subject is centred and the biggest
+thing at every step (the source's copy-left/stage-right layout is dropped).
 
-**Needs:** a GLB of the client's real product (3-5 MB max, textures 1-2K) and a still render or photo of it at the
-default angle.
+**Needs:** a GLB of the real product (3-5 MB max, textures 1-2K) and a still render or photo at the default angle.
 
 ## Parameters
 - Lens **fov 30deg** (product-shot look). The model is re-centred on its bounding sphere and scaled to **unit radius**,
-  so any GLB frames the same way; camera distance is solved so the sphere fills **90%** of the stage's shorter side.
-- **`camera.setViewOffset`**: the camera looks straight at the model (no skew), but the projection is shifted so the
-  model's centre lands on the centre of `[data-stage]`. CSS decides where the stage sits; resize keeps it there.
-- Rig `pivot > spin > holder > model`: **holder** = centring + unit scale + authored-orientation fix; **spin** = user
-  rotation + inertia; **pivot** = intro turn + idle sway + scroll turn. Each concern owns one group.
-- Drag **0.006 rad/px**, vertical at 0.6x; rotations are **premultiplied** onto the spin quaternion around the screen
-  axes, so dragging right always turns the visible face right (no gimbal lock). Release keeps the smoothed velocity and
-  decays it (friction 3.5/s, max 12 rad/s); a pause of >90ms before lifting kills the throw.
-- Zoom: wheel / trackpad pinch / two-finger pinch, clamped **1 to 1.8**, smoothed. Start zoom is the minimum, so a
+  so any GLB frames the same way; camera distance makes the sphere fill **90%** of the stage's shorter side.
+- **`camera.setViewOffset`** shifts the projection (no skew) so the model's centre lands on the centre of
+  `[data-stage]`. CSS places the stage; resize keeps the model there.
+- Rig `pivot > spin > holder > model`: **holder** = centring, unit scale, orientation fix; **spin** = user rotation +
+  inertia; **pivot** = intro turn, idle sway, scroll turn.
+- Drag **0.006 rad/px**, vertical at 0.6x, **premultiplied** around screen axes, so dragging right always turns the
+  visible face right (no gimbal lock). Release keeps the smoothed velocity and decays it (friction 3.5/s, max 12 rad/s);
+  a pause over 90ms before lifting kills the throw.
+- Zoom: wheel, trackpad pinch or two-finger pinch, clamped **1 to 1.8**, smoothed. Start zoom is the minimum, so a
   downward wheel over the hero scrolls the page; trackpad pinch (`ctrlKey`) is always captured.
 - Idle: after **1.8s** without input the sway fades in (yaw +-0.22 rad, pitch +-0.06, lift 0.03, ~11s period) and the
-  model levels itself upright, keeping its yaw. This is the "alive at rest" from `motion.md`.
-- Intro: canvas fades in over 0.9s while the pivot turns from -0.9 rad and scales 0.9 to 1 over 1.6s (expo out,
-  matching `--ease-out`). Shaders compile first (`compileAsync`) so the first frame doesn't hitch.
+  model levels itself upright, keeping its yaw.
+- Intro: canvas fades in over 0.9s while the pivot turns from -0.9 rad and scales 0.9 to 1 over 1.6s (expo out).
+  Shaders compile first (`compileAsync`) so the first frame doesn't hitch.
 - Light: `RoomEnvironment` through PMREM (sigma 0.04) + one key `DirectionalLight` (1.5); `NeutralToneMapping` keeps
   product colours honest (`ACESFilmicToneMapping` for a filmic look).
 - Loader: a 140 x 2px bar on real download progress (shimmer when size is unknown). The still sits behind the canvas
-  from the start (playbook: every 3D scene keeps a still behind it) and fades once the model is ready.
-- Performance: DPR clamped to 2, rendering paused off screen, `ResizeObserver` on canvas and stage. Optimise the model:
+  from the start and fades once the model is ready.
+- Performance: DPR max 2, no rendering off screen, `ResizeObserver` on canvas and stage. Optimise the model:
   `npx gltf-transform optimize in.glb model.glb --compress draco --texture-compress webp --texture-size 2048`.
 
 ## Files
 - `js/vendor/three/three.module.js` and `three.core.js` (from `node_modules/three/build`).
-- `js/vendor/three/addons/loaders/GLTFLoader.js`, `DRACOLoader.js`, `environments/RoomEnvironment.js`, plus
-  `utils/BufferGeometryUtils.js` and `utils/SkeletonUtils.js` (GLTFLoader imports both) from
-  `node_modules/three/examples/jsm`, keeping the folder layout.
-- Draco decoder: copy `examples/jsm/libs/draco/gltf/` to `js/vendor/three/addons/libs/draco/gltf/`. If the GLB isn't
+- From `node_modules/three/examples/jsm`, keeping the folder layout, into `js/vendor/three/addons/`:
+  `loaders/GLTFLoader.js`, `DRACOLoader.js`, `environments/RoomEnvironment.js`, `utils/BufferGeometryUtils.js` and
+  `utils/SkeletonUtils.js` (GLTFLoader imports both), and the Draco decoder `libs/draco/gltf/`. If the GLB isn't
   Draco-compressed, drop the DRACOLoader lines instead.
-- `js/gl-guard.js` from `tools/web/`, loaded first in `<head>`.
+- Kit builds: `js/gl-guard.js` (from `tools/web/`), loaded first in `<head>`. Without it the code still runs: it
+  checks `__glOK`/`__glTrack` optionally and handles `webglcontextlost` itself.
 
 ## Code
 ```html
-<!-- in <head> -->
+<!-- in <head>; gl-guard.js only in kit builds -->
 <script src="js/gl-guard.js"></script>
 <script type="importmap">{"imports":{"three":"./js/vendor/three/three.module.js","three/addons/":"./js/vendor/three/addons/"}}</script>
 
@@ -343,10 +342,10 @@ const hero = modelHero(document.querySelector('.hero3d'));
 ```
 
 ## As the scroll set-piece (optional)
-When the product suits it, pin the hero for 1-3 screens and let scroll turn it (taste, "Turn and open"). The model is
-visible at progress 0 and 1, so the pin never starts or ends empty. Label parts as they face the camera.
+When the product suits it, pin the hero for 1-3 screens and let scroll turn it. The model is visible at progress 0 and
+1, so the pin never starts or ends empty. Label parts as they face the camera.
 ```js
-// after gsap.min.js + ScrollTrigger.min.js (js/vendor/), inside the module above
+// after GSAP + ScrollTrigger load, inside the module above
 const mm = gsap.matchMedia();
 mm.add({ desk: '(min-width: 861px)', phone: '(max-width: 860px)' }, (ctx) => {
   ScrollTrigger.create({ trigger: '.hero3d', start: 'top top', end: ctx.conditions.desk ? '+=200%' : '+=80%',
@@ -356,18 +355,17 @@ mm.add({ desk: '(min-width: 861px)', phone: '(max-width: 860px)' }, (ctx) => {
 
 ## Notes
 - **Placing the model:** move or resize `[data-stage]` with CSS and the model follows. The canvas stays full-bleed so
-  the model can overhang the stage slightly without clipping. A giant word behind the model (type folder) can carry
-  the headline instead of the top row, as long as the subject stays biggest.
+  the model can overhang the stage without clipping. A giant word behind the model (`type/11-giant-type.md`) can carry
+  the headline instead of the top row, if the subject stays biggest.
 - **Orientation:** most GLBs face +Z. Fix sideways or lying models once with `baseRotation`, not in the rig.
 - **Look:** a dark ground with the room environment reads as a studio shot. On a light ground set `exposure` about 0.9.
   For a ground shadow, add a squashed ellipse under the stage with
   `radial-gradient(closest-side, color-mix(in srgb, var(--ink) 35%, transparent), transparent)`.
-- **Serving:** use `serve.py`; over `file://` the GLB fetch fails and the still stays.
+- **Serving:** use an HTTP server (kit: `serve.py`); over `file://` the GLB fetch fails and the still stays.
 - One WebGL canvas per page: don't add a shader backdrop or fluid behind this.
 
 **Phone:** horizontal drags rotate, vertical swipes scroll the page (`touch-action: pan-y`), two-finger pinch zooms.
-The layout already keeps the headline above and the action below the model; the stage shrinks to 48svh. Pin for at
-most about one screen.
+Headline stays above and action below the model; the stage shrinks to 48svh. Pin for about one screen at most.
 
 **Reduced motion:** no intro turn, sway, self-levelling or inertia; zoom and scroll turn snap; frames render only on
-input. Drag still works because the visitor drives it.
+input. Drag still works (the visitor drives it).

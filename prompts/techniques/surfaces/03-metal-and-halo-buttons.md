@@ -2,16 +2,16 @@ Adapted from MotionSites surfaces-and-buttons.md #3 (MIT).
 
 # Metal and halo button finishes
 
-Finishes that make a CTA feel machined rather than flat. **(a) Metal** brushed gradients with a light sweep on hover, for
-monochrome, tool, auto or tech brands. **(b) Halo pill**, the single bright object on a dark hero. Use one finish per
-variant, on every button of that kind (header, basket, dialogs too).
+CTAs that feel machined, not flat. **(a) Metal:** brushed gradients with a light sweep on hover, for monochrome, tool,
+auto or tech brands. **(b) Halo pill:** the single bright object on a dark hero (on a light page use metal instead).
+One finish per variant, on every button of that kind (header, basket, dialogs too).
 
-**Needs:** nothing. Colours come from the variant's tokens.
+**Needs:** nothing.
 
 ## Parameters
 - **Sweep shine:** a 115deg band `transparent 20-30% -> --shine ~50% -> transparent 70-76%`, moving from
-  `translateX(-120..-130%)` to `+120..130%` over 0.6-0.65s on hover. `isolation:isolate` + `z-index:-1` makes it pass
-  between the fill and the label.
+  `translateX(-120..-130%)` to `+120..130%` over 0.6-0.65s on hover. `isolation:isolate` + `z-index:-1` runs it between
+  fill and label.
 - **Metal solid:** three-stop vertical gradient from `--surface` darkening toward `--ink` by 10% and 20%, 1px border, a
   bright inset top line. Hover lifts the gradient and adds a soft glow in `--accent`.
 - **Metal tab** (nav, filters): darker 105deg gradient built from `--bg` mixed toward `--ink` (16% / 28%), radius 7px,
@@ -88,9 +88,7 @@ variant, on every button of that kind (header, basket, dialogs too).
 <a class="btn-halo" href="#book">Book a fitting</a>
 ```
 
-The halo pill only reads on a dark hero. On a light page use the metal solid instead.
+**Phone:** no hover, so the press state carries it: keep `:active{transform:scale(.98)}` and optionally run the sweep on
+`:active`. Button 44px+ tall.
 
-**Phone:** hover never fires, so the press state carries it: keep `:active{transform:scale(.98)}` and, if wanted, run
-the sweep once on `:active` too. Keep the button 44px+ tall.
-
-**Reduced motion:** the sweep and lift are switched off; colour and border changes stay as the hover response.
+**Reduced motion:** no sweep or lift; colour and border changes stay as the hover response.

@@ -2,21 +2,21 @@ Adapted from MotionSites type-and-text-motion.md #8 (MIT).
 
 # Typewriter with zero-reflow caret and two-tone text
 
-A typed headline: a sharp line types itself out with a blinking caret, optionally switching colour mid-sentence,
-followed by quick-reply pills or an action. For a business that speaks to the customer directly (a booking desk, a
-contact page, a service with a personal voice).
+A short line types itself out with a blinking caret, optionally switching colour mid-sentence, then quick-reply pills
+or an action appear. For a business that speaks to the customer directly (a booking desk, a contact page, a personal
+service).
 
-**Needs:** nothing. Real reply options and contact details from the content data.
+**Needs:** real reply options and contact details from the content data.
 
 ## Parameters
-- **35-38 ms/char**, start delay **400-600 ms**. The caret disappears when typing ends. Keep the line short so it
-  finishes within about two seconds: the core must read in seconds.
+- **35-38 ms/char**, start delay **400-600 ms**. The caret disappears when typing ends. Keep the line short enough to
+  finish within about 2 s.
 - Caret: `2px x 1.1em`, `currentColor` or `var(--accent)`, `blink 1s step-end infinite`; `margin-right:-2px` cancels its
   own width so it never pushes a word to the next line.
 - **Zero reflow:** the untyped remainder is rendered `color: transparent`, so the block holds its final size and line
   breaks from frame one. `white-space: pre-wrap` supports `\n`.
 - Two-tone: split at a character index (e.g. first ~60% in `--ink`, the rest in `--muted`), good over a split-tone
-  background. Keep the second tone at full contrast for the audience.
+  background. Keep the second tone at full contrast.
 - Follow-ups: an action at typing end + ~200 ms; or reply pills at 400 ms (`opacity + translateY(8px)`, 0.4 s).
   Pills: `--surface` ground, `--ink` text, 1px `--line` border, 13-15px, `padding:.3em 1.25em`; hover inverts over
   200 ms. Each pill does something real: open WhatsApp with a pre-written message, jump to the form, copy the email.
@@ -33,7 +33,6 @@ contact page, a service with a personal voice).
   </div>
 </div>
 ```
-Fill the placeholders from the content data (e.g. `content/contact.json`), never invented.
 ```css
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .persona{max-width:36rem;color:var(--ink)}
@@ -92,6 +91,3 @@ document.querySelectorAll('[data-copy]').forEach((b) => b.addEventListener('clic
 **Phone:** works as is; pills wrap and stay at least 44px tall.
 
 **Reduced motion:** the full line shows at once, no caret blink.
-
-Note: the source's out-of-focus lead-in line above the typed line used a permanent blur and is not ported (held with
-the blur variants).

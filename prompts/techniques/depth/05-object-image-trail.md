@@ -3,16 +3,16 @@ Adapted from MotionSites depth-and-interaction.md #5 (MIT).
 # Object image trail
 
 Moving the mouse over a big closing block spawns images of the client's own things at the cursor (dishes, products,
-finished jobs, the object cut out), each slightly turned, shrinking and fading away. Use it only when the trail is the
-client's object, so it says something (motion.md); a trail of generic thumbnails is decoration and doesn't count.
+finished jobs, the object cut out), each slightly turned, shrinking and fading. Use it only when the trail is the
+client's object; generic thumbnails are decoration.
 
 **Needs:** 4-8 of the client's photos or clean cut-outs of their object, small (about 240px wide webp).
 
 ## Parameters
 - Spawn at most every **80ms**; random rotation **-10deg...+10deg**; life **1000ms**, ending at `opacity 0, scale(.6)`.
-- Images about 200-240px, radius 12px (or none for cut-outs, which read better without a box), soft shadow.
-- A large calm container: `padding-block:18vh`, radius 40px, subtle shadow, heading 48 -> 80px. The section still fits
-  one screen at 1536x700.
+- Images about 200-240px, radius 12px (none for cut-outs: they read better without a box), soft shadow.
+- A large calm container: `padding-block:18vh`, radius 40px, subtle shadow, heading 48 -> 80px. Still fits one screen
+  at 1536x700.
 - Position each image with `transform` only (no animated left/top).
 
 ## Code
@@ -68,11 +68,10 @@ function imageTrail(area, srcs, { every = 80, life = 1000, size = 220, cutout = 
 }
 imageTrail(document.querySelector('.trail-area'), ['img/trail/1.webp', 'img/trail/2.webp', 'img/trail/3.webp', 'img/trail/4.webp']);
 ```
-(Web Animations can't read CSS variables for easing, so the `--ease-in-out` curve is written out. Match it to the
-variant's token.)
+Web Animations can't read CSS variables for easing, so the curve is written out; match it to the variant's token.
 
-**Phone:** give a lighter version that keeps the idea. The code above throws a burst of three images on a tap of empty
-space (images at `size: 140` on phones). The heading and button stay clear and clickable.
+**Phone:** a tap on empty space throws a burst of three images (use `size: 140` on phones). The heading and button stay
+clear and clickable.
 
 **Reduced motion:** no trail. Place two or three of the images still and slightly turned around the heading so the
 block still shows the client's things.

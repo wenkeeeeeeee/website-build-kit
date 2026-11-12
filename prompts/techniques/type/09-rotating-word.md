@@ -2,8 +2,9 @@ Adapted from MotionSites type-and-text-motion.md #9 (MIT).
 
 # Rotating word slot (zero-reflow)
 
-One word inside a sentence cycles through real alternatives ("Cakes for ___": birthdays, weddings, offices). Adds
-range without extra copy. The slot is as wide as the longest word, so the sentence never reflows.
+One word in a sentence cycles through real alternatives ("Cakes for ___": birthdays, weddings, offices), adding range
+without extra copy. All words share one grid cell, so the slot is as wide as the longest word and the sentence never
+reflows.
 
 **Needs:** 3-5 real alternatives from the client's own offer (content data), never invented roles or slogans.
 
@@ -11,9 +12,8 @@ range without extra copy. The slot is as wide as the longest word, so the senten
 - Interval **2 s**; enter `opacity 0, translateY(8px)` to rest in **0.4 s** `var(--ease-out)`, exit upward.
 - Same face, weight and style as the sentence: no italic or second-face accent word. Colour may shift to
   `var(--accent)` if the variant uses it elsewhere.
-- Copy stays still while people read it: stop after one full cycle and land on the main word, or cycle only while the
-  slot is on screen and stop on the first hover or focus.
-- All words share one grid cell, so the slot is as wide as the longest word.
+- Copy stays still while people read it: the code starts when the slot comes on screen, runs one full cycle and lands back on the main
+  word.
 
 ## Code
 ```html
@@ -44,14 +44,13 @@ document.querySelectorAll('.rotator').forEach((r) => {
     items[i].classList.add('is-active');
     if (++steps >= items.length * cycles) clearInterval(id);   // lands back on word 1
   };
-  const io = new IntersectionObserver(([e]) => {
+  new IntersectionObserver(([e]) => {
     if (e.isIntersecting && !id) id = setInterval(step, +r.dataset.interval || 2000);
-  });
-  io.observe(r);
+  }).observe(r);
 });
 ```
-Single-element version (one span, text swapped): animate the old text out with WAAPI
-(`translateY(0 -> -20px)`, opacity 1 -> 0, 250 ms) and the new one in (`20px -> 0`, 350 ms, `var(--ease-out)` values).
+Single-span version (text swapped): animate the old text out with WAAPI (`translateY(0 -> -20px)`, opacity 1 -> 0,
+250 ms) and the new one in (`20px -> 0`, 350 ms, the `--ease-out` curve).
 
 **Phone:** works as is. Check the longest word still fits the line at 360px.
 

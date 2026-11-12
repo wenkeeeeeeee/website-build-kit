@@ -2,32 +2,33 @@ Adapted from MotionSites type-and-text-motion.md #11 (MIT).
 
 # Giant display type as image (ghost word behind subject, edge-to-edge word, watermark, scattered words)
 
-Type set so large it becomes architecture. The client's subject stays the biggest, sharpest thing on screen: the word
-sits behind or around it, never instead of it.
-- **Ghost word behind a cut-out subject:** a viewport-wide word sits *between* the background and a transparent
-  product, so the subject stands in front of the letters. Instant depth and a poster composition.
-- **Edge-to-edge word:** anchored at the bottom or top of a section, almost touching both edges. Good as a section
-  opener or footer sign-off. Use a word from the client's world, set in type; never redraw or restyle the logo.
-- **Watermark:** a section's key word repeated huge at low opacity behind it (pricing, closing call), with content over it.
+Type so large it becomes architecture. The client's subject stays the biggest, sharpest thing on screen: the word sits
+behind or around it, never instead of it.
+- **Ghost word behind a cut-out:** a viewport-wide word sits *between* the background and a transparent product, so
+  the subject stands in front of the letters. Instant depth, poster composition.
+- **Edge-to-edge word:** anchored at a section's bottom or top, almost touching both edges. A section opener or footer
+  sign-off. Use a word from the client's world, set in type; never redraw or restyle the logo.
+- **Watermark:** a section's key word repeated huge at low opacity behind its content (pricing, closing call).
 - **Scattered words:** a 3-word headline broken across the viewport (left / right / indented) over the subject's film
   or photo, with one short real fact tucked into a gap.
 
-**Needs:** ghost word: one clean cut-out of the product or subject (PNG/WebP with alpha). The others: nothing, or a
+**Needs:** ghost word: one clean cut-out of the product or subject (PNG/WebP with alpha). Others: nothing, or a
 film/photo for scattered words.
 
 ## Parameters
 - Ghost word: condensed heavy display face, uppercase, `clamp(90px, 28vw, 380px)`, lh 1, `letter-spacing:-.02em`,
   nowrap, solid `--ink` or `--bg` on a saturated `--stage` ground, `top:18%`. The subject is anchored at the bottom
   (`object-fit:contain; object-position:bottom center`) and covers the lower half of the letters. Scale it up only as
-  far as the image stays sharp (the source used x1.68 desktop, x1.25 mobile). Z-order: background, word (2), subject (3),
+  far as it stays sharp (the source used x1.68 desktop, x1.25 mobile). Z-order: background, word (2), subject (3),
   grain (50), UI (60).
 - Photographic version: title `clamp(4.5rem,14vw,14rem)` / lh .78, width `min(94vw,1780px)`, `top: clamp(122px,19vh,205px)`,
-  light `--ink` over a landscape, with the subject cut-out at `bottom:5vh`.
-- Edge-to-edge word: `19-26vw` (stepping 26/24/22/20/19vw by breakpoint), lh .85, `letter-spacing:-.07em`, weight 500;
+  light `--ink` over a landscape, subject cut-out at `bottom:5vh`.
+- Edge-to-edge word: `19-26vw` (26/24/22/20/19vw by breakpoint), lh .85, `letter-spacing:-.07em`, weight 500;
   optional superscript mark `position:absolute; top:.65em; right:-.3em; font-size:.31em`.
 - Watermark: `clamp(120px, 30vw, 521px)`, uppercase condensed, `letter-spacing:-4px`, solid `--ink` at `opacity .08-.1`,
-  centred 50px below middle, `aria-hidden`. Echo title alternative: ~9rem / 800 / `-.05em` / lh .9, dropping to
-  3.5rem ≤1024px. Decorative low contrast is an intended exception: record it with the impeccable hook ignore (playbook 6).
+  centred 50px below middle, `aria-hidden`. Echo-title alternative: ~9rem / 800 / `-.05em` / lh .9, 3.5rem ≤1024px.
+  Decorative low contrast is an intended exception (kit builds: record it with the impeccable hook ignore, playbook
+  section 6).
 - Scattered: words `14vw` (phone) / `13vw`, lh .95, `-.04em`, lowercase; at top 18% left, top 38% right, top 58% left
   18-28%; a note `max-width 240px; 15px` at top 46%; facts 36-48px with rotated hairlines (`96x1px`, `--line`,
   `rotate(±20deg)`) and 12-14px labels; a bottom gradient to `--bg`. Keep words off the busiest part of the image.
@@ -80,7 +81,8 @@ function fitToWidth(el) {
 }
 document.querySelectorAll('[data-fit]').forEach(fitToWidth);
 ```
-Scattered words (the film follows the video rules: local file, poster, `preload` only if it is the first film):
+Scattered words. Keep `loop` only for a long film with seamless ends; otherwise use a still. Fill `data-from` from the
+content JSON, or drop the fact.
 ```html
 <section class="scatter">
   <video class="scatter__bg" src="video/hero.mp4" poster="images/hero-poster.webp" autoplay muted loop playsinline aria-hidden="true"></video>
@@ -92,8 +94,6 @@ Scattered words (the film follows the video rules: local file, poster, `preload`
   </div>
 </section>
 ```
-Only real client numbers: fill `data-from` from the content JSON, or drop the fact. Only loop a film that is long and
-seamless enough not to show a restart (`motion.md`); otherwise use a still.
 ```css
 .scatter{position:relative;height:100vh;height:100svh;overflow:hidden;background:var(--bg);color:var(--ink)}
 .scatter__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -109,7 +109,7 @@ seamless enough not to show a restart (`motion.md`); otherwise use a still.
 @media (min-width:768px){.scatter__w{font-size:13vw}.scatter__w--1{left:40px}.scatter__w--2{right:40px}.scatter__w--3{left:28%}.scatter__rule{display:block}}
 ```
 
-**Phone:** retest the subject/word overlap at 375px: the subject stays biggest and the headline and action stay clear
-of it. Clip the root with `overflow-x:clip` so vw type never causes horizontal scroll.
+**Phone:** retest subject/word overlap at 375px: the subject stays biggest, the headline and action clear of it. Clip
+the root with `overflow-x:clip` so vw type never causes horizontal scroll.
 
 **Reduced motion:** static type; any entrance (pull-up) renders at rest.

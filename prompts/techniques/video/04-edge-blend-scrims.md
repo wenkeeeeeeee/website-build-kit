@@ -1,27 +1,26 @@
 Adapted from MotionSites video-and-media.md #4 (MIT).
 
-# Edge-blend scrims and text protection over video
+# Edge-blend scrims over video
 
-Gradient overlays that melt a film into the page colour and keep text legible, without a flat dark tint that kills the
-footage. An eased bottom fade where the hero hands over to the next section; side letterboxing when the film has a
-capped width on very wide screens; a directional scrim on portrait where text sits over the busiest part of the frame.
-The bottom fade is also a designed join between the hero and the next section.
+Gradients that melt a film into the page colour and keep text legible, without a flat dark tint that kills the footage:
+an eased bottom fade that doubles as the join to the next section; side letterboxing when the film has a capped width
+on wide screens; a directional scrim on portrait where text sits over the busiest part of the frame.
 
-**Needs:** a film or photo behind copy. Nothing else.
+**Needs:** a film or photo behind copy.
 
 **Parameters**
-- Eased bottom fade that starts late (about 79%) with many stops. A 2-stop gradient bands and looks cheap: 0 @78.8% → .23 @79.6 → .45 @81.4 → .75 @83.3 → .84 @85.2 → .888 @88 → .905 @91 → .96 @95 → 1 @100.
+- Eased bottom fade that starts late (about 79%) with many stops; a 2-stop gradient bands and looks cheap: 0 @78.8% → .23 @79.6 → .45 @81.4 → .75 @83.3 → .84 @85.2 → .888 @88 → .905 @91 → .96 @95 → 1 @100.
 - Simple scrims (pick one, keep it subtle):
-  - bottom fade into the page: height 12-16rem, `linear-gradient(to top, var(--bg), transparent)`;
-  - top fade under a transparent header: height about 25vh, `linear-gradient(var(--bg), transparent)`;
+  - bottom fade into the page: 12-16rem tall, `linear-gradient(to top, var(--bg), transparent)`;
+  - top fade under a transparent header: about 25vh, `linear-gradient(var(--bg), transparent)`;
   - full vertical: `rgba(0,0,0,.30) → transparent 45% → rgba(0,0,0,.60)`;
   - flat dim: .20 hero, .45 action band;
   - light theme: `linear-gradient(to top, var(--bg) 0%, color-mix(in srgb, var(--bg) 80%, transparent) 50%, transparent 100%)` behind bottom copy.
 - Side letterbox: solid page colour beyond the film's edges, feathered over about 70px.
-- Portrait text scrim, left→right .86 → .66 @42% → .20 @78% → .10; top→bottom .72 → .34 @24% → .34 @56% → .80 @82% → .97 @94% → 1.
+- Portrait text scrim: left→right .86 → .66 @42% → .20 @78% → .10; top→bottom .72 → .34 @24% → .34 @56% → .80 @82% → .97 @94% → 1.
 - Media cards: `to top`, black 60% → transparent at 50%.
 - Fade into the exact page colour (`var(--bg)`), never a different black, or the seam shows.
-- **No scrim at all** is often strongest: the film at 100%, with copy placed where the frame is naturally dark. Choose footage with a dark empty zone.
+- **No scrim** is often strongest: film at 100%, copy where the frame is naturally dark. Choose footage with a dark empty zone.
 
 ```css
 :root{--video-half:746px}  /* half the rendered film width, if capped */
@@ -67,6 +66,6 @@ The bottom fade is also a designed join between the hero and the next section.
 .media-card::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgb(0 0 0/.6),transparent 50%)}
 ```
 
-**Phone:** the portrait scrim switches on by aspect ratio. Check the copy is still clear of the subject, as the playbook's phone hero rule says.
+**Phone:** the portrait scrim switches on by aspect ratio. Check the copy is still clear of the subject.
 
 **Reduced motion:** static; nothing to change.

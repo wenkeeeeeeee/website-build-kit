@@ -2,23 +2,23 @@ Adapted from MotionSites layout-and-ui.md #11 (MIT).
 
 # Infinite looping card slider
 
-A card carousel that loops forever both ways with real CSS transitions: prev/next buttons, tap a card to focus it,
-optional autoplay that pauses on hover and focus. For branches, testimonials, menus by day or case studies.
+A card carousel that loops both ways with CSS transitions: prev/next buttons, tap a card to focus it, optional autoplay
+that pauses on hover and focus. For branches, testimonials, menus by day or case studies.
 
 **Needs:** 4-6 real cards (branch photos and addresses, real reviews with names, projects).
 
 ## Values
-- Track transition **640 ms** on `--ease-out` (testimonials: 0.8 s on `--ease-in-out`).
-- Cards `flex: 0 0 clamp(300px, 19.4vw, 430px)`, height `min(220px, 32vh)`, padding 24 px, radius **24 px**, soft shadow
+- Track transition **640ms** on `--ease-out` (testimonials: 0.8s on `--ease-in-out`).
+- Cards `flex: 0 0 clamp(300px, 19.4vw, 430px)`, height `min(220px, 32vh)`, padding 24px, radius **24px**, soft shadow
   `0 18px 52px` of `--shadow`; gap `clamp(16px, 1.15vw, 24px)`; phone `min(82vw, 330px)`.
-- Round controls **54 px** in `--surface` with a soft shadow on photos (or bordered 48 px circles on plain pages),
-  styled as the variant's buttons with hover, pressed and focus states.
-- Autoplay **3 s**, paused on hover/focus. Cards that have passed fade and scale out (`opacity 0, scale(.9)`).
-- Loop mechanism: render 3 copies, start in the middle copy; after a transition ends outside the middle copy, jump by
-  ±N with transitions disabled. Only the middle copy is focusable.
+- Round controls **54px** in `--surface` with a soft shadow on photos (or bordered 48px circles on plain pages), styled
+  as the variant's buttons with hover, pressed and focus states.
+- Autoplay **3s**, paused on hover/focus. Passed cards fade and scale out (`opacity 0, scale(.9)`).
+- Loop: render 3 copies, start in the middle one; when a transition ends outside it, jump by ±N with transitions off.
+  Only the middle copy is focusable.
 - `--peek` places the active card: a positive gutter (`48px`) lines it up with page content; a negative value
-  (`-18vw`) lets it bleed off the left edge for an editorial crop.
-- Autoplay that runs longer than 5 s needs a visible pause control (WCAG 2.2.2, playbook "Sharing and audiences").
+  (`-18vw`) bleeds it off the left edge for an editorial crop.
+- Autoplay running longer than 5s needs a visible pause control (WCAG 2.2.2).
 
 ## Code
 ```html
@@ -104,8 +104,7 @@ function initInfiniteSlider(root) {
 document.querySelectorAll('.slider').forEach(initInfiniteSlider);
 ```
 
-**Phone:** cards go to `min(82vw, 330px)` and the buttons stay. Phone: give a lighter version that keeps the idea:
-add swipe by listening for a horizontal `pointerdown`/`pointerup` delta over 40 px and calling `move(±1)`, or switch the
-track to the native scroll-snap rail in layout recipe #9.
+**Phone:** cards go to `min(82vw, 330px)` and the buttons stay. Add swipe (a horizontal `pointerdown`/`pointerup` delta
+over 40px calls `move(±1)`), or switch to the native snap rail in layout/09-grid-to-snap-rail.md.
 
 **Reduced motion:** no autoplay; steps jump without a transition.

@@ -2,22 +2,21 @@ Adapted from MotionSites layout-and-ui.md #6 (MIT).
 
 # Overlapping trust cluster with pill
 
-A compact proof chip: three small coins overlap and tuck into the start of a pill that carries one real claim. It can
-be the hero's one small line of facts (taste.md allows at most one), above or below the headline, instead of a loose
-logo row.
+Three small coins overlap and tuck into the start of a pill carrying one real claim. It can be the hero's one small
+line of facts (at most one), above or below the headline, instead of a loose logo row.
 
-**Needs:** three real items for the coins: customer photos used with permission, real partner or stockist logos, or
-the client's own marks. Plus one real claim from the client. No stock faces, no invented counts.
+**Needs:** three real items for the coins (customer photos used with permission, real partner or stockist logos, or the
+client's own marks) and one real claim. No stock faces, no invented counts.
 
 ## Values
-- Size token `--s: clamp(36px, 4.5vw, 42px)` (34 px at ≤420 px).
+- Size token `--s: clamp(36px, 4.5vw, 42px)` (34px at ≤420px).
 - Coins are **rings, not discs**: an outer ring in `--surface` with a hairline border, `padding 5px`, around a circle
   holding the photo or logo (a letter glyph at `0.34 × --s` only as a build stand-in).
 - Overlap `margin-left: −0.42 × --s`; z-order 1 / 2 / 4; the pill sits at z 3 so the last coin overlaps it.
 - Pill: same height and border, `margin-left: −0.42 × --s`, `padding-left: 0.58 × --s` so the text clears the coin;
   500 weight, `--muted`, `clamp(12px, 1.4vw, 13.5px)`.
-- Hover lift −2 / −4 / −2 px over .35 s. Margin below `clamp(16px, 2.5vh, 26px)`.
-- Photo alternative: 3 × 32 px avatars, overlap −8 px, a 2 px ring in the page colour, plus the claim in 14 px muted.
+- Hover lift −2 / −4 / −2px over .35s. Margin below `clamp(16px, 2.5vh, 26px)`.
+- Photo alternative: 3 × 32px avatars, overlap −8px, a 2px ring in the page colour, claim in 14px muted.
 
 ## Code
 ```html
@@ -28,8 +27,8 @@ the client's own marks. Plus one real claim from the client. No stock faces, no 
   <span class="trust-pill" data-from="proof.claim">[placeholder]</span>
 </div>
 ```
-Only real client numbers. Until the client confirms, the pill shows `[client to confirm]` and the claim goes in
-`OPEN-QUESTIONS.md`.
+Until the client confirms, the pill shows `[client to confirm]` and the claim goes on your open-questions list
+(kit: `OPEN-QUESTIONS.md`).
 ```css
 .trust{--s:clamp(36px,4.5vw,42px);display:inline-flex;align-items:center;margin-bottom:clamp(16px,2.5vh,26px)}
 .coin{position:relative;width:var(--s);height:var(--s);flex:none;border-radius:50%;padding:5px;
@@ -48,7 +47,7 @@ Only real client numbers. Until the client confirms, the pill shows `[client to 
 @media (prefers-reduced-motion:reduce){.coin{transition:none}}
 ```
 
-**Phone:** the cluster stays one line, so keep the claim to about 30 characters (check at 360 px with
-`check-pages.cjs --phone`). The hover lift simply doesn't happen on touch, which is fine.
+**Phone:** the cluster stays one line, so keep the claim to about 30 characters (check at 360px; kit:
+`check-pages.cjs --phone`). No hover lift on touch, which is fine.
 
 **Reduced motion:** no lift; the chip is static.

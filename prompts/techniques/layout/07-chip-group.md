@@ -2,10 +2,9 @@ Adapted from MotionSites layout-and-ui.md #7 (MIT).
 
 # Selectable chip group with check and summary
 
-A multi-select of services or interests as pills, in place of checkboxes. A picked chip fills and a check mark pops
-in; below the group a summary ("You're asking about: A, B") appears with the action. For enquiry and quote forms,
-booking choices and filters: it turns a form into a conversation, and it follows the playbook's "Choice of 2-6: chips"
-rule. Ported so nothing changes height: the check slot and the summary space are reserved, and only opacity,
+Services or interests as multi-select pills instead of checkboxes. A picked chip fills and a check pops in; below, a
+summary ("You're asking about: A, B") appears with the action. For enquiry and quote forms, booking choices and filters
+(a choice of 2-6 options). Nothing changes height: the check slot and summary space are reserved, and only opacity,
 transform and clip-path move.
 
 **Needs:** the client's real list of services or options (from content data).
@@ -13,10 +12,10 @@ transform and clip-path move.
 ## Values
 - Inactive: `--surface` fill, `--ink` text, hairline `--line` border, hover tint. Active: `--ink` fill, `--bg` text,
   very soft shadow.
-- Check: scale 0 → 1 with a slight rotate, ~0.4 s on `--ease-out` (playful tone only: overshoot
-  `cubic-bezier(.34,1.56,.64,1)`). Its 14 px slot is always there, so chips never change width or reflow the row.
-- Summary: the empty hint (12 px, 50 %) and the panel share one grid cell of fixed height. On the first pick the hint
-  fades out and the panel wipes in (`clip-path` + `translateY`), so the page below never shifts.
+- Check: scale 0 → 1 with a slight rotate, ~0.4s on `--ease-out` (playful tone only: overshoot
+  `cubic-bezier(.34,1.56,.64,1)`). Its 14px slot is always there, so chips never change width or reflow the row.
+- Summary: the empty hint (12px, 50%) and the panel share one fixed-height grid cell. On the first pick the hint fades
+  out and the panel wipes in (`clip-path` + `translateY`), so the page below never shifts.
 - Copy: a short question as the title, "Select all that apply" in `--muted`.
 - `aria-pressed` on the buttons, `aria-live="polite"` on the summary.
 - The action fills the quote form or the WhatsApp message with the picks ("Add to my quote"), not a dead link.
@@ -85,10 +84,9 @@ transform and clip-path move.
   }));
 })(document.querySelector('.chips'));
 ```
-If the summary text can wrap to two lines on a phone, give `.summary` a `min-height` that fits two lines, so the reserve
-covers it.
+If the summary can wrap to two lines on a phone, give `.summary` a `min-height` that fits two lines.
 
-**Phone:** chips wrap and stay 44 px tall; the summary action sits under the text (`flex-direction: column;
-align-items: flex-start` below 480 px).
+**Phone:** chips wrap and stay 44px tall; the summary action sits under the text (`flex-direction: column;
+align-items: flex-start` below 480px).
 
 **Reduced motion:** picks and the summary switch instantly; nothing moves.

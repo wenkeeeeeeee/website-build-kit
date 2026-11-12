@@ -3,12 +3,12 @@ Adapted from MotionSites type-and-text-motion.md #12 (MIT).
 # Giant type word assembling from blocks
 
 A full-width word built from flat polygons (verticals, diagonals, crossbars). On load each block slides up from below
-the SVG's edge in a quick cascade while the whole word settles from a 3% zoom, like type being set in metal. Good for
-a section opener or footer word in a precise, constructed tone (architecture, engineering, institutions).
+the SVG's edge in a quick cascade while the word settles from a 3% zoom, like type set in metal. For a section opener or
+footer word in a precise, constructed tone (architecture, engineering, institutions).
 
-**Use it only for a giant type word, never the client's logo.** The logo is always the original file, never redrawn
-or rebuilt from shapes (`taste.md`). Pick a short word from the client's world (2-5 letters with straight strokes:
-A, E, F, H, I, K, L, M, N, T, V, W, X, Y, Z).
+**Only for a giant type word, never the client's logo.** The logo is always the original file, never redrawn or rebuilt
+from shapes. Pick a short word from the client's world (2-5 letters with straight strokes: A, E, F, H, I, K, L, M, N,
+T, V, W, X, Y, Z).
 
 **Needs:** nothing.
 
@@ -43,13 +43,13 @@ A, E, F, H, I, K, L, M, N, T, V, W, X, Y, Z).
 @keyframes wm-settle{from{transform:scale(1.03)}to{transform:scale(1)}}
 @media (prefers-reduced-motion:reduce){.wm svg,.wm polygon{animation:none}}
 ```
-CSS `px` on SVG children equals user units, so 120px is more than the 100-unit cap height and each block starts fully
-below the viewBox (the SVG clips it). Letter recipes: **M** = two verticals + two diagonals meeting at the bottom
-centre; **A/V** = two diagonals + optional bar; **E/F** = one vertical + three/two bars; **T** = one bar + one vertical.
+CSS `px` on SVG children equals user units, so 120px exceeds the 100-unit cap height and each block starts fully below
+the viewBox (the SVG clips it). Letters: **M** = two verticals + two diagonals meeting at the bottom centre; **A/V** =
+two diagonals + optional bar; **E/F** = one vertical + three/two bars; **T** = one bar + one vertical.
 
-For a section below the fold, pause the animations (`animation-play-state:paused`) and run them when an
-IntersectionObserver adds a class. With GSAP: `gsap.from('.wm polygon', { y: 120, opacity: 0, duration: 1.2, ease: 'expo.out', stagger: .06 })`.
+Below the fold, pause the animations (`animation-play-state:paused`) and run them when an IntersectionObserver adds a
+class.
 
-**Phone:** works as is (it scales with width). Check the word still reads at 360px; pick a shorter word if not.
+**Phone:** scales with width. Check the word still reads at 360px; pick a shorter word if not.
 
 **Reduced motion:** the word renders assembled.

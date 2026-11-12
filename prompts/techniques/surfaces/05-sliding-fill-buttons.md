@@ -2,9 +2,8 @@ Adapted from MotionSites surfaces-and-buttons.md #5 (MIT).
 
 # Sliding-fill buttons (+ hard offset shadow)
 
-On hover a colour panel wipes across the button from one side and the label inverts above it. Two flavours: a fast
-accent wipe on a dark pill, and a slow paper wipe on a dark button with an icon tilt and a hard offset shadow
-(editorial, museum, print feel).
+On hover a colour panel wipes across the button and the label inverts above it. Two flavours: a fast accent wipe on a
+dark pill; a slow paper wipe on a dark button with an icon tilt and hard offset shadow (editorial, museum, print).
 
 **Needs:** nothing.
 
@@ -13,12 +12,11 @@ accent wipe on a dark pill, and a slow paper wipe on a dark button with an icon 
   sides. Pill `border-radius:50px`, `padding:12px 26px`, 15px / 500.
 - Paper wipe: panel `translateX(-101%) -> 0` over **700ms** `var(--ease-out)`; label colour flips; icon
   `scale(1.1) rotate(-12deg) translateY(-4px)`; the button lifts `translateY(-2px)` and gains
-  `box-shadow: 3px 3px 0` in `--ink` at 50%; `:active` resets lift and shadow. A 1px border in the dark colour keeps the
-  edge crisp under the light panel.
-- `isolation:isolate` + `z-index:-1` paints the panel above the button background and below the label, with no extra
-  wrappers.
-- The wipe can take the client's shape: give the panel a `clip-path` edge (a wave, a torn edge, a brush end) that matches
-  the site's section joins.
+  `box-shadow: 3px 3px 0` in `--ink` at 50%; `:active` resets lift and shadow. A 1px dark border keeps the edge crisp
+  under the light panel. The icon tilt and shadow are playful; for a professional tone keep only the wipe.
+- `isolation:isolate` + `z-index:-1` paints the panel between button background and label, no extra wrappers.
+- The wipe can take the client's shape: a `clip-path` edge on the panel (wave, torn edge, brush end) matching the
+  site's section joins.
 
 ## Code
 ```html
@@ -56,9 +54,7 @@ accent wipe on a dark pill, and a slow paper wipe on a dark button with an icon 
 }
 ```
 
-The icon tilt is a playful-tone move. For a professional tone keep the wipe and drop the tilt and offset shadow.
-
-**Phone:** run the wipe on press as well (`:active::after{transform:translateX(0)}`) so a tap shows it before the page
-changes. The offset-shadow lift is skipped on touch.
+**Phone:** also run the wipe on press (`:active::after{transform:translateX(0)}`) so a tap shows it before the page
+changes. Skip the offset-shadow lift on touch.
 
 **Reduced motion:** the wipe becomes an instant colour swap; nothing moves.

@@ -2,19 +2,17 @@ Adapted from MotionSites depth-and-interaction.md #2 (MIT).
 
 # Magnetic hover
 
-When the cursor comes within a generous radius, an element (product cut-out, main CTA, logo) eases toward it by a
-fraction of the distance, then floats back slowly when the cursor leaves. It adds weight and life. Use it on the hero
-subject or the primary button, not on everything.
+Near the cursor, an element (product cut-out, main CTA, logo) eases toward it by a fraction of the distance, then
+floats back slowly when the cursor leaves. Use it on the hero subject or the primary button, not on everything.
 
 **Needs:** nothing (works best on a cut-out of the client's product).
 
 ## Parameters
 - Activation zone: the element's box plus 150px (40-80px for buttons).
 - Strength 3: the element moves 1/3 of the cursor's offset from its centre (2-4 is the sweet spot).
-- Asymmetric easing: `transform .3s var(--ease-out)` while tracking, `.6s var(--ease-in-out)` on release. The return is
-  slower than the pull.
-- Measure the untransformed wrapper, move an inner element, or the moving box feeds back into its own measurement.
-  Positioning transforms (like centring with `translateX(-50%)`) belong on the wrapper.
+- Easing: `transform .3s var(--ease-out)` while tracking, slower `.6s var(--ease-in-out)` on release.
+- Measure the untransformed wrapper and move an inner element, or the moving box feeds back into its own measurement.
+  Positioning transforms (like `translateX(-50%)` centring) go on the wrapper.
 - `translate3d` + `will-change:transform`; fine pointers with motion allowed only.
 
 ## Code
@@ -62,7 +60,7 @@ function touchPress(wrap, inner) {
 document.querySelectorAll('.magnet').forEach((el) => magnet(el, { padding: +el.dataset.padding || 150, strength: +el.dataset.strength || 3 }));
 ```
 
-**Phone:** give a lighter version that keeps the idea. The code above leans the element toward the finger on press and
-lets it settle back, so a tap still feels weighted. A hero subject can also keep a slow idle drift at rest.
+**Phone:** the code leans the element toward the finger on press and lets it settle back, so a tap still feels
+weighted. A hero subject can also keep a slow idle drift at rest.
 
 **Reduced motion:** no pull and no lean; the element stays in place.

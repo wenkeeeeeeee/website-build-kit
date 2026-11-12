@@ -3,9 +3,9 @@ Adapted from MotionSites scroll.md #3 (MIT).
 # Panel slide-over + scattered growing gallery + blend outro
 
 A full-bleed hero stays sticky while a dark panel slides up over it, carrying a sparse, asymmetric grid of tall images
-that grow as they enter the viewport and shrink as they leave, each growing toward the page centre. At the end a light
-veil fades over everything and a giant pill button scales in from the corner. Fixed UI stays legible through exclusion
-blending (the exclusion-blend recipe in `depth/`). Suits pages with many tall photos: fashion, archive, portfolio, menu.
+that grow toward the page centre as they enter and shrink as they leave. At the end a light veil fades over everything
+and a giant pill button scales in from the corner. Fixed UI stays legible through exclusion blending
+(`depth/06-exclusion-blend-ui.md`). Suits many tall photos: fashion, archive, portfolio, menu.
 
 **Needs:** about 8-12 tall (2:3) client photos, sharp at their display size, and a hero still or film.
 
@@ -17,20 +17,19 @@ blending (the exclusion-blend recipe in `depth/`). Suits pages with many tall ph
 - Scale per frame: enter `min(1, (vh - top) / (0.6*vh))`, exit `min(1, bottom / (0.4*vh))`, `scale = min(enter, exit)`,
   0 off screen. Left-half cards `transform-origin: right bottom`, right-half `left bottom`.
 - Outro over one screen: veil `opacity 0 to 1`; button `scale(0 to 1)` from `right bottom`; pill radius 1335px, desktop
-  330 x 174px, label 110px (72px phone), `-.04em`. The label is the variant's main action (for example the WhatsApp
-  order), not a generic "view".
-- Exclusion maths needs near-white on near-black: the button stays `--blend-light` (default `#fff`) whatever the
-  palette, and reads light-on-dark over the panel and dark-on-light over the veil. On a palette where that clashes,
-  swap the blend for two plain button states keyed to the veil progress.
+  330 x 174px, label 110px (72px phone), `-.04em`. The label is the variant's main action (e.g. the WhatsApp order),
+  not a generic "view".
+- Exclusion needs near-white on near-black: the button stays `--blend-light` (default `#fff`) whatever the palette,
+  reading light-on-dark over the panel and dark-on-light over the veil. Where that clashes with the palette, use two
+  plain button states keyed to the veil progress instead.
 - Measure the cell, scale the image (`getBoundingClientRect()` includes transforms).
-- Lenis smooths the scroll, so direct scroll mapping is already eased. Without Lenis, lerp each value toward its target
-  (`cur += (target - cur) * .12`) every frame.
+- With Lenis the direct scroll mapping is already eased. Without it, lerp each value every frame
+  (`cur += (target - cur) * .12`).
 
 ## Code
 ```html
 <section class="pg-hero">
-  <!-- hero film per the playbook: poster, 1280/1920 sources, preload="auto" on this first film only,
-       film-control.js for pause/off-screen. Never loop a short clip; a still works too. -->
+  <!-- hero film served as in video/01 (poster, 1280/1920 sources, preload="auto"); a still works too -->
   <video src="video/hero-1920.mp4" poster="images/hero-poster.webp" autoplay muted playsinline preload="auto" aria-hidden="true"></video>
 </section>
 <section class="pg-panel"><div class="pg-grid" id="pgGrid"></div></section>
@@ -109,9 +108,9 @@ blending (the exclusion-blend recipe in `depth/`). Suits pages with many tall ph
   addEventListener('resize', () => { render(); tick(); });
 })();
 ```
-Pause the hero film once the panel covers it (past 100vh); `film-control.js` does this.
+Pause the hero film once the panel covers it (past 100vh): `film-control.js` (kit) or an IntersectionObserver.
 
-**Phone:** two columns, the button spans the width near the bottom. Works on touch as is; keep the main action in the
+**Phone:** two columns; the button spans the width near the bottom. Works on touch as is. Keep the main action in the
 header too, since the outro button only appears at the end.
 
 **Reduced motion:** images sit at full size; the veil and button still follow scroll because the visitor drives them.

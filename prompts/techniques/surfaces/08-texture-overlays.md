@@ -2,10 +2,10 @@ Adapted from MotionSites surfaces-and-buttons.md #8 (MIT).
 
 # Texture overlays: film grain, noise inside type, halftone, dot grid
 
-A barely-there texture that removes the flat digital look of video, solid colour fields and gradients, and hides
-compression banding: a fixed page grain, noise blended over a hero film, an animated grain, noise inside giant poster
-type, a halftone screen over photos, a faint dot grid behind technical heroes. Pick the one that matches the client's
-material (print, film, paper, screen); it supports the treatment, it is not the motion.
+A barely-there texture that removes the flat digital look of video, colour fields and gradients, and hides banding:
+fixed page grain, noise over a hero film, animated grain, noise inside giant poster type, halftone over photos, a faint
+dot grid behind technical heroes. Pick the one that matches the client's material (print, film, paper, screen). It
+supports the treatment; it is not the motion.
 
 **Needs:** nothing.
 
@@ -13,8 +13,8 @@ material (print, film, paper, screen); it supports the treatment, it is not the 
 - Page grain: `feTurbulence fractalNoise baseFrequency .9 numOctaves 4 stitchTiles stitch`, rect opacity `.08` inside
   the SVG x layer opacity `.4` (about 3% effective), 200px tile, fixed, z-index 50-100 above content,
   `pointer-events:none`. UI that must stay crisp (header) may sit above it.
-- Film grain: `baseFrequency .85 numOctaves 3`, `opacity .7`, `mix-blend-mode: overlay` (shows in mid-tones, vanishes on
-  pure black and white, exactly where banding lives). Section noise: `.9 / 4 octaves`, `opacity .15`.
+- Film grain: `baseFrequency .85 numOctaves 3`, `opacity .7`, `mix-blend-mode: overlay` (shows in mid-tones, where
+  banding lives; vanishes on pure black and white). Section noise: `.9 / 4 octaves`, `opacity .15`.
 - Animated grain: an oversized noise tile jittered with `steps(6)` over 1s at about `.08`.
 - Text noise (multiply): `baseFrequency .9, numOctaves 2`, alpha `.35`, composite `in` SourceGraphic. Watermark noise
   (overlay): `baseFrequency .5`, `feFuncA slope .075`.
@@ -66,10 +66,10 @@ Noise inside text (define once per page, then `filter:url(#text-grain)`):
 <h2 class="poster-word" style="filter:url(#text-grain)">Poster type</h2>
 ```
 
-Halftone and grain go over photos, never over copy people read. Check rendered screenshots: on a light page the grain
-must not grey the body text.
+Halftone and grain go over photos, never over copy people read. Check screenshots: on a light page the grain must not
+grey the body text.
 
-**Phone:** overlay grain is a static tile and cheap, so keep it. SVG filters on large text are expensive: use them on
-one or two elements and drop them at 1024px and below (`@media (max-width:1024px){.poster-word{filter:none}}`).
+**Phone:** overlay grain is a cheap static tile; keep it. SVG filters on large text are expensive: one or two elements
+at most, dropped at 1024px and below (`@media (max-width:1024px){.poster-word{filter:none}}`).
 
-**Reduced motion:** the animated grain stops and stays as a still texture; everything else is static already.
+**Reduced motion:** the animated grain stops as a still texture; the rest is static.

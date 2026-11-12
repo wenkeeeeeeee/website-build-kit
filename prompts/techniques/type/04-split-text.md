@@ -2,13 +2,11 @@ Adapted from MotionSites type-and-text-motion.md #4 (MIT).
 
 # Split-text headline entrances (masked line/word pull-up, soft word rise, character cascade)
 
-Headlines that assemble line by line, word by word or letter by letter. The masked pull-up (type rising out of a slot)
-is the classic editorial move for giant display words and stacked statements; the character cascade reads like a
-sentence written across the screen. Lines arrive at full brightness, never half-faded.
+Headlines that assemble by line, word or letter. The masked pull-up (type rising out of a slot) is the editorial move
+for giant display words and stacked statements; the character cascade reads like a sentence written across the screen.
+Lines arrive at full brightness, never half-faded.
 
 **Needs:** nothing.
-
-Blur variant: held until the owner decides.
 
 ## Parameters
 - Masked lines (hand-written): `translateY(110%) -> 0` inside `overflow:hidden`, 0.7 s `var(--ease-out)`, delays
@@ -50,8 +48,7 @@ Blur variant: held until the owner decides.
 function splitText(root, mode = 'words') {
   if (root.dataset.splitDone) return;
   root.dataset.splitDone = '1';
-  // Word spans read fine in screen readers. Letter spans can be spelled out, so in char modes
-  // the split copy is aria-hidden and one clean visually-hidden copy is added.
+  // Letter spans can be spelled out by screen readers, so char modes hide the split copy and add one clean copy.
   const charMode = mode === 'chars' || mode === 'plain-chars';
   const plain = (root.innerText || root.textContent).replace(/\s+/g, ' ').trim();
   let i = 0;
@@ -121,10 +118,10 @@ document.querySelectorAll('[data-split-scroll]').forEach((el) => { splitText(el,
 <h2 data-split-text="words" data-split-scroll class="split-over">Another heading.</h2>
 <h1 data-split-text="chars">A sentence written<br>across the screen.</h1>
 ```
-With GSAP SplitText (`js/vendor/SplitText.min.js`) the same moves are
-`gsap.from(split.lines, { yPercent: 110, duration: 1.2, ease: 'expo.out', stagger: .08 })` with `mask: 'lines'`.
+With GSAP SplitText (npm, or `js/vendor/SplitText.min.js`): split with `mask: 'lines'`, then
+`gsap.from(split.lines, { yPercent: 110, duration: 1.2, ease: 'expo.out', stagger: .08 })`.
 
-**Phone:** works as is. Keep stagger totals short (under about 1 s for a hero headline) and check the mask padding at
-the phone font size.
+**Phone:** works as is. Keep stagger totals under about 1 s for a hero headline; check the mask padding at the phone
+font size.
 
 **Reduced motion:** no transitions; text renders at rest. Char modes keep one clean screen-reader copy.

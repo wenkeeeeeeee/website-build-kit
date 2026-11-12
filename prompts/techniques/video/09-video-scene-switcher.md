@@ -2,21 +2,19 @@ Adapted from MotionSites video-and-media.md #9 (MIT).
 
 # Crossfading video scene switcher with adaptive text tone
 
-Up to 3 of the client's scenes (rooms, branches, times of day, moods) with a row of named buttons; the chosen scene
-crossfades in. An optional foreground cut-out (window frame, doorway, counter edge) sits on top with a gentle bob, as if
-looking out from inside the place. Use it for "choose your atmosphere" heroes: a place to visit, a venue, a trip.
+Up to 3 of the client's scenes (rooms, branches, times of day) behind a row of named buttons; the chosen scene
+crossfades in. An optional foreground cut-out (window frame, doorway, counter edge) bobs gently on top, as if looking
+out from inside. For "choose your atmosphere" heroes: a place to visit, a venue, a trip.
 
-**Needs:** 2-3 long, seamless films of the client's real places (or one per scene), one poster each; optional clean
-foreground cut-out PNG.
+**Needs:** 2-3 long, seamless films of the client's real places, one poster each; optional clean foreground cut-out PNG.
 
 **Parameters**
-- Max 3 scenes. Two `<video>` elements only (an A/B pair for the crossfade): the next scene's src is set on the hidden one, then it fades in. Only the first scene preloads (`preload="auto"`); the others load on first tap.
-- Crossfade opacity 1000ms `var(--ease-in-out)`; lock input for the same 1000ms so taps can't stack. Pause the outgoing film after the fade.
-- Each scene film is long with matching ends, or it ends on its last frame. Never loop a short clip. A loop past 5s needs a pause button (`film-control.js`).
-- First film within the home-page film budget (under 4 MB); the switcher's two elements count toward the 3-videos-per-page limit.
+- Max 3 scenes, two `<video>` elements (an A/B pair): the next scene's src goes on the hidden one, then it fades in. Only the first scene preloads; the others load on first tap. The pair counts as two of the page's 3 videos; the first film fits the home-page budget.
+- Crossfade 1000ms `var(--ease-in-out)`; lock input for the same 1000ms so taps can't stack. Pause the outgoing film after the fade.
+- Each scene film is long with matching ends, or ends on its last frame. A loop past 5s needs a pause button (`film-control.js` in the kit).
 - Foreground bob: `translateY(0 → -6px)` 3s `var(--ease-in-out)` infinite, constant `scale(1.03)` so edges never show (cut-out at least 1.2x its display size).
-- Adaptive tone: when a bright scene is active, the hero copy switches to `var(--ink)` over 700ms; header and footer stay as they are.
-- Buttons name the client's real scenes (branch names, rooms, times). Active = full colour + 1px underline; inactive opacity .5, hover .8. The result is the whole scene changing, so it is never a control that only reveals text.
+- Adaptive tone: mark a bright scene's tab `data-tone="dark"` (it needs dark text); while it plays, the hero copy switches to `var(--ink)` over 700ms; header and footer stay.
+- Buttons name the client's real scenes. Active = full colour + 1px underline; inactive opacity .5, hover .8. The whole scene changes, so it is never a control that only reveals text.
 
 ```html
 <section class="vswitch" data-tone="light">
@@ -79,7 +77,7 @@ foreground cut-out PNG.
 ```
 Add arrow-key movement between the tab buttons for keyboard users.
 
-**Phone:** same switcher; only the active scene ever loads, and each new scene loads on tap. Keep the buttons 44px+ and
-clear of the subject. Drop the foreground cut-out if it covers the subject on a narrow screen.
+**Phone:** same switcher; only the active scene loads, others on tap. Buttons 44px+ and clear of the subject. Drop the
+foreground cut-out if it covers the subject on a narrow screen.
 
-**Reduced motion:** no autoplay: each scene shows its poster, switching is an instant cut, and the cut-out stops bobbing.
+**Reduced motion:** no autoplay: each scene shows its poster, switching is an instant cut, the cut-out stops bobbing.

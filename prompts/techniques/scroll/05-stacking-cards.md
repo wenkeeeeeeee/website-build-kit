@@ -2,21 +2,22 @@ Adapted from MotionSites scroll.md #5 (MIT).
 
 # Sticky stacking cards that scale down
 
-Cards pin near the top one after another. Each new card slides over the last, and the ones underneath shrink slightly
-with a sliver of their top edge still showing, like a deck being dealt. For 3-5 case studies, products, plans or
-process steps: things people compare or follow in order (taste: cards suit things people compare).
+Cards pin near the top one after another. Each new card slides over the last; those underneath shrink slightly with a
+sliver of their top edge showing, like a deck being dealt. For 3-5 case studies, products, plans or process steps:
+things people compare or follow in order.
 
 **Needs:** 3-5 items, each with a real photo or two and a line of facts from the content data.
 
 ## Parameters
 - Each card sits in its own sticky slot (`sticky; top:0; height:85vh`), offset `top: i * 28px` so earlier cards peek
-  out above later ones. Slot padding-top `max(12vh, header height + 16px)` so cards clear the sticky header.
+  out above. Slot padding-top `max(12vh, header height + 16px)` clears the sticky header.
 - Target scale per card `1 - (n - 1 - i) * 0.03` (3 cards: .94, .97, 1), interpolated from 1 at section progress
   `i/n` to the target at progress 1. `transform-origin: top center`.
-- Cards: large radii (40-60px), a 2px `var(--line)` border on `var(--surface)`, an inner image grid (40% column with
-  two stacked images, 60% column with one tall image) at 40-60px radii. Design the box: the client's shape, an unusual
+- Cards: radii 40-60px, a 2px `var(--line)` border on `var(--surface)`, an inner image grid (40% column with two
+  stacked images, 60% column with one tall image) at 40-60px radii. Design the box: the client's shape, an unusual
   crop or a product breaking out of the frame, not a plain rounded rectangle.
-- Each card must fit one screen at 1536x700 below the header; check with `check-pages.cjs`.
+- Each card must fit one screen at 1536x700 below the header: check with `check-pages.cjs` (kit) or a Playwright
+  screenshot.
 - The scale eases toward its target each frame, so nothing snaps.
 
 ## Code
@@ -64,10 +65,10 @@ process steps: things people compare or follow in order (taste: cards suit thing
   update();
 })(document.querySelector('.stack'));
 ```
-GSAP equivalent: one `gsap.to(card, { scale: target, ease: 'none', scrollTrigger: { trigger: slots[i],
-start: 'top top', endTrigger: '.stack', end: 'bottom bottom', scrub: 0.6 } })` per card (starts as its own slot pins).
+GSAP version (each card starts scaling as its own slot pins): per card, `gsap.to(card, { scale: target, ease: 'none',
+scrollTrigger: { trigger: slots[i], start: 'top top', endTrigger: '.stack', end: 'bottom bottom', scrub: 0.6 } })`.
 
-**Phone:** keep it, it is light. Use smaller radii (24-32px), stack the inner images to one column, and drop the slot
-height to about 75svh so a card plus the header fits; 3 cards rather than 5.
+**Phone:** keep it; it is light. Radii 24-32px, inner images in one column, slot height about 75svh so a card plus
+the header fits; 3 cards rather than 5.
 
 **Reduced motion:** cards still stick and stack (the visitor drives it); no scaling.

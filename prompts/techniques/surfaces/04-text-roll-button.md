@@ -2,8 +2,8 @@ Adapted from MotionSites surfaces-and-buttons.md #4 (MIT).
 
 # Text-roll button with rotating arrow chip
 
-The label is stacked twice in a 20px window. On hover the stack slides up so a fresh copy rolls in from below, while an
-arrow in a round chip at the right edge turns. Small and tactile. Use it for primary and header CTAs.
+The label is stacked twice in a 20px window. On hover the stack slides up so a fresh copy rolls in from below, and an
+arrow in a round chip at the right edge turns. For primary and header CTAs.
 
 **Needs:** nothing.
 
@@ -48,10 +48,9 @@ arrow in a round chip at the right edge turns. Small and tactile. Use it for pri
 @media (prefers-reduced-motion:reduce){.btn-roll__inner,.btn-roll__chip svg{transition:none}}
 ```
 
-Check the label in the display font: the 20px window clips descenders if the font's line box is tall. Raise both
-heights together if it does.
+Gotcha: the 20px window clips descenders if the font's line box is tall; raise both heights together.
 
-**Phone:** no hover, so run the roll on press (`.btn-roll:active .btn-roll__inner{transform:translateY(-50%)}`) and keep
-the scale-down. Whole button stays 44px+ tall (add padding if the chip is 24px).
+**Phone:** run the roll on press (`.btn-roll:active .btn-roll__inner{transform:translateY(-50%)}`) and keep the
+scale-down. Button 44px+ tall (add padding if the chip is 24px).
 
 **Reduced motion:** the label and arrow change instantly; the colour change stays.

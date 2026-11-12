@@ -2,21 +2,21 @@ Adapted from MotionSites depth-and-interaction.md #4 (MIT).
 
 # Cursor-following spotlight reveal mask
 
-Two aligned full-bleed images (outside vs inside, before vs after, day vs night, raw vs finished); a soft circle
-trailing the cursor reveals the second one. A "look inside" moment for heroes that explain how something works. The
-revealed image must be the point, not decoration.
+Two aligned full-bleed images (outside/inside, before/after, day/night, raw/finished); a soft circle trailing the
+cursor reveals the second. A "look inside" moment for heroes that explain how something works. The revealed image must
+be the point, not decoration.
 
 **Needs:** two aligned images of the same framing (a real photo pair, or a photo plus a matching drawn/rendered layer).
 
 ## Parameters
-- Radius **260px**; cursor smoothing **lerp 0.1** per frame (the trailing lag is what makes it feel physical).
+- Radius **260px**; cursor smoothing **lerp 0.1** per frame (the lag makes it feel physical).
 - Feathered mask stops: `0 -> 1`, `.4 -> 1`, `.6 -> .75`, `.75 -> .4`, `.88 -> .12`, `1 -> 0`.
-- Starts off-screen (`-999px`) so nothing shows until the first move; snaps to the first pointer position (no fly-in).
-  The radius eases to 0 on pointer leave via an animatable `@property`.
-- Base image settles `scale(1.12 -> 1)` over 1.8s `var(--ease-out)`. Only when the source is at least 1.2x its display
-  size. The heading uses `pointer-events:none` so it never blocks the reveal.
-- A CSS `radial-gradient` mask driven by custom properties is far cheaper than drawing a canvas mask every frame.
-- Keep the headline off the busiest part of the reveal image (taste.md: no words over busy images).
+- Starts off-screen (`-999px`), then snaps to the first pointer position (no fly-in). The radius eases to 0 on pointer
+  leave via an animatable `@property` (Chrome/Edge, Safari 16.4+, Firefox 128+; elsewhere it snaps).
+- Base image settles `scale(1.12 -> 1)` over 1.8s `var(--ease-out)`, only when the source is at least 1.2x its display
+  size. The heading has `pointer-events:none` so it never blocks the reveal.
+- A CSS `radial-gradient` mask on custom properties is far cheaper than a canvas mask every frame.
+- Keep the headline off the busiest part of the reveal image (no words over busy images).
 
 ## Code
 ```html
@@ -68,7 +68,7 @@ revealed image must be the point, not decoration.
     spot.addEventListener('pointermove', local);
     spot.addEventListener('pointerleave', () => spot.classList.remove('is-lit'));
   } else {
-    // Touch: the spotlight sweeps across as the section scrolls; a tap or drag moves it to the finger.
+    // Touch: the spotlight sweeps with scroll; a tap or drag moves it to the finger.
     const fromScroll = () => {
       const r = spot.getBoundingClientRect();
       const p = Math.min(1, Math.max(0, (innerHeight - r.top) / (innerHeight + r.height)));
@@ -81,10 +81,8 @@ revealed image must be the point, not decoration.
   }
 })();
 ```
-`@property` makes the radius animatable (Chrome/Edge, Safari 16.4+, Firefox 128+); elsewhere it simply snaps.
-
-**Phone:** give a lighter version that keeps the idea. The code above drives a smaller spotlight (160px) across the
-image with scroll, and a tap or drag moves it to the finger. Vertical page scroll still works (`touch-action:pan-y`).
+**Phone:** a smaller spotlight (160px) sweeps across with scroll; a tap or drag moves it to the finger. Vertical page
+scroll still works (`touch-action:pan-y`).
 
 **Reduced motion:** no settle zoom and no trailing lag; the spotlight jumps straight to the pointer or scroll position.
-If the hidden image carries information, also show it plainly below (a small side-by-side pair).
+If the hidden image carries information, also show it plainly below as a small side-by-side pair.

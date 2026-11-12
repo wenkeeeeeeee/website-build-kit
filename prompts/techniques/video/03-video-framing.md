@@ -1,23 +1,24 @@
 Adapted from MotionSites video-and-media.md #3 (MIT).
 
-# Background-video framing and art direction
+# Background-video framing
 
-Small geometry tricks that put the film's subject where the layout needs it, without re-editing the film. Use them when
-the focal point collides with the copy, sits too high or low, or crops badly on portrait screens.
+Geometry tricks that put the film's subject where the layout needs it, without re-editing the film. Use them when the
+focal point collides with the copy, sits too high or low, or crops badly on portrait screens.
 
-**Needs:** a film (see `01-background-video-layer.md`). Variant A also needs a source at least 1.2x its display size.
+**Needs:** a film (see `01-background-video-layer.md`). A and E need a source at least 1.2x its display size, or the
+film goes soft.
 
 **Variants**
-- **A. Oversize + top anchor:** `width:120%; height:120%`, centred, `top:0`, `object-position:top`. Keeps the top of the frame (sky, horizon) in view and trims edges and bottom. Only when the source is at least 1.2x its display size.
+- **A. Oversize + top anchor:** `width:120%; height:120%`, centred, `top:0`, `object-position:top`. Keeps the top of the frame (sky, horizon) and trims edges and bottom.
 - **B. Vertical offset:** `translateY(15-20%)` on an `inset:0` cover film pushes the subject below the headline. Only when the exposed band blends into the section ground (dark film edge, or a scrim from `04-edge-blend-scrims.md`).
 - **C. Lower band:** the film fills only the area below the headline (from about 30vh down), and a `bg → transparent → bg` gradient dissolves it into a light page.
 - **D. Focal crop for portrait:** `object-position: 70% center` (or `right bottom` from 1024px) keeps a right-side subject when a phone crops the sides.
-- **E. Bleed scale:** `scale(1.05)` hides encoder edge lines and 1px letterbox slivers. Only when the source is at least 1.2x its display size, or the film goes soft.
-- **F. In-flow block on phones:** below 1024px the film becomes a block in the flow (`1/1` on phones, `16/9` on tablets) placed **first**, above the copy, so the subject leads; from 1024px it is the full background again. Avoids text over busy footage on small screens.
-- **Light pages on phones:** inset the film to 80% x 80%, centred, so it reads as a floating screen instead of a cropped mess.
+- **E. Bleed scale:** `scale(1.05)` hides encoder edge lines and 1px letterbox slivers.
+- **F. In-flow block on phones:** below 1024px the film is a block in the flow (`1/1` on phones, `16/9` on tablets) placed **first**, above the copy, so the subject leads and no text sits over busy footage; from 1024px it is the full background again, with the copy over it (never copy one side, film the other).
+- **Light pages on phones:** inset the film to 80% x 80%, centred, so it reads as a floating screen, not a cropped mess.
 
 ```css
-/* A. Oversize, top-anchored (source >= 1.2x display size) */
+/* A. Oversize, top-anchored */
 .video--oversize{position:absolute;left:50%;top:0;width:120%;height:120%;transform:translateX(-50%);object-fit:cover;object-position:top center}
 /* B. Vertical offset */
 .video--shift{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:translateY(17%)}
@@ -29,7 +30,7 @@ the focal point collides with the copy, sits too high or low, or crops badly on 
 /* D. Focal crop */
 .video--focal{object-position:70% center}
 @media (min-width:1024px){.video--focal{object-position:right bottom}}
-/* E. Bleed (source >= 1.2x display size) */
+/* E. Bleed */
 .video--bleed{transform:scale(1.05)}
 /* F. Film first on phones, background on desktop */
 .vframe{display:flex;flex-direction:column;background:var(--bg)}
@@ -50,9 +51,9 @@ the focal point collides with the copy, sits too high or low, or crops badly on 
   <div class="vframe__copy">…headline, one line, one action…</div>
 </section>
 ```
-Desktop F puts the copy over the full-bleed film, never copy on one side and film on the other. Loop rules, serving and
-off-screen pause are in `01-background-video-layer.md`.
+Serving, loop rules and off-screen pause: `01-background-video-layer.md`.
 
-**Phone:** retest the focal point at 375x812. Usually you change `object-position` per breakpoint rather than the transform. Variant F gives the film its own block above the copy.
+**Phone:** retest the focal point at 375x812; usually change `object-position` per breakpoint rather than the
+transform. F gives the film its own block above the copy.
 
 **Reduced motion:** framing is static; show the still from `01-background-video-layer.md` in the same frame.

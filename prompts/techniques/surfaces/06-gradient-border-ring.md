@@ -2,16 +2,15 @@ Adapted from MotionSites surfaces-and-buttons.md #6 (MIT).
 
 # Animated gradient border ring (@property conic spin, hover ring)
 
-A thin conic-gradient border that travels around a pill without stopping, drawing the eye to the one CTA that matters;
-and a calmer version where the ring appears only on hover. One ring per page at most.
+A thin conic-gradient border travels round a pill non-stop, drawing the eye to the one CTA that matters; a calmer
+version shows the ring only on hover. One ring per page at most.
 
 **Needs:** nothing.
 
 ## Parameters
 - Spinning ring: `inset:-3px; padding:3px`,
   `conic-gradient(from var(--border-angle), accent, deep, accent, deep, accent)` with `--accent` and a deep shade of the
-  page ground, **3s linear infinite** via a registered `@property`. (Linear is right here: it is a constant spin, not a
-  reveal.)
+  page ground, **3s linear infinite** via a registered `@property` (linear: a constant spin, not a reveal).
 - Hover ring: `inset:-2px`, a two-tone gradient from `--accent` fading in over 0.3s, its position drifting over **6s**;
   the inner surface keeps the page colour; the button scales 1.05 on hover.
 - Logo variant: 36px circle with a 2px ring, `scale(1.1)` on hover with the gradient direction reversed.
@@ -49,10 +48,9 @@ and a calmer version where the ring appears only on hover. One ring per page at 
 @media (prefers-reduced-motion:reduce){.ring-spin::before,.ring-hover::before{animation:none}}
 ```
 
-Keep the three-line mask form: it is the cross-browser-safe one. The ring covers the element, but the mask removes its
-content box, so only the ring paints and clicks pass through.
+Keep the mask in this cross-browser form: it cuts out the content box, so only the ring paints and clicks pass through.
 
-**Phone:** the spinning ring works as is (it is cheap). The hover ring never shows on touch, so show it on `:active` or
-keep it at `opacity:1` under `@media (hover:none)` for the one main CTA.
+**Phone:** the spinning ring is cheap; keep it. The hover ring never shows on touch, so show it on `:active` or at
+`opacity:1` under `@media (hover:none)` for the one main CTA.
 
-**Reduced motion:** both rings stop and render as a static gradient border.
+**Reduced motion:** both rings stop as a static gradient border.

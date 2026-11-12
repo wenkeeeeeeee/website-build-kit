@@ -2,23 +2,23 @@ Adapted from MotionSites video-and-media.md #6 (MIT).
 
 # Cursor-scrubbed video (delta scrub, split dual-video)
 
-A paused clip whose timeline follows horizontal mouse movement: a product turns on a turntable, a lid opens, a head
-turns. It feels like a live 3D object without WebGL. On touch, scroll drives the same timeline instead.
-- **A. Delta scrub:** relative horizontal movement moves the playhead forward or back.
-- **B. Split dual-video:** two clips; left of centre scrubs clip A, right of centre scrubs clip B; a dead zone at the centre holds frame 0.
+A paused clip whose timeline follows horizontal mouse movement (a product turns, a lid opens): a live 3D feel without
+WebGL. On touch, scroll drives the same timeline.
+- **A. Delta scrub:** relative horizontal movement moves the playhead.
+- **B. Split dual-video:** left of centre scrubs clip A, right scrubs clip B; a centre dead zone holds frame 0.
 
 **Needs:** a turntable or opening clip of the client's real product (one for A, two for B), one slow continuous move.
 
 **Parameters**
-- Sensitivity 0.8: crossing the full viewport width scrubs 80% of the clip. `Δt = (Δx / innerWidth) × 0.8 × duration`, clamped to `[0, duration]`. Relative mapping, so the first mouse move never jumps.
-- **Seek queue:** never set `currentTime` while a seek is in flight. Store the target; on `seeked`, seek again only if the target moved. Without this the decoder floods and the image freezes.
-- Split: dead zone `max(30px, width × 0.05)` each side of centre; progress = distance past the dead-zone edge ÷ remaining half-width; keep showing the last active side inside the dead zone.
+- Sensitivity 0.8: the full viewport width scrubs 80% of the clip. `Δt = (Δx / innerWidth) × 0.8 × duration`, clamped to `[0, duration]`. Relative, so the first mouse move never jumps.
+- **Seek queue:** never set `currentTime` while a seek is in flight. Store the target; on `seeked`, seek again only if it moved. Otherwise the decoder floods and the image freezes.
+- Split: dead zone `max(30px, width × 0.05)` each side of centre; progress = distance past the dead-zone edge ÷ remaining half-width; inside the dead zone keep showing the last active side.
 - Mouse mode from 1024px on hover devices. Below that, or on touch, scroll through the hero scrubs the clip (never an autoplay loop).
 - `muted playsinline preload="auto"`, no autoplay, `object-position: 70% center`.
-- Encode with tiny GOPs so seeks land instantly (the difference between silky and steppy):
+- Encode with tiny GOPs so seeks land instantly (silky, not steppy):
   `ffmpeg -i in.mp4 -an -c:v libx264 -crf 20 -g 6 -keyint_min 6 -pix_fmt yuv420p -movflags +faststart scrub.mp4` (`-g 1` = all-intra, silkiest; check size).
-- Keep the clip inside the home-page film budget (under 4 MB), then load it fully before scrubbing so every seek is local: `fetch(url).then(r => r.blob()).then(b => { video.src = URL.createObjectURL(b); })`.
-- The clip counts toward the 3-videos-per-page limit (B uses two).
+- Fit the clip in the home-page film budget, then load it fully before scrubbing so every seek is local: `fetch(url).then(r => r.blob()).then(b => { video.src = URL.createObjectURL(b); })`.
+- B uses two of the page's 3 videos.
 
 **A. Delta scrub**
 ```html
@@ -75,8 +75,8 @@ function cursorScrubVideo(video, section, { sensitivity = 0.8, query = '(min-wid
 }
 cursorScrubVideo(document.querySelector('.scrub-video'), document.querySelector('.scrub-hero'));
 ```
-For a longer touch scrub, make the section 150-200vh with the film `position: sticky; top: 0; height: 100svh`, or use the
-kit's `scrub.js` with frames from `frames.py`.
+For a longer touch scrub, make the section 150-200vh with the film `position: sticky; top: 0; height: 100svh`, or use a
+frame sequence (`frames.py` + `scrub.js` in the kit; see INDEX).
 
 **B. Split dual-video with dead zone**
 ```html
@@ -117,10 +117,10 @@ kit's `scrub.js` with frames from `frames.py`.
   })();
 })();
 ```
-Pause the rAF loop when the hero is off screen (IntersectionObserver), as `film-control.js` does for films.
+Pause the rAF loop when the hero is off screen (IntersectionObserver).
 
-**Phone:** scroll scrubs the clip through the hero (A), or B shows clip A and can scrub it on scroll. Never fall back to
-an autoplay loop. Keep the copy clear of the subject.
+**Phone:** scroll through the hero scrubs the clip (A); B shows clip A, optionally scroll-scrubbed. Never an autoplay
+loop. Keep the copy clear of the subject.
 
-**Reduced motion:** the poster frame stays as a still. The mouse scrub is user-driven, so you may drop the early return
-to keep it for fine pointers.
+**Reduced motion:** the poster stays as a still. The mouse scrub is user-driven, so you may drop the early return to keep
+it for fine pointers.

@@ -2,25 +2,25 @@ Adapted from MotionSites depth-and-interaction.md #6 (MIT).
 
 # Exclusion-blend overlay UI and custom cursor
 
-All fixed UI (wordmark, nav, caption, price, cursor) is light with `mix-blend-mode: exclusion`, so it inverts by
-itself: light over dark footage, dark over the light sections that later slide beneath it. One fixed layer survives a
-page that goes film -> dark -> light. Add a round custom cursor with the same blend, drawn from the client's object.
+All fixed UI (wordmark, nav, caption, price, cursor) is white with `mix-blend-mode: exclusion`, so it inverts by
+itself: light over dark footage, dark over light sections. One fixed layer survives a page that goes film -> dark ->
+light. A round custom cursor uses the same blend, drawn from the client's object.
 
 **Needs:** nothing. A small icon of the client's object for the cursor, if there is one.
 
 ## Parameters
-- Overlay elements: `position:fixed; color:white; mix-blend-mode:exclusion; pointer-events:none` (back on for real
-  links), `z-index:20`; corners at 32px desktop / 16px phone. White is required: exclusion only inverts cleanly from
-  white. Brand colour comes from the page beneath.
+- Overlay: `position:fixed; color:white; mix-blend-mode:exclusion; pointer-events:none` (on again for links),
+  `z-index:20`; corners at 32px desktop / 16px phone. Must be white: exclusion only inverts cleanly from white. Brand
+  colour comes from the page beneath.
 - One family at weight 500, `letter-spacing:-.04em`; nav 13-15px, collection label 30px, price-size numbers 80px.
 - Cursor: 48px SVG (circle `r=22.75`, stroke 2.5) with the client's mark or object inside, centred on the pointer,
-  hidden below 1024px and on touch; the native cursor is hidden only for fine pointers.
+  hidden below 1024px and on touch. Hide the native cursor only for fine pointers.
 - Entrance stagger: logo 0, nav .15, caption .3, product info .45s (`opacity 0, y 12 -> 0`, 0.6s `var(--ease-out)`).
-- **Stacking gotcha:** blending happens against what is painted inside the same stacking context. Keep blended elements
-  as direct children of `body` (or of the media's wrapper). A parent with `transform`, `filter`, `opacity < 1`,
-  `isolation` or `will-change` traps the blend, so animate the blended element itself, not a wrapper.
-- Check the main action stays readable over every section it crosses; the WhatsApp/order button itself can sit outside
-  the blend layer in the variant's normal button style.
+- **Stacking gotcha:** blending only sees its own stacking context. Keep blended elements as direct children of
+  `body` (or of the media's wrapper). A parent with `transform`, `filter`, `opacity < 1`, `isolation` or `will-change`
+  traps the blend, so animate the blended element itself, not a wrapper.
+- Check the main action stays readable over every section it crosses; the WhatsApp/order button can sit outside the
+  blend layer in the variant's normal button style.
 
 ## Code
 ```html
@@ -64,8 +64,8 @@ page that goes film -> dark -> light. Add a round custom cursor with the same bl
 ```
 Keep a visible focus style for keyboard users even when the native cursor is hidden.
 
-**Phone:** the blended overlay works as is (it is just fixed text). The custom cursor is off on touch; nothing replaces
-it, since taps already get each control's own press state.
+**Phone:** the overlay works as is (it is fixed text). The custom cursor is off on touch; nothing replaces it, since
+each control has its own press state.
 
-**Reduced motion:** the overlay appears without the stagger; the cursor still follows the pointer (that is direct
-feedback, not decoration).
+**Reduced motion:** the overlay appears without the stagger; the cursor still follows the pointer (direct feedback, not
+decoration).

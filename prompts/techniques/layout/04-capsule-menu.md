@@ -2,20 +2,20 @@ Adapted from MotionSites layout-and-ui.md #4 (MIT).
 
 # Expanding capsule menu
 
-The nav is part of the show: a 48 px square with a burger opens sideways into a ~290 px capsule that reveals 2-4 links,
-while the logo sits in its own pill beside it and a solid action pill sits right. For minimal heroes where a full link
-row would be noise. Ported to a solid surface (no glass), and the opening is a `clip-path` wipe, not a width animation.
+A 48px burger square opens sideways into a ~290px capsule of 2-4 links; the logo sits in its own pill beside it and a
+solid action pill sits right. For minimal heroes where a full link row would be noise. Solid surface (no glass); the
+opening is a `clip-path` wipe, not a width animation.
 
 **Needs:** nothing beyond the logo and 2-4 page links.
 
 ## Values
-- Capsule 48 px tall, radius 14 px, `--surface` fill. It always has its open width (290 px); closed, a
-  `clip-path: inset(0 calc(100% - 48px) 0 0 round 14px)` shows only the burger square. Open wipes to
-  `inset(0 0 0 0 round 14px)` over ~0.55 s on `--ease-out` (playful tone only: a slight overshoot such as
+- Capsule 48px tall, radius 14px, `--surface` fill, always at its open width (290px). Closed,
+  `clip-path: inset(0 calc(100% - 48px) 0 0 round 14px)` shows only the burger square; open wipes to
+  `inset(0 0 0 0 round 14px)` over ~0.55s on `--ease-out` (playful tone only: slight overshoot
   `cubic-bezier(.34,1.25,.64,1)`).
-- The toggle's inner disc scales `1 → .75` and gains a faint tint; links fade and slide `x 15 → 0` after ~120 ms.
-- 3-bar icon: `18×12` box, 1.5 px bars, open offsets `±5.25px` + `±45deg`.
-- Clip-path clips clicks too, and the closed links are `inert`, so the hidden area can't be hit.
+- The toggle's inner disc scales `1 → .75` and gains a faint tint; links fade and slide `x 15 → 0` after ~120ms.
+- 3-bar icon: `18×12` box, 1.5px bars, open offsets `±5.25px` + `±45deg`.
+- Clip-path clips clicks too, and closed links are `inert`, so the hidden area can't be hit.
 
 ## Code
 ```html
@@ -60,7 +60,7 @@ row would be noise. Ported to a solid surface (no glass), and the opening is a `
 [aria-expanded="true"] .cap__bars i:nth-child(1){transform:translateY(5.25px) rotate(45deg)}
 [aria-expanded="true"] .cap__bars i:nth-child(2){opacity:0;transform:scaleX(0)}
 [aria-expanded="true"] .cap__bars i:nth-child(3){transform:translateY(-5.25px) rotate(-45deg)}
-@media (max-width:640px){.cap--menu{display:none}}   /* phones use layout recipe #5 */
+@media (max-width:640px){.cap--menu{display:none}}   /* phones use layout/05-mobile-menu.md */
 @media (prefers-reduced-motion:reduce){.cap--menu,.cap__links,.cap__bars i,.cap__toggle::before{transition-duration:.01s}}
 ```
 ```js
@@ -75,7 +75,7 @@ row would be noise. Ported to a solid surface (no glass), and the opening is a `
 })();
 ```
 
-**Phone:** below 640 px the capsule hides and the mobile menu (layout recipe #5) takes over, with logo and action
-still in the bar.
+**Phone:** below 640px the capsule hides and the mobile menu (layout/05-mobile-menu.md) takes over; logo and action stay
+in the bar.
 
 **Reduced motion:** the capsule opens and closes instantly; nothing else changes.

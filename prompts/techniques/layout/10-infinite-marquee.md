@@ -4,22 +4,22 @@ Adapted from MotionSites layout-and-ui.md #10 (MIT).
 
 Endless horizontal strips: a stockist or partner ticker under the hero, a strip of tall photos between sections, or a
 giant phrase ("… • … •") above the footer action. Edge-fade masks make items arrive rather than get cut. Use the
-client's own photos, real partner logos or their real words, so it says something about this business.
+client's own photos, real partner logos or their real words.
 
 **Needs:** real logos (SVG), 6+ of the client's photos, or one short phrase in the client's words.
 
 ## Values
-- Always linear, with constant **pixels per second** (~40-60 px/s for logos): the duration is computed from the group
-  width, so phone and desktop feel the same.
-- Logos `137 × 40px` contain, gap **64 px**, at 40-50 % opacity. Image strip height `min(500px, 55vh)` desktop,
-  280 px phone, radius 16 px. Giant text: phrase + ` • ` repeated, ~40 s per loop, `clamp(3rem,10vw,9rem)`, `-.04em`.
+- Always linear at constant **pixels per second** (~40-60px/s for logos): duration is computed from the group width,
+  so phone and desktop feel the same.
+- Logos `137 × 40px` contain, gap **64px**, 40-50% opacity. Image strip height `min(500px, 55vh)` desktop, 280px phone,
+  radius 16px. Giant text: phrase + ` • ` repeated, ~40s per loop, `clamp(3rem,10vw,9rem)`, `-.04em`.
 - The track holds the group twice and animates `translateX(0 → -50%)`. Each group carries its trailing gap as
-  `padding-right`, so the two halves are identical and the loop has no seam (a plain flex `gap` between groups makes
-  −50 % off by half a gap).
-- Edge fade `mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)`. Pause on hover, and off
-  screen (motion.md, "Keep it good").
-- Hover-bloom logo card: 160 × 96 px pill in `--surface`; on hover an accent layer goes
-  `scale(1.5) opacity 0 → scale(1) opacity 1` (.5 s) and the logo flips to light (`brightness(0) invert(1)`).
+  `padding-right`, so the halves are identical and the loop has no seam (a flex `gap` between groups puts −50% off by
+  half a gap).
+- Edge fade `mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)`. Pause on hover and off
+  screen.
+- Hover-bloom logo card: 160 × 96px pill in `--surface`; on hover an accent layer goes
+  `scale(1.5) opacity 0 → scale(1) opacity 1` (.5s) and the logo flips to light (`brightness(0) invert(1)`).
 
 ## Code
 ```html
@@ -81,9 +81,7 @@ document.querySelectorAll('.marquee').forEach((m) => {
   new IntersectionObserver(([e]) => m.classList.toggle('is-off', !e.isIntersecting)).observe(m);   // pause off screen
 });
 ```
-**GSAP version:** `gsap.to(track, { xPercent: -50, duration: 40, ease: 'none', repeat: -1 })`, paused with a
-ScrollTrigger `onToggle`.
 
-**Phone:** runs as is; the image strip drops to 280 px. Hover blooms don't happen on touch, which is fine.
+**Phone:** runs as is; the image strip drops to 280px. No hover bloom on touch, which is fine.
 
 **Reduced motion:** the strip stops and becomes a normal horizontal scroller with every item reachable.

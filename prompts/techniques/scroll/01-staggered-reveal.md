@@ -3,25 +3,25 @@ Adapted from MotionSites scroll.md #1 (MIT).
 # Viewport-triggered staggered reveal (+ corner objects)
 
 Blocks below the hero fade and rise once as they enter the viewport, with per-item delays so a group cascades. The
-corner version frames a centred heading with four of the client's cut-outs that slide in toward the corners.
-This is a supporting move only: a reveal on its own is not "motion with a job" (`motion.md`), and sections that only
-fade up read as basic. Pair it with the section's real motion graphic and a designed join.
+corner version frames a centred heading with four of the client's cut-outs sliding in toward the corners. A supporting
+move only: a reveal alone is not motion with a job, and sections that only fade up read as basic. Pair it with the
+section's real motion graphic and a designed join.
 
 **Needs:** nothing for the plain reveal; four clean cut-outs of the client's objects for the corner version.
 
 ## Parameters
 - Default: `opacity 0, y 30px` to rest, **0.7s**, `var(--ease-out)`, once. Large headings y 40px; media blocks y 60px,
   0.9s; two-column splits from `x -40px` / `x +40px`; card grids `scale(.95)` plus fade.
-- Trigger: IntersectionObserver `threshold .15`, `rootMargin: 0px 0px -10% 0px` (the reader sees it happen).
-  Eager alternative: `threshold 0`, `rootMargin 50px`.
+- Trigger: IntersectionObserver `threshold .15`, `rootMargin: 0px 0px -10% 0px` (the reader sees it happen). Eager:
+  `threshold 0`, `rootMargin 50px`.
 - Stagger `base + i x step`: list `150 + i*120ms`, panel rows `300 + i*110ms`, nav links `100 + i*100ms`, stat
   columns `i*150ms` (y 30, 0.8s), grid cards `i*100ms` (y 20, 0.7s). Keep a group's whole cascade within 0.6-1s.
 - Corner objects: `x +-80px`, 0.9s, delays .10 / .15 / .25 / .30s; sizes 120 to 210px by breakpoint.
 - Hide targets only when JS runs (`.js` on `<html>`), so content never vanishes if a script fails.
-- `threshold` is a fraction of the element: a block taller than about 6.6 viewports never reaches 0.15, so use
+- `threshold` is a fraction of the element: a block taller than about 6.6 viewports never reaches 0.15; use
   `threshold: 0` plus `rootMargin` for very tall blocks.
 - Never start a reveal from `clip-path: inset(0 0 100% 0)`: it has no visible area and never fires the observer. Leave
-  a 2px strip (playbook, "Bugs to avoid").
+  a 2px strip.
 - Never put `overflow:hidden` on an ancestor of a sticky element; use `overflow-x:clip`.
 
 ## Code
@@ -63,9 +63,6 @@ const revealIO = new IntersectionObserver((entries) => entries.forEach((e) => {
 }), { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
 document.querySelectorAll('[data-reveal]').forEach((el) => revealIO.observe(el));
 ```
-
-GSAP equivalent: `gsap.from(items, { y: 30, opacity: 0, duration: .7, ease: 'expo.out', stagger: .12,
-scrollTrigger: { trigger: group, start: 'top 85%', once: true } })` (`expo.out` matches `--ease-out`).
 
 **Phone:** works as is. Shrink corner objects (the clamp does it) and keep them off the heading and buttons; drop the
 bottom pair if they crowd the copy.

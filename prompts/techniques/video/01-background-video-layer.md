@@ -2,20 +2,22 @@ Adapted from MotionSites video-and-media.md #1 (MIT).
 
 # Cinematic background video layer
 
-A muted full-bleed film fills the hero and the UI floats over it. The footage gives all the depth, so no decorative blobs.
-Use it when the client's own film carries the mood. Pick one scrim from `04-edge-blend-scrims.md`, or none when the frame has calm dark space behind the copy.
+A muted full-bleed film fills the hero and the UI floats over it. The footage gives the depth, so no decorative blobs.
+Use it when the client's own film carries the mood. Add one scrim from `04-edge-blend-scrims.md`, or none when the
+frame has calm dark space behind the copy.
 
-**Needs:** a film from the client (or a free AI tool), encoded with `film.py`, plus a poster and a separate still for reduced motion.
+**Needs:** a film from the client (or a free AI tool), encoded with `film.py` (kit) or ffmpeg, plus a poster and a
+separate still for reduced motion.
 
 **Parameters**
 - Absolute, `object-fit: cover`. The section background is the colour of the film's edges, so nothing flashes before the first frame.
-- `muted autoplay playsinline` and `video.muted = true` as a property too (iOS needs all of them).
+- `muted autoplay playsinline` plus `video.muted = true` as a property (iOS needs all of them).
 - `object-position: 70% center` (or wherever the subject is) so portrait crops keep the subject.
-- Entrance: opacity 0 → 1 over 1.8s on `var(--ease-out)`. Optional settle `scale(1.05) → 1`: only when the source is at least 1.2x its display size.
+- Entrance: opacity 0 → 1 over 1.8s on `var(--ease-out)`. Optional settle `scale(1.05) → 1` only when the source is at least 1.2x its display size; otherwise drop the scale and keep the fade.
 - Or a delayed reveal: keep the poster during the headline intro and fade the film in at about 2.8s.
 - Pause off screen (IntersectionObserver).
-- Loop only a long film whose ends match. Never loop a short clip: let it end on its last frame, or scrub it over scroll with `scrub.js`. A loop past 5s needs a pause button (`film-control.js`).
-- Serving (playbook): a 1280 mp4 for screens up to 1100px, a 1920 webm + mp4 above, `preload="auto"` on this first film only, `preload="none"` on any film below it. Home-page film total under 4 MB, at most 3 videos per page.
+- Loop only a long film whose ends match. A short clip ends on its last frame, or is scrubbed over scroll (`scrub.js` in the kit; see INDEX).
+- Serving: a 1280 mp4 for screens up to 1100px, a 1920 webm + mp4 above; `preload="auto"` on this first film only, `preload="none"` on any film below it.
 
 ```html
 <section class="vhero">
@@ -41,8 +43,6 @@ Use it when the client's own film carries the mood. Pick one scrim from `04-edge
   .vhero__still{display:block}
 }
 ```
-Drop the `scale(1.05)` (keep only the opacity fade) when the source is not at least 1.2x its display size.
-
 ```js
 function mountVideo(video, { revealDelay = 0, loop = false } = {}) {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { video.pause(); return; } // the still shows instead
@@ -56,10 +56,11 @@ function mountVideo(video, { revealDelay = 0, loop = false } = {}) {
     .observe(video);
 }
 mountVideo(document.querySelector('.vhero__media'));
-// Delayed reveal, letting the headline intro own the first ~3s:
-// mountVideo(el, { revealDelay: 2800 });
+// Delayed reveal so the headline intro owns the first ~3s: mountVideo(el, { revealDelay: 2800 });
 ```
 
-**Phone:** use `100svh` with a `100vh` fallback so browser chrome doesn't crop. The 1280 source serves phones. Re-check the focal point at 375x812 and change `object-position` per breakpoint. The subject stays the biggest thing, with the headline and button clear of it.
+**Phone:** `100svh` with a `100vh` fallback so browser chrome doesn't crop. The 1280 source serves phones. Re-check the
+focal point at 375x812 and change `object-position` per breakpoint. The subject stays the biggest thing, with the
+headline and button clear of it.
 
 **Reduced motion:** the film is hidden and the separate still shows. Nothing waits on the film.

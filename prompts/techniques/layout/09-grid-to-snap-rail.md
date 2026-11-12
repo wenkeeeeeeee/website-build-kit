@@ -2,25 +2,24 @@ Adapted from MotionSites layout-and-ui.md #9 (MIT).
 
 # Desktop grid that becomes a phone scroll-snap rail
 
-Three or four large cards people compare (plans, packages, set menus, service tiers) form a grid on desktop and a
-native, swipeable, snapping rail on tablet and phone. Beats stacking three tall cards. Cards are solid and designed
-in the variant's style (taste.md, "Boxes and lines"), not glass.
+3-4 large cards people compare (plans, packages, set menus, service tiers): a grid on desktop, a native snapping swipe
+rail on tablet and phone. Beats stacking three tall cards. Solid cards in the variant's style, not glass.
 
 **Needs:** 3-4 real offers with real prices and what's included, from content data.
 
 ## Values
-- Desktop: 3 columns, 24 px gap, `max-width 1100px`.
-- ≤1024 px: `display:flex; overflow-x:auto; scroll-snap-type:x mandatory`, cards `flex: 0 0 min(320px, 82vw)`,
-  `scroll-snap-align:center`, 16 px gap. The rail bleeds to the screen edges (negative inline margin equal to the
+- Desktop: 3 columns, 24px gap, `max-width 1100px`.
+- ≤1024px: `display:flex; overflow-x:auto; scroll-snap-type:x mandatory`, cards `flex: 0 0 min(320px, 82vw)`,
+  `scroll-snap-align:center`, 16px gap. The rail bleeds to the screen edges (negative inline margin equal to the
   gutter, plus `scroll-padding-inline`). Scrollbar hidden.
-- Cards: `--surface` fill, `1px solid var(--line)`, radius 44 px (or the client's own shape), padding `5vh 24px`,
-  height capped so the section still fits one screen at 1536×700 below the header: `min-height: min(580px, 64vh)`.
-  An optional diagonal sheen `::before` from a faint `--ink` tint to transparent at 50 %.
-- Hover (desktop only): `translateY(-12px) scale(1.01)`, border switches to `--accent`, .6 s on `--ease-out`.
-- Inside: tier name 1.1 rem in `--muted`; price 2.8 rem / 500 / −.02em; one line of description; checklist rows with
-  28 px round checks; the variant's primary button pinned with `margin-top:auto`.
-- Billing or size toggle: 52 × 28 track, 20 px knob, `translateX(24px)`, .3 s on `--ease-in-out`, `role="switch"`,
-  drawn in the site's style (playbook, "Controls in the site's design").
+- Cards: `--surface` fill, `1px solid var(--line)`, radius 44px (or the client's own shape), padding `5vh 24px`,
+  `min-height: min(580px, 64vh)` so the section still fits one screen at 1536×700 below the header. Optional diagonal
+  sheen `::before` from a faint `--ink` tint to transparent at 50%.
+- Hover (desktop only): `translateY(-12px) scale(1.01)`, border to `--accent`, .6s on `--ease-out`.
+- Inside: tier name 1.1rem in `--muted`; price 2.8rem / 500 / −.02em; one line of description; checklist rows with
+  28px round checks; the variant's primary button pinned with `margin-top:auto`.
+- Billing or size toggle: 52 × 28 track, 20px knob, `translateX(24px)`, .3s on `--ease-in-out`, `role="switch"`,
+  drawn in the site's style, not a browser default.
 
 ## Code
 ```css
@@ -55,7 +54,7 @@ in the variant's style (taste.md, "Boxes and lines"), not glass.
 ```
 Prices come from content data; any price not confirmed shows `[client to confirm]`.
 
-**Phone:** the rail is the phone version. Let the next card peek (82vw) so people know to swipe, and keep each card's
-action inside the card.
+**Phone:** the rail is the phone version. The next card peeks (82vw) so people know to swipe; each card's action stays
+inside the card.
 
 **Reduced motion:** no hover lift; the rail still scrolls and snaps natively.

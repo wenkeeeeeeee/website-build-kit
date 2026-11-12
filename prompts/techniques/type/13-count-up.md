@@ -2,13 +2,12 @@ Adapted from MotionSites type-and-text-motion.md #13 (MIT).
 
 # Count-up numbers & counter preloader
 
-Real numbers roll up from zero when their row becomes visible, each slightly later and longer than the previous one
-(proof bars, below-hero facts, a single big figure). Plus a short counter opening: 000 -> 100 in huge numerals with the
+Real numbers roll up from zero when their row comes into view, each slightly later and longer than the last (proof
+bars, below-hero facts, a single big figure). Plus a short counter opening: 000 -> 100 in huge numerals with the
 client's own words cycling, then the hero entrance plays.
 
-**Needs:** real client numbers (years, branches, orders, customers served). Only real client numbers: every value is a
-`[placeholder]` filled from the content data, and a number the client hasn't confirmed is dropped or tagged
-`[client to confirm]`. In the hero, numbers never lead: at most one small line (`taste.md`).
+**Needs:** real client numbers (years, branches, orders, customers served). Drop an unconfirmed number or tag it
+`[client to confirm]`. In the hero, numbers never lead: at most one small line.
 
 ## Parameters
 - easeOutCubic `1 - (1 - t)^3`. In a row: duration `1500 + i x 80` ms, delay `480 + i x 90` ms, so counting starts as
@@ -24,7 +23,7 @@ client's own words cycling, then the hero entrance plays.
 
 ## Code: count-up
 ```html
-<!-- values filled from content JSON (e.g. content/stats.json) at build time; never invented -->
+<!-- values from content JSON (e.g. content/stats.json) -->
 <div class="stats-grid" data-count-group>
   <div class="stat"><span class="stat-val" data-count="[placeholder]" data-from="stats.years" data-suffix="">[placeholder]</span><span class="stat-label">[placeholder: label]</span></div>
   <div class="stat"><span class="stat-val" data-count="[placeholder]" data-from="stats.branches">[placeholder]</span><span class="stat-label">[placeholder: label]</span></div>
@@ -67,10 +66,10 @@ document.querySelectorAll('[data-count-group], [data-count]:not([data-count-grou
 ```
 
 ## Code: counter preloader
-Prefer the client's object or logo as the opening (`motion.md`); use a counter only when numbers suit the concept.
-It must never block: it tracks real loading (hero poster decoded, fonts ready), is capped so the hero shows within
-3 seconds, can be skipped by click, key, wheel or touch, and shows once per session. Decide "seen" in an inline
-`<head>` script so the loader never flashes on repeat visits:
+Prefer the client's object or logo as the opening; use a counter only when numbers suit the concept. It must never
+block: it tracks real loading (hero poster decoded, fonts ready), is capped so the hero shows within 3 s, can be
+skipped by click, key, wheel or touch, and shows once per session. Decide "seen" in an inline `<head>` script so the
+loader never flashes on repeat visits:
 ```html
 <script>try{if(sessionStorage.getItem('intro-seen')==='1')document.documentElement.classList.add('intro-seen')}catch(e){}</script>
 ```
@@ -100,7 +99,7 @@ function swapWord(el, text) {                         // exit up, enter from bel
       { duration: 350, easing: 'cubic-bezier(.16,1,.3,1)' });                    // --ease-out
   };
 }
-// words: the client's own words from content data (products, places), never stock slogans
+// words: the client's own words from content data (products, places), never slogans
 function runLoader(onDone, { words = [], every = 700, max = 2200, ready } = {}) {
   const el = document.querySelector('.loader');
   if (!el) return onDone && onDone();
@@ -133,7 +132,7 @@ const ready = Promise.all([document.fonts.ready, poster && poster.decode ? poste
 runLoader(() => document.documentElement.classList.add('hero-go'), { words: CONTENT.loaderWords, ready });
 ```
 Gate hero entrances on `.hero-go` (e.g. `.hero-go .in-rise{animation-play-state:running}`) so they play after the
-loader, not behind it. Better still, land the last number or word exactly on its twin in the hero.
+loader, not behind it. Better: land the last number or word exactly on its twin in the hero.
 
 **Phone:** count-up works as is. Keep the loader under 2 s on phones; drop it if the hero is already ready.
 
