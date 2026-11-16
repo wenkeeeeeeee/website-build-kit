@@ -30,7 +30,14 @@ Everything depends on this, so it comes first and gets the most time.
 - **Buyer's path:** who buys, what brings them, their top three doubts with the proof for each, when the price appears
   (after they want the thing, so rarely in the hero), and the action. Every home page follows it.
 - **Core:** one line: what this business is, what it sells, who it's for.
-- **A direction per variant:** one sentence on what the hero is made of and does, from this client's world and the hero
+- **Story:** the story the client wants to tell in one sentence, and what visitors need to see or feel to believe it.
+  It drives every variant.
+- **Ideas before references.** Write 10 one-line "what if" ideas built around the story and what the customer decides
+  or does (the menu as a record crate, sizing as a fitting room), from a beautiful classic site to something playful.
+  Take at least one from outside the web: a poster, packaging, a film title sequence, a game menu, an album cover.
+  Pick the 3 strongest that fit the tone, plus the free one. An idea that could sit on any business in the category
+  gets replaced.
+- **A direction per idea:** one sentence on what the hero is made of and does, from this client's world and the hero
   material ("the bouquet rises and the visitor's name prints across the balloon"). Then the hero recipe from "The hero"
   in `taste.md`, and a look fitting the tone and category. Variants differ in idea and layout, never in tone, and never
   by picking a weaker look just to be different.
@@ -38,10 +45,12 @@ Everything depends on this, so it comes first and gets the most time.
   a game, anything that fits the business. It needs no reference and may leave the tone, but a stranger must still see
   this business at a glance, and it carries the same content, prices and action.
 
-## 3. References (4 minutes): Benchmarks and Awwwards only
-Only these sources, plus any reference the user pasted in `LEAD.md`, which always gets its own variant.
-1. **Benchmarks first.** Read "Benchmarks" and "Rejected" in `reference-library.md` and pick the Benchmarks that fit the
-   business, the tone and each direction. Their "Made of" must match the hero material.
+## 3. References (4 minutes): techniques for each idea, from Benchmarks and Awwwards only
+References come after the ideas. They show how to make each idea look and move well and set the level to match; they
+never set its layout, section order or hero. Only these sources, plus any reference the user pasted in `LEAD.md`, which
+always gets its own variant.
+1. **Benchmarks first.** Read "Benchmarks" and "Rejected" in `reference-library.md` and pick the Benchmarks whose craft
+   serves each direction in this tone. Their "Made of" must match the hero material.
 2. **Then Awwwards, if it fits better.** WebSearch `site:awwwards.com/sites <tone words> <what the hero does>` and
    `site:awwwards.com/inspiration <the same>`, such as "playful gift scroll animation" or "premium electric scooter 3D
    product". Prefer Site of the Day, Site of the Month and Developer Award winners. Awwwards blocks browsers: open the
@@ -53,7 +62,9 @@ Only these sources, plus any reference the user pasted in `LEAD.md`, which alway
    right tone, with a hero made of the same kind of material. Name two frames that prove it, or drop it. Plain layouts,
    beige with a serif, and loud colour with no idea behind it fail, even on Awwwards.
 5. **End with at least 2 per variant** (the free variant needs none; it takes one only if it helps the craft): a lead
-   that sets the hero and page, plus one for specific parts. Never one reference per scroll move or detail. Reopen each
+   that sets the level, plus one for specific parts. Name the one or two techniques to take from each (a transition, a
+   type treatment, how the scroll is paced). If a reference's layout seems better than the idea, rethink the idea; don't
+   adopt the layout. Never one reference per scroll move or detail. Reopen each
    kept sheet cold and replace anything weak. If Awwwards has nothing better, use the closest Benchmark and say so;
    don't search elsewhere.
 
@@ -66,10 +77,10 @@ message `Read KIT/prompts/office/build.md and run it. CLIENT=... PROJECT=... KIT
 report the minutes taken, the directions and the thread's `link` in under 80 words.
 
 With `STOP_BEFORE_BUILD`, end with the review package:
-- The business in three lines; the tone and why; the Core line; the buyer's path; what the category expects.
+- The business in three lines; the tone and why; the Core and Story lines; the buyer's path; what the category expects.
 - The hero material: usable clips and photos with sizes, and what's missing.
-- Per variant: name and direction; the hero (recipe, what each scroll step shows, the words); section order; type pair
-  and palette; each reference as URL, Benchmark or Awwwards, its sheet files and what it takes. Show the lead's
+- Per variant: name and the idea behind it; the hero (recipe, what each scroll step shows, the words); section order;
+  type pair and palette; each reference as URL, Benchmark or Awwwards, its sheet files and the technique it gives. Show the lead's
   `hero-frames` sheet as an image.
 - What's unconfirmed, and one line saying the heroes are built first and shown as frames before the rest.
 
@@ -83,6 +94,8 @@ Tone: <playful | modern and professional>, because <what the business is about a
 Buyer's path: <who buys and on what device; what brings them; top 3 doubts, each with its proof; when the price
   appears; the action>
 Core: <one line: what this business is, what it sells and who it's for>
+Story: <the client's story in one sentence, and what visitors need to see or feel to believe it>
+Ideas: <the 10 "what if" lines; mark the 3 picked and the free one>
 Category look: <the 2-3 category brands opened, and what a stranger must recognise this business as>
 Facts: <what they sell, where, how to order, WhatsApp number, 6-10 products with prices>
 The customer: <who they are, and the problem, worry or desire that brings them, in their words>
@@ -113,5 +126,5 @@ References opened: <every page: Benchmark or Awwwards, kept or dropped, why, and
 | Header | | | |
 | Type pair (each font and what in the client's world it answers to) | | | |
 | Palette | | | |
-| References (URL, Benchmark or Awwwards, sheet files, the part to take; at least 2) | | | |
+| References (URL, Benchmark or Awwwards, sheet files, the technique to take; at least 2) | | | |
 ```

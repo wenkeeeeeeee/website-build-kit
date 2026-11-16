@@ -35,23 +35,25 @@ Build websites for this client in this thread.
      reason.
    - If something is unknown, write [client to confirm]. Never make up prices, reviews or claims.
 
-3. Study references and look for ideas.
-   - Capture my references while scrolling with `node tools/contact-sheet.cjs <urls> --out refs`, or grab frames from
-     videos, and write down the one or two techniques that make each one impressive (a transition, a type
-     treatment, how the scroll is paced). Borrow those techniques, not the layout, section order or hero.
-   - Open the Benchmarks list in `KIT/prompts/office/reference-library.md`. Use any that suit this business and the tone
-     you chose (pick a 3D one only if you'll really build the hero in 3D), and take their craft, not their subject.
+3. Find ideas first, then references.
+   - Write 10 one-line ideas, each a "what if" built around the client's story and what the customer decides or does
+     (the menu as a record crate, sizing as a fitting room), from a beautiful classic site to something playful like a
+     map, a game, a 3D room or a card pack. Keep the ones someone would screenshot and send to a friend.
    - Take at least one idea from outside the web: a poster, packaging, a film title sequence, a game menu, an album
      cover or a magazine spread.
    - Look at what's already in WebsiteProjects/. Reuse ideas that worked, but give them a fresh take for this client.
-   - Write 10 one-line ideas, each a "what if" built around what the customer decides or does (the menu as a record
-     crate, sizing as a fitting room), from a beautiful classic site to something playful like a map, a game, a 3D room
-     or a card pack. Keep the ones someone would screenshot and send to a friend.
+   - Pick the 3 strongest ideas that fit the tone, plus 1 for the free variant.
+   - Then find references for each idea. Capture my references while scrolling with
+     `node tools/contact-sheet.cjs <urls> --out refs`, or grab frames from videos, and write down the one or two
+     techniques that make each one impressive (a transition, a type treatment, how the scroll is paced). Borrow those
+     techniques, not the layout, section order or hero.
+   - Open the Benchmarks list in `KIT/prompts/office/reference-library.md`. Use any whose craft suits an idea and the
+     tone (pick a 3D one only if you'll really build the hero in 3D), and take their craft, not their subject.
 
 4. Plan the variants.
-   - Variants 1-3 follow the tone you chose. Start each one from the client's story, what visitors want to see and
-     your ideas, then use references and Benchmarks to make it look and move well. Each variant needs its own idea
-     that only fits this client; if you hid the logo and it could pass for its reference, change it.
+   - Variants 1-3 are your three ideas, in the tone you chose. References and Benchmarks make them look and move well.
+     Each variant needs its own idea that only fits this client; if you hid the logo and it could pass for its
+     reference, change it.
    - Variant 4 is free: explore on your own and make something we haven't built before (modern, futuristic, playful like
      a game, or anything else that fits the business). It still has to sell.
    - For each variant, plan what the hero shows and how it moves (using the client's real photos and products), the

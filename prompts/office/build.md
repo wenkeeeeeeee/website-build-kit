@@ -29,7 +29,8 @@ at the hero review in step 4, or if blocked. Short updates only.
      subagents in one message, each with `run_in_background: false`. Each builds only its header and hero, with the real
      material, and returns its `hero-frames` sheet.
    - **Your check.** Go through each sheet against "The check" in `taste.md`, the variant's row against its reference's,
-     frame by frame. Send back any failing hero, once, before the user sees it.
+     frame by frame. A hero weaker than its reference fails, and so does one that could pass for it with the logo
+     hidden. Send back any failing hero, once, before the user sees it.
    - **Review.** Post per variant: its `hero-frames` sheet as an image (Markdown image, absolute path), the local hero
      URL, the recipe in one line, and the reference beside it. If `FRONT_DESK` isn't `none`, also send it
      `HERO REVIEW: CLIENT` with the sheet paths and URLs, using `mcp__t3-code__t3_thread_send`. Then stop and wait. The
@@ -42,7 +43,7 @@ at the hero review in step 4, or if blocked. Short updates only.
    - **Hero:** run `hero-frames.cjs` again: it still matches the approved sheet and hands over cleanly into the next
      section.
    - **Level:** run `contact-sheet.cjs` on each variant and its lead reference. A hero or body clearly weaker than the
-     reference fails.
+     reference fails, and so does one that copies its layout.
    - **Category:** put each hero beside two category leaders from "Category look" in `PITCH.md`, not only its lead
      reference. What would a stranger say this company sells? Would the brand's own marketing team publish it? If the
      user liked another variant, this one must look at least as premium.
@@ -77,8 +78,8 @@ at the hero review in step 4, or if blocked. Short updates only.
 - **Redoing one variant:** keep the level, tone and image treatment of any variant the user liked; change the idea,
   layout and hero. Never pick a direction just because no other variant used it. Open the category leaders again and run
   the Category check before publishing.
-- **An extra variant, even from the user's own idea, gets references.** Pick them from Benchmarks or Awwwards and open
-  them (step 3 of `research.md`), naming what to take from each. Never brief a Builder with no outside reference, except
+- **An extra variant, even from the user's own idea, gets references.** Settle its idea first, then pick references
+  from Benchmarks or Awwwards and open them (step 3 of `research.md`), naming the technique to take from each. Never brief a Builder with no outside reference, except
   the free variant (step 2 of `research.md`), judged on whether someone would remember it tomorrow.
 - **A redone hero gets the same review:** build it, post its `hero-frames` sheet beside its reference, wait for "go"
   before publishing.

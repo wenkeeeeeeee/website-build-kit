@@ -1,17 +1,18 @@
-# Subagent brief: build one variant from a reference
+# Subagent brief: build one variant from its idea
 
 Fill in the {{fields}} and send one copy per variant, all in one message so they run in parallel.
 
 ---
 
-You are building one website variant for {{CLIENT}}, adapting a reference's design language. Other agents build other
+You are building one website variant for {{CLIENT}} around its own idea, using techniques from its references to make
+it look and move well. Other agents build other
 variants alongside you: stay inside your own folder.
 
 **Phase: {{hero | rest}}.** The free variant has no reference: run `hero-frames.cjs` on your hero alone and judge it by
 "The check" in `taste.md` and whether someone would remember it tomorrow.
 - **hero (25 minutes):** build only the header and hero, at full craft with the real material, then run
   `node {{KIT}}/tools/web/hero-frames.cjs <your hero url> <lead reference url> --out ref` and go through the sheet as
-  "The check" in `taste.md` says. Fix and re-run until each frame belongs beside the reference's. Report the sheet path:
+  "The check" in `taste.md` says. Fix and re-run until each frame is at the reference's level without looking like it. Report the sheet path:
   the user approves the hero from it before anything else is built.
 - **rest (30 minutes):** the hero in your folder is approved: keep it, apart from changes listed here. Build everything
   below it and every page to the same level.
@@ -30,19 +31,19 @@ result is a failed one.
   `PITCH.md`}}. Material: {{the exact clips and photos it uses, with sizes, from "Hero material" in `PITCH.md`}}. If
   the material can't carry a step, change the step rather than fake it, and say so in your report.
 - Changes from the user: {{for a repeat hero round or the rest phase, their words; otherwise none}}.
-- Reference: {{URLs, each marked Benchmark or Awwwards, and the part to take from each}}. What I saw at a glance:
+- Reference: {{URLs, each marked Benchmark or Awwwards, and the technique to take from each}}. What I saw at a glance:
   {{2-4 lines: header, hero, signature sections, motion}}.
-- Adapting the reference: {{how its components map to {{CLIENT}}: which products/sections, which colours (from the
-  client's world, not the reference's), what to avoid}}. Fit layout and components to the client; don't reproduce the
-  reference.
+- Using the references: {{which technique serves which part of your idea; colours from the client's world, not the
+  reference's; what to avoid}}. Your idea sets the layout and hero; the references only show how to make it look and
+  move well. If you hid the logo and it could pass for a reference, change it.
 - Facts: {{3-5 lines: what the business sells, where, proof (reviews, certificates), how people order}}.
 
 ## Five rules that beat your direction
 1. **The hero delivers the business core and stays clean,** as "The hero" in `taste.md` says: what this business is,
    sells and is for, its main visual what the customer came for. A title with some photos is never enough. The opening
    lands there, never hiding or delaying it.
-2. **The whole page matches the hero and its reference.** Take what gives the reference its impact (scale, imagery,
-   colour, composition), not a small effect. Sections below at the same level, images treated like the hero's, never
+2. **The whole page carries the hero's idea at the reference's level.** Match the impact the reference has (scale,
+   imagery, craft), not its layout or composition, and not just a small effect. Sections below at the same level, images treated like the hero's, never
    cards and text on a plain background.
 3. **It carries the whole business,** like every variant ("The body" in `taste.md`), services and ways to book
    included. Your direction changes how it's told, never how much; what doesn't fit the home page story gets a designed
@@ -70,7 +71,7 @@ only for the effects and image work you're doing.
    `variants/_shared/starter` or a finished variant. Check the result is `variants/{{nn-name}}/site/index.html`, not one
    level up.
 4. **Redesign everything visible.** It already has the data, cart, catalogue filters and inner pages: keep every page
-   working. Rebuild the home page around the reference's components, and restyle the header, footer, page heroes, cards,
+   working. Rebuild the home page around your idea, and restyle the header, footer, page heroes, cards,
    colours, type and motion on every page, so it's its own variant, not a reskin. Remove what you don't use. Name your
    variant in the comment on line 1 of the main stylesheet.
 5. **Build the signature moment with the kit,** as `PITCH.md` names it, not your own code: `scrub.js`, `prologue.js`,
@@ -112,5 +113,5 @@ only for the effects and image work you're doing.
 
 ## Report back (under 200 words)
 Hero phase: the hero URL, the `hero-frames` sheet path, what each scroll step shows, any step the material couldn't
-carry. Rest phase: folder and URL; the direction in 3-4 lines; which reference components you adapted and how; the
+carry. Rest phase: folder and URL; the direction in 3-4 lines; which reference techniques you used and where; the
 opening, set-piece and motion graphics built; palette and fonts; anything unconfirmed.
