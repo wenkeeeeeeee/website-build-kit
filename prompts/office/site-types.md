@@ -57,6 +57,17 @@ is about and what customers come for, then check how the client talks in its own
 look. Mixed signals: modern and professional. A professional client with a playful voice can have one warmer variant,
 still clean and credible.
 
+**Character: the tone fitted to this business.** The tone is a family, not a look: a design-and-renovation studio and a
+sports brand can both be modern and professional and still need opposite sites. So research also writes the business's
+own character in 3–5 words, taken from how it looks and talks, what it sells and how its category leaders feel (a
+design-and-build studio: calm, architectural, daylight, precise; a sports brand: fast, physical, loud; a family bakery:
+warm, generous, homely). Every builder is briefed with these words, and type size and case, image treatment, contrast,
+density, space and motion pace follow them rather than a default for the tone: rooms shown in their own light for an
+interiors studio, dark and moody frames for a night bar, huge type for an athlete. Palettes stay open to explore, light
+or dark, across the variants; the character decides how each one feels. **Check:** put the home page beside the
+character words; if a stranger would describe it with different words (an interiors studio that reads industrial, a
+bakery that reads corporate), rework the look, not the idea.
+
 **Tone decides the references.** Pick Benchmarks tagged with the tone, and put the tone's words in Awwwards searches:
 playful, colourful, illustrated; or premium, minimal, technology, corporate. A reference in the other tone can't lead a
 variant, however good.
@@ -94,10 +105,13 @@ hero.
   the visit. **Hero:** the real room or dish, sharp and whole at the centre, the effect around it (light, steam, the time
   of night). The cursor or a hold shows the next state: empty room to full, raw to plated, day to night. One line says
   what, where and when, next to the booking action. Room sound optional.
-- **Work worth showing:** event styling, florists, weddings, interiors, architecture, photography, tattoo, set design.
-  The portfolio is the proof. **Hero:** before and after in one move: the bare space, filled with the finished work by
-  the visitor's hold or cursor. Below: giant job names whose hover opens the work, and one line or thread carrying you
-  through the page.
+- **Work worth showing:** event styling, florists, weddings, interiors, architecture, renovation, fit-out,
+  design-and-build and contractors, photography, tattoo, set design. The portfolio is the proof. **Hero:** before and
+  after in one move: the bare space, filled with the finished work by the visitor's hold or cursor. Below: giant job
+  names whose hover opens the work, and one line or thread carrying you through the page. For spaces (interiors,
+  architecture, renovation, fit-out): generous space around the work, photos framed and shown in their own light, never
+  dimmed to carry text, and the trade's own drawing language as the detail layer: floor plans, dimension lines, drawing
+  numbers and title blocks, "Detail 1" callouts on photos, "not to scale" notes.
 - **Guides, media and creators:** city guides, places-to-go and review accounts, listings and directories, event
   calendars, creator channels and communities. They sell a visit or outing, not a product: places, prices and where to
   go, with the creator's own voice and posts as proof. **Hero:** the best places or episodes as real photos or footage,

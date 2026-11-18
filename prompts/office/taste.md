@@ -128,6 +128,10 @@ Fonts are the fastest machine-made tell, so they come from the client's world.
   commercial web use, self-hosted as `woff2`.
 - **One face with a point of view, one quiet face to read.** If the pair would suit any other client, pick again. The
   display face must carry the client's languages; Noto only for a script with no better option.
+- **Size and case follow the character** ("Character" under "Tone" in `site-types.md`), not the wish to be bold.
+  Professional, design, property, health and finance clients: mixed-case headlines at moderate sizes (about 40–72px on a
+  desktop), with space doing the work. Giant, condensed or extra-wide uppercase only where the character is loud: sports,
+  streetwear, nightlife, playful brands. If the client's brand already uses a face, one variant may keep it.
 - **Other tells:** small uppercase mono labels above every heading, "01 / 02 / 03" numbering, one italic word in a
   headline, cream paper with a serif by default, gradient text, glass cards.
 

@@ -26,7 +26,8 @@ Everything depends on this, so it comes first and gets the most time.
   each photo's size and whether it's sharp at full height; what could be cut out with a clean edge.
 
 ## 2. Tone and direction (1 minute)
-- **Tone:** "Tone" in `site-types.md`. Every variant uses it.
+- **Tone and character:** "Tone" in `site-types.md`, plus 3–5 character words for this business ("Character" there).
+  Every variant uses both, and every builder is briefed with the character words.
 - **Site type and pages:** `site-types.md`.
 - **Buyer's path:** who buys, what brings them, their top three doubts with the proof for each, when the price appears
   (after they want the thing, so rarely in the hero, but within about 1.5 screens), and the action. Every home page follows it.
@@ -95,6 +96,7 @@ Then stop and wait. If the user sends changes, update `PITCH.md`, say what chang
 # CLIENT
 Site type: <type>, because <one line>.
 Tone: <playful | modern and professional>, because <what the business is about and what customers come for>
+Character: <3-5 words for how this business should feel, from how it looks and talks and its category leaders>
 Buyer's path: <who buys and on what device; what brings them; top 3 doubts, each with its proof; when the price
   appears; the action>
 Core: <one line: what this business is, what it sells and who it's for>

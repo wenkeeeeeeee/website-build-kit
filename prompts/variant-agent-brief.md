@@ -23,7 +23,8 @@ result is a failed one.
 ## Your variant
 - Folder: `{{PROJECT ROOT}}/variants/{{nn-name}}/` (site in `site/`, your reference captures in `ref/`).
 - Direction: {{from `PITCH.md`: one sentence on what the hero is made of and what it does. Not a style word.}}
-- Tone: {{playful | modern and professional, from `PITCH.md`}}. Buyer's path: {{from `PITCH.md`}}.
+- Tone: {{playful | modern and professional, from `PITCH.md`}}. Character: {{the 3-5 words from `PITCH.md`, for this
+  business; your type size, image treatment, contrast, space and motion pace follow them}}. Buyer's path: {{from `PITCH.md`}}.
 - Yours alone, shared with no other variant: how the buyer's path is told {{section order along the path}}; signature
   moment {{the one scroll set-piece}}; business tool {{finder, picker, dial or quote builder}}; basket name {{or none}};
   header {{its own shape}}; type pair {{fonts}}; palette {{from the client's world}}.

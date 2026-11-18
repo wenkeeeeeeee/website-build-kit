@@ -38,6 +38,8 @@ Build websites for this client in this thread.
      must recognise this business as, and they set the level every variant is judged against.
    - Decide the site type and the tone ("Tone" in `site-types.md`) from how the business looks and talks, who its
      customers are and what the category leaders do. Write it down with the reason. Every variant uses this tone.
+   - Fit the tone to this business: write 3-5 character words for how it should feel ("Character" under "Tone" in
+     `site-types.md`; a design-and-build studio and a sports brand need opposite sites in the same tone).
    - If something is unknown, write [client to confirm]. Never make up prices, reviews or claims.
 
 3. Find ideas first, then references.
@@ -66,10 +68,11 @@ Build websites for this client in this thread.
    - Variant 4 is free: your own idea from the client's own object, something we haven't built before, in the client's
      tone (a game only for a playful client). It still has to sell.
    - For each variant, plan what the hero shows and how it moves (using the client's real photos and products, as "The
-     hero" in `taste.md` says), the order of the sections, fonts per "Type" in `taste.md` (its banned list included),
-     and colours from their brand.
+     hero" in `taste.md` says), the order of the sections, fonts per "Type" in `taste.md` (its banned list included,
+     sizes and case set by the character), and colours explored from their brand and world, light or dark, to suit the
+     character. Brief every builder agent with the character words, not only the tone.
    - Before coding, make design images of each variant's hero and two key sections (with an image generator if you have
-     one, otherwise quick rough HTML mock-ups, screenshotted). Pick the version that fits the category and tone best,
+     one, otherwise quick rough HTML mock-ups, screenshotted). Pick the version that fits the category, tone and character best,
      and build that.
    - All four should feel clearly different, at the same high quality.
 
