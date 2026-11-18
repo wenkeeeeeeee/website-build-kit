@@ -11,7 +11,7 @@
 //   - words colliding with a button or link on the first screen
 //   - header links that wrap onto a second row (desktop sizes)
 //   - autoplay videos that are paused or failed, and images that failed to load
-//   - missing share-preview and language tags, an H1 web font that did not load, and a white or blank first paint
+//   - missing share-preview and language tags, an H1 web font that did not load, a font banned by taste.md, and a white or blank first paint
 //     (an extra <name>-early.png taken 350 ms after navigation, first size only) (once per page)
 // --phone adds a real phone emulation (390x844, touch). It skips the one-screen rule and also counts small tap
 // targets. Use it: an element off the side widens a phone's page, which a narrow desktop window never shows.
@@ -233,6 +233,12 @@ if (!urls.length) {
         const hf = report.h1Font;
         notes.unshift(`fonts loaded: ${report.loaded.join(', ') || 'none'} | h1: ${hf ? `${hf.stack} ${hf.size}` : 'no h1'}`);
         if (hf && !hf.system && !hf.loaded) issues.push(`font: the H1's "${hf.first}" ${hf.defined ? 'did not load' : 'has no @font-face'}, so it shows a fallback`);
+        // Fonts banned by "Type" in prompts/office/taste.md (keep this list in step with it).
+        const BANNED = ['Inter', 'Inter Tight', 'Fraunces', 'Figtree', 'DM Sans', 'DM Serif', 'DM Serif Display', 'DM Serif Text', 'DM Mono',
+          'Instrument Serif', 'Instrument Sans', 'Bricolage Grotesque', 'Manrope', 'Sora', 'Syne', 'Outfit', 'Plus Jakarta Sans',
+          'Space Grotesk', 'Playfair Display', 'Playfair', 'Cormorant', 'Cormorant Garamond', 'Newsreader', 'Archivo', 'Bodoni Moda', 'JetBrains Mono'];
+        const banned = report.loaded.filter((f) => BANNED.some((b) => b.toLowerCase() === f.toLowerCase()));
+        if (banned.length) issues.push(`font: ${banned.join(', ')} banned by "Type" in taste.md (fine only if the client's own brand uses it)`);
         // A white or flat first paint, unless the settled page looks the same (a white or flat design).
         if (early && pngjs) {
           const a = samplePixels(early, pngjs.PNG), b = samplePixels(settled, pngjs.PNG);

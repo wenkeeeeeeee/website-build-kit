@@ -8,14 +8,18 @@ The tone in `PITCH.md` sets how much: playful is loud and bouncy, professional p
 buyer's path: it never delays the core, the price or the action.
 
 ## What every variant must have
+In a playful tone, all seven in full. In a modern and professional or luxury tone, calmer: point 3 is one precise
+reveal or piece of animated information per section, with no loops; point 5 is the hero only, slow; point 6 is simple
+hovers (a photo zooms about 1.04 inside its fixed frame, a button changes colour), and nothing moves out from under the
+pointer.
 1. **An opening that never blocks.** Playful: the client's object or logo animates into the hero in 2-3 seconds and
    doubles as the preloader. Professional: at most a one-second reveal of the hero. Either way: skippable, once per
    session, landing exactly on its place in the hero and leaving it clean ("The hero" in `taste.md`).
-2. **One signature scroll set-piece, 2-4 screens of pinning.** Scrolling drives a real sequence: something assembles,
-   opens, travels, transforms or changes state. It sits where it explains the product, never between the visitor and
-   the price or action. When the product suits it, the set-piece is the hero itself ("It moves" under "The hero" in
-   `taste.md`): 1–3 screens, with `scrub.js` for a frame sequence, or GSAP ScrollTrigger and three.js for a 3D or
-   layered product.
+2. **One signature scroll set-piece, at most 2-3 screens of pinning.** Scrolling drives a real sequence: something
+   assembles, opens, travels, transforms or changes state. It sits where it explains the product, after the first price
+   and action, never between the visitor and them. When the product suits it, the hero carries a short scroll move
+   instead ("It moves" under "The hero" in `taste.md`): at most one screen of pinning, with `scrub.js` for a frame
+   sequence or GSAP ScrollTrigger for a layered product.
 3. **Motion with a job in every section:** at least one drawn or animated element carrying that section's meaning.
    Playful: characters, stickers, bounce. Professional: counters, diagrams, product turns, precise reveals. In the hero
    it's the main visual itself, not an extra.
@@ -33,19 +37,22 @@ Drawn in SVG, canvas or WebGL. Pick what fits the client; never the same set in 
 - **Line drawing:** illustrations, routes, stitches, diagrams and underlines draw themselves on scroll.
 - **Shape morphing:** one form becomes another, such as the logo becoming the product.
 - **Motion on a path:** the client's object travels a curve across the page and between sections.
-- **Layered depth:** cut-outs of real photos move apart on scroll. Good when photos are few.
+- **Layered depth:** clean cut-outs of real photos move apart on scroll, in a playful tone.
 - **Particles and generative art** from the client's material: petals, bubbles, steam, sparks, grain.
-- **Masks and reveals:** photos open through the client's shape, not a plain rectangle.
+- **Masks and reveals:** photos open with a wipe or mask into their frame and end whole and fully lit (through the
+  client's shape only in a playful tone).
 - **Animated information:** counters from real numbers, charts that draw, step diagrams that play, maps tracing a route.
 - **Pinned sequences:** stacked cards, horizontal rails, flipping panels, 3D scenes, frame sequences.
 - **Small icons that act:** icons drawn for this client, animating their meaning on hover.
 
 ## Where to start, by design family
-Starting points only; the concept in `PITCH.md` wins.
-- **One beautiful object:** it turns, opens or comes apart in 3D, parts named as they separate.
+Starting points only; the concept in `PITCH.md` wins. Real photos and footage lead; drawn and 3D layers only support
+them.
+- **One beautiful object:** the real product in close-ups and detail as you scroll, parts named; 3D only for a faithful
+  model of the real product.
 - **Packs and jars:** packs fly, stack and burst into their ingredients; the screen changes colour per flavour.
 - **Solves a problem:** an animated diagram plays how the problem happens and how the product answers it.
-- **Body and movement:** a 3D or line-drawn body moves on scroll, joints and muscles named as they work.
+- **Body and movement:** real footage of the body moving, joints and muscles named in a drawn overlay as they work.
 - **A place to visit:** the room opens as you enter, light moves from day to night, a route traces to the door.
 - **Work worth showing:** work arrives through the client's own shapes; projects hand over with shared-element moves.
 - **Trust and expertise:** real numbers count, charts and process diagrams draw themselves. Precise and calm.
@@ -53,7 +60,7 @@ Starting points only; the concept in `PITCH.md` wins.
 - **Origin and craft:** the making process plays as a line drawing, from source to finished piece.
 
 ## How to make it
-- **No generated video is needed:** all of this can be made in code from the client's logo, photos and cut-outs. Use a
+- **No generated video is needed:** all of this can be made in code around the client's own photos and footage. Use a
   good client film. AI video from a free tool is fine, never Higgsfield or a paid tool, and no hero depends on it.
 - **Libraries** are in `PROJECT/variants/_shared/vendor/`. Copy only what you use into `site/js/vendor/`, no build step:
   - GSAP with ScrollTrigger for timelines and pinning, SplitText for kinetic type, DrawSVGPlugin for line drawing,
@@ -69,8 +76,8 @@ Starting points only; the concept in `PITCH.md` wins.
   where they suit the concept.
 - **Build motion with each section,** opening and set-piece first. Motion left to the end gets dropped, and nothing here
   extends your time limit.
-- **Study how the reference moves:** read its live source for easing, duration and hand-overs. Take the ideas, not its
-  files.
+- **Study how the reference moves:** read its live source for easing, duration and hand-overs only. Take its timing,
+  never its layout, colours, imagery or files.
 
 ## Keep it good
 - **Hierarchy:** one big thing moves at a time; copy stays still while people read it.
@@ -82,5 +89,5 @@ Starting points only; the concept in `PITCH.md` wins.
 - **Reduced motion:** every sequence ends in its finished state, nothing hidden; the page is complete without motion.
 - **Recipes and numbers:** for an effect the concept already chose, find it in `prompts/techniques/INDEX.md` and open only
   that recipe (1-3 per variant, never the whole library). Timings, type sizes and bug fixes: `craft-numbers.md`. No
-  signature effect in two variants. This file and `taste.md` win any conflict.
+  signature effect in two variants. Conflicts follow "Which rule wins" in `AGENTS.md`.
 - **Professional tone, older audiences, serious topics:** the same craft, slower, fewer loops, no bounce, no sound.

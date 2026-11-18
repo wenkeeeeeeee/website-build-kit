@@ -19,6 +19,15 @@ session-start hook if installed.
 - `.claude/skills/`: the design and debugging skills used on these builds.
 - `WebsiteProjects/<Client>/`: each new build goes here.
 
+## Which rule wins
+One order for every build, whether it runs from the `/website-build-kit:build` skill or the office run orders:
+1. The user's own words (`LEAD.md`, messages in the thread).
+2. `PITCH.md`: the client's facts and each variant's plan.
+3. `prompts/office/taste.md`.
+4. `prompts/office/motion.md`.
+5. Everything else: `site-types.md`, `reference-library.md`, the playbook, `craft-numbers.md`, technique recipes, the
+   build skill's steps, and any design skill.
+
 ## Don't use these skills for website builds
 - `unlazy`: no `GATES.md`, no gate-check runs, no hashed evidence.
 - `superpowers:writing-plans`, `executing-plans`, `subagent-driven-development`: no long plans, no `.superpowers/sdd` ledger.

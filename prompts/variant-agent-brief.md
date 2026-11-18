@@ -8,12 +8,12 @@ You are building one website variant for {{CLIENT}} around its own idea, using t
 it look and move well. Other agents build other
 variants alongside you: stay inside your own folder.
 
-**Phase: {{hero | rest}}.** The free variant has no reference: run `hero-frames.cjs` on your hero alone and judge it by
-"The check" in `taste.md` and whether someone would remember it tomorrow.
+**Phase: {{hero | rest}}.** The free variant is judged the same way, plus whether someone would remember it tomorrow.
 - **hero (25 minutes):** build only the header and hero, at full craft with the real material, then run
-  `node {{KIT}}/tools/web/hero-frames.cjs <your hero url> <lead reference url> --out ref` and go through the sheet as
-  "The check" in `taste.md` says. Fix and re-run until each frame is at the reference's level without looking like it. Report the sheet path:
-  the user approves the hero from it before anything else is built.
+  `node {{KIT}}/tools/web/hero-frames.cjs <your hero url> <a category leader url from "Category look" in PITCH.md> --out ref`
+  and go through the sheet as "The check" in `taste.md` says. Fix and re-run until each frame belongs beside the
+  category leader and no frame shares your reference's composition. Report the sheet path: the user approves the hero
+  from it before anything else is built.
 - **rest (30 minutes):** the hero in your folder is approved: keep it, apart from changes listed here. Build everything
   below it and every page to the same level.
 
@@ -42,9 +42,9 @@ result is a failed one.
 1. **The hero delivers the business core and stays clean,** as "The hero" in `taste.md` says: what this business is,
    sells and is for, its main visual what the customer came for. A title with some photos is never enough. The opening
    lands there, never hiding or delaying it.
-2. **The whole page carries the hero's idea at the reference's level.** Match the impact the reference has (scale,
-   imagery, craft), not its layout or composition, and not just a small effect. Sections below at the same level, images treated like the hero's, never
-   cards and text on a plain background.
+2. **The whole page carries the hero's idea at the category leaders' level.** Sections below at the same level as the
+   hero, images treated like the hero's, never cards and text on a plain background. From the references take only the
+   techniques named above, never their layout, composition, colour or imagery.
 3. **It carries the whole business,** like every variant ("The body" in `taste.md`), services and ways to book
    included. Your direction changes how it's told, never how much; what doesn't fit the home page story gets a designed
    inner page.
@@ -56,14 +56,15 @@ result is a failed one.
 ## Read first
 In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md`, `content/OPEN-QUESTIONS.md`. In `{{KIT}}`:
 `prompts/office/taste.md`, `prompts/office/motion.md` and section 3 of `prompts/website-playbook.md`; sections 4 and 5
-only for the effects and image work you're doing.
+only for the effects and image work you're doing. Rules conflict? "Which rule wins" in `{{KIT}}/AGENTS.md`.
 
 ## How to build
 1. **Go through every reference.** From your variant folder, run
-   `node {{KIT}}/tools/web/contact-sheet.cjs <urls> --out ref --steps 24` and look at every frame. For live sites, also
-   save the HTML, CSS and JS into `ref/source/` and read how the motion is built: easing, durations, pinning, section
-   hand-overs. If a sheet shows a wall, loader or black page, use research's capture in `{{PROJECT ROOT}}/references/`.
-2. **Load the skills:** `taste-skill` and `frontend-design` now, `image-to-code` when a reference is a still image, and
+   `node {{KIT}}/tools/web/contact-sheet.cjs <urls> --out ref --steps 24` and look at every frame for the techniques
+   named above. For live sites, also save the HTML, CSS and JS into `ref/source/` and read only how the motion is
+   built: easing, durations, pinning, section hand-overs. Never its layout, colours or imagery. If a sheet shows a wall, loader or black page, use research's capture in `{{PROJECT ROOT}}/references/`.
+2. **Load the skills:** `taste-skill` and `frontend-design` now, `image-to-code` only for your own design mock-ups
+   (never to rebuild a reference), and
    `impeccable` for a polish pass on the home page at the end. If a name isn't listed for you, read
    `{{KIT}}/.claude/skills/<name>/SKILL.md`. This brief's concept, palette and fonts beat any skill's direction.
 3. **Copy the plumbing (hero phase only; in the rest phase your site is already there).** From the project root, run
@@ -77,7 +78,8 @@ only for the effects and image work you're doing.
 5. **Build the signature moment with the kit,** as `PITCH.md` names it, not your own code: `scrub.js`, `prologue.js`,
    `stair.js`, `hotspots.js`, `film-control.js` in `{{KIT}}/tools/web/`, and `gl-guard.js` for any WebGL. Other
    libraries are in `{{PROJECT ROOT}}/variants/_shared/vendor/`.
-6. **Assets you may use:** {{list: content/images/web and cutout, generated images, clean cut-outs}}. Copy what you use
+6. **Assets you may use:** {{list: content/images/web, labelled stock of the real subject, clean cut-outs (playful
+   tone only), generated images for backgrounds only}}. Copy what you use
    into `site/assets/`. New cut-outs: `python {{KIT}}/tools/web/cutout.py`, reviewed on a coloured background.
    {{Third-party branded packs: don't make them the hero subject.}} Never use the reference's images, logos,
    illustrations or copy.
@@ -95,7 +97,8 @@ only for the effects and image work you're doing.
 - **Client's world:** the client's object runs through the site, inner pages too ("The body" in `taste.md`), as your
   `PITCH.md` column says. Well made and clear of the copy.
 - **Motion:** meet the seven points in `motion.md` at your tone's level, following your column's motion plan, built
-  with each section (opening and set-piece first). A section that only fades in is unfinished. Working code: only the
+  with each section (opening and set-piece first). A section that only fades in is unfinished (in a professional
+  tone, one precise reveal or piece of animated information counts). Working code: only the
   matching recipes from `{{KIT}}/prompts/techniques/INDEX.md`; values from `{{KIT}}/prompts/office/craft-numbers.md`.
 - **Lean workflow:** no gates, plans, reports, TDD, fixtures or docs files. No unlazy skill, no superpowers planning,
   TDD, verification or worktree skills.
@@ -104,8 +107,9 @@ only for the effects and image work you're doing.
     what looks off.
   - Re-run `hero-frames.cjs`: the hero still matches the approved one. Do the customer walk ("Will they buy?") at phone
     size.
-  - Run `contact-sheet.cjs` on your site, its lead reference and one category leader from "Category look" in
-    `PITCH.md`, side by side. Fix a hero or section that looks weaker, or a site that wouldn't belong beside the leader.
+  - Run `contact-sheet.cjs` on your site, two category leaders from "Category look" in `PITCH.md` and your lead
+    reference, side by side. Fix a hero or section that looks weaker than the leaders, a site that wouldn't belong
+    beside them, and anything that shares the reference's layout, composition, colour or imagery.
     On your sheet, apply "Boxes and lines" in `taste.md`.
   - Check printed fonts against "Type" in `taste.md`. Grep the site for reference names and banned words.
   - Open every dropdown, date picker and quantity stepper and screenshot it open: none may show the browser's default

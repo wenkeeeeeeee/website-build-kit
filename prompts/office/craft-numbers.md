@@ -1,7 +1,7 @@
 # Craft numbers
 
-Starting values for type, motion, text over film and common bugs, for when a choice needs a number. Your tone and your
-brief (kit: `motion.md`, `taste.md`) win on any conflict. Adapted from MotionSites `craft.md` (MIT, © 2026 MotionSites;
+Starting values for type, motion, text over film and common bugs, for when a choice needs a number. Conflicts follow
+"Which rule wins" in `AGENTS.md`: your tone, brief, `taste.md` and `motion.md` all come first. Adapted from MotionSites `craft.md` (MIT, © 2026 MotionSites;
 licence in the kit at `licenses/motionsites.LICENSE`), minus the parts that clash with our rules.
 
 ## Type

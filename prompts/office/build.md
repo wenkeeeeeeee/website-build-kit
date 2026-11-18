@@ -5,8 +5,8 @@ Target: **about an hour of work here**, plus one stop for the user to approve th
 gives `CLIENT`, `PROJECT`, `KIT`, `PORT` and `FRONT_DESK`. Don't redo the research or ask the user anything. Stop only
 at the hero review in step 4, or if blocked. Short updates only.
 
-1. **Update the kit:** `git -C KIT pull --ff-only` (if it fails, carry on with your copy). Read `KIT/AGENTS.md` and
-   sections 1, 6 and 7 of `KIT/prompts/website-playbook.md`. `PITCH.md` supplies the decisions. Mode is Inspiration; if
+1. **Update the kit:** `git -C KIT pull --ff-only` (if it fails, carry on with your copy). Read `KIT/AGENTS.md` (its
+   "Which rule wins" settles any conflict) and sections 1, 6 and 7 of `KIT/prompts/website-playbook.md`. `PITCH.md` supplies the decisions. Mode is Inspiration; if
    `LEAD.md` asks for Clone mode, also read `KIT/prompts/website-build-template.md`.
 2. **Preview:** start `python KIT/tools/web/serve.py PROJECT PORT` as a background command with the maximum timeout.
 3. **Shared plumbing (8 minutes),** yourself, before any Builder starts.
@@ -23,16 +23,16 @@ at the hero review in step 4, or if blocked. Short updates only.
    - **Before briefing,** open each variant's lead reference sheet. Replace the reference if a banner covers it, most
      frames are static, the look is on the fail list, or its hero isn't made of the same kind of material as this
      variant's (step 3 of `research.md`). Rewrite a direction in `PITCH.md` if the hero isn't what the customer came for,
-     the palette comes from a metaphor, the look doesn't suit the tone, or the plan needs a move the hero material can't
-     carry.
+     the palette comes from a metaphor, the look or idea doesn't suit the tone (the free variant included), a 3D
+     Benchmark leads a professional hero, or the plan needs a move the hero material can't carry.
    - **Hero round.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero` and send all the
      subagents in one message, each with `run_in_background: false`. Each builds only its header and hero, with the real
      material, and returns its `hero-frames` sheet.
-   - **Your check.** Go through each sheet against "The check" in `taste.md`, the variant's row against its reference's,
-     frame by frame. A hero weaker than its reference fails, and so does one that could pass for it with the logo
-     hidden. Send back any failing hero, once, before the user sees it.
+   - **Your check.** Go through each sheet against "The check" in `taste.md`, beside the category leaders. A hero weaker
+     than the category leaders fails, and so does one with a frame that shares its reference's composition or could
+     pass for it with the logo hidden. Send back any failing hero, once, before the user sees it.
    - **Review.** Post per variant: its `hero-frames` sheet as an image (Markdown image, absolute path), the local hero
-     URL, the recipe in one line, and the reference beside it. If `FRONT_DESK` isn't `none`, also send it
+     URL, the recipe in one line, and its references with the technique taken from each. If `FRONT_DESK` isn't `none`, also send it
      `HERO REVIEW: CLIENT` with the sheet paths and URLs, using `mcp__t3-code__t3_thread_send`. Then stop and wait. The
      user replies "go" or sends changes: make changes in a new hero round, show the new sheets, wait again.
    - **Rest of the site (30 minutes).** After "go", send each brief again with `Phase: rest`, all in one message. The
@@ -42,11 +42,11 @@ at the hero review in step 4, or if blocked. Short updates only.
    - Run `check-pages.cjs` once on each home page, click through to one inner page, grep for reference names.
    - **Hero:** run `hero-frames.cjs` again: it still matches the approved sheet and hands over cleanly into the next
      section.
-   - **Level:** run `contact-sheet.cjs` on each variant and its lead reference. A hero or body clearly weaker than the
-     reference fails, and so does one that copies its layout.
-   - **Category:** put each hero beside two category leaders from "Category look" in `PITCH.md`, not only its lead
-     reference. What would a stranger say this company sells? Would the brand's own marketing team publish it? If the
-     user liked another variant, this one must look at least as premium.
+   - **Copying:** run `contact-sheet.cjs` on each variant and its lead reference. A variant that shares the reference's
+     layout, composition, colour or imagery fails.
+   - **Level and category:** put each home page beside two category leaders from "Category look" in `PITCH.md`. A hero
+     or body clearly weaker than them fails. What would a stranger say this company sells? Would the brand's own
+     marketing team publish it? If the user liked another variant, this one must look at least as premium.
    - **Customer walk:** at phone size, walk each home page as "Will they buy?" in `taste.md` says, checking the buying
      basics and tone. It fails if a customer wouldn't know what it is, trust it, or know how to buy.
    - **Boxes and lines:** each contact sheet passes "Boxes and lines" in `taste.md` (not mostly plain rounded boxes, not
@@ -78,9 +78,10 @@ at the hero review in step 4, or if blocked. Short updates only.
 - **Redoing one variant:** keep the level, tone and image treatment of any variant the user liked; change the idea,
   layout and hero. Never pick a direction just because no other variant used it. Open the category leaders again and run
   the Category check before publishing.
-- **An extra variant, even from the user's own idea, gets references.** Settle its idea first, then pick references
-  from Benchmarks or Awwwards and open them (step 3 of `research.md`), naming the technique to take from each. Never brief a Builder with no outside reference, except
-  the free variant (step 2 of `research.md`), judged on whether someone would remember it tomorrow.
+- **An extra variant, even from the user's own idea, gets references.** Settle its idea first, in the client's tone,
+  then pick references from Benchmarks or Awwwards and open them (step 3 of `research.md`), naming the technique to take
+  from each. Never brief a Builder with no outside reference, except the free variant (step 2 of `research.md`), judged
+  on whether someone would remember it tomorrow and whether it belongs beside the category leaders.
 - **A redone hero gets the same review:** build it, post its `hero-frames` sheet beside its reference, wait for "go"
   before publishing.
 - **When the user rejects something or repeats a correction,** note the lesson in `PROJECT/docs/LESSONS.md`, in general

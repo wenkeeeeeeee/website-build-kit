@@ -37,8 +37,8 @@ Every type: one concept per variant, and the checks in `taste.md`.
 
 ## Tone
 Research decides one tone for the client before choosing references and writes it in `PITCH.md` with the signals that
-decided it. Every variant uses it; variants differ in idea and layout, never tone, except the free variant, which may
-choose its own.
+decided it. Every variant uses it, the free variant included; variants differ in idea and layout, never tone. The free
+variant's freedom is in the idea.
 
 - **Playful:** the business is about joy, treats, celebration, play or personality; customers come for fun or a feeling,
   whatever the price. Snacks, sweets, drinks, desserts, gifts, balloons and parties, toys and kids' things, pets, casual
@@ -65,13 +65,14 @@ variant, however good.
 Starting directions for categories that sell the same way. A client that fits none takes the family matching how its
 page must sell.
 
-Each family has a starting hero, built per "The hero" in `taste.md`: one stage, one line of facts, one action, and
-something the visitor does. The concept in `PITCH.md` wins, and no two variants share a hero. Named sites are in the
-Benchmarks of `reference-library.md`.
+Each family has a starting hero, built per "The hero" in `taste.md` from the client's real photos and footage: one stage,
+one line of facts, one action, and something the visitor can try (playful) or a tool that answers a question
+(professional). These are directions, not sites to copy: the concept in `PITCH.md` wins, and no two variants share a
+hero.
 
 - **One beautiful object:** bags, eyewear, watches, jewellery, shoes, perfume, audio, furniture. The product is the star:
-  close-ups, materials, craft. **Hero:** the product alone at the centre, turning slowly and following the cursor;
-  scrolling takes it apart, each part named (Lusion, Opal Tadpole).
+  close-ups, materials, craft. **Hero:** the real product alone at the centre, big and sharp; scrolling moves into
+  close-ups of materials and details, each part named.
 - **Vehicles and mobility:** e-scooters, e-bikes, motorcycles, cars, EV charging, rental and sharing. Everyday technology,
   so precise and premium, never loud. **Hero:** the real vehicle, big and sharp in studio light or on a real street, or a
   real rider using it; it turns, folds or comes apart on scroll, parts named. A model switcher and one fact line (weight,
@@ -81,24 +82,22 @@ Benchmarks of `reference-library.md`.
 - **Packs and jars:** snacks, drinks, sauces, coffee, sweets, pet food. Loud colour per product, flavours and ranges.
   **Hero:** the product being made or opened fills the screen, and the visitor does the last step (hold to fry, pour,
   crack the lid), ending in the basket. Each flavour comes out in its own shape and colour; small copy has the brand's
-  humour (Don't Board Me).
+  humour.
 - **Solves a problem:** skincare, hair, supplements, dental, pain relief, cleaning. Problem, proof, how it works.
   **Hero:** what the product does, under a headline in the customer's words. On scroll the problem clears (skin calms day
   by day, days counted), with how it works and whether it's safe (ingredients, tests, who can use it) on the way. Every
   claim, timeline and safety line comes from the client's material or is marked `[client to confirm]`. Below: explain it
-  simply, results as drawings or real before-and-after, not paragraphs (Opal Tadpole's "explain it like I'm 5" and "show
-  don't tell").
-- **Body and movement:** physiotherapy, pilates, yoga, gyms, sports. The body in motion, not a calm studio. **Hero:** a
-  body in motion fills the screen, in real footage or line drawing, joints and muscles named as they work, giant type cut
-  by the moving body (21tsi).
+  simply, with real before-and-after and simple diagrams, not paragraphs.
+- **Body and movement:** physiotherapy, pilates, yoga, gyms, sports. The body in motion, not a calm studio. **Hero:** the
+  client's real footage of a body in motion fills the screen, joints and muscles named as they work.
 - **A place to visit:** restaurants, cafés, bars, hotels, spas, salons, gyms, clinics, photo studios. Sells the room and
   the visit. **Hero:** the real room or dish, sharp and whole at the centre, the effect around it (light, steam, the time
-  of night). The cursor or a hold shows the next state: empty room to full, raw to plated, day to night (Lando Norris's
-  cursor reveal). One line says what, where and when, next to the booking action. Room sound optional.
+  of night). The cursor or a hold shows the next state: empty room to full, raw to plated, day to night. One line says
+  what, where and when, next to the booking action. Room sound optional.
 - **Work worth showing:** event styling, florists, weddings, interiors, architecture, photography, tattoo, set design.
   The portfolio is the proof. **Hero:** before and after in one move: the bare space, filled with the finished work by
-  the visitor's hold or cursor. Below: giant job names whose hover opens the work through the client's own shape, and one
-  line or thread carrying you through the page (Lando Norris, Lusion).
+  the visitor's hold or cursor. Below: giant job names whose hover opens the work, and one line or thread carrying you
+  through the page.
 - **Guides, media and creators:** city guides, places-to-go and review accounts, listings and directories, event
   calendars, creator channels and communities. They sell a visit or outing, not a product: places, prices and where to
   go, with the creator's own voice and posts as proof. **Hero:** the best places or episodes as real photos or footage,
@@ -106,13 +105,12 @@ Benchmarks of `reference-library.md`.
   filters by area, type and price, a map, the latest posts, how they visit and film. Category brands to open:
   timeout.com, theinfatuation.com, atlasobscura.com, airbnb.com/s/experiences.
 - **Trust and expertise:** finance, law, accounting, insurance, consultants, B2B suppliers. Calm, clear, credible.
-  **Hero:** what the client really delivers: the product, or the people at work and the customer's result (the finished
-  building, the case won, the money saved). It holds the stage while chapters change around it, with a segmented
-  progress bar, and a live slider or calculator answers the money question early (EnduroSat). No sound or games; slower
-  motion.
+  **Hero:** what the client really delivers, in real photos or footage: the product, or the people at work and the
+  customer's result (the finished building, the case won, the money saved). A slider or calculator answers the money
+  question early. No sound, games, props or rituals; plain words; slower motion.
 - **Learning and community:** courses, coaching, academies, mentorships, schools. A person, a method, student results.
   **Hero:** the teacher and real students at work, or a real result they reached, the promise in one line and a first
   step you can try. Proof stays labelled; risk wording stays.
 - **Origin and craft:** farms, wineries, distilleries, makers, heritage brands. A place and how it's made. **Hero:** the
-  finished product big at the centre, the place and making around it; on scroll a route draws from the source to the
-  product, each stop opening a chapter (Igloo).
+  finished product big at the centre, with real photos of the place and the making around it; on scroll a route draws
+  from the source to the product, each stop opening a chapter.

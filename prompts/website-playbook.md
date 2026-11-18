@@ -1,6 +1,7 @@
 # Website build playbook
 
-Methods and lessons from past builds, for lookup.
+Methods and lessons from past builds, for lookup. Where this file sits among the kit's rules: "Which rule wins" in
+`AGENTS.md`.
 
 | You are | Read |
 |---|---|
@@ -53,7 +54,7 @@ map, booking form) only if it answers a question customers really ask.
 - **Heroes, page heroes included, follow "The hero" in `office/taste.md`:** the subject leads, never text one side and a
   picture the other.
 - **Nothing plain below the hero.** Real components on photos: code tags, hover actions that do something (WhatsApp with
-  a pre-written message, "Add to my quote" filling the form), cut-outs floating in panels.
+  a pre-written message, "Add to my quote" filling the form).
 - **Scroll cues and decoration stay away from buttons.** Hide scroll cues on short and phone screens.
 
 **Header, footer and forms**
@@ -136,20 +137,20 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you use.
   poster, and a separate still for reduced motion. `preload="auto"` on the first film only, `preload="none"` below.
   Pause anything off screen (`film-control.js`).
 - **Scroll-scrubbed film:** `frames.py` cuts 100-150 webp frames (1280w plus a 720w phone set, 3-14 MB); `scrub.js` draws
-  them on a sticky canvas, coarse-to-fine. Hero about 300vh, other pinned scenes 200vh or less. One continuous shot,
+  them on a sticky canvas, coarse-to-fine. A hero pins at most one screen (about 200vh); the set-piece at most three. One continuous shot,
   slow one-direction camera motion. Build with stand-in frames, never time copy to the film, re-cut the final film into
   the same folder.
 
 **3D and canvas**
-- **3D hero, no video needed.** When a client says "still basic", 3D scroll beats a film. `stair.js`: a spiral of
-  floating steps with product cut-outs, the camera climbing between stops. Or the product in three.js: tubes, rings and
-  extrusions (eyewear, bottles, watches, furniture) in real millimetres with `RoomEnvironment` reflections look like a
-  studio shot. Scroll takes it apart, labels name the parts, and it can crossfade into a real photo.
+- **3D supports real photos, never replaces them.** When a client says "still basic", answer with better real photos
+  or footage and a stronger set-piece, not a 3D stand-in. Where 3D fits (a playful site, or a product modelled
+  faithfully): `stair.js`, a spiral of floating steps with clean product cut-outs, the camera climbing between stops; or
+  the product in three.js (eyewear, bottles, watches, furniture) in real millimetres with `RoomEnvironment` reflections.
+  Scroll takes it apart, labels name the parts, and it ends on a real photo.
 - **Any WebGL:** load `gl-guard.js` first, a still behind the canvas for missing WebGL and reduced motion, pause off
   screen. One canvas per page where you can.
 - **Ink fluid** (github.com/PavelDoGreat/WebGL-Fluid-Simulation, MIT: keep its credit): a cursor-driven background behind
   the real subject, never the hero alone. Light palette, off the copy on phones.
-- A canvas-drawn scene is a good stopgap until real footage exists, behind a `data-mode` switch.
 
 **Bugs to avoid**
 - **Pinned scenes never start or end empty:** fading out at progress 1 or in from 0 shows a blank screen while the stage
@@ -160,8 +161,10 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you use.
   whatever the load order.
 
 ## 5. Images
-- No new photography: the client's images, generated images (`content/generated/`) and clean cut-outs.
-- Real photos for rooms, staff and equipment; generated images for mood.
+- No new photography: the client's images first, then licensed stock of the real subject labelled "Photo for
+  illustration". Clean cut-outs only in a playful tone.
+- Real photos for products, rooms, staff and equipment; generated images (`content/generated/`) only for backgrounds and
+  mood, never the product, people or place.
 - **Treat weak client photos first** (as "It's made of what the client really has" in `office/taste.md` says): one grade
   across the site and a tone-fitting treatment in every section, not just the hero; never scaled past sharp, cut out
   only where the edge is clean.
@@ -173,7 +176,7 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you use.
 - Check the image-generation quota before planning AI images.
 - `hotspots.js` positions are fractions of the image, so dots stay on the product under `object-fit: cover`.
 - No clean photos: cut products from a busy banner with GrabCut plus a hand-placed outline polygon, corners read off a
-  50px grid. Simple products can be drawn in SVG or canvas.
+  50px grid. Never draw the product in SVG or canvas instead of a photo.
 
 ## 6. Agents and browsers
 - Parallel agents each run their **own headless browser** (`check-pages.cjs` or a Playwright node script). The Playwright

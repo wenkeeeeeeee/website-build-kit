@@ -4,9 +4,9 @@ You have **10 minutes** for this lead, or up to **20** when the category is unus
 bar. Your task message gives `CLIENT`, `PROJECT` (its folder), `KIT` (this repo), `PORT`, `FRONT_DESK` (a thread id) and
 `ZERILAB_PROJECT_ID`. `PROJECT/docs/LEAD.md` holds the user's message; its notes beat these defaults.
 
-Run `git -C KIT pull --ff-only` first. Never ask anything; work alone, no subagents. Don't read other `WebsiteProjects`
-folders or use memories, except the variant names and directions in their `docs/PITCH.md`, read only to keep the free
-variant new. Run `date +%s` now and after each step; at 8 minutes (18 on the longer limit) stop gathering and write
+Run `git -C KIT pull --ff-only` first. Never ask anything; work alone, no subagents. Rules conflict? "Which rule wins"
+in `KIT/AGENTS.md`. Don't read other `WebsiteProjects` folders or use memories, except the variant names, directions and
+references in their `docs/PITCH.md`, read only so no idea repeats and no Benchmark leads for a third client in a row. Run `date +%s` now and after each step; at 8 minutes (18 on the longer limit) stop gathering and write
 `PITCH.md`. Build 3 variants plus 1 free variant unless `LEAD.md` gives a number.
 
 ## 1. The business (5 minutes)
@@ -18,7 +18,8 @@ Everything depends on this, so it comes first and gets the most time.
 - **Think like the customer:** what they want or worry about, who pays and on what device, what they compare it with,
   what made past customers buy, in their own words from reviews and comments.
 - **See what the category expects:** open 2–3 of the best-known brands in the client's exact category. Not references:
-  they show what a stranger must recognise this business as.
+  they show what a stranger must recognise this business as, and they set the level every variant is judged against.
+  Keep their URLs for "Category look".
 - **Collect** every client field in `PITCH.md`, 6–10 products with prices, the logo, and photos and clips into
   `PROJECT/content/images/` and `PROJECT/content/video/`. Delete stock pictures and shared templates.
 - **List the hero material:** each clip's length, size and whether it has a clean stretch of the real thing happening;
@@ -28,30 +29,33 @@ Everything depends on this, so it comes first and gets the most time.
 - **Tone:** "Tone" in `site-types.md`. Every variant uses it.
 - **Site type and pages:** `site-types.md`.
 - **Buyer's path:** who buys, what brings them, their top three doubts with the proof for each, when the price appears
-  (after they want the thing, so rarely in the hero), and the action. Every home page follows it.
+  (after they want the thing, so rarely in the hero, but within about 1.5 screens), and the action. Every home page follows it.
 - **Core:** one line: what this business is, what it sells, who it's for.
 - **Story:** the story the client wants to tell in one sentence, and what visitors need to see or feel to believe it.
   It drives every variant.
 - **Ideas before references.** Write 10 one-line "what if" ideas built around the story and what the customer decides
-  or does (the menu as a record crate, sizing as a fitting room), from a beautiful classic site to something playful.
-  Take at least one from outside the web: a poster, packaging, a film title sequence, a game menu, an album cover.
-  Pick the 3 strongest that fit the tone, plus the free one. An idea that could sit on any business in the category
-  gets replaced.
+  or does (the menu as a record crate, sizing as a fitting room), in the tone. Playful: anything from a beautiful classic
+  site to a map, a game, a 3D room or a card pack. Modern and professional or luxury: ideas that explain, guide or show
+  the real thing (a fitting room, a route, a before-and-after, a calculator), with no games, toys, props or rituals.
+  Take at least one from outside the web: a poster, packaging, a film title sequence, an album cover, a magazine spread.
+  Pick the 3 strongest that fit the tone, plus the free one: ideas a customer would find useful and remember. An idea
+  that could sit on any business in the category gets replaced.
 - **A direction per idea:** one sentence on what the hero is made of and does, from this client's world and the hero
   material ("the bouquet rises and the visitor's name prints across the balloon"). Then the hero recipe from "The hero"
   in `taste.md`, and a look fitting the tone and category. Variants differ in idea and layout, never in tone, and never
   by picking a weaker look just to be different.
-- **The free variant (always last):** your own idea, something we haven't built before: modern, futuristic, playful like
-  a game, anything that fits the business. It needs no reference and may leave the tone, but a stranger must still see
-  this business at a glance, and it carries the same content, prices and action.
+- **The free variant (always last):** your own idea from the client's own object, something we haven't built before,
+  in the client's tone (a game only for a playful client). It needs no reference; its freedom is in the idea, not the
+  tone. A stranger must still see this business at a glance, and it carries the same content, prices and action.
 
 ## 3. References (4 minutes): techniques for each idea, from Benchmarks and Awwwards only
-References come after the ideas. They show how to make each idea look and move well and set the level to match; they
-never set its layout, section order or hero. Only these sources, plus any reference the user pasted in `LEAD.md`, which
-always gets its own variant.
-1. **Benchmarks first.** Read "Benchmarks" and "Rejected" in `reference-library.md` and pick the Benchmarks whose craft
-   serves each direction in this tone. Their "Made of" must match the hero material.
-2. **Then Awwwards, if it fits better.** WebSearch `site:awwwards.com/sites <tone words> <what the hero does>` and
+References come after the ideas. They lend a motion or craft technique to make each idea look and move well; they never
+set its layout, section order, hero, colour or imagery, and the level comes from the category leaders. Only these
+sources, plus any reference the user pasted in `LEAD.md`, which always gets its own variant.
+1. **Benchmarks.** Read "Benchmarks" and "Rejected" in `reference-library.md` and pick the Benchmarks whose craft
+   serves each direction in this tone. Their "Made of" must match the hero material. Respect "Craft only" and "No
+   back-to-back reuse" there.
+2. **Awwwards, whenever it has the technique the idea needs.** WebSearch `site:awwwards.com/sites <tone words> <what the hero does>` and
    `site:awwwards.com/inspiration <the same>`, such as "playful gift scroll animation" or "premium electric scooter 3D
    product". Prefer Site of the Day, Site of the Month and Developer Award winners. Awwwards blocks browsers: open the
    live site each result names.
@@ -62,7 +66,7 @@ always gets its own variant.
    right tone, with a hero made of the same kind of material. Name two frames that prove it, or drop it. Plain layouts,
    beige with a serif, and loud colour with no idea behind it fail, even on Awwwards.
 5. **End with at least 2 per variant** (the free variant needs none; it takes one only if it helps the craft): a lead
-   that sets the level, plus one for specific parts. Name the one or two techniques to take from each (a transition, a
+   whose craft the variant borrows most, plus one for specific parts. Name the one or two techniques to take from each (a transition, a
    type treatment, how the scroll is paced). If a reference's layout seems better than the idea, rethink the idea; don't
    adopt the layout. Never one reference per scroll move or detail. Reopen each
    kept sheet cold and replace anything weak. If Awwwards has nothing better, use the closest Benchmark and say so;
@@ -96,7 +100,8 @@ Buyer's path: <who buys and on what device; what brings them; top 3 doubts, each
 Core: <one line: what this business is, what it sells and who it's for>
 Story: <the client's story in one sentence, and what visitors need to see or feel to believe it>
 Ideas: <the 10 "what if" lines; mark the 3 picked and the free one>
-Category look: <the 2-3 category brands opened, and what a stranger must recognise this business as>
+Category look: <the 2-3 category brands opened, with URLs, and what a stranger must recognise this business as; they
+  set the level every variant is judged against>
 Facts: <what they sell, where, how to order, WhatsApp number, 6-10 products with prices>
 The customer: <who they are, and the problem, worry or desire that brings them, in their words>
 How it works: <the process, ingredients, method or how to use it, with real numbers and steps>

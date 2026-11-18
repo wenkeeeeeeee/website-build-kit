@@ -5,10 +5,14 @@ References come only from the Benchmarks below, or Awwwards when it fits the bus
 client-site links here. Wrap-up adds to Benchmarks and "Rejected" as `build.md` says.
 
 ## Benchmarks
-The level to look for; each counts as a reference when it fits the client's business, tone and hero material.
+Craft to borrow; each counts as a reference when it fits the client's business, tone and hero material. A reference lends
+one or two motion or craft techniques, never its layout, composition, colour or imagery; the level a variant is judged
+against comes from the category leaders in `PITCH.md`.
 **Tone:** playful for Lando Norris, Don't Board Me and Partake; luxury for Cartier, Gentle Monster and TAG Heuer; modern
-and professional for the rest. **Made of** is what the hero is built from: a 3D Benchmark can lead only a hero you will
-really build in 3D or code. Take the craft, not the subject.
+and professional for the rest. **Made of** is what the hero is built from.
+**Craft only:** the 3D Benchmarks (Lusion, Active Theory, Igloo, Masahiro Maruyama, EnduroSat) lend one technique and
+never lead the hero of a professional, B2B, health, finance or property client. **No back-to-back reuse:** don't use a
+Benchmark that led a variant for either of the last two clients (see the References row of their `docs/PITCH.md`).
 | URL | Made of | What it does |
 |---|---|---|
 | https://lusion.co/ | 3D | 3D objects fill the frame, and a line sweeps through the type on scroll |

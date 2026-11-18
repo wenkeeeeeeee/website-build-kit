@@ -13,7 +13,7 @@
 
 **Mode:** {{pick one and delete the others}}
 - **Clone → Adapt:** first copy each reference by mirroring its HTML, CSS, JS and assets (internal only, never deployed), animations working. Then adapt content and layout to the client's current website.
-- **Inspiration:** take layout, motion and visual style from the references; build with the client's content from the start.
+- **Inspiration:** take only motion and craft techniques from the references (never their layout, colour or imagery); build each variant's own idea with the client's content from the start, judged beside the category leaders (`prompts/office/taste.md`).
 
 **Step 1: Capture (light).** Per live reference: one full-page screenshot at desktop, tablet and mobile, one short scroll video, and the page source (HTML, CSS, JS, images, fonts). Note key sections and animations in `references/<nn>-<name>/notes.md`. No frame-by-frame or per-hover captures unless the source can't be mirrored. Still references (Dribbble, Behance): save the images and a few lines of ideas.
 
