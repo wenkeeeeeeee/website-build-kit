@@ -39,7 +39,7 @@ Build websites for this client in this thread.
    - Decide the site type and the tone ("Tone" in `site-types.md`) from how the business looks and talks, who its
      customers are and what the category leaders do. Write it down with the reason. Every variant uses this tone.
    - Fit the tone to this business: write 3-5 character words for how it should feel ("Character" under "Tone" in
-     `site-types.md`; a design-and-build studio and a sports brand need opposite sites in the same tone).
+     `site-types.md`: worked out fresh for this business, never copied from its example or another client).
    - If something is unknown, write [client to confirm]. Never make up prices, reviews or claims.
 
 3. Find ideas first, then references.

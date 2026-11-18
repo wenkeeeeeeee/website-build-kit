@@ -57,16 +57,20 @@ is about and what customers come for, then check how the client talks in its own
 look. Mixed signals: modern and professional. A professional client with a playful voice can have one warmer variant,
 still clean and credible.
 
-**Character: the tone fitted to this business.** The tone is a family, not a look: a design-and-renovation studio and a
-sports brand can both be modern and professional and still need opposite sites. So research also writes the business's
-own character in 3–5 words, taken from how it looks and talks, what it sells and how its category leaders feel (a
-design-and-build studio: calm, architectural, daylight, precise; a sports brand: fast, physical, loud; a family bakery:
-warm, generous, homely). Every builder is briefed with these words, and type size and case, image treatment, contrast,
-density, space and motion pace follow them rather than a default for the tone: rooms shown in their own light for an
-interiors studio, dark and moody frames for a night bar, huge type for an athlete. Palettes stay open to explore, light
-or dark, across the variants; the character decides how each one feels. **Check:** put the home page beside the
-character words; if a stranger would describe it with different words (an interiors studio that reads industrial, a
-bakery that reads corporate), rework the look, not the idea.
+**Character: the tone fitted to this business.** The tone is a family, not a look: two businesses in the same tone can
+need opposite sites. So research writes this business's own character in 3–5 words, worked out fresh from how it looks
+and talks, what it sells, who buys and how its category leaders feel. Never reuse words from another client or from the
+example below. The words set every look decision, for any kind of business: type size and case, image treatment,
+contrast and colour temperature, density and space, and motion pace. Every builder is briefed with them. Palettes stay
+open to explore, light or dark, across the variants; the character decides how each one feels.
+
+The format, one business worked through: a family bakery is "warm, generous, homely". Type: rounded, mixed-case
+headlines at a friendly size, never shouting. Images: bread close up in warm morning light, crumbs and flour left in.
+Contrast and colour: soft and warm. Space: full and abundant rather than sparse. Motion: unhurried, gentle rises,
+nothing snapping into place.
+
+**Check:** put the home page beside the character words. If a stranger would describe it with different words, rework
+the look, not the idea.
 
 **Tone decides the references.** Pick Benchmarks tagged with the tone, and put the tone's words in Awwwards searches:
 playful, colourful, illustrated; or premium, minimal, technology, corporate. A reference in the other tone can't lead a
