@@ -47,8 +47,8 @@ variant's freedom is in the idea.
 - **Modern and professional:** the business is about trust, performance or expertise; customers come for a result they
   must rely on: health, money, safety, learning, a business need, technology that has to work. Vehicles and technology,
   clinics and health, finance and law, education, B2B, property, services, group or corporate sites. **Looks like:** a
-  calm, confident layout, a neutral or dark base with the brand's accent, clean type, precise motion that explains the
-  product, real specs and proof up front. No games, stickers, sound or jokes in headlines.
+  calm, confident layout, clean type, precise motion that explains the product, real specs and proof up front; how
+  light or dark, how large the type and how dense the page come from the business's character, not this label. No games, stickers, sound or jokes in headlines.
 - **Luxury and heritage** (fine dining, jewellery, watches, boutique hotels, heritage brands): the modern and
   professional tone with richer imagery, a slower pace and more space.
 
@@ -92,7 +92,7 @@ hero.
   so precise and premium, never loud. **Hero:** the real vehicle, big and sharp in studio light or on a real street, or a
   real rider using it; it turns, folds or comes apart on scroll, parts named. A model switcher and one fact line (weight,
   range, price a month). Below: a feature index over close-ups, spec counters, "which model fits you", running cost
-  against petrol. Dark or neutral base with the brand's accent, a clean grotesk. Never a game, a cartoon road, a
+  against petrol. The brand's accent on a base the character suits, a clean grotesk. Never a game, a cartoon road, a
   dashboard or a sale poster. Category brands to open: cowboy.com, atherenergy.com, gogoro.com, unagiscooters.com.
 - **Packs and jars:** snacks, drinks, sauces, coffee, sweets, pet food. Loud colour per product, flavours and ranges.
   **Hero:** the product being made or opened fills the screen, and the visitor does the last step (hold to fry, pour,
@@ -111,8 +111,8 @@ hero.
   what, where and when, next to the booking action. Room sound optional.
 - **Work worth showing:** event styling, florists, weddings, interiors, architecture, renovation, fit-out,
   design-and-build and contractors, photography, tattoo, set design. The portfolio is the proof. **Hero:** before and
-  after in one move: the bare space, filled with the finished work by the visitor's hold or cursor. Below: giant job
-  names whose hover opens the work, and one line or thread carrying you through the page. For spaces (interiors,
+  after in one move: the bare space, filled with the finished work by the visitor's hold or cursor. Below: job names,
+  sized to the character, whose hover opens the work, and one line or thread carrying you through the page. For spaces (interiors,
   architecture, renovation, fit-out): generous space around the work, photos framed and shown in their own light, never
   dimmed to carry text, and the trade's own drawing language as the detail layer: floor plans, dimension lines, drawing
   numbers and title blocks, "Detail 1" callouts on photos, "not to scale" notes.

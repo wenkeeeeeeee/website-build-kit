@@ -88,8 +88,8 @@ has called the result too boxy.
 - **Stay in the category.** A bar looks like a bar at night, a clinic like a clinic, a scooter brand like a mobility
   brand, not a racing game, fintech dashboard or sale poster. If the hero doesn't belong beside the category leaders from
   research, or the brand's own marketing team wouldn't publish it, redo it.
-- **Colour from the brand and category,** never a metaphor. Bold colour suits playful brands; studio light or a dark
-  stage suits technology and premium. Red with gold and brush calligraphy reads festive for Chinese clients: avoid it
+- **Colour from the brand and the client's world,** never a metaphor. Palettes stay open to explore, light or dark,
+  across the variants; the character words decide how each feels, not the tone label. Red with gold and brush calligraphy reads festive for Chinese clients: avoid it
   unless the client is festive. Keep clear of a famous namesake's colours and look.
 - **A redo keeps the level of the variant the user liked** (its tone and image treatment) with a new idea, layout and
   hero. Still rejected after several rounds: restart from the plain starter with a new concept and new references.

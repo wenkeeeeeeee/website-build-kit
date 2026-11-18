@@ -43,7 +43,7 @@ Everything depends on this, so it comes first and gets the most time.
   that could sit on any business in the category gets replaced.
 - **A direction per idea:** one sentence on what the hero is made of and does, from this client's world and the hero
   material ("the bouquet rises and the visitor's name prints across the balloon"). Then the hero recipe from "The hero"
-  in `taste.md`, and a look fitting the tone and category. Variants differ in idea and layout, never in tone, and never
+  in `taste.md`, and a look fitting the tone, character and category. Variants differ in idea and layout, never in tone, and never
   by picking a weaker look just to be different.
 - **The free variant (always last):** your own idea from the client's own object, something we haven't built before,
   in the client's tone (a game only for a playful client). It needs no reference; its freedom is in the idea, not the

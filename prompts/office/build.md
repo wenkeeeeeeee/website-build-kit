@@ -23,7 +23,7 @@ at the hero review in step 4, or if blocked. Short updates only.
    - **Before briefing,** open each variant's lead reference sheet. Replace the reference if a banner covers it, most
      frames are static, the look is on the fail list, or its hero isn't made of the same kind of material as this
      variant's (step 3 of `research.md`). Rewrite a direction in `PITCH.md` if the hero isn't what the customer came for,
-     the palette comes from a metaphor, the look or idea doesn't suit the tone (the free variant included), a 3D
+     the palette comes from a metaphor, the look or idea doesn't suit the tone or the character words (the free variant included), a 3D
      Benchmark leads a professional hero, or the plan needs a move the hero material can't carry.
    - **Hero round.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero` and send all the
      subagents in one message, each with `run_in_background: false`. Each builds only its header and hero, with the real
