@@ -19,12 +19,30 @@ list to pick from: every palette is worked out fresh from the client's own logo,
 - Variations are welcome: the accent can sit closer on the wheel, the pair can be two neutrals with a temperature, the
   accent can come from a real object (a jam, a tape, a stage light). Judge by eye beside the client's photos.
 
+## Finding the palette
+The best combination for a client is usually not one listed here. Explore every time:
+1. **Start from the client:** the logo and brand colours, their photos and products, the place, and the trade's own
+   materials and marks (timber and plaster, drawings and redline, a stage light, a fruit). The mood family comes from
+   there.
+2. **Look for fresh combinations:** search current brand-palette posts on Instagram, Pinterest, Behance and Dribbble
+   for the category and the character words ("<category> brand colour palette", "<character word> palette accent"),
+   and note pairings that clash well. Take the pairing, never a brand's look.
+3. **Make 3-5 candidates** that differ in family and accent, not shades of one idea. Try each on the real hero material:
+   a swatch strip and a quick frame of the hero with the accent in its planned places.
+4. **Pick the one that fits** the business, tone and character best and still surprises. Write in `PITCH.md` why it
+   fits and which candidates lost. If none fits, use the usual palette.
+
 ## How loud, by tone
 - **Playful:** the accent takes 20-30% of a screen: giant headline words, whole panels and tiles, stickers, hand-drawn
   arrows, underlines and circles, a script word over a photo, colour floods and every main action.
 - **Modern and professional, luxury included:** about 5-10%: one oversized number or word, a hairline, a thin glow along
   the product's edge, one script word, the main action. Calm type, no stickers or doodles; marks only when they come
   from the brand's own world (a streetwear brand's ink splatter and pen marks).
+- **Corporate:** 5% or less, and the accent carries information: today's date, a finished stage, the selected item, a
+  measurement, a key figure, the main action. If you can't say what an accent mark means, remove it. Marks are ruled and
+  precise, taken from the trade (dimension lines, a revision cloud, a progress bar, a route line). Light, clean grounds
+  stay light; the project photos stay the heroes. The surprise is the less obvious working colour (coral rather than
+  safety orange, cobalt rather than builder's yellow).
 - The character words place each variant inside that range.
 - Plan where the accent lands on the first screen. If it only arrives after the first scroll, the hero reads mild.
 
@@ -39,7 +57,27 @@ list to pick from: every palette is worked out fresh from the client's own logo,
 - V1 and V2 never use the move; V3 and V4 may skip it when the business or tone doesn't suit it.
 
 ## Examples of the move (never copy one)
-These only show the kind of contrast and saturation that works. Hexes are illustrations, not a palette library.
+A small sample of the kind of contrast and saturation that works, so the move is clear. Hexes are illustrations, not a
+palette library: explore past them as "Finding the palette" says.
+
+Corporate (the accent marks information):
+
+| Business | Mood pair | Accent | What the accent marks |
+|---|---|---|---|
+| Office fit-out, design and build | Drawing navy #14243A, survey grey #C9D2DC (near-white ground) | Redline #E5322D | Dimension lines, one revision cloud, the active plan room, the main button |
+| Construction programme | Graphite #1D2226, steel #5B6670 (paper ground) | Signal lime #D8F24A | The today line, finished stages, the current step, the main button |
+| Law firm | Ink navy #132033, parchment #ECE7DD | Persimmon #E8562A | Section numbers, the consultation button |
+| Accounting and audit | Slate green #1F3B36, mist #DDE6E2 | Signal violet #6C4BFF | Key figures, the active tab |
+| Logistics and freight | Harbour blue #0E2A47, container grey #C4CCD4 | Coral #FF6B4A | Shipment status, the route line, the quote button |
+| Property developer | Clay #6B4E3D, sandstone #E7DDD0 | Teal #0FA3A3 | Available units on the floor plan, the enquiry button |
+| Engineering consultancy | Steel blue #1E3A5F, ice #E3EBF3 | Amber #FFB020 | Load and capacity figures, the active discipline |
+| Payments and fintech | Plum #3B1E54, lilac grey #D9D2E3 | Mint #3DE0A0 | Rates, growth figures, the sign-up button |
+| Hospital group | Deep teal #0D3B40, seafoam #D8ECEA | Apricot #FF9F6B | Open appointment slots, the booking button |
+| Management consulting | Charcoal #24262B, bone #E9E6E0 | Ultramarine #2F45FF | One key figure per section, links |
+| Insurance | Forest #1B3A2F, sage #DCE4DC | Marigold #F5B731 | The selected plan, the current quote step |
+| College or university | Burgundy #4A1426, stone #E6E0D8 | Cyan #22B8CF | Intake dates, the apply button |
+
+Brands, luxury and playful:
 
 | Business | Tone | Mood pair | Accent | Where the accent goes |
 |---|---|---|---|---|
@@ -70,3 +108,5 @@ These only show the kind of contrast and saturation that works. Hexes are illust
   louder, kept it recognisable.
 - A site with a pastel logo stayed mild above the fold because the accent arrived after the first scroll, and the logo
   went soft on the mid tone.
+- On a corporate renovation site with full-bleed project photos, the hero barely changed; the move showed in the plans,
+  schedules, numbers and process, and the light, clean look survived. Judge corporate trials past the first screen.

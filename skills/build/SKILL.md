@@ -71,7 +71,8 @@ Build websites for this client in this thread.
      hero" in `taste.md` says), the order of the sections, fonts per "Type" in `taste.md` (its banned list included,
      sizes and case set by the character), and colours explored from their brand and world, light or dark, to suit the
      character. Variants 3 and 4 may explore a mood pair with one clashing accent where it suits
-     (`KIT/prompts/office/colour.md`: louder for playful, quieter for professional, never copied from its examples);
+     (`KIT/prompts/office/colour.md`: search for fresh pairings, try 3-5 candidates on the hero material, pick the best
+     fit; louder for playful, quieter and informational for corporate, never copied from its examples);
      variants 1 and 2 keep the usual palette. Brief every builder agent with the
      character words, not only the tone.
    - Before coding, make design images of each variant's hero and two key sections (with an image generator if you have
