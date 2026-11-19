@@ -71,36 +71,28 @@ Corporate (the accent marks information):
 | Logistics and freight | Harbour blue #0E2A47, container grey #C4CCD4 | Coral #FF6B4A | Shipment status, the route line, the quote button |
 | Property developer | Clay #6B4E3D, sandstone #E7DDD0 | Teal #0FA3A3 | Available units on the floor plan, the enquiry button |
 | Engineering consultancy | Steel blue #1E3A5F, ice #E3EBF3 | Amber #FFB020 | Load and capacity figures, the active discipline |
-| Payments and fintech | Plum #3B1E54, lilac grey #D9D2E3 | Mint #3DE0A0 | Rates, growth figures, the sign-up button |
 | Hospital group | Deep teal #0D3B40, seafoam #D8ECEA | Apricot #FF9F6B | Open appointment slots, the booking button |
 | Management consulting | Charcoal #24262B, bone #E9E6E0 | Ultramarine #2F45FF | One key figure per section, links |
-| Insurance | Forest #1B3A2F, sage #DCE4DC | Marigold #F5B731 | The selected plan, the current quote step |
 | College or university | Burgundy #4A1426, stone #E6E0D8 | Cyan #22B8CF | Intake dates, the apply button |
 
 Brands, luxury and playful:
 
 | Business | Tone | Mood pair | Accent | Where the accent goes |
 |---|---|---|---|---|
-| Fine jewellery | Luxury | Oxblood #3A0C12, rosewater #E9C8C3 | Electric blue #2D5BFF | A thin glow along the piece, the booking button |
-| Menswear tailor | Luxury | Olive mocha #3E3A26, linen sand #EDE6DA | Peony pink #FF5FA2 | One script word over the photo |
-| Architecture studio | Professional | Ink navy #0B1630, pearl #E6E3DC | Chartreuse #D4F04A | One giant project number and a hairline |
+| Fashion campaign | Professional | Egyptian blue #03203D, stone blue #639CC5 | Scarlet #EB2F33 | A giant vertical headline, paint splatter and hand-drawn arrows over the photo, the outlined shop button |
+| Fashion editorial | Luxury | Soft sand #F0E5DB, mocha green #474329 | Watermelon pink #FC75B4 | One script word across the model photo, small nav marks |
+| Finance card brand | Professional | Flamingo pink #FAC7E1, plum pink #A5467C | Electric blue #004AFD | The main button and a thin glow along the card's edge |
+| Tech gear | Professional | Obsidian #111217, ice grey #DFE5EB | Racing red #EF233C | The logo mark, the product colourway, one headline word |
+| App brand | Playful | Deep charcoal #18181C, electric violet #723BFA | Acid lime #B9F500 | Whole tiles, the second line of type, the app icon (a variation: the pair is two strong colours, not one family) |
+| Cookie brand | Playful | Raspberry #BC164D, pale pink #FFD0DF | Butter yellow #FFE164 | Hearts and sparks, stickers and badges on the packs |
 | Boutique hotel | Luxury | Forest #0F2A22, eucalyptus #9FB8A8 | Coral flame #FF5B3A | A slim vertical band holding "Book" |
-| Perfume house | Luxury | Plum noir #2E1626, mauve mist #CDB3C4 | Saffron #FFB21E | A glow on the bottle, from a note in the scent |
-| Watch atelier | Luxury | Graphite #16181C, silver fog #C9CDD3 | Tangerine #FF6A13 | A dial-orange numeral and the links |
 | Auction house | Professional | Bottle green #0F3B2C, sage paper #DCE5D2 | Lot pink #FF4FA3 | "Sold" in script, the register button |
 | Women's health clinic | Professional | Deep plum #4B1D3F, blush #F6D6DE | Tangerine #FF7A1A | The booking button and one edge glow |
 | Flooring supplier | Professional | Walnut #4A3020, linen #EFE4D2 | Cobalt #2B4BFF | The quote button and a hard edge line |
-| Bookstore | Professional | Midnight #0E1F3D, paper blue #E9EEF6 | Saffron #FFB000 | One loud tile, new-title labels |
 | Chiropractor | Professional | Slate #2C3A47, fog #D9E2EA | Tape pink #FF4F8B | The giant headline and the booking button |
-| Dark streetwear | Professional | Egyptian navy #03203D, stone blue #639CC5 | Scarlet #E8262D | Giant wordmark, ink splatter, price tags |
-| Sneaker store | Playful | Royal navy #0A2A6B, sky #8FB8F2 | Signal red #FF3B30 | Giant vertical type, scribbled arrows |
 | Bubble tea | Playful | Deep violet #3D1A8C, taro #D9C8FF | Tangerine #FF8A00 | Whole tiles, the order button |
 | Snack brand | Playful | Chilli #7A140C, tomato #FFC9B5 | Cobalt #2340FF | A "new" sticker, a drawn ring |
-| Cosmetics | Playful | Magenta #B5126B, bubblegum #FFE3F0 | Acid lime #C6F432 | Shade numbers, tiles |
-| Kids' play café | Playful | Royal blue #1238B5, sky #E3F2FF | Sunflower #FFD21F | A sticker, a ring around the headline |
-| Juice bar | Playful | Deep jade #0C5A4A, mint #B9F0D7 | Dragonfruit #FF3EA5 | Giant vertical words |
 | Kopitiam bakery | Playful | Kopi brown #3B2416, condensed milk #F7EBD7 | Pandan lime #A8E43A | The giant headline, a scribbled arrow |
-| Ice cream | Playful | Dark cocoa #3A1F17, cocoa cream #F2DCC8 | Bubblegum #FF3D8B | A script word, small sparks |
 | Event styling | Playful | Deep teal #0B3B37, mint #BFE8DF | Watermelon #FF4F6D | The colour flood, stickers, underlines, the enquiry panel |
 
 ## What the trials showed
