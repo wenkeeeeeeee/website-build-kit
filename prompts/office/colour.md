@@ -1,6 +1,8 @@
 # Colour: mood pair and accent
 
-A palette move from current brand posts on Instagram, tried on two finished sites. Use it on a variant where it suits;
+A palette move from current brand posts on Instagram, tried on finished sites. **Only V3 and V4 (the free variant)
+explore it;** V1 and V2 build their palette the usual way ("Look and category" in `taste.md`). With another variant
+count, the last tone-led variant and the free variant explore it. Use it on V3 or V4 where it suits;
 the business, its brand colours, the tone and the character words always win. It's a way of building a palette, not a
 list to pick from: every palette is worked out fresh from the client's own logo, photos, products and place.
 
@@ -34,7 +36,7 @@ list to pick from: every palette is worked out fresh from the client's own logo,
 - Red with gold reads festive for Chinese clients and red with green reads as Christmas: avoid them unless the client is
   festive. Near-black with one acid-green or vermilion accent, and cream with terracotta, read as AI defaults unless
   they're the client's own colours.
-- Not every variant uses the move; each variant is still its own world.
+- V1 and V2 never use the move; V3 and V4 may skip it when the business or tone doesn't suit it.
 
 ## Examples of the move (never copy one)
 These only show the kind of contrast and saturation that works. Hexes are illustrations, not a palette library.
