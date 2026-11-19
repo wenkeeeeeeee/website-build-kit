@@ -27,7 +27,8 @@ result is a failed one.
   business; your type size, image treatment, contrast, space and motion pace follow them}}. Buyer's path: {{from `PITCH.md`}}.
 - Yours alone, shared with no other variant: how the buyer's path is told {{section order along the path}}; signature
   moment {{the one scroll set-piece}}; business tool {{finder, picker, dial or quote builder}}; basket name {{or none}};
-  header {{its own shape}}; type pair {{fonts}}; palette {{from the client's world}}.
+  header {{its own shape}}; type pair {{fonts}}; palette {{from the client's world; with a mood pair and accent (`KIT/prompts/office/colour.md`), say where
+  the accent goes and how loud}}.
 - Hero: {{method and recipe from "The hero" in `taste.md`; what each scroll step shows; the words; from your column of
   `PITCH.md`}}. Material: {{the exact clips and photos it uses, with sizes, from "Hero material" in `PITCH.md`}}. If
   the material can't carry a step, change the step rather than fake it, and say so in your report.

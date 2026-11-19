@@ -132,6 +132,6 @@ References opened: <every page: Benchmark or Awwwards, kept or dropped, why, and
 | Section order (the buyer's path, and how this variant tells each step) | | | |
 | Header | | | |
 | Type pair (each font and what in the client's world it answers to) | | | |
-| Palette | | | |
+| Palette (from the client's world; if it uses `colour.md`, the mood pair, the accent and where the accent goes) | | | |
 | References (URL, Benchmark or Awwwards, sheet files, the technique to take; at least 2) | | | |
 ```

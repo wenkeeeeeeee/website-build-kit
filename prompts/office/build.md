@@ -32,7 +32,8 @@ at the hero review in step 4, or if blocked. Short updates only.
      than the category leaders fails, and so does one with a frame that shares its reference's composition or could
      pass for it with the logo hidden. Send back any failing hero, once, before the user sees it.
    - **Review.** Post per variant: its `hero-frames` sheet as an image (Markdown image, absolute path), the local hero
-     URL, the recipe in one line, and its references with the technique taken from each. If `FRONT_DESK` isn't `none`, also send it
+     URL, the recipe in one line, its palette as named swatches with hex (mood pair and accent where used), and its
+     references with the technique taken from each. If `FRONT_DESK` isn't `none`, also send it
      `HERO REVIEW: CLIENT` with the sheet paths and URLs, using `mcp__t3-code__t3_thread_send`. Then stop and wait. The
      user replies "go" or sends changes: make changes in a new hero round, show the new sheets, wait again.
    - **Rest of the site (30 minutes).** After "go", send each brief again with `Phase: rest`, all in one message. The

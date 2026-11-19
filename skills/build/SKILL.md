@@ -70,7 +70,9 @@ Build websites for this client in this thread.
    - For each variant, plan what the hero shows and how it moves (using the client's real photos and products, as "The
      hero" in `taste.md` says), the order of the sections, fonts per "Type" in `taste.md` (its banned list included,
      sizes and case set by the character), and colours explored from their brand and world, light or dark, to suit the
-     character. Brief every builder agent with the character words, not only the tone.
+     character. Where it suits a variant, try a mood pair with one clashing accent (`KIT/prompts/office/colour.md`:
+     louder for playful, quieter for professional, never copied from its examples). Brief every builder agent with the
+     character words, not only the tone.
    - Before coding, make design images of each variant's hero and two key sections (with an image generator if you have
      one, otherwise quick rough HTML mock-ups, screenshotted). Pick the version that fits the category, tone and character best,
      and build that.
@@ -84,8 +86,8 @@ Build websites for this client in this thread.
      (pinned at most one screen) that also works on phones.
    - Screenshot each hero at a few scroll points and on a phone, beside a category leader:
      `node tools/hero-frames.cjs <hero url> <category leader url> --out shots`.
-   - Show me the tone you chose and why, the screenshots, the one-line idea for each variant, its references with the
-     technique taken from each, and the local links, and wait for "go".
+   - Show me the tone you chose and why, the screenshots, the one-line idea for each variant, its palette as named
+     swatches with hex, its references with the technique taken from each, and the local links, and wait for "go".
 
 6. Build the rest of each site.
    - Every section matches the hero's style and animation, and the variant's idea carries through the page.

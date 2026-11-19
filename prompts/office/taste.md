@@ -89,7 +89,9 @@ has called the result too boxy.
   brand, not a racing game, fintech dashboard or sale poster. If the hero doesn't belong beside the category leaders from
   research, or the brand's own marketing team wouldn't publish it, redo it.
 - **Colour from the brand and the client's world,** never a metaphor. Palettes stay open to explore, light or dark,
-  across the variants; the character words decide how each feels, not the tone label. Red with gold and brush calligraphy reads festive for Chinese clients: avoid it
+  across the variants; the character words decide how each feels, not the tone label. Where it suits, a variant can
+  use a mood pair and one clashing accent, louder for playful, quieter for professional (`colour.md`); never every
+  variant, and never copied from its examples. Red with gold and brush calligraphy reads festive for Chinese clients: avoid it
   unless the client is festive. Keep clear of a famous namesake's colours and look.
 - **A redo keeps the level of the variant the user liked** (its tone and image treatment) with a new idea, layout and
   hero. Still rejected after several rounds: restart from the plain starter with a new concept and new references.
