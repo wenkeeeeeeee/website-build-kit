@@ -35,10 +35,25 @@ Research picks one before choosing references. The type decides the first impres
 
 Every type: one concept per variant, and the checks in `taste.md`.
 
-## Tone
-Research decides one tone for the client before choosing references and writes it in `PITCH.md` with the signals that
-decided it. Every variant uses it, the free variant included; variants differ in idea and layout, never tone. The free
-variant's freedom is in the idea.
+## Direction: from the category's best, not from a list
+Research sets the direction for every variant before choosing references, and writes it in `PITCH.md`. It comes from
+looking at real sites, never from matching the client to a list, so it works for a business the kit has never seen.
+Every variant uses it, the free variant included; variants differ in idea and layout, never in direction or level.
+
+1. **The target.** Who should this client be seen beside? The user's own words in `LEAD.md` come first ("luxury",
+   "premium", "like Aesop"). Otherwise, the best-known brands in the client's exact category, at the level the user
+   wants, which is often above where the client is today: a small perfumer is set beside the category's best, not
+   beside other small shops.
+2. **Open 3–5 of them** and capture each (`contact-sheet.cjs` for the page, `hero-frames.cjs` for the hero). Write what
+   they actually do, as "Category look" in `PITCH.md`: type (size, case, weight, style), photography (subject, light,
+   crop, how big on screen), background and colour, space and density, motion (pace, what moves), and copy voice
+   (length, register). Name what they share and the one or two things that make them feel expensive or trusted. This is
+   the brief: every builder gets it, and every variant matches its level and register.
+3. **Facts versus target.** The client's own links and posts give the facts: products, prices, story, words to quote
+   and the voice of the copy. They never set the look or the level. A casual Instagram doesn't make a casual site when
+   the user or the category's best aim higher.
+4. **The tone label is a hint.** Pick the nearest of the three below for motion and interaction levels and reference
+   searches. When the label and the Category look disagree, the Category look wins.
 
 - **Playful:** the business is about joy, treats, celebration, play or personality; customers come for fun or a feeling,
   whatever the price. Snacks, sweets, drinks, desserts, gifts, balloons and parties, toys and kids' things, pets, casual
@@ -49,36 +64,28 @@ variant's freedom is in the idea.
   clinics and health, finance and law, education, B2B, property, services, group or corporate sites. **Looks like:** a
   calm, confident layout, clean type, precise motion that explains the product, real specs and proof up front; how
   light or dark, how large the type and how dense the page come from the business's character, not this label. No games, stickers, sound or jokes in headlines.
-- **Luxury and heritage** (fine dining, jewellery, watches, boutique hotels, heritage brands): the modern and
-  professional tone with richer imagery, a slower pace and more space.
+- **Luxury and premium** (fragrance and beauty, fashion, jewellery, watches, fine dining, boutique hotels, high-end
+  interiors, heritage brands, or any client the user asks to look luxury or premium): calm like modern and professional,
+  with art-directed imagery, a slower pace, far more space and type set the way the category's best set it.
 
-**How to decide.** Not by price: a cheap clinic visit is professional, an expensive party playful. Ask what the business
-is about and what customers come for, then check how the client talks in its own posts and how the category leaders
-look. Mixed signals: modern and professional. A professional client with a playful voice can have one warmer variant,
-still clean and credible.
+Not by price: a cheap clinic visit is professional, an expensive party playful. Mixed signals: follow the Category look.
 
-**Character: the tone fitted to this business.** The tone is a family, not a look: two businesses in the same tone can
-need opposite sites. So research writes this business's own character in 3–5 words, worked out fresh from how it looks
-and talks, what it sells, who buys and how its category leaders feel. Never reuse words from another client or from the
-example below. The words set every look decision, for any kind of business: type size and case, image treatment,
-contrast and colour temperature, density and space, and motion pace. Every builder is briefed with them. Palettes stay
-open to explore, light or dark, across the variants; the character decides how each one feels.
+**Character: the direction in words.** Research writes 3–5 words for how this client should feel at the target level,
+worked out from the Category look and the user's words, then checked against the client's facts so they stay true.
+Never reuse words from another client. With the Category look, they set every look decision: type size and case, image
+treatment, contrast and colour, density and space, and motion pace. Every builder is briefed with both. Palettes stay
+open to explore, light or dark, across the variants, inside the Category look's register.
 
-The format, one business worked through: a family bakery is "warm, generous, homely". Type: rounded, mixed-case
-headlines at a friendly size, never shouting. Images: bread close up in warm morning light, crumbs and flour left in.
-Contrast and colour: soft and warm. Space: full and abundant rather than sparse. Motion: unhurried, gentle rises,
-nothing snapping into place.
+**Check:** put the home page beside the Category look sheets. If it wouldn't sit among them, or a stranger would
+describe it with different words from the character, rework the look, not the idea.
 
-**Check:** put the home page beside the character words. If a stranger would describe it with different words, rework
-the look, not the idea.
-
-**Tone decides the references.** Pick Benchmarks tagged with the tone, and put the tone's words in Awwwards searches:
-playful, colourful, illustrated; or premium, minimal, technology, corporate. A reference in the other tone can't lead a
-variant, however good.
+**The direction decides the references.** Pick Benchmarks whose tone matches the hint, and put the Category look's
+words in Awwwards searches (playful, colourful, illustrated; premium, minimal, technology, corporate; luxury, editorial,
+fragrance). A reference in another register can't lead a variant, however good.
 
 ## Design families
-Starting directions for categories that sell the same way. A client that fits none takes the family matching how its
-page must sell.
+Starting hints for categories that sell the same way, never a brief to copy: the Category look in `PITCH.md` wins. A
+client that fits none takes the family matching how its page must sell.
 
 Each family has a starting hero, built per "The hero" in `taste.md` from the client's real photos and footage: one stage,
 one line of facts, one action, and something the visitor can try (playful) or a tool that answers a question

@@ -4,7 +4,8 @@ What counts as good, from the user's feedback and approved sites. Where it sits 
 wins" in `AGENTS.md`. Each rule lives in one place: a new lesson sharpens its rule rather than adding one.
 
 ## The hero
-Attractive, creative, modern and alive with motion graphics, in the tone and direction in `PITCH.md`. The user judges
+Attractive, creative, modern and alive with motion graphics, at the level and in the register of the Category look in
+`PITCH.md`. The user judges
 it first, so it's approved as pictures before the rest is built (`build.md`, step 4). Applies to the home page and
 every page hero.
 
@@ -32,6 +33,12 @@ every page hero.
   with clean edges, in a playful tone. Photos too weak or missing: the client's own clips, then licensed stock of the
   real thing labelled "Photo for illustration" and listed in `OPEN-QUESTIONS.md`. 3D, drawings and generated art only
   support a real photo or clip; they never replace the real subject.
+- **Material against the target.** Research compares the hero material with the Category look's imagery. Where it
+  can't reach that level (small, casual, phone-shot, cluttered, poorly lit), `PITCH.md` says so under "Hero material"
+  and proposes the fix: new shots (with a short shot list), or faithful renders of the client's real product (same
+  shape, colours, cap and label), labelled "Render for illustration" and listed in `OPEN-QUESTIONS.md`. Builders use the
+  strongest real or rendered image the way the category's best do (one large, sharp image with space around it). Never
+  quietly frame weak photos as the hero, in boxes, columns or grids.
 - **What fails:** a title with photos; a photo in a box; headline left, picture right, stats row; a full-screen picture
   with no headline; effects covering the subject; a move the material can't carry; no motion.
 - **The check:** run `hero-frames.cjs` on the hero beside a category leader from "Category look" in `PITCH.md`. At every
@@ -89,7 +96,7 @@ has called the result too boxy.
   brand, not a racing game, fintech dashboard or sale poster. If the hero doesn't belong beside the category leaders from
   research, or the brand's own marketing team wouldn't publish it, redo it.
 - **Colour from the brand and the client's world,** never a metaphor. Palettes stay open to explore, light or dark,
-  across the variants; the character words decide how each feels, not the tone label. V3 and V4 (the free
+  across the variants; the Category look and the character words decide how each feels, not the tone label. V3 and V4 (the free
   variant) may explore a mood pair and one clashing accent where it suits, louder for playful, quieter for professional
   (`colour.md`), never copied from its examples; V1 and V2 keep the usual palette. Red with gold and brush calligraphy reads festive for Chinese clients: avoid it
   unless the client is festive. Keep clear of a famous namesake's colours and look.
@@ -130,10 +137,9 @@ Fonts are the fastest machine-made tell, so they come from the client's world.
   commercial web use, self-hosted as `woff2`.
 - **One face with a point of view, one quiet face to read.** If the pair would suit any other client, pick again. The
   display face must carry the client's languages; Noto only for a script with no better option.
-- **Size and case follow the character** ("Character" under "Tone" in `site-types.md`), not the wish to be bold.
-  A calm, precise or quiet character gets mixed-case headlines at moderate sizes (about 40–72px on a desktop), with
-  space doing the work. Giant, condensed or extra-wide uppercase only when the character words are loud. If the
-  client's brand already uses a face, one variant may keep it.
+- **Size, case and weight follow the Category look and the character** ("Direction" in `site-types.md`): set type
+  the way the category's best set it, never a default size. If the client's brand already uses a face, one variant may
+  keep it.
 - **Other tells:** small uppercase mono labels above every heading, "01 / 02 / 03" numbering, one italic word in a
   headline, cream paper with a serif by default, gradient text, glass cards.
 

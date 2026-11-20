@@ -17,17 +17,22 @@ Everything depends on this, so it comes first and gets the most time.
 - **Search beyond them** as section 8 of the playbook says.
 - **Think like the customer:** what they want or worry about, who pays and on what device, what they compare it with,
   what made past customers buy, in their own words from reviews and comments.
-- **See what the category expects:** open 2–3 of the best-known brands in the client's exact category. Not references:
-  they show what a stranger must recognise this business as, and they set the level every variant is judged against.
-  Keep their URLs for "Category look".
+- **Set the target and read the category's best** ("Direction" in `site-types.md`): the user's words first, otherwise
+  the best-known brands in the client's exact category at the level the user wants, often above where the client is
+  today. Open 3–5 of them and capture each into `PROJECT/references/category/` (`contact-sheet.cjs --steps 8` and
+  `hero-frames.cjs`). Not references: write what they actually do as "Category look" (type, photography, background and
+  colour, space, motion, copy voice, and what makes them feel expensive or trusted). It is the brief every builder
+  gets and the level every variant is judged against.
 - **Collect** every client field in `PITCH.md`, 6–10 products with prices, the logo, and photos and clips into
-  `PROJECT/content/images/` and `PROJECT/content/video/`. Delete stock pictures and shared templates.
+  `PROJECT/content/images/` and `PROJECT/content/video/`. Delete stock pictures and shared templates. The client's
+  posts give facts, products and voice, never the look or level.
 - **List the hero material:** each clip's length, size and whether it has a clean stretch of the real thing happening;
-  each photo's size and whether it's sharp at full height; what could be cut out with a clean edge.
+  each photo's size and whether it's sharp at full height; what could be cut out with a clean edge. Then compare it with
+  the Category look's imagery and note the gap and the fix ("Material against the target" in `taste.md`).
 
 ## 2. Tone and direction (1 minute)
-- **Tone and character:** "Tone" in `site-types.md`, plus 3–5 character words for this business ("Character" there).
-  Every variant uses both, and every builder is briefed with the character words.
+- **Direction:** the Category look, the tone hint and 3–5 character words for this client at the target level
+  ("Direction" in `site-types.md`). Every variant uses them, and every builder is briefed with all three.
 - **Site type and pages:** `site-types.md`.
 - **Buyer's path:** who buys, what brings them, their top three doubts with the proof for each, when the price appears
   (after they want the thing, so rarely in the hero, but within about 1.5 screens), and the action. Every home page follows it.
@@ -42,8 +47,7 @@ Everything depends on this, so it comes first and gets the most time.
   Pick the 3 strongest that fit the tone, plus the free one: ideas a customer would find useful and remember. An idea
   that could sit on any business in the category gets replaced.
 - **A direction per idea:** one sentence on what the hero is made of and does, from this client's world and the hero
-  material ("the bouquet rises and the visitor's name prints across the balloon"). Then the hero recipe from "The hero"
-  in `taste.md`, and a look fitting the tone, character and category. Variants differ in idea and layout, never in tone, and never
+  material. Then the hero recipe from "The hero" in `taste.md`, and a look inside the Category look and the character. Variants differ in idea and layout, never in tone, and never
   by picking a weaker look just to be different.
 - **The free variant (always last):** your own idea from the client's own object, something we haven't built before,
   in the client's tone (a game only for a playful client). It needs no reference; its freedom is in the idea, not the
@@ -82,7 +86,7 @@ message `Read KIT/prompts/office/build.md and run it. CLIENT=... PROJECT=... KIT
 report the minutes taken, the directions and the thread's `link` in under 80 words.
 
 With `STOP_BEFORE_BUILD`, end with the review package:
-- The business in three lines; the tone and why; the Core and Story lines; the buyer's path; what the category expects.
+- The business in three lines; the target, the Category look (with the leaders' hero sheets) and the character; the Core and Story lines; the buyer's path; what the category expects.
 - The hero material: usable clips and photos with sizes, and what's missing.
 - Per variant: name and the idea behind it; the hero (recipe, what each scroll step shows, the words); section order;
   type pair and palette; each reference as URL, Benchmark or Awwwards, its sheet files and the technique it gives. Show the lead's
@@ -95,15 +99,18 @@ Then stop and wait. If the user sends changes, update `PITCH.md`, say what chang
 ```
 # CLIENT
 Site type: <type>, because <one line>.
-Tone: <playful | modern and professional>, because <what the business is about and what customers come for>
-Character: <3-5 words for how this business should feel, from how it looks and talks and its category leaders>
+Target: <who this client should be seen beside, from the user's words or the category's best, and at what level>
+Category look: <the 3-5 brands opened, with URLs and sheet files; what they do: type (size, case, weight, style),
+  photography (subject, light, crop, size on screen), background and colour, space and density, motion, copy voice;
+  what makes them feel expensive or trusted. Every builder gets this, and every variant is judged beside it>
+Tone hint: <playful | modern and professional | luxury and premium>, for motion and interaction levels only
+Character: <3-5 words for how this client should feel at the target level, from the Category look and the user's
+  words, checked against the client's facts>
 Buyer's path: <who buys and on what device; what brings them; top 3 doubts, each with its proof; when the price
   appears; the action>
 Core: <one line: what this business is, what it sells and who it's for>
 Story: <the client's story in one sentence, and what visitors need to see or feel to believe it>
 Ideas: <the 10 "what if" lines; mark the 3 picked and the free one>
-Category look: <the 2-3 category brands opened, with URLs, and what a stranger must recognise this business as; they
-  set the level every variant is judged against>
 Facts: <what they sell, where, how to order, WhatsApp number, 6-10 products with prices>
 The customer: <who they are, and the problem, worry or desire that brings them, in their words>
 How it works: <the process, ingredients, method or how to use it, with real numbers and steps>
@@ -118,7 +125,8 @@ Pages: <the pages for this site type, from site-types.md>
 Ordering: <basket to WhatsApp or marketplace, quote form, booking or none, and what the basket is called>
 Screen: 1920x870 at 125% zoom (about 1536x700), unless LEAD.md says otherwise
 Hero material: <each clip: file, length, size, clean stretch or not; each photo: file, size, sharp at full height or
-  not; clean cut-outs; what's missing>
+  not; clean cut-outs; what's missing; against the Category look's imagery: the gap and the fix (new shots with a shot
+  list, or faithful renders of the real product)>
 Sources read: <each client link and search, and what it gave or why it was blocked>
 References opened: <every page: Benchmark or Awwwards, kept or dropped, why, and the two frames that prove the bar>
 

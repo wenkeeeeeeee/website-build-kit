@@ -23,8 +23,12 @@ result is a failed one.
 ## Your variant
 - Folder: `{{PROJECT ROOT}}/variants/{{nn-name}}/` (site in `site/`, your reference captures in `ref/`).
 - Direction: {{from `PITCH.md`: one sentence on what the hero is made of and what it does. Not a style word.}}
-- Tone: {{playful | modern and professional, from `PITCH.md`}}. Character: {{the 3-5 words from `PITCH.md`, for this
-  business; your type size, image treatment, contrast, space and motion pace follow them}}. Buyer's path: {{from `PITCH.md`}}.
+- Category look: {{from `PITCH.md`, in full: the leaders opened, with their hero sheet paths, and what they do with
+  type, photography, background and colour, space, motion and copy voice, and what makes them feel expensive or
+  trusted}}. Your variant matches this level and register: open the sheets before you start.
+- Character: {{the 3-5 words from `PITCH.md`, for this client at the target level; with the Category look they set
+  your type size, image treatment, contrast, space and motion pace}}. Tone hint: {{playful | modern and professional |
+  luxury and premium, for motion and interaction levels only}}. Buyer's path: {{from `PITCH.md`}}.
 - Yours alone, shared with no other variant: how the buyer's path is told {{section order along the path}}; signature
   moment {{the one scroll set-piece}}; business tool {{finder, picker, dial or quote builder}}; basket name {{or none}};
   header {{its own shape}}; type pair {{fonts}}; palette {{from the client's world; V3 and V4 only, if they use a mood pair and accent

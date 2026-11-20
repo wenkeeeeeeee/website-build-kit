@@ -30,21 +30,31 @@ Build websites for this client in this thread.
    - Open every link and search the business name online.
    - Save their logo, real photos and videos.
    - Write down what they sell and the prices, who their customers are, what customers worry about, how people order,
-     and the words the business uses.
+     and the words the business uses. Their posts give the facts and voice, never the look or level.
    - Note the main thing a customer decides or does here (pick a table, plan a weekend, find a size).
    - Write the story the client wants to tell in one sentence, and what visitors need to see or feel to believe it.
      This drives every variant.
-   - Open 2-3 of the best-known brands in the client's exact category and keep their URLs. They show what a stranger
-     must recognise this business as, and they set the level every variant is judged against.
-   - Decide the site type and the tone ("Tone" in `site-types.md`) from how the business looks and talks, who its
-     customers are and what the category leaders do. Write it down with the reason. Every variant uses this tone.
-   - Fit the tone to this business: write 3-5 character words for how it should feel ("Character" under "Tone" in
-     `site-types.md`: worked out fresh for this business, never copied from its example or another client).
+   - Set the direction from the category's best, not from a list ("Direction" in `site-types.md`):
+     - The target: who this client should be seen beside. My words come first (luxury, premium, a brand I name);
+       otherwise the best-known brands in the client's exact category, at the level I want, often above where the
+       client is today.
+     - Open 3-5 of them and capture each (`node tools/contact-sheet.cjs <urls> --out refs/category` and
+       `node tools/hero-frames.cjs <urls> --out refs/category`). Write what they actually do as the Category look: type
+       (size, case, weight, style), photography (subject, light, crop, size on screen), background and colour, space
+       and density, motion, copy voice, and what makes them feel expensive or trusted. It is the brief for every
+       variant and the level each is judged against.
+     - Pick the site type and the nearest tone hint (playful, modern and professional, or luxury and premium) for
+       motion and interaction levels only. Where the hint and the Category look disagree, the Category look wins.
+     - Write 3-5 character words for how this client should feel at the target level, from the Category look and my
+       words, checked against the client's facts, never copied from another client.
+   - Compare the hero material with the Category look's imagery. Where it falls short, write the gap and the fix (new
+     shots with a shot list, or faithful renders of the real product labelled "Render for illustration") and never
+     frame weak photos as the hero ("Material against the target" in `taste.md`).
    - If something is unknown, write [client to confirm]. Never make up prices, reviews or claims.
 
 3. Find ideas first, then references.
    - Write 10 one-line ideas, each a "what if" built around the client's story and what the customer decides or does
-     (the menu as a record crate, sizing as a fitting room), in the tone. Playful: anything from a beautiful classic
+     (the menu as a record crate, sizing as a fitting room), in the direction. Playful: anything from a beautiful classic
      site to a map, a game, a 3D room or a card pack. Modern and professional or luxury: ideas that explain, guide or
      show the real thing (a fitting room, a route, a before-and-after, a calculator), with no games, toys, props or
      rituals.
@@ -62,21 +72,21 @@ Build websites for this client in this thread.
      tone, keeping to its "Craft only" and "No back-to-back reuse" rules, and take their craft, not their subject.
 
 4. Plan the variants.
-   - Variants 1-3 are your three ideas, in the tone you chose. References and Benchmarks make them look and move well.
+   - Variants 1-3 are your three ideas, in the direction you set. References and Benchmarks make them look and move well.
      Each variant needs its own idea that only fits this client; if you hid the logo and it could pass for its
      reference, change it.
    - Variant 4 is free: your own idea from the client's own object, something we haven't built before, in the client's
      tone (a game only for a playful client). It still has to sell.
    - For each variant, plan what the hero shows and how it moves (using the client's real photos and products, as "The
      hero" in `taste.md` says), the order of the sections, fonts per "Type" in `taste.md` (its banned list included,
-     sizes and case set by the character), and colours explored from their brand and world, light or dark, to suit the
-     character. Variants 3 and 4 may explore a mood pair with one clashing accent where it suits
+     size, case and weight set the way the Category look sets them), and colours explored from their brand and world,
+     light or dark, inside the Category look's register. Variants 3 and 4 may explore a mood pair with one clashing accent where it suits
      (`KIT/prompts/office/colour.md`: search for fresh pairings, try 3-5 candidates on the hero material, pick the best
      fit; louder for playful, quieter and informational for corporate, never copied from its examples);
      variants 1 and 2 keep the usual palette. Brief every builder agent with the
-     character words, not only the tone.
+     Category look and the character words, not only the tone hint.
    - Before coding, make design images of each variant's hero and two key sections (with an image generator if you have
-     one, otherwise quick rough HTML mock-ups, screenshotted). Pick the version that fits the category, tone and character best,
+     one, otherwise quick rough HTML mock-ups, screenshotted). Pick the version that sits best beside the Category look and fits the character,
      and build that.
    - All four should feel clearly different, at the same high quality.
 
@@ -88,7 +98,7 @@ Build websites for this client in this thread.
      (pinned at most one screen) that also works on phones.
    - Screenshot each hero at a few scroll points and on a phone, beside a category leader:
      `node tools/hero-frames.cjs <hero url> <category leader url> --out shots`.
-   - Show me the tone you chose and why, the screenshots, the one-line idea for each variant, its palette as named
+   - Show me the target, the Category look and the character words, the screenshots, the one-line idea for each variant, its palette as named
      swatches with hex, its references with the technique taken from each, and the local links, and wait for "go".
 
 6. Build the rest of each site.
