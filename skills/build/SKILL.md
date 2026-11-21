@@ -52,8 +52,13 @@ Build websites for this client in this thread.
      frame weak photos as the hero ("Material against the target" in `taste.md`).
    - If something is unknown, write [client to confirm]. Never make up prices, reviews or claims.
 
-3. Find ideas first, then references.
-   - Write 10 one-line ideas, each a "what if" built around the client's story and what the customer decides or does
+3. Find inspiration, then ideas, then references.
+   - Before writing ideas, browse for fresh thinking well beyond websites: Behance and Dribbble case studies, Instagram
+     brand posts, ad campaigns, packaging, film title sequences, exhibitions and magazine spreads, for this category,
+     its neighbours and anything that shares the customer's feeling. Note 3-5 striking finds in docs/PITCH.md under
+     "Inspiration", each with its link and the one thought or technique worth taking. Take the thought, never the look,
+     layout or imagery.
+   - Write 10 one-line ideas, drawing on those finds, each a "what if" built around the client's story and what the customer decides or does
      (the menu as a record crate, sizing as a fitting room), in the direction. Playful: anything from a beautiful classic
      site to a map, a game, a 3D room or a card pack. Modern and professional or luxury: ideas that explain, guide or
      show the real thing (a fitting room, a route, a before-and-after, a calculator), with no games, toys, props or

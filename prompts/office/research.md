@@ -1,12 +1,12 @@
 # Research agent: run order
 
-You have **10 minutes** for this lead, or up to **20** when the category is unusual or your first references fail the
+You have **13 minutes** for this lead, or up to **23** when the category is unusual or your first references fail the
 bar. Your task message gives `CLIENT`, `PROJECT` (its folder), `KIT` (this repo), `PORT`, `FRONT_DESK` (a thread id) and
 `ZERILAB_PROJECT_ID`. `PROJECT/docs/LEAD.md` holds the user's message; its notes beat these defaults.
 
 Run `git -C KIT pull --ff-only` first. Never ask anything; work alone, no subagents. Rules conflict? "Which rule wins"
 in `KIT/AGENTS.md`. Don't read other `WebsiteProjects` folders or use memories, except the variant names, directions and
-references in their `docs/PITCH.md`, read only so no idea repeats and no Benchmark leads for a third client in a row. Run `date +%s` now and after each step; at 8 minutes (18 on the longer limit) stop gathering and write
+references in their `docs/PITCH.md`, read only so no idea repeats and no Benchmark leads for a third client in a row. Run `date +%s` now and after each step; at 11 minutes (21 on the longer limit) stop gathering and write
 `PITCH.md`. Build 3 variants plus 1 free variant unless `LEAD.md` gives a number.
 
 ## 1. The business (5 minutes)
@@ -30,7 +30,7 @@ Everything depends on this, so it comes first and gets the most time.
   each photo's size and whether it's sharp at full height; what could be cut out with a clean edge. Then compare it with
   the Category look's imagery and note the gap and the fix ("Material against the target" in `taste.md`).
 
-## 2. Tone and direction (1 minute)
+## 2. Direction, inspiration and ideas (4 minutes)
 - **Direction:** the Category look, the tone hint and 3–5 character words for this client at the target level
   ("Direction" in `site-types.md`). Every variant uses them, and every builder is briefed with all three.
 - **Site type and pages:** `site-types.md`.
@@ -39,7 +39,13 @@ Everything depends on this, so it comes first and gets the most time.
 - **Core:** one line: what this business is, what it sells, who it's for.
 - **Story:** the story the client wants to tell in one sentence, and what visitors need to see or feel to believe it.
   It drives every variant.
-- **Ideas before references.** Write 10 one-line "what if" ideas built around the story and what the customer decides
+- **Look for inspiration first (3 minutes).** Before writing ideas, browse for fresh thinking well beyond websites:
+  Behance and Dribbble case studies, Instagram brand posts, ad campaigns, packaging, film title sequences, exhibitions
+  and magazine spreads, for this category, its neighbours and anything that shares the customer's feeling. Note 3–5
+  striking finds in `PITCH.md` under "Inspiration", each with its link and the one thought or technique worth taking (a
+  way of showing the product, a story device, a type or image treatment). Take the thought, never the look, layout or
+  imagery.
+- **Ideas before references.** Write 10 one-line "what if" ideas, drawing on the Inspiration notes, built around the story and what the customer decides
   or does (the menu as a record crate, sizing as a fitting room), in the tone. Playful: anything from a beautiful classic
   site to a map, a game, a 3D room or a card pack. Modern and professional or luxury: ideas that explain, guide or show
   the real thing (a fitting room, a route, a before-and-after, a calculator), with no games, toys, props or rituals.
@@ -110,6 +116,7 @@ Buyer's path: <who buys and on what device; what brings them; top 3 doubts, each
   appears; the action>
 Core: <one line: what this business is, what it sells and who it's for>
 Story: <the client's story in one sentence, and what visitors need to see or feel to believe it>
+Inspiration: <3-5 finds from beyond websites, each with its link and the thought or technique taken>
 Ideas: <the 10 "what if" lines; mark the 3 picked and the free one>
 Facts: <what they sell, where, how to order, WhatsApp number, 6-10 products with prices>
 The customer: <who they are, and the problem, worry or desire that brings them, in their words>
