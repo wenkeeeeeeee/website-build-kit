@@ -37,7 +37,8 @@ Drawn in SVG, canvas or WebGL. Pick what fits the client; never the same set in 
 - **Line drawing:** illustrations, routes, stitches, diagrams and underlines draw themselves on scroll.
 - **Shape morphing:** one form becomes another, such as the logo becoming the product.
 - **Motion on a path:** the client's object travels a curve across the page and between sections.
-- **Layered depth:** clean cut-outs of real photos move apart on scroll, in a playful tone.
+- **Layered depth:** clean cut-outs of real photos move apart on scroll: bouncy in a playful tone,
+  slow and precise in the others.
 - **Particles and generative art** from the client's material: petals, bubbles, steam, sparks, grain.
 - **Masks and reveals:** photos open with a wipe or mask into their frame and end whole and fully lit (through the
   client's shape only in a playful tone).

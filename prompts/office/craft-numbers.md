@@ -9,7 +9,7 @@ licence in the kit at `licenses/motionsites.LICENSE`), minus the parts that clas
   on desktop, free flow on phones).
 - | | Display / H1 | Giant word | Body | Small labels |
   |---|---|---|---|---|
-  | Size | 40-72px desktop for a calm or precise character, 72-96px only for a loud one; 32-48px phone (`clamp()`) | 14-28vw, loud characters only | 14-18px | 10-13px |
+  | Size | set by the Category look and the character at the scale `level.md` shows; often 64-120px desktop, 36-56px phone (`clamp()`) | 14-28vw, any tone, as the variant's one bold type move | 14-18px | 10-13px |
   | Line-height | 0.9-1.05 | 0.75-0.88 | 1.5-1.6 | 1-1.3 |
   | Tracking | -0.02 to -0.05em | -0.04 to -0.08em | 0 to -0.01em | +0.1 to +0.3em |
 - At most two families. Only the weights you use, self-hosted, `font-display: swap`.

@@ -12,8 +12,8 @@ variants alongside you: stay inside your own folder.
 - **hero (25 minutes):** build only the header and hero, at full craft with the real material, then run
   `node {{KIT}}/tools/web/hero-frames.cjs <your hero url> <a category leader url from "Category look" in PITCH.md> --out ref`
   and go through the sheet as "The check" in `taste.md` says. Fix and re-run until each frame belongs beside the
-  category leader and no frame shares your reference's composition. Report the sheet path: the user approves the hero
-  from it before anything else is built.
+  category leader and the Level sites and no frame shares your reference's composition. Report the sheet path: a
+  separate reviewer judges it, then the user approves the hero from it before anything else is built.
 - **rest (30 minutes):** the hero in your folder is approved: keep it, apart from changes listed here. Build everything
   below it and every page to the same level.
 
@@ -25,7 +25,9 @@ result is a failed one.
 - Direction: {{from `PITCH.md`: one sentence on what the hero is made of and what it does. Not a style word.}}
 - Category look: {{from `PITCH.md`, in full: the leaders opened, with their hero sheet paths, and what they do with
   type, photography, background and colour, space, motion and copy voice, and what makes them feel expensive or
-  trusted}}. Your variant matches this level and register: open the sheets before you start.
+  trusted}}. Your variant matches this register: open the sheets before you start.
+- Level: {{the 2-3 sites from "Level" in `PITCH.md`, with their hero sheets in `references/level/`}}. Your hero must sit
+  in a row with them ("The bar" in `level.md`). They show how good, never what to build: take nothing from them.
 - Character: {{the 3-5 words from `PITCH.md`, for this client at the target level; with the Category look they set
   your type size, image treatment, contrast, space and motion pace}}. Tone hint: {{playful | modern and professional |
   luxury and premium, for motion and interaction levels only}}. Buyer's path: {{from `PITCH.md`}}.
@@ -113,8 +115,8 @@ only for the effects and image work you're doing. Rules conflict? "Which rule wi
     what looks off.
   - Re-run `hero-frames.cjs`: the hero still matches the approved one. Do the customer walk ("Will they buy?") at phone
     size.
-  - Run `contact-sheet.cjs` on your site, two category leaders from "Category look" in `PITCH.md` and your lead
-    reference, side by side. Fix a hero or section that looks weaker than the leaders, a site that wouldn't belong
+  - Run `contact-sheet.cjs` on your site, two category leaders from "Category look" in `PITCH.md`, a Level site and
+    your lead reference, side by side. Fix a hero or section that looks weaker than the leaders or the Level site, a site that wouldn't belong
     beside them, and anything that shares the reference's layout, composition, colour or imagery.
     On your sheet, apply "Boxes and lines" in `taste.md`.
   - Check printed fonts against "Type" in `taste.md`. Grep the site for reference names and banned words.

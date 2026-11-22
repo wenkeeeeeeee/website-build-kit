@@ -162,7 +162,7 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you use.
 
 ## 5. Images
 - No new photography: the client's images first, then licensed stock of the real subject labelled "Photo for
-  illustration". Clean cut-outs only in a playful tone.
+  illustration". Clean cut-outs only, staged calmly outside a playful tone (`office/taste.md`).
 - Real photos for products, rooms, staff and equipment; generated images (`content/generated/`) only for backgrounds and
   mood, never the product, people or place.
 - **Treat weak client photos first** (as "It's made of what the client really has" in `office/taste.md` says): one grade

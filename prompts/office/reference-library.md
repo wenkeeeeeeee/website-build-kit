@@ -7,7 +7,7 @@ client-site links here. Wrap-up adds to Benchmarks and "Rejected" as `build.md` 
 ## Benchmarks
 Craft to borrow; each counts as a reference when it fits the client's business, tone and hero material. A reference lends
 one or two motion or craft techniques, never its layout, composition, colour or imagery; the level a variant is judged
-against comes from the category leaders in `PITCH.md`.
+against comes from `level.md` and the category leaders in `PITCH.md`.
 **Tone:** playful for Lando Norris, Don't Board Me and Partake; luxury for Cartier, Gentle Monster and TAG Heuer; modern
 and professional for the rest. **Made of** is what the hero is built from.
 **Craft only:** the 3D Benchmarks (Lusion, Active Theory, Igloo, Masahiro Maruyama, EnduroSat) lend one technique and
@@ -57,4 +57,3 @@ Don't use these or anything like them.
 |---|---|
 | https://www.rimac-automobili.com/ | Full-bleed film chapters (car, motor, lab, team) with a side index: a group story in four chapters |
 | https://www.livewire.com/ | Giant type over riding footage, category tiles with video hover, mini electric bikes |
-| https://www.vanmoof.com/ | Giant model name cut by the bike, night-film "worry less" chapter, app and test-ride tiles |

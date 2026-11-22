@@ -22,7 +22,10 @@ Everything depends on this, so it comes first and gets the most time.
   today. Open 3–5 of them and capture each into `PROJECT/references/category/` (`contact-sheet.cjs --steps 8` and
   `hero-frames.cjs`). Not references: write what they actually do as "Category look" (type, photography, background and
   colour, space, motion, copy voice, and what makes them feel expensive or trusted). It is the brief every builder
-  gets and the level every variant is judged against.
+  gets and the register every variant is judged against.
+- **Pick the Level:** the 2–3 sites in `KIT/prompts/office/level.md` nearest this client (same business first,
+  otherwise the nearest way of selling). Capture their heroes into `PROJECT/references/level/` with `hero-frames.cjs`.
+  They show how good every hero must be; they're never references.
 - **Collect** every client field in `PITCH.md`, 6–10 products with prices, the logo, and photos and clips into
   `PROJECT/content/images/` and `PROJECT/content/video/`. Delete stock pictures and shared templates. The client's
   posts give facts, products and voice, never the look or level.
@@ -61,7 +64,7 @@ Everything depends on this, so it comes first and gets the most time.
 
 ## 3. References (4 minutes): techniques for each idea, from Benchmarks and Awwwards only
 References come after the ideas. They lend a motion or craft technique to make each idea look and move well; they never
-set its layout, section order, hero, colour or imagery, and the level comes from the category leaders. Only these
+set its layout, section order, hero, colour or imagery, and the level comes from `level.md` and the category leaders. Only these
 sources, plus any reference the user pasted in `LEAD.md`, which always gets its own variant.
 1. **Benchmarks.** Read "Benchmarks" and "Rejected" in `reference-library.md` and pick the Benchmarks whose craft
    serves each direction in this tone. Their "Made of" must match the hero material. Respect "Craft only" and "No
@@ -92,7 +95,7 @@ message `Read KIT/prompts/office/build.md and run it. CLIENT=... PROJECT=... KIT
 report the minutes taken, the directions and the thread's `link` in under 80 words.
 
 With `STOP_BEFORE_BUILD`, end with the review package:
-- The business in three lines; the target, the Category look (with the leaders' hero sheets) and the character; the Core and Story lines; the buyer's path; what the category expects.
+- The business in three lines; the target, the Category look (with the leaders' hero sheets), the Level sites and the character; the Core and Story lines; the buyer's path; what the category expects.
 - The hero material: usable clips and photos with sizes, and what's missing.
 - Per variant: name and the idea behind it; the hero (recipe, what each scroll step shows, the words); section order;
   type pair and palette; each reference as URL, Benchmark or Awwwards, its sheet files and the technique it gives. Show the lead's
@@ -109,6 +112,7 @@ Target: <who this client should be seen beside, from the user's words or the cat
 Category look: <the 3-5 brands opened, with URLs and sheet files; what they do: type (size, case, weight, style),
   photography (subject, light, crop, size on screen), background and colour, space and density, motion, copy voice;
   what makes them feel expensive or trusted. Every builder gets this, and every variant is judged beside it>
+Level: <the 2-3 sites from level.md nearest this client, with URLs and hero sheet files in references/level/>
 Tone hint: <playful | modern and professional | luxury and premium>, for motion and interaction levels only
 Character: <3-5 words for how this client should feel at the target level, from the Category look and the user's
   words, checked against the client's facts>

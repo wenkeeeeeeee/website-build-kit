@@ -4,8 +4,8 @@ What counts as good, from the user's feedback and approved sites. Where it sits 
 wins" in `AGENTS.md`. Each rule lives in one place: a new lesson sharpens its rule rather than adding one.
 
 ## The hero
-Attractive, creative, modern and alive with motion graphics, at the level and in the register of the Category look in
-`PITCH.md`. The user judges
+Attractive, creative, modern and alive with motion graphics, at the level of `level.md` and in the register of the
+Category look in `PITCH.md`. The user judges
 it first, so it's approved as pictures before the rest is built (`build.md`, step 4). Applies to the home page and
 every page hero.
 
@@ -30,7 +30,7 @@ every page hero.
 - **It's made of what the client really has** ("Hero material" in `PITCH.md`). Footage cropped clean, never stretched:
   low-res clips side by side at full height, or sharp over a blurred copy. Photos only where sharp; a flat photo can
   slide, mask and change light, not turn like 3D, and a reveal ends with the product fully lit and whole. Cut-outs only
-  with clean edges, in a playful tone. Photos too weak or missing: the client's own clips, then licensed stock of the
+  with clean edges, staged calmly outside a playful tone. Photos too weak or missing: the client's own clips, then licensed stock of the
   real thing labelled "Photo for illustration" and listed in `OPEN-QUESTIONS.md`. 3D, drawings and generated art only
   support a real photo or clip; they never replace the real subject.
 - **Material against the target.** Research compares the hero material with the Category look's imagery. Where it
@@ -41,9 +41,11 @@ every page hero.
   quietly frame weak photos as the hero, in boxes, columns or grids.
 - **What fails:** a title with photos; a photo in a box; headline left, picture right, stats row; a full-screen picture
   with no headline; effects covering the subject; a move the material can't carry; no motion.
-- **The check:** run `hero-frames.cjs` on the hero beside a category leader from "Category look" in `PITCH.md`. At every
-  frame and on the phone, the subject is the biggest thing, a stranger knows what's sold, they'd stop scrolling, and it
-  belongs beside the category leaders. No frame shares its reference's composition.
+- **The check:** run `hero-frames.cjs` on the hero beside a category leader from "Category look" and a site from "Level"
+  in `PITCH.md`. At every frame and on the phone, the subject is the biggest thing, a stranger knows what's sold, they'd
+  stop scrolling, and it belongs beside the category leaders and the level sites ("The bar" in `level.md`). No frame
+  shares its reference's composition. A fresh reviewer agent makes this check again before the user sees the hero
+  (step 4 of `build.md`).
 
 ## The body
 - **It fits the hero:** the same scale, image treatment, colour, type and motion everywhere, inner pages too, so the
@@ -83,8 +85,9 @@ has called the result too boxy.
 - Cards suit things people compare (products with prices, plans): plain rectangles with rounded corners, in straight,
   aligned grids, the photo zooming slightly inside its frame on hover. Elsewhere mix photos bleeding off the edge, big
   photos, and text set straight on the page.
-- Frames are plain by default, made special by the crop and the space around them. Tilts, overlaps, cut-outs, the
-  client's shape and products breaking out of frames are for a playful tone only, and never on a catalogue grid.
+- Frames are plain by default, made special by the crop and the space around them. Tilts, stickers, the
+  client's shape as a frame and products bursting out of frames are for a playful tone only. A product set into or
+  overlapping a giant headline suits every tone (`level.md`). None of these on a catalogue grid.
 - Joins between sections are designed and varied: blended backgrounds, a wave, a torn or cut edge, a line the client's
   object draws, an image or object crossing the join, or generous space. Never the same straight edge between flat
   colour bands or the same ruled line after every section: that reads as a template.
@@ -109,7 +112,7 @@ has called the result too boxy.
 
 ## Rejected on sight
 - **Taking a reference's layout, composition, colour or imagery.** From a reference take only a motion or craft
-  technique (an easing, a transition, a type treatment); the level to reach comes from the category leaders.
+  technique (an easing, a transition, a type treatment); the level to reach comes from `level.md` and the category leaders.
 - **Variants that look alike,** or at different levels of completeness.
 - **Messy layering:** words over busy images, accidental overlaps, things sliding under the sticky header.
 - **The same thing twice:** a list in the hero and again below, a second film right after a film hero, a tool repeating
@@ -138,7 +141,8 @@ Fonts are the fastest machine-made tell, so they come from the client's world.
 - **One face with a point of view, one quiet face to read.** If the pair would suit any other client, pick again. The
   display face must carry the client's languages; Noto only for a script with no better option.
 - **Size, case and weight follow the Category look and the character** ("Direction" in `site-types.md`): set type
-  the way the category's best set it, never a default size. If the client's brand already uses a face, one variant may
+  the way the category's best set it, never a default size, with one bold type move at the scale `level.md` shows (a
+  giant word or wordmark suits every tone; the tone sets how loud). If the client's brand already uses a face, one variant may
   keep it.
 - **Other tells:** small uppercase mono labels above every heading, "01 / 02 / 03" numbering, one italic word in a
   headline, cream paper with a serif by default, gradient text, glass cards.

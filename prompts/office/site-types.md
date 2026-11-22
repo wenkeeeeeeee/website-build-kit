@@ -76,7 +76,7 @@ Never reuse words from another client. With the Category look, they set every lo
 treatment, contrast and colour, density and space, and motion pace. Every builder is briefed with both. Palettes stay
 open to explore, light or dark, across the variants, inside the Category look's register.
 
-**Check:** put the home page beside the Category look sheets. If it wouldn't sit among them, or a stranger would
+**Check:** put the home page beside the Category look and Level sheets. If it wouldn't sit among them, or a stranger would
 describe it with different words from the character, rework the look, not the idea.
 
 **The direction decides the references.** Pick Benchmarks whose tone matches the hint, and put the Category look's

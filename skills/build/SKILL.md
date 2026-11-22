@@ -13,7 +13,8 @@ If that is empty, the lead is in the user's message. Missing variants means 3 + 
 KIT = `${CLAUDE_PLUGIN_ROOT}` (this kit's files, read-only: never edit them).
 
 Read first, and keep to them at every step: `KIT/AGENTS.md` ("Which rule wins" settles any conflict),
-`KIT/prompts/office/taste.md` (the quality bar), `KIT/prompts/office/motion.md` and `KIT/prompts/office/site-types.md`.
+`KIT/prompts/office/taste.md` (the quality bar), `KIT/prompts/office/level.md` (the sites that show how good a hero must
+be), `KIT/prompts/office/motion.md` and `KIT/prompts/office/site-types.md`.
 They are the same rules the office build threads use; this skill only sets the order of work.
 
 Build websites for this client in this thread.
@@ -42,7 +43,10 @@ Build websites for this client in this thread.
        `node tools/hero-frames.cjs <urls> --out refs/category`). Write what they actually do as the Category look: type
        (size, case, weight, style), photography (subject, light, crop, size on screen), background and colour, space
        and density, motion, copy voice, and what makes them feel expensive or trusted. It is the brief for every
-       variant and the level each is judged against.
+       variant and the register each is judged against.
+     - Pick the Level: the 2-3 sites in `level.md` nearest this client (same business first, otherwise the nearest way
+       of selling), captured with `node tools/hero-frames.cjs <urls> --out refs/level`. They show how good every hero
+       must be; they're never references.
      - Pick the site type and the nearest tone hint (playful, modern and professional, or luxury and premium) for
        motion and interaction levels only. Where the hint and the Category look disagree, the Category look wins.
      - Write 3-5 character words for how this client should feel at the target level, from the Category look and my
@@ -103,7 +107,12 @@ Build websites for this client in this thread.
      (pinned at most one screen) that also works on phones.
    - Screenshot each hero at a few scroll points and on a phone, beside a category leader:
      `node tools/hero-frames.cjs <hero url> <category leader url> --out shots`.
-   - Show me the target, the Category look and the character words, the screenshots, the one-line idea for each variant, its palette as named
+   - Level review, by a fresh agent: whoever built a hero never marks it. Send one new subagent every hero sheet, the
+     `refs/level` sheets, two category leaders' sheets and each variant's lead reference, with "The bar" in `level.md`
+     and "The check" in `taste.md`. Per hero it answers: would it sit in a row with the Level sites, does it fit the
+     Category look and the character words, and does any frame share its reference's composition? It returns pass or
+     fail with the failing frame and the fix, and builds nothing. Rebuild each failing hero once and review it again.
+   - Show me the target, the Category look, the Level sites and the character words, the screenshots, the one-line idea for each variant, its palette as named
      swatches with hex, its references with the technique taken from each, and the local links, and wait for "go".
 
 6. Build the rest of each site.
@@ -132,9 +141,9 @@ Build websites for this client in this thread.
    - Open every dropdown, date picker, stepper and menu, hover every button, and screenshot them open. Redo any that
      looks plain, default or off-style.
    - Fix anything broken, messy, hard to read or slow.
-   - Put each variant next to two category leaders and its reference
-     (`node tools/contact-sheet.cjs <variant url> <leader urls> <reference url> --out compare`). If it looks weaker than
-     the leaders, improve it; if it shares the reference's layout, composition, colour or imagery, change it. For the
+   - Put each variant next to two category leaders, a Level site and its reference
+     (`node tools/contact-sheet.cjs <variant url> <leader urls> <level url> <reference url> --out compare`). If it looks
+     weaker than the leaders or the Level site, improve it; if it shares the reference's layout, composition, colour or imagery, change it. For the
      free variant, also ask: would someone remember this site tomorrow?
 
 8. Publish.

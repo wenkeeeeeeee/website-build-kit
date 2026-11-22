@@ -29,9 +29,14 @@ at the hero review in step 4, or if blocked. Short updates only.
    - **Hero round.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero` and send all the
      subagents in one message, each with `run_in_background: false`. Each builds only its header and hero, with the real
      material, and returns its `hero-frames` sheet.
-   - **Your check.** Go through each sheet against "The check" in `taste.md`, beside the category leaders. A hero weaker
-     than the category leaders fails, and so does one with a frame that shares its reference's composition or could
-     pass for it with the logo hidden. Send back any failing hero, once, before the user sees it.
+   - **Level review, by a fresh agent.** Builders never mark their own hero. Send one new subagent (not a builder,
+     `run_in_background: false`) every hero sheet, the Level sheets in `PROJECT/references/level/`, two category
+     leaders' sheets and each variant's lead reference sheet, with "The bar" in `level.md` and "The check" in
+     `taste.md`. For each hero it answers: would it sit in a row with the Level sites, does it fit the Category look and
+     the character words, and does any frame share its reference's composition or pass for it with the logo hidden? It
+     returns pass or fail per variant, naming the failing frame and the fix in one line, and builds nothing. Send each
+     failing hero back to its builder once with that verdict, then review the new sheet the same way before the user
+     sees it.
    - **Review.** Post per variant: its `hero-frames` sheet as an image (Markdown image, absolute path), the local hero
      URL, the recipe in one line, its palette as named swatches with hex (mood pair and accent where used), and its
      references with the technique taken from each. If `FRONT_DESK` isn't `none`, also send it
@@ -46,8 +51,8 @@ at the hero review in step 4, or if blocked. Short updates only.
      section.
    - **Copying:** run `contact-sheet.cjs` on each variant and its lead reference. A variant that shares the reference's
      layout, composition, colour or imagery fails.
-   - **Level and category:** put each home page beside two category leaders from "Category look" in `PITCH.md`. A hero
-     or body clearly weaker than them fails. What would a stranger say this company sells? Would the brand's own
+   - **Level and category:** put each home page beside two category leaders from "Category look" and the "Level" sites
+     in `PITCH.md`. A hero or body clearly weaker than them fails. What would a stranger say this company sells? Would the brand's own
      marketing team publish it? If the user liked another variant, this one must look at least as premium.
    - **Customer walk:** at phone size, walk each home page as "Will they buy?" in `taste.md` says, checking the buying
      basics and tone. It fails if a customer wouldn't know what it is, trust it, or know how to buy.
@@ -84,8 +89,8 @@ at the hero review in step 4, or if blocked. Short updates only.
   then pick references from Benchmarks or Awwwards and open them (step 3 of `research.md`), naming the technique to take
   from each. Never brief a Builder with no outside reference, except the free variant (step 2 of `research.md`), judged
   on whether someone would remember it tomorrow and whether it belongs beside the category leaders.
-- **A redone hero gets the same review:** build it, post its `hero-frames` sheet beside its reference, wait for "go"
-  before publishing.
+- **A redone hero gets the same review:** build it, pass the fresh agent's level review (step 4), post its
+  `hero-frames` sheet beside its reference, wait for "go" before publishing.
 - **When the user rejects something or repeats a correction,** note the lesson in `PROJECT/docs/LESSONS.md`, in general
   terms, no client names.
 - **"Deepen V2", or the client picked one:** follow `KIT/prompts/office/deepen.md`.
