@@ -12,7 +12,7 @@ session-start hook if installed.
 - `tools/web/`: preview server, page checker, export, hero film, scroll and 3D effects, cut-outs (`npm install` in it
   once).
 - `prompts/office/`: the AI office. Run orders: `research.md`, `build.md`, `deepen.md`. Standards: `taste.md`,
-  `motion.md`, `site-types.md`, `reference-library.md`, `colour.md` (mood pair and accent), `level.md` (the sites that show how good a hero must be). A lead gets 10-20 minutes of research and a plan the user
+  `motion.md`, `site-types.md`, `reference-library.md`, `colour.md` (mood pair and accent), `level.md` (the sites that show how good a hero must be). A lead gets 15-25 minutes of research and a plan the user
   reviews, then heroes the user approves as pictures, then full variants published to Vercel.
 - `prompts/techniques/`: one-effect recipes with working code, looked up from its `INDEX.md` only for effects a concept
   already chose. `prompts/office/craft-numbers.md`: starting values for type, motion and common bugs.

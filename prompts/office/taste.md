@@ -11,12 +11,16 @@ every page hero.
 
 - **It shows what the customer came for:** the car, the dish, the pets, the gift, the service and its result, the skin
   clearing. That subject is the biggest thing on screen at every scroll step. Never a logo, mood or metaphor; prices,
-  ratings and counts never lead (one small line at most). When customers book a person (an emcee, host, performer,
+  ratings and counts never sit in the hero; they come right below. When customers book a person (an emcee, host, performer,
   coach, consultant), the person is the subject, staged like a product ("The person is the product" in
   `site-types.md`).
-- **It says the core in seconds** in a clean first screen: a headline set into the scene, a short line, one line of
-  facts, one action. No paragraphs. Claims only from the client, or shown as `[client to confirm]`.
-- **It moves:** an opening that never blocks (playful 2–3 seconds, professional a one-second reveal; `motion.md`), a
+- **The look leads, the idea follows.** Each variant's hero is a visual move at the level (`level.md`): how the subject
+  is staged, the colour that owns the first screen and one bold type move. The variant's idea plays out below the hero,
+  never as a gimmick in it (a timeline, a quote, a floor plan or a split screen is not a hero).
+- **It says the core in seconds** in a clean first screen holding only the subject, one bold type move (the headline),
+  one short line and one button. No facts row, stats, badges or paragraphs: they come right below. Claims only from the
+  client, or shown as `[client to confirm]`.
+- **It moves, with one motion idea:** an opening that never blocks (playful 2–3 seconds, professional a one-second reveal; `motion.md`), a
   main visual moving gently at rest, and a scroll move wherever the product suits it: pinned at most one screen, smooth
   both ways, shorter on phones. Scroll recipes:
   - **Turn and open:** the product turns, opens or comes apart, parts named.
@@ -25,41 +29,51 @@ every page hero.
   - **Reveal:** something personal appears, such as a name printing onto the product.
   - **Place:** the room fills, the camera walks in, day turns to night.
   - **Gather:** the camera pulls back from one subject to the whole range.
-- **The tone sets the energy.** Playful: bold colour, bounce, something the visitor does to the client's object (hold,
-  inflate, light, uncover), optional sound. Modern and professional (luxury included): precise, calm motion that
-  explains the product, a move customers know from the category's best sites, never a game, prop or ritual. Nothing
-  gates the site.
+- **Confident in every tone; the tone sets how loud.** Every hero has a decided colour from the subject's world (a plum
+  stage, a gold coin on deep blue), a big type move and a staged subject. Playful adds bounce, stickers, something the
+  visitor does to the client's object (hold, inflate, light, uncover) and optional sound. Modern and professional stays
+  still and precise, with a quiet accent and a move customers know from the category's best sites, never a game, prop
+  or ritual. Luxury and premium is slow, with rich colour and far more space. Beige with a small serif, or colour with
+  no link to the subject, fails in every tone. Nothing gates the site.
 - **It's made of what the client really has** ("Hero material" in `PITCH.md`). Footage cropped clean, never stretched:
   a low-res clip sharp over a blurred copy of itself, never several side by side. Photos only where sharp; a flat photo can
   slide, mask and change light, not turn like 3D, and a reveal ends with the product fully lit and whole. Cut-outs only
-  with clean edges, staged calmly outside a playful tone. Photos too weak or missing: the client's own clips, then licensed stock of the
-  real thing labelled "Photo for illustration" and listed in `OPEN-QUESTIONS.md`. 3D, drawings and generated art only
-  support a real photo or clip; they never replace the real subject.
+  with clean edges, staged calmly outside a playful tone; cut-outs of people only from sharp studio photos, never from
+  phone or reel shots. When the material falls short of the level:
+  - **Products:** a faithful render or AI image of the real product (same shape, colours, cap and label), labelled
+    "Render for illustration" and listed in `OPEN-QUESTIONS.md`.
+  - **People and places:** real photos only. The best single sharp photo shown big and full-bleed, plus a shoot list in
+    `OPEN-QUESTIONS.md`. Never AI-made people or places.
+  - For products and ingredients only, licensed stock of the real thing is the last resort, labelled "Photo for
+    illustration". Drawings and other generated art only
+    support the real subject; they never replace it.
 - **Material against the target.** Research compares the hero material with the Level and Category look imagery. Where it
   can't reach that level (small, casual, phone-shot, cluttered, poorly lit), `PITCH.md` says so under "Hero material"
-  and proposes the fix: new shots (with a short shot list), or faithful renders of the client's real product (same
-  shape, colours, cap and label), labelled "Render for illustration" and listed in `OPEN-QUESTIONS.md`. Builders use the
+  and proposes the fix above: faithful renders for a product, the best single photo and a shoot list for people and
+  places. Builders use the
   strongest real or rendered image the way the category's best do (one large, sharp image with space around it). Never
   quietly frame weak photos as the hero, in boxes, columns or grids.
-- **What fails:** a title with photos; a photo in a box; several photos in columns, a strip or a grid; headline left, picture right, stats row; a full-screen picture
+- **What fails:** a title with photos; a photo in a box; several photos in columns, a strip or a grid; headline left,
+  picture right, stats row; a facts row or badges; an idea gimmick standing in for the subject; a full-screen picture
   with no headline; effects covering the subject; a move the material can't carry; no motion.
 - **The check:** run `hero-frames.cjs` on the hero beside a category leader from "Category look" and a site from "Level"
   in `PITCH.md`. At every frame and on the phone, the subject is the biggest thing, a stranger knows what's sold, they'd
   stop scrolling, and it belongs beside the category leaders and the level sites ("The bar" in `level.md`). No frame
-  shares its reference's composition. A fresh reviewer agent makes this check again before the user sees the hero
-  (step 4 of `build.md`).
+  shares its reference's composition. The builder fixes and re-runs until it passes; the user then reviews the heroes.
 
 ## The body
 - **It fits the hero:** the same scale, image treatment, colour, type and motion everywhere, inner pages too, so the
   site reads as one piece. Sections of only heading, paragraph and picture, or only fade-ins, fail.
-- **The client's object runs through the site:** intro, section transitions, image frames, small details (a balloon
-  stylist's balloons flew up in the intro, carried each section change and framed the photos).
+- **The client's object runs through the site below the hero:** section transitions, image frames, small details (a
+  balloon stylist's balloons carried each section change and framed the photos). The hero stays clean.
 - **One signature set-piece** of at most 2–3 pinned screens (`motion.md`), placed after the first price and action, then
-  one-screen sections, each with its own motion graphic. Home pages run about 6–10 screens.
+  one-screen sections. Each section has one main thing (the price and action, an object transition, the tool, a proof
+  moment, the set-piece) with its own motion graphic; no section carries all of them. Home pages run about 6–10 screens.
 - **A tool that fits the business,** answering a real customer question and ending in a WhatsApp message; plumbing in
   the business's language ("try-on list", not "basket").
-- **Each variant is its own world:** its own hero idea, header, type pair, palette and telling of each step of the
-  buyer's path. The path can repeat; the telling can't. Never one shared recipe across variants.
+- **Same level, its own look:** every variant passes the level, and each has its own hero staging, palette and display
+  type. Header style, section order, components and the tool may be shared across variants when that's the strongest
+  choice. Never a weaker look just to be different.
 - **Every variant carries the whole business:** every product with its price (on a Branding site, after the story), every
   page in `PITCH.md`, the proof,
   offers, questions, locations and ways to order. Catalogues, recipes, gifts and awards the client has, the site has.
@@ -101,21 +115,22 @@ has called the result too boxy.
   brand, not a racing game, fintech dashboard or sale poster. If the hero doesn't belong beside the category leaders from
   research, or the brand's own marketing team wouldn't publish it, redo it.
 - **Colour from the brand and the client's world,** never a metaphor. Palettes stay open to explore, light or dark,
-  across the variants; the Category look and the character words decide how each feels, not the tone label. V3 and V4 (the free
-  variant) may explore a mood pair and one clashing accent where it suits, louder for playful, quieter for professional
-  (`colour.md`), never copied from its examples; V1 and V2 keep the usual palette. Red with gold and brush calligraphy reads festive for Chinese clients: avoid it
+  across the variants; the Category look and the character words decide how each feels, not the tone label. Every variant's colour is decided: V1
+  and V2 let one colour or family from the subject's world own the first screen, with no clashing accent. V3 and V4
+  (the free variant) may explore a mood pair and one clashing accent where it suits, louder for playful, quieter for
+  professional (`colour.md`), never copied from its examples. Red with gold and brush calligraphy reads festive for Chinese clients: avoid it
   unless the client is festive. Keep clear of a famous namesake's colours and look.
-- **A redo keeps the level of the variant the user liked** (its tone and image treatment) with a new idea, layout and
-  hero. Still rejected after several rounds: restart from the plain starter with a new concept and new references.
-- **The original logo,** never redrawn or restyled. No clip art for a product the client hasn't photographed: the nearest
-  real photo, labelled, and the gap listed in `OPEN-QUESTIONS.md`.
+- **A redo keeps the level of the variant the user liked** (its tone and image treatment) with a new look and idea.
+  Still rejected after several rounds: restart from the plain starter with new looks and ideas.
+- **The original logo,** never redrawn or restyled. No clip art for a product the client hasn't photographed: a faithful
+  render or the nearest real photo, labelled, and the gap listed in `OPEN-QUESTIONS.md`.
 - **"Branding" is storytelling:** one story with transitions between products; no cards, prices or adverts until a quiet
   shop link at the end. The main action stays in the header.
 
 ## Rejected on sight
-- **Taking a reference's layout, composition, colour or imagery.** From a reference take only a motion or craft
-  technique (an easing, a transition, a type treatment); the level to reach comes from `level.md` and the category leaders.
-- **Variants that look alike,** or at different levels of completeness.
+- **Taking a reference's layout, composition, colour or imagery.** From a reference take only a motion technique
+  (an easing, a transition, how the scroll is paced); the level to reach comes from `level.md` and the category leaders.
+- **Variants with the same hero staging and colour,** or at different levels of completeness.
 - **Messy layering:** words over busy images, accidental overlaps, things sliding under the sticky header.
 - **The same thing twice:** a list in the hero and again below, a second film right after a film hero, a tool repeating
   another section. At most three videos on a home page, one playing at a time.

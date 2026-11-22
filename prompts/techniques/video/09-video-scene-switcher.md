@@ -4,7 +4,8 @@ Adapted from MotionSites video-and-media.md #9 (MIT).
 
 Up to 3 of the client's scenes (rooms, branches, times of day) behind a row of named buttons; the chosen scene
 crossfades in. An optional foreground cut-out (window frame, doorway, counter edge) bobs gently on top, as if looking
-out from inside. For "choose your atmosphere" heroes: a place to visit, a venue, a trip.
+out from inside. For a "choose your atmosphere" section right below the hero (a place to visit, a venue, a trip); in the hero itself
+the scenes may crossfade on their own as its one motion idea, with no buttons.
 
 **Needs:** 2-3 long, seamless films of the client's real places, one poster each; optional clean foreground cut-out PNG.
 

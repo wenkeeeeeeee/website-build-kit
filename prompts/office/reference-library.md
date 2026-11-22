@@ -1,12 +1,12 @@
 # Reference library
 
-References come only from the Benchmarks below, or Awwwards when it fits the business better (step 3 of
-`research.md`). Open an entry before picking it: these notes don't prove it suits the client. No client names or
+A variant takes at most one reference, only for a motion or craft technique it needs, from the Benchmarks below
+(optional) or Awwwards (step 3 of `research.md`). How good a variant must be comes from `level.md`, not from here. Open an entry before picking it: these notes don't prove it suits the client. No client names or
 client-site links here. Wrap-up adds to Benchmarks and "Rejected" as `build.md` says.
 
 ## Benchmarks
 Craft to borrow; each counts as a reference when it fits the client's business, tone and hero material. A reference lends
-one or two motion or craft techniques, never its layout, composition, colour or imagery; the level a variant is judged
+one motion technique, never its layout, composition, colour or imagery; the level a variant is judged
 against comes from `level.md` and the category leaders in `PITCH.md`.
 **Tone:** playful for Lando Norris, Don't Board Me and Partake; luxury for Cartier, Gentle Monster and TAG Heuer; modern
 and professional for the rest. **Made of** is what the hero is built from.

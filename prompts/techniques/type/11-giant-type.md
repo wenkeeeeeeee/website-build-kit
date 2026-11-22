@@ -10,7 +10,7 @@ behind or around it, never instead of it.
   sign-off. Use a word from the client's world, set in type; never redraw or restyle the logo.
 - **Watermark:** a section's key word repeated huge at low opacity behind its content (pricing, closing call).
 - **Scattered words:** a 3-word headline broken across the viewport (left / right / indented) over the subject's film
-  or photo, with one short real fact tucked into a gap.
+  or photo, with the short line and button tucked into a gap.
 
 **Needs:** ghost word: one clean cut-out of the product or subject (PNG/WebP with alpha). Others: nothing, or a
 film/photo for scattered words.
@@ -87,11 +87,7 @@ content JSON, or drop the fact.
 <section class="scatter">
   <video class="scatter__bg" src="video/hero.mp4" poster="images/hero-poster.webp" autoplay muted loop playsinline aria-hidden="true"></video>
   <h1><span class="scatter__w scatter__w--1">first</span> <span class="scatter__w scatter__w--2">second</span> <span class="scatter__w scatter__w--3">third</span></h1>
-  <p class="scatter__note">[placeholder: one or two lines of real fact]</p>
-  <div class="scatter__stat" style="right:6vw;top:14%;text-align:right">
-    <div class="scatter__stat-row" style="justify-content:flex-end"><span class="scatter__rule" style="rotate:20deg"></span><span class="scatter__stat-num" data-from="stats.main">[placeholder]</span></div>
-    <div class="scatter__label" data-from="stats.mainLabel">[placeholder]</div>
-  </div>
+  <p class="scatter__note">[placeholder: one short line] <a class="btn" href="#order">[placeholder: action]</a></p>
 </section>
 ```
 ```css
@@ -101,11 +97,6 @@ content JSON, or drop the fact.
 .scatter__w{position:absolute;margin:0;font:500 14vw/.95 var(--font-display);letter-spacing:-.04em}
 .scatter__w--1{left:16px;top:18%}.scatter__w--2{right:16px;top:38%}.scatter__w--3{left:18%;top:58%}
 .scatter__note{position:absolute;left:24px;top:46%;max-width:240px;font:15px/1.375 var(--font-body)}
-.scatter__stat{position:absolute}
-.scatter__stat-row{display:flex;align-items:center;gap:12px}
-.scatter__stat-num{font:500 clamp(36px,4vw,48px) var(--font-display);letter-spacing:-.025em}
-.scatter__rule{display:none;width:96px;height:1px;background:var(--line)}
-.scatter__label{margin-top:4px;font:14px var(--font-body);color:var(--muted)}
 @media (min-width:768px){.scatter__w{font-size:13vw}.scatter__w--1{left:40px}.scatter__w--2{right:40px}.scatter__w--3{left:28%}.scatter__rule{display:block}}
 ```
 

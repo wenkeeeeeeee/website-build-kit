@@ -15,8 +15,8 @@ hover effects work. Use it for rich load choreography with no framework.
   `in-mask` `translateY(40%)` inside an overflow-hidden line; `in-pop` `scale(.9) -> 1.03 @70% -> 1` (badges, playful
   tone only; professional uses `in-soft`); `in-btn` `translateY(18px) scale(.94)`; `in-side` `translateX(22px)`
   (secondary actions); `in-stat` `translateY(20px)`.
-- Example timeline: logo .08; nav items .16/.28/.40/.52 (alternating scale/soft); header action .34; badge .22;
-  H1 line 1 .42, line 2 .62; lede .82; primary action .96; secondary 1.10.
+- Example timeline: logo .08; nav items .16/.28/.40/.52 (alternating scale/soft); header action .34;
+  H1 line 1 .42, line 2 .62; short line .82; the one button .96.
 - After `animationend` the element gets `.is-in` (`animation:none` plus final values); otherwise the transform held by
   fill-mode overrides `:hover{transform}`.
 - JS fallback: after two frames, if no animation is running or finished, force `.is-in` on everything.

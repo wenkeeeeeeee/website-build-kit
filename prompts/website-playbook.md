@@ -36,9 +36,9 @@ WebsiteProjects/<Project>/
 4. **Lead review:** one desktop screenshot per variant, `check-pages.cjs --phone`, a grep for reference names and banned
    words, then publish.
 
-**One concept per variant, from the client's own world,** with its own story spine and page furniture: identical briefs
-on one starter come back as three reskins. The buyer's path order can repeat; its telling can't (step 2 of
-`office/research.md`).
+**One look per variant, all at the level,** each with its own hero staging, colour and display type: identical briefs
+on one starter come back as reskins. Header, section order and components may be shared when that's strongest (step 2
+of `office/research.md`).
 
 **Shape the plumbing to the business.** Rename the basket rather than add something (shoot list, try-on list,
 confidential request); it still ends in one filled-in WhatsApp message. Add one tool (lens picker, frame finder, branch
@@ -131,7 +131,8 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you use.
   depends on AI video. `film.py stitch` joins clips.
 - **Placing:** right-aligned, full section height, left edge feathered
   (`mask-image: linear-gradient(90deg, transparent, #000 14%)`). Sample the section background from the film's edge
-  colours. Steps beside the film follow `currentTime`; clicking a step seeks.
+  colours. Below the hero, steps beside the film follow `currentTime` and clicking a step seeks; in the hero the film stands
+  alone with the headline, line and button.
 - **Encoding:** TV-range yuv420p, any zoom rendered on a 4x frame (both in `film.py`).
 - **Serving:** a 1280 mp4 for screens up to 1100px (`<source media="(max-width: 1100px)">`), a 1920 webm and mp4 above, a
   poster, and a separate still for reduced motion. `preload="auto"` on the first film only, `preload="none"` below.
@@ -161,10 +162,12 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you use.
   whatever the load order.
 
 ## 5. Images
-- No new photography: the client's images first, then licensed stock of the real subject labelled "Photo for
-  illustration". Clean cut-outs only, staged calmly outside a playful tone (`office/taste.md`).
-- Real photos for products, rooms, staff and equipment; generated images (`content/generated/`) only for backgrounds and
-  mood, never the product, people or place.
+- The client's images first. Below the level: faithful renders of the real product labelled "Render for illustration";
+  for people and places, the best single real photo shown big plus a shoot list; for products only, licensed stock of
+  the real subject labelled "Photo for illustration" (all as "It's made of what the client really has" in `office/taste.md`).
+  Clean cut-outs only, staged calmly outside a playful tone; people only from sharp studio photos.
+- Generated images (`content/generated/`) for backgrounds, mood and faithful product renders only; never AI-made people
+  or places.
 - **Treat weak client photos first** (as "It's made of what the client really has" in `office/taste.md` says): one grade
   across the site and a tone-fitting treatment in every section, not just the hero; never scaled past sharp, cut out
   only where the edge is clean.

@@ -2,8 +2,8 @@ Adapted from MotionSites layout-and-ui.md #6 (MIT).
 
 # Overlapping trust cluster with pill
 
-Three small coins overlap and tuck into the start of a pill carrying one real claim. It can be the hero's one small
-line of facts (at most one), above or below the headline, instead of a loose logo row.
+Three small coins overlap and tuck into the start of a pill carrying one real claim. It sits right below the hero, by
+the price and action, instead of a loose logo row; never in the hero itself ("The hero" in `office/taste.md`).
 
 **Needs:** three real items for the coins (customer photos used with permission, real partner or stockist logos, or the
 client's own marks) and one real claim. No stock faces, no invented counts.

@@ -38,7 +38,8 @@ Every type: one concept per variant, and the checks in `taste.md`.
 ## Direction: from the category's best, not from a list
 Research sets the direction for every variant before choosing references, and writes it in `PITCH.md`. It comes from
 looking at real sites, never from matching the client to a list, so it works for a business the kit has never seen.
-Every variant uses it, the free variant included; variants differ in idea and layout, never in direction or level.
+Every variant uses it, the free variant included; variants differ in look (hero staging, colour, display type) and
+idea, never in direction or level.
 
 1. **The target.** Who should this client be seen beside? The user's own words in `LEAD.md` come first ("luxury",
    "premium", "like Aesop"). Otherwise, the best-known brands in the client's exact category, at the level the user
@@ -69,13 +70,16 @@ Every variant uses it, the free variant included; variants differ in idea and la
 - **Modern and professional:** the business is about trust, performance or expertise; customers come for a result they
   must rely on: health, money, safety, learning, a business need, technology that has to work. Vehicles and technology,
   clinics and health, finance and law, education, B2B, property, services, group or corporate sites. **Looks like:** a
-  calm, confident layout, clean type, precise motion that explains the product, real specs and proof up front; how
-  light or dark, how large the type and how dense the page come from the business's character, not this label. No games, stickers, sound or jokes in headlines.
+  decided colour from the subject's world, a big type move and a staged subject, held still and precise, with a quiet
+  accent; motion that explains the product; real specs and proof right below the hero. No games, stickers, sound or
+  jokes in headlines.
 - **Luxury and premium** (fragrance and beauty, fashion, jewellery, watches, fine dining, boutique hotels, high-end
-  interiors, heritage brands, or any client the user asks to look luxury or premium): calm like modern and professional,
-  with art-directed imagery, a slower pace, far more space and type set the way the category's best set it.
+  interiors, heritage brands, or any client the user asks to look luxury or premium): still and slow, with rich colour
+  from the product's world, art-directed imagery, far more space and type at the level's scale.
 
-Not by price: a cheap clinic visit is professional, an expensive party playful. Mixed signals: follow the Category look.
+Every tone is confident; the tone only sets how loud ("The bar" in `level.md`). Beige with a small serif, or colour
+with no link to the subject, fails in every tone. Not by price: a cheap clinic visit is professional, an expensive party
+playful. Mixed signals: follow the Category look.
 
 **Character: the direction in words.** Research writes 3–5 words for how this client should feel at the target level,
 worked out from the Category look and the user's words, then checked against the client's facts so they stay true.
@@ -96,8 +100,7 @@ Starting hints for categories that sell the same way, never a brief to copy: the
 client that fits none takes the family matching how its page must sell.
 
 Each family has a starting hero, built per "The hero" in `taste.md` from the client's real photos and footage: one stage,
-one line of facts, one action, and something the visitor can try (playful) or a tool that answers a question
-(professional). These are directions, not sites to copy: the concept in `PITCH.md` wins, and no two variants share a
+one bold type move, one line, one button and one motion idea. Facts, tools and things to try come right below it. These are directions, not sites to copy: the concept in `PITCH.md` wins, and no two variants share a
 hero.
 
 - **One beautiful object:** bags, eyewear, watches, jewellery, shoes, perfume, audio, furniture. The product is the star:
@@ -105,17 +108,17 @@ hero.
   close-ups of materials and details, each part named.
 - **Vehicles and mobility:** e-scooters, e-bikes, motorcycles, cars, EV charging, rental and sharing. Everyday technology,
   so precise and premium, never loud. **Hero:** the real vehicle, big and sharp in studio light or on a real street, or a
-  real rider using it; it turns, folds or comes apart on scroll, parts named. A model switcher and one fact line (weight,
-  range, price a month). Below: a feature index over close-ups, spec counters, "which model fits you", running cost
+  real rider using it; it turns, folds or comes apart on scroll, parts named. Below: a model switcher, one fact line (weight,
+  range, price a month), a feature index over close-ups, spec counters, "which model fits you", running cost
   against petrol. The brand's accent on a base the character suits, a clean grotesk. Never a game, a cartoon road, a
   dashboard or a sale poster. Category brands to open: cowboy.com, atherenergy.com, gogoro.com, unagiscooters.com.
 - **Packs and jars:** snacks, drinks, sauces, coffee, sweets, pet food. Loud colour per product, flavours and ranges.
-  **Hero:** the product being made or opened fills the screen, and the visitor does the last step (hold to fry, pour,
-  crack the lid), ending in the basket. Each flavour comes out in its own shape and colour; small copy has the brand's
+  **Hero:** the product being made or opened fills the screen, and, in a playful tone, the visitor does the last step (hold to fry,
+  pour, crack the lid) as the hero's one motion idea; the basket comes right below. Each flavour comes out in its own shape and colour; small copy has the brand's
   humour.
 - **Solves a problem:** skincare, hair, supplements, dental, pain relief, cleaning. Problem, proof, how it works.
   **Hero:** what the product does, under a headline in the customer's words. On scroll the problem clears (skin calms day
-  by day, days counted), with how it works and whether it's safe (ingredients, tests, who can use it) on the way. Every
+  by day, days counted). How it works and whether it's safe (ingredients, tests, who can use it) come right below. Every
   claim, timeline and safety line comes from the client's material or is marked `[client to confirm]`. Below: explain it
   simply, with real before-and-after and simple diagrams, not paragraphs.
 - **Body and movement:** physiotherapy, pilates, yoga, gyms, sports. The body in motion, not a calm studio. **Hero:** the
@@ -125,14 +128,15 @@ hero.
   of night). The cursor or a hold shows the next state: empty room to full, raw to plated, day to night. One line says
   what, where and when, next to the booking action. Room sound optional.
 - **The person is the product:** emcees and hosts, event coordinators, DJs, musicians, speakers, coaches, consultants
-  and personal brands. Customers book the person. **Hero:** the person staged like a product: one clean cut-out or a
-  full-bleed portrait, big, in a decided colour, with their name or promise set huge around or behind them (Dennis
-  Snellenberg, Ario Law, Charles Leclerc in `level.md`). Event photos come below as proof, never a grid in the hero.
-  Weak photos: a short shoot list for one studio portrait session goes in `OPEN-QUESTIONS.md`, and meanwhile the best
-  single portrait, cut out clean.
+  and personal brands. Customers book the person. **Hero:** the person staged like a product: a full-bleed portrait, or
+  a clean cut-out only from a sharp studio photo, big, in a decided colour, with their name or promise set huge around
+  or behind them (Dennis Snellenberg, Ario Law, Charles Leclerc in `level.md`). Event photos come below as proof, never a
+  grid in the hero. Weak photos: the best single real portrait shown big, plus a shoot list for one studio portrait
+  session in `OPEN-QUESTIONS.md`. Never AI-made people, never cut-outs from phone or reel shots.
 - **Work worth showing:** event styling, florists, weddings, interiors, architecture, renovation, fit-out,
-  design-and-build and contractors, photography, tattoo, set design. The portfolio is the proof. **Hero:** before and
-  after in one move: the bare space, filled with the finished work by the visitor's hold or cursor. Below: job names,
+  design-and-build and contractors, photography, tattoo, set design. The portfolio is the proof. **Hero:** the finished
+  work staged big; the bare space turning into it, by the visitor's hold or cursor, is its one motion idea. Below: job
+  names,
   sized to the character, whose hover opens the work, and one line or thread carrying you through the page. For spaces (interiors,
   architecture, renovation, fit-out): generous space around the work, photos framed and shown in their own light, never
   dimmed to carry text, and the trade's own drawing language as the detail layer: floor plans, dimension lines, drawing
@@ -151,5 +155,5 @@ hero.
   **Hero:** the teacher and real students at work, or a real result they reached, the promise in one line and a first
   step you can try. Proof stays labelled; risk wording stays.
 - **Origin and craft:** farms, wineries, distilleries, makers, heritage brands. A place and how it's made. **Hero:** the
-  finished product big at the centre, with real photos of the place and the making around it; on scroll a route draws
-  from the source to the product, each stop opening a chapter.
+  finished product big at the centre. Below it, real photos of the place and the making, and a route drawing from the
+  source to the product, each stop opening a chapter.

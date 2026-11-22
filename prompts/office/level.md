@@ -30,11 +30,11 @@ What the approved sites share, in every tone:
 - **The level beats the Category look on how good:** type scale, colour confidence, how big and staged the subject is,
   and space ("Direction" in `site-types.md`). The Category look sets what is shown, how formal it feels and the voice.
 - **Not references.** They show how good, never what to build: no layout, composition, colour or imagery is taken from
-  them. Craft techniques still come only from references (step 3 of `research.md`).
+  them. A motion technique comes from a variant's one reference, if it has one (step 3 of `research.md`).
 - **Only the hero counts.** Many of these sites drop into popups or card grids below the first screen; that part is not
   the level.
-- **The level review:** every hero is judged by a fresh reviewer agent beside these sites before the user sees it
-  (step 4 of `build.md`).
+- **The check:** each builder puts its hero beside these sheets and fixes it until it would sit in a row with them;
+  then the user reviews the heroes.
 - A site below is never also a lead reference, and anything in "Rejected" in `reference-library.md` beats this list.
 
 ## The set

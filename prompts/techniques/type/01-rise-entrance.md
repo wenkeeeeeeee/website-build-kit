@@ -2,8 +2,8 @@ Adapted from MotionSites type-and-text-motion.md #1 (MIT).
 
 # Staggered rise entrance (+ media settle)
 
-The hero's first second: each element rises a few px into place in reading order (nav, eyebrow, headline lines, body,
-action, proof line) while the background media settles from a slight zoom. Use it as the hero's opening reveal or as
+The hero's first second: each element rises a few px into place in reading order (nav, headline lines, the short line,
+the button) while the background media settles from a slight zoom. Use it as the hero's opening reveal or as
 the quiet entrance under a bigger opening.
 
 **Needs:** nothing. The media settle needs a hero image or film at least 1.2x its display size.

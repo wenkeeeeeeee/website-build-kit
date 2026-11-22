@@ -1,7 +1,7 @@
 # Build thread: run order
 
 This thread takes one lead from `PITCH.md` to a live site: full variants, every page working, published to Vercel.
-Target: **about an hour of work here**, plus one stop for the user to approve the heroes as pictures. Your first message
+Target: **about 1.5 hours of work here**, plus one stop for the user to approve the heroes as pictures. Your first message
 gives `CLIENT`, `PROJECT`, `KIT`, `PORT` and `FRONT_DESK`. Don't redo the research or ask the user anything. Stop only
 at the hero review in step 4, or if blocked. Short updates only.
 
@@ -19,30 +19,20 @@ at the hero review in step 4, or if blocked. Short updates only.
      from `KIT/tools/web` into `PROJECT/variants/_shared/vendor/` as `gsap`, `lenis`, `three` and `ogl`. React Bits
      components are fetched per variant with `KIT/tools/web/reactbits.cjs`.
    - Open it once with `check-pages.cjs`. Every page must work: all variants copy it.
-4. **Heroes first (25 minutes), then the user's review.** Heroes are judged from pictures, never the plan.
-   - **Before briefing,** open each variant's lead reference sheet. Replace the reference if a banner covers it, most
-     frames are static, the look is on the fail list, or its hero isn't made of the same kind of material as this
-     variant's (step 3 of `research.md`). Rewrite a direction in `PITCH.md` if the hero isn't what the customer came for,
-     the palette comes from a metaphor, the look or idea wouldn't sit beside the Category look or doesn't suit the character words (the free variant
-     included), the hero frames weak photos the Level imagery outclasses, the hero
-     sets several photos in columns or a grid, a person-led business doesn't stage the person, a 3D
-     Benchmark leads a professional hero, or the plan needs a move the hero material can't carry.
+4. **Heroes first (40 minutes), then the user's review.** Heroes are judged from pictures, never the plan.
+   - **Before briefing,** open each variant's reference sheet, if it has one. Drop the reference if a banner covers it,
+     most frames are static or the look is on the fail list (step 3 of `research.md`). Rewrite a look in `PITCH.md` if
+     the hero isn't what the customer came for, the look wouldn't sit beside the Level sites or doesn't suit the
+     character words (the free variant included), the palette comes from a metaphor or is timid, the hero frames weak
+     photos the Level imagery outclasses, sets several photos in columns or a grid, puts an idea gimmick where the
+     subject should be, or a person-led business doesn't stage the person, a 3D Benchmark leads a professional hero, or
+     the plan needs a move the hero material can't carry.
    - **Hero round.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero` and send all the
      subagents in one message, each with `run_in_background: false`. Each builds only its header and hero, with the real
-     material, and returns its `hero-frames` sheet.
-   - **Level review, by a fresh agent.** Builders never mark their own hero. Send one new subagent (not a builder,
-     `run_in_background: false`) every hero sheet, the Level sheets in `PROJECT/references/level/`, two category
-     leaders' sheets and each variant's lead reference sheet, with "The bar" in `level.md` and "The check" in
-     `taste.md`. It judges against the Level sites first: a hero that would sit happily beside the Category look but not
-     beside the Level fails. A hero built from several photos in columns or a grid fails, and so does a person-led
-     business whose hero doesn't stage the person. For each hero it answers: would it sit in a row with the Level
-     sites, does it fit the Category look and the character words, and does any frame share its reference's composition or pass for it with the logo hidden? It
-     returns pass or fail per variant, naming the failing frame and the fix in one line, and builds nothing. Send each
-     failing hero back to its builder once with that verdict, then review the new sheet the same way before the user
-     sees it.
-   - **Review.** Post per variant: its `hero-frames` sheet as an image (Markdown image, absolute path), the local hero
-     URL, the recipe in one line, its palette as named swatches with hex (mood pair and accent where used), and its
-     references with the technique taken from each. If `FRONT_DESK` isn't `none`, also send it
+     material, checks it beside the Level sheets, and returns its `hero-frames` sheet.
+   - **Review.** The user reviews the heroes; no extra review agent. Post per variant: its `hero-frames` sheet as an
+     image (Markdown image, absolute path), the local hero URL, its look in one line, its palette as named swatches with
+     hex (mood pair and accent where used), and its reference with the technique taken, if any. If `FRONT_DESK` isn't `none`, also send it
      `HERO REVIEW: CLIENT` with the sheet paths and URLs, using `mcp__t3-code__t3_thread_send`. Then stop and wait. The
      user replies "go" or sends changes: make changes in a new hero round, show the new sheets, wait again.
    - **Rest of the site (30 minutes).** After "go", send each brief again with `Phase: rest`, all in one message. The
@@ -52,7 +42,7 @@ at the hero review in step 4, or if blocked. Short updates only.
    - Run `check-pages.cjs` once on each home page, click through to one inner page, grep for reference names.
    - **Hero:** run `hero-frames.cjs` again: it still matches the approved sheet and hands over cleanly into the next
      section.
-   - **Copying:** run `contact-sheet.cjs` on each variant and its lead reference. A variant that shares the reference's
+   - **Copying:** run `contact-sheet.cjs` on each variant and its reference, if it has one. A variant that shares the reference's
      layout, composition, colour or imagery fails.
    - **Level and category:** put each home page beside two category leaders from "Category look" and the "Level" sites
      in `PITCH.md`. A hero or body clearly weaker than them fails. What would a stranger say this company sells? Would the brand's own
@@ -85,15 +75,12 @@ at the hero review in step 4, or if blocked. Short updates only.
   live link.
 - Previews stop loading: restart the server (background commands end after 2 hours).
 - If the client rejects a whole round, don't rebuild yet: ask the user questions first.
-- **Redoing one variant:** keep the level, tone and image treatment of any variant the user liked; change the idea,
-  layout and hero. Never pick a direction just because no other variant used it. Open the category leaders again and run
-  the Category check before publishing.
-- **An extra variant, even from the user's own idea, gets references.** Settle its idea first, in the client's tone,
-  then pick references from Benchmarks or Awwwards and open them (step 3 of `research.md`), naming the technique to take
-  from each. Never brief a Builder with no outside reference, except the free variant (step 2 of `research.md`), judged
-  on whether someone would remember it tomorrow and whether it belongs beside the category leaders.
-- **A redone hero gets the same review:** build it, pass the fresh agent's level review (step 4), post its
-  `hero-frames` sheet beside its reference, wait for "go" before publishing.
+- **Redoing one variant:** keep the level, tone and image treatment of any variant the user liked; change the look and
+  idea. Never pick a look just because no other variant used it. Open the Level sheets again before publishing.
+- **An extra variant, even from the user's own idea,** gets its look first, at the level and in the client's tone, then
+  its idea, and one reference only if it needs a motion technique (step 3 of `research.md`).
+- **A redone hero gets the same review:** build it, post its `hero-frames` sheet beside the Level sheets, wait for "go"
+  before publishing.
 - **When the user rejects something or repeats a correction,** note the lesson in `PROJECT/docs/LESSONS.md`, in general
   terms, no client names.
 - **"Deepen V2", or the client picked one:** follow `KIT/prompts/office/deepen.md`.

@@ -58,69 +58,68 @@ Build websites for this client in this thread.
      frame weak photos as the hero ("Material against the target" in `taste.md`).
    - If something is unknown, write [client to confirm]. Never make up prices, reviews or claims.
 
-3. Find inspiration, then ideas, then references.
-   - Before writing ideas, browse for fresh thinking well beyond websites: Behance and Dribbble case studies, Instagram
-     brand posts, ad campaigns, packaging, film title sequences, exhibitions and magazine spreads, for this category,
-     its neighbours and anything that shares the customer's feeling. Note 3-5 striking finds in docs/PITCH.md under
-     "Inspiration", each with its link and the one thought or technique worth taking. Take the thought, never the look,
-     layout or imagery.
-   - Write 10 one-line ideas, drawing on those finds, each a "what if" built around the client's story and what the customer decides or does
-     (the menu as a record crate, sizing as a fitting room), in the direction. Playful: anything from a beautiful classic
-     site to a map, a game, a 3D room or a card pack. Modern and professional or luxury: ideas that explain, guide or
-     show the real thing (a fitting room, a route, a before-and-after, a calculator), with no games, toys, props or
-     rituals.
-   - Take at least one idea from outside the web: a poster, packaging, a film title sequence, an album cover or a
-     magazine spread.
-   - Read the variant names, directions and references in other `WebsiteProjects/*/docs/PITCH.md` only so no idea
-     repeats and no Benchmark leads for a third client in a row.
-   - Pick the 3 strongest ideas that fit the tone, plus 1 for the free variant: ideas a customer would find useful and
-     remember.
-   - Then find references for each idea. Capture my references while scrolling with
-     `node tools/contact-sheet.cjs <urls> --out refs`, or grab frames from videos, and write down the one or two
-     techniques that make each one impressive (a transition, a type treatment, how the scroll is paced). Borrow those
-     techniques, never the layout, section order, hero, colour or imagery.
-   - Open the Benchmarks list in `KIT/prompts/office/reference-library.md`. Use any whose craft suits an idea and the
-     tone, keeping to its "Craft only" and "No back-to-back reuse" rules, and take their craft, not their subject.
+3. Find inspiration, then the looks, then the ideas.
+   - Before writing looks and ideas, browse for fresh thinking well beyond websites: Behance and Dribbble case studies,
+     Instagram brand posts, ad campaigns, packaging, film title sequences, exhibitions and magazine spreads, for this
+     category, its neighbours and anything that shares the customer's feeling. Note 3-5 striking finds in
+     docs/PITCH.md under "Inspiration", each with its link and the one thought or technique worth taking. Take the
+     thought, never the look, layout or imagery.
+   - Looks first: for each of the 4 variants, write the visual move that makes its hero sit beside the Level sites:
+     how the subject is staged (what it is, how big, cut out or full-bleed, what it overlaps), the colour that owns the
+     first screen, and the one type move. Each look is its own in staging and colour; header, section order and
+     components may be shared when that's strongest. Never a weaker look just to be different. At least one look comes
+     from outside the web: a poster, packaging, a film title, an album cover or a magazine spread.
+   - Then about 10 one-line ideas, each a "what if" for how a look carries through the page below the hero, built
+     around the client's story and what the customer decides or does (the run-sheet as the scroll, the menu as a record
+     crate), drawing on those finds. Playful: maps, games, 3D rooms or card packs below the hero. Modern and
+     professional or luxury: ideas that explain, guide or show the real thing (a route, a before-and-after, a
+     calculator), with no games, toys, props or rituals. Keep the 4 that fit their looks; the idea never puts a gimmick
+     in the hero.
+   - Read the variant names, looks and references in other `WebsiteProjects/*/docs/PITCH.md` only so nothing repeats
+     and no Benchmark leads for a third client in a row.
+   - References: at most one per variant, and only when its look or idea needs a motion technique the kit's recipes
+     (`KIT/prompts/techniques/INDEX.md`) don't cover. Find it in the Benchmarks of
+     `KIT/prompts/office/reference-library.md` (optional, keeping its "Craft only" and "No back-to-back reuse" rules) or
+     Awwwards, capture it with `node tools/contact-sheet.cjs <url> --out refs`, and name the one technique to take,
+     never the layout, section order, hero, colour or imagery. No reference is fine. Any reference I paste gets its own
+     variant.
 
 4. Plan the variants.
-   - Variants 1-3 are your three ideas, in the direction you set. References and Benchmarks make them look and move well.
-     Each variant needs its own idea that only fits this client; if you hid the logo and it could pass for its
-     reference, change it.
-   - Variant 4 is free: your own idea from the client's own object, something we haven't built before, in the client's
-     tone (a game only for a playful client). It still has to sell.
-   - For each variant, plan what the hero shows and how it moves (using the client's real photos and products, as "The
-     hero" in `taste.md` says), the order of the sections, fonts per "Type" in `taste.md` (its banned list included,
-     size, case and weight set the way the Category look sets them), and colours explored from their brand and world,
-     light or dark, inside the Category look's register. Variants 3 and 4 may explore a mood pair with one clashing accent where it suits
-     (`KIT/prompts/office/colour.md`: search for fresh pairings, try 3-5 candidates on the hero material, pick the best
-     fit; louder for playful, quieter and informational for corporate, never copied from its examples);
-     variants 1 and 2 keep the usual palette. Brief every builder agent with the
-     Category look and the character words, not only the tone hint.
+   - Variants 1-3 are three looks with their ideas, in the direction you set. If you hid the logo and one could pass
+     for its reference, change it.
+   - Variant 4 is free: your own look and idea from the client's own object, something we haven't built before, in the
+     client's tone (a game only for a playful client), still at the level. It still has to sell.
+   - For each variant, plan what the hero is made of and how it moves (the client's real material, or the fix in "It's
+     made of what the client really has" in `taste.md`: faithful renders for a product; for people and places the best
+     single real photo and a shoot list), the order of the sections, fonts per "Type" in `taste.md` (its banned list
+     included, scale from the level, case and weight from the Category look), and decided colour from the subject's
+     world, light or dark. Variants 1 and 2: one colour or family owns the first screen, with no clashing accent.
+     Variants 3 and 4 may explore a mood pair with one clashing accent where it suits (`KIT/prompts/office/colour.md`:
+     search for fresh pairings, try 3-5 candidates on the hero material, pick the best fit; louder for playful, quieter
+     and informational for corporate, never copied from its examples). Brief every builder agent with the Level sites,
+     the Category look and the character words, not only the tone hint.
    - Before coding, make design images of each variant's hero and two key sections (with an image generator if you have
-     one, otherwise quick rough HTML mock-ups, screenshotted). Pick the version that sits best beside the Category look and fits the character,
+     one, otherwise quick rough HTML mock-ups, screenshotted). Pick the version that sits best beside the Level sites and fits the character,
      and build that.
-   - All four should feel clearly different, at the same high quality.
+   - All four at the same level, each clearly its own in hero staging and colour.
 
 5. Build the heroes first, then wait for me.
-   - Build only the header and hero of each variant, as "The hero" in `taste.md` says: the real thing customers came
-     for, big and clear, what the business is in a few words, one button, or the idea to try right there if it's
-     interactive.
-   - It must move as `motion.md` says for the tone: a quick opening, gentle movement while idle, and a scroll move
-     (pinned at most one screen) that also works on phones.
-   - Screenshot each hero at a few scroll points and on a phone, beside a category leader:
-     `node tools/hero-frames.cjs <hero url> <category leader url> --out shots`.
-   - Level review, by a fresh agent: whoever built a hero never marks it. Send one new subagent every hero sheet, the
-     `refs/level` sheets, two category leaders' sheets and each variant's lead reference, with "The bar" in `level.md`
-     and "The check" in `taste.md`. It judges against the Level first: a hero that fits the Category look but not the
-     Level fails, and so does one built from several photos in columns or a grid, or a person-led business whose hero
-     doesn't stage the person. Per hero it answers: would it sit in a row with the Level sites, does it fit the
-     Category look and the character words, and does any frame share its reference's composition? It returns pass or
-     fail with the failing frame and the fix, and builds nothing. Rebuild each failing hero once and review it again.
-   - Show me the target, the Category look, the Level sites and the character words, the screenshots, the one-line idea for each variant, its palette as named
-     swatches with hex, its references with the technique taken from each, and the local links, and wait for "go".
+   - Build only the header and hero of each variant, as "The hero" in `taste.md` says, with about 40 minutes for the
+     round: only the subject staged big in its look, one bold type move, one short line and one button. No facts row,
+     stats or idea gimmick in the hero.
+   - It must move as `motion.md` says for the tone, with one motion idea: a quick opening, gentle movement while idle,
+     and a scroll move (pinned at most one screen) that also works on phones.
+   - Screenshot each hero at a few scroll points and on a phone, beside a Level site:
+     `node tools/hero-frames.cjs <hero url> <level site url> --out shots`. Fix and re-run until it would sit in a row
+     with the Level sites. I review the heroes myself; no extra review agent.
+   - Show me the target, the Category look, the Level sites and the character words, the screenshots, each variant's
+     look and idea in one line, its palette as named swatches with hex, its reference and technique if any, and the
+     local links, and wait for "go".
 
 6. Build the rest of each site.
-   - Every section matches the hero's style and animation, and the variant's idea carries through the page.
+   - Every section matches the hero's style and animation, and the variant's idea carries through the page. Each
+     section has one main thing (the price and action, an object transition, the tool, a proof moment, the set-piece),
+     never all of them; the client's object runs below the hero.
    - A price or "from" price and the main action come within about 1.5 screens of the top; the signature set-piece (at
      most 2-3 pinned screens) comes after them. Home pages run about 6-10 screens.
    - Show every product with its price, real reviews or proof, and a clear order button that is always easy to reach on
@@ -145,8 +144,8 @@ Build websites for this client in this thread.
    - Open every dropdown, date picker, stepper and menu, hover every button, and screenshot them open. Redo any that
      looks plain, default or off-style.
    - Fix anything broken, messy, hard to read or slow.
-   - Put each variant next to two category leaders, a Level site and its reference
-     (`node tools/contact-sheet.cjs <variant url> <leader urls> <level url> <reference url> --out compare`). If it looks
+   - Put each variant next to two category leaders, a Level site and its reference if it has one
+     (`node tools/contact-sheet.cjs <variant url> <leader urls> <level url> [reference url] --out compare`). If it looks
      weaker than the leaders or the Level site, improve it; if it shares the reference's layout, composition, colour or imagery, change it. For the
      free variant, also ask: would someone remember this site tomorrow?
 
