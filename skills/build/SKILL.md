@@ -43,15 +43,17 @@ Build websites for this client in this thread.
        `node tools/hero-frames.cjs <urls> --out refs/category`). Write what they actually do as the Category look: type
        (size, case, weight, style), photography (subject, light, crop, size on screen), background and colour, space
        and density, motion, copy voice, and what makes them feel expensive or trusted. It is the brief for every
-       variant and the register each is judged against.
-     - Pick the Level: the 2-3 sites in `level.md` nearest this client (same business first, otherwise the nearest way
-       of selling), captured with `node tools/hero-frames.cjs <urls> --out refs/level`. They show how good every hero
-       must be; they're never references.
+       variant and the register each is judged against. Drop any that fail "The bar" in `level.md`; if fewer than
+       three pass, add the best of a neighbouring business (an emcee beside performers and personal brands).
+     - Pick the Level: 2-3 sites in `level.md`, chosen by what this client's hero will be made of (a person, a product,
+       food, a place) and then by business, captured with `node tools/hero-frames.cjs <urls> --out refs/level`. They
+       show how good every hero must be and beat the Category look on type scale, colour confidence, staging and space;
+       they're never references.
      - Pick the site type and the nearest tone hint (playful, modern and professional, or luxury and premium) for
        motion and interaction levels only. Where the hint and the Category look disagree, the Category look wins.
      - Write 3-5 character words for how this client should feel at the target level, from the Category look and my
        words, checked against the client's facts, never copied from another client.
-   - Compare the hero material with the Category look's imagery. Where it falls short, write the gap and the fix (new
+   - Compare the hero material with the Level and Category look imagery. Where it falls short, write the gap and the fix (new
      shots with a shot list, or faithful renders of the real product labelled "Render for illustration") and never
      frame weak photos as the hero ("Material against the target" in `taste.md`).
    - If something is unknown, write [client to confirm]. Never make up prices, reviews or claims.
@@ -109,7 +111,9 @@ Build websites for this client in this thread.
      `node tools/hero-frames.cjs <hero url> <category leader url> --out shots`.
    - Level review, by a fresh agent: whoever built a hero never marks it. Send one new subagent every hero sheet, the
      `refs/level` sheets, two category leaders' sheets and each variant's lead reference, with "The bar" in `level.md`
-     and "The check" in `taste.md`. Per hero it answers: would it sit in a row with the Level sites, does it fit the
+     and "The check" in `taste.md`. It judges against the Level first: a hero that fits the Category look but not the
+     Level fails, and so does one built from several photos in columns or a grid, or a person-led business whose hero
+     doesn't stage the person. Per hero it answers: would it sit in a row with the Level sites, does it fit the
      Category look and the character words, and does any frame share its reference's composition? It returns pass or
      fail with the failing frame and the fix, and builds nothing. Rebuild each failing hero once and review it again.
    - Show me the target, the Category look, the Level sites and the character words, the screenshots, the one-line idea for each variant, its palette as named

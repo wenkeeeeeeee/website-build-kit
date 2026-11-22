@@ -27,9 +27,10 @@ result is a failed one.
   type, photography, background and colour, space, motion and copy voice, and what makes them feel expensive or
   trusted}}. Your variant matches this register: open the sheets before you start.
 - Level: {{the 2-3 sites from "Level" in `PITCH.md`, with their hero sheets in `references/level/`}}. Your hero must sit
-  in a row with them ("The bar" in `level.md`). They show how good, never what to build: take nothing from them.
+  in a row with them ("The bar" in `level.md`); on type scale, colour confidence, staging and space they beat the
+  Category look. They show how good, never what to build: take nothing from them.
 - Character: {{the 3-5 words from `PITCH.md`, for this client at the target level; with the Category look they set
-  your type size, image treatment, contrast, space and motion pace}}. Tone hint: {{playful | modern and professional |
+  how your type, images, contrast, space and motion feel, always at the Level's scale and confidence}}. Tone hint: {{playful | modern and professional |
   luxury and premium, for motion and interaction levels only}}. Buyer's path: {{from `PITCH.md`}}.
 - Yours alone, shared with no other variant: how the buyer's path is told {{section order along the path}}; signature
   moment {{the one scroll set-piece}}; business tool {{finder, picker, dial or quote builder}}; basket name {{or none}};

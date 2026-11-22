@@ -11,7 +11,9 @@ every page hero.
 
 - **It shows what the customer came for:** the car, the dish, the pets, the gift, the service and its result, the skin
   clearing. That subject is the biggest thing on screen at every scroll step. Never a logo, mood or metaphor; prices,
-  ratings and counts never lead (one small line at most).
+  ratings and counts never lead (one small line at most). When customers book a person (an emcee, host, performer,
+  coach, consultant), the person is the subject, staged like a product ("The person is the product" in
+  `site-types.md`).
 - **It says the core in seconds** in a clean first screen: a headline set into the scene, a short line, one line of
   facts, one action. No paragraphs. Claims only from the client, or shown as `[client to confirm]`.
 - **It moves:** an opening that never blocks (playful 2–3 seconds, professional a one-second reveal; `motion.md`), a
@@ -28,18 +30,18 @@ every page hero.
   explains the product, a move customers know from the category's best sites, never a game, prop or ritual. Nothing
   gates the site.
 - **It's made of what the client really has** ("Hero material" in `PITCH.md`). Footage cropped clean, never stretched:
-  low-res clips side by side at full height, or sharp over a blurred copy. Photos only where sharp; a flat photo can
+  a low-res clip sharp over a blurred copy of itself, never several side by side. Photos only where sharp; a flat photo can
   slide, mask and change light, not turn like 3D, and a reveal ends with the product fully lit and whole. Cut-outs only
   with clean edges, staged calmly outside a playful tone. Photos too weak or missing: the client's own clips, then licensed stock of the
   real thing labelled "Photo for illustration" and listed in `OPEN-QUESTIONS.md`. 3D, drawings and generated art only
   support a real photo or clip; they never replace the real subject.
-- **Material against the target.** Research compares the hero material with the Category look's imagery. Where it
+- **Material against the target.** Research compares the hero material with the Level and Category look imagery. Where it
   can't reach that level (small, casual, phone-shot, cluttered, poorly lit), `PITCH.md` says so under "Hero material"
   and proposes the fix: new shots (with a short shot list), or faithful renders of the client's real product (same
   shape, colours, cap and label), labelled "Render for illustration" and listed in `OPEN-QUESTIONS.md`. Builders use the
   strongest real or rendered image the way the category's best do (one large, sharp image with space around it). Never
   quietly frame weak photos as the hero, in boxes, columns or grids.
-- **What fails:** a title with photos; a photo in a box; headline left, picture right, stats row; a full-screen picture
+- **What fails:** a title with photos; a photo in a box; several photos in columns, a strip or a grid; headline left, picture right, stats row; a full-screen picture
   with no headline; effects covering the subject; a move the material can't carry; no motion.
 - **The check:** run `hero-frames.cjs` on the hero beside a category leader from "Category look" and a site from "Level"
   in `PITCH.md`. At every frame and on the phone, the subject is the biggest thing, a stranger knows what's sold, they'd
@@ -140,9 +142,9 @@ Fonts are the fastest machine-made tell, so they come from the client's world.
   commercial web use, self-hosted as `woff2`.
 - **One face with a point of view, one quiet face to read.** If the pair would suit any other client, pick again. The
   display face must carry the client's languages; Noto only for a script with no better option.
-- **Size, case and weight follow the Category look and the character** ("Direction" in `site-types.md`): set type
-  the way the category's best set it, never a default size, with one bold type move at the scale `level.md` shows (a
-  giant word or wordmark suits every tone; the tone sets how loud). If the client's brand already uses a face, one variant may
+- **Scale from the level, style from the category.** One bold type move at the scale `level.md` shows (a giant word or
+  wordmark suits every tone; the tone sets how loud), never a default size. Case, weight and style follow the Category
+  look and the character ("Direction" in `site-types.md`). If the client's brand already uses a face, one variant may
   keep it.
 - **Other tells:** small uppercase mono labels above every heading, "01 / 02 / 03" numbering, one italic word in a
   headline, cream paper with a serif by default, gradient text, glass cards.

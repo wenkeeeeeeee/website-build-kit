@@ -48,12 +48,19 @@ Every variant uses it, the free variant included; variants differ in idea and la
    they actually do, as "Category look" in `PITCH.md`: type (size, case, weight, style), photography (subject, light,
    crop, how big on screen), background and colour, space and density, motion (pace, what moves), and copy voice
    (length, register). Name what they share and the one or two things that make them feel expensive or trusted. This is
-   the brief: every builder gets it, and every variant matches its level and register.
+   the brief: every builder gets it, and every variant matches its register.
+   **Each one must pass "The bar" in `level.md`.** Drop any that don't (plain layouts, beige with a serif, small photos,
+   cookie walls). If fewer than three pass, open the best of a neighbouring business that sells the same way or shares
+   the customer's feeling (an emcee beside performers and personal brands, a clinic beside premium health and beauty),
+   and write the Category look from the ones that pass.
 3. **Facts versus target.** The client's own links and posts give the facts: products, prices, story, words to quote
    and the voice of the copy. They never set the look or the level. A casual Instagram doesn't make a casual site when
    the user or the category's best aim higher.
 4. **The tone label is a hint.** Pick the nearest of the three below for motion and interaction levels and reference
    searches. When the label and the Category look disagree, the Category look wins.
+5. **The level beats the Category look on how good.** The Level sites (`level.md`) set the type scale, how confident
+   the colour is, how big and staged the subject is, and the space around it. The Category look sets what is shown,
+   how formal it feels and the copy voice. Where they pull apart, the level wins.
 
 - **Playful:** the business is about joy, treats, celebration, play or personality; customers come for fun or a feeling,
   whatever the price. Snacks, sweets, drinks, desserts, gifts, balloons and parties, toys and kids' things, pets, casual
@@ -72,8 +79,9 @@ Not by price: a cheap clinic visit is professional, an expensive party playful. 
 
 **Character: the direction in words.** Research writes 3–5 words for how this client should feel at the target level,
 worked out from the Category look and the user's words, then checked against the client's facts so they stay true.
-Never reuse words from another client. With the Category look, they set every look decision: type size and case, image
-treatment, contrast and colour, density and space, and motion pace. Every builder is briefed with both. Palettes stay
+Never reuse words from another client. With the Category look, they set how every look decision feels (type case and
+style, image treatment, contrast and colour, density, motion pace), always at the level's scale and confidence. Every
+builder is briefed with both. Palettes stay
 open to explore, light or dark, across the variants, inside the Category look's register.
 
 **Check:** put the home page beside the Category look and Level sheets. If it wouldn't sit among them, or a stranger would
@@ -116,6 +124,12 @@ hero.
   the visit. **Hero:** the real room or dish, sharp and whole at the centre, the effect around it (light, steam, the time
   of night). The cursor or a hold shows the next state: empty room to full, raw to plated, day to night. One line says
   what, where and when, next to the booking action. Room sound optional.
+- **The person is the product:** emcees and hosts, event coordinators, DJs, musicians, speakers, coaches, consultants
+  and personal brands. Customers book the person. **Hero:** the person staged like a product: one clean cut-out or a
+  full-bleed portrait, big, in a decided colour, with their name or promise set huge around or behind them (Dennis
+  Snellenberg, Ario Law, Charles Leclerc in `level.md`). Event photos come below as proof, never a grid in the hero.
+  Weak photos: a short shoot list for one studio portrait session goes in `OPEN-QUESTIONS.md`, and meanwhile the best
+  single portrait, cut out clean.
 - **Work worth showing:** event styling, florists, weddings, interiors, architecture, renovation, fit-out,
   design-and-build and contractors, photography, tattoo, set design. The portfolio is the proof. **Hero:** before and
   after in one move: the bare space, filled with the finished work by the visitor's hold or cursor. Below: job names,

@@ -17,9 +17,18 @@ What the approved sites share, in every tone:
   same moves quietly (Byredo, Kononenko, Mercury, Wealthsimple). Both are the level.
 
 ## How to use it
-- **Research** picks the 2–3 sites below nearest the client (same business first, otherwise the nearest way of
-  selling) and captures their heroes into `PROJECT/references/level/` with `hero-frames.cjs`. They go in `PITCH.md`
-  under "Level" and in every builder's brief.
+- **Research** picks 2–3 sites below by what this client's hero will be made of, then by business, and captures their
+  heroes into `PROJECT/references/level/` with `hero-frames.cjs`. They go in `PITCH.md` under "Level" and in every
+  builder's brief. Picking the quietest sites in the set to suit a calm client is not allowed: luxury and professional
+  clients take Byredo, Kononenko, Ario or Wealthsimple, not the softest picks.
+  - **A person:** Dennis Snellenberg, Ario Law, Charles Leclerc, MYKITA, Spylt, Jimmy Fairly.
+  - **A product:** Playdate, AirPods Max, VanMoof, teenage engineering, Analogue, Daylight, Aether 1, Ciao Energy,
+    Oryzo, Byredo, Vyrao, Messika, Dolce&Gabbana Velvet, Otherland, Gufram, Wealthsimple, Ziina.
+  - **Food and drink:** Crav, Tòpas, Délice, Eislab, Bucks Sauce, Poppi.
+  - **A place or building:** Belgrade Arbor, Likova, Kononenko, ERA Residence, Mercury, Marvell.
+  - **A process or service:** Hadrian, Illoca, Quaker School.
+- **The level beats the Category look on how good:** type scale, colour confidence, how big and staged the subject is,
+  and space ("Direction" in `site-types.md`). The Category look sets what is shown, how formal it feels and the voice.
 - **Not references.** They show how good, never what to build: no layout, composition, colour or imagery is taken from
   them. Craft techniques still come only from references (step 3 of `research.md`).
 - **Only the hero counts.** Many of these sites drop into popups or card grids below the first screen; that part is not

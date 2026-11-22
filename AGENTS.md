@@ -22,7 +22,8 @@ session-start hook if installed.
 ## Which rule wins
 One order for every build, whether it runs from the `/website-build-kit:build` skill or the office run orders:
 1. The user's own words (`LEAD.md`, messages in the thread).
-2. `PITCH.md`: the client's facts and each variant's plan.
+2. `PITCH.md`: the client's facts and each variant's plan. Its Category look never lowers the bar in
+   `prompts/office/level.md`.
 3. `prompts/office/taste.md` and `prompts/office/level.md`.
 4. `prompts/office/motion.md`.
 5. Everything else: `site-types.md`, `reference-library.md`, the playbook, `craft-numbers.md`, technique recipes, the

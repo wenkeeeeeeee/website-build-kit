@@ -24,7 +24,8 @@ at the hero review in step 4, or if blocked. Short updates only.
      frames are static, the look is on the fail list, or its hero isn't made of the same kind of material as this
      variant's (step 3 of `research.md`). Rewrite a direction in `PITCH.md` if the hero isn't what the customer came for,
      the palette comes from a metaphor, the look or idea wouldn't sit beside the Category look or doesn't suit the character words (the free variant
-     included), the hero frames weak photos the Category look's imagery outclasses, a 3D
+     included), the hero frames weak photos the Level imagery outclasses, the hero
+     sets several photos in columns or a grid, a person-led business doesn't stage the person, a 3D
      Benchmark leads a professional hero, or the plan needs a move the hero material can't carry.
    - **Hero round.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero` and send all the
      subagents in one message, each with `run_in_background: false`. Each builds only its header and hero, with the real
@@ -32,8 +33,10 @@ at the hero review in step 4, or if blocked. Short updates only.
    - **Level review, by a fresh agent.** Builders never mark their own hero. Send one new subagent (not a builder,
      `run_in_background: false`) every hero sheet, the Level sheets in `PROJECT/references/level/`, two category
      leaders' sheets and each variant's lead reference sheet, with "The bar" in `level.md` and "The check" in
-     `taste.md`. For each hero it answers: would it sit in a row with the Level sites, does it fit the Category look and
-     the character words, and does any frame share its reference's composition or pass for it with the logo hidden? It
+     `taste.md`. It judges against the Level sites first: a hero that would sit happily beside the Category look but not
+     beside the Level fails. A hero built from several photos in columns or a grid fails, and so does a person-led
+     business whose hero doesn't stage the person. For each hero it answers: would it sit in a row with the Level
+     sites, does it fit the Category look and the character words, and does any frame share its reference's composition or pass for it with the logo hidden? It
      returns pass or fail per variant, naming the failing frame and the fix in one line, and builds nothing. Send each
      failing hero back to its builder once with that verdict, then review the new sheet the same way before the user
      sees it.

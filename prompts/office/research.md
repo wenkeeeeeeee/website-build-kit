@@ -20,18 +20,19 @@ Everything depends on this, so it comes first and gets the most time.
 - **Set the target and read the category's best** ("Direction" in `site-types.md`): the user's words first, otherwise
   the best-known brands in the client's exact category at the level the user wants, often above where the client is
   today. Open 3–5 of them and capture each into `PROJECT/references/category/` (`contact-sheet.cjs --steps 8` and
-  `hero-frames.cjs`). Not references: write what they actually do as "Category look" (type, photography, background and
-  colour, space, motion, copy voice, and what makes them feel expensive or trusted). It is the brief every builder
-  gets and the register every variant is judged against.
-- **Pick the Level:** the 2–3 sites in `KIT/prompts/office/level.md` nearest this client (same business first,
-  otherwise the nearest way of selling). Capture their heroes into `PROJECT/references/level/` with `hero-frames.cjs`.
-  They show how good every hero must be; they're never references.
+  `hero-frames.cjs`). Drop any that fail "The bar" in `level.md`; if fewer than three pass, add the best of a
+  neighbouring business ("Direction" in `site-types.md`). Not references: write what the ones that pass actually do as
+  "Category look" (type, photography, background and colour, space, motion, copy voice, and what makes them feel
+  expensive or trusted). It is the brief every builder gets and the register every variant is judged against.
+- **Pick the Level:** 2–3 sites from `KIT/prompts/office/level.md`, chosen by what this client's hero will be made of
+  (a person, a product, food, a place) and then by business, as its "How to use it" says. Capture their heroes into
+  `PROJECT/references/level/` with `hero-frames.cjs`. They show how good every hero must be; they're never references.
 - **Collect** every client field in `PITCH.md`, 6–10 products with prices, the logo, and photos and clips into
   `PROJECT/content/images/` and `PROJECT/content/video/`. Delete stock pictures and shared templates. The client's
   posts give facts, products and voice, never the look or level.
 - **List the hero material:** each clip's length, size and whether it has a clean stretch of the real thing happening;
   each photo's size and whether it's sharp at full height; what could be cut out with a clean edge. Then compare it with
-  the Category look's imagery and note the gap and the fix ("Material against the target" in `taste.md`).
+  the Level and Category look imagery and note the gap and the fix ("Material against the target" in `taste.md`).
 
 ## 2. Direction, inspiration and ideas (4 minutes)
 - **Direction:** the Category look, the tone hint and 3–5 character words for this client at the target level
@@ -112,7 +113,8 @@ Target: <who this client should be seen beside, from the user's words or the cat
 Category look: <the 3-5 brands opened, with URLs and sheet files; what they do: type (size, case, weight, style),
   photography (subject, light, crop, size on screen), background and colour, space and density, motion, copy voice;
   what makes them feel expensive or trusted. Every builder gets this, and every variant is judged beside it>
-Level: <the 2-3 sites from level.md nearest this client, with URLs and hero sheet files in references/level/>
+Level: <the 2-3 sites from level.md matching what the hero is made of, with URLs and hero sheet files in
+  references/level/; they beat the Category look on type scale, colour confidence, staging and space>
 Tone hint: <playful | modern and professional | luxury and premium>, for motion and interaction levels only
 Character: <3-5 words for how this client should feel at the target level, from the Category look and the user's
   words, checked against the client's facts>
@@ -136,7 +138,7 @@ Pages: <the pages for this site type, from site-types.md>
 Ordering: <basket to WhatsApp or marketplace, quote form, booking or none, and what the basket is called>
 Screen: 1920x870 at 125% zoom (about 1536x700), unless LEAD.md says otherwise
 Hero material: <each clip: file, length, size, clean stretch or not; each photo: file, size, sharp at full height or
-  not; clean cut-outs; what's missing; against the Category look's imagery: the gap and the fix (new shots with a shot
+  not; clean cut-outs; what's missing; against the Level and Category look imagery: the gap and the fix (new shots with a shot
   list, or faithful renders of the real product)>
 Sources read: <each client link and search, and what it gave or why it was blocked>
 References opened: <every page: Benchmark or Awwwards, kept or dropped, why, and the two frames that prove the bar>
