@@ -12,11 +12,11 @@ Attach the logo and photos if you have them. Send the next client straight away 
 once, the rest wait their turn.
 
 ## What happens
-1. **Research, 15-25 minutes:** it reads the client's links and the category's leading brands, picks the Level
-   sites from `level.md`, writes the four looks as one set (each its own staging, colour, kind of type and place for
-   the words, made from the client's world) and then the idea below the hero, and picks two target sites per variant (a lead and one for a part).
+1. **Research, 15-25 minutes:** it reads the client's links and the category's leading brands, decides the tone,
+   writes ideas in that tone and a direction per variant, then picks references from the kit's Benchmarks and Awwwards
+   for their techniques, at least 2 per variant.
 2. **You review the plan.** Reply "go" or send changes.
-3. **Heroes first:** each variant's hero is built and shown to you as frames beside a Level site. After your "go",
+3. **Heroes first:** each variant's hero is built and shown to you as frames beside a category leader. After your "go",
    the rest of the 3 + 1 variants is built, every page working.
 4. **Quick check and publish:** it checks nothing is broken, publishes to a private GitHub repo and a Vercel project,
    and the links come back to Front Desk for your review.

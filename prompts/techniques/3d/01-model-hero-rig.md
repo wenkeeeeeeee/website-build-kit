@@ -3,7 +3,7 @@ Adapted from MotionSites 3d-and-webgl.md #1 (MIT).
 # Real 3D model hero rig (three.js + GLB), subject centred
 
 The client's real product as a model the visitor can grab and turn, framed on a stage element in the middle of the
-hero: headline above, line and action below. It settles in with a short turn, sways gently at rest, and falls
+hero: headline above, line, facts and action below. It settles in with a short turn, sways gently at rest, and falls
 back to a still if anything fails. Use it when the object is the story and a GLB exists or can be made (hardware,
 bottles, eyewear, sneakers, packaging). Heavy: one per page, as the signature. The subject is centred and the biggest
 thing at every step (the source's copy-left/stage-right layout is dropped).
@@ -57,6 +57,7 @@ thing at every step (the source's copy-left/stage-right layout is dropped).
   </div>
   <div class="hero3d__foot">
     <p class="hero3d__line">One short line.</p>
+    <p class="hero3d__facts">One line of facts</p>
     <a class="btn" href="#order">Main action</a>
   </div>
 </section>
@@ -69,9 +70,10 @@ thing at every step (the source's copy-left/stage-right layout is dropped).
   opacity:0;transition:opacity .9s var(--ease-out)}
 .hero3d.is-ready .hero3d__canvas{opacity:1}
 .hero3d.is-fallback .hero3d__canvas{display:none}
-.hero3d__title{position:relative;z-index:2;margin:0;max-width:18ch;font:600 clamp(56px,7vw,120px)/.95 var(--font-display);letter-spacing:-.03em}
+.hero3d__title{position:relative;z-index:2;margin:0;max-width:18ch;font:500 clamp(36px,5vw,72px)/.98 var(--font-display);letter-spacing:-.03em}
 .hero3d__foot{position:relative;z-index:2;display:grid;justify-items:center;gap:1.2vh;font-family:var(--font-body)}
 .hero3d__line{margin:0;font-size:17px;line-height:1.5}
+.hero3d__facts{margin:0;font-size:15px;color:var(--muted)}
 /* The stage is the box the model is framed on, and it takes the drag */
 .hero3d__stage{position:relative;z-index:0;width:100%;align-self:stretch;min-height:clamp(280px,52vh,760px);display:grid;place-items:center;
   cursor:grab;touch-action:pan-y;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;outline:none}

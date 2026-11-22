@@ -32,14 +32,12 @@ pointer.
    their own motion graphics.
 
 ## Motion graphics to choose from
-Drawn in SVG, canvas or WebGL. Pick what fits the client; each variant's signature effect is its own, and supporting
-effects may repeat across variants.
+Drawn in SVG, canvas or WebGL. Pick what fits the client; never the same set in two variants.
 - **Kinetic type:** headlines split into lines, words or letters that mask up, swap or stretch with scroll speed.
 - **Line drawing:** illustrations, routes, stitches, diagrams and underlines draw themselves on scroll.
 - **Shape morphing:** one form becomes another, such as the logo becoming the product.
 - **Motion on a path:** the client's object travels a curve across the page and between sections.
-- **Layered depth:** clean cut-outs of real photos move apart on scroll: bouncy in a playful tone,
-  slow and precise in the others.
+- **Layered depth:** clean cut-outs of real photos move apart on scroll.
 - **Particles and generative art** from the client's material: petals, bubbles, steam, sparks, grain.
 - **Masks and reveals:** photos open with a wipe or mask into their frame and end whole and fully lit (through the
   client's shape only in a playful tone).
@@ -48,8 +46,8 @@ effects may repeat across variants.
 - **Small icons that act:** icons drawn for this client, animating their meaning on hover.
 
 ## Where to start, by design family
-Starting points only; the look and idea in `PITCH.md` win. Real photos and footage lead (or faithful product renders
-where `PITCH.md` names them); drawn and 3D layers only support them.
+Starting points only; the concept in `PITCH.md` wins. Real photos and footage lead; drawn and 3D layers only support
+them.
 - **One beautiful object:** the real product in close-ups and detail as you scroll, parts named; 3D only for a faithful
   model of the real product.
 - **Packs and jars:** packs fly, stack and burst into their ingredients; the screen changes colour per flavour.

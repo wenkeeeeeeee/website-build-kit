@@ -20,23 +20,21 @@ at the hero review in step 4, or if blocked. Short updates only.
      components are fetched per variant with `KIT/tools/web/reactbits.cjs`.
    - Open it once with `check-pages.cjs`. Every page must work: all variants copy it.
 4. **Heroes first (40 minutes), then the user's review.** Heroes are judged from pictures, never the plan.
-   - **Before briefing,** open each variant's two target sheets. Replace a target if a banner covers it, most frames are
-     static or it fails the bar (step 3 of `research.md`). Rewrite a look in `PITCH.md` if
-     the hero isn't what the customer came for, the look wouldn't sit beside the Level sites or doesn't suit the
-     character words (the free variant included), the palette comes from a metaphor or is timid, the hero frames weak
-     photos the Level imagery outclasses, sets several photos in columns or a grid, puts an idea gimmick where the
-     subject should be, or a person-led business doesn't stage the person, a 3D Benchmark leads a professional hero,
-     the plan needs a move the hero material can't carry, or two variants share a lead or would look alike with the
-     colours hidden ("Looks as one set" in `research.md`).
+   - **Before briefing,** open each variant's lead reference sheet. Replace the reference if a banner covers it, most
+     frames are static, the look is on the fail list, or its hero isn't made of the same kind of material as this
+     variant's (step 3 of `research.md`). Rewrite a direction in `PITCH.md` if the hero isn't what the customer came for,
+     the palette comes from a metaphor, the look or idea doesn't suit the tone or the character words (V1–V3 only: the free variant has no limits), a 3D
+     Benchmark leads a professional hero, or the plan needs a move the hero material can't carry.
    - **Hero round.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero` and send all the
      subagents in one message, each with `run_in_background: false`. Each builds only its header and hero, with the real
-     material, checks it beside the Level sheets, and returns its `hero-frames` sheet.
-   - **Side by side (a minute, your own eyes, no agent).** Open the four `hero-frames` sheets one after another, then the
-     Level sheets. Rebuild any hero that looks like another one with the colours hidden (same staging, kind of display
-     type or place for the words), or that is clearly weaker than the Level sites, before the user sees it.
-   - **Review.** The user reviews the heroes; no extra review agent. Post per variant: its `hero-frames` sheet as an
-     image (Markdown image, absolute path), the local hero URL, its look in one line, its palette as named swatches with
-     hex (mood pair and accent where used), and its two targets with what each lent. If `FRONT_DESK` isn't `none`, also send it
+     material, and returns its `hero-frames` sheet.
+   - **Your check.** Go through each sheet against "The check" in `taste.md`, beside the category leaders. A hero weaker
+     than the category leaders fails, and so does one with a frame that shares its reference's composition or could
+     pass for it with the logo hidden. The free variant is checked only for being this client's and working. Send back
+     any failing hero, once, before the user sees it.
+   - **Review.** Post per variant: its `hero-frames` sheet as an image (Markdown image, absolute path), the local hero
+     URL, the recipe in one line, its palette as named swatches with hex (mood pair and accent where used), and its
+     references with the technique taken from each. If `FRONT_DESK` isn't `none`, also send it
      `HERO REVIEW: CLIENT` with the sheet paths and URLs, using `mcp__t3-code__t3_thread_send`. Then stop and wait. The
      user replies "go" or sends changes: make changes in a new hero round, show the new sheets, wait again.
    - **Rest of the site (30 minutes).** After "go", send each brief again with `Phase: rest`, all in one message. The
@@ -46,16 +44,16 @@ at the hero review in step 4, or if blocked. Short updates only.
    - Run `check-pages.cjs` once on each home page, click through to one inner page, grep for reference names.
    - **Hero:** run `hero-frames.cjs` again: it still matches the approved sheet and hands over cleanly into the next
      section.
-   - **Copying:** run `contact-sheet.cjs` on each variant and its lead target. A variant that could pass for the lead
-     with the logo hidden, or uses its images, colours or copy, fails.
-   - **Level and category:** put each home page beside two category leaders from "Category look" and the "Level" sites
-     in `PITCH.md`. A hero or body clearly weaker than them fails. What would a stranger say this company sells? Would the brand's own
+   - **Copying:** run `contact-sheet.cjs` on each variant and its lead reference. A variant that could pass for it with
+     the logo hidden, or uses its images, logo, copy or colours, fails.
+   - **Level and category:** put each home page beside two category leaders from "Category look" in `PITCH.md`. A hero
+     or body clearly weaker than them fails. What would a stranger say this company sells? Would the brand's own
      marketing team publish it? If the user liked another variant, this one must look at least as premium.
    - **Customer walk:** at phone size, walk each home page as "Will they buy?" in `taste.md` says, checking the buying
      basics and tone. It fails if a customer wouldn't know what it is, trust it, or know how to buy.
-   - **Boxes and lines:** each contact sheet passes "Boxes and lines" in `taste.md` (not mostly plain rounded boxes, not
-     the same straight edge or ruled line after every section).
-   - **Fonts:** compare printed fonts against "Type" in `taste.md`; replace any banned one.
+   - **Too boxy:** a contact sheet that is mostly rows of cards on a flat background fails ("Rejected on sight" in
+     `taste.md`).
+   - **Fonts:** compare printed fonts against "Type" in `taste.md`; replace any banned one (V1–V3).
    - **Coverage:** compare the variants against `content/` and `PITCH.md` and add anything one left out, so all cover
      the same products, prices, pages, proof and ways to order.
    - Beyond that, fix only what's broken: errors, dead links, missing images.
@@ -79,11 +77,14 @@ at the hero review in step 4, or if blocked. Short updates only.
   live link.
 - Previews stop loading: restart the server (background commands end after 2 hours).
 - If the client rejects a whole round, don't rebuild yet: ask the user questions first.
-- **Redoing one variant:** keep the level, tone and image treatment of any variant the user liked; change the look and
-  idea. Never pick a look just because no other variant used it. Open the Level sheets again before publishing.
-- **An extra variant, even from the user's own idea,** gets its idea, two targets different from the other variants'
-  and its look, at the level and in the client's tone (steps 2 and 3 of `research.md`).
-- **A redone hero gets the same review:** build it, post its `hero-frames` sheet beside the Level sheets, wait for "go"
+- **Redoing one variant:** keep the level, tone and image treatment of any variant the user liked; change the idea,
+  layout and hero. Never pick a direction just because no other variant used it. Open the category leaders again and run
+  the Category check before publishing.
+- **An extra variant, even from the user's own idea, gets references.** Settle its idea first, in the client's tone,
+  then pick references from Benchmarks or Awwwards and open them (step 3 of `research.md`), naming the technique to take
+  from each. Never brief a Builder with no outside reference, except the free variant (step 2 of `research.md`), judged
+  only on whether someone would remember it tomorrow.
+- **A redone hero gets the same review:** build it, post its `hero-frames` sheet beside its reference, wait for "go"
   before publishing.
 - **When the user rejects something or repeats a correction,** note the lesson in `PROJECT/docs/LESSONS.md`, in general
   terms, no client names.

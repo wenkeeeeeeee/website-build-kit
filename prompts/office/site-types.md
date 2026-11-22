@@ -35,33 +35,9 @@ Research picks one before choosing references. The type decides the first impres
 
 Every type: one concept per variant, and the checks in `taste.md`.
 
-## Direction: from the category's best, not from a list
-Research sets the direction for every variant before choosing references, and writes it in `PITCH.md`. It comes from
-looking at real sites, never from matching the client to a list, so it works for a business the kit has never seen.
-Every variant uses it, the free variant included; variants differ in look (hero staging, colour, display type) and
-idea, never in direction or level.
-
-1. **The target.** Who should this client be seen beside? The user's own words in `LEAD.md` come first ("luxury",
-   "premium", "like Aesop"). Otherwise, the best-known brands in the client's exact category, at the level the user
-   wants, which is often above where the client is today: a small perfumer is set beside the category's best, not
-   beside other small shops.
-2. **Open 3–5 of them** and capture each (`contact-sheet.cjs` for the page, `hero-frames.cjs` for the hero). Write what
-   they actually do, as "Category look" in `PITCH.md`: type (size, case, weight, style), photography (subject, light,
-   crop, how big on screen), background and colour, space and density, motion (pace, what moves), and copy voice
-   (length, register). Name what they share and the one or two things that make them feel expensive or trusted. This is
-   the brief: every builder gets it, and every variant matches its register.
-   **Each one must pass "The bar" in `level.md`.** Drop any that don't (plain layouts, beige with a serif, small photos,
-   cookie walls). If fewer than three pass, open the best of a neighbouring business that sells the same way or shares
-   the customer's feeling (an emcee beside performers and personal brands, a clinic beside premium health and beauty),
-   and write the Category look from the ones that pass.
-3. **Facts versus target.** The client's own links and posts give the facts: products, prices, story, words to quote
-   and the voice of the copy. They never set the look or the level. A casual Instagram doesn't make a casual site when
-   the user or the category's best aim higher.
-4. **The tone label is a hint.** Pick the nearest of the three below for motion and interaction levels and reference
-   searches. When the label and the Category look disagree, the Category look wins.
-5. **The level beats the Category look on how good.** The Level sites (`level.md`) set the type scale, how confident
-   the colour is, how big and staged the subject is, and the space around it. The Category look sets what is shown,
-   how formal it feels and the copy voice. Where they pull apart, the level wins.
+## Tone
+Research decides one tone for the client before choosing references and writes it in `PITCH.md` with the signals that
+decided it. V1–V3 use it and differ in idea and layout. The free variant (V4) may leave it.
 
 - **Playful:** the business is about joy, treats, celebration, play or personality; customers come for fun or a feeling,
   whatever the price. Snacks, sweets, drinks, desserts, gifts, balloons and parties, toys and kids' things, pets, casual
@@ -70,38 +46,29 @@ idea, never in direction or level.
 - **Modern and professional:** the business is about trust, performance or expertise; customers come for a result they
   must rely on: health, money, safety, learning, a business need, technology that has to work. Vehicles and technology,
   clinics and health, finance and law, education, B2B, property, services, group or corporate sites. **Looks like:** a
-  decided colour from the subject's world, a big type move and a staged subject, held still and precise, with a quiet
-  accent; motion that explains the product; real specs and proof right below the hero. No games, stickers, sound or
-  jokes in headlines.
-- **Luxury and premium** (fragrance and beauty, fashion, jewellery, watches, fine dining, boutique hotels, high-end
-  interiors, heritage brands, or any client the user asks to look luxury or premium): still and slow, with rich colour
-  from the product's world, art-directed imagery, far more space and type at the level's scale.
+  calm, confident layout, clean type, precise motion that explains the product, real specs and proof up front; how
+  light or dark, how large the type and how dense the page come from the business's character, not this label. No games, stickers, sound or jokes in headlines.
+- **Luxury and heritage** (fine dining, jewellery, watches, boutique hotels, heritage brands): the modern and
+  professional tone with richer imagery, a slower pace and more space.
 
-Every tone is confident; the tone only sets how loud ("The bar" in `level.md`). Beige with a small serif, or colour
-with no link to the subject, fails in every tone. Not by price: a cheap clinic visit is professional, an expensive party
-playful. Mixed signals: follow the Category look.
+**How to decide.** Not by price: a cheap clinic visit is professional, an expensive party playful. Ask what the business
+is about and what customers come for, then check how the client talks in its own posts and how the category leaders
+look. Mixed signals: modern and professional. A professional client with a playful voice can have one warmer variant,
+still clean and credible.
 
-**Character: the direction in words.** Research writes 3–5 words for how this client should feel at the target level,
-worked out from the Category look and the user's words, then checked against the client's facts so they stay true.
-Never reuse words from another client. With the Category look, they set how every look decision feels (type case and
-style, image treatment, contrast and colour, density, motion pace), always at the level's scale and confidence. Every
-builder is briefed with both. Palettes stay
-open to explore, light or dark, across the variants, inside the Category look's register.
+**Character: the tone fitted to this business.** The tone is a family, not a look: two businesses in the same tone can
+need opposite sites. So research writes this business's own character in 3–5 words, worked out fresh from how it looks
+and talks, what it sells, who buys and how its category leaders feel. Never reuse words from another client. Every
+builder is briefed with them and decides for itself how they show in layout, type, colour, images and motion.
 
-**Check:** put the home page beside the Category look and Level sheets. If it wouldn't sit among them, or a stranger would
-describe it with different words from the character, rework the look, not the idea.
-
-**The direction decides the references.** Pick Benchmarks whose tone matches the hint, and put the Category look's
-words in Awwwards searches (playful, colourful, illustrated; premium, minimal, technology, corporate; luxury, editorial,
-fragrance). A reference in another register can't lead a variant, however good.
+**Tone decides the references.** Pick Benchmarks tagged with the tone, and put the tone's words in Awwwards searches:
+playful, colourful, illustrated; or premium, minimal, technology, corporate. A reference in the other tone can't lead a
+variant, however good.
 
 ## Design families
-Starting hints for categories that sell the same way, never a brief to copy: the Category look in `PITCH.md` wins. A
-client that fits none takes the family matching how its page must sell.
-
-Each family says what its hero must show and what comes below it, never how to stage it. Research gives each variant
-its own staging ("Looks as one set" in `research.md`), and every hero follows "The hero" in `taste.md`: one subject,
-one bold type move, one line, one button and one motion idea.
+Starting hints for categories that sell the same way. A client that fits none takes the family matching how its page
+must sell. Each family says what the hero shows and what comes below it, never how to design it: layout, type and
+staging are the builder's, and the concept in `PITCH.md` wins. They don't bind the free variant.
 
 - **One beautiful object:** bags, eyewear, watches, jewellery, shoes, perfume, audio, furniture. **Hero shows:** the real
   product, big and sharp. **Below:** close-ups of materials and craft, each detail named.
@@ -123,10 +90,8 @@ one bold type move, one line, one button and one motion idea.
   real room or dish, sharp and whole, and one line saying what, where and when next to the booking action. **Below:**
   the menu or services, the visit, groups and events.
 - **The person is the product:** emcees and hosts, event coordinators, DJs, musicians, speakers, coaches, consultants
-  and personal brands. Customers book the person. **Hero shows:** the person, big and in a decided colour, never a photo
-  in a box, column or grid. Cut-outs only from sharp studio photos; otherwise the photo goes full-bleed or in a clean
-  split. Weak photos: the best single real photo, plus a shoot list for one studio session in `OPEN-QUESTIONS.md`. Never
-  AI-made people. **Below:** event photos and clips as proof, the services and how to book.
+  and personal brands. Customers book the person. **Hero shows:** the person, big and clear. **Below:** event photos
+  and clips as proof, the services and how to book.
 - **Work worth showing:** event styling, florists, weddings, interiors, architecture, renovation, fit-out,
   design-and-build and contractors, photography, tattoo, set design. The portfolio is the proof. **Hero shows:** the
   finished work, big. **Below:** job names, sized to the character, whose hover opens the work, and one line or thread

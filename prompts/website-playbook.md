@@ -36,9 +36,8 @@ WebsiteProjects/<Project>/
 4. **Lead review:** one desktop screenshot per variant, `check-pages.cjs --phone`, a grep for reference names and banned
    words, then publish.
 
-**One look per variant, all at the level,** decided together as one set: each with its own staging, colour, kind of
-display type and place for the words, made from the client's world. Identical briefs on one starter come back as
-reskins. Header, section order and components may be shared when that's strongest ("Looks as one set" in
+**One concept per variant, from the client's own world,** with its own story spine and page furniture: identical briefs
+on one starter come back as three reskins. The buyer's path order can repeat; its telling can't (step 2 of
 `office/research.md`).
 
 **Shape the plumbing to the business.** Rename the basket rather than add something (shoot list, try-on list,
@@ -104,8 +103,7 @@ map, booking form) only if it answers a question customers really ask.
 
 Smoothness is choreography; screenshots and frame counters won't show it.
 - **Design every join:** a colour wash, an object carried across, a pinned panel the next slides over, an image growing
-  into the next section. Stacked sections fading up read as basic. Edges where sections meet: "Boxes and lines" in
-  `office/taste.md`.
+  into the next section. Stacked sections fading up read as basic.
 - **Scroll-linked motion** eases toward its target each frame, so nothing snaps. Triggered reveals stagger over 0.6-1s on
   a long ease-out such as `cubic-bezier(.16,1,.3,1)`, never linear or bouncy.
 - Motion language, hover and press states, which properties to animate, page changes: `office/motion.md`, which every
@@ -132,8 +130,7 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you use.
   depends on AI video. `film.py stitch` joins clips.
 - **Placing:** right-aligned, full section height, left edge feathered
   (`mask-image: linear-gradient(90deg, transparent, #000 14%)`). Sample the section background from the film's edge
-  colours. Below the hero, steps beside the film follow `currentTime` and clicking a step seeks; in the hero the film stands
-  alone with the headline, line and button.
+  colours. Steps beside the film follow `currentTime`; clicking a step seeks.
 - **Encoding:** TV-range yuv420p, any zoom rendered on a 4x frame (both in `film.py`).
 - **Serving:** a 1280 mp4 for screens up to 1100px (`<source media="(max-width: 1100px)">`), a 1920 webm and mp4 above, a
   poster, and a separate still for reduced motion. `preload="auto"` on the first film only, `preload="none"` below.
@@ -163,12 +160,10 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you use.
   whatever the load order.
 
 ## 5. Images
-- The client's images first. Below the level: faithful renders of the real product labelled "Render for illustration";
-  for people and places, the best single real photo shown big plus a shoot list; for products only, licensed stock of
-  the real subject labelled "Photo for illustration" (all as "It's made of what the client really has" in `office/taste.md`).
-  Clean cut-outs only, staged calmly outside a playful tone; people only from sharp studio photos.
-- Generated images (`content/generated/`) for backgrounds, mood and faithful product renders only; never AI-made people
-  or places.
+- No new photography: the client's images first, then licensed stock of the real subject labelled "Photo for
+  illustration".
+- Real photos for products, rooms, staff and equipment; generated images (`content/generated/`) only for backgrounds and
+  mood, never the product, people or place.
 - **Treat weak client photos first** (as "It's made of what the client really has" in `office/taste.md` says): one grade
   across the site and a tone-fitting treatment in every section, not just the hero; never scaled past sharp, cut out
   only where the edge is clean.

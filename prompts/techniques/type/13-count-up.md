@@ -7,7 +7,7 @@ bars, below-hero facts, a single big figure). Plus a short counter opening: 000 
 client's own words cycling, then the hero entrance plays.
 
 **Needs:** real client numbers (years, branches, orders, customers served). Drop an unconfirmed number or tag it
-`[client to confirm]`. Numbers never sit in the hero; they count up right below it.
+`[client to confirm]`. In the hero, numbers never lead: at most one small line.
 
 ## Parameters
 - easeOutCubic `1 - (1 - t)^3`. In a row: duration `1500 + i x 80` ms, delay `480 + i x 90` ms, so counting starts as

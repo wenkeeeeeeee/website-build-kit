@@ -12,7 +12,7 @@ session-start hook if installed.
 - `tools/web/`: preview server, page checker, export, hero film, scroll and 3D effects, cut-outs (`npm install` in it
   once).
 - `prompts/office/`: the AI office. Run orders: `research.md`, `build.md`, `deepen.md`. Standards: `taste.md`,
-  `motion.md`, `site-types.md`, `reference-library.md`, `colour.md` (mood pair and accent), `level.md` (the sites that show how good a hero must be). A lead gets 15-25 minutes of research and a plan the user
+  `motion.md`, `site-types.md`, `reference-library.md`, `colour.md` (mood pair and accent). A lead gets 15-25 minutes of research and a plan the user
   reviews, then heroes the user approves as pictures, then full variants published to Vercel.
 - `prompts/techniques/`: one-effect recipes with working code, looked up from its `INDEX.md` only for effects a concept
   already chose. `prompts/office/craft-numbers.md`: starting values for type, motion and common bugs.
@@ -22,17 +22,16 @@ session-start hook if installed.
 ## Which rule wins
 One order for every build, whether it runs from the `/website-build-kit:build` skill or the office run orders:
 1. The user's own words (`LEAD.md`, messages in the thread).
-2. `PITCH.md`: the client's facts and each variant's plan. Its Category look never lowers the bar in
-   `prompts/office/level.md`.
-3. `prompts/office/taste.md` and `prompts/office/level.md`.
+2. `PITCH.md`: the client's facts and each variant's plan.
+3. `prompts/office/taste.md`.
 4. `prompts/office/motion.md`.
 5. Everything else: `site-types.md`, `reference-library.md`, the playbook, `craft-numbers.md`, technique recipes, the
    build skill's steps, and any design skill.
 
 ## Writing kit rules
-Builders copy whatever the kit shows them, so one example becomes four variants that look the same.
-- Say what to show and how good it must be, never the one way to stage it.
-- Give no single example: show three or more different ways, or none.
+- Say what the business needs and what must work. Layout, type, colour and design are the builders' choice, made from
+  the tone, the client's business and products, and the references. The free variant (V4) has no limits.
+- Give no single design example: builders copy it into every variant.
 - A new lesson fixes the rule it belongs to. Never add a rule beside it.
 
 ## Don't use these skills for website builds
