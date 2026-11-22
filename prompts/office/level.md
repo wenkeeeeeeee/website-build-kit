@@ -34,6 +34,8 @@ Each line: the site, its business, and the move that makes it the level.
 **Food and hospitality**
 - https://www.cravburgers.shop/ : burger restaurant. A cut-out burger bites through a giant red condensed headline on
   cream, mustard accent; the type is the stage and the burger the actor.
+- https://bar-topas.ch/ : tapas bar. Ingredients burst around a filled bun through huge cream letters on crimson, after a
+  red-orange-yellow stripe intro; a teal accent clashes on purpose.
 - https://delice.ca/ : restaurant. A full tomato-red field, an overhead plate cut in by a black curve, a tall cream serif
   set big and loose, teal late accent.
 - https://www.eis-lab.de/ : ice cream. An orange tray of cups held by hands, an ink-navy ultra-condensed headline on

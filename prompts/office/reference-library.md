@@ -40,7 +40,6 @@ Don't use these or anything like them.
 | https://www.behance.net/gallery/256512367/Kinera-Physiotherapy-Clinic-Website | Plain mockups of an ordinary clinic template |
 | https://cascaidhealth.com/ | Listed on Awwwards, yet a calm serif layout: a listing proves nothing |
 | https://www.motionclinic.com.ar/ | One hero effect, then dark text and doctor photos. One strong screen isn't a strong site |
-| https://bar-topas.ch/ | Banned by the user, ideas included: its loud stripes, tilted giant type and ribbon marquees of titles came back rejected |
 | https://foodnia.co.jp/ | Banned by the user, ideas included: its colour-flood shape growing on scroll and pinned one-line scenes don't hold up |
 
 ## Component sources
