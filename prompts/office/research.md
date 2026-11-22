@@ -49,7 +49,7 @@ Everything depends on this, so it comes first and gets the most time.
   colour or medium, something we haven't built before. References are optional. It's still this client's site, with
   the same content, prices and action.
 
-## 3. References (4 minutes): techniques for each idea, from Benchmarks and Awwwards only
+## 3. References (4 minutes): for each idea, from Benchmarks and Awwwards only
 References come after the ideas. They support each idea: builders adapt how they stage, compose and move things to
 this client, never their images, logo, copy or colours. The level comes from the category leaders and the references. Only these
 sources, plus any reference the user pasted in `LEAD.md`, which always gets its own variant.
