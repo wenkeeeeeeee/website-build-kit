@@ -29,6 +29,12 @@ One order for every build, whether it runs from the `/website-build-kit:build` s
 5. Everything else: `site-types.md`, `reference-library.md`, the playbook, `craft-numbers.md`, technique recipes, the
    build skill's steps, and any design skill.
 
+## Writing kit rules
+Builders copy whatever the kit shows them, so one example becomes four variants that look the same.
+- Say what to show and how good it must be, never the one way to stage it.
+- Give no single example: show three or more different ways, or none.
+- A new lesson fixes the rule it belongs to. Never add a rule beside it.
+
 ## Don't use these skills for website builds
 - `unlazy`: no `GATES.md`, no gate-check runs, no hashed evidence.
 - `superpowers:writing-plans`, `executing-plans`, `subagent-driven-development`: no long plans, no `.superpowers/sdd` ledger.

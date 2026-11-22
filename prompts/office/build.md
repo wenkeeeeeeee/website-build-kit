@@ -25,11 +25,15 @@ at the hero review in step 4, or if blocked. Short updates only.
      the hero isn't what the customer came for, the look wouldn't sit beside the Level sites or doesn't suit the
      character words (the free variant included), the palette comes from a metaphor or is timid, the hero frames weak
      photos the Level imagery outclasses, sets several photos in columns or a grid, puts an idea gimmick where the
-     subject should be, or a person-led business doesn't stage the person, a 3D Benchmark leads a professional hero, or
-     the plan needs a move the hero material can't carry.
+     subject should be, or a person-led business doesn't stage the person, a 3D Benchmark leads a professional hero,
+     the plan needs a move the hero material can't carry, or two looks share a staging, a kind of display type or where
+     the words sit ("Looks as one set" in `research.md`).
    - **Hero round.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero` and send all the
      subagents in one message, each with `run_in_background: false`. Each builds only its header and hero, with the real
      material, checks it beside the Level sheets, and returns its `hero-frames` sheet.
+   - **Side by side (a minute, your own eyes, no agent).** Open the four `hero-frames` sheets one after another, then the
+     Level sheets. Rebuild any hero that looks like another one with the colours hidden (same staging, kind of display
+     type or place for the words), or that is clearly weaker than the Level sites, before the user sees it.
    - **Review.** The user reviews the heroes; no extra review agent. Post per variant: its `hero-frames` sheet as an
      image (Markdown image, absolute path), the local hero URL, its look in one line, its palette as named swatches with
      hex (mood pair and accent where used), and its reference with the technique taken, if any. If `FRONT_DESK` isn't `none`, also send it

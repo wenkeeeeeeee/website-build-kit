@@ -13,8 +13,8 @@ once, the rest wait their turn.
 
 ## What happens
 1. **Research, 15-25 minutes:** it reads the client's links and the category's leading brands, picks the Level
-   sites from `level.md`, writes each variant's look (how the subject is staged, its colour, its type) and then the idea
-   below the hero, and adds at most one reference per variant for a motion technique.
+   sites from `level.md`, writes the four looks as one set (each its own staging, colour, kind of type and place for
+   the words, made from the client's world) and then the idea below the hero, and adds at most one reference per variant for a motion technique.
 2. **You review the plan.** Reply "go" or send changes.
 3. **Heroes first:** each variant's hero is built and shown to you as frames beside a Level site. After your "go",
    the rest of the 3 + 1 variants is built, every page working.

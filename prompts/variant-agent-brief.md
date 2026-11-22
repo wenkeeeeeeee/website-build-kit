@@ -21,8 +21,10 @@ result is a failed one.
 
 ## Your variant
 - Folder: `{{PROJECT ROOT}}/variants/{{nn-name}}/` (site in `site/`, your reference captures in `ref/`).
-- Look: {{from `PITCH.md`: how the subject is staged, the colour owning the first screen, the one type move}}. Idea:
-  {{how the look carries through the page below the hero; never a gimmick in the hero}}.
+- Look: {{from the look rows of `PITCH.md`: what's staged, how, and what from the client's world it's made with; the
+  colour owning the first screen; the kind of display type and where the words sit}}. Idea: {{how the look carries
+  through the page below the hero; never a gimmick in the hero}}.
+- The other variants' looks: {{one line each}}. Yours must not look like any of them with the colours hidden.
 - Category look: {{from `PITCH.md`, in full: the leaders opened, with their hero sheet paths, and what they do with
   type, photography, background and colour, space, motion and copy voice, and what makes them feel expensive or
   trusted}}. Your variant matches this register: open the sheets before you start.
@@ -32,7 +34,7 @@ result is a failed one.
 - Character: {{the 3-5 words from `PITCH.md`, for this client at the target level; with the Category look they set
   how your type, images, contrast, space and motion feel, always at the Level's scale and confidence}}. Tone hint: {{playful | modern and professional |
   luxury and premium, for motion and interaction levels only}}. Buyer's path: {{from `PITCH.md`}}.
-- Yours alone: hero staging, type pair {{fonts}} and palette {{V1, V2: one decided colour or family from the subject's
+- Yours alone: hero staging, where the words sit, type pair {{fonts}} and palette {{V1, V2: one decided colour or family from the subject's
   world owns the first screen, no clashing accent; V3, V4 if they use a mood pair and accent
   (`KIT/prompts/office/colour.md`): where the accent goes and how loud}}. Signature moment {{the one scroll
   set-piece}}. May be shared with other variants when that's strongest: section order {{along the buyer's path}},
@@ -104,8 +106,8 @@ only for the effects and image work you're doing. Rules conflict? "Which rule wi
 - **Stay in your folder:** no edits to content/, variants/_shared/, the hub, tools/ or other variants. No git commits.
 - **Quality bar:** the playbook's section 3, measured at {{1920x870}} and {{1536x700}} below the sticky header. Every
   page has a title, description and share image for this variant.
-- **Client's world:** the client's object runs through the site below the hero, inner pages too ("The body" in
-  `taste.md`), as your `PITCH.md` column says. Well made and clear of the copy.
+- **Client's world:** it makes your hero's look, and runs through the site below the hero, inner pages too ("The body"
+  in `taste.md`), as your `PITCH.md` column says. Well made and clear of the copy.
 - **Motion:** meet the seven points in `motion.md` at your tone's level, following your column's motion plan, built
   with each section (opening and set-piece first). A section that only fades in is unfinished (in a professional
   tone, one precise reveal or piece of animated information counts). Working code: only the

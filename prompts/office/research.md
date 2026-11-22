@@ -48,11 +48,18 @@ Everything depends on this, so it comes first and gets the most time.
   striking finds in `PITCH.md` under "Inspiration", each with its link and the one thought or technique worth taking (a
   way of showing the product, a story device, a type or image treatment). Take the thought, never the look, layout or
   imagery.
-- **Looks first.** For each variant, write its look: the visual move that makes the hero sit beside the Level sites.
-  How the subject is staged (what it is, how big, cut out or full-bleed, what it overlaps), the colour that owns the
-  first screen, and the one type move. Four looks, all at the level, each its own in staging and colour; header, section
-  order and components may be shared when that's strongest. Never a weaker look just to be different. Take at least
-  one look from outside the web: a poster, packaging, a film title, an album cover, a magazine spread.
+- **Looks as one set.** Write all four looks together, in the look rows of the `PITCH.md` table. Each look is a visual
+  move that makes the hero sit beside the Level sites: what's staged and what from the client's world it's made with
+  (its material, shape, tools or setting; "The look is made from the client's world" in `taste.md`), how it's staged,
+  the colour that owns the first screen, the kind of display type and where the words sit.
+  - Stagings to choose from, among others: the subject cut into or behind a giant word; full-bleed with the words in a
+    corner; a colour field split with the subject; the subject on a stage or plinth in its own setting; the subject
+    built from its own material or drawn in points; several real moments crossfading in one frame.
+  - No two looks share a staging, a kind of display type (serif, grotesk, condensed, script, wordmark) or where the
+    words sit. Hide the colours in your head: if two would still look alike, rewrite one.
+  - All four at the level; never a weaker look just to be different. Header, section order and components may be
+    shared when that's strongest. Take at least one look from outside the web: a poster, packaging, a film title, an
+    album cover, a magazine spread.
 - **Then the idea for each look:** one line on how the look carries through the page below the hero, built around the
   story and what the customer decides or does (the run-sheet as the scroll, the menu as a record crate, sizing as a
   fitting room), drawing on the Inspiration notes. Write about 10, keep the 4 that fit their looks and that a customer
@@ -144,11 +151,12 @@ Sources read: <each client link and search, and what it gave or why it was block
 References opened: <every page: Benchmark or Awwwards, kept or dropped, why, and the two frames that prove the bar>
 
 | | V1 · Name | V2 · Name | V3 · Name | V4 · Name (free) |
-| Look (how the subject is staged; the colour owning the first screen; the type move) | | | | |
+| Look: staging (what's staged, how, and what from the client's world it's made with) | | | | |
+| Look: type (the kind of display type, the type move, where the words sit) | | | | |
 | Idea (how the look carries through the page below the hero) | | | | |
 | Hero (what it's made of; recipe; what each scroll step shows; the one motion idea; the words) | | | | |
 | Signature moment (how it works, and the kit effect it's built with) | | | | |
-| Client's object below the hero | | | | |
+| Client's world below the hero | | | | |
 | Motion plan (opening, one main thing per section, alive at rest, page change) | | | | |
 | Business tool (ending in WhatsApp; may be shared) | | | | |
 | Section order (the buyer's path; may be shared) | | | | |

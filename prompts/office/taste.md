@@ -11,12 +11,15 @@ every page hero.
 
 - **It shows what the customer came for:** the car, the dish, the pets, the gift, the service and its result, the skin
   clearing. That subject is the biggest thing on screen at every scroll step. Never a logo, mood or metaphor; prices,
-  ratings and counts never sit in the hero; they come right below. When customers book a person (an emcee, host, performer,
-  coach, consultant), the person is the subject, staged like a product ("The person is the product" in
-  `site-types.md`).
-- **The look leads, the idea follows.** Each variant's hero is a visual move at the level (`level.md`): how the subject
-  is staged, the colour that owns the first screen and one bold type move. The variant's idea plays out below the hero,
-  never as a gimmick in it (a timeline, a quote, a floor plan or a split screen is not a hero).
+  ratings and counts never sit in the hero; they come right below. When customers book a person, the person is the
+  subject.
+- **The look is made from the client's world.** Each variant's hero is one visual move at the level (`level.md`): the
+  subject staged, a decided colour and one bold type move. The client's own thing (its material, shape, tools or
+  setting) can be the staging or the type move: a headline made of the product's material, the product drawn in points,
+  the trade's own drawing over a real photo, the object on a stage in its own setting. Each variant uses the client's
+  world a different way ("Looks as one set" in `research.md`). Never a gimmick standing in for the subject (a timeline,
+  a quote, a floor plan or a game instead of what the customer came for). The variant's longer idea plays out below the
+  hero.
 - **It says the core in seconds** in a clean first screen holding only the subject, one bold type move (the headline),
   one short line and one button. No facts row, stats, badges or paragraphs: they come right below. Claims only from the
   client, or shown as `[client to confirm]`.
@@ -64,16 +67,17 @@ every page hero.
 ## The body
 - **It fits the hero:** the same scale, image treatment, colour, type and motion everywhere, inner pages too, so the
   site reads as one piece. Sections of only heading, paragraph and picture, or only fade-ins, fail.
-- **The client's object runs through the site below the hero:** section transitions, image frames, small details (a
-  balloon stylist's balloons carried each section change and framed the photos). The hero stays clean.
+- **The client's world runs through the whole site:** in the hero as the look's material, and below it in section
+  transitions, image frames and small details. The hero stays clean.
 - **One signature set-piece** of at most 2–3 pinned screens (`motion.md`), placed after the first price and action, then
   one-screen sections. Each section has one main thing (the price and action, an object transition, the tool, a proof
   moment, the set-piece) with its own motion graphic; no section carries all of them. Home pages run about 6–10 screens.
 - **A tool that fits the business,** answering a real customer question and ending in a WhatsApp message; plumbing in
   the business's language ("try-on list", not "basket").
-- **Same level, its own look:** every variant passes the level, and each has its own hero staging, palette and display
-  type. Header style, section order, components and the tool may be shared across variants when that's the strongest
-  choice. Never a weaker look just to be different.
+- **Same level, its own look:** every variant passes the level, and each has its own staging, palette, kind of display
+  type and place for the words, decided together as one set ("Looks as one set" in `research.md`). Header style,
+  section order, components and the tool may be shared across variants when that's the strongest choice. Never a
+  weaker look just to be different.
 - **Every variant carries the whole business:** every product with its price (on a Branding site, after the story), every
   page in `PITCH.md`, the proof,
   offers, questions, locations and ways to order. Catalogues, recipes, gifts and awards the client has, the site has.
@@ -102,8 +106,9 @@ has called the result too boxy.
   aligned grids, the photo zooming slightly inside its frame on hover. Elsewhere mix photos bleeding off the edge, big
   photos, and text set straight on the page.
 - Frames are plain by default, made special by the crop and the space around them. Tilts, stickers, the
-  client's shape as a frame and products bursting out of frames are for a playful tone only. A product set into or
-  overlapping a giant headline suits every tone (`level.md`). None of these on a catalogue grid.
+  client's shape as a frame and products bursting out of frames are for a playful tone only. A subject overlapping a
+  giant headline, bleeding off the edge or set on a stage suits every tone (`level.md`). None of these on a catalogue
+  grid.
 - Joins between sections are designed and varied: blended backgrounds, a wave, a torn or cut edge, a line the client's
   object draws, an image or object crossing the join, or generous space. Never the same straight edge between flat
   colour bands or the same ruled line after every section: that reads as a template.
@@ -130,7 +135,8 @@ has called the result too boxy.
 ## Rejected on sight
 - **Taking a reference's layout, composition, colour or imagery.** From a reference take only a motion technique
   (an easing, a transition, how the scroll is paced); the level to reach comes from `level.md` and the category leaders.
-- **Variants with the same hero staging and colour,** or at different levels of completeness.
+- **Variants that look alike with their colours hidden** (the same staging, kind of display type or place for the
+  words), or at different levels of completeness.
 - **Messy layering:** words over busy images, accidental overlaps, things sliding under the sticky header.
 - **The same thing twice:** a list in the hero and again below, a second film right after a film hero, a tool repeating
   another section. At most three videos on a home page, one playing at a time.

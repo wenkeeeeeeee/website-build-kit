@@ -4,7 +4,8 @@ Adapted from MotionSites layout-and-ui.md #1 (MIT).
 
 Ways to place copy over a full-bleed visual so the subject stays the biggest thing on screen. Pick by how much of the
 visual must stay clear. Avoid dead-centre copy, the weakest default. The headline always sits in the scene, never in a
-column beside a picture.
+column beside a picture. Where the words sit is part of each variant's look: no two variants of one client use the
+same pattern, and the short line and button go wherever the visual leaves calm space, not always bottom-left.
 
 **Needs:** one full-bleed visual of the real subject (film, scrubbed frames, 3D or a sharp photo) with a calm area for
 the copy.
@@ -17,13 +18,13 @@ the copy.
   `office/taste.md`); they go right below.
 - **B. Bottom-left editorial.** Copy `position:absolute; bottom:0; left:0`, `max-width 42rem`. H1 at the level's scale
   (`office/craft-numbers.md`), tight. Sub line in `--muted`, 14px, `max-width 28rem`. One solid button (no glass).
-- **C. Split top/bottom (`justify-content: space-between`).** Headline top-left; one line and the action
-  bottom-left; height `calc(100svh - header)`. A magazine cover, the subject filling the middle.
+- **C. Split top/bottom (`justify-content: space-between`).** Headline across the top; one line and the action
+  bottom-right; height `calc(100svh - header)`. A magazine cover, the subject filling the middle.
 - **E. Four-corner HUD.** Header top, centred headline in the top third, the short line and one button
   bottom-left, the bottom-right corner left clear. Text colour flips per breakpoint to match the
   visual behind it.
 - **H. Ghost-type stage.** A giant word behind a cut-out subject (type/11-giant-type.md): the short line and one button
-  bottom-left.
+  centred under the subject, or in whichever corner stays clear.
 
 ## Code
 

@@ -36,9 +36,10 @@ WebsiteProjects/<Project>/
 4. **Lead review:** one desktop screenshot per variant, `check-pages.cjs --phone`, a grep for reference names and banned
    words, then publish.
 
-**One look per variant, all at the level,** each with its own hero staging, colour and display type: identical briefs
-on one starter come back as reskins. Header, section order and components may be shared when that's strongest (step 2
-of `office/research.md`).
+**One look per variant, all at the level,** decided together as one set: each with its own staging, colour, kind of
+display type and place for the words, made from the client's world. Identical briefs on one starter come back as
+reskins. Header, section order and components may be shared when that's strongest ("Looks as one set" in
+`office/research.md`).
 
 **Shape the plumbing to the business.** Rename the basket rather than add something (shoot list, try-on list,
 confidential request); it still ends in one filled-in WhatsApp message. Add one tool (lens picker, frame finder, branch

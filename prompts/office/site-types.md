@@ -99,61 +99,52 @@ fragrance). A reference in another register can't lead a variant, however good.
 Starting hints for categories that sell the same way, never a brief to copy: the Category look in `PITCH.md` wins. A
 client that fits none takes the family matching how its page must sell.
 
-Each family has a starting hero, built per "The hero" in `taste.md` from the client's real photos and footage: one stage,
-one bold type move, one line, one button and one motion idea. Facts, tools and things to try come right below it. These are directions, not sites to copy: the concept in `PITCH.md` wins, and no two variants share a
-hero.
+Each family says what its hero must show and what comes below it, never how to stage it. Research gives each variant
+its own staging ("Looks as one set" in `research.md`), and every hero follows "The hero" in `taste.md`: one subject,
+one bold type move, one line, one button and one motion idea.
 
-- **One beautiful object:** bags, eyewear, watches, jewellery, shoes, perfume, audio, furniture. The product is the star:
-  close-ups, materials, craft. **Hero:** the real product alone at the centre, big and sharp; scrolling moves into
-  close-ups of materials and details, each part named.
+- **One beautiful object:** bags, eyewear, watches, jewellery, shoes, perfume, audio, furniture. **Hero shows:** the real
+  product, big and sharp. **Below:** close-ups of materials and craft, each detail named.
 - **Vehicles and mobility:** e-scooters, e-bikes, motorcycles, cars, EV charging, rental and sharing. Everyday technology,
-  so precise and premium, never loud. **Hero:** the real vehicle, big and sharp in studio light or on a real street, or a
-  real rider using it; it turns, folds or comes apart on scroll, parts named. Below: a model switcher, one fact line (weight,
-  range, price a month), a feature index over close-ups, spec counters, "which model fits you", running cost
-  against petrol. The brand's accent on a base the character suits, a clean grotesk. Never a game, a cartoon road, a
-  dashboard or a sale poster. Category brands to open: cowboy.com, atherenergy.com, gogoro.com, unagiscooters.com.
+  so precise and premium, never loud. **Hero shows:** the real vehicle, or a real rider using it. **Below:** a model
+  switcher, one fact line (weight, range, price a month), a feature index over close-ups, spec counters, "which model
+  fits you", running cost against petrol. Never a game, a cartoon road, a dashboard or a sale poster. Category brands to
+  open: cowboy.com, atherenergy.com, gogoro.com, unagiscooters.com.
 - **Packs and jars:** snacks, drinks, sauces, coffee, sweets, pet food. Loud colour per product, flavours and ranges.
-  **Hero:** the product being made or opened fills the screen, and, in a playful tone, the visitor does the last step (hold to fry,
-  pour, crack the lid) as the hero's one motion idea; the basket comes right below. Each flavour comes out in its own shape and colour; small copy has the brand's
-  humour.
-- **Solves a problem:** skincare, hair, supplements, dental, pain relief, cleaning. Problem, proof, how it works.
-  **Hero:** what the product does, under a headline in the customer's words. On scroll the problem clears (skin calms day
-  by day, days counted). How it works and whether it's safe (ingredients, tests, who can use it) come right below. Every
-  claim, timeline and safety line comes from the client's material or is marked `[client to confirm]`. Below: explain it
-  simply, with real before-and-after and simple diagrams, not paragraphs.
-- **Body and movement:** physiotherapy, pilates, yoga, gyms, sports. The body in motion, not a calm studio. **Hero:** the
-  client's real footage of a body in motion fills the screen, joints and muscles named as they work.
-- **A place to visit:** restaurants, cafés, bars, hotels, spas, salons, gyms, clinics, photo studios. Sells the room and
-  the visit. **Hero:** the real room or dish, sharp and whole at the centre, the effect around it (light, steam, the time
-  of night). The cursor or a hold shows the next state: empty room to full, raw to plated, day to night. One line says
-  what, where and when, next to the booking action. Room sound optional.
+  **Hero shows:** the product, whole and appetising. **Below:** the basket, then each flavour in its own colour, with
+  the brand's humour in small copy.
+- **Solves a problem:** skincare, hair, supplements, dental, pain relief, cleaning. **Hero shows:** what the product
+  does, under a headline in the customer's words. **Below, right away:** how it works and whether it's safe
+  (ingredients, tests, who can use it); then the problem clearing, real before-and-after and simple diagrams, not
+  paragraphs. Every claim, timeline and safety line comes from the client's material or is marked `[client to confirm]`.
+- **Body and movement:** physiotherapy, pilates, yoga, gyms, sports. **Hero shows:** the body in motion, from the
+  client's real footage or photos, never a calm empty studio.
+- **A place to visit:** restaurants, cafés, bars, hotels, spas, salons, gyms, clinics, photo studios. **Hero shows:** the
+  real room or dish, sharp and whole, and one line saying what, where and when next to the booking action. **Below:**
+  the menu or services, the visit, groups and events.
 - **The person is the product:** emcees and hosts, event coordinators, DJs, musicians, speakers, coaches, consultants
-  and personal brands. Customers book the person. **Hero:** the person staged like a product: a full-bleed portrait, or
-  a clean cut-out only from a sharp studio photo, big, in a decided colour, with their name or promise set huge around
-  or behind them (Dennis Snellenberg, Ario Law, Charles Leclerc in `level.md`). Event photos come below as proof, never a
-  grid in the hero. Weak photos: the best single real portrait shown big, plus a shoot list for one studio portrait
-  session in `OPEN-QUESTIONS.md`. Never AI-made people, never cut-outs from phone or reel shots.
+  and personal brands. Customers book the person. **Hero shows:** the person, big and in a decided colour, never a photo
+  in a box, column or grid. Cut-outs only from sharp studio photos; otherwise the photo goes full-bleed or in a clean
+  split. Weak photos: the best single real photo, plus a shoot list for one studio session in `OPEN-QUESTIONS.md`. Never
+  AI-made people. **Below:** event photos and clips as proof, the services and how to book.
 - **Work worth showing:** event styling, florists, weddings, interiors, architecture, renovation, fit-out,
-  design-and-build and contractors, photography, tattoo, set design. The portfolio is the proof. **Hero:** the finished
-  work staged big; the bare space turning into it, by the visitor's hold or cursor, is its one motion idea. Below: job
-  names,
-  sized to the character, whose hover opens the work, and one line or thread carrying you through the page. For spaces (interiors,
-  architecture, renovation, fit-out): generous space around the work, photos framed and shown in their own light, never
-  dimmed to carry text, and the trade's own drawing language as the detail layer: floor plans, dimension lines, drawing
-  numbers and title blocks, "Detail 1" callouts on photos, "not to scale" notes.
+  design-and-build and contractors, photography, tattoo, set design. The portfolio is the proof. **Hero shows:** the
+  finished work, big. **Below:** job names, sized to the character, whose hover opens the work, and one line or thread
+  carrying you through the page. For spaces (interiors, architecture, renovation, fit-out): generous space around the
+  work, photos shown in their own light, never dimmed to carry text, and the trade's own drawing language as the detail
+  layer (floor plans, dimension lines, drawing numbers and title blocks, "Detail 1" callouts, "not to scale" notes).
 - **Guides, media and creators:** city guides, places-to-go and review accounts, listings and directories, event
-  calendars, creator channels and communities. They sell a visit or outing, not a product: places, prices and where to
-  go, with the creator's own voice and posts as proof. **Hero:** the best places or episodes as real photos or footage,
-  each with its area, stepping through on scroll, with one action such as "see all spots" or "plan my weekend". Below:
-  filters by area, type and price, a map, the latest posts, how they visit and film. Category brands to open:
-  timeout.com, theinfatuation.com, atlasobscura.com, airbnb.com/s/experiences.
+  calendars, creator channels and communities. They sell a visit or outing, not a product. **Hero shows:** the best
+  places or episodes as real photos or footage, with one action such as "see all spots". **Below:** filters by area,
+  type and price, a map, the latest posts, how they visit and film. Category brands to open: timeout.com,
+  theinfatuation.com, atlasobscura.com, airbnb.com/s/experiences.
 - **Trust and expertise:** finance, law, accounting, insurance, consultants, B2B suppliers. Calm, clear, credible.
-  **Hero:** what the client really delivers, in real photos or footage: the product, or the people at work and the
-  customer's result (the finished building, the case won, the money saved). A slider or calculator answers the money
-  question early. No sound, games, props or rituals; plain words; slower motion.
-- **Learning and community:** courses, coaching, academies, mentorships, schools. A person, a method, student results.
-  **Hero:** the teacher and real students at work, or a real result they reached, the promise in one line and a first
-  step you can try. Proof stays labelled; risk wording stays.
-- **Origin and craft:** farms, wineries, distilleries, makers, heritage brands. A place and how it's made. **Hero:** the
-  finished product big at the centre. Below it, real photos of the place and the making, and a route drawing from the
-  source to the product, each stop opening a chapter.
+  **Hero shows:** what the client really delivers, in real photos or footage: the product, or the people at work and the
+  customer's result (the finished building, the case won, the money saved). **Below:** a slider or calculator answering
+  the money question early. No sound, games, props or rituals; plain words; slower motion.
+- **Learning and community:** courses, coaching, academies, mentorships, schools. **Hero shows:** the teacher and real
+  students at work, or a real result they reached, with the promise in one line. **Below:** a first step you can try;
+  proof stays labelled and risk wording stays.
+- **Origin and craft:** farms, wineries, distilleries, makers, heritage brands. **Hero shows:** the finished product,
+  big. **Below:** real photos of the place and the making, and a route from the source to the product, each stop
+  opening a chapter.

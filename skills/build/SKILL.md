@@ -64,11 +64,13 @@ Build websites for this client in this thread.
      category, its neighbours and anything that shares the customer's feeling. Note 3-5 striking finds in
      docs/PITCH.md under "Inspiration", each with its link and the one thought or technique worth taking. Take the
      thought, never the look, layout or imagery.
-   - Looks first: for each of the 4 variants, write the visual move that makes its hero sit beside the Level sites:
-     how the subject is staged (what it is, how big, cut out or full-bleed, what it overlaps), the colour that owns the
-     first screen, and the one type move. Each look is its own in staging and colour; header, section order and
-     components may be shared when that's strongest. Never a weaker look just to be different. At least one look comes
-     from outside the web: a poster, packaging, a film title, an album cover or a magazine spread.
+   - Looks as one set ("Looks as one set" in `KIT/prompts/office/research.md`): write all 4 looks together. Each is a
+     visual move that makes its hero sit beside the Level sites: what's staged and what from the client's world it's
+     made with (its material, shape, tools or setting), how it's staged, the colour that owns the first screen, the
+     kind of display type and where the words sit. No two looks share a staging, a kind of display type or where the
+     words sit; if two would look alike with the colours hidden, rewrite one. Header, section order and components may
+     be shared when that's strongest. Never a weaker look just to be different. At least one look comes from outside
+     the web: a poster, packaging, a film title, an album cover or a magazine spread.
    - Then about 10 one-line ideas, each a "what if" for how a look carries through the page below the hero, built
      around the client's story and what the customer decides or does (the run-sheet as the scroll, the menu as a record
      crate), drawing on those finds. Playful: maps, games, 3D rooms or card packs below the hero. Modern and
@@ -101,7 +103,8 @@ Build websites for this client in this thread.
    - Before coding, make design images of each variant's hero and two key sections (with an image generator if you have
      one, otherwise quick rough HTML mock-ups, screenshotted). Pick the version that sits best beside the Level sites and fits the character,
      and build that.
-   - All four at the same level, each clearly its own in hero staging and colour.
+   - All four at the same level, each clearly its own in staging, colour, kind of display type and where the words
+     sit. Brief each builder with the other variants' looks in one line each.
 
 5. Build the heroes first, then wait for me.
    - Build only the header and hero of each variant, as "The hero" in `taste.md` says, with about 40 minutes for the
@@ -112,6 +115,8 @@ Build websites for this client in this thread.
    - Screenshot each hero at a few scroll points and on a phone, beside a Level site:
      `node tools/hero-frames.cjs <hero url> <level site url> --out shots`. Fix and re-run until it would sit in a row
      with the Level sites. I review the heroes myself; no extra review agent.
+   - Then look at the four heroes' screenshots one after another, yourself. Rebuild any that looks like another with
+     the colours hidden, or is clearly weaker than the Level sites, before showing me.
    - Show me the target, the Category look, the Level sites and the character words, the screenshots, each variant's
      look and idea in one line, its palette as named swatches with hex, its reference and technique if any, and the
      local links, and wait for "go".
@@ -119,7 +124,7 @@ Build websites for this client in this thread.
 6. Build the rest of each site.
    - Every section matches the hero's style and animation, and the variant's idea carries through the page. Each
      section has one main thing (the price and action, an object transition, the tool, a proof moment, the set-piece),
-     never all of them; the client's object runs below the hero.
+     never all of them; the client's world runs through the page below the hero.
    - A price or "from" price and the main action come within about 1.5 screens of the top; the signature set-piece (at
      most 2-3 pinned screens) comes after them. Home pages run about 6-10 screens.
    - Show every product with its price, real reviews or proof, and a clear order button that is always easy to reach on
