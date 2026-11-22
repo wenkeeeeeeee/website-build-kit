@@ -1,18 +1,18 @@
 # Reference library
 
-A variant takes at most one reference, only for a motion or craft technique it needs, from the Benchmarks below
-(optional) or Awwwards (step 3 of `research.md`). How good a variant must be comes from `level.md`, not from here. Open an entry before picking it: these notes don't prove it suits the client. No client names or
+Each variant has two targets, a lead and a second, from `level.md`, the Benchmarks below or Awwwards (step 3 of
+`research.md`). Open an entry before picking it: these notes don't prove it suits the client. No client names or
 client-site links here. Wrap-up adds to Benchmarks and "Rejected" as `build.md` says.
 
 ## Benchmarks
-Craft to borrow; each counts as a reference when it fits the client's business, tone and hero material. A reference lends
-one motion technique, never its layout, composition, colour or imagery; the level a variant is judged
-against comes from `level.md` and the category leaders in `PITCH.md`.
+Each can be a target when it fits the client's business, tone and hero material. A target lends how it stages, sizes
+and moves things, never its images, colours or copy.
 **Tone:** playful for Lando Norris, Don't Board Me and Partake; luxury for Cartier, Gentle Monster and TAG Heuer; modern
 and professional for the rest. **Made of** is what the hero is built from.
-**Craft only:** the 3D Benchmarks (Lusion, Active Theory, Igloo, Masahiro Maruyama, EnduroSat) lend one technique and
-never lead the hero of a professional, B2B, health, finance or property client. **No back-to-back reuse:** don't use a
-Benchmark that led a variant for either of the last two clients (see the References row of their `docs/PITCH.md`).
+**Craft only:** the 3D Benchmarks (Lusion, Active Theory, Igloo, Masahiro Maruyama, EnduroSat) may be a second
+target but never lead the hero of a professional, B2B, health, finance or property client. **No back-to-back reuse:**
+don't use a Benchmark that led a variant for either of the last two clients (see the target rows of their
+`docs/PITCH.md`).
 | URL | Made of | What it does |
 |---|---|---|
 | https://lusion.co/ | 3D | 3D objects fill the frame, and a line sweeps through the type on scroll |

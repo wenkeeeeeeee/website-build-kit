@@ -59,10 +59,10 @@ every page hero.
 - **What fails:** a title with photos; a photo in a box; several photos in columns, a strip or a grid; headline left,
   picture right, stats row; a facts row or badges; an idea gimmick standing in for the subject; a full-screen picture
   with no headline; effects covering the subject; a move the material can't carry; no motion.
-- **The check:** run `hero-frames.cjs` on the hero beside a category leader from "Category look" and a site from "Level"
-  in `PITCH.md`. At every frame and on the phone, the subject is the biggest thing, a stranger knows what's sold, they'd
-  stop scrolling, and it belongs beside the category leaders and the level sites ("The bar" in `level.md`). No frame
-  shares its reference's composition. The builder fixes and re-runs until it passes; the user then reviews the heroes.
+- **The check:** run `hero-frames.cjs` on the hero beside its lead target and a site from "Level" in `PITCH.md`. At
+  every frame and on the phone, the subject is the biggest thing, a stranger knows what's sold, they'd stop scrolling,
+  and it belongs beside the lead and the level sites ("The bar" in `level.md`). With the logo hidden, no frame could
+  pass for the lead. The builder fixes and re-runs until it passes; the user then reviews the heroes.
 
 ## The body
 - **It fits the hero:** the same scale, image treatment, colour, type and motion everywhere, inner pages too, so the
@@ -133,8 +133,8 @@ has called the result too boxy.
   shop link at the end. The main action stays in the header.
 
 ## Rejected on sight
-- **Taking a reference's layout, composition, colour or imagery.** From a reference take only a motion technique
-  (an easing, a transition, how the scroll is paced); the level to reach comes from `level.md` and the category leaders.
+- **Copying a target:** its images, colours, copy or logo, or a page that could pass for it with the logo hidden. From
+  a target take how it stages, sizes and moves things.
 - **Variants that look alike with their colours hidden** (the same staging, kind of display type or place for the
   words), or at different levels of completeness.
 - **Messy layering:** words over busy images, accidental overlaps, things sliding under the sticky header.

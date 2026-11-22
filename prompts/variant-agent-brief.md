@@ -11,7 +11,7 @@ page below. Other agents build other variants alongside you: stay inside your ow
 - **hero (40 minutes):** build only the header and hero, at full craft, then run
   `node {{KIT}}/tools/web/hero-frames.cjs <your hero url> <a Level site url from PITCH.md> --out ref`
   and go through the sheet as "The check" in `taste.md` says. Fix and re-run until each frame would sit in a row with
-  the Level sites and no frame shares your reference's composition. Report the sheet path: the user approves the hero
+  the Level sites and, with the logo hidden, no frame could pass for your lead target. Report the sheet path: the user approves the hero
   from it before anything else is built.
 - **rest (30 minutes):** the hero in your folder is approved: keep it, apart from changes listed here. Build everything
   below it and every page to the same level.
@@ -20,17 +20,20 @@ Run `date +%s` now; 5 minutes before the end, stop adding and start checking. Sp
 result is a failed one.
 
 ## Your variant
-- Folder: `{{PROJECT ROOT}}/variants/{{nn-name}}/` (site in `site/`, your reference captures in `ref/`).
-- Look: {{from the look rows of `PITCH.md`: what's staged, how, and what from the client's world it's made with; the
-  colour owning the first screen; the kind of display type and where the words sit}}. Idea: {{how the look carries
-  through the page below the hero; never a gimmick in the hero}}.
+- Folder: `{{PROJECT ROOT}}/variants/{{nn-name}}/` (site in `site/`, your target captures in `ref/`).
+- Look: {{from `PITCH.md`: what the lead target lends, what from the client's world the hero is built with, the colour
+  owning the first screen, the kind of display type and where the words sit}}. Idea: {{how it carries through the page
+  below the hero; never a gimmick in the hero}}.
+- Targets: lead {{URL and sheet files; what it lends: staging, scale, motion}}; second {{URL and sheet files; the one
+  part it lends}}. Aim at them: adapt how they stage, size and move things, never their images, colours, copy or logo.
+  If you hid the logo and yours could pass for the lead, change it.
 - The other variants' looks: {{one line each}}. Yours must not look like any of them with the colours hidden.
 - Category look: {{from `PITCH.md`, in full: the leaders opened, with their hero sheet paths, and what they do with
   type, photography, background and colour, space, motion and copy voice, and what makes them feel expensive or
   trusted}}. Your variant matches this register: open the sheets before you start.
 - Level: {{the 2-3 sites from "Level" in `PITCH.md`, with their hero sheets in `references/level/`}}. Your hero must sit
   in a row with them ("The bar" in `level.md`); on type scale, colour confidence, staging and space they beat the
-  Category look. They show how good, never what to build: take nothing from them.
+  Category look. Unless one is your lead target, they only show how good.
 - Character: {{the 3-5 words from `PITCH.md`, for this client at the target level; with the Category look they set
   how your type, images, contrast, space and motion feel, always at the Level's scale and confidence}}. Tone hint: {{playful | modern and professional |
   luxury and premium, for motion and interaction levels only}}. Buyer's path: {{from `PITCH.md`}}.
@@ -43,9 +46,6 @@ result is a failed one.
   `PITCH.md`}}. Material: {{the exact clips and photos it uses, with sizes, from "Hero material" in `PITCH.md`}}. If
   the material can't carry a step, change the step rather than fake it, and say so in your report.
 - Changes from the user: {{for a repeat hero round or the rest phase, their words; otherwise none}}.
-- Reference: {{at most one URL, marked Benchmark or Awwwards, and the one motion technique to take; or none}}. Your look
-  and idea set the layout and hero; a reference only lends that technique. If you hid the logo and it could pass for
-  the reference, change it.
 - Facts: {{3-5 lines: what the business sells, where, proof (reviews, certificates), how people order}}.
 
 ## Five rules that beat your direction
@@ -54,8 +54,8 @@ result is a failed one.
    facts row, stats or idea gimmick. A title with some photos is never enough. The opening lands there, never hiding or
    delaying it.
 2. **The whole page carries your idea at the Level sites' level.** Sections below at the same level as the hero, images
-   treated like the hero's, one main thing per section, never cards and text on a plain background. From a reference
-   take only the technique named above, never its layout, composition, colour or imagery.
+   treated like the hero's, one main thing per section, never cards and text on a plain background. From your
+   targets take only what's named above, never their images, colours, copy or logo.
 3. **It carries the whole business,** like every variant ("The body" in `taste.md`), services and ways to book
    included. Your direction changes how it's told, never how much; what doesn't fit the home page story gets a designed
    inner page.
@@ -70,10 +70,10 @@ In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md`, `content/OPEN-QUESTIO
 only for the effects and image work you're doing. Rules conflict? "Which rule wins" in `{{KIT}}/AGENTS.md`.
 
 ## How to build
-1. **Open the Level sheets, then your reference if you have one.** From your variant folder, run
-   `node {{KIT}}/tools/web/contact-sheet.cjs <reference url> --out ref --steps 24` and look at every frame for the
-   technique named above. For live sites, also save the HTML, CSS and JS into `ref/source/` and read only how the motion is
-   built: easing, durations, pinning, section hand-overs. Never its layout, colours or imagery. If a sheet shows a wall, loader or black page, use research's capture in `{{PROJECT ROOT}}/references/`.
+1. **Open your two targets, then the Level sheets.** From your variant folder, run
+   `node {{KIT}}/tools/web/contact-sheet.cjs <target urls> --out ref --steps 24` and look at every frame for what each
+   lends. For live sites, also save the HTML, CSS and JS into `ref/source/` and read how the staging and motion are
+   built: sizes, layering, easing, durations, pinning, section hand-overs. Never their images, colours or copy. If a sheet shows a wall, loader or black page, use research's capture in `{{PROJECT ROOT}}/references/`.
 2. **Load the skills:** `taste-skill` and `frontend-design` now, `image-to-code` only for your own design mock-ups
    (never to rebuild a reference), and
    `impeccable` for a polish pass on the home page at the end. If a name isn't listed for you, read
@@ -120,8 +120,8 @@ only for the effects and image work you're doing. Rules conflict? "Which rule wi
   - Re-run `hero-frames.cjs`: the hero still matches the approved one. Do the customer walk ("Will they buy?") at phone
     size.
   - Run `contact-sheet.cjs` on your site, two category leaders from "Category look" in `PITCH.md`, a Level site and
-    your reference if you have one, side by side. Fix a hero or section that looks weaker than the leaders or the Level site, a site that wouldn't belong
-    beside them, and anything that shares the reference's layout, composition, colour or imagery.
+    your lead target, side by side. Fix a hero or section that looks weaker than the leaders, the Level site or the
+    lead, a site that wouldn't belong beside them, and anything that could pass for the lead with the logo hidden.
     On your sheet, apply "Boxes and lines" in `taste.md`.
   - Check printed fonts against "Type" in `taste.md`. Grep the site for reference names and banned words.
   - Open every dropdown, date picker and quantity stepper and screenshot it open: none may show the browser's default
@@ -129,5 +129,5 @@ only for the effects and image work you're doing. Rules conflict? "Which rule wi
 
 ## Report back (under 200 words)
 Hero phase: the hero URL, the `hero-frames` sheet path, what each scroll step shows, any step the material couldn't
-carry. Rest phase: folder and URL; the look and idea in 3-4 lines; the reference technique used and where, if any; the
+carry. Rest phase: folder and URL; the look and idea in 3-4 lines; what each target lent and where; the
 opening, set-piece and motion graphics built; palette and fonts; anything unconfirmed.
