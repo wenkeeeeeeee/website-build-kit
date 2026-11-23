@@ -16,8 +16,8 @@ at the hero review in step 4, or if blocked. Short updates only.
      rename the basket for the business. The starter is a shop: for other site types change the pages and wording.
      Everything in `data/` is public, so no internal notes.
    - Run `npm --prefix KIT/tools/web install`. Copy `node_modules/gsap/dist`, `lenis/dist`, `three/build` and `ogl/src`
-     from `KIT/tools/web` into `PROJECT/variants/_shared/vendor/` as `gsap`, `lenis`, `three` and `ogl`. React Bits
-     components are fetched per variant with `KIT/tools/web/reactbits.cjs`.
+     from `KIT/tools/web` into `PROJECT/variants/_shared/vendor/` as `gsap`, `lenis`, `three` and `ogl`. Each variant
+     ports the components in its "Components" row of `PITCH.md` itself (React Bits via `KIT/tools/web/reactbits.cjs`).
    - Open it once with `check-pages.cjs`. Every page must work: all variants copy it.
 4. **Heroes first (40 minutes), then the user's review.** Heroes are judged from pictures, never the plan.
    - **Before briefing,** open each variant's lead reference sheet. Replace the reference if a banner covers it, most

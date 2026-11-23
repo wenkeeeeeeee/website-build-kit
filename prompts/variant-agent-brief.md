@@ -41,6 +41,9 @@ result is a failed one.
 - Using the references: {{which technique serves which part of your idea; colours from the client's world, not the
   reference's; what to avoid}}. Adapt how they stage, compose and move things to your idea, never their images, logo,
   copy or colours. If you hid the logo and it could pass for a reference, change it.
+- Components: {{the "Components" row of your column in `PITCH.md`: per section, the source URL and what it shows}}.
+  Port and rebuild each as "The component pass" in `{{KIT}}/prompts/office/reference-library.md` says; swap one only
+  for a better fit from the same sources, and never use one another variant uses.
 - Facts: {{3-5 lines: what the business sells, where, proof (reviews, certificates), how people order}}.
 
 ## Five rules that beat your direction

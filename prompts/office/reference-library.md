@@ -43,13 +43,23 @@ Don't use these or anything like them.
 | https://foodnia.co.jp/ | Banned by the user, ideas included: its colour-flood shape growing on scroll and pinned one-line scenes don't hold up |
 
 ## Component sources
-- https://reactbits.dev/ : animated text, backgrounds and small components. Fetch the source with
-  `tools/web/reactbits.cjs` and port it to plain JS.
+Ready-made code for the parts of a section: hero details, section joins, services, galleries and work, proof, process,
+FAQ, the business tool and its controls. They aren't references: they lend code for one part, never a variant's idea,
+and don't count toward its references.
+- https://reactbits.dev/ : animated text, backgrounds and small components. List and fetch the source with
+  `tools/web/reactbits.cjs`.
 - https://ui.aceternity.com/ : hero effects, cards and scroll components.
 - https://21st.dev/ : community library of React and Tailwind components (heroes, buttons, cards, text effects,
-  backgrounds, shaders). Search it by section type and copy the code from the component page. Each component has its
-  own author and license, so check it before use. Port the one you pick to plain JS and CSS, and restyle it for the
-  client.
+  backgrounds, shaders, galleries, testimonials, forms). Search it by section type in a real browser and copy the code
+  from the component page (its download needs a login). Each component has its own author and licence: check it first.
+
+**The component pass** (research, then the builders): for each section of a variant, open these sources for that
+section type and pick the component that best tells this client's content at the variant's tone, or none if hand-made
+does it better. The tone's level in `motion.md` decides how loud a component may be: a professional or luxury variant
+leaves out loops, cursor tricks and anything that moves away from the pointer. No component repeats across variants.
+Port each one to plain JS and CSS (keep its shader, canvas or GSAP code; an `init(el, options)` that returns a
+cleanup; its licence header), and rebuild it with the client's own photos, footage, words and fonts, so it reads as
+theirs and not as a stock demo.
 
 ## To try (2026-11-03)
 | URL | Why |

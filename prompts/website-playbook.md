@@ -107,8 +107,9 @@ Smoothness is choreography; screenshots and frame counters won't show it.
 - **Scroll-linked motion** eases toward its target each frame, so nothing snaps. Triggered reveals stagger over 0.6-1s on
   a long ease-out such as `cubic-bezier(.16,1,.3,1)`, never linear or bouncy.
 - Motion language, hover and press states, which properties to animate, page changes: `office/motion.md`, which every
-  variant must meet. GSAP, Lenis, three.js and ogl come with the kit's tools, and `tools/web/reactbits.cjs` fetches
-  React Bits components.
+  variant must meet. GSAP, Lenis, three.js and ogl come with the kit's tools; section components come from the
+  component pass ("Component sources" in `office/reference-library.md`), with `tools/web/reactbits.cjs` fetching
+  React Bits.
 
 ## 4. Hero effects
 Ways to make the hero's one main visual, not extra layers. Skip to what you use.

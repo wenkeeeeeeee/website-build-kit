@@ -72,6 +72,9 @@ sources, plus any reference the user pasted in `LEAD.md`, which always gets its 
    lead. Never one reference per scroll move or detail. Reopen each
    kept sheet cold and replace anything weak. If Awwwards has nothing better, use the closest Benchmark and say so;
    don't search elsewhere.
+6. **Components, after the references** (2 minutes): run the component pass in "Component sources" in
+   `reference-library.md` and name, per variant, the component for each main section with its URL and what it shows of
+   this client. Builders may swap one for a better fit from the same sources.
 
 ## 4. Write the plan
 Write `PROJECT/docs/PITCH.md` in the format below; add unknowns to `PROJECT/content/OPEN-QUESTIONS.md`.
@@ -134,4 +137,5 @@ References opened: <every page: Benchmark or Awwwards, kept or dropped, why, and
 | Type pair (each font and what in the client's world it answers to) | | | |
 | Palette (from the client's world; V3 and V4 only, if they use `colour.md`: the mood pair, the accent and where the accent goes, picked from 3-5 candidates tried on the hero material, with why) | | | |
 | References (URL, Benchmark or Awwwards, sheet files, the technique to take; at least 2) | | | |
+| Components (per section: source URL and what it shows of this client; none repeated across variants) | | | |
 ```

@@ -60,6 +60,10 @@ Build websites for this client in this thread.
      `node tools/contact-sheet.cjs <urls> --out refs` and write down what makes it impressive (how it stages the
      subject, a transition, a type treatment, how the scroll is paced). Adapt that to the idea; never take its images,
      logo, copy or colours.
+   - Then run the component pass ("Component sources" in `KIT/prompts/office/reference-library.md`): for each main
+     section of each variant (hero details, joins, services, work or gallery, proof, process, FAQ, the tool), pick a
+     component from reactbits.dev, 21st.dev or ui.aceternity.com that tells this client's content at the variant's
+     tone, none repeated across variants, and write it down with its URL.
 
 4. Plan the variants.
    - Variants 1-3 are your three ideas, in the tone you chose. References and Benchmarks make them look and move well.
@@ -103,11 +107,13 @@ Build websites for this client in this thread.
      variant's idea. `KIT/starter` has a working basket, catalogue and WhatsApp checkout you can copy and restyle.
    - Avoid pages that are mostly rows of boxes on a flat background.
    - The other pages must look as good as the home page.
-   - Components: take buttons, menus, dropdowns, date pickers, quantity steppers, sliders, tabs and text effects from
-     reactbits.dev (`node tools/reactbits.cjs list`, then `get <Name> --out <site>/js/reactbits`), 21st.dev or
-     ui.aceternity.com (check each licence), rewrite them in plain JS and CSS, and restyle them in the site's own fonts,
-     colours and shapes. Never leave a browser-default control: no white date popup, no number spinner arrows, no system
-     dropdown, no plain grey button. "Controls in the site's design" in `KIT/prompts/website-playbook.md` says how.
+   - Components: build each section with the components picked in step 3, and take the controls (buttons, menus,
+     dropdowns, date pickers, quantity steppers, sliders, tabs) from the same sources: reactbits.dev
+     (`node tools/reactbits.cjs list`, then `get <Name> --out <site>/js/reactbits`), 21st.dev or ui.aceternity.com
+     (check each licence). Port them to plain JS and CSS and rebuild them with the client's photos, footage, words,
+     fonts and colours ("The component pass" in `reference-library.md`). Never leave a browser-default control: no white
+     date popup, no number spinner arrows, no system dropdown, no plain grey button. "Controls in the site's design" in
+     `KIT/prompts/website-playbook.md` says how.
    - Motion per `motion.md` at the tone's level. For any effect your idea needs, open only the matching recipe listed
      in `KIT/prompts/techniques/INDEX.md`, and take timings and sizes from `KIT/prompts/office/craft-numbers.md`.
 
