@@ -35,12 +35,13 @@ into its skills folder (e.g. `cp -r .claude/skills/* ~/.codex/skills/`).
 | Path | Contents |
 |---|---|
 | `AGENTS.md` / `CLAUDE.md` | Working rules every agent follows |
-| `prompts/` | Playbook, new-project prompt, full build template, subagent brief |
-| `prompts/office/` | The AI office: run orders for research and build threads, role briefs, taste standard, site types, reference library |
+| `prompts/office/taste.md` | The quality bar every builder follows |
+| `prompts/` | Builder brief, playbook (methods and publishing), manual and Clone-mode prompts |
+| `prompts/office/` | Run orders for research and build threads, plus toolboxes: motion, site types, references and sources |
 | `starter/` | Static shop plumbing: basket with WhatsApp/marketplace checkout, catalogue filters, product page, quote form, stores. All business details in `starter/data/` |
 | `tools/web/` | `serve.py` preview server, `check-pages.cjs` desktop and phone checker, `export-site.py` publisher, `film.py` and `film-control.js` hero film, `frames.py` and `scrub.js` scroll film, `stair.js` 3D hero, `gl-guard.js` WebGL safety, `prologue.js` brand opening, `hotspots.js` shop-the-look dots, `cutout.py` cut-outs |
 | `.claude/skills/` | Design and debugging skills, see `THIRD_PARTY.md` |
 
 ## Improving it
-When a build teaches something new, add it to `prompts/website-playbook.md` in general terms (no client names, numbers
-or links), commit and push.
+When a build teaches something new, sharpen the rule it belongs to in `prompts/office/taste.md` (taste) or
+`prompts/website-playbook.md` (method), in general terms (no client names, numbers or links), commit and push.

@@ -12,9 +12,9 @@ Attach the logo and photos if you have them. Send the next client straight away 
 once, the rest wait their turn.
 
 ## What happens
-1. **Research, 15-25 minutes:** it reads the client's links and the category's leading brands, decides the tone,
-   writes ideas in that tone and a direction per variant, then picks references from the kit's Benchmarks and Awwwards
-   for their techniques, at least 2 per variant.
+1. **Research, about 20 minutes:** it reads the client's links and the category's best sites, prepares the photos,
+   films and any 3D model, decides the tone, and gives each variant a different starting point from the client's own
+   world. Each builder then finds its own idea and references.
 2. **You review the plan.** Reply "go" or send changes.
 3. **Heroes first:** each variant's hero is built and shown to you as frames beside a category leader. After your "go",
    the rest of the 3 + 1 variants is built, every page working.

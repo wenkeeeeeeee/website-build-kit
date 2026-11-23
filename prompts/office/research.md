@@ -1,145 +1,64 @@
 # Research agent: run order
 
-You have **15 minutes** for this lead, or up to **25** when the category is unusual or your first references fail the
-bar. Your task message gives `CLIENT`, `PROJECT` (its folder), `KIT` (this repo), `PORT`, `FRONT_DESK` (a thread id) and
-`ZERILAB_PROJECT_ID`. `PROJECT/docs/LEAD.md` holds the user's message; its notes beat these defaults.
+About **20 minutes**. Your task message gives `CLIENT`, `PROJECT` (its folder), `KIT` (this repo), `PORT`,
+`FRONT_DESK` (a thread id) and `ZERILAB_PROJECT_ID`. `PROJECT/docs/LEAD.md` holds the user's message; its notes beat
+everything here. Run `git -C KIT pull --ff-only` first. Work alone and never ask anything. Build 3 variants plus 1 free
+unless `LEAD.md` says otherwise. Your job is facts, material and starting points; the builders design.
 
-Run `git -C KIT pull --ff-only` first. Never ask anything; work alone, no subagents. Rules conflict? "Which rule wins"
-in `KIT/AGENTS.md`. Don't read other `WebsiteProjects` folders or use memories, except the variant names, directions and
-references in their `docs/PITCH.md`, read only so no idea repeats and no Benchmark leads for a third client in a row. Run `date +%s` now and after each step; at 13 minutes (23 on the longer limit) stop gathering and write
-`PITCH.md`. Build 3 variants plus 1 free variant unless `LEAD.md` gives a number.
+## 1. The business (8 minutes)
+- **Open every client link** (products, about, FAQ, reviews, Linktree, menu). Login walls and marketplaces: section 8
+  of `KIT/prompts/website-playbook.md`. Search past them: Google and Google Images with the town, Instagram and TikTok,
+  maps, press and reviews.
+- **Think like the customer:** what they want or worry about, what they compare, what made past customers buy, in their
+  words.
+- **Collect** the logo, products and prices, proof, ways to order, languages, and every usable photo and clip into
+  `PROJECT/content/images/` and `PROJECT/content/video/`.
+- **What the user said before:** if this client had earlier rounds, copy the user's rejections and likes, word for word.
 
-## 1. The business (5 minutes)
-Everything depends on this, so it comes first and gets the most time.
-- **Open the client's links,** up to 10 pages: products, About, FAQ, reviews, promotions, any Linktree or menu. Never skip
-  one for a login wall: open it in real Chrome with a desktop user agent. Canva sites need a real browser, an 8-second
-  wait and a scroll to the end. More tricks: section 8 of `KIT/prompts/website-playbook.md`.
-- **Search beyond them** as section 8 of the playbook says.
-- **Think like the customer:** what they want or worry about, who pays and on what device, what they compare it with,
-  what made past customers buy, in their own words from reviews and comments.
-- **See what the category expects:** open 2–3 of the best-known brands in the client's exact category. Not references:
-  they show what a stranger must recognise this business as, and they set the level every variant is judged against.
-  Keep their URLs for "Category look".
-- **Collect** every client field in `PITCH.md`, 6–10 products with prices, the logo, and photos and clips into
-  `PROJECT/content/images/` and `PROJECT/content/video/`. Delete stock pictures and shared templates.
-- **List the hero material:** each clip's length, size and whether it has a clean stretch of the real thing happening;
-  each photo's size and whether it's sharp at full height; what could be cut out with a clean edge.
+## 2. The material (5 minutes)
+Prepare it, so builders start from the best version: crop clean, one grade, upscale only while sharp, cut out products
+with a clean edge (`KIT/tools/web/cutout.py`), cut short film loops from their clips (`KIT/tools/web/film.py`). Note
+what each piece can carry (size, sharpness, clean stretch of film) and what's missing. Where a 3D model would lift a
+product or place, get one ("3D and media" in `KIT/prompts/office/reference-library.md`) or say none exists.
 
-## 2. Tone and direction (3 minutes)
-- **Tone and character:** "Tone" in `site-types.md`, plus 3–5 character words for this business ("Character" there).
-  V1–V3 use both, and every builder is briefed with the character words.
-- **Site type and pages:** `site-types.md`.
-- **Buyer's path:** who buys, what brings them, their top three doubts with the proof for each, when the price appears
-  (after they want the thing, so rarely in the hero, but within about 1.5 screens), and the action. Every home page follows it.
-- **Core:** one line: what this business is, what it sells, who it's for.
-- **Story:** the story the client wants to tell in one sentence, and what visitors need to see or feel to believe it.
-  It drives every variant.
-- **Ideas before references.** Write 10 one-line "what if" ideas built around the story and what the customer decides
-  or does (the menu as a record crate, sizing as a fitting room), in the tone. Playful: anything from a beautiful classic
-  site to a map, a game, a 3D room or a card pack. Modern and professional or luxury: ideas that explain, guide or show
-  the real thing (a fitting room, a route, a before-and-after, a calculator), with no games, toys, props or rituals.
-  Take at least one from outside the web: a poster, packaging, a film title sequence, an album cover, a magazine spread.
-  Pick the 3 strongest that fit the tone: ideas a customer would find useful and remember. An idea that could sit on
-  any business in the category gets replaced. The free variant's idea comes from its own step below, not this list.
-- **A direction per idea:** one sentence on what the hero is made of and does, from this client's world and the hero
-  material ("the bouquet rises and the visitor's name prints across the balloon"). The builder designs the look itself
-  from the tone, character, business, products and references. Variants differ in idea and layout, never by picking a
-  weaker look just to be different.
-- **The free variant (always last):** free in idea, tone, layout, type, colour and medium ("The free variant" in
-  `taste.md`), something we haven't built before. Write what this business's customer does here in one verb, list 5
-  game, collectible, toy, map or media formats where people already do that, drop any in "The free variant's level"
-  in `reference-library.md` or another client's `PITCH.md`, and pick the one this client's real material fills best.
-  Its direction names the format and the client's own things it's made of. It's still this client's site, with the
-  same content, prices and action.
-
-## 3. References (4 minutes): for each idea, from Benchmarks and Awwwards only
-References come after the ideas. They support each idea: builders adapt how they stage, compose and move things to
-this client, never their images, logo, copy or colours. The level comes from the category leaders and the references. Only these
-sources, plus any reference the user pasted in `LEAD.md`, which always gets its own variant. The free variant's lead
-may come from anywhere (a game, a card set, a toy, a film title sequence): name what it stages and how it moves.
-1. **Benchmarks.** Read "Benchmarks" and "Rejected" in `reference-library.md` and pick the Benchmarks whose craft
-   serves each direction in this tone. Their "Made of" must match the hero material. Respect "Craft only" and "No
-   back-to-back reuse" there.
-2. **Awwwards, whenever it has the technique the idea needs.** WebSearch `site:awwwards.com/sites <tone words> <what the hero does>` and
-   `site:awwwards.com/inspiration <the same>`, such as "playful gift scroll animation" or "premium electric scooter 3D
-   product". Prefer Site of the Day, Site of the Month and Developer Award winners. Awwwards blocks browsers: open the
-   live site each result names.
-3. **Open every candidate.** Run `node KIT/tools/web/contact-sheet.cjs <urls> --out PROJECT/references --steps 8` for the
-   whole page and `node KIT/tools/web/hero-frames.cjs <urls> --out PROJECT/references` for the hero. A cookie wall,
-   loader or repeated frame doesn't count as opened.
-4. **The bar:** creative, attractive and premium in the way that suits this business, across most of the page, in the
-   right tone, with a hero made of the same kind of material. Name two frames that prove it, or drop it. Plain layouts,
-   beige with a serif, and loud colour with no idea behind it fail, even on Awwwards.
-5. **End with at least 2 per variant** (the free variant needs one: a lead of its own choosing, from anywhere): a lead
-   whose craft the variant borrows most, plus one for specific parts. Name the one or two techniques to take from each (a transition, a
-   type treatment, how the scroll is paced). Adapt, never clone: with the logo hidden, the variant mustn't pass for its
-   lead. Never one reference per scroll move or detail. Reopen each
-   kept sheet cold and replace anything weak. If Awwwards has nothing better, use the closest Benchmark and say so;
-   don't search elsewhere.
-6. **Components, after the references** (2 minutes): run the component pass in "Component sources" in
-   `reference-library.md` and name, per variant, the component for each main section with its URL and what it shows of
-   this client. Builders may swap one for a better fit from the same sources.
+## 3. Direction (5 minutes)
+- **Site type, tone and character words:** `KIT/prompts/office/site-types.md`.
+- **Buyer's path, Core and Story:** who buys and on what device, their top three doubts with the proof for each, the
+  action; what the business is in one line; the story the client wants to tell.
+- **The bar:** open 2-3 of the best-known brands in the client's exact category, plus the nearest category sites in
+  "The bar" in `reference-library.md`.
+- **Starting points:** one line per variant naming the client's thing it builds from ("The idea" in
+  `KIT/prompts/office/taste.md`): a product, place, person, tool or object of this trade, or something the customer
+  does here. Different for each variant. Builders may find a better one. Check other `WebsiteProjects/*/docs/PITCH.md`
+  so no idea repeats.
 
 ## 4. Write the plan
-Write `PROJECT/docs/PITCH.md` in the format below; add unknowns to `PROJECT/content/OPEN-QUESTIONS.md`.
+Write `PROJECT/docs/PITCH.md` in the format below; unknowns go into `PROJECT/content/OPEN-QUESTIONS.md`.
 
 Without `STOP_BEFORE_BUILD`: load `mcp__t3-code__t3_thread_launch` with ToolSearch and call it with title `CLIENT`,
 projectId `ZERILAB_PROJECT_ID`, modelSelection `{"instanceId": "claudeAgent_work", "model": "claude-opus-5-5"}` and
 message `Read KIT/prompts/office/build.md and run it. CLIENT=... PROJECT=... KIT=... PORT=... FRONT_DESK=...`, then
-report the minutes taken, the directions and the thread's `link` in under 80 words.
+report the minutes taken, the starting points and the thread's `link` in under 80 words.
 
-With `STOP_BEFORE_BUILD`, end with the review package:
-- The business in three lines; the tone and why; the Core and Story lines; the buyer's path; what the category expects.
-- The hero material: usable clips and photos with sizes, and what's missing.
-- Per variant: name and the idea behind it; the hero (recipe, what each scroll step shows, the words); section order;
-  type pair and palette; each reference as URL, Benchmark or Awwwards, its sheet files and the technique it gives. Show the lead's
-  `hero-frames` sheet as an image.
-- What's unconfirmed, and one line saying the heroes are built first and shown as frames before the rest.
-
-Then stop and wait. If the user sends changes, update `PITCH.md`, say what changed, and wait again.
+With `STOP_BEFORE_BUILD`: post the business in three lines, the tone and character, the material and what's missing,
+and the starting point per variant, then wait. Update `PITCH.md` with any changes the user sends.
 
 ## `PITCH.md` format
 ```
 # CLIENT
-Site type: <type>, because <one line>.
-Tone: <playful | modern and professional>, because <what the business is about and what customers come for>
-Character: <3-5 words for how this business should feel, from how it looks and talks and its category leaders>
-Buyer's path: <who buys and on what device; what brings them; top 3 doubts, each with its proof; when the price
-  appears; the action>
-Core: <one line: what this business is, what it sells and who it's for>
-Story: <the client's story in one sentence, and what visitors need to see or feel to believe it>
-Ideas: <the 10 "what if" lines; mark the 3 picked and the free one>
-Category look: <the 2-3 category brands opened, with URLs, and what a stranger must recognise this business as; they
-  set the level every variant is judged against>
-Facts: <what they sell, where, how to order, WhatsApp number, 6-10 products with prices>
-The customer: <who they are, and the problem, worry or desire that brings them, in their words>
-How it works: <the process, ingredients, method or how to use it, with real numbers and steps>
-Proof: <named reviews, before/after, numbers, stockists, awards, certificates, people and places>
-Offers: <packages, was and now prices, delivery, guarantees, payment methods>
-Questions: <what customers ask before buying, with the client's answers>
-Languages: <each language the client uses, and key lines in each, quoted exactly>
-Must say: <the 6-10 most important messages that every variant must carry>
-Their words: <slogans and phrases, quoted exactly>
-Rules: <names to avoid, claims not to make, photo traps>. Unknowns show as [client to confirm].
-Pages: <the pages for this site type, from site-types.md>
-Ordering: <basket to WhatsApp or marketplace, quote form, booking or none, and what the basket is called>
+Site type: <type>, because <one line>.  Tone: <tone>, because <one line>.  Character: <3-5 words>
+Core: <what this business is, sells and for whom>.  Story: <one sentence>
+Buyer's path: <who buys, device, top 3 doubts with proof, the action>
+Owner said: <the user's past rejections and likes for this client, word for word; or none>
+The bar: <category brands and category sites opened, with URLs>
+Facts: <products and prices, where, how to order, WhatsApp, proof, offers, questions, languages, their words>
+Rules: <names never to feature, claims not to make>. Unknowns show as [client to confirm].
+Pages: <from site-types.md>.  Ordering: <basket to WhatsApp, quote form, booking>
 Screen: 1920x870 at 125% zoom (about 1536x700), unless LEAD.md says otherwise
-Hero material: <each clip: file, length, size, clean stretch or not; each photo: file, size, sharp at full height or
-  not; clean cut-outs; what's missing>
-Sources read: <each client link and search, and what it gave or why it was blocked>
-References opened: <every page: Benchmark or Awwwards, kept or dropped, why, and the two frames that prove the bar>
+Material: <each prepared photo, film, cut-out and model: path, size, what it can carry; what's missing>
+Sources read: <each link and search, and what it gave>
 
-| | V1 · Name | V2 · Name | V3 · Name | V4 · Name (free) |
-| Direction | | | |
-| Hero (recipe; what each scroll step shows; the motion graphics; the words) | | | |
-| Signature moment (how it works, and the kit effect it's built with) | | | |
-| Client's object through the site | | | |
-| Motion plan (opening, motion per section, alive at rest, page change) | | | |
-| Business tool (ending in WhatsApp) | | | |
-| Section order (the buyer's path, and how this variant tells each step) | | | |
-| Header | | | |
-| Type pair (each font and what in the client's world it answers to) | | | |
-| Palette (from the client's world; V3 and V4 only, if they use `colour.md`: the mood pair, the accent and where the accent goes, picked from 3-5 candidates tried on the hero material, with why) | | | |
-| References (URL, Benchmark or Awwwards, sheet files, the technique to take; at least 2) | | | |
-| Components (per section: source URL and what it shows of this client; none repeated across variants) | | | |
+| | V1 | V2 | V3 | V4 (free) |
+| Starting point (the client's thing it builds from) | | | | |
+| Material it leans on | | | | |
 ```

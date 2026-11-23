@@ -1,94 +1,40 @@
-# Motion standard
+# Motion: how to build it
 
-Every variant has motion graphics: clients call plain variants basic, however good the layout. Motion must say
-something: show this client's object, explain how the business works, or carry the visitor to the next idea.
-Decoration that could sit on any site doesn't count, nor does a lone reveal.
+What motion must achieve is in "Motion" in `taste.md`. This file is the toolbox. Everything runs in static HTML, CSS and
+plain JS, no build step.
 
-The tone in `PITCH.md` sets how much: playful is loud and bouncy, professional precise and calm. Motion serves the
-buyer's path: it never delays the core, the price or the action.
+## Libraries
+In `PROJECT/variants/_shared/vendor/` (or `tools/node_modules/` in a skill build). Copy only what you use into
+`site/js/vendor/`.
+- **GSAP with every plugin** (all free): ScrollTrigger for timelines and pinning, SplitText for masked line, word and
+  letter reveals, Flip for shared-element moves, DrawSVG, MorphSVG, MotionPath, Observer, Inertia.
+- **Lenis** for smooth scrolling, on the same clock as ScrollTrigger.
+- **three.js** for 3D (GLTFLoader, DRACO, RGBELoader for HDRI lighting) and **ogl** for light WebGL shaders: image
+  reveals, hover ripples, images bending with scroll speed. Load `gl-guard.js` first, keep a still behind the canvas,
+  pause off screen, one canvas per page where you can.
+- **CSS:** scroll-driven animations and the View Transitions API (`@view-transition { navigation: auto; }`) for page
+  changes.
 
-## What every variant must have
-In a playful tone, all seven in full. In a modern and professional or luxury tone, calmer: point 3 is one precise
-reveal or piece of animated information per section, with no loops; point 5 is the hero only, slow; point 6 is simple
-hovers (a photo zooms about 1.04 inside its fixed frame, a button changes colour), and nothing moves out from under the
-pointer.
-1. **An opening that never blocks.** Playful: the client's object or logo animates into the hero in 2-3 seconds and
-   doubles as the preloader. Professional: at most a one-second reveal of the hero. Either way: skippable, once per
-   session, landing exactly on its place in the hero and leaving it clean ("The hero" in `taste.md`).
-2. **One signature scroll set-piece, at most 2-3 screens of pinning.** Scrolling drives a real sequence: something
-   assembles, opens, travels, transforms or changes state. It sits where it explains the product, after the first price
-   and action, never between the visitor and them. When the product suits it, the hero carries a short scroll move
-   instead ("It moves" under "The hero" in `taste.md`): at most one screen of pinning, with `scrub.js` for a frame
-   sequence or GSAP ScrollTrigger for a layered product.
-3. **Motion with a job in every section:** at least one drawn or animated element carrying that section's meaning.
-   Playful: characters, stickers, bounce. Professional: counters, diagrams, product turns, precise reveals. In the hero
-   it's the main visual itself, not an extra.
-4. **A designed join between every two sections** ("Transitions" in section 3 of the playbook), carried by the client's
-   object wherever it can.
-5. **Something alive at rest:** the hero's main visual and key sections keep moving gently without scrolling (a slow
-   loop, drifting layers, a cursor reaction), with no visible restart.
-6. **A response to every touch:** hover and press states on everything clickable; animated results in the business tool.
-7. **Moving page changes:** a short wipe, the View Transitions API, or the object carrying you across. Inner pages get
-   their own motion graphics.
-
-## Motion graphics to choose from
-Drawn in SVG, canvas or WebGL. Pick what fits the client; never the same set in two variants.
-- **Kinetic type:** headlines split into lines, words or letters that mask up, swap or stretch with scroll speed.
-- **Line drawing:** illustrations, routes, stitches, diagrams and underlines draw themselves on scroll.
-- **Shape morphing:** one form becomes another, such as the logo becoming the product.
-- **Motion on a path:** the client's object travels a curve across the page and between sections.
-- **Layered depth:** clean cut-outs of real photos move apart on scroll.
-- **Particles and generative art** from the client's material: petals, bubbles, steam, sparks, grain.
-- **Masks and reveals:** photos open with a wipe or mask into their frame and end whole and fully lit (through the
-  client's shape only in a playful tone).
-- **Animated information:** counters from real numbers, charts that draw, step diagrams that play, maps tracing a route.
-- **Pinned sequences:** stacked cards, horizontal rails, flipping panels, 3D scenes, frame sequences.
-- **Small icons that act:** icons drawn for this client, animating their meaning on hover.
-
-## Where to start, by design family
-Starting points only; the concept in `PITCH.md` wins. Real photos and footage lead; drawn and 3D layers only support
-them.
-- **One beautiful object:** the real product in close-ups and detail as you scroll, parts named; 3D only for a faithful
-  model of the real product.
-- **Packs and jars:** packs fly, stack and burst into their ingredients; the screen changes colour per flavour.
-- **Solves a problem:** an animated diagram plays how the problem happens and how the product answers it.
-- **Body and movement:** real footage of the body moving, joints and muscles named in a drawn overlay as they work.
-- **A place to visit:** the room opens as you enter, light moves from day to night, a route traces to the door.
-- **Work worth showing:** work arrives through the client's own shapes; projects hand over with shared-element moves.
-- **Trust and expertise:** real numbers count, charts and process diagrams draw themselves. Precise and calm.
-- **Learning and community:** a learner's path draws itself through the method, progress unlocking each stage.
-- **Origin and craft:** the making process plays as a line drawing, from source to finished piece.
-
-## How to make it
-- **No generated video is needed:** all of this can be made in code around the client's own photos and footage. Use a
-  good client film. AI video from a free tool is fine, never Higgsfield or a paid tool, and no hero depends on it.
-- **Libraries** are in `PROJECT/variants/_shared/vendor/`. Copy only what you use into `site/js/vendor/`, no build step:
-  - GSAP with ScrollTrigger for timelines and pinning, SplitText for kinetic type, DrawSVGPlugin for line drawing,
-    MorphSVGPlugin for shape morphing, MotionPathPlugin for paths and Flip for shared-element moves.
-  - Lenis for smooth scrolling, connected to ScrollTrigger so they share one clock.
-  - three.js for 3D, with `gl-guard.js` and a still behind the canvas.
-  - ogl for light WebGL backgrounds and shaders.
-  - Components from React Bits (`node KIT/tools/web/reactbits.cjs list`, `get <Name> --out site/js/reactbits`),
-    21st.dev and Aceternity, picked per section in the component pass ("Component sources" in
-    `reference-library.md`). They are React, so port each to plain JS: keep its shader, canvas or GSAP code, turn the
-    effect into an `init(el, options)` that returns a cleanup, and keep the licence header. Recolour and retime it for
-    this client, at this tone's level, so it reads as theirs, not as a stock effect.
-- **Kit effects** (`scrub.js`, `prologue.js`, `stair.js`, `hotspots.js`, `film-control.js`) are ready-made; use them
-  where they suit the concept.
-- **Build motion with each section,** opening and set-piece first. Motion left to the end gets dropped, and nothing here
-  extends your time limit.
-- **Study how the reference moves:** read its live source for easing, duration and hand-overs only. Take its timing,
-  never its layout, colours, imagery or files.
+## Ready-made code
+- **Kit effects** in `tools/web/`: `scrub.js` (scroll-scrubbed frame sequences from `frames.py`), `film-control.js`,
+  `stair.js`, `hotspots.js`, `prologue.js`.
+- **Recipes** in `prompts/techniques/INDEX.md`: open only the ones your idea needs.
+- **Code sources** in "Code and components" in `reference-library.md`: Codrops demos are plain JS already; React
+  components (React Bits via `tools/web/reactbits.cjs list` and `get <Name> --out site/js/reactbits`, Aceternity,
+  21st.dev) get ported: keep the shader, canvas or GSAP code, wrap it as `init(el, options)` returning a cleanup, keep
+  its licence header, and rebuild it with the client's photos, words, fonts and colours so it reads as theirs.
+- **Study how a reference moves:** read its live source for easing, duration and hand-overs. Take timing, never its
+  layout, images or files.
 
 ## Keep it good
-- **Hierarchy:** one big thing moves at a time; copy stays still while people read it.
-- **One motion language:** the same easing family and timing across a variant.
-- **Smooth:** animate only `transform`, `opacity` and `clip-path`, never height, top or margin. Pause loops and canvases
-  off screen; at most one WebGL canvas per page.
-- **Light:** the first screen appears within 3 seconds. Compress every image; use SVG where it can replace one.
-- **Phones:** keep the idea in lighter versions: shorter moves instead of long pinning, no heavy canvases.
-- **Reduced motion:** every sequence ends in its finished state, nothing hidden; the page is complete without motion.
-- **Recipes and numbers:** for an effect the concept already chose, find it in `prompts/techniques/INDEX.md` and open only
-  that recipe (1-3 per variant, never the whole library). Timings, type sizes and bug fixes: `craft-numbers.md`. No
-  signature effect in two variants. Conflicts follow "Which rule wins" in `AGENTS.md`.
-- **Professional tone, older audiences, serious topics:** the same craft, slower, fewer loops, no bounce, no sound.
+- **Build motion with each section,** opening and signature moment first: motion left to the end gets dropped.
+- **One motion language** per variant: one easing family, one timing scale. One big thing moves at a time; copy stays
+  still while it's read.
+- **Smooth:** animate `transform`, `opacity`, `clip-path` and shader uniforms, never height, top or margin.
+  Scroll-linked motion eases toward its target; triggered reveals stagger over 0.6-1s on a long ease-out such as
+  `cubic-bezier(.16,1,.3,1)`.
+- **Light:** the first screen within 3 seconds. Compress images and models (`gltf-transform`), lazy-load below the fold.
+- **Phones:** the same idea, lighter: shorter moves, smaller or no canvases, a still or short film where WebGL is heavy.
+- **Reduced motion:** every sequence ends in its finished state; the page is complete without motion.
+- **Pinned scenes never start or end empty;** keep the last state visible.
+- Timings, type sizes and known bugs: `craft-numbers.md`.

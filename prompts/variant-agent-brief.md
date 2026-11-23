@@ -1,129 +1,60 @@
-# Subagent brief: build one variant from its idea
+# Builder brief: one variant
 
 Fill in the {{fields}} and send one copy per variant, all in one message so they run in parallel.
 
 ---
 
-You are building one website variant for {{CLIENT}} around its own idea, using techniques from its references to make
-it look and move well. Other agents build other
-variants alongside you: stay inside your own folder.
+You are designing and building one website variant for {{CLIENT}}, a real client. Other agents build other variants
+alongside you: stay inside your own folder. **Phase: {{hero | rest}}.**
 
-**Phase: {{hero | rest}}.** The free variant is free in idea, tone, layout, type, colour and medium ("The free variant" in
-`taste.md`): the other design rules don't bind it, but its hero is made of the client's own thing in a format the
-customer already knows, it adapts its one lead reference, and it's judged on the picture with the words hidden (never
-a dashboard, admin panel or SaaS layout). It keeps the client's facts and a working site.
-- **hero (40 minutes; 60 for the free variant):** build only the header and hero, at full craft with the real material, then run
-  `node {{KIT}}/tools/web/hero-frames.cjs <your hero url> <a category leader url from "Category look" in PITCH.md> --out ref`
-  and go through the sheet as "The check" in `taste.md` says. Fix and re-run until each frame belongs beside the
-  category leader and no frame could pass for a reference with the logo hidden. Report the sheet path: the user approves the hero
-  from it before anything else is built.
-- **rest (30 minutes):** the hero in your folder is approved: keep it, apart from changes listed here. Build everything
-  below it and every page to the same level.
+**You are free** in idea, layout, type, colour, medium and motion. The rules are short: `{{KIT}}/prompts/office/taste.md`
+(read it first) and the facts below. The owner approves heroes on sight, beside the best sites in the category.
 
-Run `date +%s` now; 5 minutes before the end, stop adding and start checking. Spend the time on craft: a fast, plain
-result is a failed one.
+## The client
+- Facts: {{3-6 lines from PITCH.md: what they sell, where, prices, proof, how people order, languages}}.
+- Tone and character: {{tone}}; {{the 3-5 character words}}. {{For variant 4: free in tone too.}}
+- What the owner said before: {{the user's past rejections and likes for this client, in their own words; or none}}.
+- Your starting point: {{the client's thing this variant builds from, one line from PITCH.md; different for each
+  variant}}. A better idea from the same client's world wins.
+- Material: {{the prepared photos, films, cut-outs and any 3D model, with paths and sizes}}. Copy what you use into
+  `site/assets/`.
+- Category sites to beat: {{two URLs from "The bar" in reference-library.md, plus the category leaders from PITCH.md}}.
+- Changes from the user: {{their words for a repeat round or the rest phase; otherwise none}}.
 
-## Your variant
-- Folder: `{{PROJECT ROOT}}/variants/{{nn-name}}/` (site in `site/`, your reference captures in `ref/`).
-- Direction: {{from `PITCH.md`: one sentence on what the hero is made of and what it does. Not a style word.}}
-- Tone: {{playful | modern and professional, from `PITCH.md`}}. Character: {{the 3-5 words from `PITCH.md`, for this
-  business; you decide how they show}}. Buyer's path: {{from `PITCH.md`}}.
-- Yours alone, shared with no other variant: how the buyer's path is told {{section order along the path}}; signature
-  moment {{the one scroll set-piece}}; business tool {{finder, picker, dial or quote builder}}; basket name {{or none}};
-  header {{its own shape}}; type pair {{fonts}}; palette {{from the client's world; V3 and V4 only, if they use a mood pair and accent
-  (`KIT/prompts/office/colour.md`), say where the accent goes and how loud}}.
-- Hero: {{what it's made of and what it does; what each scroll step shows; the words; from your column of
-  `PITCH.md`}}. Material: {{the exact clips and photos it uses, with sizes, from "Hero material" in `PITCH.md`}}. If
-  the material can't carry a step, change the step rather than fake it, and say so in your report.
-- Changes from the user: {{for a repeat hero round or the rest phase, their words; otherwise none}}.
-- Reference: {{URLs, each marked Benchmark or Awwwards, and the technique to take from each}}. What I saw at a glance:
-  {{2-4 lines: header, hero, signature sections, motion}}.
-- Using the references: {{which technique serves which part of your idea; colours from the client's world, not the
-  reference's; what to avoid}}. Adapt how they stage, compose and move things to your idea, never their images, logo,
-  copy or colours. If you hid the logo and it could pass for a reference, change it.
-- Components: {{the "Components" row of your column in `PITCH.md`: per section, the source URL and what it shows}}.
-  Port and rebuild each as "The component pass" in `{{KIT}}/prompts/office/reference-library.md` says; swap one only
-  for a better fit from the same sources, and never use one another variant uses.
-- Facts: {{3-5 lines: what the business sells, where, proof (reviews, certificates), how people order}}.
+## Hero phase ({{45}} minutes; 60 for variant 4)
+1. **Learn and look (about 15 minutes).** Read `{{PROJECT}}/docs/PITCH.md` and `content/copy.md`. Open the design lab,
+   the category sites and 2-3 creative references from anywhere ("The bar" and "Craft references" in
+   `{{KIT}}/prompts/office/reference-library.md`, Awwwards, games, packaging, film titles) with
+   `node {{KIT}}/tools/web/contact-sheet.cjs <urls> --out ref`, and look properly.
+2. **Write three different hero ideas** in one line each ("The idea" in `taste.md`). Build the strongest, not the
+   safest.
+3. **Build the header and hero** at full craft with the real material. Copy the plumbing first:
+   `cp -r {{BASE}} variants/{{nn-name}}/site` from the project root ({{BASE}} is `variants/_shared/starter`), check that
+   `variants/{{nn-name}}/site/index.html` exists. Tools: `{{KIT}}/prompts/office/motion.md`.
+4. **Check it like the owner:** `node {{KIT}}/tools/web/hero-frames.cjs <your hero url> <a category site> --motion --out ref`.
+   Look at the sheets cold, the motion sheet too. Would the owner stop scrolling and approve it beside the category
+   site? Does it look like this business and no other? If not, redo it. No console errors.
 
-## Five rules that beat your direction
-1. **The hero delivers the business core and stays clean,** as "The hero" in `taste.md` says: what this business is,
-   sells and is for, its main visual what the customer came for. A title with some photos is never enough. The opening
-   lands there, never hiding or delaying it.
-2. **The whole page carries the hero's idea at the category leaders' level.** Sections below at the same level as the
-   hero, never only cards and text on a plain background. From the references, never their images, logo, copy or
-   colours.
-3. **It carries the whole business,** like every variant ("The body" in `taste.md`), services and ways to book
-   included. Your direction changes how it's told, never how much; what doesn't fit the home page story gets a designed
-   inner page.
-4. **It's built to sell:** "Will they buy?" in `taste.md`, in the tone set above.
-5. **Every line is specific to this client.** Write from `PITCH.md` in the customer's words, and place all of "Must say"
-   across the page: their problem by name, how this works, real proof, what it costs, how to start. A line that could
-   sit on a competitor's site gets rewritten with this client's facts.
+Report (under 150 words): the hero URL, the idea in one line, the three ideas you considered, the references and what
+you took from each, fonts and palette, and the `hero-*.jpg` and `motion-*.jpg` paths.
 
-## Read first
-In `{{PROJECT ROOT}}`: `docs/PITCH.md`, `content/copy.md`, `content/OPEN-QUESTIONS.md`. In `{{KIT}}`:
-`prompts/office/taste.md`, `prompts/office/motion.md` and section 3 of `prompts/website-playbook.md`; sections 4 and 5
-only for the effects and image work you're doing. Rules conflict? "Which rule wins" in `{{KIT}}/AGENTS.md`.
+## Rest phase (30 minutes)
+The approved hero stays as it is, apart from changes listed above. Build everything below it and every page to the
+same level: the whole business, the buyer's path, one tool ending in WhatsApp ("Will they buy?" in `taste.md`).
+The starter has working data, basket, catalogue and inner pages: keep them working, redesign everything visible, and
+remove what you don't use. Build every control in the site's design (section 3 of `{{KIT}}/prompts/website-playbook.md`).
 
-## How to build
-1. **Go through every reference.** From your variant folder, run
-   `node {{KIT}}/tools/web/contact-sheet.cjs <urls> --out ref --steps 24` and look at every frame for the techniques
-   named above. For live sites, also save the HTML, CSS and JS into `ref/source/` and read how the staging and motion
-   are built: sizes, layering, easing, durations, pinning, section hand-overs. Never its images, colours or copy. If a sheet shows a wall, loader or black page, use research's capture in `{{PROJECT ROOT}}/references/`.
-2. **Load the skills:** `taste-skill` and `frontend-design` now, `image-to-code` only for your own design mock-ups
-   (never to rebuild a reference), and
-   `impeccable` for a polish pass on the home page at the end. If a name isn't listed for you, read
-   `{{KIT}}/.claude/skills/<name>/SKILL.md`. This brief's concept, palette and fonts beat any skill's direction.
-3. **Copy the plumbing (hero phase only; in the rest phase your site is already there).** From the project root, run
-   `mkdir -p variants/{{nn-name}} && cp -r {{BASE}} variants/{{nn-name}}/site`, where `{{BASE}}` is
-   `variants/_shared/starter` or a finished variant. Check the result is `variants/{{nn-name}}/site/index.html`, not one
-   level up.
-4. **Redesign everything visible.** It already has the data, cart, catalogue filters and inner pages: keep every page
-   working. Rebuild the home page around your idea, and restyle the header, footer, page heroes, cards,
-   colours, type and motion on every page, so it's its own variant, not a reskin. Remove what you don't use. Name your
-   variant in the comment on line 1 of the main stylesheet.
-5. **Build the signature moment with the kit,** as `PITCH.md` names it, not your own code: `scrub.js`, `prologue.js`,
-   `stair.js`, `hotspots.js`, `film-control.js` in `{{KIT}}/tools/web/`, and `gl-guard.js` for any WebGL. Other
-   libraries are in `{{PROJECT ROOT}}/variants/_shared/vendor/`.
-6. **Assets you may use:** {{list: content/images/web, labelled stock of the real subject, clean cut-outs,
-   generated images}}. Copy what you use
-   into `site/assets/`. New cut-outs: `python {{KIT}}/tools/web/cutout.py`, reviewed on a coloured background.
-   {{Third-party branded packs: don't make them the hero subject.}} Never use the reference's images, logos,
-   illustrations or copy.
-7. **Browsers and preview.** Use your own headless browser (`{{KIT}}/tools/web/check-pages.cjs`, or Node Playwright from
-   that folder), never the Playwright or chrome-devtools MCP tools: they share one browser with the other agents. The
-   preview is running: your site is at {{http://127.0.0.1:8080}}/variants/{{nn-name}}/site/. Don't start another server
-   on that port.
+Before you finish: `node {{KIT}}/tools/web/check-pages.cjs <each page> --phone --header <header height>` and fix what
+looks off; re-run `hero-frames.cjs --motion`; walk the home page at phone size as a customer; open every dropdown, date
+picker and stepper. Report (under 150 words): folder and URL, what each section does, anything unconfirmed.
 
 ## Rules
-- **Brand:** {{names to feature / never feature, banned phrases, required phrasing, dietary rules}}. Don't invent claims,
-  prices or facts: unknowns show as `[client to confirm]`. No reference brand names or copy anywhere.
-- **Stay in your folder:** no edits to content/, variants/_shared/, the hub, tools/ or other variants. No git commits.
-- **Quality bar:** the playbook's section 3, measured at {{1920x870}} and {{1536x700}} below the sticky header. Every
-  page has a title, description and share image for this variant.
-- **Client's world:** the client's object runs through the site, inner pages too ("The body" in `taste.md`), as your
-  `PITCH.md` column says. Well made and clear of the copy.
-- **Motion:** meet the seven points in `motion.md` at your tone's level, following your column's motion plan, built
-  with each section (opening and set-piece first). A section that only fades in is unfinished (in a professional
-  tone, one precise reveal or piece of animated information counts). Working code: only the
-  matching recipes from `{{KIT}}/prompts/techniques/INDEX.md`; values from `{{KIT}}/prompts/office/craft-numbers.md`.
-- **Lean workflow:** no gates, plans, reports, TDD, fixtures or docs files. No unlazy skill, no superpowers planning,
-  TDD, verification or worktree skills.
-- **Before you finish:**
-  - `check-pages.cjs --phone --header <your header height>` at both sizes on the home page and each inner page; fix
-    what looks off.
-  - Re-run `hero-frames.cjs`: the hero still matches the approved one. Do the customer walk ("Will they buy?") at phone
-    size.
-  - Run `contact-sheet.cjs` on your site, two category leaders from "Category look" in `PITCH.md` and your lead
-    reference, side by side. Fix a hero or section that looks weaker than the leaders, a site that wouldn't belong
-    beside them, and anything that could pass for a reference with the logo hidden. A sheet of mostly cards on a flat
-    background is too boxy.
-  - Check printed fonts against "Type" in `taste.md`. Grep the site for reference names and banned words.
-  - Open every dropdown, date picker and quantity stepper and screenshot it open: none may show the browser's default
-    look.
-
-## Report back (under 200 words)
-Hero phase: the hero URL, the `hero-frames` sheet path, what each scroll step shows, any step the material couldn't
-carry. Rest phase: folder and URL; the direction in 3-4 lines; which reference techniques you used and where; the
-opening, set-piece and motion graphics built; palette and fonts; anything unconfirmed.
+- Everything in `taste.md`. No invented facts: `[client to confirm]`. {{Brand rules: names never to feature, phrases,
+  claims not to make}}.
+- Your own headless browser only (`check-pages.cjs`, `hero-frames.cjs` or Node Playwright), never the Playwright or
+  chrome-devtools MCP tools: other agents share them. The preview runs at {{http://127.0.0.1:PORT}}/variants/{{nn-name}}/site/;
+  don't start another server.
+- Stay in your folder: no edits to `content/`, `variants/_shared/`, the hub, tools or other variants. No git.
+- Skills that help: `taste-skill`, `frontend-design`, `impeccable` (if a name isn't listed for you, read
+  `{{KIT}}/.claude/skills/<name>/SKILL.md`). No plans, reports, TDD, gates or worktrees.
+- Bash heredocs with quotes can fail on Windows: write helper scripts to files.

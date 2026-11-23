@@ -1,77 +1,71 @@
 # Reference library
 
-References come only from the Benchmarks below, or Awwwards when it fits the business better (step 3 of
-`research.md`). Open an entry before picking it: these notes don't prove it suits the client. No client names or
-client-site links here. Wrap-up adds to Benchmarks and "Rejected" as `build.md` says.
+Where to look. Open an entry before using it: a note here doesn't prove it suits the client. No client names or
+client-site links in this file.
 
-## Benchmarks
-Craft to borrow; each counts as a reference when it fits the client's business, tone and hero material. A reference lends
-one or two motion or craft techniques, never its layout, composition, colour or imagery; the level a variant is judged
-against comes from the category leaders in `PITCH.md`.
-**Tone:** playful for Lando Norris, Don't Board Me and Partake; luxury for Cartier, Gentle Monster and TAG Heuer; modern
-and professional for the rest. **Made of** is what the hero is built from.
-**Craft only:** the 3D Benchmarks (Lusion, Active Theory, Igloo, Masahiro Maruyama, EnduroSat) lend one technique and
-never lead the hero of a professional, B2B, health, finance or property client. **No back-to-back reuse:** don't use a
-Benchmark that led a variant for either of the last two clients (see the References row of their `docs/PITCH.md`).
-| URL | Made of | What it does |
-|---|---|---|
-| https://lusion.co/ | 3D | 3D objects fill the frame, and a line sweeps through the type on scroll |
-| https://activetheory.net/ | 3D | A dark 3D world where one object carries you between projects |
-| https://igloo.inc/ | 3D | One 3D object in a landscape, breaking apart and reforming on scroll |
-| https://en.masahiromaruyama.com/step | 3D | The camera climbs a spiral through floating people and shapes |
-| https://www.brightbiotech.co.uk/ | 3D renders | Health science: a plant becomes a bottle, in full-screen colour. Awwwards Site of the Day |
-| https://21tsi.com/ | photos and footage | Sport: huge cinematic bodies fill the screen with bold colour and giant type. Its thin rings are only a detail |
-| https://landonorris.com/ | photos, plus one 3D helmet | Personal brand: the cursor reveals a second helmet over the portrait, a signature draws itself, scattered photo collage, archive grid, fanned card deck. Awwwards Site of the Year 2025 |
-| https://www.endurosat.com/space-service/ | 3D | B2B: one wireframe satellite and globe hold a dark stage while chapters change around them, a segmented progress bar, a price slider, a cost comparison |
-| https://dontboardme.com/ | drawn | Playful services: a ball you bounce on the intro, a funny voice in every label, a designed 404. Awwwards Site of the Year 2024. Its toy is a hero, never a gate |
-| https://www.awwwards.com/sites/opal-tadpole | product photos | One product: held and flipped in a hand, "explain it like I'm 5", stats as blueprint drawings. Awwwards Site of the Year 2024 (live site was down on 2026-11-03) |
-| https://www.cartier.com/en-us/roadster-universe.html | film and 3D product | Luxury: an intro film, then a 3D product on a dark, gold, precious stage. Liked by the user |
-| https://www.gentlemonster.com/ | photos and installation film | Retail: exhibition rooms, each product the star. Liked by the user |
-| https://www.tagheuer.com/ | 3D product | Product: the watch turns and comes apart on scroll. Liked by the user |
-| https://partakefoods.com/ | product photos | Playful shop: full shop mechanics, cart drawer, filter pills, sticker labels. Liked by the user |
+## The bar
+- **The design lab:** https://zerilab-design-lab.vercel.app/ : heroes the user loves, explored with no rules, each made
+  of a real business's material. Open it for the level, never for a format: its formats (toy overworld map, HUD loadout,
+  skill tree, foil card pack, infinite zoom, 3D diorama, race HUD, heat-map body scan) are taken.
+- **Approved heroes:** `WebsiteProjects/_approved/` on the build machine, if present: heroes the user approved, with
+  their brief. Open them for the level and reuse their code, never their idea or look.
+- **Category sites:** real small businesses at the level to beat. Open two from the client's category (or the nearest)
+  and judge every hero beside them. Most rest on art-directed photos or film, one signature moment and quiet craft.
+
+| Category | Sites |
+|---|---|
+| Café, bakery, restaurant | https://www.deltacafes.com/en , https://impastofornoantico.com/ , https://delice.ca/ , https://www.thunder-buns.com/ , https://pizza-amici.nl/ , https://latabledejoakim.fr/ |
+| Bar, venue, drinks | https://bar-topas.ch/ , https://www.therechabite.com.au/ , https://santionispirits.com/ , https://stonegroovespirits.com/ |
+| Food products | https://agrumeafarm.it/en , https://fixchocolatier.com/ |
+| Hotel and travel | https://terrenohotel.com/en , https://tengilemalamala.com/ , https://white-desert.com/ |
+| Property, architecture, building | https://belgradearbor.rs/en , https://www.lpas.com/ , https://sobha-privy-collection.com/ , https://lenvalproperties.com/ , https://mejuma-tuscany.com/ |
+| Fragrance, beauty, fashion | https://omrbeauty.com/ , https://nymphaicosmetics.com/ , https://almadalabel.com/ |
+| Events, florist | https://monarque-evenements.com/ , https://ohlesfleurs.com/ |
+
+More: Awwwards Sites of the Day in the client's category (`site:awwwards.com/sites <category>`; open the live site,
+Awwwards blocks browsers).
+
+## Craft references
+Sites worth borrowing a technique from: how they stage, transition, set type or pace the scroll. Never their layout,
+images or colours. Any reference from anywhere also counts: a game, packaging, a film title sequence, a magazine.
+| URL | What it does |
+|---|---|
+| https://lusion.co/ | 3D objects fill the frame, a line sweeps through the type on scroll |
+| https://activetheory.net/ | A dark 3D world where one object carries you between projects |
+| https://igloo.inc/ | One 3D object in a landscape, breaking apart and reforming on scroll |
+| https://www.brightbiotech.co.uk/ | A plant becomes a bottle in 3D renders, full-screen colour |
+| https://21tsi.com/ | Huge cinematic bodies, bold colour, giant type |
+| https://landonorris.com/ | Cursor reveals a second helmet over the portrait, a signature draws itself, photo collage |
+| https://www.endurosat.com/space-service/ | One object holds a dark stage while chapters change, a price slider |
+| https://dontboardme.com/ | A toy on the intro, a funny voice in every label |
+| https://www.cartier.com/en-us/roadster-universe.html | An intro film, then a 3D product on a precious stage (liked by the user) |
+| https://www.gentlemonster.com/ | Exhibition rooms, each product the star (liked by the user) |
+| https://www.tagheuer.com/ | The watch turns and comes apart on scroll (liked by the user) |
+| https://partakefoods.com/ | Full shop mechanics with sticker labels and a cart drawer (liked by the user) |
 
 ## Rejected
 Don't use these or anything like them.
 | URL | Why |
 |---|---|
-| https://www.trevorblountpilates.com/ | Cream and serif, thin decorative lines, text and photos sliding up, empty frames |
-| https://lahuella.club/ | Loud colour and giant type, but only blocks sliding past. Loud isn't creative |
-| https://www.behance.net/gallery/245261445/Studio-Soma-Yoga-Pilates | Basic mockups in calm beige and sage |
-| https://www.behance.net/gallery/256512367/Kinera-Physiotherapy-Clinic-Website | Plain mockups of an ordinary clinic template |
+| https://www.trevorblountpilates.com/ | Cream and serif, thin decorative lines, empty frames |
+| https://lahuella.club/ | Loud colour and giant type, but only blocks sliding past |
 | https://cascaidhealth.com/ | Listed on Awwwards, yet a calm serif layout: a listing proves nothing |
-| https://www.motionclinic.com.ar/ | One hero effect, then dark text and doctor photos. One strong screen isn't a strong site |
-| https://foodnia.co.jp/ | Banned by the user, ideas included: its colour-flood shape growing on scroll and pinned one-line scenes don't hold up |
+| https://www.motionclinic.com.ar/ | One hero effect, then dark text and doctor photos |
+| https://foodnia.co.jp/ | Banned by the user, ideas included: colour-flood shapes and pinned one-line scenes |
 
-## The free variant's level
-https://zerilab-design-lab.vercel.app/ shows the level V4 aims for: heroes explored with no kit limits, each made of a
-real business's photos, products and prices, each ending in WhatsApp. Two the user picked out: a draggable toy map with
-the client's spots pinned on it, for a business whose customers go exploring; and a founder as a tilting foil stat
-card with a pack to tear open, for a business judged by its record. What they share: the format is one the customer
-already uses for what they do here. Open it for the level, never for a format: the eight formats there (toy overworld
-map, HUD loadout, skill tree, foil card pack, infinite zoom, 3D diorama, race HUD, heat-map body scan) are taken.
+## Code and components
+Code for effects and section parts. Not references: they lend code, never the idea. Check each licence.
+- https://tympanus.net/codrops/ : award-level effects with plain-JS source (WebGL image effects, scroll, type,
+  transitions). The first place to look.
+- https://gsap.com/resources/ and https://codepen.io/GreenSock : GSAP demos.
+- https://threejs.org/examples/ : three.js loaders, materials, post-processing.
+- https://reactbits.dev/ (`tools/web/reactbits.cjs`), https://ui.aceternity.com/ , https://21st.dev/ (search by
+  section type in a real browser; copy from the component page): React components to port.
+- Free fonts with character: https://fonts.google.com/ , https://www.fontshare.com/ .
 
-## Component sources
-Ready-made code for the parts of a section: hero details, section joins, services, galleries and work, proof, process,
-FAQ, the business tool and its controls. They aren't references: they lend code for one part, never a variant's idea,
-and don't count toward its references.
-- https://reactbits.dev/ : animated text, backgrounds and small components. List and fetch the source with
-  `tools/web/reactbits.cjs`.
-- https://ui.aceternity.com/ : hero effects, cards and scroll components.
-- https://21st.dev/ : community library of React and Tailwind components (heroes, buttons, cards, text effects,
-  backgrounds, shaders, galleries, testimonials, forms). Search it by section type in a real browser and copy the code
-  from the component page (its download needs a login). Each component has its own author and licence: check it first.
-
-**The component pass** (research, then the builders): for each section of a variant, open these sources for that
-section type and pick the component that best tells this client's content at the variant's tone, or none if hand-made
-does it better. The tone's level in `motion.md` decides how loud a component may be: a professional or luxury variant
-leaves out loops, cursor tricks and anything that moves away from the pointer. No component repeats across variants.
-Port each one to plain JS and CSS (keep its shader, canvas or GSAP code; an `init(el, options)` that returns a
-cleanup; its licence header), and rebuild it with the client's own photos, footage, words and fonts, so it reads as
-theirs and not as a stock demo.
-
-## To try (2026-11-03)
-| URL | Why |
-|---|---|
-| https://www.rimac-automobili.com/ | Full-bleed film chapters (car, motor, lab, team) with a side index: a group story in four chapters |
-| https://www.livewire.com/ | Giant type over riding footage, category tiles with video hover, mini electric bikes |
-| https://www.vanmoof.com/ | Giant model name cut by the bike, night-film "worry less" chapter, app and test-ride tiles |
+## 3D and media
+- **Models:** the client's own files first; https://sketchfab.com/ (CC licences, credit), https://polyhaven.com/ (HDRIs,
+  textures, models, CC0), https://ambientcg.com/ . Image-to-3D from the client's photo with a free tier (Tripo, Meshy),
+  then cleaned in Blender. Shrink with `npx gltf-transform optimize`.
+- **Images and video:** the client's own first. Generated only from free tools, never Higgsfield; never passed off as the
+  client's work. Upscale and cut out with free tools or `tools/web/cutout.py`.

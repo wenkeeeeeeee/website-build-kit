@@ -5,17 +5,17 @@ follows these rules (Claude, Codex, others). They override any skill that says i
 session-start hook if installed.
 
 ## Where things are
-- `prompts/website-playbook.md`: methods, the quality bar, publishing. Its table says which sections each role reads.
-- `prompts/new-project-prompt.md`, `website-build-template.md`, `variant-agent-brief.md`: briefs for the lead and subagents.
+- `prompts/office/taste.md`: **the quality bar, the one file every builder must follow.** Everything else is a toolbox.
+- `prompts/office/`: run orders `research.md`, `build.md`, `deepen.md`; toolboxes `motion.md` (libraries and motion
+  craft), `site-types.md` (pages and tone), `reference-library.md` (the bar, references, code, 3D and media sources),
+  `craft-numbers.md` (starting values and known bugs), `colour.md` (mood pair and accent, optional).
+- `prompts/variant-agent-brief.md`: the builder brief. `prompts/website-playbook.md`: methods and publishing, for
+  lookup. `prompts/new-project-prompt.md`, `website-build-template.md`: manual and Clone-mode builds.
 - `starter/`: working plumbing (basket with WhatsApp/marketplace checkout, filtered catalogue, product page, quote form,
   stores). Copy it into a project, swap the data, redesign everything visible.
-- `tools/web/`: preview server, page checker, export, hero film, scroll and 3D effects, cut-outs (`npm install` in it
-  once).
-- `prompts/office/`: the AI office. Run orders: `research.md`, `build.md`, `deepen.md`. Standards: `taste.md`,
-  `motion.md`, `site-types.md`, `reference-library.md`, `colour.md` (mood pair and accent). A lead gets 15-25 minutes of research and a plan the user
-  reviews, then heroes the user approves as pictures, then full variants published to Vercel.
-- `prompts/techniques/`: one-effect recipes with working code, looked up from its `INDEX.md` only for effects a concept
-  already chose. `prompts/office/craft-numbers.md`: starting values for type, motion and common bugs.
+- `tools/web/`: preview server, page checker, `hero-frames.cjs` (with `--motion`), export, film, scroll and 3D effects,
+  cut-outs (`npm install` in it once).
+- `prompts/techniques/`: one-effect recipes with working code, from its `INDEX.md`, only for effects an idea needs.
 - `.claude/skills/`: the design and debugging skills used on these builds.
 - `WebsiteProjects/<Client>/`: each new build goes here.
 
@@ -24,16 +24,13 @@ One order for every build, whether it runs from the `/website-build-kit:build` s
 1. The user's own words (`LEAD.md`, messages in the thread).
 2. `PITCH.md`: the client's facts and each variant's plan.
 3. `prompts/office/taste.md`.
-4. `prompts/office/motion.md`.
-5. Everything else: `site-types.md`, `reference-library.md`, the playbook, `craft-numbers.md`, technique recipes, the
-   build skill's steps, and any design skill.
+4. Everything else: the run orders, toolboxes, playbook, recipes, the build skill's steps and any design skill.
 
 ## Writing kit rules
-- Say what the business needs and what must work. Layout, type, colour and design are the builders' choice, made from
-  the tone, the client's business and products, and the references. The free variant (V4) is free in all of it, with three checks ("The free variant" in
-  `prompts/office/taste.md`).
+- Keep the kit short. Say what the site must achieve; idea, layout, type, colour, medium and motion are the builders'
+  own exploration.
 - Give no single design example: builders copy it into every variant.
-- A new lesson fixes the rule it belongs to. Never add a rule beside it.
+- A new lesson fixes the rule it belongs to and deletes any rule it contradicts. Never add a rule beside it.
 
 ## Don't use these skills for website builds
 - `unlazy`: no `GATES.md`, no gate-check runs, no hashed evidence.

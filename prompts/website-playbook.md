@@ -36,9 +36,8 @@ WebsiteProjects/<Project>/
 4. **Lead review:** one desktop screenshot per variant, `check-pages.cjs --phone`, a grep for reference names and banned
    words, then publish.
 
-**One concept per variant, from the client's own world,** with its own story spine and page furniture: identical briefs
-on one starter come back as three reskins. The buyer's path order can repeat; its telling can't (step 2 of
-`office/research.md`).
+**One idea per variant, from the client's own world,** with its own story spine and page furniture: identical briefs
+on one starter come back as three reskins. The buyer's path order can repeat; its telling can't.
 
 **Shape the plumbing to the business.** Rename the basket rather than add something (shoot list, try-on list,
 confidential request); it still ends in one filled-in WhatsApp message. Add one tool (lens picker, frame finder, branch
@@ -51,8 +50,6 @@ map, booking form) only if it answers a question customers really ask.
 - **In split sections the text sets the height;** a photo with `height: 100%` stretches the row. Fix:
   `.media { position: relative; min-height: 300px } .media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover }`
 - **No white gaps.** Full-bleed coloured sections on a white page get square bottom corners.
-- **Heroes, page heroes included, follow "The hero" in `office/taste.md`:** the subject leads, never text one side and a
-  picture the other.
 - **Nothing plain below the hero.** Real components on photos: code tags, hover actions that do something (WhatsApp with
   a pre-written message, "Add to my quote" filling the form).
 - **Scroll cues and decoration stay away from buttons.** Hide scroll cues on short and phone screens.
@@ -106,10 +103,7 @@ Smoothness is choreography; screenshots and frame counters won't show it.
   into the next section. Stacked sections fading up read as basic.
 - **Scroll-linked motion** eases toward its target each frame, so nothing snaps. Triggered reveals stagger over 0.6-1s on
   a long ease-out such as `cubic-bezier(.16,1,.3,1)`, never linear or bouncy.
-- Motion language, hover and press states, which properties to animate, page changes: `office/motion.md`, which every
-  variant must meet. GSAP, Lenis, three.js and ogl come with the kit's tools; section components come from the
-  component pass ("Component sources" in `office/reference-library.md`), with `tools/web/reactbits.cjs` fetching
-  React Bits.
+- Libraries, code sources and motion craft: `office/motion.md`.
 
 ## 4. Hero effects
 Ways to make the hero's one main visual, not extra layers. Skip to what you use.
@@ -124,11 +118,13 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you use.
 - **Long brand opening** (`prologue.js`): only when the user asks, on a luxury Branding site, never in front of a shop.
   Dark ground, light beam, embers, the logo swept in gold, then the story in acts over about 9-10 screens, with act
   labels and "Skip the story". Never loop or ping-pong a short clip (clients see the rewind): scrub it over scroll.
-- **Storytelling brands** ("Branding" in `office/taste.md`): a still per scene beats short clips for long stories.
+- **Storytelling brands** ("Branding" in `office/site-types.md`): a still per scene beats short clips for long stories.
 
 **Film**
-- **Source:** footage from the client or user, or AI video from a free tool. Never Higgsfield or a paid tool; no hero
-  depends on AI video. `film.py stitch` joins clips.
+- **Source:** footage from the client or user, or AI video from a free tool, never Higgsfield. `film.py stitch` joins
+  clips. For a camera move through several shots (a fly-in to a room), start each clip on the last frame of the one
+  before and play them in order: no crossfades.
+- **Play once and hold:** a short hero film can play once and hold its last frame instead of looping, so no seam shows.
 - **Placing:** right-aligned, full section height, left edge feathered
   (`mask-image: linear-gradient(90deg, transparent, #000 14%)`). Sample the section background from the film's edge
   colours. Steps beside the film follow `currentTime`; clicking a step seeks.
@@ -142,11 +138,10 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you use.
   the same folder.
 
 **3D and canvas**
-- **3D supports real photos, never replaces them.** When a client says "still basic", answer with better real photos
-  or footage and a stronger set-piece, not a 3D stand-in. Where 3D fits (a playful site, or a product modelled
-  faithfully): `stair.js`, a spiral of floating steps with clean product cut-outs, the camera climbing between stops; or
-  the product in three.js (eyewear, bottles, watches, furniture) in real millimetres with `RoomEnvironment` reflections.
-  Scroll takes it apart, labels name the parts, and it ends on a real photo.
+- **3D at photo quality** ("The material" in `office/taste.md`): a real or image-to-3D model, not code primitives, in
+  real millimetres, lit by an HDRI (`RGBELoader`) or `RoomEnvironment`, with a soft contact shadow, tone mapping and
+  sRGB output. Render it beside the product photo: if it looks worse, use the photo. Scroll can turn it, take it apart
+  with labelled parts, or carry the camera into a place. `stair.js` is a ready spiral of product cut-outs.
 - **Any WebGL:** load `gl-guard.js` first, a still behind the canvas for missing WebGL and reduced motion, pause off
   screen. One canvas per page where you can.
 - **Ink fluid** (github.com/PavelDoGreat/WebGL-Fluid-Simulation, MIT: keep its credit): a cursor-driven background behind
@@ -165,7 +160,7 @@ Ways to make the hero's one main visual, not extra layers. Skip to what you use.
   illustration".
 - Real photos for products, rooms, staff and equipment; generated images (`content/generated/`) only for backgrounds and
   mood, never the product, people or place.
-- **Treat weak client photos first** (as "It's made of what the client really has" in `office/taste.md` says): one grade
+- **Treat weak client photos first** ("The material" in `office/taste.md`): one grade
   across the site and a tone-fitting treatment in every section, not just the hero; never scaled past sharp, cut out
   only where the edge is clean.
 - Crop or skip third-party watermarks. Packs showing a supplier's brand are never the hero subject.

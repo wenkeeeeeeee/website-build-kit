@@ -1,11 +1,16 @@
 // Show what a scroll hero does, frame by frame, so a person can judge it from pictures, not from a description.
 //
-//   node hero-frames.cjs <url> [<url> ...] [--out shots] [--screens 3] [--size 1536x700]
+//   node hero-frames.cjs <url> [<url> ...] [--out shots] [--screens 3] [--size 1536x700] [--motion] [--video]
 //
 // For each page: frames at 0, 33, 66 and 100% of the first --screens screens of scrolling, one frame on the way back up
 // at 33% (a scrubbed hero must look the same in both directions), and a phone frame at the top. Writes
 // <out>/hero-<slug>.jpg per page and <out>/hero-all.jpg with one labelled row per page, so a variant's hero and its
 // references sit side by side at the same scroll points. Own headless browsers, so parallel agents never share one.
+//
+// --motion also writes <out>/motion-<slug>.jpg: the opening at 0.3, 0.8, 1.5 and 3 seconds, eight frames taken while
+// the hero is still scrolling (never settled), and a hover on the first button at 0.12 and 0.4 seconds. Stills hide
+// cheap motion; this sheet shows the in-between states a visitor actually sees.
+// --video also records <out>/video-<slug>.webm of the load, the scroll and the hover, for a person to watch.
 const path = require('path');
 const fs = require('fs');
 
@@ -22,6 +27,9 @@ const opt = (name, def) => { const i = args.indexOf(name); return i >= 0 ? args.
 const out = opt('--out', 'shots');
 const screens = Number(opt('--screens', '3'));
 const [width, height] = opt('--size', '1536x700').split('x').map(Number);
+const flag = (name) => { const i = args.indexOf(name); if (i >= 0) args.splice(i, 1); return i >= 0; };
+const motion = flag('--motion');
+const video = flag('--video');
 const urls = args;
 if (!urls.length) { console.error('Usage: node hero-frames.cjs <url> [<url> ...] [--out shots] [--screens 3]'); process.exit(1); }
 fs.mkdirSync(out, { recursive: true });
@@ -91,13 +99,62 @@ async function capture(browser, url) {
   return frames;
 }
 
+async function captureMotion(browser, url) {
+  const frames = [];
+  const context = await browser.newContext({ viewport: { width, height }, userAgent: USER_AGENT,
+    ...(video ? { recordVideo: { dir: out, size: { width: Math.round(width / 2), height: Math.round(height / 2) } } } : {}) });
+  const page = await context.newPage();
+  const start = Date.now();
+  await page.goto(url, { waitUntil: 'commit', timeout: 60000 }).catch((e) => { if (/net::ERR/.test(e.message)) throw e; });
+  for (const t of [300, 800, 1500, 3000]) {
+    await page.waitForTimeout(Math.max(0, t - (Date.now() - start)));
+    frames.push({ label: `opening ${t / 1000}s`, shot: await page.screenshot({ type: 'jpeg', quality: 58 }) });
+  }
+  await page.waitForTimeout(3000);
+  await clearGates(page);
+  await page.mouse.move(width / 2, height / 2);
+  const step = (screens * height) / 48;
+  for (let i = 1; i <= 48; i++) {
+    await page.mouse.wheel(0, step);
+    await page.waitForTimeout(40);
+    if (i % 6 === 0) frames.push({ label: `mid-scroll ${Math.round((i / 48) * 100)}%`, shot: await page.screenshot({ type: 'jpeg', quality: 58 }) });
+  }
+  await page.waitForTimeout(900);
+  await wheelTo(page, 0);
+  const target = await page.evaluate(() => {
+    for (const el of document.querySelectorAll('a.btn, .button, button, [class*="cta"], a[href*="wa.me"], header a')) {
+      const b = el.getBoundingClientRect();
+      if (b.width > 30 && b.height > 18 && b.top > 0 && b.bottom < innerHeight) return { x: b.x + b.width / 2, y: b.y + b.height / 2 };
+    }
+    return null;
+  });
+  if (target) {
+    await page.mouse.move(target.x, target.y, { steps: 4 });
+    await page.waitForTimeout(120);
+    frames.push({ label: 'hover 0.12s', shot: await page.screenshot({ type: 'jpeg', quality: 58 }) });
+    await page.waitForTimeout(280);
+    frames.push({ label: 'hover 0.4s', shot: await page.screenshot({ type: 'jpeg', quality: 58 }) });
+  }
+  const rec = page.video();
+  await context.close();
+  if (rec) {
+    const file = path.join(out, `video-${slug(url)}.webm`);
+    await rec.saveAs(file).catch(() => {});
+    await rec.delete().catch(() => {});
+    console.log(`  video: ${file}`);
+  }
+  return frames;
+}
+
+const motionHtml = (url, frames) => `<h2>${url}: motion</h2><div class="m">${frames.map((f) => `<figure><img src="data:image/jpeg;base64,${f.shot.toString('base64')}"><figcaption>${f.label}</figcaption></figure>`).join('')}</div>`;
+
 const cell = (f) => `<figure${f.phone ? ' class="p"' : ''}><img src="data:image/jpeg;base64,${f.shot.toString('base64')}"><figcaption>${f.label}</figcaption></figure>`;
 const row = (url, frames) => `<h2>${url}</h2><div class="r">${frames.map(cell).join('')}</div>`;
 
 async function sheet(browser, html, file) {
   const page = await browser.newPage({ viewport: { width: 2600, height: 800 } });
   await page.setContent(`<style>body{margin:0;padding:10px;background:#1b1b1b;color:#ddd;font:15px system-ui}h2{font-size:15px;margin:14px 0 6px}
-    .r{display:grid;grid-template-columns:repeat(5,1fr) .42fr;gap:6px;align-items:start}figure{margin:0}img{width:100%;display:block}
+    .r{display:grid;grid-template-columns:repeat(5,1fr) .42fr;gap:6px;align-items:start}.m{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}figure{margin:0}img{width:100%;display:block}
     figcaption{padding:3px 0;font-size:13px;color:#aaa}</style>${html}`);
   await page.waitForTimeout(300);
   await page.screenshot({ path: file, type: 'jpeg', quality: 78, fullPage: true });
@@ -122,6 +179,11 @@ async function sheet(browser, html, file) {
     await sheet(browser, row(url, r), file);
     rows.push(row(url, r));
     console.log(`${url}\n  ${file}`);
+    if (motion) {
+      const m = await limit(captureMotion(browser, url).catch((e) => ({ error: e.message.split('\n')[0] })), 120000, { error: 'gave up after 120 seconds' });
+      if (m.error) console.log(`  motion FAILED: ${m.error}`);
+      else { const mf = path.join(out, `motion-${slug(url)}.jpg`); await sheet(browser, motionHtml(url, m), mf); console.log(`  motion: ${mf}`); }
+    }
     const still = Math.abs(r[0].shot.length - r[3].shot.length) < r[0].shot.length * 0.01;
     if (still) console.log('  NOTE: the first and last frames look the same. Either the hero is static, or a gate or intro (click, bounce, hold) is in front: get past it by hand and judge the hero, not the gate.');
   }

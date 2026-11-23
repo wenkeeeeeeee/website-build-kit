@@ -122,5 +122,5 @@ reads as AI-made.)
 - layout-and-ui.md #3 (part b) frosted white pill nav: glass.
 - layout-and-ui.md #6 (part) glass chip with italic-serif names: glass, italic tell.
 - layout-and-ui.md #8 Fake product UI mockup: invents product screens.
-- 3d-and-webgl.md #1 copy-left, stage-right layout: banned split hero. The rig is ported, subject centred.
+- 3d-and-webgl.md #1 copy-left, stage-right layout: the rig is ported without it.
 - 3d-and-webgl.md #2 fbm shader backdrop: heavy, poor fit.

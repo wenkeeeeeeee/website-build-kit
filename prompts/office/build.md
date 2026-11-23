@@ -1,98 +1,49 @@
 # Build thread: run order
 
-This thread takes one lead from `PITCH.md` to a live site: full variants, every page working, published to Vercel.
-Target: **about 1.5 hours of work here**, plus one stop for the user to approve the heroes as pictures. Your first message
-gives `CLIENT`, `PROJECT`, `KIT`, `PORT` and `FRONT_DESK`. Don't redo the research or ask the user anything. Stop only
-at the hero review in step 4, or if blocked. Short updates only.
+This thread takes `PITCH.md` to live sites: 3 + 1 variants, every page working, published to Vercel, with one stop for
+the user to approve the heroes as pictures. Your first message gives `CLIENT`, `PROJECT`, `KIT`, `PORT` and
+`FRONT_DESK`. Don't redo the research or ask anything. Short updates only.
 
-1. **Update the kit:** `git -C KIT pull --ff-only` (if it fails, carry on with your copy). Read `KIT/AGENTS.md` (its
-   "Which rule wins" settles any conflict) and sections 1, 6 and 7 of `KIT/prompts/website-playbook.md`. `PITCH.md` supplies the decisions. Mode is Inspiration; if
-   `LEAD.md` asks for Clone mode, also read `KIT/prompts/website-build-template.md`.
-2. **Preview:** start `python KIT/tools/web/serve.py PROJECT PORT` as a background command with the maximum timeout.
-3. **Shared plumbing (8 minutes),** yourself, before any Builder starts.
-   - Turn `PITCH.md` into the content kit: `content/*.json` in the shapes `KIT/starter/data/` uses, and `content/copy.md`
-     with the client's real wording. Research already saved the images and `OPEN-QUESTIONS.md`.
-   - Copy `KIT/starter` to `PROJECT/variants/_shared/starter`, swap in the data, keep the pages `PITCH.md` lists, and
-     rename the basket for the business. The starter is a shop: for other site types change the pages and wording.
-     Everything in `data/` is public, so no internal notes.
-   - Run `npm --prefix KIT/tools/web install`. Copy `node_modules/gsap/dist`, `lenis/dist`, `three/build` and `ogl/src`
-     from `KIT/tools/web` into `PROJECT/variants/_shared/vendor/` as `gsap`, `lenis`, `three` and `ogl`. Each variant
-     ports the components in its "Components" row of `PITCH.md` itself (React Bits via `KIT/tools/web/reactbits.cjs`).
-   - Open it once with `check-pages.cjs`. Every page must work: all variants copy it.
-4. **Heroes first (40 minutes; 60 for the free variant), then the user's review.** Heroes are judged from pictures, never the plan.
-   - **Before briefing,** open each variant's lead reference sheet. Replace the reference if a banner covers it, most
-     frames are static, the look is on the fail list, or its hero isn't made of the same kind of material as this
-     variant's (step 3 of `research.md`). Rewrite a direction in `PITCH.md` if the hero isn't what the customer came for,
-     the palette comes from a metaphor, the look or idea doesn't suit the tone or the character words (V1–V3 only: the free variant may leave the tone), a 3D
-     Benchmark leads a professional hero, or the plan needs a move the hero material can't carry.
-   - **Hero round.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero` and send all the
-     subagents in one message, each with `run_in_background: false`. Each builds only its header and hero, with the real
-     material, and returns its `hero-frames` sheet.
-   - **Your check.** Go through each sheet against "The check" in `taste.md`, beside the category leaders. A hero weaker
-     than the category leaders fails, and so does one with a frame that shares its reference's composition or could
-     pass for it with the logo hidden. The free variant is checked as "The free variant" in `taste.md` says (made of the client's own thing
-     in a format the customer knows, remembered as a picture with the words hidden, never a dashboard, admin panel or
-     SaaS layout), and for working. Send back
-     any failing hero, once, before the user sees it.
-   - **Review.** Post per variant: its `hero-frames` sheet as an image (Markdown image, absolute path), the local hero
-     URL, the recipe in one line, its palette as named swatches with hex (mood pair and accent where used), and its
-     references with the technique taken from each. If `FRONT_DESK` isn't `none`, also send it
-     `HERO REVIEW: CLIENT` with the sheet paths and URLs, using `mcp__t3-code__t3_thread_send`. Then stop and wait. The
-     user replies "go" or sends changes: make changes in a new hero round, show the new sheets, wait again.
-   - **Rest of the site (30 minutes).** After "go", send each brief again with `Phase: rest`, all in one message. The
-     approved hero stays as it is.
-5. **Hub:** write `PROJECT/index.html` in the format in section 1 of the playbook, with short plain names.
-6. **Quick check (3 minutes).** Send back any variant that fails.
-   - Run `check-pages.cjs` once on each home page, click through to one inner page, grep for reference names.
-   - **Hero:** run `hero-frames.cjs` again: it still matches the approved sheet and hands over cleanly into the next
-     section.
-   - **Copying:** run `contact-sheet.cjs` on each variant and its lead reference. A variant that could pass for it with
-     the logo hidden, or uses its images, logo, copy or colours, fails.
-   - **Level and category:** put each home page beside two category leaders from "Category look" in `PITCH.md`. A hero
-     or body clearly weaker than them fails. What would a stranger say this company sells? Would the brand's own
-     marketing team publish it? If the user liked another variant, this one must look at least as premium.
-   - **Customer walk:** at phone size, walk each home page as "Will they buy?" in `taste.md` says, checking the buying
-     basics and tone. It fails if a customer wouldn't know what it is, trust it, or know how to buy.
-   - **Too boxy:** a contact sheet that is mostly rows of cards on a flat background fails ("Rejected on sight" in
-     `taste.md`).
-   - **Fonts:** compare printed fonts against "Type" in `taste.md`; replace any banned one (V1–V3).
-   - **Coverage:** compare the variants against `content/` and `PITCH.md` and add anything one left out, so all cover
-     the same products, prices, pages, proof and ways to order.
-   - Beyond that, fix only what's broken: errors, dead links, missing images.
-7. **Publish (3 minutes)** per section 7 of the playbook. `SLUG` is the client's name in lowercase with hyphens; `REPO`
-   is `WebsiteProjects/SLUG-website`.
-   - If `gh repo view <owner>/SLUG-website` finds a repo, clone or reuse it; it keeps its Vercel project. Otherwise make
-     a private repo and Vercel project as the playbook says, once the first commit exists.
-   - Run `node KIT/tools/web/og-images.cjs PROJECT http://127.0.0.1:PORT https://SLUG-website.vercel.app`, then
-     `python KIT/tools/web/export-site.py PROJECT REPO`.
-   - Commit and push, then curl: the hub and every variant return 200 and `docs/PITCH.md` returns 404. Reachable notes
-     get fixed before anything else.
-8. **Report.** Load `mcp__t3-code__t3_thread_send` with ToolSearch and send `FRONT_DESK` this, with minutes counted from
-   when `PROJECT/docs/LEAD.md` was written:
-
-   `LIVE: CLIENT in <minutes> min. Hub: https://SLUG-website.vercel.app/ V1 · Name: <url>, V2 · Name: <url> ... Local: http://127.0.0.1:PORT/ To confirm: <short list>.`
-
-   If that fails, post the same text here.
+1. **Get ready.** `git -C KIT pull --ff-only` (if it fails, carry on). Read `KIT/AGENTS.md` and
+   `KIT/prompts/office/taste.md`. Start `python KIT/tools/web/serve.py PROJECT PORT` in the background with the maximum
+   timeout.
+2. **Plumbing (10 minutes).**
+   - `content/*.json` in the shapes `KIT/starter/data/` uses, and `content/copy.md` with the client's real wording.
+   - Copy `KIT/starter` to `PROJECT/variants/_shared/starter`, swap in the data, keep the pages `PITCH.md` lists, rename
+     the basket for the business. Everything in `data/` is public: no internal notes.
+   - `npm --prefix KIT/tools/web install`, then copy `node_modules/gsap/dist`, `lenis/dist`, `three/build` (and
+     `three/examples/jsm` if any variant uses 3D) and `ogl/src` into `PROJECT/variants/_shared/vendor/`.
+   - Check the material research prepared; finish anything missing ("The material" in `taste.md`).
+3. **Heroes.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero` and send all four in
+   one message, each with `run_in_background: false`. Each returns its `hero` and `motion` sheets.
+   - **Your check:** each sheet beside its category site, as "The bar" in `taste.md` says. Send a weak one back once,
+     with what's wrong, before the user sees it.
+   - **Review:** post per variant its sheets as images (Markdown image, absolute path), the local URL, the idea in one
+     line, its palette as named swatches with hex, and the references with what each gave. If `FRONT_DESK` isn't
+     `none`, also send it `HERO REVIEW: CLIENT` with the sheet paths and URLs via `mcp__t3-code__t3_thread_send`. Stop
+     and wait. Changes come back as a new hero round; "go" moves on.
+4. **Rest of the site.** Send each brief again with `Phase: rest`, all in one message.
+5. **Hub:** `PROJECT/index.html` in the format in section 1 of `KIT/prompts/website-playbook.md`.
+6. **Quick check (5 minutes).** `check-pages.cjs --phone` on each home page and one inner page; each variant beside two
+   category sites; grep for reference names; check fonts against "Type" in `taste.md`; all variants carry the same
+   products, prices, pages and ways to order. Fix what's broken; send back a variant that fails `taste.md`.
+7. **Publish** per section 7 of the playbook. `SLUG` is the client's name in lowercase with hyphens; `REPO` is
+   `WebsiteProjects/SLUG-website`. Reuse the repo if `gh repo view <owner>/SLUG-website` finds one, otherwise make a
+   private repo and Vercel project. Run `node KIT/tools/web/og-images.cjs PROJECT http://127.0.0.1:PORT
+   https://SLUG-website.vercel.app` and `python KIT/tools/web/export-site.py PROJECT REPO`, commit, push, and curl: the
+   hub and every variant return 200, `docs/PITCH.md` returns 404.
+8. **Report.** Load `mcp__t3-code__t3_thread_send` with ToolSearch and send `FRONT_DESK`:
+   `LIVE: CLIENT in <minutes> min. Hub: https://SLUG-website.vercel.app/ V1 · Name: <url> ... Local: http://127.0.0.1:PORT/ To confirm: <short list>.`
+   If that fails, post it here.
 
 ## After that
-- Tweaks come here from the user or via Front Desk. Make them, check that page, export and push again, reply with the
-  live link.
-- Previews stop loading: restart the server (background commands end after 2 hours).
-- If the client rejects a whole round, don't rebuild yet: ask the user questions first.
-- **Redoing one variant:** keep the level, tone and image treatment of any variant the user liked; change the idea,
-  layout and hero. Never pick a direction just because no other variant used it. Open the category leaders again and run
-  the Category check before publishing.
-- **An extra variant, even from the user's own idea, gets references.** Settle its idea first, in the client's tone,
-  then pick references from Benchmarks or Awwwards and open them (step 3 of `research.md`), naming the technique to take
-  from each. Never brief a Builder with no outside reference. The free variant takes one lead of its own choosing, from anywhere, and is
-  judged as "The free variant" in `taste.md` says.
-- **A redone hero gets the same review:** build it, post its `hero-frames` sheet beside its reference, wait for "go"
-  before publishing.
-- **When the user rejects something or repeats a correction,** note the lesson in `PROJECT/docs/LESSONS.md`, in general
-  terms, no client names.
-- **"Deepen V2", or the client picked one:** follow `KIT/prompts/office/deepen.md`.
-- **"Wrap up":** read `LESSONS.md` and the user's tweaks in this thread, and write the lessons into
-  `KIT/prompts/website-playbook.md`, or `taste.md` if about taste, in general terms with no client names. Sharpen the
-  existing rule each belongs to rather than adding one beside it, and delete any rule it contradicts. Add an Awwwards
-  reference to Benchmarks in `reference-library.md` only if the user liked the variant built from it, and anything
-  rejected to "Rejected". List what you added in your reply.
+- **Tweaks** from the user or Front Desk: make them, check that page, export, push, reply with the live link. Previews
+  stop after 2 hours: restart the server.
+- **A whole round rejected:** ask the user what missed before rebuilding.
+- **Redoing a variant:** keep the level of any variant the user liked; new idea, layout and hero; same hero review.
+- **The user rejects something or repeats a correction:** note the lesson in `PROJECT/docs/LESSONS.md`, in general
+  terms.
+- **An approved hero:** copy its folder and brief to `WebsiteProjects/_approved/<slug>-<variant>/` (local only).
+- **"Deepen", or the client picked one:** `KIT/prompts/office/deepen.md`.
+- **"Wrap up":** fold the lessons into `taste.md` (taste) or the playbook (method), in general terms with no client
+  names. Sharpen the rule each belongs to, delete any rule it contradicts, and keep the files short.
