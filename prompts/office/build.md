@@ -23,14 +23,15 @@ at the hero review in step 4, or if blocked. Short updates only.
    - **Before briefing,** open each variant's lead reference sheet. Replace the reference if a banner covers it, most
      frames are static, the look is on the fail list, or its hero isn't made of the same kind of material as this
      variant's (step 3 of `research.md`). Rewrite a direction in `PITCH.md` if the hero isn't what the customer came for,
-     the palette comes from a metaphor, the look or idea doesn't suit the tone or the character words (V1–V3 only: the free variant has no limits), a 3D
+     the palette comes from a metaphor, the look or idea doesn't suit the tone or the character words (V1–V3 only: the free variant may leave the tone), a 3D
      Benchmark leads a professional hero, or the plan needs a move the hero material can't carry.
    - **Hero round.** Fill in `KIT/prompts/variant-agent-brief.md` once per variant with `Phase: hero` and send all the
      subagents in one message, each with `run_in_background: false`. Each builds only its header and hero, with the real
      material, and returns its `hero-frames` sheet.
    - **Your check.** Go through each sheet against "The check" in `taste.md`, beside the category leaders. A hero weaker
      than the category leaders fails, and so does one with a frame that shares its reference's composition or could
-     pass for it with the logo hidden. The free variant is checked only for being this client's and working. Send back
+     pass for it with the logo hidden. The free variant is checked as "The free variant" in `taste.md` says (made of the client's own thing,
+     remembered as a picture with the words hidden, never like an app screen), and for working. Send back
      any failing hero, once, before the user sees it.
    - **Review.** Post per variant: its `hero-frames` sheet as an image (Markdown image, absolute path), the local hero
      URL, the recipe in one line, its palette as named swatches with hex (mood pair and accent where used), and its
@@ -82,8 +83,8 @@ at the hero review in step 4, or if blocked. Short updates only.
   the Category check before publishing.
 - **An extra variant, even from the user's own idea, gets references.** Settle its idea first, in the client's tone,
   then pick references from Benchmarks or Awwwards and open them (step 3 of `research.md`), naming the technique to take
-  from each. Never brief a Builder with no outside reference, except the free variant (step 2 of `research.md`), judged
-  only on whether someone would remember it tomorrow.
+  from each. Never brief a Builder with no outside reference. The free variant takes one lead of its own choosing and is
+  judged as "The free variant" in `taste.md` says.
 - **A redone hero gets the same review:** build it, post its `hero-frames` sheet beside its reference, wait for "go"
   before publishing.
 - **When the user rejects something or repeats a correction,** note the lesson in `PROJECT/docs/LESSONS.md`, in general

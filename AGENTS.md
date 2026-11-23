@@ -30,7 +30,8 @@ One order for every build, whether it runs from the `/website-build-kit:build` s
 
 ## Writing kit rules
 - Say what the business needs and what must work. Layout, type, colour and design are the builders' choice, made from
-  the tone, the client's business and products, and the references. The free variant (V4) has no limits.
+  the tone, the client's business and products, and the references. The free variant (V4) is free in all of it, with three checks ("The free variant" in
+  `prompts/office/taste.md`).
 - Give no single design example: builders copy it into every variant.
 - A new lesson fixes the rule it belongs to. Never add a rule beside it.
 

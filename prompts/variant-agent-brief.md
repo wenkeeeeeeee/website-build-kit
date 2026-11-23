@@ -8,9 +8,10 @@ You are building one website variant for {{CLIENT}} around its own idea, using t
 it look and move well. Other agents build other
 variants alongside you: stay inside your own folder.
 
-**Phase: {{hero | rest}}.** The free variant has no limits ("The free variant" in `taste.md`): the design rules and
-references below don't bind it; it keeps the client's facts and a working site, and is judged on whether someone would
-remember it tomorrow.
+**Phase: {{hero | rest}}.** The free variant is free in idea, tone, layout, type, colour and medium ("The free variant" in
+`taste.md`): the other design rules don't bind it, but its hero is made of the client's own thing, it adapts its one
+lead reference, and it's judged on the picture with the words hidden (never like an app screen). It keeps the client's
+facts and a working site.
 - **hero (40 minutes):** build only the header and hero, at full craft with the real material, then run
   `node {{KIT}}/tools/web/hero-frames.cjs <your hero url> <a category leader url from "Category look" in PITCH.md> --out ref`
   and go through the sheet as "The check" in `taste.md` says. Fix and re-run until each frame belongs beside the

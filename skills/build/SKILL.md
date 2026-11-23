@@ -54,7 +54,7 @@ Build websites for this client in this thread.
      repeats and no Benchmark leads for a third client in a row.
    - Pick the 3 strongest ideas that fit the tone, plus 1 for the free variant: ideas a customer would find useful and
      remember.
-   - Then find at least 2 references for each of variants 1-3 (step 3 of `KIT/prompts/office/research.md`): my
+   - Then find at least 2 references for each of variants 1-3, and one lead of its own choosing for variant 4 (step 3 of `KIT/prompts/office/research.md`): my
      references first, then the Benchmarks in `KIT/prompts/office/reference-library.md` (keeping its "Craft only", "No
      back-to-back reuse" and "Rejected" rules) and Awwwards. Open each with
      `node tools/contact-sheet.cjs <urls> --out refs` and write down what makes it impressive (how it stages the
@@ -65,9 +65,10 @@ Build websites for this client in this thread.
    - Variants 1-3 are your three ideas, in the tone you chose. References and Benchmarks make them look and move well.
      Each variant needs its own idea that only fits this client; if you hid the logo and it could pass for its
      reference, change it.
-   - Variant 4 is free, with no limits ("The free variant" in `taste.md`): any idea, tone, layout, type, colour or
-     medium, something we haven't built before, references optional. It still uses the client's real content, prices
-     and ways to order.
+   - Variant 4 is free ("The free variant" in `taste.md`): any idea, tone, layout, type, colour or medium, something
+     we haven't built before. Its hero is made of the client's own thing (product, person, place, tools or material),
+     never an abstract concept drawn as an interface, and it adapts its one lead reference. It still uses the client's
+     real content, prices and ways to order.
    - For each variant, plan what the hero shows and how it moves (using the client's real photos and products, as "The
      hero" in `taste.md` says), the order of the sections, fonts (avoiding the banned list in "Type" in `taste.md`),
      and colours explored from their brand and world, light or dark, to suit the
@@ -120,7 +121,8 @@ Build websites for this client in this thread.
    - Put each variant next to two category leaders and its reference
      (`node tools/contact-sheet.cjs <variant url> <leader urls> <reference url> --out compare`). If it looks weaker than
      the leaders, improve it; if it could pass for a reference with the logo hidden, or uses its images, logo, copy or
-     colours, change it. The free variant is judged only on whether someone would remember it tomorrow.
+     colours, change it. The free variant is judged on the picture: hide the words; would someone remember it
+     tomorrow? If it could be an app screen, start again.
 
 8. Publish.
    - Make a main page that links to all variants.

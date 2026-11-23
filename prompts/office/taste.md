@@ -7,9 +7,17 @@ Layout, type, colour and design are the builder's own choice, made from the tone
 and the variant's references. This file says what the site must do, not how it must look.
 
 ## The free variant (V4)
-No limits: any tone, layout, type, colour, medium or idea, references optional, the colour method (`colour.md`)
-welcome. Nothing else in this file binds it. It still uses the client's real business, products, prices and ways to
-order, invents no claims, and works.
+Free in idea, tone, layout, type, colour and medium, the colour method (`colour.md`) welcome. Nothing else in this file
+binds it except these three, which stop "free" from sliding into the default look of a software product:
+- **Made of the client's own thing.** The idea can be anything, but the hero is built from something you can see in
+  this client's world: their product, person, place, tools or material. Never from an abstract concept drawn as an
+  interface (a schedule, a process, a dashboard).
+- **One lead reference of its own choosing,** from the Benchmarks or Awwwards (step 3 of `research.md`). Adapt how it
+  stages and moves things; with the logo hidden, the variant mustn't pass for it.
+- **Judged on the picture.** Hide the words on its `hero-frames` sheet: would someone remember the picture tomorrow? If
+  it could be a screenshot of an app or software product, start again.
+
+It still uses the client's real business, products, prices and ways to order, invents no claims, and works.
 
 ## The hero
 Attractive, creative, modern and alive with motion graphics, in the tone and direction in `PITCH.md`. The user judges

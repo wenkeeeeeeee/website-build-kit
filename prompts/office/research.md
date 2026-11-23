@@ -45,9 +45,9 @@ Everything depends on this, so it comes first and gets the most time.
   material ("the bouquet rises and the visitor's name prints across the balloon"). The builder designs the look itself
   from the tone, character, business, products and references. Variants differ in idea and layout, never by picking a
   weaker look just to be different.
-- **The free variant (always last):** no limits ("The free variant" in `taste.md`): any idea, tone, layout, type,
-  colour or medium, something we haven't built before. References are optional. It's still this client's site, with
-  the same content, prices and action.
+- **The free variant (always last):** free in idea, tone, layout, type, colour and medium ("The free variant" in
+  `taste.md`), something we haven't built before. Its direction names the client's own thing the hero is made of. It's
+  still this client's site, with the same content, prices and action.
 
 ## 3. References (4 minutes): for each idea, from Benchmarks and Awwwards only
 References come after the ideas. They support each idea: builders adapt how they stage, compose and move things to
@@ -66,7 +66,7 @@ sources, plus any reference the user pasted in `LEAD.md`, which always gets its 
 4. **The bar:** creative, attractive and premium in the way that suits this business, across most of the page, in the
    right tone, with a hero made of the same kind of material. Name two frames that prove it, or drop it. Plain layouts,
    beige with a serif, and loud colour with no idea behind it fail, even on Awwwards.
-5. **End with at least 2 per variant** (the free variant needs none; it takes one only if it helps the craft): a lead
+5. **End with at least 2 per variant** (the free variant needs one: a lead of its own choosing): a lead
    whose craft the variant borrows most, plus one for specific parts. Name the one or two techniques to take from each (a transition, a
    type treatment, how the scroll is paced). Adapt, never clone: with the logo hidden, the variant mustn't pass for its
    lead. Never one reference per scroll move or detail. Reopen each
