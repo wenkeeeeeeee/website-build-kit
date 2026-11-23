@@ -1,47 +1,42 @@
 # Website build kit
 
-Everything an AI coding agent (Claude Code, Codex and others) needs to build multi-variant client websites fast:
-proven methods, a working shop starter, helper scripts and the design skills. No client data.
+A short method, tools and a working shop starter for building multi-variant client websites with AI coding agents
+(Claude Code, Codex and others). No client data.
 
-## Use it as a Claude Code skill (recommended)
+## Use it as a Claude Code skill
 Once per machine, in a terminal:
 ```
 claude plugin marketplace add https://github.com/wenkeeeeeeee/website-build-kit
 claude plugin install website-build-kit@website-build-kit
 ```
-Then turn on auto-update once: in a Claude Code session run `/plugin` → **Marketplaces** → `website-build-kit` →
-**Enable auto-update**. New threads pick up kit changes on their own; a running session needs `/reload-plugins`.
+Then in a session: `/plugin` → **Marketplaces** → `website-build-kit` → **Enable auto-update**. A running session needs
+`/reload-plugins` to pick up changes.
 
 Start a build in any thread with:
 ```
-/website-build-kit:build Client: <name> Links: <links> References: <optional> Notes: <optional>
+/website-build-kit:build Client: <name> Links: <links> References: <optional> Variants: 3 + 1 free Notes: <optional>
 ```
-The skill is in `skills/build/SKILL.md`. It reads the kit's files from the installed copy and copies `tools/web` into
-each project.
 
-## Use it as a cloned project
-1. Clone this repo (in T3 Code: pick the environment → **Add existing project** → clone).
-2. Once per machine: `cd tools/web && npm install`. Needs Node 18+, Python 3 and Chrome for the browser tools;
-   `cutout.py` needs Pillow and numpy, `film.py` needs ffmpeg.
-3. Start a thread in this project and paste a filled-in prompt from `prompts/new-project-prompt.md`. The build goes into
-   `WebsiteProjects/<Client>/`, which git ignores, so client work never lands in this repo.
-4. Run `git pull` before each new project for the latest methods.
-
-Skills in `.claude/skills/` load automatically in Claude Code for this project only. Nothing is installed globally.
-The browser checks run their own headless Chrome, so no browser MCP server is needed. For Codex, copy the skills
-into its skills folder (e.g. `cp -r .claude/skills/* ~/.codex/skills/`).
+## How a build runs
+1. **Research** (about 10 minutes): the client's facts, prepared photos and videos, and a different tone for each of
+   variants 1-3.
+2. **Heroes:** four builders at once. Variants 1-3 each browse Awwwards and 21st.dev, pick a lead reference no other
+   variant uses, and design a hero from it with the client's own material. Variant 4 is free of the kit.
+3. **Review:** each hero is shown beside its lead reference. You approve, change or redo.
+4. **Full sites, check, publish** to a private GitHub repo and Vercel.
 
 ## What's inside
 | Path | Contents |
 |---|---|
-| `AGENTS.md` / `CLAUDE.md` | Working rules every agent follows |
-| `prompts/office/taste.md` | The quality bar every builder follows |
-| `prompts/` | Builder brief, playbook (methods and publishing), manual and Clone-mode prompts |
-| `prompts/office/` | Run orders for research and build threads, plus toolboxes: motion, site types, references and sources |
+| `AGENTS.md` | Working rules every agent follows |
+| `skills/build/SKILL.md` | The run order |
+| `prompts/` | Research, the two builder briefs, the rules and the technical methods |
 | `starter/` | Static shop plumbing: basket with WhatsApp/marketplace checkout, catalogue filters, product page, quote form, stores. All business details in `starter/data/` |
-| `tools/web/` | `serve.py` preview server, `check-pages.cjs` desktop and phone checker, `export-site.py` publisher, `film.py` and `film-control.js` hero film, `frames.py` and `scrub.js` scroll film, `stair.js` 3D hero, `gl-guard.js` WebGL safety, `prologue.js` brand opening, `hotspots.js` shop-the-look dots, `cutout.py` cut-outs |
-| `.claude/skills/` | Design and debugging skills, see `THIRD_PARTY.md` |
+| `tools/web/` | Preview server, reference browser, hero and page checkers, publisher, film, scroll and 3D helpers, cut-outs |
+| `.claude/skills/` | Polish, accessibility and debugging skills, see `THIRD_PARTY.md` |
+
+Needs Node 18+, Python 3 and Chrome; `cutout.py` needs Pillow and numpy, `film.py` needs ffmpeg.
 
 ## Improving it
-When a build teaches something new, sharpen the rule it belongs to in `prompts/office/taste.md` (taste) or
-`prompts/website-playbook.md` (method), in general terms (no client names, numbers or links), commit and push.
+Keep it short. When a build teaches something, fix the rule it belongs to in general terms (no client names, numbers or
+links) and delete whatever it contradicts.

@@ -1,14 +1,13 @@
 # Website build tools
 
 Small, general scripts from past website builds, for any static project laid out as `<project>/index.html` (hub),
-`content/`, `docs/`, `variants/_shared/`, `variants/<nn>-<name>/site/`. How and when to use them:
-`prompts/website-playbook.md`.
+`content/`, `docs/`, `variants/_shared/`, `variants/<nn>-<name>/site/`. How to use them: `prompts/methods.md`.
 
 | Script | What it does | Run |
 |---|---|---|
 | `serve.py` | Local preview, no caching, byte-range support (videos loop and seek; edits show on reload) | `python tools/web/serve.py <project> 8080` |
 | `check-pages.cjs` | Screenshots at the client's real screen sizes. Flags console errors, 404s, sections taller than one screen, a white strip above the footer, sideways scroll (naming the elements causing it), words colliding with buttons on the first screen, missing share and language tags, a white or blank first paint (saves `<name>-early.png` at 350 ms), an H1 web font that didn't load, autoplay videos paused or failed, broken images, header links wrapping onto two rows. `--phone` adds real phone emulation and small tap targets. Own headless browser, so parallel agents can use it; real Chrome first so MP4 heroes play | `node tools/web/check-pages.cjs <url> [<url>...] --sizes 1920x870,1536x700 --phone --out shots` |
-| `gallery-scan.cjs` | Skims Behance and Dribbble: one thumbnail image plus links per search, about 15 seconds. Awwwards blocks browsers: use WebSearch | `node tools/web/gallery-scan.cjs "fine dining website" "pasta brand" --out shots` |
+| `find-refs.cjs` | Browses Awwwards and 21st.dev like a visitor: numbered sheets of a listing's thumbnails plus `<name>.md` with every entry's link; `live` turns an Awwwards site page into the real site's address | `node tools/web/find-refs.cjs aw:events aw?wedding 21st:hero --out refs/browse`, `node tools/web/find-refs.cjs live <awwwards site page>` |
 | `hero-frames.cjs` | Scroll-hero frames at 0, 33, 66 and 100%, on the way back up, and on a phone, one labelled row per page, so a hero and its references compare at the same scroll points. Flags a hero that doesn't move or sits behind a gate. `--motion` adds a sheet of the opening, mid-scroll and hover states; `--video` records a webm | `node tools/web/hero-frames.cjs <hero url> <reference url> --out shots --screens 3 --motion` |
 | `contact-sheet.cjs` | Scrolls pages like a visitor, up to 4 at once: one image per page plus `all.jpg`, side by side for spotting lookalike variants. Clears cookie walls, prints fonts and sections. Own headless browsers | `node tools/web/contact-sheet.cjs <url> [<url>...] --out shots` |
 | `og-images.cjs` | A 1200x630 share image per variant, linked by full address. Run before export, with the preview up | `node tools/web/og-images.cjs <project> <preview url> <live url>` |
@@ -24,7 +23,7 @@ Small, general scripts from past website builds, for any static project laid out
 | `reactbits.cjs` | Fetches React Bits components (animated text, backgrounds, small UI) on demand into a git-ignored cache, lists them with the libraries each needs, and copies one into a site with a license header. They are React, so port the one you pick to plain JS | `node tools/web/reactbits.cjs list [name]`, `node tools/web/reactbits.cjs get Aurora --out <site>/js/reactbits` |
 | `cutout.py` | Removes studio shadows from cut-outs, turns a dark logo into a white mask, makes a contact sheet on a coloured background | `python tools/web/cutout.py shadow in.png out.webp --max 320` |
 
-`npm install` here also brings GSAP with its plugins, Lenis, three.js and ogl (the WebGL library most React Bits backgrounds use), for the motion in `prompts/office/motion.md`.
+`npm install` here also brings GSAP with its plugins, Lenis, three.js and ogl (the WebGL library most React Bits backgrounds use).
 
 Needs: Python 3 with Pillow and numpy (`cutout.py`), ffmpeg and ffprobe on PATH (`film.py`), `yt-dlp` for client reels,
 Node with Playwright for `check-pages.cjs` (`npm i -D playwright` in `tools/web` or the project; it uses the installed

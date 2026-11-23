@@ -6,7 +6,7 @@
     {
       "name": "website-build-kit",
       "source": "./",
-      "description": "Build client website variants with AI agents: research, tone-led and free variants, hero review, checks and Vercel publishing"
+      "description": "Build client website variants with AI agents: short research, reference-led and free variants, hero review and Vercel publishing"
     }
   ]
 }
