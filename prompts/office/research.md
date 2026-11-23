@@ -39,20 +39,24 @@ Everything depends on this, so it comes first and gets the most time.
   site to a map, a game, a 3D room or a card pack. Modern and professional or luxury: ideas that explain, guide or show
   the real thing (a fitting room, a route, a before-and-after, a calculator), with no games, toys, props or rituals.
   Take at least one from outside the web: a poster, packaging, a film title sequence, an album cover, a magazine spread.
-  Pick the 3 strongest that fit the tone, plus the free one: ideas a customer would find useful and remember. An idea
-  that could sit on any business in the category gets replaced.
+  Pick the 3 strongest that fit the tone: ideas a customer would find useful and remember. An idea that could sit on
+  any business in the category gets replaced. The free variant's idea comes from its own step below, not this list.
 - **A direction per idea:** one sentence on what the hero is made of and does, from this client's world and the hero
   material ("the bouquet rises and the visitor's name prints across the balloon"). The builder designs the look itself
   from the tone, character, business, products and references. Variants differ in idea and layout, never by picking a
   weaker look just to be different.
 - **The free variant (always last):** free in idea, tone, layout, type, colour and medium ("The free variant" in
-  `taste.md`), something we haven't built before. Its direction names the client's own thing the hero is made of. It's
-  still this client's site, with the same content, prices and action.
+  `taste.md`), something we haven't built before. Write what this business's customer does here in one verb, list 5
+  game, collectible, toy, map or media formats where people already do that, drop any in "The free variant's level"
+  in `reference-library.md` or another client's `PITCH.md`, and pick the one this client's real material fills best.
+  Its direction names the format and the client's own things it's made of. It's still this client's site, with the
+  same content, prices and action.
 
 ## 3. References (4 minutes): for each idea, from Benchmarks and Awwwards only
 References come after the ideas. They support each idea: builders adapt how they stage, compose and move things to
 this client, never their images, logo, copy or colours. The level comes from the category leaders and the references. Only these
-sources, plus any reference the user pasted in `LEAD.md`, which always gets its own variant.
+sources, plus any reference the user pasted in `LEAD.md`, which always gets its own variant. The free variant's lead
+may come from anywhere (a game, a card set, a toy, a film title sequence): name what it stages and how it moves.
 1. **Benchmarks.** Read "Benchmarks" and "Rejected" in `reference-library.md` and pick the Benchmarks whose craft
    serves each direction in this tone. Their "Made of" must match the hero material. Respect "Craft only" and "No
    back-to-back reuse" there.
@@ -66,7 +70,7 @@ sources, plus any reference the user pasted in `LEAD.md`, which always gets its 
 4. **The bar:** creative, attractive and premium in the way that suits this business, across most of the page, in the
    right tone, with a hero made of the same kind of material. Name two frames that prove it, or drop it. Plain layouts,
    beige with a serif, and loud colour with no idea behind it fail, even on Awwwards.
-5. **End with at least 2 per variant** (the free variant needs one: a lead of its own choosing): a lead
+5. **End with at least 2 per variant** (the free variant needs one: a lead of its own choosing, from anywhere): a lead
    whose craft the variant borrows most, plus one for specific parts. Name the one or two techniques to take from each (a transition, a
    type treatment, how the scroll is paced). Adapt, never clone: with the logo hidden, the variant mustn't pass for its
    lead. Never one reference per scroll move or detail. Reopen each

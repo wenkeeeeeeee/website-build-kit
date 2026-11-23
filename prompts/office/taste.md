@@ -9,13 +9,17 @@ and the variant's references. This file says what the site must do, not how it m
 ## The free variant (V4)
 Free in idea, tone, layout, type, colour and medium, the colour method (`colour.md`) welcome. Nothing else in this file
 binds it except these three, which stop "free" from sliding into the default look of a software product:
-- **Made of the client's own thing.** The idea can be anything, but the hero is built from something you can see in
-  this client's world: their product, person, place, tools or material. Never from an abstract concept drawn as an
-  interface (a schedule, a process, a dashboard).
-- **One lead reference of its own choosing,** from the Benchmarks or Awwwards (step 3 of `research.md`). Adapt how it
-  stages and moves things; with the logo hidden, the variant mustn't pass for it.
+- **Made of the client's own thing, in a format the customer already knows.** Start from what this business's customer
+  does (explores, compares, collects, levels up, picks a seat, checks progress), take the game, collectible, toy, map or
+  media format where people already do that, and build it from this client's real photos, products, people, places and
+  prices. Never from an abstract concept drawn as software (a schedule, a process, a dashboard). No format already used
+  in the design lab or another client's `PITCH.md` ("The free variant's level" in `reference-library.md`).
+- **One lead reference of its own choosing, from anywhere:** a game, a card set, a toy, a film title sequence, an
+  Awwwards site or a Benchmark (step 3 of `research.md`). Adapt how it stages and moves things, never its art,
+  characters or layout; with the logo hidden, the variant mustn't pass for it.
 - **Judged on the picture.** Hide the words on its `hero-frames` sheet: would someone remember the picture tomorrow? If
-  it could be a screenshot of an app or software product, start again.
+  it reads as a software product (a dashboard, an admin panel, a SaaS layout), start again. Games, maps, cards,
+  dioramas and toys pass when they're made of the client's own things.
 
 It still uses the client's real business, products, prices and ways to order, invents no claims, and works.
 

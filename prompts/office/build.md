@@ -19,7 +19,7 @@ at the hero review in step 4, or if blocked. Short updates only.
      from `KIT/tools/web` into `PROJECT/variants/_shared/vendor/` as `gsap`, `lenis`, `three` and `ogl`. Each variant
      ports the components in its "Components" row of `PITCH.md` itself (React Bits via `KIT/tools/web/reactbits.cjs`).
    - Open it once with `check-pages.cjs`. Every page must work: all variants copy it.
-4. **Heroes first (40 minutes), then the user's review.** Heroes are judged from pictures, never the plan.
+4. **Heroes first (40 minutes; 60 for the free variant), then the user's review.** Heroes are judged from pictures, never the plan.
    - **Before briefing,** open each variant's lead reference sheet. Replace the reference if a banner covers it, most
      frames are static, the look is on the fail list, or its hero isn't made of the same kind of material as this
      variant's (step 3 of `research.md`). Rewrite a direction in `PITCH.md` if the hero isn't what the customer came for,
@@ -30,8 +30,9 @@ at the hero review in step 4, or if blocked. Short updates only.
      material, and returns its `hero-frames` sheet.
    - **Your check.** Go through each sheet against "The check" in `taste.md`, beside the category leaders. A hero weaker
      than the category leaders fails, and so does one with a frame that shares its reference's composition or could
-     pass for it with the logo hidden. The free variant is checked as "The free variant" in `taste.md` says (made of the client's own thing,
-     remembered as a picture with the words hidden, never like an app screen), and for working. Send back
+     pass for it with the logo hidden. The free variant is checked as "The free variant" in `taste.md` says (made of the client's own thing
+     in a format the customer knows, remembered as a picture with the words hidden, never a dashboard, admin panel or
+     SaaS layout), and for working. Send back
      any failing hero, once, before the user sees it.
    - **Review.** Post per variant: its `hero-frames` sheet as an image (Markdown image, absolute path), the local hero
      URL, the recipe in one line, its palette as named swatches with hex (mood pair and accent where used), and its
@@ -83,7 +84,7 @@ at the hero review in step 4, or if blocked. Short updates only.
   the Category check before publishing.
 - **An extra variant, even from the user's own idea, gets references.** Settle its idea first, in the client's tone,
   then pick references from Benchmarks or Awwwards and open them (step 3 of `research.md`), naming the technique to take
-  from each. Never brief a Builder with no outside reference. The free variant takes one lead of its own choosing and is
+  from each. Never brief a Builder with no outside reference. The free variant takes one lead of its own choosing, from anywhere, and is
   judged as "The free variant" in `taste.md` says.
 - **A redone hero gets the same review:** build it, post its `hero-frames` sheet beside its reference, wait for "go"
   before publishing.

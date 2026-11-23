@@ -42,6 +42,14 @@ Don't use these or anything like them.
 | https://www.motionclinic.com.ar/ | One hero effect, then dark text and doctor photos. One strong screen isn't a strong site |
 | https://foodnia.co.jp/ | Banned by the user, ideas included: its colour-flood shape growing on scroll and pinned one-line scenes don't hold up |
 
+## The free variant's level
+https://zerilab-design-lab.vercel.app/ shows the level V4 aims for: heroes explored with no kit limits, each made of a
+real business's photos, products and prices, each ending in WhatsApp. Two the user picked out: a draggable toy map with
+the client's spots pinned on it, for a business whose customers go exploring; and a founder as a tilting foil stat
+card with a pack to tear open, for a business judged by its record. What they share: the format is one the customer
+already uses for what they do here. Open it for the level, never for a format: the eight formats there (toy overworld
+map, HUD loadout, skill tree, foil card pack, infinite zoom, 3D diorama, race HUD, heat-map body scan) are taken.
+
 ## Component sources
 Ready-made code for the parts of a section: hero details, section joins, services, galleries and work, proof, process,
 FAQ, the business tool and its controls. They aren't references: they lend code for one part, never a variant's idea,

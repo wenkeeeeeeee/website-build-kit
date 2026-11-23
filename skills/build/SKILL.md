@@ -52,9 +52,13 @@ Build websites for this client in this thread.
      magazine spread.
    - Read the variant names, directions and references in other `WebsiteProjects/*/docs/PITCH.md` only so no idea
      repeats and no Benchmark leads for a third client in a row.
-   - Pick the 3 strongest ideas that fit the tone, plus 1 for the free variant: ideas a customer would find useful and
-     remember.
-   - Then find at least 2 references for each of variants 1-3, and one lead of its own choosing for variant 4 (step 3 of `KIT/prompts/office/research.md`): my
+   - Pick the 3 strongest ideas that fit the tone: ideas a customer would find useful and remember.
+   - The free variant gets its own idea ("The free variant" in `taste.md`): write what this business's customer does
+     here in one verb, list 5 game, collectible, toy, map or media formats where people already do that, drop any in
+     "The free variant's level" in `KIT/prompts/office/reference-library.md` or another client's `PITCH.md`, and pick
+     the one this client's real photos, products and prices fill best.
+   - Then find at least 2 references for each of variants 1-3, and one lead of its own choosing for variant 4, from
+     anywhere (a game, a card set, a toy, a film title sequence, Awwwards) (step 3 of `KIT/prompts/office/research.md`): my
      references first, then the Benchmarks in `KIT/prompts/office/reference-library.md` (keeping its "Craft only", "No
      back-to-back reuse" and "Rejected" rules) and Awwwards. Open each with
      `node tools/contact-sheet.cjs <urls> --out refs` and write down what makes it impressive (how it stages the
@@ -70,8 +74,8 @@ Build websites for this client in this thread.
      Each variant needs its own idea that only fits this client; if you hid the logo and it could pass for its
      reference, change it.
    - Variant 4 is free ("The free variant" in `taste.md`): any idea, tone, layout, type, colour or medium, something
-     we haven't built before. Its hero is made of the client's own thing (product, person, place, tools or material),
-     never an abstract concept drawn as an interface, and it adapts its one lead reference. It still uses the client's
+     we haven't built before. Its hero is the format you picked, made of the client's own things (product, person,
+     place, tools or material), never an abstract concept drawn as software, and it adapts its one lead reference. It still uses the client's
      real content, prices and ways to order.
    - For each variant, plan what the hero shows and how it moves (using the client's real photos and products, as "The
      hero" in `taste.md` says), the order of the sections, fonts (avoiding the banned list in "Type" in `taste.md`),
@@ -87,7 +91,7 @@ Build websites for this client in this thread.
    - All four should feel clearly different, at the same high quality.
 
 5. Build the heroes first, then wait for me.
-   - Build only the header and hero of each variant, in about 40 minutes, as "The hero" in `taste.md` says: the real thing customers came
+   - Build only the header and hero of each variant, in about 40 minutes (60 for variant 4), as "The hero" in `taste.md` says: the real thing customers came
      for, big and clear, what the business is in a few words, one button, or the idea to try right there if it's
      interactive.
    - It must move as `motion.md` says for the tone: a quick opening, gentle movement while idle, and a scroll move
@@ -128,7 +132,8 @@ Build websites for this client in this thread.
      (`node tools/contact-sheet.cjs <variant url> <leader urls> <reference url> --out compare`). If it looks weaker than
      the leaders, improve it; if it could pass for a reference with the logo hidden, or uses its images, logo, copy or
      colours, change it. The free variant is judged on the picture: hide the words; would someone remember it
-     tomorrow? If it could be an app screen, start again.
+     tomorrow? If it reads as a dashboard, admin panel or SaaS layout, start again; games, maps, cards and dioramas
+     made of the client's own things pass.
 
 8. Publish.
    - Make a main page that links to all variants.
