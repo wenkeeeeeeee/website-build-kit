@@ -14,6 +14,7 @@
 //
 // `awards` is the award pool, best first: Sites of the Year, Sites of the Month and every Honors category (all
 // pages), then the newest 10 pages of Sites of the Day. A site already shown in an earlier list is not shown again.
+// Keep it in one folder per machine: the next run reuses it and only fetches winners added since (seconds, not minutes).
 // For older Sites of the Day: aw:sites_of_the_day@30.
 //
 // For each listing it scrolls the page, saves numbered sheets of the thumbnails (<name>-1.jpg ..., 24 per sheet) and
@@ -189,10 +190,68 @@ async function sheets(page, url, name, entries, note) {
       await page.screenshot({ path: file, type: 'jpeg', quality: 72 });
       shots.push(file);
     }
-    const md = [`# ${url}`, '', note, '', ...shots.map((s) => `- sheet: ${s}`), '', ...entries.map((e, i) => `${i + 1}. ${e.label || '(no label)'} | ${e.href}`)].join('\n');
+    const md = [`# ${url}`, '', note, '', ...shots.map((s) => `- sheet: ${path.basename(s)}`), '', ...entries.map((e, i) => `${i + 1}. ${e.label || '(no label)'} | ${e.href}`)].join('\n');
     fs.writeFileSync(path.join(out, `${name}.md`), md + '\n');
     console.log(`${url}: ${entries.length} new (${note}), ${shots.length} sheet(s) -> ${path.join(out, name)}.md`);
   }
+}
+
+// The award pool, kept in <out>/pool.json so the next build only tops it up: winners are listed newest first, so a
+// known list stops at the first page that holds nothing new. Lists are read 4 at a time, and a list's sheets are only
+// drawn again when what it shows changed.
+async function awardsPool(browser) {
+  const file = path.join(out, 'pool.json');
+  let cache = {};
+  try { cache = JSON.parse(fs.readFileSync(file, 'utf8')); } catch (e) { /* first run */ }
+  const lists = AWARDS.map((l) => {
+    const at = l.match(/@(\d+|all)$/);
+    return { url: expand(l.slice(0, at.index)), max: at[1] === 'all' ? 200 : parseInt(at[1], 10) };
+  });
+  const pool = (n, work) => {
+    let next = 0;
+    return Promise.all(Array.from({ length: n }, async () => {
+      const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+      while (next < work.length) await work[next++](page).catch((e) => console.log(`FAILED: ${e.message.split('\n')[0]}`));
+      await page.close();
+    }));
+  };
+  await pool(4, lists.map((l) => async (page) => {
+    const old = (cache[l.url] && cache[l.url].entries) || [];
+    const known = new Set(old.map((e) => e.href));
+    const fresh = [];
+    for (let n = 1; n <= l.max; n++) {
+      const u = new URL(l.url);
+      if (n > 1) u.searchParams.set('page', String(n));
+      const found = await readListing(page, u.href, n === 1);
+      if (!found) break;
+      const add = found.filter((e) => !known.has(e.href) && !fresh.some((x) => x.href === e.href));
+      if (!add.length) break; // past the last page, or nothing new since the last run
+      fresh.push(...add);
+      if (old.length && add.length < found.length) break; // reached what the last run already has
+    }
+    l.fresh = fresh.length;
+    l.entries = [...fresh, ...old];
+    cache[l.url] = { ...(cache[l.url] || {}), entries: l.entries, fetched: new Date().toISOString() };
+  }));
+  const seen = new Set();
+  const jobs = [];
+  for (const l of lists) {
+    const all = l.entries || [];
+    const show = all.filter((e) => !seen.has(e.href));
+    show.forEach((e) => seen.add(e.href));
+    const name = slug(l.url);
+    const note = `${all.length} entries, ${l.fresh || 0} new since the last run, ${all.length - show.length} already shown in an earlier list`;
+    const key = require('crypto').createHash('sha1').update(show.map((e) => e.href).join('\n')).digest('hex');
+    if (cache[l.url] && cache[l.url].shown === key && fs.existsSync(path.join(out, `${name}.md`))) {
+      console.log(`${l.url}: unchanged (${note})`);
+      continue;
+    }
+    if (cache[l.url]) cache[l.url].shown = key;
+    for (const f of fs.readdirSync(out)) if (new RegExp(`^${name}-(\\d+|page)\\.jpg$`).test(f)) fs.unlinkSync(path.join(out, f));
+    jobs.push((page) => sheets(page, l.url, name, show, note));
+  }
+  await pool(4, jobs);
+  fs.writeFileSync(file, JSON.stringify(cache));
 }
 
 async function live(browser, urls) {
@@ -223,7 +282,8 @@ async function live(browser, urls) {
   const browser = await launch();
   try {
     if (args[0] === 'live') await live(browser, args.slice(1));
-    else for (const l of args.flatMap((a) => (a === 'awards' ? AWARDS : [a]))) await browse(browser, l);
+    else if (args[0] === 'awards') await awardsPool(browser);
+    else for (const l of args) await browse(browser, l);
   } finally {
     await browser.close();
   }
