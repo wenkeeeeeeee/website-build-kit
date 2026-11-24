@@ -11,7 +11,9 @@ Maps, marketplaces, reviews; "Sourcing" in `methods.md` has the tricks). Write, 
 - Proof: real reviews, clients, numbers, awards, press, with where each came from.
 - How people buy or book: WhatsApp number, phone, booking link, marketplace, address, hours.
 - Brand: logo file, the brand's own colours and fonts if it has them, names or claims to avoid.
-- What the user said before about this client, word for word (from `LEAD.md` and earlier rounds), or "none".
+- What the user said before about this client: every message, in full and word for word (from `LEAD.md`, earlier
+  rounds' notes and the thread), each with which variant it was about, and what was rejected and why. Never shorten
+  or paraphrase it: a trimmed quote can turn "more professional" into "playful". Or "none".
 
 ## 2. The material (`content/`)
 Download every usable photo and video (yt-dlp for reels). Prepare the best of it: crop clean, one grade, upscale only

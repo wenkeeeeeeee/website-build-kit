@@ -14,7 +14,7 @@ the content from the client. The only rules are `{{KIT}}/prompts/rules.md` (read
 ## The client
 - Facts and material: `{{PROJECT}}/docs/FACTS.md` (read all of it) and the files in `{{PROJECT}}/content/`.
 - Your tone: {{the V{{N}} line from "Tones" in FACTS.md}}.
-- What the user said before: {{from FACTS.md, word for word, or "none"}}.
+- What the user said before: {{from FACTS.md, in full and word for word, or "none"}}.
 - Changes from the user: {{their words for a repeat round or the rest phase; otherwise "none"}}.
 
 ## Hero phase (about 45 minutes)
