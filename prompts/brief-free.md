@@ -22,7 +22,7 @@ report (what, where, a ready prompt). The user makes them, or approves Higgsfiel
 - Facts and material: `{{PROJECT}}/docs/FACTS.md` and `{{PROJECT}}/content/`.
 - What the user said before: {{from FACTS.md, word for word, or "none"}}.
 - Changes from the user: {{their words for a repeat round or the rest phase; otherwise "none"}}.
-- Tools if you want them: `{{KIT}}/tools/web/` (`find-refs.cjs` browses Awwwards and 21st.dev, `hero-frames.cjs
+- Tools if you want them: `{{KIT}}/tools/web/` (`find-refs.cjs` browses Awwwards and 21st.dev; the award winners are already in `{{PROJECT}}/references/awards/`; `hero-frames.cjs
   --motion` records a hero moving, `contact-sheet.cjs --moving` records a whole page scrolling, `check-pages.cjs
   --phone`), libraries in `{{PROJECT}}/tools/node_modules`.
 

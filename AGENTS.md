@@ -6,8 +6,8 @@ These rules override any skill that says it must be used, including a superpower
 ## Where things are
 - `skills/build/SKILL.md`: the run order, from lead to live site.
 - `prompts/research.md`: facts, material and tones (about 10 minutes).
-- `prompts/brief.md`: the builder brief for variants 1-3. Each builder finds its own references on Awwwards and
-  21st.dev, claims a lead reference no other variant uses, and designs its own hero.
+- `prompts/brief.md`: the builder brief for variants 1-3. Each builder finds its own references, Awwwards' award
+  winners first, then other Awwwards lists and 21st.dev, claims a lead reference no other variant uses, and designs its own hero.
 - `prompts/brief-free.md`: the brief for variant 4, free of the kit.
 - `prompts/rules.md`: the few musts every variant follows.
 - `prompts/methods.md`: technical lookup (layout, media, bugs, publishing, sourcing).

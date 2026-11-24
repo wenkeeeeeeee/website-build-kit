@@ -17,29 +17,32 @@ the content from the client. The only rules are `{{KIT}}/prompts/rules.md` (read
 - What the user said before: {{from FACTS.md, word for word, or "none"}}.
 - Changes from the user: {{their words for a repeat round or the rest phase; otherwise "none"}}.
 
-## Hero phase (about 40 minutes)
+## Hero phase (about 45 minutes)
 
-### 1. Find your references (about 15 minutes)
+### 1. Find your references (about 20 minutes)
 This step decides everything. Take it seriously.
 1. **Know your material.** Read the Material list in FACTS.md: what the client really has (photos, videos, products,
    people, places, logo), in what orientation and quality. You can only build what this material can carry, so look
    for references that show this kind of material at its best.
 2. **Write the customer line:** in one sentence, what a customer must understand and feel within 5 seconds of landing.
-3. **Decide where to look.** Ask what this business really delivers to its customer and what would show that best.
-   Look at it from several angles: what the customer gets, where it happens, what it looks and sounds like, how it
-   feels. The client's own category is only one place to look, and often not the best: pick the categories and
-   searches whose sites show that kind of thing best. Each of your references can come from a different one.
-4. **Browse Awwwards and 21st.dev** with your own headless browser:
+3. **Decide what you're looking for.** Ask what this business really delivers to its customer and what would show
+   that best: what the customer gets, where it happens, what it looks and sounds like, how it feels. A site from any
+   category can be right if it shows that kind of thing well; the client's own category is only one of them.
+4. **Go through the award winners first.** The best references are Awwwards' award winners: Sites of the Year, Sites
+   of the Month, every Honors category (Typography, No-code, E-commerce, Product, Portfolio, Business & Services) and
+   Sites of the Day. The lead has saved them all as numbered sheets in `{{PROJECT}}/references/awards/` (if that
+   folder is missing, run `node {{KIT}}/tools/web/find-refs.cjs awards --out {{PROJECT}}/references/awards`). Look at
+   every sheet, and note every site that could deliver what you decided in step 3 and suits your material.
+   Only if the award pool has too few that fit, look further, as an alternative:
    ```
-   node {{KIT}}/tools/web/find-refs.cjs aw:<category or tag> aw?<words> 21st:hero --out {{VARIANT}}/ref/browse
+   node {{KIT}}/tools/web/find-refs.cjs aw:sites_of_the_day@30 aw:<category or tag> aw?<words> 21st:hero --out {{VARIANT}}/ref/browse
    ```
-   Awwwards categories and tags are listed at https://www.awwwards.com/websites/ (e.g. `aw:sites_of_the_day`, or any
-   category, tag or search that fits your step 3). On 21st.dev, `21st:hero` and other sections. Look at the sheets
-   and pick the heroes worth a closer look.
+   (older Sites of the Day, any Awwwards category, tag or search from https://www.awwwards.com/websites/, 21st.dev
+   sections).
 5. **Open them live.** `node {{KIT}}/tools/web/find-refs.cjs live <awwwards site page>` gives the real address. Study
    8-10 heroes with `node {{KIT}}/tools/web/hero-frames.cjs <url> [<url> ...] --motion --out {{VARIANT}}/ref`: the
-   opening, the scroll and the hover, not just a thumbnail. Only modern, creative work: skip anything basic, template-
-   like or dated (many 21st.dev heroes are plain SaaS templates).
+   opening, the scroll and the hover, not just a thumbnail. Award winners first; anything from outside the pool must
+   be as modern and creative (many 21st.dev heroes are plain SaaS templates).
 6. **Three candidates.** Pick three of the heroes you studied that could carry this client's material and your
    customer line. For each, one line: how this client's photos, video and words would sit in that exact hero. Pick
    the one that shows this business best, not the safest.
@@ -72,7 +75,7 @@ different content. Fix every place where yours drifts from the lead, unless the 
 as modern and alive as the lead? No console errors; it works at phone width.
 
 **Report** (under 150 words): the hero URL; the customer line; the three candidates and which you built; the lead
-reference (URL), what you changed from it and why, and what you took from each supporting one; the `hero-*.jpg` and
+reference (URL, and the award list it came from, or why nothing in the pool fit), what you changed from it and why, and what you took from each supporting one; the `hero-*.jpg` and
 `motion-*.jpg` paths from step 3; generated images or video you'd like (what, where, a ready prompt), or "none".
 
 ## Rest phase (about 45 minutes)
@@ -81,10 +84,12 @@ business really needs, comes from references too, found and adapted the same way
 
 ### 1. References for the rest (about 15 minutes)
 1. List the sections and pages this business needs, and what each must show or do.
-2. Start with your lead reference: scroll its whole home page and open its inner pages. Then browse for the sections
-   it doesn't cover: Awwwards categories and tags that fit (`aw:transitions`, `aw:scrolling`, `aw:animation` and any
-   others from https://www.awwwards.com/websites/) and 21st.dev sections (`21st:features`, `21st:testimonials`,
-   `21st:cta`, `21st:footer`, `21st:text`, `21st:scroll-area`, `21st:background` or any section name).
+2. Start with your lead reference: scroll its whole home page and open its inner pages. Then the award pool in
+   `{{PROJECT}}/references/awards/` again, this time for the sections and pages of award winners that fit yours. Only
+   for what the pool doesn't cover, browse further as an alternative: Awwwards categories and tags (`aw:transitions`,
+   `aw:scrolling`, `aw:animation` and any others from https://www.awwwards.com/websites/) and 21st.dev sections
+   (`21st:features`, `21st:testimonials`, `21st:cta`, `21st:footer`, `21st:text`, `21st:scroll-area`,
+   `21st:background` or any section name).
 3. Study them moving: `node {{KIT}}/tools/web/contact-sheet.cjs <url> [<url> ...] --moving --out {{VARIANT}}/ref/rest`
    takes a frame every half screen while the page is still scrolling, so you see how each section enters and how it
    hands over to the next, not just where it rests.

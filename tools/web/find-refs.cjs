@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Browse reference galleries (Awwwards, 21st.dev) like a visitor, in your own headless browser.
 //
-//   node find-refs.cjs <listing> [<listing> ...] [--scrolls 5] [--out refs/browse]
+//   node find-refs.cjs <listing>[@pages] [<listing> ...] [--scrolls 5] [--out refs/browse]
+//   node find-refs.cjs awards [--out refs/awards]
 //   node find-refs.cjs live <awwwards site page> [...]
 //
 // <listing> is a full URL or a shortcut:
@@ -9,6 +10,11 @@
 //   aw?<words>             https://www.awwwards.com/websites/?text=<words>
 //   21st:<section>         https://21st.dev/community/components/s/<section>   (e.g. 21st:hero, 21st:background)
 // Category and tag slugs: open https://www.awwwards.com/websites/ and read the Category and Tag filters.
+// @pages walks the listing's numbered pages: aw:sites_of_the_month@all, aw:sites_of_the_day@10 (default: 1 page).
+//
+// `awards` is the award pool, best first: Sites of the Year, Sites of the Month and every Honors category (all
+// pages), then the newest 10 pages of Sites of the Day. A site already shown in an earlier list is not shown again.
+// For older Sites of the Day: aw:sites_of_the_day@30.
 //
 // For each listing it scrolls the page, saves numbered sheets of the thumbnails (<name>-1.jpg ..., 24 per sheet) and
 // writes <name>.md: every entry by number with its link. Look at the sheets, pick, then:
@@ -58,23 +64,57 @@ async function dismiss(page) {
   }
 }
 
+const AWARDS = ['sites_of_the_year@all', 'sites_of_the_month@all',
+  ...['typography', 'no-code', 'ecommerce', 'product', 'portfolio', 'business-services'].map((c) => `winner_category_${c}@all`),
+  'sites_of_the_day@10'].map((s) => `aw:${s}`);
+const shown = new Set(); // sites already on a sheet in this run
+
 async function browse(browser, listing) {
-  const url = expand(listing);
+  const at = listing.match(/@(\d+|all)$/);
+  const maxPages = at ? (at[1] === 'all' ? 200 : Math.max(1, parseInt(at[1], 10))) : 1;
+  const url = expand(at ? listing.slice(0, at.index) : listing);
   const name = slug(url);
   const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
   try {
-    const res = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
-    await page.waitForTimeout(2500);
+    let entries = [];
+    let pagesRead = 0;
+    for (let n = 1; n <= maxPages; n++) {
+      const pageUrl = new URL(url);
+      if (n > 1) pageUrl.searchParams.set('page', String(n));
+      const found = await readListing(page, pageUrl.href, n === 1);
+      if (found === null) break;
+      pagesRead = n;
+      const fresh = found.filter((e) => !entries.some((x) => x.href === e.href));
+      if (!fresh.length) break; // past the last page
+      entries.push(...fresh);
+    }
+    const total = entries.length;
+    entries = entries.filter((e) => !shown.has(e.href));
+    entries.forEach((e) => shown.add(e.href));
+    await sheets(page, url, name, entries, `${total} entries on ${pagesRead} page(s), ${total - entries.length} already shown in an earlier list`);
+  } catch (e) {
+    console.log(`FAILED ${url}: ${e.message.split('\n')[0]}`);
+  } finally {
+    await page.close();
+  }
+}
+
+// One page of a listing: its gallery cards, or null if the page failed.
+async function readListing(page, url, first) {
+  const res = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 }).catch(() => null);
+  if (!res && !first) return null;
+  {
+    await page.waitForTimeout(first ? 2500 : 1200);
     await dismiss(page);
     const status = res ? res.status() : 0;
     const title = await page.title();
-    if (status === 404) console.log(`NOT FOUND ${url}: check the category, tag or section name.`);
+    if (status === 404) { if (first) console.log(`NOT FOUND ${url}: check the category, tag or section name.`); return first ? [] : null; }
     else if (status >= 400 || /just a moment|access denied|attention required|\blog ?in\b|\bsign ?in\b/i.test(title)) {
       console.log(`BLOCKED ${url} (status ${status}, "${title}"): ask the user to log in for you.`);
     }
     // Scroll down so the gallery loads more cards and their thumbnails.
-    for (let i = 0; i < scrolls * 2; i++) { await page.mouse.wheel(0, 450); await page.waitForTimeout(500); }
-    await page.waitForTimeout(1500);
+    for (let i = 0; i < scrolls * 2; i++) { await page.mouse.wheel(0, 450); await page.waitForTimeout(first ? 500 : 300); }
+    await page.waitForTimeout(1000);
     // Entries: links that wrap a picture or video (the gallery cards), with a label and the thumbnail address.
     const isAww = /awwwards\.com/.test(url);
     let entries = await page.$$eval('a', (as) => {
@@ -111,6 +151,12 @@ async function browse(browser, listing) {
       return list;
     });
     if (isAww) entries = entries.filter((e) => /\/sites\//.test(e.href));
+    return entries;
+  }
+}
+
+async function sheets(page, url, name, entries, note) {
+  {
     // A numbered contact sheet of the thumbnails (lazy galleries don't screenshot reliably).
     const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
     const shots = [];
@@ -143,13 +189,9 @@ async function browse(browser, listing) {
       await page.screenshot({ path: file, type: 'jpeg', quality: 72 });
       shots.push(file);
     }
-    const md = [`# ${url}`, '', ...shots.map((s) => `- sheet: ${s}`), '', ...entries.map((e, i) => `${i + 1}. ${e.label || '(no label)'} | ${e.href}`)].join('\n');
+    const md = [`# ${url}`, '', note, '', ...shots.map((s) => `- sheet: ${s}`), '', ...entries.map((e, i) => `${i + 1}. ${e.label || '(no label)'} | ${e.href}`)].join('\n');
     fs.writeFileSync(path.join(out, `${name}.md`), md + '\n');
-    console.log(`${url}: ${entries.length} entries, ${shots.length} sheet(s) -> ${path.join(out, name)}.md`);
-  } catch (e) {
-    console.log(`FAILED ${url}: ${e.message.split('\n')[0]}`);
-  } finally {
-    await page.close();
+    console.log(`${url}: ${entries.length} new (${note}), ${shots.length} sheet(s) -> ${path.join(out, name)}.md`);
   }
 }
 
@@ -174,14 +216,14 @@ async function live(browser, urls) {
 
 (async () => {
   if (!args.length) {
-    console.log(fs.readFileSync(__filename, 'utf8').split('\n').slice(1, 20).map((l) => l.replace(/^\/\/ ?/, '')).join('\n'));
+    console.log(fs.readFileSync(__filename, 'utf8').split('\n').slice(1).filter((l, i, a) => a.slice(0, i + 1).every((x) => x.startsWith('//'))).map((l) => l.replace(/^\/\/ ?/, '')).join('\n'));
     process.exit(1);
   }
   fs.mkdirSync(out, { recursive: true });
   const browser = await launch();
   try {
     if (args[0] === 'live') await live(browser, args.slice(1));
-    else for (const l of args) await browse(browser, l);
+    else for (const l of args.flatMap((a) => (a === 'awards' ? AWARDS : [a]))) await browse(browser, l);
   } finally {
     await browser.close();
   }
