@@ -48,7 +48,8 @@ You are the lead: you research, send the builders, show the user their work and 
    reference) and its motion sheet, the idea in one line, the lead reference link and what the builder changed from
    it, the generated images it would like,
    and the local link. Before you show them, hold each hero against the user's words in FACTS.md: if one goes
-   against them (a feel, a rejected idea, a client who would not be proud of it), say so beside it. If you were given
+   against them (a feel, a rejected idea, a client who would not be proud of it), say so beside it. Hold V4 also against the two tests in its brief (fits, unexpected), and send it back if its
+   first screen reads as a usual website or a plain software screen. If you were given
    a FRONT_DESK thread, also send it a message starting `HERO REVIEW` with the
    same. Then wait for "go", changes or a redo. A redo sends the brief again with the user's words in "Changes".
 
