@@ -22,7 +22,8 @@ Start a build in any thread with:
    variants 1-3.
 2. **Heroes:** four builders at once. Variants 1-3 each go through Awwwards' award winners first (Sites of the Year,
    of the Month, Honors, of the Day), then other Awwwards lists and 21st.dev if needed, pick a lead reference no other
-   variant uses, and design a hero from it with the client's own material. Variant 4 is free of the kit.
+   variant uses, and design a hero from it with the client's own material. Variant 4 is free of the kit and turns
+   what the customer does into a format from another medium (a game, toy, collectible, map, instrument, scene).
 3. **Review:** each hero is shown beside its lead reference. You approve, change or redo.
 4. **Full sites, check, publish** to a private GitHub repo and Vercel.
 
