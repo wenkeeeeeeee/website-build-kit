@@ -21,7 +21,9 @@ You are the lead: you research, send the builders, show the user their work and 
    - Start `python tools/serve.py . <free port>` in the background with the maximum timeout.
    - Start the award pool in the background: `node tools/find-refs.cjs awards --out references/awards` (Sites of the
      Year, Sites of the Month, every Honors category, recent Sites of the Day, as numbered sheets). Every builder goes
-     through it before looking anywhere else. Wait for it to finish before step 3.
+     through it before looking anywhere else, so it must finish before step 3 (about 9 minutes; it runs while you
+     research). Run it as your tool's own background task, so you are told when it exits, and wait on that, or on its
+     last line `DONE`. Never write your own check for it (`pgrep -f` finds the check itself and never says done).
    - **Rework of variants already built:** if the lead points to a repo of existing variants, don't start over.
      Clone it as the project folder (pull if it is already there) and add `docs/`, `content/`, `tools/`, `references/`
      and `ref/` to its `.gitignore`. Research only what is missing (facts from the client's links and the sites' own

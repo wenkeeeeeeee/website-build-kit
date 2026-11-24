@@ -226,5 +226,6 @@ async function live(browser, urls) {
     else for (const l of args.flatMap((a) => (a === 'awards' ? AWARDS : [a]))) await browse(browser, l);
   } finally {
     await browser.close();
+    console.log(`DONE ${out}`);
   }
 })();
