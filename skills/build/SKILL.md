@@ -19,11 +19,9 @@ You are the lead: you research, send the builders, show the user their work and 
      ffmpeg and yt-dlp are installed.
    - Check that gh and Vercel are logged in. If not, tell the user and stop.
    - Start `python tools/serve.py . <free port>` in the background with the maximum timeout.
-   - Start the award pool in the background: `node tools/find-refs.cjs awards --out ../_awards` (Sites of the Year,
-     Sites of the Month, every Honors category, recent Sites of the Day, as numbered sheets). `WebsiteProjects/_awards`
-     is shared by every build on this machine: the first run takes several minutes, later runs only add the newest
-     winners. When it finishes, copy `../_awards` to `references/awards`. Every builder goes through it before looking
-     anywhere else, so it must be there before step 3.
+   - Start the award pool in the background: `node tools/find-refs.cjs awards --out references/awards` (Sites of the
+     Year, Sites of the Month, every Honors category, recent Sites of the Day, as numbered sheets). Every builder goes
+     through it before looking anywhere else. Wait for it to finish before step 3.
    - **Rework of variants already built:** if the lead points to a repo of existing variants, don't start over.
      Clone it as the project folder (pull if it is already there) and add `docs/`, `content/`, `tools/`, `references/`
      and `ref/` to its `.gitignore`. Research only what is missing (facts from the client's links and the sites' own
