@@ -1,6 +1,9 @@
 // Scroll through pages like a visitor and make one image per page, plus a side-by-side of them all.
 //
-//   node contact-sheet.cjs <url> [<url> ...] [--out shots] [--steps 12] [--size 1536x700] [--parallel 4]
+//   node contact-sheet.cjs <url> [<url> ...] [--out shots] [--steps 12] [--size 1536x700] [--parallel 4] [--moving]
+//
+// --moving takes a frame every half screen while the page is still scrolling (never settled), down the whole page, so
+// the sheet shows how each section enters and hands over to the next, not just where it comes to rest.
 //
 // Writes <out>/<slug>.jpg (the page, scrolled through) and <out>/all.jpg (one row per page, for spotting variants
 // that look alike), and prints each page's fonts, canvas and video counts and section list.
@@ -22,6 +25,9 @@ const opt = (name, def) => { const i = args.indexOf(name); return i >= 0 ? args.
 const out = opt('--out', 'shots');
 const steps = Number(opt('--steps', '12'));
 const parallel = Number(opt('--parallel', '4'));
+const movingAt = args.indexOf('--moving');
+const moving = movingAt >= 0;
+if (moving) args.splice(movingAt, 1);
 const PAGE_LIMIT = 90000;
 const [width, height] = opt('--size', '1536x700').split('x').map(Number);
 const urls = args;
@@ -90,12 +96,13 @@ async function capture(browser, url) {
   // Slider sites move on the wheel without the document ever scrolling, so wheel them one screen per step.
   const slider = total <= height + 5;
   const shots = [];
-  for (let i = 0; i < steps; i++) {
+  const count = moving && !slider ? Math.min(40, Math.ceil((total - height) / (height / 2)) + 1) : steps;
+  for (let i = 0; i < count; i++) {
     if (slider && i > 0) {
       await page.mouse.wheel(0, height);
       await page.waitForTimeout(1000);
     }
-    const target = slider ? 0 : Math.round((total - height) * i / Math.max(1, steps - 1));
+    const target = slider ? 0 : Math.round((total - height) * i / Math.max(1, count - 1));
     let y = await page.evaluate(() => scrollY);
     // Wheel, not scrollTo: smooth-scroll libraries ignore scrollTo, and reveals need real scrolling.
     while (y < target - 5) {
@@ -105,7 +112,7 @@ async function capture(browser, url) {
       if (next === y) break;
       y = next;
     }
-    await page.waitForTimeout(800);
+    await page.waitForTimeout(moving ? 120 : 800);
     shots.push(await page.screenshot({ type: 'jpeg', quality: 60 }));
   }
   const info = await page.evaluate(() => {
@@ -154,7 +161,7 @@ async function capture(browser, url) {
     const { shots, info, error } = results[i];
     if (error) { console.log(`\n${url}\n  FAILED: ${error}`); continue; }
     const file = path.join(out, `${slug(url)}.jpg`);
-    await sheet(browser, shots, 3, file, 1800);
+    await sheet(browser, shots, moving ? 4 : 3, file, moving ? 2400 : 1800);
     const blocked = /attention required|just a moment|access denied|forbidden|verify you are/i.test(info.title);
     if (blocked) console.log(`\n${url}\n  BLOCKED: the site served a wall ("${info.title}"), so this sheet shows nothing useful.`);
     else if (info.height <= height + 5) console.log(`\n${url}\n  NOTE: the document did not scroll, so this sheet was wheeled instead. If every frame is the same, a gate or loader is hiding it.`);

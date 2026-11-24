@@ -19,6 +19,12 @@ You are the lead: you research, send the builders, show the user their work and 
      ffmpeg and yt-dlp are installed.
    - Check that gh and Vercel are logged in. If not, tell the user and stop.
    - Start `python tools/serve.py . <free port>` in the background with the maximum timeout.
+   - **Rework of variants already built:** if the lead points to a repo of existing variants, don't start over.
+     Clone it as the project folder (pull if it is already there) and add `docs/`, `content/`, `tools/`, `references/`
+     and `ref/` to its `.gitignore`. Research only what is missing (facts from the client's links and the sites' own
+     text; the material is in each `site/assets/`). Write each variant's lead reference from the lead into
+     `references/claims.md` and copy the starter (step 3), then run only the phases the notes ask for. Publishing is
+     a commit and push to the same repo.
 
 2. **Research (about 10 minutes):** run `KIT/prompts/research.md`. It writes `docs/FACTS.md` (facts, material, tones)
    and prepares `content/`.
@@ -32,11 +38,13 @@ You are the lead: you research, send the builders, show the user their work and 
    you in the browser, then you browse that site for the builder and pass on what it needs.
 
 4. **Show the user the heroes, then wait.** Per variant: its `hero-*.jpg` sheet as an image (the hero beside its lead
-   reference) and its motion sheet, the idea in one line, the lead reference link, the generated images it would like,
+   reference) and its motion sheet, the idea in one line, the lead reference link and what the builder changed from
+   it, the generated images it would like,
    and the local link. If you were given a FRONT_DESK thread, also send it a message starting `HERO REVIEW` with the
    same. Then wait for "go", changes or a redo. A redo sends the brief again with the user's words in "Changes".
 
-5. **Build the rest.** Send the approved variants' briefs again with `Phase: rest` and the user's changes. When the
+5. **Build the rest.** Send the approved variants' briefs again with `Phase: rest` and the user's changes; each
+   builder finds references for its sections and the hand-overs between them, as it did for the hero. When the
    user supplies generated images, pass them to the builder that asked.
 
 6. **Check.** `node tools/check-pages.cjs <every page> --phone --out check`. Look at the shots and fix anything broken

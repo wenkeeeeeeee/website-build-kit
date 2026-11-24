@@ -68,7 +68,8 @@ async function browse(browser, listing) {
     await dismiss(page);
     const status = res ? res.status() : 0;
     const title = await page.title();
-    if (status >= 400 || /just a moment|access denied|attention required|log in|sign in/i.test(title)) {
+    if (status === 404) console.log(`NOT FOUND ${url}: check the category, tag or section name.`);
+    else if (status >= 400 || /just a moment|access denied|attention required|\blog ?in\b|\bsign ?in\b/i.test(title)) {
       console.log(`BLOCKED ${url} (status ${status}, "${title}"): ask the user to log in for you.`);
     }
     // Scroll down so the gallery loads more cards and their thumbnails.

@@ -1,7 +1,7 @@
 # Rules
 
-The few things every variant must get right. Everything else (idea, layout, type, colour, medium, motion) is the
-builder's own, learned from its references. Variant 4 follows only the rules marked **V4**.
+The few things every variant must get right. Everything else (layout, type, colour, medium, motion) comes from the
+builder's references, adapted to the client. Variant 4 follows only the rules marked **V4**.
 
 1. **Invent nothing. (V4)** No prices, reviews, claims, names or numbers the client hasn't published. Unknowns show as
    `[client to confirm]`.
@@ -14,8 +14,9 @@ builder's own, learned from its references. Variant 4 follows only the rules mar
 
 ## Also
 - **Motion:** creative, smooth and interactive. It runs smoothly both ways on scroll and never blocks the page.
-- **References are for learning, not copying:** never their images, logo, words or colours. If your page could pass
-  for the reference with the logo hidden, change it.
+- **References are adapted closely, never copied.** The design comes from the references: the lead reference's
+  layout, proportions, type scale, staging and motion carry over, and the client's material, words and brand fill it.
+  Never take a reference's images, logo, words or code.
 - **Generated media needs the user.** Don't generate images or video yourself. List what you want in your report (what
   it shows, where it goes, a ready prompt) and use a placeholder. The user makes simple images in Gemini; Higgsfield
   costs credits and only runs with the user's approval. Generated media is never passed off as the client's work,
