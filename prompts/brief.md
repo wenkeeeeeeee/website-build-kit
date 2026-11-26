@@ -78,9 +78,10 @@ as modern and alive as the lead? No console errors; it works at phone width.
 reference (URL, and the award list it came from, or why nothing in the pool fit), what you changed from it and why, and what you took from each supporting one; the `hero-*.jpg` and
 `motion-*.jpg` paths from step 3; generated images or video you'd like (what, where, a ready prompt), or "none".
 
-## Rest phase (about 45 minutes)
+## Rest phase (about 50 minutes)
 The approved hero stays as it is, apart from the user's changes above. Everything below it, and the pages this
-business really needs, comes from references too, found and adapted the same way as the hero.
+business really needs, starts from references found the same way as the hero's, then takes your own layout, motion
+and interaction ideas (step 5).
 
 ### 1. References for the rest (about 15 minutes)
 1. List the sections and pages this business needs, and what each must show or do.
@@ -96,16 +97,19 @@ business really needs, comes from references too, found and adapted the same way
 4. Pick one reference for each section and one for how sections hand over to each other. Add one line to
    `{{PROJECT}}/references/claims.md`: `V{{N}} rest | <section>: <url> | <section>: <url> | ... | hand-over: <url>`. A site
    another variant already claimed is off-limits.
-5. **Brainstorm the motion (about 5 minutes).** The references give each section its layout; the scrolling animation
-   and interaction through the rest of the site are yours to invent too, because most reference sections barely move.
-   For each section write one idea for how it moves as the visitor scrolls and one thing the visitor can do with it
-   (drag, hover, tap, scrub), built from the client's own material, its photos and video first. Go past fades and
-   slide-ups and past what the references do: the scroll should feel like part of the client's world. Corporate and
-   other formal tones stay calm and purposeful, motion that shows information rather than play.
+5. **Brainstorm the layout and motion together (about 10 minutes).** The references are a starting point, not the
+   limit: most reference sections are plain and barely move, so the layout, scrolling animation and interaction through
+   the rest of the site are yours to invent too. For each section write its layout (the reference's, reshaped, or your
+   own when that serves the section better), how it moves as the visitor scrolls, and one thing the visitor can do
+   with it (drag, hover, tap, scrub), all three designed as one idea and built from the client's own material, its
+   photos and video first. Go past stacked rows, fades and slide-ups and past what the references do: the scroll
+   should feel like part of the client's world. Corporate and other formal tones stay calm and purposeful, motion that
+   shows information rather than play.
 
 ### 2. Build the rest
-Adapt each section's reference closely, as you did the hero: its layout, proportions and type scale, filled with the
-client's material and words, and moving with your ideas from step 5 (or the reference's own motion where it's stronger). The spaces between sections follow the hand-over reference: no section simply
+Build each section from your step 5 idea: its layout and motion, filled with the client's material and words. Where
+the idea keeps the reference's layout, adapt it closely, as you did the hero (proportions, type scale, and its motion
+where that's stronger than yours). The spaces between sections follow the hand-over reference: no section simply
 stops where the next one starts. The whole site keeps the hero's type, colours and feel.
 
 The working plumbing (basket ending in a filled-in WhatsApp message, catalogue, product page, quote form) is in
@@ -114,12 +118,12 @@ visible. Every control (dropdown, date picker, stepper) is built in the site's d
 
 ### 3. Look at it beside the references
 `node {{KIT}}/tools/web/contact-sheet.cjs <your home page> <your section references> --moving --out {{VARIANT}}/ref/rest`
-and look at `all.jpg`: fix any section that drifts from its reference, sits still where its reference moves, or lost
-its motion idea. Then
+and look at `all.jpg`: fix any section that lost its step 5 idea, sits still where its reference moves, or fell back
+to a plain stack of rows. Then
 `node {{KIT}}/tools/web/check-pages.cjs <each page> --phone --header <header height> --out {{VARIANT}}/ref` and fix what
 looks wrong.
 
-**Report** (under 150 words): the URL, the pages, each section with its reference and its motion idea, the `all.jpg` path, anything
+**Report** (under 150 words): the URL, the pages, each section with its reference and its layout and motion idea, the `all.jpg` path, anything
 `[client to confirm]`.
 
 ## Working rules
