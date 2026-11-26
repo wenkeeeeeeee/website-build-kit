@@ -1,9 +1,9 @@
 # Colour: mood pair and accent
 
-A palette move from current brand posts on Instagram, tried on finished sites. **Only V3 and V4 (the free variant)
-explore it;** V1 and V2 build their palette the usual way ("Look and category" in `taste.md`). With another variant
-count, the last tone-led variant and the free variant explore it. Use it on V3 or V4 where it suits;
-the business, its brand colours, the tone and the character words always win. It's a way of building a palette, not a
+A palette move from current brand posts on Instagram, tried on finished sites. **It's optional, and the builder
+decides.** Any variant, V4 included, may use it when the client's products, brand or design suit it well; otherwise the
+palette comes from the references as usual. Never use it just because it's here;
+the business, its brand colours, the tone and the references always win. It's a way of building a palette, not a
 list to pick from: every palette is worked out fresh from the client's own logo, photos, products and place.
 
 ## The move
@@ -25,12 +25,12 @@ The best combination for a client is usually not one listed here. Explore every 
    materials and marks (timber and plaster, drawings and redline, a stage light, a fruit). The mood family comes from
    there.
 2. **Look for fresh combinations:** search current brand-palette posts on Instagram, Pinterest, Behance and Dribbble
-   for the category and the character words ("<category> brand colour palette", "<character word> palette accent"),
+   for the category and the tone ("<category> brand colour palette", "<tone> palette accent"),
    and note pairings that clash well. Take the pairing, never a brand's look.
 3. **Make 3-5 candidates** that differ in family and accent, not shades of one idea. Try each on the real hero material:
    a swatch strip and a quick frame of the hero with the accent in its planned places.
-4. **Pick the one that fits** the business, tone and character best and still surprises. Write in `PITCH.md` why it
-   fits and which candidates lost. If none fits, use the usual palette.
+4. **Pick the one that fits** the business and tone best and still surprises. Say in your report why it fits and
+   which candidates lost. If none fits, use the palette from your references.
 
 ## How loud, by tone
 - **Playful:** the accent takes 20-30% of a screen: giant headline words, whole panels and tiles, stickers, hand-drawn
@@ -43,7 +43,7 @@ The best combination for a client is usually not one listed here. Explore every 
   precise, taken from the trade (dimension lines, a revision cloud, a progress bar, a route line). Light, clean grounds
   stay light; the project photos stay the heroes. The surprise is the less obvious working colour (coral rather than
   safety orange, cobalt rather than builder's yellow).
-- The character words place each variant inside that range.
+- The variant's own tone places it inside that range.
 - Plan where the accent lands on the first screen. If it only arrives after the first scroll, the hero reads mild.
 
 ## Guardrails
@@ -54,7 +54,7 @@ The best combination for a client is usually not one listed here. Explore every 
 - Red with gold reads festive for Chinese clients and red with green reads as Christmas: avoid them unless the client is
   festive. Near-black with one acid-green or vermilion accent, and cream with terracotta, read as AI defaults unless
   they're the client's own colours.
-- V1 and V2 never use the move; V3 and V4 may skip it when the business or tone doesn't suit it.
+- No variant has to use the move. Skip it when the business, tone or references don't suit it.
 
 ## Examples of the move (never copy one)
 A small sample of the kind of contrast and saturation that works, so the move is clear. Hexes are illustrations, not a

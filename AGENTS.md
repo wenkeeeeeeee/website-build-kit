@@ -11,6 +11,7 @@ These rules override any skill that says it must be used, including a superpower
 - `prompts/brief-free.md`: the brief for variant 4, free of the kit: the form of the page is the idea, from any
   medium, and must pass two tests (fits what the client does; not a usual website); made assets allowed.
 - `prompts/rules.md`: the few musts every variant follows.
+- `prompts/office/colour.md`: an optional palette move (mood pair plus accent); each builder decides whether it fits.
 - `prompts/methods.md`: technical lookup (layout, media, bugs, publishing, sourcing).
 - `starter/`: working plumbing (basket with WhatsApp/marketplace checkout, catalogue, product page, quote form,
   stores). Copy it into a project, swap the data, redesign everything visible.
