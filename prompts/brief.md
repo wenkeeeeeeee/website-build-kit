@@ -96,10 +96,16 @@ business really needs, comes from references too, found and adapted the same way
 4. Pick one reference for each section and one for how sections hand over to each other. Add one line to
    `{{PROJECT}}/references/claims.md`: `V{{N}} rest | <section>: <url> | <section>: <url> | ... | hand-over: <url>`. A site
    another variant already claimed is off-limits.
+5. **Brainstorm the motion (about 5 minutes).** The references give each section its layout; the scrolling animation
+   and interaction through the rest of the site are yours to invent too, because most reference sections barely move.
+   For each section write one idea for how it moves as the visitor scrolls and one thing the visitor can do with it
+   (drag, hover, tap, scrub), built from the client's own material, its photos and video first. Go past fades and
+   slide-ups and past what the references do: the scroll should feel like part of the client's world. Corporate and
+   other formal tones stay calm and purposeful, motion that shows information rather than play.
 
 ### 2. Build the rest
-Adapt each section's reference closely, as you did the hero: its layout, proportions, type scale and motion, filled
-with the client's material and words. The spaces between sections follow the hand-over reference: no section simply
+Adapt each section's reference closely, as you did the hero: its layout, proportions and type scale, filled with the
+client's material and words, and moving with your ideas from step 5 (or the reference's own motion where it's stronger). The spaces between sections follow the hand-over reference: no section simply
 stops where the next one starts. The whole site keeps the hero's type, colours and feel.
 
 The working plumbing (basket ending in a filled-in WhatsApp message, catalogue, product page, quote form) is in
@@ -108,11 +114,12 @@ visible. Every control (dropdown, date picker, stepper) is built in the site's d
 
 ### 3. Look at it beside the references
 `node {{KIT}}/tools/web/contact-sheet.cjs <your home page> <your section references> --moving --out {{VARIANT}}/ref/rest`
-and look at `all.jpg`: fix any section that drifts from its reference or sits still where its reference moves. Then
+and look at `all.jpg`: fix any section that drifts from its reference, sits still where its reference moves, or lost
+its motion idea. Then
 `node {{KIT}}/tools/web/check-pages.cjs <each page> --phone --header <header height> --out {{VARIANT}}/ref` and fix what
 looks wrong.
 
-**Report** (under 120 words): the URL, the pages, each section with its reference, the `all.jpg` path, anything
+**Report** (under 150 words): the URL, the pages, each section with its reference and its motion idea, the `all.jpg` path, anything
 `[client to confirm]`.
 
 ## Working rules
