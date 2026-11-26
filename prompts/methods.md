@@ -34,6 +34,11 @@ WebsiteProjects/<Client>/
   (CC), Poly Haven, ambientCG; Tripo or Meshy free tiers for image-to-3D.
 - **Any WebGL:** load `gl-guard.js` first, a still behind the canvas for missing WebGL and reduced motion, pause off
   screen, one canvas per page where you can.
+- **Travelling thread:** one fixed full-page layer behind the content (a WebGL canvas for 3D pieces, or plain fixed
+  elements). Each section holds small empty placeholders, its stations. On every frame each piece reads the rectangles of
+  its current and next station and moves between them by that section's scroll progress (GSAP ScrollTrigger), changing
+  shape or role at each station. Measure again on resize. On a phone use fewer stations; with reduced motion the pieces
+  sit at their stations without travelling. Keep text readable over the layer.
 - **Weight:** about 1-3.5 MB of images and under 4 MB of video on a home page. Over that, lazy-load before cutting
   quality.
 

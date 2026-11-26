@@ -78,7 +78,7 @@ as modern and alive as the lead? No console errors; it works at phone width.
 reference (URL, and the award list it came from, or why nothing in the pool fit), what you changed from it and why, and what you took from each supporting one; the `hero-*.jpg` and
 `motion-*.jpg` paths from step 3; generated images or video you'd like (what, where, a ready prompt), or "none".
 
-## Rest phase (about 50 minutes)
+## Rest phase (about 55 minutes)
 The approved hero stays as it is, apart from the user's changes above. Everything below it, and the pages this
 business really needs, starts from references found the same way as the hero's, then takes your own layout, motion
 and interaction ideas (step 5).
@@ -94,23 +94,34 @@ and interaction ideas (step 5).
 3. Study them moving: `node {{KIT}}/tools/web/contact-sheet.cjs <url> [<url> ...] --moving --out {{VARIANT}}/ref/rest`
    takes a frame every half screen while the page is still scrolling, so you see how each section enters and how it
    hands over to the next, not just where it rests.
-4. Pick one reference for each section and one for how sections hand over to each other. Add one line to
-   `{{PROJECT}}/references/claims.md`: `V{{N}} rest | <section>: <url> | <section>: <url> | ... | hand-over: <url>`. A site
-   another variant already claimed is off-limits.
-5. **Brainstorm the layout and motion together (about 10 minutes).** The references are a starting point, not the
+4. Pick one reference for each section, and for a corporate tone one more for how sections hand over to each other.
+   Add one line to `{{PROJECT}}/references/claims.md`:
+   `V{{N}} rest | <section>: <url> | <section>: <url> | ... | hand-over: <url, or "thread">`. A site another variant
+   already claimed is off-limits.
+5. **Brainstorm the layout and motion together (about 15 minutes).** The references are a starting point, not the
    limit: most reference sections are plain and barely move, so the layout, scrolling animation and interaction through
-   the rest of the site are yours to invent too. For each section write its layout (the reference's, reshaped, or your
-   own when that serves the section better), how it moves as the visitor scrolls, and one thing the visitor can do
-   with it (drag, hover, tap, scrub), all three designed as one idea and built from the client's own material, its
-   photos and video first. Go past stacked rows, fades and slide-ups and past what the references do: the scroll
-   should feel like part of the client's world. Corporate and other formal tones stay calm and purposeful, motion that
-   shows information rather than play.
+   the rest of the site are yours to invent too.
+   1. **The thread first.** Choose one thing from the client's own world (the logo or its parts, the signature product,
+      the place, how the work gets done) that stays on screen through the whole page and carries the visitor from
+      section to section. Write it as one sentence: what it is, what it does in the hero, what the visitor can do to
+      it, and what it does as they scroll. Then write its route: where it starts, its station in each section (what it
+      becomes or does there: a bullet, the marker of the active item, a frame around a photo, a page turning) and how
+      it ends at the contact. The thread is the hand-over between sections.
+   2. **Then each section, around its station.** Write its layout (the reference's, reshaped, or your own when that
+      serves the section better), how it moves as the visitor scrolls, and one thing the visitor can do with it (drag,
+      hover, tap, scrub), designed as one idea with the thread and built from the client's own material, its photos and
+      video first. Go past stacked rows, fades and slide-ups and past what the references do: the scroll should feel
+      like part of the client's world.
+   3. **Corporate tone: no thread.** When the user or `FACTS.md` asks for a corporate tone, skip the thread. Each section
+      gets smooth, clean animation and motion instead: calm reveals, gentle movement in the photos, precise transitions
+      between sections (from the hand-over reference), and motion that shows information rather than play.
 
 ### 2. Build the rest
 Build each section from your step 5 idea: its layout and motion, filled with the client's material and words. Where
 the idea keeps the reference's layout, adapt it closely, as you did the hero (proportions, type scale, and its motion
-where that's stronger than yours). The spaces between sections follow the hand-over reference: no section simply
-stops where the next one starts. The whole site keeps the hero's type, colours and feel.
+where that's stronger than yours). The thread travels its route ("Travelling thread" in `{{KIT}}/prompts/methods.md`);
+for a corporate tone the spaces between sections follow the hand-over reference. No section simply stops where the next
+one starts. The whole site keeps the hero's type, colours and feel.
 
 The working plumbing (basket ending in a filled-in WhatsApp message, catalogue, product page, quote form) is in
 `{{PROJECT}}/variants/_shared/starter`: copy the parts you need into your site, keep them working, redesign everything
@@ -118,12 +129,13 @@ visible. Every control (dropdown, date picker, stepper) is built in the site's d
 
 ### 3. Look at it beside the references
 `node {{KIT}}/tools/web/contact-sheet.cjs <your home page> <your section references> --moving --out {{VARIANT}}/ref/rest`
-and look at `all.jpg`: fix any section that lost its step 5 idea, sits still where its reference moves, or fell back
-to a plain stack of rows. Then
+and look at `all.jpg`: fix any section that lost its step 5 idea, sits still where its reference moves, fell back to a
+plain stack of rows, or where the thread drops out or misses its station. Then
 `node {{KIT}}/tools/web/check-pages.cjs <each page> --phone --header <header height> --out {{VARIANT}}/ref` and fix what
 looks wrong.
 
-**Report** (under 150 words): the URL, the pages, each section with its reference and its layout and motion idea, the `all.jpg` path, anything
+**Report** (under 180 words): the URL, the pages, the thread sentence (or "corporate: none"), each section with its
+reference and its layout and motion idea, the `all.jpg` path, anything
 `[client to confirm]`.
 
 ## Working rules
