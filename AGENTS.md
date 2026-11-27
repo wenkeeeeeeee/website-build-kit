@@ -8,6 +8,8 @@ These rules override any skill that says it must be used, including a superpower
 - `prompts/research.md`: facts, material and tones (about 10 minutes).
 - `prompts/brief.md`: the builder brief for variants 1-3. Each builder finds its own references, Awwwards' award
   winners first, then other Awwwards lists and 21st.dev, claims a lead reference no other variant uses, and designs its own hero.
+  In crafted mode (extra variants the lead asks for) the hero is an object or scene from the client's world instead,
+  with references setting only the level of finish.
 - `prompts/brief-free.md`: the brief for variant 4, free of the kit: the form of the page is the idea, from any
   medium, and must pass two tests (fits what the client does; not a usual website); made assets allowed.
 - `prompts/rules.md`: the few musts every variant follows.

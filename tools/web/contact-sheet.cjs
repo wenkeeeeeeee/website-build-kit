@@ -1,9 +1,11 @@
 // Scroll through pages like a visitor and make one image per page, plus a side-by-side of them all.
 //
-//   node contact-sheet.cjs <url> [<url> ...] [--out shots] [--steps 12] [--size 1536x700] [--parallel 4] [--moving]
+//   node contact-sheet.cjs <url> [<url> ...] [--out shots] [--steps 12] [--size 1536x700] [--parallel 4] [--moving] [--phone]
 //
 // --moving takes a frame every half screen while the page is still scrolling (never settled), down the whole page, so
-// the sheet shows how each section enters and hands over to the next, not just where it comes to rest.
+// the sheet shows how each section enters and hands over to the next, not just where it comes to rest. The frames are
+// the screen as a visitor sees it, so pinned and sticky sections show right (a full-page screenshot shows them wrong).
+// --phone uses a touch phone at 390x844 instead of --size.
 //
 // Writes <out>/<slug>.jpg (the page, scrolled through) and <out>/all.jpg (one row per page, for spotting variants
 // that look alike), and prints each page's fonts, canvas and video counts and section list.
@@ -28,13 +30,19 @@ const parallel = Number(opt('--parallel', '4'));
 const movingAt = args.indexOf('--moving');
 const moving = movingAt >= 0;
 if (moving) args.splice(movingAt, 1);
+const phoneAt = args.indexOf('--phone');
+const phone = phoneAt >= 0;
+if (phone) args.splice(phoneAt, 1);
 const PAGE_LIMIT = 90000;
-const [width, height] = opt('--size', '1536x700').split('x').map(Number);
+const size = opt('--size', '1536x700');
+const [width, height] = phone ? [390, 844] : size.split('x').map(Number);
 const urls = args;
 if (!urls.length) { console.error('Usage: node contact-sheet.cjs <url> [<url> ...] [--out shots] [--steps 12]'); process.exit(1); }
 fs.mkdirSync(out, { recursive: true });
 
-const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+const USER_AGENT = phone
+  ? 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36'
+  : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
 const slug = (u) => u.replace(/^https?:\/\//, '').replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '').slice(-60);
 const asImg = (buf) => `<img src="data:image/jpeg;base64,${buf.toString('base64')}">`;
 
@@ -74,7 +82,7 @@ async function dismissGates(page) {
 }
 
 async function capture(browser, url) {
-  const page = await browser.newPage({ viewport: { width, height }, userAgent: USER_AGENT });
+  const page = await browser.newPage({ viewport: { width, height }, userAgent: USER_AGENT, isMobile: phone, hasTouch: phone });
   // Gallery pages keep loading forever, and Behance can answer 403 and still load, so don't wait on either.
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 }).catch((e) => { if (/net::ERR/.test(e.message)) throw e; });
   await page.bringToFront();
@@ -161,7 +169,7 @@ async function capture(browser, url) {
     const { shots, info, error } = results[i];
     if (error) { console.log(`\n${url}\n  FAILED: ${error}`); continue; }
     const file = path.join(out, `${slug(url)}.jpg`);
-    await sheet(browser, shots, moving ? 4 : 3, file, moving ? 2400 : 1800);
+    await sheet(browser, shots, phone ? 8 : moving ? 4 : 3, file, moving || phone ? 2400 : 1800);
     const blocked = /attention required|just a moment|access denied|forbidden|verify you are/i.test(info.title);
     if (blocked) console.log(`\n${url}\n  BLOCKED: the site served a wall ("${info.title}"), so this sheet shows nothing useful.`);
     else if (info.height <= height + 5) console.log(`\n${url}\n  NOTE: the document did not scroll, so this sheet was wheeled instead. If every frame is the same, a gate or loader is hiding it.`);

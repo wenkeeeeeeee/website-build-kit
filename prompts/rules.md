@@ -10,14 +10,16 @@ builder's references, adapted to the client. Variant 4 follows only the rules ma
 3. **The client's real material leads.** Their own photos, videos, products, people and places, prepared properly:
    cropped clean, one grade across the site, sharp, cut out only where the edge is clean. Anything added (3D, stock,
    shaders, illustration) must look as good as a good photo, or leave it out.
-4. **Works on a phone. (V4)** No sideways scroll, nothing broken, overlapping or hidden under the header.
+4. **Works on a phone. (V4)** No sideways scroll, nothing broken, overlapping or hidden under the header. Tap targets
+   at least 40px.
 
 ## Also
 - **Motion:** creative, smooth and interactive. It runs smoothly both ways on scroll and never blocks the page.
 - **References are adapted closely, never copied.** The design comes from the references: the lead reference's
   layout, proportions, type scale, staging and motion carry over, and the client's material, words and brand fill it.
   Never take a reference's images, logo, words or code. Below the hero, builders may also invent their own layout,
-  motion and interaction for each section (the rest phase of `brief.md`).
+  motion and interaction for each section (the rest phase of `brief.md`). A crafted variant's hero is the builder's own
+  object or scene from the client's world; its references set only the level of finish.
 - **Colour, optional (any variant, V4 included):** `prompts/office/colour.md` is a palette move (a mood pair of one
   colour family plus one strong accent from the other side of the wheel). Read it and decide for yourself: use it when
   the client's products, brand or design fit it well, and skip it otherwise. Nobody assigns it.

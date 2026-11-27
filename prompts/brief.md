@@ -5,7 +5,7 @@ Fill in the {{fields}} and send one copy per variant, all in one message so they
 ---
 
 You are designing and building variant {{N}} of a website for {{CLIENT}}, a real business. Other agents build other
-variants at the same time: stay in your own folder. **Phase: {{hero | rest}}.**
+variants at the same time: stay in your own folder. **Phase: {{hero | rest}}. Hero mode: {{reference | crafted}}.**
 
 Your job is a site the owner approves on sight: modern, creative, and the best way to show what this business offers.
 You find your own references on Awwwards and 21st.dev and adapt them closely: the design comes from the references,
@@ -16,8 +16,11 @@ the content from the client. The only rules are `{{KIT}}/prompts/rules.md` (read
 - Your tone: {{the V{{N}} line from "Tones" in FACTS.md}}.
 - What the user said before: {{from FACTS.md, in full and word for word, or "none"}}.
 - Changes from the user: {{their words for a repeat round or the rest phase; otherwise "none"}}.
+- Hero ideas already used (crafted mode): {{every hero idea and lead layout in claims.md, or "none"}}.
 
 ## Hero phase (about 45 minutes)
+**Reference mode** (the usual one) follows steps 1-3. **Crafted mode** follows "Hero mode: crafted" below instead of
+steps 1 and 2, then step 3.
 
 ### 1. Find your references (about 20 minutes)
 This step decides everything. Take it seriously.
@@ -77,6 +80,31 @@ as modern and alive as the lead? No console errors; it works at phone width.
 **Report** (under 150 words): the hero URL; the customer line; the three candidates and which you built; the lead
 reference (URL, and the award list it came from, or why nothing in the pool fit), what you changed from it and why, and what you took from each supporting one; the `hero-*.jpg` and
 `motion-*.jpg` paths from step 3; generated images or video you'd like (what, where, a ready prompt), or "none".
+Crafted mode reports the ideas and the pick, the thread sentence and route, and each quality reference and what it
+set, in place of the candidates and the lead.
+
+### Hero mode: crafted
+The hero is an object or scene made from the client's own world, not a reference rebuilt. References set the level of
+finish, never the layout.
+1. **Ideas (about 10 minutes).** Know your material and write the customer line (step 1, parts 1 and 2). Then write
+   5-6 hero objects or scenes from the client's world: its materials, tools, workplace, signature product, awards,
+   places. For each, one line: what the visitor sees, what they can do to it, and what they understand about the
+   business within 5 seconds.
+2. **Cut and pick.** Drop any that is a photo and a headline in a new arrangement, or that repeats a hero idea already
+   used (above, and `{{PROJECT}}/references/claims.md`). Pick the most creative one that still plainly reads as this
+   business, and claim it: `V{{N}} | crafted | <the idea in one line>`.
+3. **The level (about 10 minutes).** Study 3-5 heroes live with `hero-frames.cjs --motion`: from the award pool, then
+   `aw:3d`, `aw:webgl`, `aw:experimental`, and Codrops demos for technique. Note how they load in, how they answer the
+   cursor, and how finished their materials and light are. Yours must reach that level in its own layout.
+4. **The thread starts here.** The hero object works best when it is also the thread (rest phase, step 5): write its
+   sentence and route now, so the hero is built to travel.
+5. **Build (about 25 minutes).** One strong subject, with the client's name or wordmark built into it rather than set
+   beside it; a real cursor or drag interaction, with a touch version; a load-in. Use the client's photos or renders as
+   textures; a 3D product built in code only if it looks as good as a photo.
+6. **Needs a generated object?** Build a rough version first, put the idea and a ready prompt in your report, and wait
+   (rules.md).
+
+In step 3, set your quality references beside your hero instead of a lead: the same finish and life, in your own layout.
 
 ## Rest phase (about 55 minutes)
 The approved hero stays as it is, apart from the user's changes above. Everything below it, and the pages this
@@ -106,12 +134,16 @@ and interaction ideas (step 5).
       section to section. Write it as one sentence: what it is, what it does in the hero, what the visitor can do to
       it, and what it does as they scroll. Then write its route: where it starts, its station in each section (what it
       becomes or does there: a bullet, the marker of the active item, a frame around a photo, a page turning) and how
-      it ends at the contact. The thread is the hand-over between sections.
+      it ends at the contact. The thread is the hand-over between sections. It is best when it collects what the
+      visitor chose on the way and hands that to the contact or brief form. In crafted mode the thread is your hero
+      object, on the route you wrote in the hero phase.
    2. **Then each section, around its station.** Write its layout (the reference's, reshaped, or your own when that
       serves the section better), how it moves as the visitor scrolls, and one thing the visitor can do with it (drag,
       hover, tap, scrub), designed as one idea with the thread and built from the client's own material, its photos and
       video first. Go past stacked rows, fades and slide-ups and past what the references do: the scroll should feel
-      like part of the client's world.
+      like part of the client's world. At least 2-3 sections are the visitor's to control (drag, scrub, hover), each
+      working by touch too. Photos show whole at their own ratio, never cropped into thin strips. No plain stacks of 3D
+      slabs or blocks.
    3. **Corporate tone: no thread.** When the user or `FACTS.md` asks for a corporate tone, skip the thread. Each section
       gets smooth, clean animation and motion instead: calm reveals, gentle movement in the photos, precise transitions
       between sections (from the hand-over reference), and motion that shows information rather than play.
@@ -129,8 +161,10 @@ visible. Every control (dropdown, date picker, stepper) is built in the site's d
 
 ### 3. Look at it beside the references
 `node {{KIT}}/tools/web/contact-sheet.cjs <your home page> <your section references> --moving --out {{VARIANT}}/ref/rest`
-and look at `all.jpg`: fix any section that lost its step 5 idea, sits still where its reference moves, fell back to a
-plain stack of rows, or where the thread drops out or misses its station. Then
+and look at `all.jpg`, then run your home page again with `--moving --phone`. These frames are the screen while
+scrolling, the only place pinned sections show right (full-page shots show them wrong). Fix any section that lost its
+step 5 idea, sits still where its reference moves, fell back to a plain stack of rows, or where the thread drops out,
+misses its station or passes over text. Then
 `node {{KIT}}/tools/web/check-pages.cjs <each page> --phone --header <header height> --out {{VARIANT}}/ref` and fix what
 looks wrong.
 

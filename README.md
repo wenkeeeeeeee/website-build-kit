@@ -24,6 +24,8 @@ Start a build in any thread with:
    of the Month, Honors, of the Day), then other Awwwards lists and 21st.dev if needed, pick a lead reference no other
    variant uses, and design a hero from it with the client's own material. Variant 4 is free of the kit: its idea is
    the form of the page, from any medium, and it must both fit what the client does and not be a usual website.
+   Optional crafted variants (`Variants: 3 + 1 free + 2 crafted`) build their hero as an object or scene from the
+   client's world, which then travels the whole page.
 3. **Review:** each hero is shown beside its lead reference. You approve, change or redo.
 4. **Full sites, check, publish** to a private GitHub repo and Vercel.
 

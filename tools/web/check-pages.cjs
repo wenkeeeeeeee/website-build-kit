@@ -137,7 +137,7 @@ if (!urls.length) {
         // Tap targets on phones; links inside running text are fine.
         const small = !isPhone ? [] : [...document.querySelectorAll('a, button, select, input:not([type=hidden])')].filter((el) => {
           const r = el.getBoundingClientRect();
-          return r.width && r.height && r.height < 32 && r.bottom + scrollY > 0 && shown(el) && !(getComputedStyle(el).display === 'inline' && el.closest('p'));
+          return r.width && r.height && r.height < 40 && r.bottom + scrollY > 0 && shown(el) && !(getComputedStyle(el).display === 'inline' && el.closest('p'));
         }).map(label);
         // Header links on two rows (or one link's words on two lines) at desktop sizes.
         const navWraps = [];
@@ -214,7 +214,7 @@ if (!urls.length) {
           .map((e) => `console/network: ${e}`),
         ...(isPhone ? [] : report.tall.map((t) => `taller than one screen: ${t}`)),
         ...report.collisions.slice(0, 5).map((c) => `collision on the first screen: ${c}`),
-        ...(report.small.length ? [`${report.small.length} tap target(s) under 32px tall, e.g. ${report.small.slice(0, 3).join(' | ')}`] : []),
+        ...(report.small.length ? [`${report.small.length} tap target(s) under 40px tall, e.g. ${report.small.slice(0, 3).join(' | ')}`] : []),
         ...(footerGap ? [`page shows ${footerGap}px above the footer when scrolled to the end (white strip?)`] : []),
         ...(report.overflowPx > 1 ? [`horizontal overflow: page is ${report.overflowPx}px wider than the window` + (report.wide.length ? `; sticking out: ${report.wide.join(', ')}` : '')] : []),
         ...[...new Set(report.navWraps)].slice(0, 3).map((n) => `header nav wraps: ${n}`),

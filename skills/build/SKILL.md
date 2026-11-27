@@ -1,7 +1,7 @@
 ---
 name: build
 description: Build a client's website variants end to end (short research, 3 reference-led variants plus 1 free variant, hero review, full sites, publish to Vercel). Use when the user gives a client name with links or notes and asks to build websites for them, or types /website-build-kit:build.
-argument-hint: "Client: <name> Links: <links> References: <optional> Variants: 3 + 1 free Notes: <optional>"
+argument-hint: "Client: <name> Links: <links> References: <optional> Variants: 3 + 1 free [+ 2 crafted] Notes: <optional>"
 ---
 
 # Build websites for a client
@@ -36,17 +36,20 @@ You are the lead: you research, send the builders, show the user their work and 
 2. **Research (about 10 minutes):** run `KIT/prompts/research.md`. It writes `docs/FACTS.md` (facts, material, tones)
    and prepares `content/`.
 
-3. **Heroes.** Send four builders in one message, so they run at the same time:
-   - V1-V3: `KIT/prompts/brief.md`, each with its own tone from FACTS.md, `Phase: hero`.
+3. **Heroes.** Send every builder in one message, so they run at the same time:
+   - V1-V3: `KIT/prompts/brief.md`, each with its own tone from FACTS.md, `Phase: hero`, `Hero mode: reference`.
    - V4: `KIT/prompts/brief-free.md`, `Phase: hero`.
-   Folders `variants/01-<name>` to `04-<name>` (short names, changeable later). While they work, copy `KIT/starter`
+   - Crafted variants (V5 on, only when the lead asks for them): `KIT/prompts/brief.md` with its tone, `Phase: hero`,
+     `Hero mode: crafted`, and under "Hero ideas already used" every hero idea and lead layout in
+     `references/claims.md`. Before any Higgsfield spend, ask the user.
+   Folders `variants/01-<name>` onwards (short names, changeable later). While they work, copy `KIT/starter`
    into `variants/_shared/starter` with the client's data (`data/`), for the rest phase.
    If a builder says a site blocked it or asked for a login, tell the user which site and wait: the user logs in for
    you in the browser, then you browse that site for the builder and pass on what it needs.
 
 4. **Show the user the heroes, then wait.** Per variant: its `hero-*.jpg` sheet as an image (the hero beside its lead
-   reference) and its motion sheet, the idea in one line, the lead reference link and what the builder changed from
-   it, the generated images it would like,
+   reference, or a crafted hero beside its quality references) and its motion sheet, the idea in one line, the lead
+   reference link and what the builder changed from it, the generated images it would like,
    and the local link. Before you show them, hold each hero against the user's words in FACTS.md: if one goes
    against them (a feel, a rejected idea, a client who would not be proud of it), say so beside it. Hold V4 also against the two tests in its brief (fits, unexpected), and send it back if its
    first screen reads as a usual website or a plain software screen. If you were given
