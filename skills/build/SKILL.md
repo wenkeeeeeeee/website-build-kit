@@ -1,14 +1,14 @@
 ---
 name: build
-description: Build a client's website variants end to end (short research, 3 variants with crafted heroes plus 1 free variant, hero review, full sites, publish to Vercel). Use when the user gives a client name with links or notes and asks to build websites for them, or types /website-build-kit:build.
-argument-hint: "Client: <name> Links: <links> References: <optional> Variants: 3 + 1 free Notes: <optional>"
+description: Build a client's website variants end to end (short research, 4 variants: one hero from the best-fitting reference and three crafted from the client's world, hero review, full sites, publish to Vercel). Use when the user gives a client name with links or notes and asks to build websites for them, or types /website-build-kit:build.
+argument-hint: "Client: <name> Links: <links> References: <optional> Variants: 4 Notes: <optional>"
 ---
 
 # Build websites for a client
 
 The lead (client, links, references, variants, notes) is: $ARGUMENTS
 
-If that is empty, the lead is in the user's message. Missing variants means 3 + 1 free.
+If that is empty, the lead is in the user's message. Missing variants (or the older "3 + 1 free") means 4.
 
 KIT = `${CLAUDE_PLUGIN_ROOT}`, or the KIT path you were given (read-only: never edit it). Read `KIT/prompts/rules.md`.
 You are the lead: you research, send the builders, show the user their work and publish. Builders design.
@@ -37,9 +37,9 @@ You are the lead: you research, send the builders, show the user their work and 
    and prepares `content/`.
 
 3. **Heroes.** Send every builder in one message, so they run at the same time:
-   - V1-V3: `KIT/prompts/brief.md`, each with its own tone from FACTS.md, `Phase: hero`, and under "Hero ideas
+   - All four use `KIT/prompts/brief.md`, each with its own tone from FACTS.md, `Phase: hero`, and under "Hero ideas
      already used" the ideas from earlier rounds or that the user rejected.
-   - V4: `KIT/prompts/brief-free.md`, `Phase: hero`.
+   - V1: `Hero: reference`. V2-V4: `Hero: crafted`.
    Folders `variants/01-<name>` to `04-<name>` (short names, changeable later). Before any Higgsfield spend, ask the
    user. While they work, copy `KIT/starter`
    into `variants/_shared/starter` with the client's data (`data/`), for the rest phase.
@@ -47,11 +47,11 @@ You are the lead: you research, send the builders, show the user their work and 
    you in the browser, then you browse that site for the builder and pass on what it needs.
 
 4. **Show the user the heroes, then wait.** Per variant: its `hero-*.jpg` sheet as an image (the hero beside its
-   level references; V4's alone) and its motion sheet, the idea in one line, the level reference links and what each
-   set, the generated objects or images it would like,
-   and the local link. Before you show them, hold each hero against the user's words in FACTS.md: if one goes
-   against them (a feel, a rejected idea, a client who would not be proud of it), say so beside it. Hold V4 also against the two tests in its brief (fits, unexpected), and send it back if its
-   first screen reads as a usual website or a plain software screen. If you were given
+   lead reference, or a crafted hero beside its level references) and its motion sheet, the idea in one line, the
+   reference links and what each gave, the generated objects or images it would like, and the local link. Before you
+   show them, hold each hero against the user's words in FACTS.md: if one goes against them (a feel, a rejected idea,
+   a client who would not be proud of it, a playful hero for a corporate tone), say so beside it. Send a crafted hero
+   back if its first screen reads as a usual website (a photo and a headline). If you were given
    a FRONT_DESK thread, also send it a message starting `HERO REVIEW` with the
    same. Then wait for "go", changes or a redo. A redo sends the brief again with the user's words in "Changes".
 

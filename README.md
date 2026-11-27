@@ -14,18 +14,17 @@ Then in a session: `/plugin` → **Marketplaces** → `website-build-kit` → **
 
 Start a build in any thread with:
 ```
-/website-build-kit:build Client: <name> Links: <links> References: <optional> Variants: 3 + 1 free Notes: <optional>
+/website-build-kit:build Client: <name> Links: <links> References: <optional> Variants: 4 Notes: <optional>
 ```
 
 ## How a build runs
-1. **Research** (about 10 minutes): the client's facts, prepared photos and videos, and a different tone for each of
-   variants 1-3.
-2. **Heroes:** four builders at once. Variants 1-3 each brainstorm 5-6 hero objects or scenes from the client's world,
-   claim one no other variant uses, and build it to the level of Awwwards' award winners (studied for finish, not
-   layout). The hero object then travels the whole page as its thread. A corporate tone stays calm and precise.
-   Variant 4 is free of the kit: its idea is the form of the page, from any medium, and it must both fit what the
-   client does and not be a usual website.
-3. **Review:** each hero is shown beside its level references. You approve, change or redo.
+1. **Research** (about 10 minutes): the client's facts, prepared photos and videos, and a tone for each variant.
+2. **Heroes:** four builders at once. Variant 1 goes through Awwwards' award winners first (Sites of the Year, of the
+   Month, Honors, of the Day), then other lists and 21st.dev, and rebuilds the hero that fits this business best with
+   the client's own material. Variants 2-4 each brainstorm 5-6 hero objects or scenes from the client's world, claim
+   one no other variant uses, and build it to the level of award winners (studied for finish, not layout); that
+   object then travels the whole page as its thread. A corporate tone stays calm and precise.
+3. **Review:** each hero is shown beside its lead or level references. You approve, change or redo.
 4. **Full sites, check, publish** to a private GitHub repo and Vercel.
 
 ## What's inside

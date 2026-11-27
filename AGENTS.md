@@ -6,12 +6,11 @@ These rules override any skill that says it must be used, including a superpower
 ## Where things are
 - `skills/build/SKILL.md`: the run order, from lead to live site.
 - `prompts/research.md`: facts, material and tones (about 10 minutes).
-- `prompts/brief.md`: the builder brief for variants 1-3. Each builder brainstorms its hero as an object or scene from
-  the client's world, claims an idea no other variant uses, and studies Awwwards' award winners (then other lists and
-  Codrops) only for the level of finish. Its sections start from references, then its own layout, motion and
-  interaction, carried by a thread from the hero. A corporate tone keeps both calm and clean, never playful.
-- `prompts/brief-free.md`: the brief for variant 4, free of the kit: the form of the page is the idea, from any
-  medium, and must pass two tests (fits what the client does; not a usual website); made assets allowed.
+- `prompts/brief.md`: the builder brief for all four variants. V1 builds its hero from the Awwwards or 21st.dev hero
+  that fits this business best (award winners first), adapted closely. V2-V4 each brainstorm a hero object or scene
+  from the client's world, with references setting only the level of finish. Every variant claims what it uses, so no
+  two share. Sections start from references, then the builder's own layout, motion and interaction, carried by a
+  thread. A corporate tone keeps all of it calm and clean, never playful.
 - `prompts/rules.md`: the few musts every variant follows.
 - `prompts/office/colour.md`: an optional palette move (mood pair plus accent); each builder decides whether it fits.
 - `prompts/methods.md`: technical lookup (layout, media, bugs, publishing, sourcing).
