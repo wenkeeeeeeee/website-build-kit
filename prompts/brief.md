@@ -103,13 +103,13 @@ wall or blocks you, stop and tell whoever sent you which site: the user will log
   into `site/js/vendor/`. 21st.dev components are React: port the part you need to plain JS.
 - Skills: `impeccable` or `frontend-design` for polish once your direction is set. Don't use skills that hand out
   ready-made directions or generate design images (taste-skill and its variants, imagegen, image-to-code, brandkit).
-- **Propose 1-2 generated objects or scenes** that would lift the hero beyond the client's photos, each with a ready
+- **V3 only: propose 1-2 generated objects or scenes** that would lift the hero beyond the client's photos, each with a ready
   prompt and a rough mock-up (built in code or from the client's photos, saved as `{{VARIANT}}/ref/proposal-<n>.jpg`).
   Don't generate them yourself: the lead shows them to the user, who decides whether to spend (rules.md). Your hero
   works without them.
 - No console errors; it works at phone width.
 
-**Report** (under 150 words): the hero URL; the customer line; the `hero-*.jpg` and `motion-*.jpg` paths; your 1-2
+**Report** (under 150 words): the hero URL; the customer line; the `hero-*.jpg` and `motion-*.jpg` paths; V3: your 1-2
 generated proposals (what, where, the ready prompt, the mock-up path). Reference hero: the three candidates,
 the lead (URL, and the award list it came from, or why nothing in the pool fit), what you changed from it and why,
 and what each supporting one gave. Crafted hero: the 5-6 ideas and which you built, the thread sentence and route, and each level reference and what it set.
