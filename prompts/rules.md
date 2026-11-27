@@ -22,9 +22,9 @@ builder's references and ideas, adapted to the client.
 - **Heroes:** V1 and V2 each build theirs from the one reference that fits this business best (a different one each),
   adapted closely: its layout, proportions, type scale, staging and motion carry over. V3-V5 each build their own
   object or scene from the client's world; their references set only the level of finish.
-- **Below the hero,** V1-V2 adapt their section references closely, with no travelling thread. V3-V5's layout, motion
-  and interaction are their own, carried by a thread (the rest phase of `brief.md`); references set the level of
-  craft and motion. Interaction is always an offer: scrolling alone shows everything. Never take a reference's images, logo, words or code.
+- **Below the hero,** every variant brainstorms its own layout and motion (the rest phase of `brief.md`). V1-V2 grow
+  each section out of its reference, with no travelling thread; V3-V5 invent theirs around a thread, with references
+  setting the level of craft and motion. Interaction is always an offer: scrolling alone shows everything. Never take a reference's images, logo, words or code.
 - **Colour, optional (any variant):** `prompts/office/colour.md` is a palette move (a mood pair of one colour family
   plus one strong accent from the other side of the wheel). Read it and decide for yourself: use it when the client's
   products, brand or design fit it well, and skip it otherwise. Nobody assigns it.

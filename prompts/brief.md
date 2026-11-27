@@ -120,9 +120,10 @@ and what each supporting one gave. Crafted hero: the 5-6 ideas and which you bui
 ## Rest phase (about 55 minutes)
 The approved hero stays as it is, apart from the user's changes above. Everything below it, and the pages this
 business really needs:
-- **Reference hero (V1-V2):** follows references the way the hero did. Each section adapts its reference closely
-  (layout, proportions, type scale, motion) with the client's material, and the hand-overs come from a hand-over
-  reference. No travelling thread, and no interactions beyond what the references do. Skip parts 1 and 2 of step 5.
+- **Reference hero (V1-V2):** starts from section references found the way the hero's were, then you brainstorm each
+  section's layout and motion around its reference (step 5, part 2): keep the reference's layout where it serves,
+  reshape it or invent your own where that serves the section better. Hand-overs come from a hand-over reference. No
+  travelling thread (skip part 1), and interaction only where it helps.
 - **Crafted hero (V3-V5):** your own layout, motion and interaction (step 5). References set the level of craft and
   motion, not the layout.
 
@@ -141,8 +142,9 @@ business really needs:
    `V{{N}} rest | <section>: <url> | <section>: <url> | ... | hand-over: <url, or "none">`. A site another variant
    already claimed is off-limits.
 5. **Brainstorm the layout and motion together (about 15 minutes).** Crafted heroes: the references set the level;
-   the layout, scrolling animation and interaction through the rest of the site are yours to invent. Interaction is an
-   offer, never a gate: scrolling alone shows everything, and nothing waits for the visitor to turn, drag or tap.
+   the layout, scrolling animation and interaction through the rest of the site are yours to invent. Reference heroes:
+   start from each section's reference and make it yours. Interaction is an offer, never a gate: scrolling alone shows
+   everything, and nothing waits for the visitor to turn, drag or tap.
    1. **The thread first (crafted only).** Your hero's object, on the route you wrote in the hero phase: it stays on
       screen through the whole page and carries the visitor from section to section, moving with the scroll on its own.
       Its sentence: what it is, what it does in the hero, what it does as they scroll, and where the visitor may use it.
@@ -151,15 +153,15 @@ business really needs:
       margin: each layout gives it its own space, so it never covers text. The visitor may use it at one or two
       stations, never has to. It is best when it collects what the visitor chose on the way and hands that to the
       contact or brief form.
-   2. **Then each section, around its station (crafted only).** Write its layout and how it moves as the visitor
-      scrolls, designed as one idea with the thread and built from the client's own material, its photos and video
-      first. The scroll should feel like part of the client's world:
+   2. **Then each section (every variant).** Write its layout and how it moves as the visitor scrolls, designed as one
+      idea with the thread's station (crafted) or growing out of its reference (reference hero), and built from the
+      client's own material, its photos and video first. The scroll should feel like part of the client's world:
       - Most sections move with the scroll alone. Two or three offer something to do (drag, hover, tap, scrub), each
         optional and working by touch.
       - The hero's world can come back as a stage once or twice, where it fits.
       - Show a few chosen items, not every item as rows, tables or logo grids; a full list belongs on an inner page.
-   For every variant: neighbouring sections never share a layout, and scale and background change between them.
-   Photos show whole at their own ratio, never cropped into thin strips.
+      - Neighbouring sections never share a layout, and scale and background change between them.
+      - Photos show whole at their own ratio, never cropped into thin strips.
    3. **Corporate tone: calmer, still your own.** When the user's own words ask for a corporate tone, still
       brainstorm each section's layout, motion and interaction as in part 2, but make all of it calm, smooth and clean:
       calm reveals, gentle movement in the photos, precise transitions between sections (from the hand-over reference),
@@ -167,9 +169,9 @@ business really needs:
       precisely, never playfully.
 
 ### 2. Build the rest
-Reference hero: build each section from its reference, adapted closely, with the hand-overs from the hand-over
-reference. Crafted hero: build each section from your step 5 idea, filled with the client's material and words, at
-the craft and motion level of its reference; the thread travels its route ("Travelling thread" in
+Build each section from your step 5 idea, filled with the client's material and words, at the craft and motion level
+of its reference. Reference hero: where the idea keeps the reference's layout, adapt it closely (proportions, type
+scale, motion), and the hand-overs follow the hand-over reference. Crafted hero: the thread travels its route ("Travelling thread" in
 `{{KIT}}/prompts/methods.md`), for a corporate tone as calmly as the hand-over reference. No section simply stops where the next
 one starts. The whole site keeps the hero's type, colours and feel.
 
