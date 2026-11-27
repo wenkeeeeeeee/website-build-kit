@@ -20,13 +20,12 @@ Start a build in any thread with:
 ## How a build runs
 1. **Research** (about 10 minutes): the client's facts, prepared photos and videos, and a different tone for each of
    variants 1-3.
-2. **Heroes:** four builders at once. Variants 1-3 each go through Awwwards' award winners first (Sites of the Year,
-   of the Month, Honors, of the Day), then other Awwwards lists and 21st.dev if needed, pick a lead reference no other
-   variant uses, and design a hero from it with the client's own material. Variant 4 is free of the kit: its idea is
-   the form of the page, from any medium, and it must both fit what the client does and not be a usual website.
-   Optional crafted variants (`Variants: 3 + 1 free + 2 crafted`) build their hero as an object or scene from the
-   client's world, which then travels the whole page.
-3. **Review:** each hero is shown beside its lead reference. You approve, change or redo.
+2. **Heroes:** four builders at once. Variants 1-3 each brainstorm 5-6 hero objects or scenes from the client's world,
+   claim one no other variant uses, and build it to the level of Awwwards' award winners (studied for finish, not
+   layout). The hero object then travels the whole page as its thread. A corporate tone stays calm and precise.
+   Variant 4 is free of the kit: its idea is the form of the page, from any medium, and it must both fit what the
+   client does and not be a usual website.
+3. **Review:** each hero is shown beside its level references. You approve, change or redo.
 4. **Full sites, check, publish** to a private GitHub repo and Vercel.
 
 ## What's inside

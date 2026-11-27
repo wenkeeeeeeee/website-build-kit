@@ -9,7 +9,7 @@ WebsiteProjects/<Client>/
   index.html               hub: one <li><strong>V1 · Name</strong><span>one line</span><a class="go" href="variants/01-x/site/">Open</a></li> per variant
   docs/                    LEAD.md, FACTS.md
   content/                 the client's prepared photos, videos and data
-  references/claims.md     each variant's lead reference and hero layout
+  references/claims.md     each variant's hero idea and section references
   tools/                   copy of the kit's tools/web, with node_modules
   variants/_shared/starter working plumbing for the rest phase
   variants/<nn>-<name>/{site,ref}/   only site/ is published

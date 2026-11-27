@@ -15,11 +15,11 @@ builder's references, adapted to the client. Variant 4 follows only the rules ma
 
 ## Also
 - **Motion:** creative, smooth and interactive. It runs smoothly both ways on scroll and never blocks the page.
-- **References are adapted closely, never copied.** The design comes from the references: the lead reference's
-  layout, proportions, type scale, staging and motion carry over, and the client's material, words and brand fill it.
-  Never take a reference's images, logo, words or code. Below the hero, builders may also invent their own layout,
-  motion and interaction for each section (the rest phase of `brief.md`). A crafted variant's hero is the builder's own
-  object or scene from the client's world; its references set only the level of finish.
+- **The hero is the builder's own** object or scene from the client's world; its references set only the level of
+  finish. For a corporate tone it stays calm and precise, never playful.
+- **Section references are adapted closely, never copied:** a reference's layout, proportions, type scale and motion
+  carry over, the client's material, words and brand fill it, and builders add their own layout, motion and
+  interaction (the rest phase of `brief.md`). Never take a reference's images, logo, words or code.
 - **Colour, optional (any variant, V4 included):** `prompts/office/colour.md` is a palette move (a mood pair of one
   colour family plus one strong accent from the other side of the wheel). Read it and decide for yourself: use it when
   the client's products, brand or design fit it well, and skip it otherwise. Nobody assigns it.
