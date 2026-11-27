@@ -9,8 +9,9 @@ These rules override any skill that says it must be used, including a superpower
 - `prompts/brief.md`: the builder brief for all five variants. V1 and V2 each build a hero from the Awwwards or
   21st.dev hero that fits this business best (award winners first), adapted closely. V3-V5 each brainstorm a hero object or scene
   from the client's world, with references setting only the level of finish. Every variant claims what it uses, so no
-  two share. Sections start from references, then the builder's own layout, motion and interaction, carried by a
-  thread. A corporate tone keeps all of it calm and clean, never playful.
+  two share. Below the hero, every layout, motion and interaction is the builder's own, carried by a thread, with
+  references setting the craft level. The aim is something rarely seen; a corporate tone (only from the user's words)
+  keeps it calm, never playful.
 - `prompts/rules.md`: the few musts every variant follows.
 - `prompts/office/colour.md`: an optional palette move (mood pair plus accent); each builder decides whether it fits.
 - `prompts/methods.md`: technical lookup (layout, media, bugs, publishing, sourcing).

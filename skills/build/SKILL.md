@@ -33,13 +33,15 @@ You are the lead: you research, send the builders, show the user their work and 
      `references/claims.md` and copy the starter (step 3), then run only the phases the notes ask for. Publishing is
      a commit and push to the same repo.
 
-2. **Research (about 10 minutes):** run `KIT/prompts/research.md`. It writes `docs/FACTS.md` (facts, material, tones)
-   and prepares `content/`.
+2. **Research (about 10 minutes):** run `KIT/prompts/research.md`. It writes `docs/FACTS.md` (facts, material, tones,
+   seeds) and prepares `content/`.
 
 3. **Heroes.** Send every builder in one message, so they run at the same time:
    - All five use `KIT/prompts/brief.md`, each with its own tone from FACTS.md, `Phase: hero`, and under "Hero ideas
-     already used" the ideas from earlier rounds or that the user rejected.
+     already used" this client's earlier rounds and what the user rejected.
    - V1-V2: `Hero: reference`. V3-V5: `Hero: crafted`.
+   - Fill the brief with the user's words only. Never add tone words, a corporate label or don'ts of your own: the
+     brief already carries the aim.
    Folders `variants/01-<name>` to `05-<name>` (short names, changeable later). Before any Higgsfield spend, ask the
    user. While they work, copy `KIT/starter`
    into `variants/_shared/starter` with the client's data (`data/`), for the rest phase.
@@ -51,15 +53,17 @@ You are the lead: you research, send the builders, show the user their work and 
    reference links and what each gave, the generated objects or images it would like, and the local link. Before you
    show them, hold each hero against the user's words in FACTS.md: if one goes against them (a feel, a rejected idea,
    a client who would not be proud of it, a playful hero for a corporate tone), say so beside it. Send a crafted hero
-   back if its first screen reads as a usual website (a photo and a headline). If you were given
+   back if its first screen reads as a usual website (a photo and a headline, or a headline block). If you were given
    a FRONT_DESK thread, also send it a message starting `HERO REVIEW` with the
    same. Then wait for "go", changes or a redo. A redo sends the brief again with the user's words in "Changes".
 
-5. **Build the rest.** Send the approved variants' briefs again with `Phase: rest` and the user's changes; each
-   builder finds references for its sections and the hand-overs between them. When the
+5. **Build the rest.** Send the approved variants' briefs again with `Phase: rest` and the user's changes. When the
    user supplies generated images, pass them to the builder that asked.
 
-6. **Check.** `node tools/check-pages.cjs <every page> --phone --out check`. Look at the shots and fix anything broken
+6. **Review, then check.** Look at each variant's `--moving` sheets (desktop and phone) yourself. Send a builder back,
+   naming the section, if one reads like a template, shares its neighbour's layout, lists every item as rows or logo
+   grids, or if the thread shrank to a marker or the hero's world never comes back. Then
+   `node tools/check-pages.cjs <every page> --phone --out check`. Look at the shots and fix anything broken
    (sideways scroll, overlaps, dead links, default browser controls).
 
 7. **Publish.** A hub page linking every variant, then a private GitHub repo and Vercel project with this machine's
