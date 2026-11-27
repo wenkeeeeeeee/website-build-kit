@@ -75,12 +75,14 @@ wall or blocks you, stop and tell whoever sent you which site: the user will log
 
 ### 2b. Crafted hero (V3-V5, about 40 minutes)
 1. **Ideas.** Start from the seeds. Write 5-6 hero objects or scenes from the client's world: its materials, tools,
-   workplace, signature product, awards, places. For each, one line: what the visitor sees, what they can do to it, and what they
-   understand about the business within 5 seconds.
+   workplace, signature product, awards, places. For each, one line: what the visitor sees, how it moves on its own, what
+   they may do with it, and what they understand about the business within 5 seconds.
 2. **Cut and pick.** Drop any that is a photo and a headline in a new arrangement, or that repeats a hero idea already
    used (above, and in `{{PROJECT}}/references/claims.md`). Pick the most creative one that still plainly reads as this
-   business. Claim it: `V{{N}} | <the idea in one line> | <what the visitor does to it>`. Read the file again: if a
-   line above yours is the same idea or close to it, you pick again, not them.
+   business. The crafted variants also differ in kind: if a line above yours is already an object the visitor handles
+   (turns, drags, folds), make yours a different kind of experience. Claim it:
+   `V{{N}} | <the idea in one line> | <its kind of experience>`. Read the file again: if a line above yours is the
+   same idea or close to it, you pick again, not them.
 3. **The level (about 10 minutes).** Find 3-5 heroes that set how finished and alive yours must be: the award sheets
    first, then `find-refs.cjs aw:3d aw:webgl aw:experimental aw:<category or tag> --out {{VARIANT}}/ref/browse` and
    Codrops demos (tympanus.net/codrops) for technique. Study them with `hero-frames.cjs --motion`: how they load in,
@@ -88,7 +90,8 @@ wall or blocks you, stop and tell whoever sent you which site: the user will log
 4. **The thread starts here.** The hero object works best when it is also the thread (rest phase, step 5): write its
    sentence and route now, so the hero is built to travel. Corporate tone: the thread too, moving calmly and precisely.
 5. **Build (about 20 minutes).** One strong subject, with the client's name or wordmark built into it rather than set
-   beside it; a real cursor or drag interaction, with a touch version; a load-in. The object and the wordmark say what
+   beside it, and a load-in. It plays on its own and reads without being touched; the cursor or a drag (with a touch
+   version) adds to it, but is never needed to see the business. The object and the wordmark say what
    the business is, with at most one short line beside them; the action sits in the header. No headline block. Use
    the client's photos or renders as textures; a 3D product built in code only if it looks as good as a photo.
 6. **Look at it beside the level:**
@@ -116,8 +119,12 @@ and what each supporting one gave. Crafted hero: the 5-6 ideas and which you bui
 
 ## Rest phase (about 55 minutes)
 The approved hero stays as it is, apart from the user's changes above. Everything below it, and the pages this
-business really needs, is your own layout, motion and interaction (step 5). References set the level of craft and
-motion, not the layout.
+business really needs:
+- **Reference hero (V1-V2):** follows references the way the hero did. Each section adapts its reference closely
+  (layout, proportions, type scale, motion) with the client's material, and the hand-overs come from a hand-over
+  reference. No travelling thread, and no interactions beyond what the references do. Skip parts 1 and 2 of step 5.
+- **Crafted hero (V3-V5):** your own layout, motion and interaction (step 5). References set the level of craft and
+  motion, not the layout.
 
 ### 1. References for the rest (about 15 minutes)
 1. List the sections and pages this business needs, and what each must show or do.
@@ -128,41 +135,42 @@ motion, not the layout.
 3. Study them moving: `node {{KIT}}/tools/web/contact-sheet.cjs <url> [<url> ...] --moving --out {{VARIANT}}/ref/rest`
    takes a frame every half screen while the page is still scrolling, so you see how each section enters and how it
    hands over to the next, not just where it rests.
-4. Pick one reference for each section, and for a corporate tone one more for how sections hand over to each other.
+4. Pick one reference for each section, and for a reference hero or a corporate tone one more for how sections hand
+   over to each other.
    Add one line to `{{PROJECT}}/references/claims.md`:
    `V{{N}} rest | <section>: <url> | <section>: <url> | ... | hand-over: <url, or "none">`. A site another variant
    already claimed is off-limits.
-5. **Brainstorm the layout and motion together (about 15 minutes).** The references set the level; the layout,
-   scrolling animation and interaction through the rest of the site are yours to invent.
-   1. **The thread first.** One thing from the client's own world that stays on screen through the whole page and
-      carries the visitor from section to section. A crafted hero's object is the thread, on the route you wrote in the
-      hero phase; with a reference hero, choose it now (the logo or its parts, the signature product, the place, how
-      the work gets done). Its sentence: what it is, what it does in the hero, what the visitor can do to it, what it
-      does as they scroll. Its route, checked against the sections you now have: where it starts, its station in each
-      section (what it becomes or does there, and what the visitor does with it) and how it ends at the contact. It
-      stays a real object the visitor drags or uses, never shrunk to a marker in the margin: each layout gives it its
-      own space, so it never covers text. The thread is the hand-over between sections. It is best when it collects
-      what the visitor chose on the way and hands that to the contact or brief form.
-   2. **Then each section, around its station.** Write its layout, how it moves as the visitor scrolls, and one thing
-      the visitor can do with it (drag, hover, tap, scrub), designed as one idea with the thread and built from the
-      client's own material, its photos and video first. The scroll should feel like part of the client's world:
-      - The hero's world comes back as the stage of at least two later sections.
-      - Each section has its own form: neighbouring sections never share a layout, and scale and background change
-        between them.
-      - Show a few chosen items through the interaction, not every item as rows, tables or logo grids; a full list
-        belongs on an inner page.
-      - At least 2-3 sections are the visitor's to control, each working by touch too. Photos show whole at their own
-        ratio, never cropped into thin strips.
+5. **Brainstorm the layout and motion together (about 15 minutes).** Crafted heroes: the references set the level;
+   the layout, scrolling animation and interaction through the rest of the site are yours to invent. Interaction is an
+   offer, never a gate: scrolling alone shows everything, and nothing waits for the visitor to turn, drag or tap.
+   1. **The thread first (crafted only).** Your hero's object, on the route you wrote in the hero phase: it stays on
+      screen through the whole page and carries the visitor from section to section, moving with the scroll on its own.
+      Its sentence: what it is, what it does in the hero, what it does as they scroll, and where the visitor may use it.
+      Its route, checked against the sections you now have: where it starts, its station in each section (what it
+      becomes or does there) and how it ends at the contact. It stays a real object, never shrunk to a marker in the
+      margin: each layout gives it its own space, so it never covers text. The visitor may use it at one or two
+      stations, never has to. It is best when it collects what the visitor chose on the way and hands that to the
+      contact or brief form.
+   2. **Then each section, around its station (crafted only).** Write its layout and how it moves as the visitor
+      scrolls, designed as one idea with the thread and built from the client's own material, its photos and video
+      first. The scroll should feel like part of the client's world:
+      - Most sections move with the scroll alone. Two or three offer something to do (drag, hover, tap, scrub), each
+        optional and working by touch.
+      - The hero's world can come back as a stage once or twice, where it fits.
+      - Show a few chosen items, not every item as rows, tables or logo grids; a full list belongs on an inner page.
+   For every variant: neighbouring sections never share a layout, and scale and background change between them.
+   Photos show whole at their own ratio, never cropped into thin strips.
    3. **Corporate tone: calmer, still your own.** When the user's own words ask for a corporate tone, still
       brainstorm each section's layout, motion and interaction as in part 2, but make all of it calm, smooth and clean:
       calm reveals, gentle movement in the photos, precise transitions between sections (from the hand-over reference),
-      and interactions that show information rather than play. The thread still travels its route, calmly and
+      and interactions that show information rather than play. A crafted thread still travels its route, calmly and
       precisely, never playfully.
 
 ### 2. Build the rest
-Build each section from your step 5 idea: its layout and motion, filled with the client's material and words, at the
-craft and motion level of its reference. The thread travels its route ("Travelling thread" in `{{KIT}}/prompts/methods.md`);
-for a corporate tone it moves as calmly as the hand-over reference. No section simply stops where the next
+Reference hero: build each section from its reference, adapted closely, with the hand-overs from the hand-over
+reference. Crafted hero: build each section from your step 5 idea, filled with the client's material and words, at
+the craft and motion level of its reference; the thread travels its route ("Travelling thread" in
+`{{KIT}}/prompts/methods.md`), for a corporate tone as calmly as the hand-over reference. No section simply stops where the next
 one starts. The whole site keeps the hero's type, colours and feel.
 
 The working plumbing (basket ending in a filled-in WhatsApp message, catalogue, product page, quote form) is in
@@ -173,12 +181,13 @@ visible. Every control (dropdown, date picker, stepper) is built in the site's d
 `node {{KIT}}/tools/web/contact-sheet.cjs <your home page> <your section references> --moving --out {{VARIANT}}/ref/rest`
 and look at `all.jpg`, then run your home page again with `--moving --phone`. These frames are the screen while
 scrolling, the only place pinned sections show right (full-page shots show them wrong). Fix any section that lost its
-step 5 idea, reads like a template, shares its neighbour's layout, sits still where its reference moves, or where the
-thread drops out, shrinks to a marker, misses its station or passes over text. Then
+step 5 idea or drifted from its reference, reads like a template, shares its neighbour's layout, sits still where its
+reference moves, or hides anything until the visitor acts; and, crafted, where the thread drops out, shrinks to a
+marker, misses its station or passes over text. Then
 `node {{KIT}}/tools/web/check-pages.cjs <each page> --phone --header <header height> --out {{VARIANT}}/ref` and fix what
 looks wrong.
 
-**Report** (under 180 words): the URL, the pages, the thread sentence, each section with its
+**Report** (under 180 words): the URL, the pages, the thread sentence (crafted), each section with its
 reference and its layout and motion idea, the `all.jpg` path, anything
 `[client to confirm]`.
 

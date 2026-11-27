@@ -63,7 +63,8 @@ You are the lead: you research, send the builders, show the user their work and 
 
 6. **Review, then check.** Look at each variant's `--moving` sheets (desktop and phone) yourself. Send a builder back,
    naming the section, if one reads like a template, shares its neighbour's layout, lists every item as rows or logo
-   grids, or if the thread shrank to a marker or the hero's world never comes back. Then
+   grids, or hides anything until the visitor turns, drags or taps; a V1-V2 section that drifted from its reference;
+   a V3-V5 thread that shrank to a marker. Check the variants don't all feel alike. Then
    `node tools/check-pages.cjs <every page> --phone --out check`. Look at the shots and fix anything broken
    (sideways scroll, overlaps, dead links, default browser controls).
 
