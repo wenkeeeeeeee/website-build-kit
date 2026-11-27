@@ -83,7 +83,7 @@ wall or blocks you, stop and tell whoever sent you which site: the user will log
    Codrops demos (tympanus.net/codrops) for technique. Study them with `hero-frames.cjs --motion`: how they load in,
    how they answer the cursor, how finished their materials and light are. They never set your layout.
 4. **The thread starts here.** The hero object works best when it is also the thread (rest phase, step 5): write its
-   sentence and route now, so the hero is built to travel. Corporate tone: no thread.
+   sentence and route now, so the hero is built to travel. Corporate tone: the thread too, moving calmly and precisely.
 5. **Build (about 20 minutes).** One strong subject, with the client's name or wordmark built into it rather than set
    beside it; a real cursor or drag interaction, with a touch version; a load-in. Use the client's photos or renders
    as textures; a 3D product built in code only if it looks as good as a photo.
@@ -106,8 +106,7 @@ wall or blocks you, stop and tell whoever sent you which site: the user will log
 **Report** (under 150 words): the hero URL; the customer line; the `hero-*.jpg` and `motion-*.jpg` paths; generated
 objects, images or video you'd like (what, where, a ready prompt), or "none". Reference hero: the three candidates,
 the lead (URL, and the award list it came from, or why nothing in the pool fit), what you changed from it and why,
-and what each supporting one gave. Crafted hero: the 5-6 ideas and which you built, the thread sentence and route (or
-"corporate: none"), and each level reference and what it set.
+and what each supporting one gave. Crafted hero: the 5-6 ideas and which you built, the thread sentence and route, and each level reference and what it set.
 
 ## Rest phase (about 55 minutes)
 The approved hero stays as it is, apart from the user's changes above. Everything below it, and the pages this
@@ -126,7 +125,7 @@ business really needs, starts from references, then takes your own layout, motio
    hands over to the next, not just where it rests.
 4. Pick one reference for each section, and for a corporate tone one more for how sections hand over to each other.
    Add one line to `{{PROJECT}}/references/claims.md`:
-   `V{{N}} rest | <section>: <url> | <section>: <url> | ... | hand-over: <url, or "thread">`. A site another variant
+   `V{{N}} rest | <section>: <url> | <section>: <url> | ... | hand-over: <url, or "none">`. A site another variant
    already claimed is off-limits.
 5. **Brainstorm the layout and motion together (about 15 minutes).** The references are a starting point, not the
    limit: most reference sections are plain and barely move, so the layout, scrolling animation and interaction through
@@ -149,13 +148,14 @@ business really needs, starts from references, then takes your own layout, motio
    3. **Corporate tone: calmer, still your own.** When the user or `FACTS.md` asks for a corporate tone, still
       brainstorm each section's layout, motion and interaction as in part 2, but make all of it calm, smooth and clean:
       calm reveals, gentle movement in the photos, precise transitions between sections (from the hand-over reference),
-      and interactions that show information rather than play. No travelling thread.
+      and interactions that show information rather than play. The thread still travels its route, calmly and
+      precisely, never playfully.
 
 ### 2. Build the rest
 Build each section from your step 5 idea: its layout and motion, filled with the client's material and words. Where
 the idea keeps the reference's layout, adapt it closely (proportions, type scale, and its motion where that's
 stronger than yours). The thread travels its route ("Travelling thread" in `{{KIT}}/prompts/methods.md`);
-for a corporate tone the spaces between sections follow the hand-over reference. No section simply stops where the next
+for a corporate tone it moves as calmly as the hand-over reference. No section simply stops where the next
 one starts. The whole site keeps the hero's type, colours and feel.
 
 The working plumbing (basket ending in a filled-in WhatsApp message, catalogue, product page, quote form) is in
@@ -171,7 +171,7 @@ misses its station or passes over text. Then
 `node {{KIT}}/tools/web/check-pages.cjs <each page> --phone --header <header height> --out {{VARIANT}}/ref` and fix what
 looks wrong.
 
-**Report** (under 180 words): the URL, the pages, the thread sentence (or "corporate: none"), each section with its
+**Report** (under 180 words): the URL, the pages, the thread sentence, each section with its
 reference and its layout and motion idea, the `all.jpg` path, anything
 `[client to confirm]`.
 
