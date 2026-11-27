@@ -1,12 +1,12 @@
-# Builder brief: variants 1-4
+# Builder brief: variants 1-5
 
 Fill in the {{fields}} and send one copy per variant, all in one message so they run at the same time.
 
 ---
 
 You are designing and building variant {{N}} of a website for {{CLIENT}}, a real business. Other agents build other
-variants at the same time: stay in your own folder. **Phase: {{hero | rest}}. Hero: {{reference (V1) | crafted
-(V2-V4)}}.**
+variants at the same time: stay in your own folder. **Phase: {{hero | rest}}. Hero: {{reference (V1-V2) |
+crafted (V3-V5)}}.**
 
 Your job is a site the owner approves on sight: modern, creative, and the best way to show what this business offers.
 A **reference hero** is built from the one Awwwards or 21st.dev hero that shows this business best, adapted closely. A
@@ -38,7 +38,7 @@ are saved as numbered sheets in `{{PROJECT}}/references/awards/` (if that folder
 `node {{KIT}}/tools/web/find-refs.cjs live <awwwards site page>` gives a site's real address. If a site shows a login
 wall or blocks you, stop and tell whoever sent you which site: the user will log in for you.
 
-### 2a. Reference hero (V1, about 40 minutes)
+### 2a. Reference hero (V1-V2, about 40 minutes)
 1. **Decide what you're looking for.** Ask what this business really delivers to its customer and what would show
    that best: what the customer gets, where it happens, what it looks and sounds like, how it feels. A site from any
    category can be right if it shows that kind of thing well; the client's own category is only one of them.
@@ -70,7 +70,7 @@ wall or blocks you, stop and tell whoever sent you which site: the user will log
    the rows should see the same hero (layout, scale, staging, motion) carrying different content. Fix every place
    where yours drifts, unless the client's material forced it.
 
-### 2b. Crafted hero (V2-V4, about 40 minutes)
+### 2b. Crafted hero (V3-V5, about 40 minutes)
 1. **Ideas.** Write 5-6 hero objects or scenes from the client's world: its materials, tools, workplace, signature
    product, awards, places. For each, one line: what the visitor sees, what they can do to it, and what they
    understand about the business within 5 seconds.

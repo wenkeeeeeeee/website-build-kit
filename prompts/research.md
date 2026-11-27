@@ -24,8 +24,8 @@ and what it shows, and one honest line on what the material is good for and what
 ## 3. The tones
 Most businesses can honestly be shown in more than one tone. Work out which tones this business's customers would
 believe, from what it sells, its price level, who buys and how it already presents itself. Never pick one that would
-misrepresent it. Write up to four different tones, each in 3-5 words of this business's own character (not a generic
-label), and give one to each of variants 1-4. If fewer tones honestly fit, variants may share a tone; the user's notes
+misrepresent it. Write up to five different tones, each in 3-5 words of this business's own character (not a generic
+label), and give one to each of variants 1-5. If fewer tones honestly fit, variants may share a tone; the user's notes
 in the lead always win.
 
 Add them to `docs/FACTS.md`:
@@ -35,4 +35,5 @@ V1: <tone, 3-5 words>
 V2: <tone, 3-5 words>
 V3: <tone, 3-5 words>
 V4: <tone, 3-5 words>
+V5: <tone, 3-5 words>
 ```

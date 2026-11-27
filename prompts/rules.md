@@ -16,8 +16,9 @@ builder's references and ideas, adapted to the client.
 ## Also
 - **Motion:** creative, smooth and interactive. It runs smoothly both ways on scroll and never blocks the page. For a
   corporate tone it stays calm and precise, never playful, in the hero and below it.
-- **Heroes:** V1's is built from the one reference that fits this business best, adapted closely. V2-V4 each build
-  their own object or scene from the client's world; their references set only the level of finish.
+- **Heroes:** V1 and V2 each build theirs from the one reference that fits this business best (a different one each),
+  adapted closely. V3-V5 each build their own object or scene from the client's world; their references set only the
+  level of finish.
 - **References are adapted closely, never copied:** a reference's layout, proportions, type scale and motion carry
   over, the client's material, words and brand fill it, and below the hero builders add their own layout, motion and
   interaction (the rest phase of `brief.md`). Never take a reference's images, logo, words or code.

@@ -1,14 +1,14 @@
 ---
 name: build
-description: Build a client's website variants end to end (short research, 4 variants: one hero from the best-fitting reference and three crafted from the client's world, hero review, full sites, publish to Vercel). Use when the user gives a client name with links or notes and asks to build websites for them, or types /website-build-kit:build.
-argument-hint: "Client: <name> Links: <links> References: <optional> Variants: 4 Notes: <optional>"
+description: Build a client's website variants end to end (short research, 5 variants: two heroes from the best-fitting references and three crafted from the client's world, hero review, full sites, publish to Vercel). Use when the user gives a client name with links or notes and asks to build websites for them, or types /website-build-kit:build.
+argument-hint: "Client: <name> Links: <links> References: <optional> Variants: 5 Notes: <optional>"
 ---
 
 # Build websites for a client
 
 The lead (client, links, references, variants, notes) is: $ARGUMENTS
 
-If that is empty, the lead is in the user's message. Missing variants (or the older "3 + 1 free") means 4.
+If that is empty, the lead is in the user's message. Missing variants (or the older "3 + 1 free" or "4") means 5.
 
 KIT = `${CLAUDE_PLUGIN_ROOT}`, or the KIT path you were given (read-only: never edit it). Read `KIT/prompts/rules.md`.
 You are the lead: you research, send the builders, show the user their work and publish. Builders design.
@@ -37,10 +37,10 @@ You are the lead: you research, send the builders, show the user their work and 
    and prepares `content/`.
 
 3. **Heroes.** Send every builder in one message, so they run at the same time:
-   - All four use `KIT/prompts/brief.md`, each with its own tone from FACTS.md, `Phase: hero`, and under "Hero ideas
+   - All five use `KIT/prompts/brief.md`, each with its own tone from FACTS.md, `Phase: hero`, and under "Hero ideas
      already used" the ideas from earlier rounds or that the user rejected.
-   - V1: `Hero: reference`. V2-V4: `Hero: crafted`.
-   Folders `variants/01-<name>` to `04-<name>` (short names, changeable later). Before any Higgsfield spend, ask the
+   - V1-V2: `Hero: reference`. V3-V5: `Hero: crafted`.
+   Folders `variants/01-<name>` to `05-<name>` (short names, changeable later). Before any Higgsfield spend, ask the
    user. While they work, copy `KIT/starter`
    into `variants/_shared/starter` with the client's data (`data/`), for the rest phase.
    If a builder says a site blocked it or asked for a login, tell the user which site and wait: the user logs in for

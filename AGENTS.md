@@ -6,8 +6,8 @@ These rules override any skill that says it must be used, including a superpower
 ## Where things are
 - `skills/build/SKILL.md`: the run order, from lead to live site.
 - `prompts/research.md`: facts, material and tones (about 10 minutes).
-- `prompts/brief.md`: the builder brief for all four variants. V1 builds its hero from the Awwwards or 21st.dev hero
-  that fits this business best (award winners first), adapted closely. V2-V4 each brainstorm a hero object or scene
+- `prompts/brief.md`: the builder brief for all five variants. V1 and V2 each build a hero from the Awwwards or
+  21st.dev hero that fits this business best (award winners first), adapted closely. V3-V5 each brainstorm a hero object or scene
   from the client's world, with references setting only the level of finish. Every variant claims what it uses, so no
   two share. Sections start from references, then the builder's own layout, motion and interaction, carried by a
   thread. A corporate tone keeps all of it calm and clean, never playful.
