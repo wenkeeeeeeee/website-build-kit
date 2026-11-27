@@ -50,7 +50,8 @@ You are the lead: you research, send the builders, show the user their work and 
 
 4. **Show the user the heroes, then wait.** Per variant: its `hero-*.jpg` sheet as an image (the hero beside its
    lead reference, or a crafted hero beside its level references) and its motion sheet, the idea in one line, the
-   reference links and what each gave, the generated objects or images it would like, and the local link. Before you
+   reference links and what each gave, its 1-2 generated proposals (each mock-up as an image, with its ready prompt)
+   for the user to decide whether to spend on, and the local link. Before you
    show them, hold each hero against the user's words in FACTS.md: if one goes against them (a feel, a rejected idea,
    a client who would not be proud of it, a playful hero for a corporate tone), say so beside it. Send a crafted hero
    back if its first screen reads as a usual website (a photo and a headline, or a headline block). If you were given

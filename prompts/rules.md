@@ -27,7 +27,7 @@ builder's references and ideas, adapted to the client.
 - **Colour, optional (any variant):** `prompts/office/colour.md` is a palette move (a mood pair of one colour family
   plus one strong accent from the other side of the wheel). Read it and decide for yourself: use it when the client's
   products, brand or design fit it well, and skip it otherwise. Nobody assigns it.
-- **Generated media needs the user.** Don't generate images or video yourself. List what you want in your report (what
-  it shows, where it goes, a ready prompt) and use a placeholder. The user makes simple images in Gemini; Higgsfield
+- **Generated media needs the user.** Don't generate images or video yourself. Every hero proposes 1-2 generated
+  objects or scenes (what it shows, where it goes, a ready prompt, a rough mock-up) and works without them. The user makes simple images in Gemini; Higgsfield
   costs credits and only runs with the user's approval. Generated media is never passed off as the client's work,
   product, people or place.
